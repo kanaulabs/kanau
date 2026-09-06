@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>kanau — サポート / Support</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { margin: 0 auto; padding: 2rem 1.25rem 4rem; max-width: 42rem;
+         font: 16px/1.75 -apple-system, BlinkMacSystemFont, "Hiragino Sans", sans-serif; }
+  h1 { font-size: 1.5rem; margin-bottom: 0.25rem; }
+  h2 { font-size: 1.05rem; margin-top: 2.5rem; }
+  .sub { color: #888; margin-top: 0; }
+  hr { border: 0; border-top: 1px solid #8883; margin: 3rem 0; }
+  dt { font-weight: 600; margin-top: 1.25rem; }
+  dd { margin: 0.25rem 0 0; }
+</style>
+</head>
+<body>
+
+<h1>kanau — サポート</h1>
+<p class="sub">iPhone を照明卓にするアプリ</p>
+
+<h2>問い合わせ</h2>
+<p><a href="mailto:miuracochin@gmail.com">miuracochin@gmail.com</a></p>
+<p>不具合の報告には、<strong>使った灯体の機種とモード</strong>、
+<strong>出力の方式</strong>(Art-Net / sACN / CRMX)、
+<strong>アプリの版番号</strong>(設定の下に出ます)を添えてください。</p>
+
+<h2>動作条件</h2>
+<dl>
+  <dt>iOS 17 以降</dt>
+  <dd>iPhone は縦向き、iPad は横向きです。</dd>
+
+  <dt>ネットワークへ出す(Art-Net / sACN)</dt>
+  <dd>iPhone と照明ノードが同じネットワークに居ること。
+      初回に「ローカルネットワーク」の許可を求めます。</dd>
+
+  <dt>Bluetooth へ出す(CRMX)</dt>
+  <dd>初回に Bluetooth の許可を求めます。</dd>
+</dl>
+
+<h2>よくある詰まり</h2>
+<dl>
+  <dt>光らない</dt>
+  <dd>設定の出力の節に、<strong>送り先</strong>・<strong>経路</strong>・<strong>時計</strong>・
+      <strong>触り → 線</strong>が出ます。ここが動いていれば、アプリは送っています。</dd>
+
+  <dt>sACN でマルチキャストが使えない</dt>
+  <dd>iOS がマルチキャストの送信を拒むことがあります。
+      画面に案内が出たら、ユニキャストに切り替えてノードの IP を書いてください。</dd>
+
+  <dt>灯体が一覧に無い</dt>
+  <dd>メーカーと機種名を添えて連絡してください。自分で組む道もあります。</dd>
+</dl>
+
+<hr>
+
+<h1>kanau — Support</h1>
+<p class="sub">A lighting desk in your hand</p>
+
+<h2>Contact</h2>
+<p><a href="mailto:miuracochin@gmail.com">miuracochin@gmail.com</a></p>
+<p>For a bug report, please include the <strong>fixture model and mode</strong>,
+the <strong>output route</strong> (Art-Net / sACN / CRMX), and the
+<strong>app version</strong> (shown at the bottom of Settings).</p>
+
+<h2>Requirements</h2>
+<dl>
+  <dt>iOS 17 or later</dt>
+  <dd>iPhone is portrait; iPad is landscape.</dd>
+
+  <dt>Over the network (Art-Net / sACN)</dt>
+  <dd>The iPhone and the lighting nodes must be on the same network.
+      The app asks for Local Network permission the first time.</dd>
+
+  <dt>Over Bluetooth (CRMX)</dt>
+  <dd>The app asks for Bluetooth permission the first time.</dd>
+</dl>
+
+<h2>If something is not working</h2>
+<dl>
+  <dt>No light</dt>
+  <dd>The output section in Settings shows <strong>Destination</strong>, <strong>Medium</strong>,
+      <strong>Clock</strong> and <strong>Touch → wire</strong>. If those are moving, the app is sending.</dd>
+
+  <dt>sACN multicast is refused</dt>
+  <dd>iOS can refuse multicast sending. When the screen says so, switch to unicast
+      and write the node's IP address.</dd>
+
+  <dt>A fixture is missing from the library</dt>
+  <dd>Send us the manufacturer and model name. You can also build one yourself in the app.</dd>
+</dl>
+
+</body>
+</html>
