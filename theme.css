@@ -118,7 +118,7 @@ nav a:hover {
 }
 
 .top {
-  display: block; text-align: right;
+  display: block; text-align: end;
   font-size: 0.85rem; margin-top: 2rem;
   color: var(--faint);
 }
@@ -138,7 +138,7 @@ table {
 th, td {
   border-bottom: 1px solid var(--divider);
   padding: 0.5rem 0.7rem;
-  text-align: left;
+  text-align: start;
   vertical-align: top;
 }
 th {
@@ -177,14 +177,15 @@ pre code { background: none; border: 0; padding: 0; color: inherit; }
 
 blockquote {
   margin: 1rem 0;
-  padding: 0.1rem 0 0.1rem 1rem;
-  border-left: 3px solid var(--amber);
+  padding-block: 0.1rem;
+  padding-inline-start: 1rem;
+  border-inline-start: 3px solid var(--amber);
   color: var(--subtext);
 }
 
 hr { border: 0; border-top: 1px solid var(--divider); margin: 3.5rem 0; }
 
-ul, ol { padding-left: 1.3rem; }
+ul, ol { padding-inline-start: 1.3rem; }
 li { margin: 0.4rem 0; }
 li::marker { color: var(--faint); }
 
@@ -229,14 +230,14 @@ figure.shot ul.pins {
 }
 figure.shot ul.pins li {
   margin: 0.4rem 0;
-  padding-left: 2.1rem;
+  padding-inline-start: 2.1rem;
   text-indent: -2.1rem;
   color: var(--subtext);
 }
 figure.shot ul.pins b {
   display: inline-block;
   width: 1.5rem; height: 1.5rem;
-  margin-right: 0.6rem;
+  margin-inline-end: 0.6rem;
   border-radius: 999px;
   background: var(--red);
   color: #fff;
@@ -290,7 +291,7 @@ figure.shot ul.pins b {
 .door:hover { background: var(--surface2); border-color: var(--amber); text-decoration: none; }
 
 .adv { font-size: 0.88rem; color: var(--faint); margin: 0.4rem 0 0; }
-.adv a { margin-right: 0.9rem; white-space: nowrap; }
+.adv a { margin-inline-end: 0.9rem; white-space: nowrap; }
 
 /* ---- 検索 ---- */
 
@@ -302,7 +303,7 @@ figure.shot ul.pins b {
 #q:focus { outline: none; border-color: var(--amber); background: var(--surface2); }
 #q::placeholder { color: var(--faint); }
 
-#results { position: absolute; z-index: 40; left: 0; right: 0; top: calc(100% + 0.4rem);
+#results { position: absolute; z-index: 40; inset-inline: 0; top: calc(100% + 0.4rem);
            max-height: 60vh; overflow-y: auto;
            background: var(--surface1); border: 1px solid var(--edge);
            border-radius: var(--radius); box-shadow: 0 12px 32px rgba(0,0,0,0.6); }
@@ -328,7 +329,7 @@ figure.shot ul.pins b {
     background: var(--surface2); border: 1px solid var(--divider);
     color: var(--subtext); font-size: 0.85rem; font-family: inherit; cursor: pointer; }
   .stickybar a:first-child { font-size: 1.05rem; line-height: 1; padding: 0.35rem 0.6rem; }
-  .stickybar a:last-child { margin-left: auto; color: var(--limit); }
+  .stickybar a:last-child { margin-inline-start: auto; color: var(--limit); }
 }
 
 /* ---- 章 ---- */
@@ -351,14 +352,14 @@ p.lead { color: var(--subtext); font-size: 1.02rem; margin: 0.5rem 0 1.5rem; }
 
 .box { margin: 1.25rem 0; padding: 0.85rem 1.1rem;
        border-radius: var(--radius); border: 1px solid var(--divider);
-       border-left-width: 3px; background: var(--surface1); }
+       border-inline-start-width: 3px; background: var(--surface1); }
 .box b { display: block; font-size: 0.75rem; letter-spacing: 0.1em; margin-bottom: 0.3rem; }
 .box p { margin: 0; font-size: 0.95rem; color: var(--subtext); }
-.box.note      { border-left-color: var(--remote); }
+.box.note      { border-inline-start-color: var(--remote); }
 .box.note b    { color: var(--remote); }
-.box.important { border-left-color: var(--amber); }
+.box.important { border-inline-start-color: var(--amber); }
 .box.important b { color: var(--amber); }
-.box.warning   { border-left-color: var(--red); background: rgba(255,77,61,0.06); }
+.box.warning   { border-inline-start-color: var(--red); background: rgba(255,77,61,0.06); }
 .box.warning b { color: var(--red); }
 .box.warning p { color: var(--text); }
 
@@ -366,9 +367,34 @@ p.lead { color: var(--subtext); font-size: 1.02rem; margin: 0.5rem 0 1.5rem; }
 
 .brand { position: relative; }
 .brand .lang {
-  margin-left: auto; align-self: flex-start;
+  margin-inline-start: auto; align-self: flex-start;
   padding: 0.25rem 0.7rem; border-radius: 999px;
   background: var(--surface2); border: 1px solid var(--divider);
   color: var(--subtext); font-size: 0.82rem; white-space: nowrap;
 }
 .brand .lang:hover { border-color: var(--amber); color: var(--text); text-decoration: none; }
+
+
+/* ---- RTL の土台（2026-09-13、Arabic を正式対応にするため） ----
+   意味のある方向は論理プロパティで書きます。
+   **物理方向に意味があるものは反転させません** —— 画面写真の中の番号の位置、
+   Pan Left / Pan Right のような灯体の向きがこれにあたります。 */
+
+.box { border-inline-start-style: solid; }
+
+/* 技術値は読む向きに関係なく左から右。Arabic の中でも壊れないように囲う */
+code, pre, .ver { unicode-bidi: isolate; }
+[dir="rtl"] code, [dir="rtl"] pre { direction: ltr; text-align: start; }
+
+/* 画面写真は中身が LTR。番号の位置は写真の中の座標なので反転させない */
+figure.shot .wrap { direction: ltr; }
+
+/* 言語の切り替え */
+.lang select {
+  background: var(--surface2); color: var(--subtext);
+  border: 1px solid var(--divider); border-radius: 999px;
+  padding: 0.3rem 0.6rem; font: inherit; font-size: 0.85rem; cursor: pointer;
+}
+.lang select:hover { border-color: var(--amber); color: var(--text); }
+.vh { position: absolute; width: 1px; height: 1px; overflow: hidden;
+      clip-path: inset(50%); white-space: nowrap; }
