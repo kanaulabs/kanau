@@ -152,7 +152,7 @@ Titan Tube (FP1)                                        機種の帯
 <h2>初めて開いたとき</h2>
 <p><strong>空です。</strong> Home に <code>No fixtures patched yet.</code> と <code>Patch fixtures</code> のボタンだけが出ます(2026-09-12 から。それまでの見本の 99 台と 「…or open the sample show」は廃止)。<code>Patch fixtures</code> を押すと Patch の面が開くので、灯体を打ってから(03 章)、線に出す設定(02 章)へ。</p>
 <h2>この章で確かめていないこと</h2>
-<ul><li>丸の長押し・鍵盤・FINE の指の感覚は、シミュレータの注入した指では通らないので コードの註(<code>ChannelColumnGesture</code> / <code>FaderPickup</code>)から書いた。<strong>三浦さんの実機で</strong></li><li>「初めて開いたとき」が空になったのは 2026-09-12 の実装セッションの連絡から。まっさらな端末では未確認</li></ul><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-02-線に出す">02 線に出す — Settings → OUTPUT</h1>
+<ul><li>丸の長押し・鍵盤・FINE の指の感覚は、シミュレータの注入した指では通らないので コードの註(<code>ChannelColumnGesture</code> / <code>FaderPickup</code>)から書いた。<strong>実機で</strong></li><li>「初めて開いたとき」が空になったのは 2026-09-12 の実装セッションの連絡から。まっさらな端末では未確認</li></ul><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-02-線に出す">02 線に出す — Settings → OUTPUT</h1>
 <p class="sub">書いた日: 2026-09-12(iPhone、0.2 build 228 の木)</p>
 <p>kanau は起動した瞬間から、パッチされているユニバースを <strong>1 秒に 44 回</strong>、 止めずに送り続けます。送るボタンはありません。この章で決めるのは <strong>どの言葉で(Art-Net / sACN / CRMX)、どの線から、どこへ</strong>送るかだけです。</p>
 <p>Settings タブ → <strong>OUTPUT</strong> の行を押すと開きます。</p>
@@ -234,12 +234,12 @@ Titan Tube (FP1)                                        機種の帯
 <tr><td><code>Clock</code> が 100 ms 超で赤</td><td>iPhone の中が詰まっている(卓の側)</td></tr>
 <tr><td><code>Destination</code> に見慣れない番地 + <code>↦</code>、光が 1 秒に 1 コマ</td><td>ノードが自分の IP を間違って名乗っている。宛先を <code>Broadcast</code> に(上の「AUTO が効かないとき」)</td></tr>
 <tr><td><code>Clock</code> 24 ms、<code>Sending</code> 44、ノードの往復が 100 ms 超</td><td>網の側(AP の省電力、Wi-Fi の混み)。卓は無罪</td></tr>
-<tr><td>全部健康なのに遅い</td><td>灯体側の平滑化。Aputure Sidus のアプリと DMX の両方から入っていると混ざることがある(2026-08-25、三浦さんの現場の仮説)</td></tr>
+<tr><td>全部健康なのに遅い</td><td>灯体側の平滑化。Aputure Sidus のアプリと DMX の両方から入っていると混ざることがある(2026-08-25、現場の仮説)</td></tr>
 </table>
 <h2>DMX MONITOR</h2>
 <p>Settings → <code>DMX MONITOR</code> で、いま線に出ている 512 の値をユニバースごとに見られます。 1 行 10 ch、枠ごとに自分の住所。1 秒に 10 回更新。送信には影響しません。</p>
 <h2>この章で確かめていないこと</h2>
-<ul><li>Bluetooth(CRMX)、実ノードの応答、2 台目の卓の赤は、シミュレータでは網が組めないので コードの註と 2026-08 の現場の記録から書いた。<strong>三浦さんの実機で</strong></li><li>「ローカルネットワークの許可」の iOS 側の文言は iOS の版で変わる。ここに書いたのは 2026-09 の姿</li></ul><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-03-灯体を打つ">03 灯体を打つ — Patch</h1>
+<ul><li>Bluetooth(CRMX)、実ノードの応答、2 台目の卓の赤は、シミュレータでは網が組めないので コードの註と 2026-08 の現場の記録から書いた。<strong>実機で</strong></li><li>「ローカルネットワークの許可」の iOS 側の文言は iOS の版で変わる。ここに書いたのは 2026-09 の姿</li></ul><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-03-灯体を打つ">03 灯体を打つ — Patch</h1>
 <p class="sub">書いた日: 2026-09-12(iPhone、0.2 build 228 の木)</p>
 <p>Patch タブは<strong>住所を決める場所</strong>です。灯体を足す、番号を振る、ユニバースと開始アドレスを決める、 グループを作る。色や光量はここでは触りません(Home の仕事)。</p>
 <p>開くと上から: <code>Re-patch</code> / <code>Fixtures</code> / <code>Select many</code> の帯、<code>＋ new patch</code>、<code>Patched n</code>(機種ごとの一覧)、 <code>＋ new group</code> とグループの一覧、<code>Custom fixtures</code>(自作。1 件も無ければ出ない)。</p>
@@ -310,7 +310,7 @@ Titan Tube (FP1)                                        機種の帯
 <h3>Duplicate and edit</h3>
 <p>メーカーの機種を複製して、<strong>安全な項目だけ</strong>直して別名で保存する。 直せるのは名前・色温度の範囲・各チャンネルの正体(役 + 綴り)・ラベル・初期値。 枠の数・16 bit・レンジ・switch は触れません(番地がずれる編集は事故のもと)。 触らない項目は複製元からそのまま持ち越されます。</p>
 <h2>この章で確かめていないこと</h2>
-<ul><li>GDTF Share は網とアカウントが要るので、シミュレータでは入っていない。<strong>三浦さんの実機で</strong></li><li>「同梱の数」はこの木の <code>fixtures.json</code> を数えた値。取り込みのたびに増える</li></ul><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-04-触る">04 触る — Home</h1>
+<ul><li>GDTF Share は網とアカウントが要るので、シミュレータでは入っていない。<strong>実機で</strong></li><li>「同梱の数」はこの木の <code>fixtures.json</code> を数えた値。取り込みのたびに増える</li></ul><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-04-触る">04 触る — Home</h1>
 <p class="sub">書いた日: 2026-09-12(iPhone、0.2 build 228 の木)</p>
 <p>Home はフェーダーの段です。ここに書くのは<strong>指で何が起きるか</strong>だけ。 色は 05 章、灯体ごとの設定は 06 章、エフェクトは 09 章。</p>
 <h2>フェーダー</h2>
@@ -379,7 +379,7 @@ Titan Tube (FP1)                                        機種の帯
 <h2>HISTORY</h2>
 <p>段の右上。押すと(長押しでも)一覧が開き、戻す・進むができます。戻る先が無いときは揺れるだけ。 中身は 10 章。</p>
 <h2>この章で確かめていないこと</h2>
-<ul><li>指の感覚(掴みの拡大、3pt、FINE の効き、グリッサンド)は、シミュレータの注入した指では通らないので コードから書いた。<strong>三浦さんの実機で</strong></li><li>数値(1.28 倍、0.12 秒、3pt、8pt、0.45 秒)は <code>TactMetrics</code> の値。実機で調整されたら書き直す</li></ul><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-05-色">05 色 — 灯体の面(上の段)</h1>
+<ul><li>指の感覚(掴みの拡大、3pt、FINE の効き、グリッサンド)は、シミュレータの注入した指では通らないので コードから書いた。<strong>実機で</strong></li><li>数値(1.28 倍、0.12 秒、3pt、8pt、0.45 秒)は <code>TactMetrics</code> の値。実機で調整されたら書き直す</li></ul><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-05-色">05 色 — 灯体の面(上の段)</h1>
 <p class="sub">書いた日: 2026-09-12(iPhone、0.2 build 228 の木)</p>
 <p>色は<strong>灯体の面</strong>で作ります。面の上半分が色と光量、下半分がその灯体の設定(06 章)。</p>
 <h2>入口は 3 つ</h2>
@@ -427,7 +427,7 @@ Titan Tube (FP1)                                        機種の帯
 <h2>作った色はどこに出るか</h2>
 <p>Home の丸、フェーダーの塗り、値の大表示、Patch の一覧の丸。全部この面で作った色です。</p>
 <h2>この章で確かめていないこと</h2>
-<ul><li>帯の触感(相対、掴み)と、ピッカーの「丸の周りだけ掴む」は<strong>三浦さんの実機で</strong></li><li>Astera の表の値は <code>GelLibraryTests</code> が公式 PDF と全数照合している(1183 件)。表そのものは開いていない</li></ul><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-06-灯体の設定">06 灯体の設定 — 灯体の面(下の段)</h1>
+<ul><li>帯の触感(相対、掴み)と、ピッカーの「丸の周りだけ掴む」は<strong>実機で</strong></li><li>Astera の表の値は <code>GelLibraryTests</code> が公式 PDF と全数照合している(1183 件)。表そのものは開いていない</li></ul><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-06-灯体の設定">06 灯体の設定 — 灯体の面(下の段)</h1>
 <p class="sub">書いた日: 2026-09-12(iPhone、0.2 build 228 の木)</p>
 <p>丸の長押し(または <code>COLOR</code> / 札の長押し)で開く面の、色の帯より下の段です。 <strong>1 台だけ</strong>のときに出るもの(色の組・Channels・Mode・Channel roles・Patch)と、 <strong>複数でもまとめて触れるもの</strong>(上下限・Lock・Switch function・Battery save)があります。 複数で値が違うときは <code>—</code> や <code>n of m</code> と正直に出ます。触れば全台がその値に揃います。</p>
 <h2>上の段(名前と ‹ ›)</h2>
@@ -435,7 +435,7 @@ Titan Tube (FP1)                                        機種の帯
 <h2>Lower limit / Upper limit</h2>
 <p>左が下限、右が上限(フェーダーの左右と同じ)。<code>±1</code> <code>±5</code> と解除。 上限を 60 にすると、フェーダーは 60 で止まり、その上は橙の斜線になります。 ピクセル灯体では、セルの上下限は本体の上下限を<strong>破れません</strong>(本体 50、セル 80 なら 50)。</p>
 <h2>Lock</h2>
-<p>トグル 1 つ。掛けると<strong>その灯体はどこからも動きません</strong>: フェーダー、鍵盤、⏻、色、生のチャンネル、 GM、B.O.、BATTERY SAVE、場面。守備範囲を選ぶ設定は 2026-08-27 に外され(三浦さん「ロックは項目ごと削除」)、 <strong>常に全部から守ります</strong>。トグルの下に <code>Lock holds against everything, including B.O.</code> と出ます(10 章)。</p>
+<p>トグル 1 つ。掛けると<strong>その灯体はどこからも動きません</strong>: フェーダー、鍵盤、⏻、色、生のチャンネル、 GM、B.O.、BATTERY SAVE、場面。守備範囲を選ぶ設定は 2026-08-27 に外され、 <strong>常に全部から守ります</strong>。トグルの下に <code>Lock holds against everything, including B.O.</code> と出ます(10 章)。</p>
 <ul><li>Home では丸の緑の外輪と 🔒、フェーダーの縁の緑、鍵と ⏻ の緑の枠で分かります</li><li>複数選択で混在なら <code>n of m locked</code>。<strong>1 つでもロックされていれば押すと全解除</strong>、1 つも無ければ全ロック (外せない側が危ないので、全開放がどこからでも 1 押しで届く)</li><li>掛ける瞬間、鍵盤や FLASH で一時的に飛ばしている値は、押す前へ戻してから固めます</li><li>ロック中は上下限を動かしても現在値をクランプしません。外した瞬間にクランプし直します</li></ul>
 <h2>Switch function</h2>
 <p>鍵盤の下の四角(⏻)に何を割り当てるか。<code>None</code> / <code>ON/OFF</code> / <code>FLASH ON</code> / <code>FLASH OFF</code>。既定は <code>ON/OFF</code>(04 章)。</p>
@@ -478,9 +478,9 @@ Titan Tube (FP1)                                        機種の帯
 </table>
 <p>重なっている・512 を越えているときは赤で言いますが、送信は止めません。</p>
 <h2>この章で確かめていないこと</h2>
-<ul><li>命令ボタンの押し続けと、首の <code>Home</code> の押し続けは<strong>三浦さんの実機で</strong>(シミュレータの指では通らない)</li></ul><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-07-向き">07 向き — Pan / Tilt とビーム</h1>
+<ul><li>命令ボタンの押し続けと、首の <code>Home</code> の押し続けは<strong>実機で</strong>(シミュレータの指では通らない)</li></ul><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-07-向き">07 向き — Pan / Tilt とビーム</h1>
 <p class="sub">書いた日: 2026-09-12(iPhone、0.2 build 228 の木)</p>
-<p>首(Pan / Tilt)、ズーム、アイリス、フロスト、ゴボは、<strong>灯体の面の Channels の行</strong>で触ります(06 章)。 向きだけの専用の面(AIM / POSITION)は 2026-09-05 に外しました(三浦さん「AIM をやめたい」「生の行で足りる」)。 コードは残っていますが入口はありません。</p>
+<p>首(Pan / Tilt)、ズーム、アイリス、フロスト、ゴボは、<strong>灯体の面の Channels の行</strong>で触ります(06 章)。 向きだけの専用の面(AIM / POSITION)は 2026-09-05 に外しました。 コードは残っていますが入口はありません。</p>
 <p><strong>2026-09 時点のムービング対応は、動かせる・数字で置ける、まで</strong>です。 「舞台を見ながら手元を見ずに首を撫でる」面は、選択後の UI を熟成させる中で改めて考える、と決まっています。</p>
 <h2>首の行(Channels → POSITION の棚)</h2>
 <p>丸を長押し → 下へスクロール → <code>POSITION</code> の棚。<code>Pan</code> / <code>Tilt</code> の行があります(16 bit の灯体は粗と微が 1 行にまとまる)。</p>
@@ -501,9 +501,9 @@ Titan Tube (FP1)                                        機種の帯
 <h2>動きのエフェクト</h2>
 <p>首の動き(DRIFT / PASS / ORBIT / EIGHT / BOX / SPIRAL / SEARCH / BREATHE / HANDHELD / WIND / JUMP / BALLYHOO)と ビームの動き(ZOOM PULSE / ZOOM BREATHE / IRIS PULSE / FROST BREATHE / GOBO SHAKE)は、<code>EFFECT</code> の面の <code>MOVE</code> / <code>BEAM</code> の棚から(09 章)。 首の動きは<strong>いまの向きを中心に</strong>度の差分で揺れます。光量のエフェクトと重ねられます。</p>
 <h2>この章で確かめていないこと</h2>
-<ul><li>首の帯の掴み方と <code>Home</code> の押し続けは、<strong>三浦さんの実機(軸を持つ灯体)で</strong></li><li>ムービングの設計書(<code>docs/superpowers/specs/2026-09-03-ムービングライト-design.md</code>)の段のうち、 どこまで出荷されているかは、この章を書いた日の木の Channels の行の姿で書いた</li></ul><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-08-場面">08 場面 — Scenes</h1>
+<ul><li>首の帯の掴み方と <code>Home</code> の押し続けは、<strong>実機(軸を持つ灯体)で</strong></li><li>ムービングの設計書(<code>docs/superpowers/specs/2026-09-03-ムービングライト-design.md</code>)の段のうち、 どこまで出荷されているかは、この章を書いた日の木の Channels の行の姿で書いた</li></ul><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-08-場面">08 場面 — Scenes</h1>
 <p class="sub">書いた日: 2026-09-12(iPhone、0.2 build 228 の木)</p>
-<p><strong>場面は「絵」です。</strong> いまの明かりを丸ごと覚えて、名前を付けて置いておくもの。 順番に流す台本(キュー)ではありません(三浦さん「キューというより場面保存なのだが」)。 だから一覧は「番号順の台本」ではなく、<strong>名前で探す棚</strong>です。</p>
+<p><strong>場面は「絵」です。</strong> いまの明かりを丸ごと覚えて、名前を付けて置いておくもの。 順番に流す台本(キュー)ではありません。 だから一覧は「番号順の台本」ではなく、<strong>名前で探す棚</strong>です。</p>
 <p>Scenes タブを押すと面が上がります。Home に場面の帯はありません(2026-08-25 に撤去)。</p>
 <h2>面の中身</h2>
 <pre>Scenes                          Edit  [＋]
@@ -535,7 +535,7 @@ Titan Tube (FP1)                                        機種の帯
 <ul><li>フェード中は<strong>フェーダーそのものが動きます</strong>(線だけを補間しない)。途中で触れば、そこから相対で動く</li><li>向き・ゴボ・生の値のように<strong>途中の値に意味が無いもの</strong>は補間せず、GO の瞬間に置きます</li><li>呼び出しは指を離した瞬間。押しただけでは変わりません</li></ul>
 <h2>自動保存(SAVE ボタンは無い)</h2>
 <p><strong>場面を呼んだあとに触ると、その場面が書き換わります。</strong> 手動の保存はありません。</p>
-<ul><li>呼んだ場面の行に、<strong>触った後だけ点</strong>が出ます(「あなたが手を入れた」の印)。書き込みは指を離した瞬間に 1 回</li><li>書き込み先から外れる道は 3 つ: 別の場面を呼ぶ / その場面を消す / ショーを開き直す</li><li><strong>これ以上書き込まれたくない場面はロックする</strong>(<code>Settings</code> → <code>Lock this scene</code>)。呼べます。変わりません。 もう一度押すと外れる。行に 🔒</li><li>「直前の上書きを取り消す」「このキューから離れる」は 2026-08-31 に外しました(三浦さん「使っていない」「間違えのもと」)</li></ul>
+<ul><li>呼んだ場面の行に、<strong>触った後だけ点</strong>が出ます(「あなたが手を入れた」の印)。書き込みは指を離した瞬間に 1 回</li><li>書き込み先から外れる道は 3 つ: 別の場面を呼ぶ / その場面を消す / ショーを開き直す</li><li><strong>これ以上書き込まれたくない場面はロックする</strong>(<code>Settings</code> → <code>Lock this scene</code>)。呼べます。変わりません。 もう一度押すと外れる。行に 🔒</li><li>「直前の上書きを取り消す」「このキューから離れる」は 2026-08-31 に外しました</li></ul>
 <p>怖がらなくていい理由: この卓では場面を押した時点で舞台が変わるので、「確認のために覗く」操作がありません。 押したなら現場はその絵になっていて、そこで直したなら直す意思があった、という作りです。</p>
 <h2>場面とエフェクト</h2>
 <p>エフェクト(09 章)を掛けた状態で場面を覚えると、エフェクトごと戻ります。 呼んだ場面にエフェクトが無ければ、走っていたものは外れます。</p>
@@ -544,7 +544,7 @@ Titan Tube (FP1)                                        機種の帯
 <h2>場面はショーの中</h2>
 <p>場面はショーのファイルの一部です(11 章)。ショーを書き出せば場面も付いていきます。</p>
 <h2>この章で確かめていないこと</h2>
-<ul><li>フェード中の指の割り込みは<strong>三浦さんの実機で</strong></li></ul><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-09-エフェクト">09 エフェクト — EFFECT の面と Effects タブ</h1>
+<ul><li>フェード中の指の割り込みは<strong>実機で</strong></li></ul><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-09-エフェクト">09 エフェクト — EFFECT の面と Effects タブ</h1>
 <p class="sub">書いた日: 2026-09-12(iPhone、0.2 build 228 の木)</p>
 <p>kanau のエフェクトは<strong>フリッカーボックスの代わり</strong>です。点滅、炎、稲妻、回転灯、首の揺れ。 名前で選んで、つまみが 2〜3 個。波形を編集したりチェイスを組んだりする機能はありません。 灯体自身が持っているエフェクト(内蔵プログラム)は 06 章の Channels の行から。</p>
 <h2>掛ける — Home の <code>EFFECT</code></h2>
@@ -623,7 +623,7 @@ STROBE · 10.0 Hz · RELEASED             ~~~~
 <h2>場面との関係</h2>
 <p>場面(08 章)はエフェクトごと覚えます。呼べばその形で走り出します。</p>
 <h2>この章で確かめていないこと</h2>
-<ul><li>動きの見え方(点滅の質感、炎の荒さ)は<strong>三浦さんの実機と灯体で</strong></li><li>棚の並び、ADJUST / ARRANGE / <code>Applies to</code> の順、固定の再生機は 2026-09-12 にシミュレータの実物で確かめた(Titan Tube 4 台に BLINK を掛けて SPREAD)</li></ul><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-10-守る">10 守る — 事故を防ぐ道具</h1>
+<ul><li>動きの見え方(点滅の質感、炎の荒さ)は<strong>実機と灯体で</strong></li><li>棚の並び、ADJUST / ARRANGE / <code>Applies to</code> の順、固定の再生機は 2026-09-12 にシミュレータの実物で確かめた(Titan Tube 4 台に BLINK を掛けて SPREAD)</li></ul><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-10-守る">10 守る — 事故を防ぐ道具</h1>
 <p class="sub">書いた日: 2026-09-12(iPhone、0.2 build 228 の木)</p>
 <p>本番中に指がかすっても舞台が変わらないための道具をまとめて。</p>
 <h2>SCREEN LOCK — 画面ごと止める</h2>
@@ -647,7 +647,7 @@ STROBE · 10.0 Hz · RELEASED             ~~~~
 <p>GM が 100 未満のままだと、札が赤く脈打ち、画面の縁が赤く点滅します(0 なら太く速く)。 ドラマの現場では GM を落としたまま本番に行かないので、遠慮なく目立たせてあります。戻すのは <code>GM</code> の札 → <code>→100</code>。 暗転中は赤の枠は出ず、<code>B.O.</code> の札が言います(押すと解ける)。</p>
 <h2>HISTORY — 戻す・進む</h2>
 <p>Home の右上 <code>HISTORY</code>。タップでも長押しでも一覧が開きます。</p>
-<ul><li><strong>1 本の線と栞</strong>です。戻る = 栞を 1 つ前へ、進む = 1 つ後ろへ。一覧で好きな点を押せば、前へも後ろへも跳びます。 <code>HERE</code> がいま居る点</li><li><strong>戻った所から新しく触っても、後ろの点は捨てません</strong>(三浦さん「一に戻っても二と三はその後ろについていていい」)。 線は「この卓が通った盤ぜんぶの記録」で、新しい点は常に末尾に足されます。どの行にも跳べます</li><li>1 点は「その時点の盤ぜんぶ」: 光量・色・電源・上下限・生の値・エフェクト・<strong>暗転・全体マスター・パッチ</strong>も入ります (三浦さん「ヒストリーで戻れないものを、作りたくない」)。<strong>鍵(Lock)だけは入りません</strong> —— 鍵は取り消しから守る仕掛けなので、 戻してもロックした灯体は動きません</li><li>途中の 1 手だけを抜くことはできません(各社の卓と同じ)</li><li>直近 <strong>50</strong> 手。保存しません(アプリを閉じると消える)。ショーを開き直すと新しい線が始まります</li><li>場面を呼ぶのは 1 手として載ります(場面の名前で)。そこから戻ると、呼ぶ前の状態に戻ります。 場面の中身の書き換えは載りません。一覧の底の文もそう言っています(2026-09-12 に実装側が直した)</li><li>戻すときのフェードは一覧の <code>Recall fade time</code>(<code>SNAP</code> / 秒)</li><li>戻る先が無いとき、<code>HISTORY</code> は灰色で、押しても揺れるだけ</li></ul>
+<ul><li><strong>1 本の線と栞</strong>です。戻る = 栞を 1 つ前へ、進む = 1 つ後ろへ。一覧で好きな点を押せば、前へも後ろへも跳びます。 <code>HERE</code> がいま居る点</li><li><strong>戻った所から新しく触っても、後ろの点は捨てません</strong>。 線は「この卓が通った盤ぜんぶの記録」で、新しい点は常に末尾に足されます。どの行にも跳べます</li><li>1 点は「その時点の盤ぜんぶ」: 光量・色・電源・上下限・生の値・エフェクト・<strong>暗転・全体マスター・パッチ</strong>も入ります 。<strong>鍵(Lock)だけは入りません</strong> —— 鍵は取り消しから守る仕掛けなので、 戻してもロックした灯体は動きません</li><li>途中の 1 手だけを抜くことはできません(各社の卓と同じ)</li><li>直近 <strong>50</strong> 手。保存しません(アプリを閉じると消える)。ショーを開き直すと新しい線が始まります</li><li>場面を呼ぶのは 1 手として載ります(場面の名前で)。そこから戻ると、呼ぶ前の状態に戻ります。 場面の中身の書き換えは載りません。一覧の底の文もそう言っています(2026-09-12 に実装側が直した)</li><li>戻すときのフェードは一覧の <code>Recall fade time</code>(<code>SNAP</code> / 秒)</li><li>戻る先が無いとき、<code>HISTORY</code> は灰色で、押しても揺れるだけ</li></ul>
 <h2>ZEN — フェーダー 1 本だけ</h2>
 <p>灯体の面(06 章)の右上 <code>ZEN</code>(1 台で、光量が届く灯体のとき)。</p>
 <ul><li>画面が真っ黒になり、<strong>真ん中の 1 本と数字だけ</strong>。名前も帯も鍵盤もありません</li><li><strong>触れるのは画面ぜんぶ</strong>。相対なので、どこに指を置いても値は飛びません。FINE は効きます</li><li>数字は何桁でも中心。下に小さく番号と名前</li><li>入った直後だけ「タップで戻る」の 1 行が 2.5 秒出て消えます。<strong>戻るのはタップ</strong>(引いた指では戻らない)</li><li>右上の歯車 → その灯体の上限 / 下限</li><li>OLED では画素が本当に消えるので、客席を照らしません</li></ul>
@@ -666,7 +666,7 @@ STROBE · 10.0 Hz · RELEASED             ~~~~
 <tr><td>別の卓が線に居る</td><td>赤い丸と IP</td></tr>
 </table>
 <h2>この章で確かめていないこと</h2>
-<ul><li>覆いの溝の手触り、HISTORY の一覧の押し心地は<strong>三浦さんの実機で</strong></li></ul><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-11-ショー">11 ショー — 保存と持ち出し</h1>
+<ul><li>覆いの溝の手触り、HISTORY の一覧の押し心地は<strong>実機で</strong></li></ul><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-11-ショー">11 ショー — 保存と持ち出し</h1>
 <p class="sub">書いた日: 2026-09-12(iPhone、0.2 build 228 の木)</p>
 <p><strong>ショー = 現場 1 つ。</strong> パッチ、グループ、場面、いまの明かりが 1 つのファイルに入っています。 保存ボタンはありません。<strong>触るたびに保存されています。</strong></p>
 <h2>いつ保存されるか</h2>
@@ -713,9 +713,9 @@ STROBE · 10.0 Hz · RELEASED             ~~~~
 </table>
 <p>文字の大きさの設定は 2026-08-19 に外されました。既定が最大で、iOS の文字サイズにも追従します。</p>
 <h2>この章で確かめていないこと</h2>
-<ul><li>AirDrop / ファイルアプリからの <code>.kanau</code> の開き方は<strong>三浦さんの実機で</strong>(シミュレータでは共有シートが組めない)</li></ul><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-12-MIDI">12 MIDI — つまみとボタンを割り当てる</h1>
+<ul><li>AirDrop / ファイルアプリからの <code>.kanau</code> の開き方は<strong>実機で</strong>(シミュレータでは共有シートが組めない)</li></ul><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-12-MIDI">12 MIDI — つまみとボタンを割り当てる</h1>
 <p class="sub">書いた日: 2026-09-12(iPhone、0.2 build 228 の木)</p>
-<p>外付けの MIDI コントローラーのノブとボタンで、フェーダーと幾つかのボタンを動かせます。 <strong>2026-09-06 に作り直しが決まっています</strong>(画面のボタンを押して機材のボタンを押す <code>REC</code> 方式。三浦さん「MIDI learn の設計は、実際の画面を押して REC していく方向にしたい」)。 以下は書いた日の姿です。</p>
+<p>外付けの MIDI コントローラーのノブとボタンで、フェーダーと幾つかのボタンを動かせます。 <strong>2026-09-06 に作り直しが決まっています</strong>(画面のボタンを押して機材のボタンを押す <code>REC</code> 方式。)。 以下は書いた日の姿です。</p>
 <p>想定している機材(SPEC 2026-08 時点): Behringer X-Touch Mini / Compact を Standard モード・絶対値で。 MC モードでは CC が来ません。</p>
 <h2>Settings → MIDI</h2>
 <table>
@@ -732,7 +732,7 @@ STROBE · 10.0 Hz · RELEASED             ~~~~
 <h2>GLOBAL 10</h2>
 <p>枠は<strong>場所</strong>です。ノブ 1〜10 が「画面の先頭の 10 本」を動かし、ページや札を変えれば相手も変わります。 もう 1 つのノブが全体マスター。1 枠ずつ <code>Learn</code> → <code>Turn…</code> の間にノブを回す。 枠 10 は欠番(2026-08-25 に系統マスターが無くなった席)。</p>
 <h2>FIXED</h2>
-<p>灯体 1 台 = ノブ 1 つ。灯体ごとに <code>Learn</code>。ページや札を変えても相手は変わりません。 <strong>連番の自動配りはありません</strong>。全部手で付けます(三浦さん「MIDI の自動入力はいらない。全部手動」)。</p>
+<p>灯体 1 台 = ノブ 1 つ。灯体ごとに <code>Learn</code>。ページや札を変えても相手は変わりません。 <strong>連番の自動配りはありません</strong>。全部手で付けます。</p>
 <h2>飛びつかない</h2>
 <p>物理のノブはモーター付きではないので、画面の値とノブの位置は必ずずれます。 <strong>ノブの値がいまの値を跨ぐまで、何も動きません</strong>(フェーダーの相対ピックアップと同じ考え)。 62 で使っている明かりが、ノブが 0 の所にあるというだけで落ちることはありません。 ページ・札・モードを変えたら握りは捨てられ、次のノブは跨ぎ直しです。</p>
 <p><code>Send values back</code> を入れると、X-Touch Mini の LED リングに今の値が返ります(20 Hz、変わった時だけ)。 <strong>跨ぐまで効かないノブが「壊れたノブ」に見えないための機能</strong>で、pickup と対で意味を持ちます。相手の居ない枠は 0 が返ります。</p>
@@ -740,7 +740,7 @@ STROBE · 10.0 Hz · RELEASED             ~~~~
 <p>割り当てられる仕事(2026-09-12 時点): <code>FINE</code> / <code>PIANO</code>(構えの切り替え)/ ページ <code>‹</code> <code>›</code> / 場面ごと(押すとその場面へ)。 <code>B.O.</code> は載せません(非常停止は手元の画面に)。押した瞬間だけ効きます(離しても何も起きない)。 1 つのボタンに 2 つの仕事は付きません。消えた場面のボタンは何もしません。</p>
 <p>ロックした灯体は MIDI からも動きません。</p>
 <h2>この章で確かめていないこと</h2>
-<ul><li>実機の MIDI 機材を繋いだ動きは<strong>三浦さんの実機で</strong>(シミュレータに MIDI 入力は無い)</li><li><code>REC</code> 方式への作り直しが入ったら、この章は書き直し</li></ul><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-13-セッション">13 セッション — 2 台で 1 つの卓を触る</h1>
+<ul><li>実機の MIDI 機材を繋いだ動きは<strong>実機で</strong>(シミュレータに MIDI 入力は無い)</li><li><code>REC</code> 方式への作り直しが入ったら、この章は書き直し</li></ul><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-13-セッション">13 セッション — 2 台で 1 つの卓を触る</h1>
 <p class="sub">書いた日: 2026-09-12(iPhone、0.2 build 228 の木)</p>
 <p>同じ Wi-Fi に居るもう 1 台の iPhone / iPad から、卓の盤面を見て、触れます。 <strong>DMX を出すのは親(Host)1 台だけ</strong>です。子(Join)は線を持たず、親に「62 にして」と申し出るだけ。 親の自動引き継ぎ(親が落ちたら子が親になる)はありません。役は人が選びます。</p>
 <h2>Settings → SESSION</h2>
@@ -775,7 +775,7 @@ STROBE · 10.0 Hz · RELEASED             ~~~~
 <h2>網</h2>
 <ul><li>現場の孤立した Wi-Fi でよい。インターネットは要りません</li><li>名乗り(HELLO)と生値は各線のブロードキャスト(1 Hz / 10 Hz)、台帳は TCP。Art-Net と同じ経路で撒くので、Art-Net が届く網なら届きます</li><li>線に別の卓が居る(02 章の <code>WAITING</code>)ときの出口の 1 つが <code>Join</code>(子は線を持たない)</li></ul>
 <h2>この章で確かめていないこと</h2>
-<ul><li><strong>2 台の実機が要ります</strong>。シミュレータでは網が組めないので、全部 2026-08〜09 の設計書と実装の註から書いた。 <strong>三浦さんの実機 2 台で</strong></li><li>エフェクトを子から掛け外しできるかは、この木の註では断定できなかった(鏡には載る)</li></ul><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-14-困ったとき">14 困ったとき — 症状から引く</h1>
+<ul><li><strong>2 台の実機が要ります</strong>。シミュレータでは網が組めないので、全部 2026-08〜09 の設計書と実装の註から書いた。 <strong>実機 2 台で</strong></li><li>エフェクトを子から掛け外しできるかは、この木の註では断定できなかった(鏡には載る)</li></ul><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-14-困ったとき">14 困ったとき — 症状から引く</h1>
 <p class="sub">書いた日: 2026-09-12(iPhone、0.2 build 228 の木)。他社の機器の話は機種名と日付つきです。</p>
 <h2>光らない</h2>
 <p>上から順に。</p>
@@ -802,7 +802,7 @@ STROBE · 10.0 Hz · RELEASED             ~~~~
 <h2>繋がっているのに 1 バイトも出ない</h2>
 <p><code>Sending</code> が <code>nothing</code>。sACN で <code>Multicast</code> を選んでいると、iOS が拒むことがあります(マルチキャストの許可は TestFlight / App Store の版だけ。開発用の版では必ず拒まれる。2026-09-12 時点)。 <code>Unicast</code> にしてノードの IP を書く。Art-Net の <code>AUTO</code> はこの制限を受けません。</p>
 <h2>ちらつく</h2>
-<ul><li><strong>同じユニバースが網と Bluetooth の両方から出ている</strong>。Settings → OUTPUT の CRMX の節に赤で出ます。どちらかを切る。 Aputure Sidus One / Four は Art-Net でも CRMX でも受けるので、両方から来ると 2 つの卓に叩かれた状態になります</li><li>別の卓が同じユニバースを撒いている(<code>SHARED</code> / <code>WAITING</code>)</li><li>灯体側の平滑化と、別のアプリ(Aputure Sidus)からの指示が混ざっている(2026-08-25、三浦さんの現場の仮説)。入口を 1 本にして切り分ける</li></ul>
+<ul><li><strong>同じユニバースが網と Bluetooth の両方から出ている</strong>。Settings → OUTPUT の CRMX の節に赤で出ます。どちらかを切る。 Aputure Sidus One / Four は Art-Net でも CRMX でも受けるので、両方から来ると 2 つの卓に叩かれた状態になります</li><li>別の卓が同じユニバースを撒いている(<code>SHARED</code> / <code>WAITING</code>)</li><li>灯体側の平滑化と、別のアプリ(Aputure Sidus)からの指示が混ざっている(2026-08-25、現場の仮説)。入口を 1 本にして切り分ける</li></ul>
 <h2>光がカクつく・遅れる</h2>
 <p>原因は 1 つではありません。<strong>先に Settings → OUTPUT の状態のカードを読む</strong>(切り分けのために在る段です)。上から順に。</p>
 <table>
@@ -811,7 +811,7 @@ STROBE · 10.0 Hz · RELEASED             ~~~~
 <tr><td>2. <code>Clock</code> が 100 ms 超で赤</td><td>iPhone の中が詰まっている</td><td><code>Broadcast</code> にしても直らない。開いている面を閉じる、アプリを入れ直す</td></tr>
 <tr><td>3. <code>Nodes answering</code> が 1 以上なのに、光が <strong>1 秒に 1 コマ</strong></td><td>ノードが自分の IP を間違って名乗り、<code>AUTO</code> が届かない番地へ名指ししている(<code>Destination</code> に見慣れない番地 + <code>↦</code>)</td><td><strong>宛先を <code>Broadcast</code> に</strong>。<code>RESCAN</code> では直らない</td></tr>
 <tr><td>4. <code>Clock</code> は健康で、ノードの往復(ms)が 100 超</td><td>線か機材の側(AP の省電力、Wi-Fi の混雑)</td><td>線を変える、有線にする</td></tr>
-<tr><td>5. 全部健康なのに遅い</td><td>灯体側の平滑化。別のアプリ(Aputure Sidus)からの指示と混ざっている(2026-08-25、三浦さんの現場の仮説)</td><td>入口を 1 本にして切り分ける</td></tr>
+<tr><td>5. 全部健康なのに遅い</td><td>灯体側の平滑化。別のアプリ(Aputure Sidus)からの指示と混ざっている(2026-08-25、現場の仮説)</td><td>入口を 1 本にして切り分ける</td></tr>
 </table>
 <p><code>Broadcast</code> の出番は <strong>3 だけ</strong>です。他の原因でも切り替えると、名指しで届いていたものをわざわざ遅いブロードキャストへ戻すので、逆に遅くなることがあります。</p>
 <h2>フェーダーの下半分が効かない</h2>
