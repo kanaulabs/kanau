@@ -268,3 +268,96 @@ figure.shot ul.pins b {
   h1 { font-size: 1.35rem; }
   .brand img { width: 44px; height: 44px; }
 }
+
+/* ================= 2026-09-12 の情報設計の改修で足したもの ================= */
+
+/* ---- 入口(トップ) ---- */
+
+.hero { margin-bottom: 2.5rem; }
+.hero h1 { font-size: 2rem; margin: 0; letter-spacing: 0.02em; }
+.kicker { margin: 0.1rem 0 0; color: var(--amber);
+          font-size: 0.95rem; letter-spacing: 0.04em; }
+.hero .sub { margin: 1rem 0 0; color: var(--subtext); font-size: 0.95rem; }
+.ver { color: var(--faint); font-size: 0.82rem; margin: 1.25rem 0 0; }
+
+.doors { display: grid; gap: 0.6rem; margin: 1.75rem 0 0.9rem;
+         grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); }
+.door { display: block; padding: 0.95rem 1.1rem;
+        background: var(--surface1); border: 1px solid var(--divider);
+        border-radius: var(--radius); color: var(--text); }
+.door b { display: block; font-size: 1.02rem; }
+.door span { display: block; color: var(--faint); font-size: 0.85rem; margin-top: 0.15rem; }
+.door:hover { background: var(--surface2); border-color: var(--amber); text-decoration: none; }
+
+.adv { font-size: 0.88rem; color: var(--faint); margin: 0.4rem 0 0; }
+.adv a { margin-right: 0.9rem; white-space: nowrap; }
+
+/* ---- 検索 ---- */
+
+.findbar { position: relative; margin: 0 0 1.5rem; }
+#q { width: 100%; padding: 0.7rem 0.95rem;
+     background: var(--surface1); color: var(--text);
+     border: 1px solid var(--divider); border-radius: 999px;
+     font: 16px/1.4 -apple-system, "Hiragino Sans", sans-serif; }
+#q:focus { outline: none; border-color: var(--amber); background: var(--surface2); }
+#q::placeholder { color: var(--faint); }
+
+#results { position: absolute; z-index: 40; left: 0; right: 0; top: calc(100% + 0.4rem);
+           max-height: 60vh; overflow-y: auto;
+           background: var(--surface1); border: 1px solid var(--edge);
+           border-radius: var(--radius); box-shadow: 0 12px 32px rgba(0,0,0,0.6); }
+#results a { display: block; padding: 0.55rem 0.95rem; color: var(--text);
+             border-bottom: 1px solid var(--divider); font-size: 0.93rem; }
+#results a:last-child { border-bottom: 0; }
+#results a:hover { background: var(--surface3); text-decoration: none; }
+#results a span { display: block; color: var(--faint); font-size: 0.8rem; }
+#results .none { padding: 0.8rem 0.95rem; color: var(--faint); margin: 0; font-size: 0.9rem; }
+
+/* ---- 上に貼りつく帯(スマートフォン) ---- */
+
+.stickybar { display: none; }
+@media (max-width: 620px) {
+  .stickybar { display: flex; gap: 0.5rem; align-items: center;
+               position: sticky; top: 0; z-index: 50;
+               margin: -1.75rem -1rem 1.25rem; padding: 0.5rem 1rem;
+               background: rgba(11,11,15,0.92);
+               -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+               border-bottom: 1px solid var(--divider); }
+  .stickybar a, .stickybar button {
+    padding: 0.3rem 0.7rem; border-radius: 999px;
+    background: var(--surface2); border: 1px solid var(--divider);
+    color: var(--subtext); font-size: 0.85rem; font-family: inherit; cursor: pointer; }
+  .stickybar a:first-child { font-size: 1.05rem; line-height: 1; padding: 0.35rem 0.6rem; }
+  .stickybar a:last-child { margin-left: auto; color: var(--limit); }
+}
+
+/* ---- 章 ---- */
+
+.chapter { scroll-margin-top: 3.5rem; }
+.chapter + .chapter { border-top: 1px solid var(--divider); margin-top: 3.5rem; padding-top: 0.5rem; }
+h1, h2, h3 { scroll-margin-top: 3.5rem; }
+
+p.lead { color: var(--subtext); font-size: 1.02rem; margin: 0.5rem 0 1.5rem; }
+
+.next { margin: 2.5rem 0 0; padding: 0.9rem 1.1rem;
+        background: var(--surface1); border: 1px solid var(--divider);
+        border-radius: var(--radius); }
+.next b { display: block; color: var(--faint); font-size: 0.8rem;
+          letter-spacing: 0.06em; margin-bottom: 0.35rem; }
+.next ul { list-style: none; padding: 0; margin: 0; }
+.next li { margin: 0.25rem 0; font-size: 0.93rem; }
+
+/* ---- NOTE / IMPORTANT / WARNING ---- */
+
+.box { margin: 1.25rem 0; padding: 0.85rem 1.1rem;
+       border-radius: var(--radius); border: 1px solid var(--divider);
+       border-left-width: 3px; background: var(--surface1); }
+.box b { display: block; font-size: 0.75rem; letter-spacing: 0.1em; margin-bottom: 0.3rem; }
+.box p { margin: 0; font-size: 0.95rem; color: var(--subtext); }
+.box.note      { border-left-color: var(--remote); }
+.box.note b    { color: var(--remote); }
+.box.important { border-left-color: var(--amber); }
+.box.important b { color: var(--amber); }
+.box.warning   { border-left-color: var(--red); background: rgba(255,77,61,0.06); }
+.box.warning b { color: var(--red); }
+.box.warning p { color: var(--text); }
