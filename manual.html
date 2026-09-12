@@ -150,9 +150,16 @@ Titan Tube (FP1)                                        機種の帯
 </table>
 <p>暗転中は赤の枠は出ません(<code>B.O.</code> の札が言っています)。</p>
 <h2>初めて開いたとき</h2>
-<p><strong>空です。</strong> Home に <code>No fixtures patched yet.</code> と <code>Patch fixtures</code> のボタンだけが出ます(2026-09-12 から。それまでの見本の 99 台と 「…or open the sample show」は廃止)。<code>Patch fixtures</code> を押すと Patch の面が開くので、灯体を打ってから(03 章)、線に出す設定(02 章)へ。</p>
+<p><strong>小さなデモの盤が、打たれた状態で開きます</strong>(2026-09-12 午後から。同じ日の朝に一度「空」にしたが、社名を名乗らない盤に作り直して戻した)。</p>
+<table>
+<tr><th>中身</th><th>何か</th></tr>
+<tr><td>灯体 24 台・3 グループ</td><td><code>KEY</code>(8)/ <code>BACK</code>(8)/ <code>FLOOR</code>(8)</td></tr>
+<tr><td>機種</td><td><code>DIMMER</code> / <code>CCT</code> / <code>RGB</code> / <code>RGBW</code> / <code>BAR</code>(4 ピクセル)。メーカーは全部 <code>Generic</code>。<strong>どれも実在の製品ではありません</strong></td></tr>
+<tr><td>仕掛けてある状態</td><td><code>GM 20</code>(赤く脈打つ。押して <code>→100</code>)/ 6 台にバッテリーの印と緑のラベル / <code>FLOOR</code> に炎のエフェクト / 場面 5 つ(<code>DIM</code> <code>COLOR</code> <code>CCT</code> <code>PIXELS</code> <code>FX</code>)</td></tr>
+</table>
+<p>灯体が無くても触れます。Settings → <code>DMX MONITOR</code> で、線に出ている値を見られます。 このデモは<strong>普通のショー</strong>なので、自分の灯体を打つときは消してよいし、Settings → SHOWS → <code>NEW SHOW</code> で別のショーを作ってもよい。 一度でも保存があれば、次からはそのショーが開きます(デモは保存が無いときだけ)。</p>
 <h2>この章で確かめていないこと</h2>
-<ul><li>丸の長押し・鍵盤・FINE の指の感覚は、シミュレータの注入した指では通らないので コードの註(<code>ChannelColumnGesture</code> / <code>FaderPickup</code>)から書いた。<strong>実機で</strong></li><li>「初めて開いたとき」が空になったのは 2026-09-12 の実装セッションの連絡から。まっさらな端末では未確認</li></ul><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-02-線に出す">02 線に出す — Settings → OUTPUT</h1>
+<ul><li>丸の長押し・鍵盤・FINE の指の感覚は、シミュレータの注入した指では通らないので コードの註(<code>ChannelColumnGesture</code> / <code>FaderPickup</code>)から書いた。<strong>実機で</strong></li><li>「初めて開いたとき」のデモの盤は 2026-09-12 のコード(<code>RigDemo</code> / <code>AppState+Demo</code>)から書いた。まっさらな端末では未確認</li></ul><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-02-線に出す">02 線に出す — Settings → OUTPUT</h1>
 <p class="sub">書いた日: 2026-09-12(iPhone、0.2 build 228 の木)</p>
 <p>kanau は起動した瞬間から、パッチされているユニバースを <strong>1 秒に 44 回</strong>、 止めずに送り続けます。送るボタンはありません。この章で決めるのは <strong>どの言葉で(Art-Net / sACN / CRMX)、どの線から、どこへ</strong>送るかだけです。</p>
 <p>Settings タブ → <strong>OUTPUT</strong> の行を押すと開きます。</p>
@@ -688,7 +695,7 @@ STROBE · 10.0 Hz · RELEASED             ~~~~
 <p><code>.kanau</code> のファイルは、ファイルアプリや AirDrop から開いても kanau に入ります(新しいショーとして)。 MIDI の割り当て(<code>.kanaumidi</code>)も同じ道で入ります(12 章)。</p>
 <h2>起動したとき</h2>
 <p>最後に開いていたショーが開きます。</p>
-<ul><li>保存が読めなかったときは、赤い帯で <code>Saved patch could not be read. Showing an empty rig; the file is left as it is.</code> と出て、 <strong>空の盤</strong>で立ち上がります。<strong>読めなかったファイルはそのまま残り、上書きしません</strong></li><li>明かりの保存が無い(古い形式の)ショーは、暗い盤で立ち上がります。飾りの模様は出しません</li><li>保存に失敗したときは、いま開いている面(Home / Patch / <code>＋ new patch</code>)に赤い帯 <code>Patch was not saved.</code> が出ます(14 章)</li><li>Home に灯体が 1 台も無いときは <code>No fixtures patched yet.</code> と <code>Patch fixtures</code>(見本のショーは 2026-09-12 に廃止)</li></ul>
+<ul><li>保存が読めなかったときは、赤い帯で <code>Saved patch could not be read. Showing an empty rig; the file is left as it is.</code> と出て、 <strong>空の盤</strong>で立ち上がります。<strong>読めなかったファイルはそのまま残り、上書きしません</strong></li><li>明かりの保存が無い(古い形式の)ショーは、暗い盤で立ち上がります。飾りの模様は出しません</li><li>保存に失敗したときは、いま開いている面(Home / Patch / <code>＋ new patch</code>)に赤い帯 <code>Patch was not saved.</code> が出ます(14 章)</li><li>保存が 1 つも無い端末では、24 台のデモの盤が開きます(01 章)。Home に灯体が 1 台も無いときは <code>No fixtures patched yet.</code> と <code>Patch fixtures</code></li></ul>
 <h2>ショーに入らないもの(端末に付くもの)</h2>
 <table>
 <tr><th>何</th><th>どこに在るか</th></tr>
