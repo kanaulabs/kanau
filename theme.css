@@ -361,3 +361,14 @@ p.lead { color: var(--subtext); font-size: 1.02rem; margin: 0.5rem 0 1.5rem; }
 .box.warning   { border-left-color: var(--red); background: rgba(255,77,61,0.06); }
 .box.warning b { color: var(--red); }
 .box.warning p { color: var(--text); }
+
+/* ---- 言語の切り替え ---- */
+
+.brand { position: relative; }
+.brand .lang {
+  margin-left: auto; align-self: flex-start;
+  padding: 0.25rem 0.7rem; border-radius: 999px;
+  background: var(--surface2); border: 1px solid var(--divider);
+  color: var(--subtext); font-size: 0.82rem; white-space: nowrap;
+}
+.brand .lang:hover { border-color: var(--amber); color: var(--text); text-decoration: none; }
