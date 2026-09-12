@@ -318,18 +318,21 @@ figure.shot ul.pins b {
 
 .stickybar { display: none; }
 @media (max-width: 620px) {
-  .stickybar { display: flex; gap: 0.5rem; align-items: center;
+  .stickybar { display: flex; gap: 0.4rem; align-items: center;
                position: sticky; top: 0; z-index: 50;
                margin: -1.75rem -1rem 1.25rem; padding: 0.5rem 1rem;
                background: rgba(11,11,15,0.92);
                -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
                border-bottom: 1px solid var(--divider); }
   .stickybar a, .stickybar button {
-    padding: 0.3rem 0.7rem; border-radius: 999px;
+    padding: 0.3rem 0.6rem; border-radius: 999px;
     background: var(--surface2); border: 1px solid var(--divider);
     color: var(--subtext); font-size: 0.85rem; font-family: inherit; cursor: pointer; }
-  .stickybar a:first-child { font-size: 1.05rem; line-height: 1; padding: 0.35rem 0.6rem; }
-  .stickybar a:last-child { margin-inline-start: auto; color: var(--limit); }
+  .stickybar .toc { font-size: 1.05rem; line-height: 1; padding: 0.35rem 0.6rem; }
+  /* 困ったときと言語を右端に寄せ、2 つを並べます */
+  .stickybar .trouble { margin-inline-start: auto; color: var(--limit); }
+  /* 長い言語名は切り詰めます(幅 320px でも 4 つ並ぶように) */
+  .stickybar .lang select { padding: 0.3rem 0.4rem; font-size: 0.8rem; max-width: 7rem; }
 }
 
 /* ---- 章 ---- */
