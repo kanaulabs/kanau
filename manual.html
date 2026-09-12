@@ -4,46 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>kanau 操作マニュアル</title>
-<style>
-  :root { color-scheme: light dark; }
-  body { margin: 0 auto; padding: 2rem 1.25rem 4rem; max-width: 46rem;
-         font: 16px/1.75 -apple-system, BlinkMacSystemFont, "Hiragino Sans", sans-serif; }
-  h1 { font-size: 1.5rem; margin: 3.5rem 0 0.25rem; }
-  h1:first-of-type { margin-top: 0; }
-  h2 { font-size: 1.15rem; margin-top: 2.25rem; }
-  h3 { font-size: 1rem; margin-top: 1.5rem; }
-  .sub { color: #888; margin-top: 0; }
-  nav { display: flex; flex-wrap: wrap; gap: 0.4rem 0.9rem; margin: 1rem 0 2rem; font-size: 0.95rem; }
-  nav a { white-space: nowrap; }
-  table { border-collapse: collapse; width: 100%; margin: 0.75rem 0; font-size: 0.95rem; display: block; overflow-x: auto; }
-  th, td { border: 1px solid #8884; padding: 0.35rem 0.55rem; text-align: left; vertical-align: top; }
-  th { background: #8881; }
-  code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.92em; background: #8881; padding: 0 0.25em; border-radius: 3px; }
-  pre { background: #8881; padding: 0.75rem 1rem; overflow-x: auto; font-size: 0.85rem; line-height: 1.5; }
-  blockquote { margin: 0.75rem 0; padding-left: 1rem; border-left: 3px solid #8886; color: #666; }
-  hr { border: 0; border-top: 1px solid #8883; margin: 3rem 0; }
-  .top { display: block; text-align: right; font-size: 0.85rem; margin-top: 1.5rem; }
-  figure.shot { margin: 1.5rem 0 2rem; }
-  figure.shot .wrap { position: relative; display: inline-block; max-width: 300px;
-                      border-radius: 14px; overflow: hidden; }
-  figure.shot img { display: block; width: 100%; height: auto; }
-  figure.shot .pin { position: absolute; transform: translate(-50%, -50%);
-                     min-width: 1.45rem; height: 1.45rem; padding: 0 0.25rem;
-                     border-radius: 999px; background: #e8442e; color: #fff;
-                     font: 700 0.85rem/1.45rem -apple-system, sans-serif;
-                     text-align: center; box-shadow: 0 0 0 2px #fff, 0 1px 4px #0007; }
-  figure.shot figcaption { font-size: 0.9rem; color: #777; margin: 0.6rem 0 0; }
-  figure.shot ul.pins { list-style: none; padding: 0; margin: 0.75rem 0 0; font-size: 0.95rem; }
-  figure.shot ul.pins li { margin: 0.35rem 0; padding-left: 2rem; text-indent: -2rem; }
-  figure.shot ul.pins b { display: inline-block; width: 1.45rem; height: 1.45rem;
-                          margin-right: 0.55rem; border-radius: 999px; background: #e8442e;
-                          color: #fff; font-size: 0.85rem; line-height: 1.45rem;
-                          text-align: center; text-indent: 0; }
-</style>
+<link rel="icon" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/icon.png">
+<link rel="stylesheet" href="theme.css">
 </head>
 <body>
 
-<h1 id="top">kanau 操作マニュアル</h1>
+<div class="brand" id="top"><img src="img/icon.png" alt="" width="180" height="180"><h1>kanau 操作マニュアル</h1></div>
 <p class="sub">iPhone で照明を操作するアプリの使い方です。2026-09-12 版。</p>
 
 <nav><a href="#c-はじめに">はじめに</a> <a href="#c-01-画面の見方">01 画面の見方</a> <a href="#c-02-DMX-を送信する">02 DMX を送信する</a> <a href="#c-03-灯体を登録する">03 灯体を登録する</a> <a href="#c-04-明るさを操作する">04 明るさを操作する</a> <a href="#c-05-色を調整する">05 色を調整する</a> <a href="#c-06-灯体ごとの設定">06 灯体ごとの設定</a> <a href="#c-07-向き-ビームを調整する">07 向き・ビームを調整する</a> <a href="#c-08-明かりを保存-呼び出しする">08 明かりを保存・呼び出しする</a> <a href="#c-09-エフェクトを使う">09 エフェクトを使う</a> <a href="#c-10-誤操作を防ぐ-操作を戻す">10 誤操作を防ぐ・操作を戻す</a> <a href="#c-11-ショーを保存-共有する">11 ショーを保存・共有する</a> <a href="#c-12-MIDI-コントローラーを使う">12 MIDI コントローラーを使う</a> <a href="#c-13-2-台の端末で操作する">13 2 台の端末で操作する</a> <a href="#c-14-困ったとき">14 困ったとき</a> <a href="#c-用語集">用語集</a></nav>
@@ -69,7 +36,7 @@
 <p>練習用のデモは、中身が普通のショーと同じです。自分の灯体を登録するときは消してかまいませんし、<code>Settings</code> → <code>SHOWS</code> → <code>NEW SHOW</code> で新しいショーを作ってもかまいません。</p>
 <h2>先に知っておきたいこと</h2>
 <ul><li><strong>灯体の Lock は、ブラックアウト(B.O.)より優先します。</strong> ロックした灯体は暗転中も点灯したままです(10 章)。</li><li><strong>呼び出したシーンは、その後の操作で自動更新されます。</strong> 保護したいシーンはロックしてください(08 章)。</li><li><strong>ロックは 2 種類あります。</strong> 灯体の Lock は出力を固定し、シーンのロックは保存内容を守ります。別の機能です。</li></ul><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-01-画面の見方">01 画面の見方</h1>
-<figure class="shot"><div class="wrap"><img src="img/1-home.png" alt="初回起動時の Home です。赤い数字は、下の説明と同じ番号です。" loading="lazy"><span class="pin" style="left:10%;top:9%">1</span><span class="pin" style="left:40%;top:9%">2</span><span class="pin" style="left:20%;top:22.5%">3</span><span class="pin" style="left:50%;top:30%">4</span><span class="pin" style="left:7%;top:38.5%">5</span><span class="pin" style="left:7%;top:55%">6</span><span class="pin" style="left:7%;top:77%">7</span><span class="pin" style="left:50%;top:94%">8</span></div><figcaption>初回起動時の Home です。赤い数字は、下の説明と同じ番号です。</figcaption><ul class="pins"><li><b>1</b> 送信方式と接続状態</li><li><b>2</b> 全体マスター(GM)</li><li><b>3</b> 表示する灯体・グループを選ぶ</li><li><b>4</b> ページの移動</li><li><b>5</b> 灯体の丸いアイコン</li><li><b>6</b> フェーダー</li><li><b>7</b> 番号ボタン</li><li><b>8</b> 5 つのタブ</li></ul></figure>
+<figure class="shot"><div class="wrap"><img src="img/1-home.png" alt="初回起動時の Home です。赤い数字は、下の説明と同じ番号です。" width="294" height="640" loading="lazy"><span class="pin" style="left:10%;top:9%">1</span><span class="pin" style="left:40%;top:9%">2</span><span class="pin" style="left:20%;top:22.5%">3</span><span class="pin" style="left:50%;top:30%">4</span><span class="pin" style="left:7%;top:38.5%">5</span><span class="pin" style="left:7%;top:55%">6</span><span class="pin" style="left:7%;top:77%">7</span><span class="pin" style="left:50%;top:94%">8</span></div><figcaption>初回起動時の Home です。赤い数字は、下の説明と同じ番号です。</figcaption><ul class="pins"><li><b>1</b> 送信方式と接続状態</li><li><b>2</b> 全体マスター(GM)</li><li><b>3</b> 表示する灯体・グループを選ぶ</li><li><b>4</b> ページの移動</li><li><b>5</b> 灯体の丸いアイコン</li><li><b>6</b> フェーダー</li><li><b>7</b> 番号ボタン</li><li><b>8</b> 5 つのタブ</li></ul></figure>
 <h2>5 つのタブ</h2>
 <p>Home が基本の操作画面です。ほかのタブをタップすると、Home の上に操作パネルが開きます。上端のハンドルを下へドラッグするか、Done で閉じると Home に戻ります。</p>
 <table>
@@ -142,7 +109,7 @@
 <h2>デモショー</h2>
 <p>初回起動時のデモには、Generic の DIMMER／CCT／RGB／RGBW／BAR(4 ピクセル)が合計 24 台登録されています。KEY、BACK、FLOOR の 3 グループがあり、各 8 台です。</p>
 <p>GM は 20、6 台に Battery save の印と緑のラベルが設定されています。FLOOR には炎のエフェクトが適用され、DIM／COLOR／CCT／PIXELS／FX の 5 シーンが保存されています。灯体がなくても画面の操作と DMX MONITOR で値の変化を確認できます。</p><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-02-DMX-を送信する">02 DMX を送信する — OUTPUT</h1>
-<figure class="shot"><div class="wrap"><img src="img/6-output.png" alt="Settings → OUTPUT の画面です。赤い数字は、下の説明と同じ番号です。" loading="lazy"><span class="pin" style="left:26%;top:22.7%">1</span><span class="pin" style="left:14%;top:32.6%">2</span><span class="pin" style="left:88%;top:32.6%">3</span><span class="pin" style="left:26%;top:79.5%">4</span><span class="pin" style="left:50%;top:96.7%">5</span></div><figcaption>Settings → OUTPUT の画面です。赤い数字は、下の説明と同じ番号です。</figcaption><ul class="pins"><li><b>1</b> 送信方式。Art-Net か sACN のどちらかを選びます</li><li><b>2</b> 使うネットワーク。✓ が付いているものから送ります</li><li><b>3</b> 応答したノードの数。no reply は見つかっていない状態です</li><li><b>4</b> 宛先。通常は AUTO のままで使えます</li><li><b>5</b> ノードを探し直します</li></ul></figure>
+<figure class="shot"><div class="wrap"><img src="img/6-output.png" alt="Settings → OUTPUT の画面です。赤い数字は、下の説明と同じ番号です。" width="640" height="1334" loading="lazy"><span class="pin" style="left:26%;top:22.7%">1</span><span class="pin" style="left:14%;top:32.6%">2</span><span class="pin" style="left:88%;top:32.6%">3</span><span class="pin" style="left:26%;top:79.5%">4</span><span class="pin" style="left:50%;top:96.7%">5</span></div><figcaption>Settings → OUTPUT の画面です。赤い数字は、下の説明と同じ番号です。</figcaption><ul class="pins"><li><b>1</b> 送信方式。Art-Net か sACN のどちらかを選びます</li><li><b>2</b> 使うネットワーク。✓ が付いているものから送ります</li><li><b>3</b> 応答したノードの数。no reply は見つかっていない状態です</li><li><b>4</b> 宛先。通常は AUTO のままで使えます</li><li><b>5</b> ノードを探し直します</li></ul></figure>
 <h2>Art-Net ノード 1 台に接続する</h2>
 <ol><li>iPhone をノードと同じ Wi-Fi、または有線ネットワークに接続します。</li><li>Settings → OUTPUT を開きます。</li><li>Art-Net と AUTO を選択します。どちらも初期設定です。</li><li>Nodes answering が 1 以上、Sending が緑になっていることを確認します。</li><li>Home のフェーダーを動かし、灯体が反応することを確認します。</li></ol>
 <p>kanau は、登録されたユニバースを通常 44Hz(毎秒 44 回)で継続送信します。送信開始ボタンはありません。ただし、別の卓の検出、ネットワーク設定、iOS の許可などによって送信が待機・停止する場合があります。</p>
@@ -200,7 +167,7 @@
 <h2>DMX MONITOR</h2>
 <p>Settings → DMX MONITOR で、ユニバースごとの 512 チャンネルの送信値を確認できます。表示は毎秒 10 回更新され、送信動作には影響しません。</p><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-03-灯体を登録する">03 灯体を登録する — Patch</h1>
 <p>Patch では、灯体の機種、DMX モード、アドレス、番号、グループを設定します。明るさと色は Home で操作します。</p>
-<figure class="shot"><div class="wrap"><img src="img/4-patch.png" alt="Patch の画面です。登録済みの灯体が機種・モードごとに並びます。" loading="lazy"></div><figcaption>Patch の画面です。登録済みの灯体が機種・モードごとに並びます。</figcaption></figure>
+<figure class="shot"><div class="wrap"><img src="img/4-patch.png" alt="Patch の画面です。登録済みの灯体が機種・モードごとに並びます。" width="294" height="640" loading="lazy"></div><figcaption>Patch の画面です。登録済みの灯体が機種・モードごとに並びます。</figcaption></figure>
 <h2>灯体を追加する</h2>
 <ol><li>Patch → ＋ new patch を開き、add new fixture をタップして入力欄を開きます。</li><li>Manufacturer → Fixture → Mode の順に選びます。Mode は灯体本体の DMX モードと一致させます。</li><li>台数、ユニバース、開始アドレスを指定します。</li><li>使用範囲と警告を確認し、Add をタップします。追加と保存はその場で行われます。</li></ol>
 <table>
@@ -271,7 +238,7 @@
 <p>Duplicate and edit では、名前、色温度範囲、チャンネルの役割・名称、ラベル、初期値を変更できます。チャンネル数、16bit 構成、レンジ、switch の構造は変更できません。</p><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-04-明るさを操作する">04 明るさを操作する — Home</h1>
 <h2>フェーダーを動かす</h2>
 <p>フェーダーは、指を置いた位置ではなく、<strong>指を動かした量</strong>に応じて値が変わります。数字、灯体アイコン、フェーダー下の余白からも操作できます。舞台を見ながら、位置を細かく狙わずに調整するための操作方法です。</p>
-<figure class="shot"><div class="wrap"><img src="img/zoom-dot.png" alt="上から、いまの明るさ、灯体の丸いアイコン、フェーダーです。丸はタップで選択、長押しでその灯体のパネルが開きます。" loading="lazy"></div><figcaption>上から、いまの明るさ、灯体の丸いアイコン、フェーダーです。丸はタップで選択、長押しでその灯体のパネルが開きます。</figcaption></figure>
+<figure class="shot"><div class="wrap"><img src="img/zoom-dot.png" alt="上から、いまの明るさ、灯体の丸いアイコン、フェーダーです。丸はタップで選択、長押しでその灯体のパネルが開きます。" width="640" height="388" loading="lazy"></div><figcaption>上から、いまの明るさ、灯体の丸いアイコン、フェーダーです。丸はタップで選択、長押しでその灯体のパネルが開きます。</figcaption></figure>
 <p>指を置くとノブが少し大きくなり、<strong>少しドラッグするまでは値が変わりません。</strong> 押しただけでは動かないので、誤って触れても安全です。ドラッグ中は番号、名前、数値が画面上部に大きく表示されます。上限・下限が設定されている場合は、その範囲内で動きます。</p>
 <h2>FINE で細かく調整する</h2>
 <table>
@@ -307,12 +274,12 @@
 <p>All の表示順は Settings → SETTINGS → Order on All で、機種と連番の順、または Fixture number 順に設定できます。グループ内は登録した順です。</p>
 <p>‹／› でページを切り替えます。10／5 で表示本数を変えても、操作中の灯体を含むページへ移動します。</p>
 <h2>画面の一番下のボタン</h2>
-<figure class="shot"><div class="wrap"><img src="img/zoom-bottom.png" alt="左から COLOR、EFFECT、PIXELS、＋ −、FINE です。灰色のものは、いまの状態では押せません。" loading="lazy"></div><figcaption>左から COLOR、EFFECT、PIXELS、＋ −、FINE です。灰色のものは、いまの状態では押せません。</figcaption></figure>
+<figure class="shot"><div class="wrap"><img src="img/zoom-bottom.png" alt="左から COLOR、EFFECT、PIXELS、＋ −、FINE です。灰色のものは、いまの状態では押せません。" width="640" height="152" loading="lazy"></div><figcaption>左から COLOR、EFFECT、PIXELS、＋ −、FINE です。灰色のものは、いまの状態では押せません。</figcaption></figure>
 <p>COLOR と EFFECT は、灯体を選んでいないと押せません。PIXELS は、表示中にピクセル灯体がないときに灰色になります。</p>
 <h2>ピクセルを個別に操作する</h2>
 <p>PIXELS をタップすると、表示中のピクセル灯体がセルごとのフェーダーに展開されます。セルは P1、P2 などで表示され、各セルの明るさと色を操作できます。再度タップすると折りたたまれます。</p>
 <p>CLEAR n は選択解除です。値や出力には影響しません。</p><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-05-色を調整する">05 色を調整する — COLOR</h1>
-<figure class="shot"><div class="wrap"><img src="img/2-colour-cct.png" alt="色の操作パネルです。灯体が持っている機能だけが表示されます。" loading="lazy"></div><figcaption>色の操作パネルです。灯体が持っている機能だけが表示されます。</figcaption></figure>
+<figure class="shot"><div class="wrap"><img src="img/2-colour-cct.png" alt="色の操作パネルです。灯体が持っている機能だけが表示されます。" width="294" height="640" loading="lazy"></div><figcaption>色の操作パネルです。灯体が持っている機能だけが表示されます。</figcaption></figure>
 <h2>色の操作パネルを開く</h2>
 <table>
 <tr><th>開き方</th><th>対象</th></tr>
@@ -348,7 +315,7 @@
 <ul><li><strong>Save this color</strong>: ★ で色を保存します。保存先は機種ごとです。CCT と G/M は含まれません。</li><li><strong>Save this temperature</strong>: ★ で色温度を保存します。こちらは機種間で共通です。</li></ul>
 <p>保存したボタンをタップすると適用されます。長押しで編集・削除できます。</p>
 <h2>ADVANCED COLOR</h2>
-<figure class="shot"><div class="wrap"><img src="img/3-picker.png" alt="ADVANCED COLOR のカラーピッカーです。横が色相、縦が彩度です。" loading="lazy"></div><figcaption>ADVANCED COLOR のカラーピッカーです。横が色相、縦が彩度です。</figcaption></figure>
+<figure class="shot"><div class="wrap"><img src="img/3-picker.png" alt="ADVANCED COLOR のカラーピッカーです。横が色相、縦が彩度です。" width="294" height="640" loading="lazy"></div><figcaption>ADVANCED COLOR のカラーピッカーです。横が色相、縦が彩度です。</figcaption></figure>
 <p>ADVANCED COLOR には、アプリ内の計算による色の操作がまとめられています。</p>
 <p>Color picker は横が色相、縦が彩度です。明るさはフェーダーで調整します。色を動かすには丸いハンドル付近をドラッグします。それ以外の場所ではパネルをスクロールできます。</p>
 <p>RGB、RGB から変換した Hue／Saturation、CMY(255 − RGB)は、対応する灯体で表示されます。Hue／Saturation や x, y だけで受信する灯体では、上部の専用項目を使います。</p>
@@ -406,7 +373,7 @@
 <p>Channels の BEAM、GOBO、FOCUS などを開きます。連続値はスライダー、ゴボやプリズムなどは名前付きの選択肢で操作します。操作方法は 06 章の Channels と共通です。</p>
 <p>動きを自動化する場合は、EFFECT の MOVE／BEAM を使います。MOVE は現在の向きを中心に動き、明るさのエフェクトと重ねられます。</p><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-08-明かりを保存-呼び出しする">08 明かりを保存・呼び出しする — Scenes</h1>
 <p>シーン(Scene)は、現在の明かりを保存したものです。Scenes を開き、＋ で保存、シーンの行をタップして呼び出します。</p>
-<figure class="shot"><div class="wrap"><img src="img/5-scenes.png" alt="Scenes の一覧です。現在のシーンには琥珀色の背景が付きます。" loading="lazy"></div><figcaption>Scenes の一覧です。現在のシーンには琥珀色の背景が付きます。</figcaption></figure>
+<figure class="shot"><div class="wrap"><img src="img/5-scenes.png" alt="Scenes の一覧です。現在のシーンには琥珀色の背景が付きます。" width="294" height="640" loading="lazy"></div><figcaption>Scenes の一覧です。現在のシーンには琥珀色の背景が付きます。</figcaption></figure>
 <h2>シーンを保存する</h2>
 <ol><li>Home で明るさ、色、必要なエフェクトを調整します。</li><li>Scenes → ＋ をタップします。その場で保存されます。</li><li>名前を変えるには、<strong>保存されたシーンの行にある Settings</strong> をタップし、名前を入力します。行を左へスワイプしても同じ画面が開きます。</li><li>内容を固定したい場合は、同じ画面の Lock this scene をオンにします。</li></ol>
 <p>ここでいう Settings は、<strong>シーンの行の中にあるもの</strong>です。画面下部の Settings タブとは別の場所です。</p>

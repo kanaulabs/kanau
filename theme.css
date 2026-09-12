@@ -1,0 +1,270 @@
+/* kanau の公開ページ共通のスタイル。
+   色はアプリの TactColors.swift から取っています（2026-09-12）。
+   アプリが暗い画面だけなので、このページも暗い画面だけにしています。 */
+
+:root {
+  color-scheme: dark;
+
+  --bg:       #0B0B0F;   /* 地 */
+  --slot:     #07070A;   /* いちばん暗い面 */
+  --surface1: #16161C;
+  --surface2: #1F1F27;
+  --surface3: #2A2A34;
+  --divider:  #33333F;
+  --edge:     #5F5F70;
+
+  --text:     #EAE8E2;
+  --subtext:  #B8B8C2;
+  --dim:      #9A9AA6;
+  --faint:    #8A8A96;
+
+  --amber:    #FFB454;   /* 選んでいる・効いている */
+  --amberHi:  #FFD9A0;
+  --red:      #FF4D3D;   /* 人が動くもの */
+  --limit:    #FF9B6B;
+  --live:     #4CD98A;   /* 出ている・守られている */
+  --remote:   #5FC8EA;   /* 別の端末 */
+  --off:      #9D7CD8;   /* 止めてある */
+
+  --radius:   14px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 5rem;
+  max-width: 46rem;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.8 -apple-system, BlinkMacSystemFont, "Hiragino Sans",
+        "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---- 見出し ---- */
+
+h1 {
+  font-size: 1.55rem;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  margin: 4rem 0 0.5rem;
+  padding-top: 0.25rem;
+}
+h1:first-of-type { margin-top: 0; }
+
+h2 {
+  font-size: 1.1rem;
+  margin: 2.5rem 0 0.5rem;
+  color: var(--amber);
+  letter-spacing: 0.01em;
+}
+
+h3 {
+  font-size: 1rem;
+  margin: 1.75rem 0 0.4rem;
+  color: var(--amberHi);
+}
+
+p { margin: 0.9rem 0; }
+strong { color: #fff; font-weight: 650; }
+
+.sub {
+  color: var(--faint);
+  font-size: 0.92rem;
+  margin-top: 0.15rem;
+}
+
+/* ---- 題字と印 ---- */
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 0.25rem;
+}
+.brand img {
+  width: 52px; height: 52px;
+  border-radius: 12px;
+  flex: none;
+  box-shadow: 0 0 0 1px var(--divider);
+}
+.brand h1 { margin: 0; }
+
+/* ---- 行き先 ---- */
+
+a { color: var(--amber); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+nav {
+  display: flex; flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 1.5rem 0 2.5rem;
+  font-size: 0.9rem;
+}
+nav a {
+  white-space: nowrap;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  background: var(--surface2);
+  border: 1px solid var(--divider);
+  color: var(--subtext);
+}
+nav a:hover {
+  background: var(--surface3);
+  border-color: var(--edge);
+  color: var(--text);
+  text-decoration: none;
+}
+
+.top {
+  display: block; text-align: right;
+  font-size: 0.85rem; margin-top: 2rem;
+  color: var(--faint);
+}
+.top:hover { color: var(--amber); }
+
+/* ---- 表 ---- */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0 1.25rem;
+  font-size: 0.94rem;
+  display: block;
+  overflow-x: auto;
+  border-radius: var(--radius);
+}
+th, td {
+  border-bottom: 1px solid var(--divider);
+  padding: 0.5rem 0.7rem;
+  text-align: left;
+  vertical-align: top;
+}
+th {
+  background: var(--surface1);
+  color: var(--subtext);
+  font-weight: 600;
+  white-space: nowrap;
+}
+tr:last-child td { border-bottom: 0; }
+td { background: rgba(255,255,255,0.012); }
+
+/* ---- 画面の言葉 ---- */
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.9em;
+  background: var(--surface2);
+  color: var(--amberHi);
+  padding: 0.1em 0.35em;
+  border-radius: 5px;
+  border: 1px solid var(--divider);
+  white-space: nowrap;
+}
+
+pre {
+  background: var(--slot);
+  border: 1px solid var(--divider);
+  border-radius: var(--radius);
+  padding: 0.9rem 1.1rem;
+  overflow-x: auto;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--subtext);
+}
+pre code { background: none; border: 0; padding: 0; color: inherit; }
+
+blockquote {
+  margin: 1rem 0;
+  padding: 0.1rem 0 0.1rem 1rem;
+  border-left: 3px solid var(--amber);
+  color: var(--subtext);
+}
+
+hr { border: 0; border-top: 1px solid var(--divider); margin: 3.5rem 0; }
+
+ul, ol { padding-left: 1.3rem; }
+li { margin: 0.4rem 0; }
+li::marker { color: var(--faint); }
+
+/* ---- 画面写真 ---- */
+
+figure.shot { margin: 1.75rem 0 2.25rem; }
+
+figure.shot .wrap {
+  position: relative;
+  display: inline-block;
+  max-width: 300px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 0 0 1px var(--divider), 0 8px 24px rgba(0,0,0,0.55);
+}
+figure.shot img { display: block; width: 100%; height: auto; }
+
+figure.shot .pin {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  min-width: 1.5rem; height: 1.5rem;
+  padding: 0 0.25rem;
+  border-radius: 999px;
+  background: var(--red);
+  color: #fff;
+  font: 700 0.85rem/1.5rem -apple-system, sans-serif;
+  text-align: center;
+  box-shadow: 0 0 0 2px var(--bg), 0 2px 6px rgba(0,0,0,0.7);
+}
+
+figure.shot figcaption {
+  font-size: 0.88rem;
+  color: var(--faint);
+  margin: 0.7rem 0 0;
+  max-width: 34rem;
+}
+
+figure.shot ul.pins {
+  list-style: none; padding: 0;
+  margin: 0.9rem 0 0;
+  font-size: 0.94rem;
+}
+figure.shot ul.pins li {
+  margin: 0.4rem 0;
+  padding-left: 2.1rem;
+  text-indent: -2.1rem;
+  color: var(--subtext);
+}
+figure.shot ul.pins b {
+  display: inline-block;
+  width: 1.5rem; height: 1.5rem;
+  margin-right: 0.6rem;
+  border-radius: 999px;
+  background: var(--red);
+  color: #fff;
+  font-size: 0.85rem; line-height: 1.5rem;
+  text-align: center; text-indent: 0;
+  font-weight: 700;
+}
+
+/* ---- 入口のページ ---- */
+
+.links { list-style: none; padding: 0; margin: 2.5rem 0 0; }
+.links li { margin: 0.6rem 0; }
+.links a {
+  display: block;
+  padding: 0.85rem 1.1rem;
+  background: var(--surface1);
+  border: 1px solid var(--divider);
+  border-radius: var(--radius);
+  color: var(--text);
+}
+.links a:hover {
+  background: var(--surface2);
+  border-color: var(--amber);
+  text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  body { padding: 1.75rem 1rem 4rem; }
+  h1 { font-size: 1.35rem; }
+  .brand img { width: 44px; height: 44px; }
+}
