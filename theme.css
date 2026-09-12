@@ -329,10 +329,18 @@ figure.shot ul.pins b {
     background: var(--surface2); border: 1px solid var(--divider);
     color: var(--subtext); font-size: 0.85rem; font-family: inherit; cursor: pointer; }
   .stickybar .toc { font-size: 1.05rem; line-height: 1; padding: 0.35rem 0.6rem; }
-  /* 困ったときと言語を右端に寄せ、2 つを並べます */
-  .stickybar .trouble { margin-inline-start: auto; color: var(--limit); }
-  /* 長い言語名は切り詰めます(幅 320px でも 4 つ並ぶように) */
-  .stickybar .lang select { padding: 0.3rem 0.4rem; font-size: 0.8rem; max-width: 7rem; }
+  /* 困ったときと言語を右端に寄せ、2 つを並べます。
+     **どんな幅でも横スクロールさせません** —— 言語が増えると選択肢の
+     いちばん長い名前で幅が決まるので、狭いときは困ったときの側が縮みます。 */
+  .stickybar .trouble { margin-inline-start: auto; color: var(--limit);
+                        min-width: 0; overflow: hidden;
+                        text-overflow: ellipsis; white-space: nowrap; }
+  .stickybar .lang { min-width: 0; }
+  /* 固定バーに出るので、題字の横の切り替えは細い画面では畳みます
+     (同じものが 2 つ見えるのを避け、狭い幅でのはみ出しも消える) */
+  .brand .lang { display: none; }
+  .stickybar .lang select { padding: 0.3rem 0.4rem; font-size: 0.8rem;
+                            max-width: 6.4rem; }
 }
 
 /* ---- 章 ---- */
