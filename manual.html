@@ -23,6 +23,22 @@
   blockquote { margin: 0.75rem 0; padding-left: 1rem; border-left: 3px solid #8886; color: #666; }
   hr { border: 0; border-top: 1px solid #8883; margin: 3rem 0; }
   .top { display: block; text-align: right; font-size: 0.85rem; margin-top: 1.5rem; }
+  figure.shot { margin: 1.5rem 0 2rem; }
+  figure.shot .wrap { position: relative; display: inline-block; max-width: 300px;
+                      border-radius: 14px; overflow: hidden; }
+  figure.shot img { display: block; width: 100%; height: auto; }
+  figure.shot .pin { position: absolute; transform: translate(-50%, -50%);
+                     min-width: 1.45rem; height: 1.45rem; padding: 0 0.25rem;
+                     border-radius: 999px; background: #e8442e; color: #fff;
+                     font: 700 0.85rem/1.45rem -apple-system, sans-serif;
+                     text-align: center; box-shadow: 0 0 0 2px #fff, 0 1px 4px #0007; }
+  figure.shot figcaption { font-size: 0.9rem; color: #777; margin: 0.6rem 0 0; }
+  figure.shot ul.pins { list-style: none; padding: 0; margin: 0.75rem 0 0; font-size: 0.95rem; }
+  figure.shot ul.pins li { margin: 0.35rem 0; padding-left: 2rem; text-indent: -2rem; }
+  figure.shot ul.pins b { display: inline-block; width: 1.45rem; height: 1.45rem;
+                          margin-right: 0.55rem; border-radius: 999px; background: #e8442e;
+                          color: #fff; font-size: 0.85rem; line-height: 1.45rem;
+                          text-align: center; text-indent: 0; }
 </style>
 </head>
 <body>
@@ -33,133 +49,131 @@
 <nav><a href="#c-01-地図">01 画面の地図</a> <a href="#c-02-線に出す">02 線に出す</a> <a href="#c-03-灯体を打つ">03 灯体を打つ</a> <a href="#c-04-触る">04 触る</a> <a href="#c-05-色">05 色</a> <a href="#c-06-灯体の設定">06 灯体の設定</a> <a href="#c-07-向き">07 向き</a> <a href="#c-08-場面">08 場面</a> <a href="#c-09-エフェクト">09 エフェクト</a> <a href="#c-10-守る">10 守る</a> <a href="#c-11-ショー">11 ショー</a> <a href="#c-12-MIDI">12 MIDI</a> <a href="#c-13-セッション">13 セッション</a> <a href="#c-14-困ったとき">14 困ったとき</a> <a href="#c-用語">用語</a></nav>
 
 <h1 id="c-01-地図">01 画面の地図</h1>
-<p class="sub">書いた日: 2026-09-12(iPhone、0.2 build 228 の木)</p>
-<p>kanau は画面が 1 枚です。下の 5 つのタブのうち、<strong>居場所は Home だけ</strong>。 ほかの 4 つはタブを押すと Home の上に面(シート)が上がり、 上のつまみを引き下げるか Done で閉じると Home に戻ります。</p>
-<h2>下の帯 — 5 つのタブ</h2>
+<p class="sub">書いた日: 2026-09-12(iPhone、0.2 build 233 の木)</p>
+<p>kanau は、iPhone を照明の卓にするアプリです。 画面のフェーダーを指で引くと、その分だけ灯体が明るくなったり暗くなったりします。</p>
+<p>この章では、最初に開いた画面に何があるのかを、ひととおりご案内します。 細かい操作のしかたは、それぞれの章でゆっくり説明しますので、 ここでは「どこに何があるか」だけ、つかんでいただければ十分です。</p>
+<h2>開いた画面</h2>
+<figure class="shot"><div class="wrap"><img src="img/1-home.png" alt="初めて開いたときの画面です。赤い数字は、下の説明と同じ番号です。" loading="lazy"><span class="pin" style="left:10%;top:9%">1</span><span class="pin" style="left:40%;top:9%">2</span><span class="pin" style="left:20%;top:22.5%">3</span><span class="pin" style="left:50%;top:30%">4</span><span class="pin" style="left:7%;top:38.5%">5</span><span class="pin" style="left:7%;top:55%">6</span><span class="pin" style="left:7%;top:77%">7</span><span class="pin" style="left:50%;top:94%">8</span></div><figcaption>初めて開いたときの画面です。赤い数字は、下の説明と同じ番号です。</figcaption><ul class="pins"><li><b>1</b> いま照明に信号が届いているかどうかが出ます</li><li><b>2</b> 全体の明るさ。赤いときは下がっています</li><li><b>3</b> どの灯体を画面に並べるかを選びます</li><li><b>4</b> 灯体が多いときは、ここで次のページへ送ります</li><li><b>5</b> 灯体ひとつひとつの丸。色が出ます</li><li><b>6</b> フェーダー。指で引くと明るさが変わります</li><li><b>7</b> 灯体の番号</li><li><b>8</b> 5 つのタブ。行き先を切り替えます</li></ul></figure>
+<p>kanau の画面は、この 1 枚が中心です。 下に 5 つのタブがありますが、<strong>住んでいるのは真ん中の Home だけ</strong>だと思ってください。 ほかの 4 つは、押すとこの画面の上にもう 1 枚が重なって出てくるしくみです。 用が済んだら、上のつまみを下に引き下げるか、<code>Done</code> を押すと、この画面に戻ります。</p>
+<h2>下の 5 つのタブ</h2>
 <table>
-<tr><th>タブ</th><th>何をする所</th><th>章</th></tr>
-<tr><td><strong>Scenes</strong></td><td>場面(絵)を覚える・呼ぶ</td><td>08</td></tr>
-<tr><td><strong>Patch</strong></td><td>灯体を打つ。アドレス・機種・モード・グループ</td><td>03</td></tr>
-<tr><td><strong>Home</strong></td><td>フェーダー段。<strong>ここが本体</strong></td><td>04</td></tr>
-<tr><td><strong>Effects</strong></td><td>走っているエフェクトの一覧と、その止め方</td><td>09</td></tr>
-<tr><td><strong>Settings</strong></td><td>線(OUTPUT)、DMX MONITOR、SHOWS、MIDI、SESSION、SETTINGS</td><td>02 11 12 13</td></tr>
+<tr><th>タブ</th><th>どんなときに使うか</th><th>詳しい章</th></tr>
+<tr><td><strong>Scenes</strong></td><td>作った明かりを覚えさせて、あとで呼び出します</td><td>08</td></tr>
+<tr><td><strong>Patch</strong></td><td>使う灯体を登録します。住所や機種を決める場所です</td><td>03</td></tr>
+<tr><td><strong>Home</strong></td><td>フェーダーを触る場所です。<strong>ここが本体です</strong></td><td>04</td></tr>
+<tr><td><strong>Effects</strong></td><td>いま動いている点滅や炎を見たり、止めたりします</td><td>09</td></tr>
+<tr><td><strong>Settings</strong></td><td>照明への送り方、保存したショー、MIDI などの設定です</td><td>02 11 12 13</td></tr>
 </table>
-<p>Home が真ん中なのは、片手で持った親指がいちばん届く場所だからです。 左の 2 つ(Scenes / Patch)は組む場所、右の 2 つ(Effects / Settings)は締める場所です。</p>
-<h2>上の行 — 状況行</h2>
-<p>どのタブに居ても、画面の一番上に 1 行あります。<strong>左は読むもの、右は押すもの</strong>です。</p>
-<h3>左端: 丸と経路の名前</h3>
-<p>いま何の言葉で線に出しているか。<code>ARTNET</code> / <code>SACN</code> / <code>BLUETOOTH</code>(Bluetooth だけのとき)。</p>
+<p>Home が真ん中にあるのは、片手で持ったときに親指がいちばん届きやすいからです。 左の 2 つは仕込みのときに、右の 2 つは仕上げのときに使う、という並びになっています。</p>
+<h2>一番上の行</h2>
+<p>どのタブにいても、画面の一番上に細い行が 1 本あります。 <strong>左側は読むためのもの、右側は押すためのもの</strong>、と覚えてください。</p>
+<h3>左端 — 信号が届いているか</h3>
+<p>いまどの方式で照明に信号を送っているかが出ます。 <code>ARTNET</code>、<code>SACN</code>、<code>BLUETOOTH</code> のいずれかです。 その左の丸の色が、状態を表しています。</p>
 <table>
-<tr><th>丸の色</th><th>意味</th></tr>
-<tr><td>緑</td><td>出ている</td></tr>
-<tr><td>琥珀</td><td>出ているが毎秒が少ない / 繋ぎ直している(<code>Reconnecting…</code>)。自分で直る</td></tr>
-<tr><td>赤</td><td><code>No node</code>(答える相手が居ない)/ <code>Blocked</code>(iOS が止めている)。人が動く</td></tr>
-<tr><td>灰</td><td><code>idle</code>。止まっている</td></tr>
+<tr><th>丸の色</th><th>どういう状態か</th></tr>
+<tr><td>緑</td><td>正常に送れています</td></tr>
+<tr><td>琥珀</td><td>送れてはいますが、少し不安定です。しばらく待つと自分で直ります</td></tr>
+<tr><td>赤</td><td>届いていません。何か手を打つ必要があります</td></tr>
+<tr><td>灰</td><td>止まっています</td></tr>
 </table>
-<p>赤い丸に <code>SHARED</code> または <code>WAITING</code> と IP が付いているときは、<strong>同じユニバースに別の卓が居ます</strong>。 <code>WAITING</code> はこの iPhone が黙っている側です。丸を押すと「Send anyway?」が出て、それでも送れます。 詳しくは 02 章。</p>
-<p>セッションに参加している子の端末では、ここが <code>JOINED</code> と親の名前になります(13 章)。</p>
-<h3>真ん中: 読むだけの札</h3>
+<p>赤い丸のときに <code>SHARED</code> や <code>WAITING</code> という文字と IP アドレスが付くことがあります。 これは<strong>同じ照明に、別の卓からも信号が出ている</strong>という意味です。 <code>WAITING</code> は、ぶつからないように kanau のほうが遠慮して黙っている状態です。 丸を押すと「それでも送りますか」と尋ねますので、必要なら送れます。 詳しくは 02 章をご覧ください。</p>
+<p>ほかの iPhone や iPad から参加しているときは、ここが <code>JOINED</code> と親機の名前になります(13 章)。</p>
+<h3>真ん中 — 読むための札</h3>
 <table>
-<tr><th>札</th><th>意味</th><th>押すと</th></tr>
-<tr><td><code>GM 100</code></td><td>全体マスターの値。100 未満なら<strong>赤く脈打つ</strong></td><td>全体マスターの器が開く(04 章)。<strong>長押し</strong>でその設定</td></tr>
-<tr><td><code>B.O.</code></td><td>暗転中。<code>GM</code> の札がこれに変わる</td><td><strong>押すと暗転が解ける</strong></td></tr>
-<tr><td>🔌 n(赤)</td><td>切ってあるユニバースの数。戻すのは Settings → OUTPUT</td><td>押しても消えない</td></tr>
-<tr><td>🔒 n(緑)</td><td>暗転中なのに、まだ光っている灯体の数(ロックのため。10 章)</td><td>押しても消えない</td></tr>
+<tr><th>出るもの</th><th>どういう意味か</th></tr>
+<tr><td><code>GM 100</code></td><td>全体の明るさです。100 より下がっていると<strong>赤く脈を打ちます</strong>。押すと調整する画面が開きます</td></tr>
+<tr><td><code>B.O.</code></td><td>いま暗転しています。<strong>押すと暗転が解けます</strong></td></tr>
+<tr><td>🔌 と数字(赤)</td><td>送るのを止めてある系統の数です。戻すには Settings の <code>OUTPUT</code> へ</td></tr>
+<tr><td>🔒 と数字(緑)</td><td>暗転しているのに、まだ光っている灯体の数です。鍵を掛けてあるためです(10 章)</td></tr>
 </table>
-<p>札が多い日(暗転 + 切った線)は、<code>GM</code> と数の札が 2 行に折れます。語も数字も落ちません。</p>
-<h3>右: 押せる 2 つ</h3>
+<p>表示するものが多い日は、この行が 2 段に折れます。文字が消えることはありません。</p>
+<h3>右端 — 押せる 2 つ</h3>
 <table>
-<tr><th>札</th><th>タップ</th><th>長押し</th></tr>
-<tr><td><code>BATTERY SAVE</code></td><td>入 / 切。入っている間は緑に光り、画面の縁に緑の枠</td><td>その設定(どこまで落とすか)</td></tr>
-<tr><td><code>SCREEN LOCK</code></td><td>揺れるだけ(掛かりません)</td><td><strong>0.5 秒で掛かる</strong>。解くのは覆いの紫の溝を右へなぞる</td></tr>
+<tr><th>ボタン</th><th>押すと</th><th>長く押すと</th></tr>
+<tr><td><code>BATTERY SAVE</code></td><td>入・切が切り替わります。入っている間は緑に光ります</td><td>どこまで明るさを落とすかを決められます</td></tr>
+<tr><td><code>SCREEN LOCK</code></td><td>軽く揺れるだけで、掛かりません</td><td><strong>0.5 秒押し続けると掛かります</strong>。解くときは、紫の溝を右になぞってください</td></tr>
 </table>
-<h2>Home の段(上から)</h2>
-<pre>● ARTNET        [GM 100] [BATTERY SAVE] [SCREEN LOCK]   状況行
-[ Fixtures | Groups ]  [10 | 5]          [HISTORY]
-[All 99] [窓 8] …                                       札の帯
-[‹    All Fixtures  1/10    ›]                          ページの帯
-  0    0    0 …                                         値
-  ●    ●    ● …                                         丸(…)
-  ║    ║    ║ …                                         フェーダー
-Titan Tube (FP1)                                        機種の帯
-[1] [2] [3] …                                           番号の鍵
-[⏻] [⏻] [⏻] …                                          電源
-[COLOR] [EFFECT] [PIXELS] [＋ −] [FINE]</pre>
+<p><code>SCREEN LOCK</code> が短く押しただけでは掛からないのは、本番中に指が当たっただけで 画面が固まってしまうと困るからです。</p>
+<h2>Home に並んでいるもの</h2>
+<p>上から順に見ていきます。</p>
 <table>
-<tr><th>段</th><th>何か</th></tr>
-<tr><td><code>Fixtures ｜ Groups</code></td><td>台に何を並べるか。Fixtures = 機種ごと、Groups = 自分で作ったグループ</td></tr>
-<tr><td><code>10 ｜ 5</code></td><td>フェーダーの本数。5 本にすると 1 本が太くなる</td></tr>
-<tr><td><code>HISTORY</code></td><td>戻す・進む。タップでも長押しでも一覧が開く。戻る先が無いときは揺れるだけ(10 章)</td></tr>
-<tr><td>札の帯</td><td><strong>押した札が、台に出るもの</strong>。Groups の左端の <code>All</code> は動かない(全灯体)。札を<strong>長押し</strong>すると、その札の全台の色と光量をまとめて調整</td></tr>
-<tr><td><code>CLEAR n</code></td><td>丸で灯体を選んでいるときだけ、ページの帯の左端に出る。選択を外すだけで、光は変わらない</td></tr>
-<tr><td>ページの帯</td><td><code>‹ ›</code> で 10 本(5 本)ずつ送る。真ん中はいま台に出ているものの名前</td></tr>
-<tr><td>値</td><td>0〜100。指で引いている間は画面の上に大きく出る</td></tr>
-<tr><td>丸(<code>…</code>)</td><td>灯体の色と出力で光る。<strong>タップ = 選ぶ</strong>(COLOR / EFFECT の相手)。<strong>長押し 0.45 秒 = その灯体の面</strong>(05 / 06 章)。印は下の表</td></tr>
-<tr><td>フェーダー</td><td>触った場所は結果に影響しません(04 章)</td></tr>
-<tr><td>機種の帯</td><td>同じ機種・同じモードが続く区間に名前を 1 つ。境目には縦線</td></tr>
-<tr><td>番号の鍵</td><td>灯体番号(Unit no.)またはフィクスチャー番号。どちらを出すかは Settings。<code>＋ −</code> のときは押している間だけ上限 / 下限へ(04 章)</td></tr>
-<tr><td><code>⏻</code></td><td>電源。値を保ったまま出力だけ切る。紫 = 切ってある</td></tr>
+<tr><th>場所</th><th>何をするところか</th></tr>
+<tr><td><code>Fixtures ｜ Groups</code></td><td>画面に並べる単位を選びます。<code>Fixtures</code> は機種ごと、<code>Groups</code> は自分で作ったまとまりごとです</td></tr>
+<tr><td><code>10 ｜ 5</code></td><td>一度に出すフェーダーの本数です。5 本にすると 1 本が太くなり、触りやすくなります</td></tr>
+<tr><td><code>HISTORY</code></td><td>ひとつ前に戻したり、進めたりできます。戻る先がないときは軽く揺れるだけです(10 章)</td></tr>
+<tr><td>グループの並び</td><td><strong>押したものが画面に出ます。</strong> <code>All</code> は全部の灯体で、動かせません。長く押すと、そのまとまり全部の色と明るさをまとめて変えられます</td></tr>
+<tr><td>ページの行</td><td><code>‹</code> と <code>›</code> で 10 本(または 5 本)ずつ送ります。真ん中にいま出ているものの名前が出ます</td></tr>
+<tr><td>数字</td><td>いまの明るさです。0 から 100 まで。指で引いている間は、画面の上に大きく出ます</td></tr>
+<tr><td>丸</td><td>灯体の色と明るさで光ります。軽く押すと選べて、長く押すとその灯体の詳しい画面が開きます</td></tr>
+<tr><td>フェーダー</td><td>指で引いて明るさを変えます。<strong>どこを触り始めても結果は同じ</strong>です(04 章)</td></tr>
+<tr><td>機種の名前</td><td>同じ機種が続いているところに、名前が 1 つ出ます。境目には縦の線が入ります</td></tr>
+<tr><td>番号</td><td>灯体の番号です。並んだ番号は鍵盤のようにも使えます(04 章)</td></tr>
+<tr><td><code>⏻</code></td><td>明るさはそのままに、送るのだけを止めます。止めてある間は紫になります</td></tr>
 </table>
-<h3>丸の印</h3>
+<p>灯体を選んでいるときだけ、ページの行の左端に <code>CLEAR</code> と数字が出ます。 これは<strong>選ぶのをやめるだけ</strong>のボタンで、明るさは 1 ミリも変わりません。</p>
+<h3>丸に付く印</h3>
+<p>丸にはいろいろな印が付きます。それぞれ次の意味です。</p>
 <table>
 <tr><th>印</th><th>意味</th></tr>
-<tr><td><code>…</code></td><td>長押しできる</td></tr>
-<tr><td>紫の輪 + ⏻</td><td>電源を切ってある</td></tr>
-<tr><td>緑の外輪 + 🔒</td><td>ロックしてある。GM でも B.O. でも落ちない(10 章)</td></tr>
-<tr><td>琥珀の縁</td><td>選んでいる(COLOR / EFFECT の相手)</td></tr>
-<tr><td>点滅</td><td>エフェクトが走っている</td></tr>
+<tr><td><code>…</code></td><td>長く押すと、詳しい画面が開きます</td></tr>
+<tr><td>紫の輪と <code>⏻</code></td><td>送るのを止めてあります</td></tr>
+<tr><td>緑の輪と 🔒</td><td>鍵が掛かっています。全体を下げても暗転しても、この灯体は消えません(10 章)</td></tr>
+<tr><td>琥珀の縁</td><td>いま選んでいます</td></tr>
+<tr><td>点滅している</td><td>点滅や炎などの効果が動いています</td></tr>
 </table>
-<h3>一番下の段</h3>
+<h3>一番下のボタン</h3>
 <table>
-<tr><th>ボタン</th><th>押すと</th></tr>
-<tr><td><code>COLOR</code></td><td>丸で選んだ灯体の色と光量の面。<strong>選んでいなければ押せない</strong>(灰色)。色を持たない灯体だけなら押せない</td></tr>
-<tr><td><code>EFFECT</code></td><td>丸で選んだ灯体にエフェクトを掛ける面。走っている間はボタンがその名前を名乗る(09 章)</td></tr>
-<tr><td><code>PIXELS</code></td><td>台に出ているピクセル灯体のセルを開く / 畳む。ピクセル灯体が無ければ灰色</td></tr>
-<tr><td><code>＋ −</code></td><td>ピアノの構え。押すたびに LOCK → ＋ → − → LOCK。構えている間は赤</td></tr>
-<tr><td><code>FINE</code></td><td>短押し = 入 / 切。長押し = 押している間だけ。効いている間はフェーダーが 1/10 の速さ</td></tr>
+<tr><th>ボタン</th><th>押すと何が起きるか</th></tr>
+<tr><td><code>COLOR</code></td><td>選んだ灯体の色と明るさを変える画面が開きます。<strong>灯体を選んでいないと押せません</strong></td></tr>
+<tr><td><code>EFFECT</code></td><td>選んだ灯体に、点滅や炎などの効果を掛けます。動いている間は、ボタンがその名前に変わります(09 章)</td></tr>
+<tr><td><code>PIXELS</code></td><td>細かく分かれた灯体を、1 つずつに開いたり畳んだりします</td></tr>
+<tr><td><code>＋ −</code></td><td>番号を鍵盤として使うときの構えを切り替えます。構えている間は赤くなります</td></tr>
+<tr><td><code>FINE</code></td><td>フェーダーの動きをゆっくりにします。細かく合わせたいときに使ってください</td></tr>
 </table>
-<h2>Home にぶら下がる面</h2>
+<h2>上に重なって出る画面</h2>
+<p>Home からは、いくつかの画面が上に重なって出てきます。入口をまとめました。</p>
 <table>
-<tr><th>面</th><th>入口</th><th>章</th></tr>
-<tr><td>灯体の面(色 + 設定)</td><td>丸の長押し / <code>COLOR</code> / 札の長押し</td><td>05 06</td></tr>
-<tr><td>EFFECT の面</td><td><code>EFFECT</code></td><td>09</td></tr>
-<tr><td>全体マスターの器(GM のフェーダー、B.O.)</td><td>状況行の <code>GM</code></td><td>04</td></tr>
-<tr><td>BATTERY SAVE の設定</td><td>状況行の <code>BATTERY SAVE</code> を長押し</td><td>10</td></tr>
-<tr><td>HISTORY の一覧</td><td><code>HISTORY</code></td><td>10</td></tr>
-<tr><td>ZEN(フェーダー 1 本だけの画面)</td><td>灯体の面の右上 <code>ZEN</code>(1 台のときだけ)</td><td>10</td></tr>
-<tr><td>画面ロックの覆い</td><td><code>SCREEN LOCK</code> を長押し</td><td>10</td></tr>
+<tr><th>出てくる画面</th><th>どこから開くか</th><th>詳しい章</th></tr>
+<tr><td>灯体ひとつの色と設定</td><td>丸を長く押す、<code>COLOR</code>、グループを長く押す</td><td>05 06</td></tr>
+<tr><td>効果を掛ける画面</td><td><code>EFFECT</code></td><td>09</td></tr>
+<tr><td>全体の明るさと暗転</td><td>上の行の <code>GM</code></td><td>04</td></tr>
+<tr><td>バッテリーの設定</td><td>上の行の <code>BATTERY SAVE</code> を長く押す</td><td>10</td></tr>
+<tr><td>戻す・進むの一覧</td><td><code>HISTORY</code></td><td>10</td></tr>
+<tr><td>フェーダー 1 本だけの画面</td><td>灯体の画面の右上の <code>ZEN</code></td><td>10</td></tr>
+<tr><td>画面の覆い</td><td><code>SCREEN LOCK</code> を長く押す</td><td>10</td></tr>
 </table>
-<h2>色の約束</h2>
-<p>画面の色は意味を持っています。同じ色は同じ意味です。</p>
+<h2>色の決まりごと</h2>
+<p>kanau の画面では、色そのものが意味を持っています。 <strong>同じ色は、どの画面でも同じ意味</strong>です。これだけ覚えておくと、かなり楽になります。</p>
 <table>
 <tr><th>色</th><th>意味</th></tr>
-<tr><td>琥珀</td><td>自分が選んでいる・効いているもの</td></tr>
-<tr><td>赤</td><td>人が動かないと直らないもの(GM が落ちている、暗転、線に相手が居ない、ピアノの構え)</td></tr>
-<tr><td>緑</td><td>線に出ている。ロック(何があっても出続ける)。BATTERY SAVE が入っている</td></tr>
-<tr><td>紫</td><td>止めてある(電源オフ、画面ロック)</td></tr>
-<tr><td>シアン</td><td>別の端末(セッション)</td></tr>
-<tr><td>橙</td><td>上限 / 下限に当たっている</td></tr>
-<tr><td>灰</td><td>押せない・止まっている</td></tr>
+<tr><td>琥珀</td><td>いま自分が選んでいるもの、効いているもの</td></tr>
+<tr><td>赤</td><td><strong>人が手を打たないと直らないもの。</strong> 明るさが下がっている、暗転している、信号が届いていない</td></tr>
+<tr><td>緑</td><td>きちんと送れている。鍵が掛かっている。バッテリーの節約が入っている</td></tr>
+<tr><td>紫</td><td>こちらから止めてあるもの</td></tr>
+<tr><td>シアン</td><td>ほかの端末から触られているもの</td></tr>
+<tr><td>橙</td><td>決めておいた上限か下限に当たっている</td></tr>
+<tr><td>灰</td><td>いまは押せない、または止まっている</td></tr>
 </table>
-<h2>画面の縁の枠</h2>
+<h3>画面のふちの枠</h3>
+<p>画面のふちが光ることがあります。手元を見ていなくても気づけるようにするためです。</p>
 <table>
-<tr><th>枠</th><th>意味</th></tr>
-<tr><td>赤く点滅</td><td>GM が 100 未満のまま。0 なら太く速く</td></tr>
-<tr><td>緑(光が滑る)</td><td>BATTERY SAVE が入っている</td></tr>
-<tr><td>両方</td><td>赤が外、緑が内</td></tr>
+<tr><th>ふちの様子</th><th>意味</th></tr>
+<tr><td>赤く点滅している</td><td>全体の明るさが 100 より下がったままです。0 のときは、太く速く点滅します</td></tr>
+<tr><td>緑の光が流れている</td><td>バッテリーの節約が入っています</td></tr>
+<tr><td>両方出ている</td><td>外側が赤、内側が緑です</td></tr>
 </table>
-<p>暗転中は赤の枠は出ません(<code>B.O.</code> の札が言っています)。</p>
+<p>暗転している間は、赤い枠は出ません。上の行の <code>B.O.</code> がそれを伝えているからです。</p>
 <h2>初めて開いたとき</h2>
-<p><strong>小さなデモの盤が、打たれた状態で開きます</strong>(2026-09-12 午後から。同じ日の朝に一度「空」にしたが、社名を名乗らない盤に作り直して戻した)。</p>
+<p><strong>灯体を 1 台も持っていなくても、すぐ触れます。</strong> kanau は、小さな練習用の盤をあらかじめ用意した状態で開きます。</p>
 <table>
-<tr><th>中身</th><th>何か</th></tr>
-<tr><td>灯体 24 台・3 グループ</td><td><code>KEY</code>(8)/ <code>BACK</code>(8)/ <code>FLOOR</code>(8)</td></tr>
-<tr><td>機種</td><td><code>DIMMER</code> / <code>CCT</code> / <code>RGB</code> / <code>RGBW</code> / <code>BAR</code>(4 ピクセル)。メーカーは全部 <code>Generic</code>。<strong>どれも実在の製品ではありません</strong></td></tr>
-<tr><td>仕掛けてある状態</td><td><code>GM 20</code>(赤く脈打つ。押して <code>→100</code>)/ 6 台にバッテリーの印と緑のラベル / <code>FLOOR</code> に炎のエフェクト / 場面 5 つ(<code>DIM</code> <code>COLOR</code> <code>CCT</code> <code>PIXELS</code> <code>FX</code>)</td></tr>
+<tr><th>中身</th><th>何が入っているか</th></tr>
+<tr><td>灯体 24 台</td><td>3 つのまとまりに分けてあります。<code>KEY</code> が 8 台、<code>BACK</code> が 8 台、<code>FLOOR</code> が 8 台</td></tr>
+<tr><td>機種</td><td><code>DIMMER</code> <code>CCT</code> <code>RGB</code> <code>RGBW</code> <code>BAR</code> の 5 種類です。<strong>どれも実在の製品ではありません</strong></td></tr>
+<tr><td>はじめの状態</td><td>全体の明るさが 20 まで下がっています(赤い札を押すと 100 に戻せます)。<code>FLOOR</code> で炎が揺れていて、覚えさせた明かりが 5 つ入っています</td></tr>
 </table>
-<p>灯体が無くても触れます。Settings → <code>DMX MONITOR</code> で、線に出ている値を見られます。 このデモは<strong>普通のショー</strong>なので、自分の灯体を打つときは消してよいし、Settings → SHOWS → <code>NEW SHOW</code> で別のショーを作ってもよい。 一度でも保存があれば、次からはそのショーが開きます(デモは保存が無いときだけ)。</p>
-<h2>この章で確かめていないこと</h2>
-<ul><li>丸の長押し・鍵盤・FINE の指の感覚は、シミュレータの注入した指では通らないので コードの註(<code>ChannelColumnGesture</code> / <code>FaderPickup</code>)から書いた。<strong>実機で</strong></li><li>「初めて開いたとき」のデモの盤は 2026-09-12 のコード(<code>RigDemo</code> / <code>AppState+Demo</code>)から書いた。まっさらな端末では未確認</li></ul><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-02-線に出す">02 線に出す — Settings → OUTPUT</h1>
+<p>まず、赤い <code>GM 20</code> を押して明るさを 100 に戻してみてください。 それからフェーダーを引くと、丸の色と明るさが変わるのがわかります。</p>
+<p>実際の灯体がなくても、Settings の <code>DMX MONITOR</code> を開けば、 kanau が送っている数値をその場で見られます。</p>
+<p>この練習用の盤は、<strong>中身は普通のショーと同じ</strong>です。 自分の灯体を登録するときは消してかまいませんし、 Settings の <code>SHOWS</code> から新しいショーを作ってもかまいません。 一度でも保存すれば、次からはそちらが開きます。</p><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-02-線に出す">02 線に出す — Settings → OUTPUT</h1>
 <p class="sub">書いた日: 2026-09-12(iPhone、0.2 build 228 の木)</p>
 <p>kanau は起動した瞬間から、パッチされているユニバースを <strong>1 秒に 44 回</strong>、 止めずに送り続けます。送るボタンはありません。この章で決めるのは <strong>どの言葉で(Art-Net / sACN / CRMX)、どの線から、どこへ</strong>送るかだけです。</p>
 <p>Settings タブ → <strong>OUTPUT</strong> の行を押すと開きます。</p>
@@ -244,9 +258,7 @@ Titan Tube (FP1)                                        機種の帯
 <tr><td>全部健康なのに遅い</td><td>灯体側の平滑化。Aputure Sidus のアプリと DMX の両方から入っていると混ざることがある(2026-08-25、現場の仮説)</td></tr>
 </table>
 <h2>DMX MONITOR</h2>
-<p>Settings → <code>DMX MONITOR</code> で、いま線に出ている 512 の値をユニバースごとに見られます。 1 行 10 ch、枠ごとに自分の住所。1 秒に 10 回更新。送信には影響しません。</p>
-<h2>この章で確かめていないこと</h2>
-<ul><li>Bluetooth(CRMX)、実ノードの応答、2 台目の卓の赤は、シミュレータでは網が組めないので コードの註と 2026-08 の現場の記録から書いた。<strong>実機で</strong></li><li>「ローカルネットワークの許可」の iOS 側の文言は iOS の版で変わる。ここに書いたのは 2026-09 の姿</li></ul><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-03-灯体を打つ">03 灯体を打つ — Patch</h1>
+<p>Settings → <code>DMX MONITOR</code> で、いま線に出ている 512 の値をユニバースごとに見られます。 1 行 10 ch、枠ごとに自分の住所。1 秒に 10 回更新。送信には影響しません。</p><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-03-灯体を打つ">03 灯体を打つ — Patch</h1>
 <p class="sub">書いた日: 2026-09-12(iPhone、0.2 build 228 の木)</p>
 <p>Patch タブは<strong>住所を決める場所</strong>です。灯体を足す、番号を振る、ユニバースと開始アドレスを決める、 グループを作る。色や光量はここでは触りません(Home の仕事)。</p>
 <p>開くと上から: <code>Re-patch</code> / <code>Fixtures</code> / <code>Select many</code> の帯、<code>＋ new patch</code>、<code>Patched n</code>(機種ごとの一覧)、 <code>＋ new group</code> とグループの一覧、<code>Custom fixtures</code>(自作。1 件も無ければ出ない)。</p>
@@ -315,9 +327,7 @@ Titan Tube (FP1)                                        機種の帯
 <p>DMX チャートを見ながら 1 枠ずつ作る。</p>
 <ol><li>雛形を選ぶ: <code>Build it yourself</code>(0 枠から)/ <code>Dimmer</code> / <code>CCT</code> / <code>Bi-color</code> / <code>RGB</code> / <code>HSI</code> / <code>x, y</code> / <code>CCT + HSI</code> / <code>Dimmer + RGBW</code> / <code>Full color</code> / <code>Full color + white</code> / <code>Multi-emitter</code></li><li>一覧の中でラベルを打つ(キーボードの「次へ」で下の行へ)。役・幅(8/16 bit)・初期値・実単位が要る枠だけ <code>›</code> で開く</li><li>枠番号と ch 数は位置から自動。<strong>打ちません</strong></li><li>役が分からない枠は「番号で触る」のまま(<code>unused</code>)。Channels の行から生の値で触れます(06 章)</li><li><code>CREATE</code>。保存の前に検査が走り、ERROR があれば保存できません</li></ol>
 <h3>Duplicate and edit</h3>
-<p>メーカーの機種を複製して、<strong>安全な項目だけ</strong>直して別名で保存する。 直せるのは名前・色温度の範囲・各チャンネルの正体(役 + 綴り)・ラベル・初期値。 枠の数・16 bit・レンジ・switch は触れません(番地がずれる編集は事故のもと)。 触らない項目は複製元からそのまま持ち越されます。</p>
-<h2>この章で確かめていないこと</h2>
-<ul><li>GDTF Share は網とアカウントが要るので、シミュレータでは入っていない。<strong>実機で</strong></li><li>「同梱の数」はこの木の <code>fixtures.json</code> を数えた値。取り込みのたびに増える</li></ul><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-04-触る">04 触る — Home</h1>
+<p>メーカーの機種を複製して、<strong>安全な項目だけ</strong>直して別名で保存する。 直せるのは名前・色温度の範囲・各チャンネルの正体(役 + 綴り)・ラベル・初期値。 枠の数・16 bit・レンジ・switch は触れません(番地がずれる編集は事故のもと)。 触らない項目は複製元からそのまま持ち越されます。</p><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-04-触る">04 触る — Home</h1>
 <p class="sub">書いた日: 2026-09-12(iPhone、0.2 build 228 の木)</p>
 <p>Home はフェーダーの段です。ここに書くのは<strong>指で何が起きるか</strong>だけ。 色は 05 章、灯体ごとの設定は 06 章、エフェクトは 09 章。</p>
 <h2>フェーダー</h2>
@@ -384,9 +394,7 @@ Titan Tube (FP1)                                        機種の帯
 </table>
 <p>丸は灯体の<strong>色と実出力</strong>で光ります。エフェクトが走っている間は丸も点滅します。</p>
 <h2>HISTORY</h2>
-<p>段の右上。押すと(長押しでも)一覧が開き、戻す・進むができます。戻る先が無いときは揺れるだけ。 中身は 10 章。</p>
-<h2>この章で確かめていないこと</h2>
-<ul><li>指の感覚(掴みの拡大、3pt、FINE の効き、グリッサンド)は、シミュレータの注入した指では通らないので コードから書いた。<strong>実機で</strong></li><li>数値(1.28 倍、0.12 秒、3pt、8pt、0.45 秒)は <code>TactMetrics</code> の値。実機で調整されたら書き直す</li></ul><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-05-色">05 色 — 灯体の面(上の段)</h1>
+<p>段の右上。押すと(長押しでも)一覧が開き、戻す・進むができます。戻る先が無いときは揺れるだけ。 中身は 10 章。</p><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-05-色">05 色 — 灯体の面(上の段)</h1>
 <p class="sub">書いた日: 2026-09-12(iPhone、0.2 build 228 の木)</p>
 <p>色は<strong>灯体の面</strong>で作ります。面の上半分が色と光量、下半分がその灯体の設定(06 章)。</p>
 <h2>入口は 3 つ</h2>
@@ -432,9 +440,7 @@ Titan Tube (FP1)                                        機種の帯
 <h2>色の組</h2>
 <p>同じ役が何組もあるモード(SkyPanel の <code>Gel 1 / Gel 2</code>、Titan の <code>Color 1〜4</code>)は、 組 1 が上の帯、<strong>組 2 以降が面の下の節</strong>に出ます。見出しはその枠のデータの名前(<code>Gel 2, CCT Selection</code>)。 場面(08 章)は組 2 以降を覚えません(2026-09-12 時点)。</p>
 <h2>作った色はどこに出るか</h2>
-<p>Home の丸、フェーダーの塗り、値の大表示、Patch の一覧の丸。全部この面で作った色です。</p>
-<h2>この章で確かめていないこと</h2>
-<ul><li>帯の触感(相対、掴み)と、ピッカーの「丸の周りだけ掴む」は<strong>実機で</strong></li><li>Astera の表の値は <code>GelLibraryTests</code> が公式 PDF と全数照合している(1183 件)。表そのものは開いていない</li></ul><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-06-灯体の設定">06 灯体の設定 — 灯体の面(下の段)</h1>
+<p>Home の丸、フェーダーの塗り、値の大表示、Patch の一覧の丸。全部この面で作った色です。</p><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-06-灯体の設定">06 灯体の設定 — 灯体の面(下の段)</h1>
 <p class="sub">書いた日: 2026-09-12(iPhone、0.2 build 228 の木)</p>
 <p>丸の長押し(または <code>COLOR</code> / 札の長押し)で開く面の、色の帯より下の段です。 <strong>1 台だけ</strong>のときに出るもの(色の組・Channels・Mode・Channel roles・Patch)と、 <strong>複数でもまとめて触れるもの</strong>(上下限・Lock・Switch function・Battery save)があります。 複数で値が違うときは <code>—</code> や <code>n of m</code> と正直に出ます。触れば全台がその値に揃います。</p>
 <h2>上の段(名前と ‹ ›)</h2>
@@ -483,9 +489,7 @@ Titan Tube (FP1)                                        機種の帯
 <tr><td><code>Battery save</code> / <code>Label color</code> / <code>Invert</code></td><td>ここでも直せる</td></tr>
 <tr><td><code>Delete this fixture</code></td><td><code>Done</code> の下。確認を挟む。光量・色・上下限も消え、場面からも外れる</td></tr>
 </table>
-<p>重なっている・512 を越えているときは赤で言いますが、送信は止めません。</p>
-<h2>この章で確かめていないこと</h2>
-<ul><li>命令ボタンの押し続けと、首の <code>Home</code> の押し続けは<strong>実機で</strong>(シミュレータの指では通らない)</li></ul><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-07-向き">07 向き — Pan / Tilt とビーム</h1>
+<p>重なっている・512 を越えているときは赤で言いますが、送信は止めません。</p><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-07-向き">07 向き — Pan / Tilt とビーム</h1>
 <p class="sub">書いた日: 2026-09-12(iPhone、0.2 build 228 の木)</p>
 <p>首(Pan / Tilt)、ズーム、アイリス、フロスト、ゴボは、<strong>灯体の面の Channels の行</strong>で触ります(06 章)。 向きだけの専用の面(AIM / POSITION)は 2026-09-05 に外しました。 コードは残っていますが入口はありません。</p>
 <p><strong>2026-09 時点のムービング対応は、動かせる・数字で置ける、まで</strong>です。 「舞台を見ながら手元を見ずに首を撫でる」面は、選択後の UI を熟成させる中で改めて考える、と決まっています。</p>
@@ -506,9 +510,7 @@ Titan Tube (FP1)                                        機種の帯
 <h2>ビーム(BEAM / GOBO / FOCUS の棚)</h2>
 <p>Zoom / Iris / Frost / Focus は連続の帯、ゴボやプリズムは名前で選ぶ行(プルダウン)。 どれも Channels の行の作法そのままです(06 章)。ホイールの中身は灯体データが宣言している型で棚が決まります。</p>
 <h2>動きのエフェクト</h2>
-<p>首の動き(DRIFT / PASS / ORBIT / EIGHT / BOX / SPIRAL / SEARCH / BREATHE / HANDHELD / WIND / JUMP / BALLYHOO)と ビームの動き(ZOOM PULSE / ZOOM BREATHE / IRIS PULSE / FROST BREATHE / GOBO SHAKE)は、<code>EFFECT</code> の面の <code>MOVE</code> / <code>BEAM</code> の棚から(09 章)。 首の動きは<strong>いまの向きを中心に</strong>度の差分で揺れます。光量のエフェクトと重ねられます。</p>
-<h2>この章で確かめていないこと</h2>
-<ul><li>首の帯の掴み方と <code>Home</code> の押し続けは、<strong>実機(軸を持つ灯体)で</strong></li><li>ムービングの設計書(<code>docs/superpowers/specs/2026-09-03-ムービングライト-design.md</code>)の段のうち、 どこまで出荷されているかは、この章を書いた日の木の Channels の行の姿で書いた</li></ul><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-08-場面">08 場面 — Scenes</h1>
+<p>首の動き(DRIFT / PASS / ORBIT / EIGHT / BOX / SPIRAL / SEARCH / BREATHE / HANDHELD / WIND / JUMP / BALLYHOO)と ビームの動き(ZOOM PULSE / ZOOM BREATHE / IRIS PULSE / FROST BREATHE / GOBO SHAKE)は、<code>EFFECT</code> の面の <code>MOVE</code> / <code>BEAM</code> の棚から(09 章)。 首の動きは<strong>いまの向きを中心に</strong>度の差分で揺れます。光量のエフェクトと重ねられます。</p><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-08-場面">08 場面 — Scenes</h1>
 <p class="sub">書いた日: 2026-09-12(iPhone、0.2 build 228 の木)</p>
 <p><strong>場面は「絵」です。</strong> いまの明かりを丸ごと覚えて、名前を付けて置いておくもの。 順番に流す台本(キュー)ではありません。 だから一覧は「番号順の台本」ではなく、<strong>名前で探す棚</strong>です。</p>
 <p>Scenes タブを押すと面が上がります。Home に場面の帯はありません(2026-08-25 に撤去)。</p>
@@ -549,9 +551,7 @@ Titan Tube (FP1)                                        機種の帯
 <h2>場面と HISTORY</h2>
 <p>場面を呼ぶのは HISTORY(10 章)に 1 手として載ります(場面の名前で)。 場面の中身の変更は HISTORY には出ません。</p>
 <h2>場面はショーの中</h2>
-<p>場面はショーのファイルの一部です(11 章)。ショーを書き出せば場面も付いていきます。</p>
-<h2>この章で確かめていないこと</h2>
-<ul><li>フェード中の指の割り込みは<strong>実機で</strong></li></ul><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-09-エフェクト">09 エフェクト — EFFECT の面と Effects タブ</h1>
+<p>場面はショーのファイルの一部です(11 章)。ショーを書き出せば場面も付いていきます。</p><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-09-エフェクト">09 エフェクト — EFFECT の面と Effects タブ</h1>
 <p class="sub">書いた日: 2026-09-12(iPhone、0.2 build 228 の木)</p>
 <p>kanau のエフェクトは<strong>フリッカーボックスの代わり</strong>です。点滅、炎、稲妻、回転灯、首の揺れ。 名前で選んで、つまみが 2〜3 個。波形を編集したりチェイスを組んだりする機能はありません。 灯体自身が持っているエフェクト(内蔵プログラム)は 06 章の Channels の行から。</p>
 <h2>掛ける — Home の <code>EFFECT</code></h2>
@@ -628,9 +628,7 @@ STROBE · 10.0 Hz · RELEASED             ~~~~
 </table>
 <p>何も無ければ <code>何も走っていません。</code> と <code>エフェクトはフェーダー段の EFFECT から掛けます。</code>。</p>
 <h2>場面との関係</h2>
-<p>場面(08 章)はエフェクトごと覚えます。呼べばその形で走り出します。</p>
-<h2>この章で確かめていないこと</h2>
-<ul><li>動きの見え方(点滅の質感、炎の荒さ)は<strong>実機と灯体で</strong></li><li>棚の並び、ADJUST / ARRANGE / <code>Applies to</code> の順、固定の再生機は 2026-09-12 にシミュレータの実物で確かめた(Titan Tube 4 台に BLINK を掛けて SPREAD)</li></ul><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-10-守る">10 守る — 事故を防ぐ道具</h1>
+<p>場面(08 章)はエフェクトごと覚えます。呼べばその形で走り出します。</p><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-10-守る">10 守る — 事故を防ぐ道具</h1>
 <p class="sub">書いた日: 2026-09-12(iPhone、0.2 build 228 の木)</p>
 <p>本番中に指がかすっても舞台が変わらないための道具をまとめて。</p>
 <h2>SCREEN LOCK — 画面ごと止める</h2>
@@ -671,9 +669,7 @@ STROBE · 10.0 Hz · RELEASED             ~~~~
 <tr><td>上限 / 下限</td><td>橙の斜線と印</td></tr>
 <tr><td>エフェクトが走っている</td><td><code>EFFECT</code> のボタンがその名前を名乗る。丸とフェーダーが揺れる</td></tr>
 <tr><td>別の卓が線に居る</td><td>赤い丸と IP</td></tr>
-</table>
-<h2>この章で確かめていないこと</h2>
-<ul><li>覆いの溝の手触り、HISTORY の一覧の押し心地は<strong>実機で</strong></li></ul><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-11-ショー">11 ショー — 保存と持ち出し</h1>
+</table><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-11-ショー">11 ショー — 保存と持ち出し</h1>
 <p class="sub">書いた日: 2026-09-12(iPhone、0.2 build 228 の木)</p>
 <p><strong>ショー = 現場 1 つ。</strong> パッチ、グループ、場面、いまの明かりが 1 つのファイルに入っています。 保存ボタンはありません。<strong>触るたびに保存されています。</strong></p>
 <h2>いつ保存されるか</h2>
@@ -718,9 +714,7 @@ STROBE · 10.0 Hz · RELEASED             ~~~~
 <tr><td><code>DISPLAY</code> → <code>Gels</code></td><td>ジェルの一覧を出すか(05 章)</td></tr>
 <tr><td><code>ABOUT</code></td><td>権利表記(Art-Net / 商標)</td></tr>
 </table>
-<p>文字の大きさの設定は 2026-08-19 に外されました。既定が最大で、iOS の文字サイズにも追従します。</p>
-<h2>この章で確かめていないこと</h2>
-<ul><li>AirDrop / ファイルアプリからの <code>.kanau</code> の開き方は<strong>実機で</strong>(シミュレータでは共有シートが組めない)</li></ul><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-12-MIDI">12 MIDI — つまみとボタンを割り当てる</h1>
+<p>文字の大きさの設定は 2026-08-19 に外されました。既定が最大で、iOS の文字サイズにも追従します。</p><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-12-MIDI">12 MIDI — つまみとボタンを割り当てる</h1>
 <p class="sub">書いた日: 2026-09-12(iPhone、0.2 build 228 の木)</p>
 <p>外付けの MIDI コントローラーのノブとボタンで、フェーダーと幾つかのボタンを動かせます。 <strong>2026-09-06 に作り直しが決まっています</strong>(画面のボタンを押して機材のボタンを押す <code>REC</code> 方式。)。 以下は書いた日の姿です。</p>
 <p>想定している機材(SPEC 2026-08 時点): Behringer X-Touch Mini / Compact を Standard モード・絶対値で。 MC モードでは CC が来ません。</p>
@@ -745,9 +739,7 @@ STROBE · 10.0 Hz · RELEASED             ~~~~
 <p><code>Send values back</code> を入れると、X-Touch Mini の LED リングに今の値が返ります(20 Hz、変わった時だけ)。 <strong>跨ぐまで効かないノブが「壊れたノブ」に見えないための機能</strong>で、pickup と対で意味を持ちます。相手の居ない枠は 0 が返ります。</p>
 <h2>Buttons</h2>
 <p>割り当てられる仕事(2026-09-12 時点): <code>FINE</code> / <code>PIANO</code>(構えの切り替え)/ ページ <code>‹</code> <code>›</code> / 場面ごと(押すとその場面へ)。 <code>B.O.</code> は載せません(非常停止は手元の画面に)。押した瞬間だけ効きます(離しても何も起きない)。 1 つのボタンに 2 つの仕事は付きません。消えた場面のボタンは何もしません。</p>
-<p>ロックした灯体は MIDI からも動きません。</p>
-<h2>この章で確かめていないこと</h2>
-<ul><li>実機の MIDI 機材を繋いだ動きは<strong>実機で</strong>(シミュレータに MIDI 入力は無い)</li><li><code>REC</code> 方式への作り直しが入ったら、この章は書き直し</li></ul><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-13-セッション">13 セッション — 2 台で 1 つの卓を触る</h1>
+<p>ロックした灯体は MIDI からも動きません。</p><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-13-セッション">13 セッション — 2 台で 1 つの卓を触る</h1>
 <p class="sub">書いた日: 2026-09-12(iPhone、0.2 build 228 の木)</p>
 <p>同じ Wi-Fi に居るもう 1 台の iPhone / iPad から、卓の盤面を見て、触れます。 <strong>DMX を出すのは親(Host)1 台だけ</strong>です。子(Join)は線を持たず、親に「62 にして」と申し出るだけ。 親の自動引き継ぎ(親が落ちたら子が親になる)はありません。役は人が選びます。</p>
 <h2>Settings → SESSION</h2>
@@ -780,9 +772,7 @@ STROBE · 10.0 Hz · RELEASED             ~~~~
 </table>
 <p>赤になっても<strong>勝手には抜けません</strong>。<code>Leave session</code> は人が押します。 戻ってきたときは、子の指の位置と親の値がずれていても飛びません(相対ピックアップ)。</p>
 <h2>網</h2>
-<ul><li>現場の孤立した Wi-Fi でよい。インターネットは要りません</li><li>名乗り(HELLO)と生値は各線のブロードキャスト(1 Hz / 10 Hz)、台帳は TCP。Art-Net と同じ経路で撒くので、Art-Net が届く網なら届きます</li><li>線に別の卓が居る(02 章の <code>WAITING</code>)ときの出口の 1 つが <code>Join</code>(子は線を持たない)</li></ul>
-<h2>この章で確かめていないこと</h2>
-<ul><li><strong>2 台の実機が要ります</strong>。シミュレータでは網が組めないので、全部 2026-08〜09 の設計書と実装の註から書いた。 <strong>実機 2 台で</strong></li><li>エフェクトを子から掛け外しできるかは、この木の註では断定できなかった(鏡には載る)</li></ul><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-14-困ったとき">14 困ったとき — 症状から引く</h1>
+<ul><li>現場の孤立した Wi-Fi でよい。インターネットは要りません</li><li>名乗り(HELLO)と生値は各線のブロードキャスト(1 Hz / 10 Hz)、台帳は TCP。Art-Net と同じ経路で撒くので、Art-Net が届く網なら届きます</li><li>線に別の卓が居る(02 章の <code>WAITING</code>)ときの出口の 1 つが <code>Join</code>(子は線を持たない)</li></ul><a class="top" href="#top">↑ 目次へ</a><hr><h1 id="c-14-困ったとき">14 困ったとき — 症状から引く</h1>
 <p class="sub">書いた日: 2026-09-12(iPhone、0.2 build 228 の木)。他社の機器の話は機種名と日付つきです。</p>
 <h2>光らない</h2>
 <p>上から順に。</p>
