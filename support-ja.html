@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KANAU — サポート</title>
+<link rel="icon" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/icon.png">
+<link rel="stylesheet" href="theme.css">
+</head>
+<body>
+
+<div class="hero">
+  <div class="brand"><img src="img/icon.png" alt="" width="180" height="180">
+    <div><h1>サポート</h1><p class="kicker">KANAU</p></div>
+    <a class="lang" href="support.html">English</a></div>
+  
+</div>
+
+
+<h2>問い合わせ</h2>
+<p><a href="mailto:info@kanaulabs.app">info@kanaulabs.app</a></p>
+<p>不具合の報告には、<strong>使った灯体の機種とモード</strong>、
+<strong>出力の方式</strong>(Art-Net / sACN / CRMX)、
+<strong>アプリの版番号</strong>(設定の下に出ます)を添えてください。</p>
+
+<h2>動作条件</h2>
+<ul>
+  <li>iOS 17 以降。iPhone は縦向き、iPad は横向きです。</li>
+  <li><strong>ネットワークへ出す(Art-Net / sACN)</strong> —
+      iPhone と照明ノードが同じネットワークにあることが必要です。
+      初回に「ローカルネットワーク」の許可を求めます。</li>
+  <li><strong>Bluetooth へ出す(CRMX)</strong> —
+      初回に Bluetooth の許可を求めます。</li>
+</ul>
+
+<h2>うまくいかないとき</h2>
+<p>説明書の<a href="manual-ja.html#c-14-困ったとき">困ったときの章</a>は、
+症状から探せるようにしてあります。よく聞かれるのは次の 3 つです。</p>
+<h3>光らない</h3>
+<p>設定の出力の節に <code>Destination</code>、<code>Medium</code>、
+<code>Clock</code>、<code>Touch → wire</code> が出ます。
+ここが動いていれば、アプリは送っています。</p>
+<h3>sACN でマルチキャストが使えない</h3>
+<p>iOS がマルチキャストの送信を拒むことがあります。画面に案内が出たら、
+ユニキャストに切り替えてノードのアドレスを入れてください。</p>
+<h3>灯体が一覧にない</h3>
+<p>メーカー名と機種名を添えてご連絡ください。アプリの中で自分で組むことも、
+GDTF ファイルを取り込むこともできます。</p>
+<p class="adv"><a href="index-ja.html">← 入口</a></p>
+</body>
+</html>

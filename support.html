@@ -1,88 +1,52 @@
 <!doctype html>
-<html lang="ja">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>kanau — サポート / Support</title>
+<title>KANAU — Support</title>
 <link rel="icon" href="img/favicon.png">
 <link rel="apple-touch-icon" href="img/icon.png">
 <link rel="stylesheet" href="theme.css">
 </head>
 <body>
 
-<div class="brand"><img src="img/icon.png" alt="" width="180" height="180"><h1>kanau — サポート</h1></div>
-<p class="sub">iPhone を照明卓にするアプリ</p>
+<div class="hero">
+  <div class="brand"><img src="img/icon.png" alt="" width="180" height="180">
+    <div><h1>Support</h1><p class="kicker">KANAU</p></div>
+    <a class="lang" href="support-ja.html">日本語</a></div>
+  
+</div>
 
-<h2>問い合わせ</h2>
-<p><a href="mailto:info@kanaulabs.app">info@kanaulabs.app</a></p>
-<p>不具合の報告には、<strong>使った灯体の機種とモード</strong>、
-<strong>出力の方式</strong>(Art-Net / sACN / CRMX)、
-<strong>アプリの版番号</strong>(設定の下に出ます)を添えてください。</p>
-
-<h2>動作条件</h2>
-<dl>
-  <dt>iOS 17 以降</dt>
-  <dd>iPhone は縦向き、iPad は横向きです。</dd>
-
-  <dt>ネットワークへ出す(Art-Net / sACN)</dt>
-  <dd>iPhone と照明ノードが同じネットワークに居ること。
-      初回に「ローカルネットワーク」の許可を求めます。</dd>
-
-  <dt>Bluetooth へ出す(CRMX)</dt>
-  <dd>初回に Bluetooth の許可を求めます。</dd>
-</dl>
-
-<h2>よくある詰まり</h2>
-<dl>
-  <dt>光らない</dt>
-  <dd>設定の出力の節に、<strong>送り先</strong>・<strong>経路</strong>・<strong>時計</strong>・
-      <strong>触り → 線</strong>が出ます。ここが動いていれば、アプリは送っています。</dd>
-
-  <dt>sACN でマルチキャストが使えない</dt>
-  <dd>iOS がマルチキャストの送信を拒むことがあります。
-      画面に案内が出たら、ユニキャストに切り替えてノードの IP を書いてください。</dd>
-
-  <dt>灯体が一覧に無い</dt>
-  <dd>メーカーと機種名を添えて連絡してください。自分で組む道もあります。</dd>
-</dl>
-
-<hr>
-
-<h1>kanau — Support</h1>
-<p class="sub">A lighting desk in your hand</p>
 
 <h2>Contact</h2>
 <p><a href="mailto:info@kanaulabs.app">info@kanaulabs.app</a></p>
 <p>For a bug report, please include the <strong>fixture model and mode</strong>,
 the <strong>output route</strong> (Art-Net / sACN / CRMX), and the
-<strong>app version</strong> (shown at the bottom of Settings).</p>
+<strong>app version</strong>, which is shown at the bottom of Settings.</p>
 
 <h2>Requirements</h2>
-<dl>
-  <dt>iOS 17 or later</dt>
-  <dd>iPhone is portrait; iPad is landscape.</dd>
-
-  <dt>Over the network (Art-Net / sACN)</dt>
-  <dd>The iPhone and the lighting nodes must be on the same network.
-      The app asks for Local Network permission the first time.</dd>
-
-  <dt>Over Bluetooth (CRMX)</dt>
-  <dd>The app asks for Bluetooth permission the first time.</dd>
-</dl>
+<ul>
+  <li>iOS 17 or later. iPhone is portrait; iPad is landscape.</li>
+  <li><strong>Over the network (Art-Net / sACN)</strong> — the iPhone and the
+      lighting nodes must be on the same network. The app asks for Local Network
+      permission the first time.</li>
+  <li><strong>Over Bluetooth (CRMX)</strong> — the app asks for Bluetooth
+      permission the first time.</li>
+</ul>
 
 <h2>If something is not working</h2>
-<dl>
-  <dt>No light</dt>
-  <dd>The output section in Settings shows <strong>Destination</strong>, <strong>Medium</strong>,
-      <strong>Clock</strong> and <strong>Touch → wire</strong>. If those are moving, the app is sending.</dd>
-
-  <dt>sACN multicast is refused</dt>
-  <dd>iOS can refuse multicast sending. When the screen says so, switch to unicast
-      and write the node's IP address.</dd>
-
-  <dt>A fixture is missing from the library</dt>
-  <dd>Send us the manufacturer and model name. You can also build one yourself in the app.</dd>
-</dl>
-
+<p>The <a href="manual.html#c-14-Troubleshooting">troubleshooting chapter</a> of the
+manual is arranged by symptom. These are the three we are asked about most.</p>
+<h3>No light</h3>
+<p>The output section in Settings shows <code>Destination</code>, <code>Medium</code>,
+<code>Clock</code> and <code>Touch → wire</code>. If those are moving, the app is
+sending, and the problem is further down the line.</p>
+<h3>sACN multicast is refused</h3>
+<p>iOS can refuse multicast sending. When the screen says so, switch to unicast and
+enter the node's address.</p>
+<h3>A fixture is missing from the library</h3>
+<p>Send us the manufacturer and model name. You can also build the definition
+yourself in the app, or import a GDTF file.</p>
+<p class="adv"><a href="index.html">← Home</a></p>
 </body>
 </html>
