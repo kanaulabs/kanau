@@ -1,0 +1,928 @@
+<!doctype html>
+<!-- GENERATED FILE — DO NOT EDIT DIRECTLY.
+     原稿は docs/manual-da/ 、作り直しは python3 docs/site/render-manual.py -->
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kanau Manual</title>
+<meta name="description" content="Et lysbord til film og tv, bygget til iPhone. Styr armaturer over Art-Net, sACN og CRMX, med farve, scener, effekter og diagnostik i lommen.">
+<link rel="icon" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/icon.png">
+<link rel="canonical" href="manual-da.html">
+<link rel="alternate" hreflang="en" href="manual.html">
+<link rel="alternate" hreflang="ja" href="manual-ja.html">
+<link rel="alternate" hreflang="de" href="manual-de.html">
+<link rel="alternate" hreflang="fr" href="manual-fr.html">
+<link rel="alternate" hreflang="ko" href="manual-ko.html">
+<link rel="alternate" hreflang="zh-Hans" href="manual-zh-Hans.html">
+<link rel="alternate" hreflang="zh-Hant" href="manual-zh-Hant.html">
+<link rel="alternate" hreflang="es" href="manual-es.html">
+<link rel="alternate" hreflang="pt-BR" href="manual-pt-BR.html">
+<link rel="alternate" hreflang="it" href="manual-it.html">
+<link rel="alternate" hreflang="nl" href="manual-nl.html">
+<link rel="alternate" hreflang="pl" href="manual-pl.html">
+<link rel="alternate" hreflang="cs" href="manual-cs.html">
+<link rel="alternate" hreflang="sv" href="manual-sv.html">
+<link rel="alternate" hreflang="da" href="manual-da.html">
+<link rel="alternate" hreflang="no" href="manual-no.html">
+<link rel="alternate" hreflang="fi" href="manual-fi.html">
+<link rel="alternate" hreflang="tr" href="manual-tr.html">
+<link rel="alternate" hreflang="id" href="manual-id.html">
+<link rel="alternate" hreflang="th" href="manual-th.html">
+<link rel="alternate" hreflang="ar" href="manual-ar.html">
+<link rel="alternate" hreflang="hi" href="manual-hi.html">
+<link rel="alternate" hreflang="vi" href="manual-vi.html">
+<link rel="stylesheet" href="theme.css">
+</head>
+<body>
+
+<div class="stickybar"><a class="toc" href="#top" title="Indhold">&#9776;</a><button id="qjump" type="button">Søg</button><a class="trouble" href="#troubleshooting">Fejl</a><label class="lang"><span class="vh">Sprog</span><select data-where="bar"><option value="manual.html" data-locale="en">English</option><option value="manual-ja.html" data-locale="ja">日本語</option><option value="manual-de.html" data-locale="de">Deutsch</option><option value="manual-fr.html" data-locale="fr">Français</option><option value="manual-ko.html" data-locale="ko">한국어</option><option value="manual-zh-Hans.html" data-locale="zh-Hans">简体中文</option><option value="manual-zh-Hant.html" data-locale="zh-Hant">繁體中文</option><option value="manual-es.html" data-locale="es">Español</option><option value="manual-pt-BR.html" data-locale="pt-BR">Português (Brasil)</option><option value="manual-it.html" data-locale="it">Italiano</option><option value="manual-nl.html" data-locale="nl">Nederlands</option><option value="manual-pl.html" data-locale="pl">Polski</option><option value="manual-cs.html" data-locale="cs">Čeština</option><option value="manual-sv.html" data-locale="sv">Svenska</option><option value="manual-da.html" data-locale="da" selected>Dansk</option><option value="manual-no.html" data-locale="no">Norsk</option><option value="manual-fi.html" data-locale="fi">Suomi</option><option value="manual-tr.html" data-locale="tr">Türkçe</option><option value="manual-id.html" data-locale="id">Bahasa Indonesia</option><option value="manual-th.html" data-locale="th">ไทย</option><option value="manual-ar.html" data-locale="ar">العربية</option><option value="manual-hi.html" data-locale="hi">हिन्दी</option><option value="manual-vi.html" data-locale="vi">Tiếng Việt</option></select></label></div>
+<div class="hero" id="top">
+  <div class="brand"><img src="img/icon.png" alt="" width="180" height="180">
+    <div><h1>Kanau</h1><p class="kicker">iPhone Lighting Console</p></div>
+    <label class="lang"><span class="vh">Sprog</span><select data-where="hero"><option value="manual.html" data-locale="en">English</option><option value="manual-ja.html" data-locale="ja">日本語</option><option value="manual-de.html" data-locale="de">Deutsch</option><option value="manual-fr.html" data-locale="fr">Français</option><option value="manual-ko.html" data-locale="ko">한국어</option><option value="manual-zh-Hans.html" data-locale="zh-Hans">简体中文</option><option value="manual-zh-Hant.html" data-locale="zh-Hant">繁體中文</option><option value="manual-es.html" data-locale="es">Español</option><option value="manual-pt-BR.html" data-locale="pt-BR">Português (Brasil)</option><option value="manual-it.html" data-locale="it">Italiano</option><option value="manual-nl.html" data-locale="nl">Nederlands</option><option value="manual-pl.html" data-locale="pl">Polski</option><option value="manual-cs.html" data-locale="cs">Čeština</option><option value="manual-sv.html" data-locale="sv">Svenska</option><option value="manual-da.html" data-locale="da" selected>Dansk</option><option value="manual-no.html" data-locale="no">Norsk</option><option value="manual-fi.html" data-locale="fi">Suomi</option><option value="manual-tr.html" data-locale="tr">Türkçe</option><option value="manual-id.html" data-locale="id">Bahasa Indonesia</option><option value="manual-th.html" data-locale="th">ไทย</option><option value="manual-ar.html" data-locale="ar">العربية</option><option value="manual-hi.html" data-locale="hi">हिन्दी</option><option value="manual-vi.html" data-locale="vi">Tiếng Việt</option></select></label></div>
+  <p class="sub">Et lysbord til film og tv, bygget til iPhone. Styr armaturer over Art-Net, sACN og CRMX, med farve, scener, effekter og diagnostik i lommen.</p>
+  <p class="appnote">Appen er selv på engelsk. Denne manual forklarer de engelske skærme.</p>
+  <div class="doors"><a class="door" href="#quick-start"><b>Kom i gang på 3 minutter</b><span>Uden armaturer</span></a><a class="door" href="#screen"><b>Manual</b><span>Skærme og betjening</span></a><a class="door" href="#troubleshooting"><b>Fejlfinding</b><span>Find det ud fra symptomet</span></a></div>
+  <p class="adv">Mere:
+     <a href="#patch">Fixture / GDTF</a>
+     <a href="#output">Output / Diagnostics</a>
+     <a href="#midi">MIDI</a>
+     <a href="#session">Session</a></p>
+  <p class="ver">Sidst opdateret <bdi dir="ltr">2026-09-13</bdi> ・ kontrolleret på <bdi dir="ltr">0.2 build 233</bdi></p>
+</div>
+
+<div class="findbar">
+  <input id="q" type="search" placeholder="Søg i manualen (/)" autocomplete="off"
+         aria-label="Søg i manualen">
+  <div id="results" hidden></div>
+</div>
+
+<nav><a href="#quick-start">QUICK START</a> <a href="#screen">01 Sådan læser du skærmen</a> <a href="#output">02 Sådan sender du DMX</a> <a href="#patch">03 Sådan patcher du armaturer</a> <a href="#intensity">04 Sådan sætter du intensitet</a> <a href="#color">05 Sådan sætter du farve</a> <a href="#fixture-settings">06 Indstillinger for det enkelte armatur</a> <a href="#position">07 Retning og lyskegle</a> <a href="#scenes">08 Sådan gemmer og kalder du billeder</a> <a href="#effects">09 Effekter</a> <a href="#safety">10 Låse, sikkerhed og skridtet tilbage</a> <a href="#shows">11 Sådan gemmer og deler du shows</a> <a href="#midi">12 MIDI-controllere (Advanced)</a> <a href="#session">13 Sådan arbejder du fra 2 enheder</a> <a href="#troubleshooting">14 Når noget driller</a> <a href="#glossary">Ordliste</a></nav>
+
+<section class="chapter" id="s-quick-start"><h1 id="quick-start">QUICK START — prøv Kanau på 3 minutter</h1>
+<p class="lead">Du behøver ikke et eneste armatur for at nå så langt. Navne på knapper står præcis, som de står på skærmen.</p>
+<p>Appen åbner med et øvelsesrig, hvor 24 armaturer allerede er patchet. 3 minutter her viser dig det meste af, hvordan Kanau virker.</p>
+<h3 id="quick-start--1">1. Ændr intensiteten</h3>
+<ol><li>Øverst på skærmen pulserer <code>GM 20</code> rødt. Tryk på det.</li><li>Tryk på <code>→100</code> i panelet, der åbner. Alt bliver lysere.</li><li>Luk panelet, og træk en fader op og ned. Tallet over den og farven på det runde ikon følger med.</li></ol>
+<p>En fader flytter sig efter <strong dir="auto">den strækning, din finger tilbagelægger, ikke det sted, du rørte</strong>. Hvor du begynder, betyder ingenting for resultatet.</p>
+<h3 id="quick-start--2">2. Ændr farven</h3>
+<ol><li><strong dir="auto">Tryk og hold</strong> på det runde ikon over en fader.</li><li>Farvepanelet åbner. <code>Intensity</code> sætter lysstyrken, <code>Color temperature</code> sætter hvidt, <code>RGB</code> sætter farven.</li><li>Med ‹ › øverst går du videre til det næste armatur.</li></ol>
+<p>Hvert armatur har sine egne funktioner, så de punkter, du får at se, skifter med armaturet.</p>
+<h3 id="quick-start--3">3. Hent en scene frem</h3>
+<ol><li>Åbn fanen <code>Scenes</code> nederst.</li><li>5 scener venter: <code>DIM</code>, <code>COLOR</code>, <code>CCT</code>, <code>PIXELS</code>, <code>FX</code>. Tryk på en af dem.</li><li>Tilbage på Home har fadere og farver skiftet til det billede.</li></ol>
+<p><strong dir="auto">Alt, hvad du ændrer efter et kald, bliver skrevet tilbage i den scene.</strong> Lås en scene for at beskytte den (kapitel 08).</p>
+<h3 id="quick-start--4">Se de værdier, der går ud</h3>
+<p>Selv uden armaturer tilsluttet viser <code>Settings</code> → <code>DMX MONITOR</code> de tal, Kanau rent faktisk sender. Flyt en fader, og tallene flytter sig med.</p>
+<h2 id="quick-start--5">Hvad der ligger i øvelsesrigget</h2>
+<p>Demoen har 24 armaturer fra Generic: DIMMER, CCT, RGB, RGBW og BAR (4 pixels). De ligger i 3 grupper à 8, som hedder KEY, BACK og FLOOR.</p>
+<p>Grand master står på 20, 6 armaturer er markeret til Battery save og bærer et grønt mærkat, på FLOOR kører en ildeffekt, og 5 scener er gemt. Intet af det udgiver sig for at være et virkeligt produkt.</p>
+<h2 id="quick-start--6">Tilslut rigtige armaturer</h2>
+<p>Når demoen giver mening, går du videre til dit eget grej.</p>
+<ol><li><strong dir="auto">Forbind</strong>: sæt din iPhone på samme netværk som din DMX-node. Kontrollér under <code>Settings</code> → <code>OUTPUT</code>, at Nodes answering står på 1 eller mere, og at Sending lyser grønt (kapitel 02).</li><li><strong dir="auto">Patch</strong>: <code>Patch</code> → <code>＋ new patch</code> → <code>add new fixture</code>, og sæt derefter model, DMX-tilstand, universe og adresse. Det skal passe med armaturets egne indstillinger (kapitel 03).</li><li><strong dir="auto">Byg billedet</strong>: sæt intensitet og farve på Home (kapitel 04 og 05).</li><li><strong dir="auto">Gem det</strong>: tryk på ＋ i <code>Scenes</code> for at lægge billedet væk (kapitel 08).</li></ol>
+<p>Øvelsesrigget er et helt almindeligt show. Slet det, når du patcher dine egne armaturer, eller lav et nyt med <code>Settings</code> → <code>SHOWS</code> → <code>NEW SHOW</code>.</p>
+<h2 id="quick-start--7">5 ting, det er værd at vide først</h2>
+<ol><li><strong dir="auto">Fixture Lock slår blackout.</strong> Et låst armatur bliver ved med at lyse gennem B.O. (kapitel 10).</li><li><strong dir="auto">En kaldt scene opdaterer sig selv, mens du arbejder.</strong> Lås dem, der skal stå urørt (kapitel 08).</li><li><strong dir="auto">Der findes 3 slags lås.</strong> Fixture Lock holder på udgangen, Scene Lock beskytter den gemte scene, Screen Lock stopper utilsigtede berøringer (kapitel 10).</li><li><strong dir="auto">Når grand master står under 100, pulserer skærmkanten rødt.</strong> Ser billedet mørkt ud, så kig der først.</li><li><strong dir="auto">Sender et andet lysbord til de samme armaturer, ser du <code>WAITING</code> eller <code>SHARED</code>.</strong> Begge dele forklares i kapitel 02.</li></ol>
+<div class="box warning"><b>WARNING</b><p>Et armatur med Lock slået til går ikke ud, når du trykker på blackout, og det går ikke ud, når du trækker grand master i bund. Kontrollér, at ingen låse står tilbage, før I optager. Antallet af armaturer, der stadig lyser under et blackout, står ved siden af den grønne 🔒 øverst på skærmen.</p></div>
+<div class="next"><b>Næste</b><ul><li>Hvor alting ligger på skærmen → kapitel 01</li><li>Tilslutning af rigtige armaturer → kapitel 02</li><li>Sådan gemmer du billeder → kapitel 08</li></ul></div><a class="top" href="#top">↑ Indhold</a></section>
+<section class="chapter" id="s-screen"><h1 id="screen">01 Sådan læser du skærmen</h1>
+<p class="lead">Hvad der ligger på Home-skærmen, oppefra og ned, og hvordan du læser det, når noget ser forkert ud.</p>
+<figure class="shot"><div class="wrap" dir="ltr"><img src="img/1-home.png" alt="Home ved første start. De røde tal svarer til listen herunder." width="294" height="640" loading="lazy"><span class="pin" style="left:10%;top:9%">1</span><span class="pin" style="left:40%;top:9%">2</span><span class="pin" style="left:20%;top:22.5%">3</span><span class="pin" style="left:50%;top:30%">4</span><span class="pin" style="left:7%;top:38.5%">5</span><span class="pin" style="left:7%;top:55%">6</span><span class="pin" style="left:7%;top:77%">7</span><span class="pin" style="left:50%;top:94%">8</span></div><figcaption>Home ved første start. De røde tal svarer til listen herunder.</figcaption><ul class="pins"><li><b>1</b> Protokol og forbindelsestilstand</li><li><b>2</b> Grand master (GM)</li><li><b>3</b> Valg af, hvilke armaturer og grupper der vises</li><li><b>4</b> Skift mellem sider</li><li><b>5</b> Det runde armaturikon</li><li><b>6</b> Faderen</li><li><b>7</b> Nummerknappen</li><li><b>8</b> De 5 faner</li></ul></figure>
+<h2 id="screen--1">Lær disse 7 først</h2>
+<p>Før de detaljerede tabeller: det her er de eneste steder, du behøver at kende.</p>
+<table>
+<tr><th>Sted</th><th>Hvad det gør</th></tr>
+<tr><td>GM</td><td>Samlet lysstyrke, øverst på skærmen</td></tr>
+<tr><td>Fixtures / Groups</td><td>Vælger, hvilke armaturer der vises</td></tr>
+<tr><td>Fader</td><td>Sætter intensiteten</td></tr>
+<tr><td>Scenes</td><td>Gemmer billeder og henter dem frem igen</td></tr>
+<tr><td>Patch</td><td>Registrerer armaturer</td></tr>
+<tr><td>Effects</td><td>Viser og stopper effekter, der kører</td></tr>
+<tr><td>Settings</td><td>Udgang, shows, MIDI, session</td></tr>
+</table>
+<p>Alt herunder er detaljer.</p>
+<h2 id="screen--2">De 5 faner</h2>
+<p>Home er der, hvor du arbejder. Trykker du på en anden fane, åbner et panel oven på den. Træk håndtaget øverst nedad, eller tryk på Done, for at komme tilbage til Home.</p>
+<table>
+<tr><th>Fane</th><th>Hvad den er til</th><th>Se</th></tr>
+<tr><td>Scenes</td><td>Gem og kald billeder frem</td><td>Kapitel 08</td></tr>
+<tr><td>Patch</td><td>Armaturer, adresser, tilstande, grupper</td><td>Kapitel 03</td></tr>
+<tr><td>Home</td><td>Sæt intensitet med fadere</td><td>Kapitel 04</td></tr>
+<tr><td>Effects</td><td>Vis, justér og stop effekter</td><td>Kapitel 09</td></tr>
+<tr><td>Settings</td><td>DMX-udgang, shows, MIDI, session, indstillinger</td><td>Kapitel 02, 11–13</td></tr>
+</table>
+<h2 id="screen--3">Statuslinjen</h2>
+<p>Til venstre står protokollen og forbindelsestilstanden. ARTNET er Art-Net, SACN er sACN, BLUETOOTH betyder, at der kun sendes over Bluetooth.</p>
+<table>
+<tr><th>Vist</th><th>Betydning</th></tr>
+<tr><td>Grøn prik</td><td>Sender</td></tr>
+<tr><td>Ravgul prik</td><td>Sat ned i tempo, eller forbinder igen (Reconnecting…)</td></tr>
+<tr><td>Rød prik, No node</td><td>Ingen svarer</td></tr>
+<tr><td>Rød prik, Blocked</td><td>iOS stopper trafikken</td></tr>
+<tr><td>Grå prik, idle</td><td>Standset</td></tr>
+<tr><td>WAITING og en IP</td><td>Et andet lysbord blev fundet, så dette holder igen</td></tr>
+<tr><td>SHARED og en IP</td><td>Et andet lysbord sender til samme universe. Dette sender stadig med</td></tr>
+<tr><td>JOINED og et navn</td><td>I en session. DMX går ud fra værten</td></tr>
+</table>
+<p>En grøn prik er ikke bevis for, at armaturet har modtaget noget. Kapitel 02 forklarer, hvordan du kontrollerer det; kapitel 14 handler om, hvad du gør, når det går galt.</p>
+<p>I midten og til højre i linjen ligger disse.</p>
+<table>
+<tr><th>Punkt</th><th>Tryk</th><th>Hold, eller bemærk</th></tr>
+<tr><td>GM 100</td><td>Åbner panelet for grand master</td><td>Hold for dens indstillinger. Pulserer rødt under 100</td></tr>
+<tr><td>B.O.</td><td>Fjerner blackout</td><td>Erstatter GM, mens der er blackout</td></tr>
+<tr><td>🔌 n (rød)</td><td>Ingenting</td><td>Universer slået fra. Slå dem til igen under Settings → OUTPUT</td></tr>
+<tr><td>🔒 n (grøn)</td><td>Ingenting</td><td>Låste armaturer, der stadig lyser under et blackout</td></tr>
+<tr><td>BATTERY SAVE</td><td>Slår den til og fra</td><td>Hold for at sætte mængden og fadetiden</td></tr>
+<tr><td>SCREEN LOCK</td><td>Låser ikke</td><td>Hold i 0.5 sekunder for at låse skærmen</td></tr>
+</table>
+<h2 id="screen--4">Delene på Home</h2>
+<table>
+<tr><th>Punkt</th><th>Sådan bruger du det</th></tr>
+<tr><td>Fixtures / Groups</td><td>Skifter mellem visning efter model og visning efter gruppe</td></tr>
+<tr><td>10 / 5</td><td>Fadere på en side. 5 gør hver af dem bredere</td></tr>
+<tr><td>HISTORY</td><td>Åbner listen over tidligere tilstande</td></tr>
+<tr><td>Model- og gruppeknapper</td><td>Tryk for at vise de armaturer. Hold for at sætte farve og intensitet for dem alle</td></tr>
+<tr><td>CLEAR n</td><td>Rydder markeringen. Lyset ændrer sig ikke</td></tr>
+<tr><td>‹ / ›</td><td>Skifter mellem sider</td></tr>
+<tr><td>Tal</td><td>Intensitet fra 0 til 100. Vises stort øverst, mens du trækker</td></tr>
+<tr><td>Rundt armaturikon (…)</td><td>Tryk for at markere. <strong dir="auto">Hold</strong> for at åbne panelet for det armatur</td></tr>
+<tr><td>Fader</td><td>Træk op og ned for at sætte intensiteten</td></tr>
+<tr><td>Modelnavn</td><td>Markerer en række af samme model og tilstand</td></tr>
+<tr><td>Nummerknap</td><td>Armaturets nummer. I klavertilstand ændrer den intensiteten, så længe du holder</td></tr>
+<tr><td>⏻</td><td>Slår udgangen fra og til, men beholder værdien</td></tr>
+<tr><td>COLOR</td><td>Sætter farve og intensitet for de markerede armaturer</td></tr>
+<tr><td>EFFECT</td><td>Lægger en effekt på de markerede armaturer</td></tr>
+<tr><td>PIXELS</td><td>Folder cellerne i pixelarmaturer ud og ind</td></tr>
+<tr><td>＋ −</td><td>Skifter klavertilstand rundt: LOCK → ＋ → −</td></tr>
+<tr><td>FINE</td><td>Skifter følsomhed rundt: normal → FINE (1/10) → FINE+ (1/100)</td></tr>
+</table>
+<p>COLOR er utilgængelig, når intet er markeret, og ved armaturer uden farve. EFFECT kræver en markering. PIXELS kræver, at der er et pixelarmatur på siden.</p>
+<h2 id="screen--5">Farver og mærker</h2>
+<table>
+<tr><th>Farve eller mærke</th><th>Betydning</th></tr>
+<tr><td>Ravgul</td><td>Markeret, eller aktiv</td></tr>
+<tr><td>Rød</td><td>Blackout, lav grand master, et netværksproblem, klavertilstand. Noget, du skal se efter</td></tr>
+<tr><td>Grøn</td><td>Sender. Fixture Lock. BATTERY SAVE slået til</td></tr>
+<tr><td>Lilla</td><td>Udgangen slået fra, eller skærmen låst</td></tr>
+<tr><td>Cyan</td><td>Bliver betjent af den anden enhed i en session</td></tr>
+<tr><td>Orange</td><td>Ved en grænse, du selv har sat</td></tr>
+<tr><td>Grå</td><td>Utilgængelig, eller standset</td></tr>
+</table>
+<p>Det runde ikon bærer armaturets farve og dets virkelige udgang. En markering viser en ravgul kant, en frakoblet udgang en lilla ring og ⏻, en lås en grøn yderring og 🔒. En effekt, der kører, får det til at bevæge sig.</p>
+<p>En rød puls langs skærmkanten betyder, at grand master står under 100. En grøn kant betyder, at BATTERY SAVE er slået til. Med begge dele ligger rød yderst og grøn inderst. Under et blackout erstattes den røde kant af B.O. i statuslinjen.</p>
+<div class="next"><b>Næste</b><ul><li>Hvordan fadere føles → kapitel 04</li><li>Sådan sætter du farve → kapitel 05</li><li>Der tænder ikke noget → kapitel 14</li></ul></div><a class="top" href="#top">↑ Indhold</a></section>
+<section class="chapter" id="s-output"><h1 id="output">02 Sådan sender du DMX — OUTPUT</h1>
+<p class="lead">Sådan sætter du forbindelsen op til dit lysgrej, og sådan kontrollerer du, at det når frem.</p>
+<figure class="shot"><div class="wrap" dir="ltr"><img src="img/6-output.png" alt="Settings → OUTPUT. De røde tal svarer til listen herunder." width="640" height="1334" loading="lazy"><span class="pin" style="left:26%;top:22.7%">1</span><span class="pin" style="left:14%;top:32.6%">2</span><span class="pin" style="left:88%;top:32.6%">3</span><span class="pin" style="left:26%;top:79.5%">4</span><span class="pin" style="left:50%;top:96.7%">5</span></div><figcaption>Settings → OUTPUT. De røde tal svarer til listen herunder.</figcaption><ul class="pins"><li><b>1</b> Protokol. Art-Net eller sACN, det ene eller det andet</li><li><b>2</b> Netværk. Der sendes på dem, der er markeret</li><li><b>3</b> Hvor mange noder der svarede. no reply betyder, at ingen blev fundet</li><li><b>4</b> Destination. AUTO passer til de fleste rigge</li><li><b>5</b> Søg efter noder igen</li></ul></figure>
+<h2 id="output--1">Første forbindelse</h2>
+<h3 id="output--2">En enkelt Art-Net-node</h3>
+<ol><li>Sæt din iPhone på samme Wi-Fi eller kablede netværk som noden.</li><li>Åbn Settings → OUTPUT.</li><li>Vælg Art-Net og AUTO. Begge dele er standard.</li><li>Kontrollér, at Nodes answering står på 1 eller mere, og at Sending lyser grønt.</li><li>Flyt en fader på Home, og se armaturet svare.</li></ol>
+<p>Kanau sender hvert patchet universe uafbrudt, normalt med 44 Hz. Der er ingen startknap. Udsendelsen kan sættes på pause eller standse, når der opdages et andet lysbord, når netværksindstillingerne ændrer sig, eller når iOS nægter tilladelse.</p>
+<h2 id="output--3">Indstillingerne i detaljer</h2>
+<h3 id="output--4">Protokol og netværk</h3>
+<p>Art-Net og sACN udelukker hinanden: vælg én af dem. CRMX over Bluetooth kører ved siden af begge.</p>
+<p>Network viser dine Wi-Fi-, Ethernet- og Hotspot-forbindelser med deres adresser, og hvor mange noder der svarede på hver af dem.</p>
+<ul><li>Som standard bruges hvert tilgængeligt netværk.</li><li>Står alle valgt, og du trykker på ét, bliver kun det ene tilbage. Derefter slår hvert tryk ét til eller fra.</li><li>Slår du dem alle fra, går der intet ud over netværket. Bluetooth sender videre.</li><li>En forbindelse mærket no address kan ikke vælges.</li></ul>
+<p>Bruger du kabel og Wi-Fi sammen, så kontrollér, at begge står på listen.</p>
+<h3 id="output--5">Valg af destination</h3>
+<table>
+<tr><th>Indstilling</th><th>Hvor der sendes hen</th><th>Hvornår du bruger den</th></tr>
+<tr><td>AUTO (Art-Net)</td><td>Unicast til de noder, der svarede, plus én broadcast i sekundet på hvert netværk. Kun broadcast, hvis ingen svarede</td><td>Det normale valg</td></tr>
+<tr><td>Broadcast (Art-Net)</td><td>Hver pakke til hvert netværks subnet</td><td>Når en node melder en forkert adresse, og AUTO er længe om at opdatere</td></tr>
+<tr><td>Unicast</td><td>Direkte til de adresser, du indtaster</td><td>Når broadcast ikke når frem, eller du vil udpege modtageren</td></tr>
+<tr><td>255.255.255.255 (Art-Net)</td><td>Broadcast på segmentet. Går ikke gennem en router</td><td>Når adresserne ikke passer sammen, og almindelig broadcast svigter. iOS kan blokere den</td></tr>
+<tr><td>Multicast (sACN)</td><td>Multicast-adressen for hvert universe</td><td>Standard for sACN</td></tr>
+</table>
+<p>Med Unicast indtaster du nodens adresse og trykker på Add. Er der intet indtastet, får du No node IPs entered., og der sendes intet. Hvert universe går til hver adresse, du indtaster.</p>
+<p>Står Nodes answering på 1 eller mere med AUTO, men armaturerne opdaterer sig kun cirka én gang i sekundet, så se efter, om noden melder en forkert adresse for sig selv. Kig på Destination, og prøv Broadcast. Kapitel 14 gennemgår de øvrige årsager til forsinkelse.</p>
+<h3 id="output--6">RESCAN</h3>
+<p>Trykker du på RESCAN under Art-Net, opdateres listen over noder. Brug den, når du har tilføjet grej, fjernet grej eller ændret en adresse. Lader du den være, dukker en ny node op inden for cirka 3 sekunder, og en fjernet forsvinder efter cirka 10.</p>
+<p>Udsendelsen fortsætter, mens der søges. RESCAN er utilgængelig, når der ikke er noget brugbart netværk.</p>
+<h3 id="output--7">Tilladelser i iOS</h3>
+<p>Et rødt banner med teksten iOS is blocking this. betyder én af disse ting.</p>
+<ul><li><strong dir="auto">Lokalt netværk</strong>: slå iPhone Settings → Kanau → Local Network til.</li><li><strong dir="auto">sACN-multicast</strong>: ser du iOS blocked multicast., så skift til Unicast og indtast nodernes adresser. Rettigheden til multicast gives kun til versionerne fra TestFlight og App Store, ikke til en udviklingsversion.</li></ul>
+<h3 id="output--8">Universer og Art-Net-nummerering</h3>
+<p>Universes viser hvert patchet universe med sit antal armaturer, hvor mange der lyser, og en ON/OFF-kontakt.</p>
+<div class="box important"><b>IMPORTANT</b><p>OFF stopper <strong dir="auto">ikke</strong> udsendelsen. Der sendes nuller videre til det universe, så en modtager ikke kan blive stående med sine sidste værdier og lyse. Antallet af universer, der er slået fra, står ved siden af 🔌 øverst på skærmen.</p></div>
+<p>Vil din node hellere have Net / Sub-Net / Universe end ét enkelt tal, så slå Settings → SETTINGS → Art-Net → Net / Sub / Uni til. Sammenhængen er <strong dir="auto">Net × 256 + Sub × 16 + Uni</strong>.</p>
+<p>sACN-prioritet kan være 0, 100 eller 200. Standard er 100. Sender flere kilder til samme universe, følger modtageren den højeste prioritet.</p>
+<h3 id="output--9">CRMX over Bluetooth</h3>
+<ol><li>Slå Bluetooth til under Settings → OUTPUT → CRMX (Bluetooth).</li><li>Giv Bluetooth lov, første gang iOS spørger.</li><li>Vælg en sender på listen. Trykker du på den igen, afbrydes forbindelsen.</li></ol>
+<p>Den sender, du vælger, bærer universe 1 (U1). Næste gang forbinder den til den samme, når du slår Bluetooth til.</p>
+<p>Sender du samme universe til samme armatur både over netværket og over Bluetooth, kan det flimre. Læs advarslen i afsnittet CRMX, og slå den ene vej fra. Kanau vælger ikke for dig.</p>
+<p>Nægter en sender at tage Art-Net, efter at du har slået Bluetooth fra, så kontrollér dens egen Bluetooth-indstilling og genstart den. På Aputure Sidus Four skal du også kontrollere indstillingen Sidus BT på selve enheden.</p>
+<h3 id="output--10">Når der findes et andet lysbord</h3>
+<table>
+<tr><th>Vist</th><th>Hvad det betyder, og hvad du gør</th></tr>
+<tr><td>WAITING + IP</td><td>Et andet lysbord sendte allerede, da dette startede, så dette holder igen. Stop det andet, eller tryk på beskeden og vælg Send anyway? → Send. Er det andet en Kanau-vært, kan du i stedet gå med i dens session</td></tr>
+<tr><td>SHARED + IP</td><td>Et andet lysbord dukkede op, efter at dette var startet. Udsendelsen fortsætter, så stop en af dem, hvis du har brug for det</td></tr>
+</table>
+<p>Starter 2 enheder samtidig, og begge holder igen, begynder den med den laveste adresse at sende igen.</p>
+<h2 id="output--11">DMX Diagnostics — læs, hvad der sker</h2>
+<p>Den nederste halvdel af OUTPUT er der <strong dir="auto">for at vise dig, hvor tingene gik i stå</strong>. Det er ikke et sæt indstillinger. Er udgangen langsom eller fraværende, så læs oppefra og ned (kapitel 14).</p>
+<table>
+<tr><th>Punkt</th><th>Sådan læser du det</th></tr>
+<tr><td>Destination</td><td>Hvor det virkelig går hen. ↦ efter en adresse betyder unicast til en node, der svarede</td></tr>
+<tr><td>Medium</td><td>De forbindelser, der er i brug, for eksempel wi-fi + ethernet</td></tr>
+<tr><td>Sending</td><td>Pakker i det sidste sekund. Omkring 44 er normalt. nothing betyder, at der ikke gik nogen ud</td></tr>
+<tr><td>Clock</td><td>Det værste hul mellem to udsendelser. Omkring 23 ms er normalt. Over 100 ms peger på telefonen</td></tr>
+<tr><td>Touch → wire</td><td>Fra din finger til pakken. Omkring 25 ms er normalt</td></tr>
+<tr><td>Nodes answering</td><td>Hvor mange der svarede, med navn, adresse, forbindelse og rundtur. Tallet i parentes er det værste i de sidste 10 sekunder</td></tr>
+<tr><td>Type these into the node</td><td>De Net / Sub / Uni, du skal indtaste på noden, når den visning er slået til</td></tr>
+</table>
+<p>De indsnævrer problemet; de er ikke bevis for, at det lykkedes. Sending kan lyse grønt, mens en uoverensstemmelse eller en fejl i den anden ende holder armaturerne mørke. Grej, der ikke svarer på polling, står med 0 under Nodes answering, selv mens det modtager.</p>
+<h3 id="output--12">DMX MONITOR</h3>
+<p>Settings → DMX MONITOR viser alle 512 kanaler i hvert universe, som de går ud. Den opdaterer 10 gange i sekundet og påvirker ikke udsendelsen.</p>
+<div class="next"><b>Næste</b><ul><li>Sådan patcher du armaturer → kapitel 03</li><li>Der kommer intet frem, eller det er langsomt → kapitel 14</li></ul></div><a class="top" href="#top">↑ Indhold</a></section>
+<section class="chapter" id="s-patch"><h1 id="patch">03 Sådan patcher du armaturer — Patch</h1>
+<p class="lead">Registrér de armaturer, du bruger, og sæt model, DMX-tilstand, universe, adresse, nummer og grupper.</p>
+<p>Intensitet og farve sættes på Home (kapitel 04 og 05).</p>
+<figure class="shot"><div class="wrap" dir="ltr"><img src="img/4-patch.png" alt="Patch-skærmen. Patchede armaturer er samlet efter model og tilstand." width="294" height="640" loading="lazy"></div><figcaption>Patch-skærmen. Patchede armaturer er samlet efter model og tilstand.</figcaption></figure>
+<h2 id="patch--1">Sådan tilføjer du armaturer</h2>
+<ol><li>Åbn Patch → ＋ new patch, og tryk på add new fixture for at få felterne frem.</li><li>Vælg Manufacturer → Fixture → Mode. Tilstanden skal passe med den, der er sat på selve armaturet.</li><li>Sæt antallet, universe og startadressen.</li><li>Kontrollér området og eventuelle advarsler, og tryk så på Add. Det gemmes, i takt med at det tilføjes.</li></ol>
+<table>
+<tr><th>Felt</th><th>Hvad det er</th></tr>
+<tr><td>Favourites</td><td>Sæt en stjerne ved en model for at nå den direkte næste gang</td></tr>
+<tr><td>Name</td><td>Det viste navn. Står som modellen og deles af alle armaturer af den model</td></tr>
+<tr><td>Fixture number</td><td>Det nummer, du kalder den ved på gulvet. Må stå tomt. Begynder ved det højeste i brug plus 1</td></tr>
+<tr><td>Label</td><td>Et kort mærke til visningen. Bruger en standard, hvis det står tomt</td></tr>
+<tr><td>How many</td><td>Op til 4,096</td></tr>
+<tr><td>Universe / Address</td><td>Står som U1 / 1. Skifter du universe, stilles adressen tilbage til 1. U0 er tilladt</td></tr>
+<tr><td>Offset</td><td>Afstanden mellem armaturerne. Udfyldes fra tilstandens antal kanaler</td></tr>
+<tr><td>Gap</td><td>Ekstra kanaler, der skal stå frie mellem armaturerne</td></tr>
+<tr><td>Battery save</td><td>Markerer de nye armaturer til BATTERY SAVE</td></tr>
+<tr><td>Label color</td><td>Baggrunden bag nummeret. 7 farver, eller ingen</td></tr>
+<tr><td>Map</td><td>Opbygningen med 512 kanaler. Træk og slip for at sætte startadressen</td></tr>
+</table>
+<p>Hvert armatur efter det første begynder ved det forrige armaturs startadresse plus Offset og Gap. Alt ud over 512 går videre i det næste universe. Er Offset mindre end tilstandens antal kanaler, kommer der en advarsel, men du kan køre videre.</p>
+<p>Bagefter får du et resultat som Added 3 × Titan Tube — U1 1–15. Already patched lader dig tilføje flere af en model, du allerede har. Patched viser den aktuelle opbygning.</p>
+<h2 id="patch--2">2 slags numre</h2>
+<table>
+<tr><th>Nummer</th><th>Hvad det er</th></tr>
+<tr><td>Unit no.</td><td>Et løbenummer inden for modellen. Tildeles for dig</td></tr>
+<tr><td>Fixture number</td><td>Det nummer, du bruger på gulvet. Det sætter du selv</td></tr>
+</table>
+<p>Hvilket af dem Home viser, sættes under Settings → SETTINGS → Fixture numbers → Show the fixture number. Unit no. er standard. Gentagne fixture numbers giver en advarsel, men er tilladt.</p>
+<h2 id="patch--3">Modeller og tilstande</h2>
+<p>Denne version kommer med <strong dir="auto">45 producenter, 578 armaturer og 11,347 tilstande</strong>. Er noget ikke i biblioteket, så brug definitionerne under Generic eller Custom fixtures.</p>
+<p>Generic rummer Dimmer, Dimmer 16-bit, Bi-color, CCT, RGB, RGBW, Dimmer + RGB, Dimmer + RGBW, Bulb og Desk lamp.</p>
+<ul><li><strong dir="auto">PROVISIONAL</strong> (Advanced): en pladsholdertilstand, der bruges, hvor DMX-skemaet ikke er gennemarbejdet. Den sender intensitet på kanal 1 og ellers intet.</li><li><strong dir="auto">Tilstande uden dæmperkanal</strong>: faderen trækker farvekanalerne samlet og virker som en virtuel dæmper.</li></ul>
+<h2 id="patch--4">Sådan ændrer du patchede armaturer</h2>
+<p>Patched viser armaturerne efter model og tilstand. Tryk på en overskrift for at folde den sammen. Tryk på et armaturs række for at åbne dets patchindstillinger.</p>
+<p>⚠ markerer en overlappende adresse eller en række, der går ud over kanal 512. Udsendelsen fortsætter, mens mærket står, så gå indstillingerne efter. n fixture data problems handler om fejl fundet under indlæsningen af armaturdata; tryk på det for at se detaljerne.</p>
+<p>At arbejde i denne liste ændrer ikke, hvilke armaturer Home viser.</p>
+<h2 id="patch--5">Sådan ændrer du mange på én gang</h2>
+<p>Tryk på Select many, og vælg armaturerne. ✓ på en modelrække tager hele den model.</p>
+<table>
+<tr><th>Handling</th><th>Hvad den gør</th></tr>
+<tr><td>Select all / Select none</td><td>Tager eller rydder alting, også sammenfoldede rækker</td></tr>
+<tr><td>Name</td><td>Nummererer enden af navnet i den rækkefølge, du valgte</td></tr>
+<tr><td>Number</td><td>Sætter fixture numbers i den rækkefølge, du valgte</td></tr>
+<tr><td>Address</td><td>Lægger dem ud igen ud fra et universe, en startadresse og et mellemrum</td></tr>
+<tr><td>Battery</td><td>Markerer dem til BATTERY SAVE eller fjerner markeringen</td></tr>
+<tr><td>New group</td><td>Bygger en gruppe ud af markeringen</td></tr>
+<tr><td>Delete</td><td>Fjerner dem. Se tallet efter, før du bekræfter</td></tr>
+</table>
+<p>Sletter du et armatur, forsvinder også dets intensitet, farve og grænser, og det tages ud af hver eneste scene. Sletter du inde fra en gruppe, fjernes det kun fra den gruppe; selve armaturet bliver.</p>
+<h2 id="patch--6">Re-patch — flyt ind i ledig plads</h2>
+<ol><li>Åbn Patch → Re-patch.</li><li>Vælg det armatur, der skal flyttes, i listen ordnet efter adresse.</li><li>Tryk på et ledigt område. Det flytter til begyndelsen af det.</li></ol>
+<p>Kun områder, der er store nok, bliver tilbudt. Armaturer, der overlapper, vises med rødt.</p>
+<h2 id="patch--7">Sådan bygger du grupper</h2>
+<ol><li>Tryk på ＋ new group, og giv den et navn.</li><li>Vælg armaturerne i den rækkefølge, du vil have dem på Home.</li><li>Tryk på CREATE.</li></ol>
+<p>Et armatur kan være med i flere grupper. Det kopieres ikke: ændrer du det fra en hvilken som helst gruppe, ændrer du det samme armatur. Lægger du det i en gruppe, bliver det liggende i All.</p>
+<p>Trykker du på et gruppenavn, kan du sætte navnet, se antallet og adresseområdet og opbygningen, ombytte rækkefølgen eller slette gruppen. Edit group — add &amp; reorder tilføjer og omrokerer armaturer; Add to an existing group lægger den aktuelle markering i en gruppe, du allerede har.</p>
+<p>Om Patch viser en All-række, sættes under Settings → SETTINGS → Groups → Show the All row.</p>
+<h2 id="patch--8">Armaturer uden for biblioteket (Advanced)</h2>
+<p>Custom fixtures rummer de definitioner, du selv lægger ind. De er til rådighed i hvert show. Sletter du en definition, rører det ikke armaturer, der allerede er patchet fra den.</p>
+<h3 id="patch--9">Fra GDTF Share</h3>
+<ol><li>Åbn ＋ Browse GDTF Share, og tryk SIGN IN med din GDTF Share-konto.</li><li>Tryk REFRESH for at opdatere listen, og vælg så producent, armatur, revision og tilstand. Search dækker hver producent.</li><li>Læs importrapporten, og vælg SAVE, SAVE &amp; EDIT eller SAVE &amp; PATCH.</li></ol>
+<p>SAVE &amp; PATCH åbner patchskærmen med den definition valgt. Remember on this device gemmer dit login; FORGET fjerner det. De definitioner, du allerede har hentet, bliver. Dit login går til GDTF Share.</p>
+<h3 id="patch--10">Fra en GDTF-fil</h3>
+<p>＋ Import a GDTF file → ＋ Open a GDTF file, vælg din .gdtf, kontrollér tilstanden og importrapporten, og gem så. Der er ikke brug for netværk.</p>
+<p>Rapporten viser, hvad der ikke kunne komme med over. En 16-bit-værdi, der er delt over adresser langt fra hinanden, beholder kun sin grove byte, ubrugte adresser holdes som tomme pladser, og kanaler på et andet DMX-break falder fra. Overlapper adresser, vinder den tidligere kanal. Ukendte funktioner beholder deres oprindelige navne.</p>
+<p>En definition mærket <code>Imported data is not verified.</code> bør holdes op mod det virkelige armatur. Ret forkerte roller med SAVE &amp; EDIT; rettelsen gælder de armaturer, du patcher fra den bagefter. <code>This mode has no channels.</code> betyder, at du bør vælge en anden tilstand.</p>
+<h3 id="patch--11">I hånden, ud fra et DMX-skema</h3>
+<p>Åbn ＋ Build by hand, og begynd fra en tom definition eller en skabelon: Dimmer, CCT, Bi-color, RGB, HSI, x y, CCT + HSI, Dimmer + RGBW, Full color, Full color + white, Multi-emitter.</p>
+<p>Giv hver kanal et mærke, og sæt rolle, 8 eller 16 bit, standardværdi og virkelig enhed efter behov. Kanalnumre og totalen regnes ud for dig. Lad en plads stå ubrugt, hvis du ikke kender dens rolle — du kan stadig trække den fra Channels. CREATE nægter at gemme, så længe der står en ERROR.</p>
+<h3 id="patch--12">Ved at kopiere en, du har</h3>
+<p>Duplicate and edit lader dig ændre navnet, området for farvetemperatur, kanalroller og navne, mærker og standardværdier. Antallet af kanaler, opbygningen med 16 bit, områderne og opbygningen af omskifterne kan ikke ændres.</p>
+<div class="next"><b>Næste</b><ul><li>Sådan sætter du intensitet → kapitel 04</li><li>Indstillinger for det enkelte armatur → kapitel 06</li><li>Et patchet armatur opfører sig forkert → kapitel 14</li></ul></div><a class="top" href="#top">↑ Indhold</a></section>
+<section class="chapter" id="s-intensity"><h1 id="intensity">04 Sådan sætter du intensitet — Home</h1>
+<p class="lead">Faderne på Home. Det er hjertet i Kanau.</p>
+<h2 id="intensity--1">Sådan flytter du en fader</h2>
+<p>En fader svarer på <strong dir="auto">den strækning, din finger tilbagelægger</strong>, ikke på det sted, du rørte. Du kan trække den fra tallet, fra det runde ikon eller fra det tomme felt under faderen. Den er bygget, så du kan arbejde med blikket på scenen i stedet for på hånden.</p>
+<figure class="shot"><div class="wrap" dir="ltr"><img src="img/zoom-dot.png" alt="Oppefra: den aktuelle intensitet, det runde armaturikon, faderen. Tryk på ikonet for at markere, hold det for at åbne panelet for det armatur." width="640" height="388" loading="lazy"></div><figcaption>Oppefra: den aktuelle intensitet, det runde armaturikon, faderen. Tryk på ikonet for at markere, hold det for at åbne panelet for det armatur.</figcaption></figure>
+<p>Knappen vokser en anelse, når du rører den, og <strong dir="auto">der flytter sig ingenting, før du har trukket et lille stykke</strong>, så det er trygt at lade en finger hvile på den. Mens du trækker, står nummer, navn og værdi stort øverst på skærmen. Har du sat grænser, bevæger den sig inden for dem.</p>
+<h2 id="intensity--2">FINE</h2>
+<table>
+<tr><th>Handling</th><th>Hvad der sker</th></tr>
+<tr><td>Kort tryk</td><td>Skifter rundt: normal → FINE (1/10) → FINE+ (1/100) → normal</td></tr>
+<tr><td>Hold</td><td>Næste trin, så længe du holder. Tilbage til normal, når du slipper</td></tr>
+</table>
+<p>Skifter du midt i et træk, springer værdien ikke. FINE gælder også for rå kanaler og for Pan og Tilt.</p>
+<h2 id="intensity--3">Sådan flytter du flere på én gang</h2>
+<p>Markér 2 eller flere runde ikoner, og træk så i en af faderne. De flytter sig alle lige meget og holder forskellene mellem sig. Når den ene når en grænse, kører de andre videre. Låste armaturer holdes udenfor.</p>
+<p>Det er ikke det samme som at arbejde med flere armaturer i panelet COLOR, hvor de alle lander på samme værdi.</p>
+<h2 id="intensity--4">Nummerknapperne som et klaver</h2>
+<p>Knappen ＋ − nederst til højre sætter tilstanden.</p>
+<table>
+<tr><th>Tilstand</th><th>Mens en nummerknap holdes nede</th></tr>
+<tr><td>LOCK (standard)</td><td>Der ændrer sig ingenting</td></tr>
+<tr><td>＋</td><td>Går til den øvre grænse, 100 som standard</td></tr>
+<tr><td>−</td><td>Går til den nedre grænse, 0 som standard</td></tr>
+</table>
+<p>Slip, og den vender tilbage til, hvor den var. Du kan holde flere nede ad gangen eller glide sidelæns for at spille dem efter tur. Låste armaturer svarer ikke.</p>
+<p>Knapperne lyser rødt, mens ＋ eller − er spændt. Ved start står den altid på LOCK.</p>
+<h2 id="intensity--5">⏻ — kun udgangen</h2>
+<p>Trykker du på ⏻, slår du et armaturs udgang fra og til, men beholder værdien. Den bliver lilla, mens den er slået fra, og tallet bliver stående. At flytte faderen, mens den er slået fra, tænder ingenting.</p>
+<p>ON/OFF er standard. Under armaturets Switch function kan du skifte til FLASH ON eller FLASH OFF, som kun varer, mens du holder. Låste armaturer svarer ikke.</p>
+<h2 id="intensity--6">GM og B.O.</h2>
+<p>Trykker du på GM øverst, åbner faderen for grand master, B.O. og →100.</p>
+<ul><li><strong dir="auto">GM-faderen</strong> sætter den samlede lysstyrke. Den er relativ, og FINE virker på den.</li><li><strong dir="auto">B.O.</strong> slår blackout til og fra. Værdien for GM bevares.</li><li><strong dir="auto">→100</strong> dukker op, når GM står under 100, og sætter den tilbage.</li></ul>
+<p>Holder du GM nede, tilbydes 100, 75, 50, 25, 12.5 og 0. Det 0 dér slår blackout til; det sætter ikke GM i bund.</p>
+<p>Fadetiden for disse knapper sættes under Settings → SETTINGS → Master fade. SNAP er standard. At trække faderen med fingeren sker altid med det samme.</p>
+<div class="box warning"><b>WARNING</b><p><strong dir="auto">Et armatur med Lock slået til svarer hverken på GM eller B.O.</strong> Det bliver ved med at lyse. Antallet af låste armaturer, der stadig lyser under et blackout, står ved siden af den grønne 🔒 øverst på skærmen.</p></div>
+<h2 id="intensity--7">Sådan vælger du, hvad der er på siden</h2>
+<p>Fixtures viser efter model og tilstand; Groups viser All og de grupper, du har bygget. Tryk på et navn for at skifte. Én fader er altid ét armatur, også inde i en gruppe.</p>
+<p>Rækkefølgen under All sættes under Settings → SETTINGS → Order on All, enten efter model og løbenummer eller efter fixture number. Inde i en gruppe er det den rækkefølge, du byggede.</p>
+<p>‹ og › skifter side. Skifter du mellem 10 og 5, bliver det armatur, du arbejder med, i billedet.</p>
+<h2 id="intensity--8">Knapperne langs bunden</h2>
+<figure class="shot"><div class="wrap" dir="ltr"><img src="img/zoom-bottom.png" alt="Fra venstre: COLOR, EFFECT, PIXELS, ＋ −, FINE. De grå kan ikke bruges i den aktuelle tilstand." width="640" height="152" loading="lazy"></div><figcaption>Fra venstre: COLOR, EFFECT, PIXELS, ＋ −, FINE. De grå kan ikke bruges i den aktuelle tilstand.</figcaption></figure>
+<p>COLOR og EFFECT kræver en markering. PIXELS bliver grå, når der ikke er noget pixelarmatur på siden.</p>
+<h2 id="intensity--9">Sådan arbejder du med pixels for sig</h2>
+<p>Trykker du på PIXELS, folder cellerne i sidens pixelarmaturer sig ud som deres egne fadere. De står som P1, P2 og så videre, og hver af dem bærer sin egen intensitet og farve. Tryk igen for at folde dem sammen.</p>
+<p>CLEAR n rydder kun markeringen. Værdier og udgange røres ikke.</p>
+<div class="next"><b>Næste</b><ul><li>Sådan sætter du farve → kapitel 05</li><li>Sådan gemmer du billeder → kapitel 08</li><li>Nogle fadere gør ingenting → kapitel 14</li></ul></div><a class="top" href="#top">↑ Indhold</a></section>
+<section class="chapter" id="s-color"><h1 id="color">05 Sådan sætter du farve — COLOR</h1>
+<p class="lead">Farve og intensitet for ét armatur eller mange.</p>
+<div class="box note"><b>NOTE</b><p>Hvad du får at se, afhænger af, hvad armaturet faktisk har. En dæmper med én kanal viser kun Intensity. Kanau viser ikke betjening for noget, armaturet ikke har.</p></div>
+<figure class="shot"><div class="wrap" dir="ltr"><img src="img/2-color-cct.png" alt="Farvepanelet. Kun de funktioner, armaturet bærer, bliver vist." width="294" height="640" loading="lazy"></div><figcaption>Farvepanelet. Kun de funktioner, armaturet bærer, bliver vist.</figcaption></figure>
+<h2 id="color--1">Sådan åbner du panelet</h2>
+<table>
+<tr><th>Hvordan</th><th>Hvad det virker på</th></tr>
+<tr><td>Hold et armaturikon</td><td>Det ene armatur</td></tr>
+<tr><td>Hold et celleikon</td><td>Den celle</td></tr>
+<tr><td>Markér armaturer, og tryk så COLOR</td><td>Alt det markerede</td></tr>
+<tr><td>Hold en model- eller gruppeknap</td><td>Hvert armatur i den. All betyder hvert armatur</td></tr>
+</table>
+<p>Står ét armatur åbent, går ‹ og › videre til det næste.</p>
+<h2 id="color--2">Intensitet og farve</h2>
+<table>
+<tr><th>Punkt</th><th>Sådan virker det</th></tr>
+<tr><td>Intensity</td><td>0 til 100, med skyder, indtastning, ±-knapper eller forvalg</td></tr>
+<tr><td>Color temperature (CCT)</td><td>I kelvin, inden for armaturets område</td></tr>
+<tr><td>Green / Magenta</td><td>Korrektionen mellem grøn og magenta. Back to neutral stiller den tilbage på 0</td></tr>
+<tr><td>Crossfade</td><td>Balancen mellem den hvide og den farvede side. Hvilken vej rundt er op til armaturet</td></tr>
+<tr><td>RGB og lysdioder</td><td>R, G, B, W, Amber, Lime, Cyan og hvad armaturet ellers bærer</td></tr>
+<tr><td>Hue / Saturation / CIE x / CIE y</td><td>Vises på armaturer, der har dem</td></tr>
+</table>
+<p>Intensity ±5 og ±10 runder til hele 5 eller 10: fra 47 giver +10 50. Forvalgene er 12.5%, 25%, 35%, 50% og 75%.</p>
+<p>Forvalgene for CCT er 2700, 3000, 3200, 4300, 5000, 5600, 6500 og 10000 K. Ud over armaturets område lander du på dets grænse, markeret MIN eller MAX. Et armatur med kun 2 farvetemperaturer viser 2 knapper i stedet for en skyder.</p>
+<p>Trinene for Green / Magenta kan rettes ved at holde på dem. Har et armatur mere end én crossfade, står de efterfølgende lige over den betjening, de hører til.</p>
+<h2 id="color--3">Gelatiner</h2>
+<table>
+<tr><th>Punkt</th><th>Hvad det er</th></tr>
+<tr><td>Gel presets</td><td>Forvalg fra LEE og Rosco til armaturer med RGB. Hver sin tabel for 3200 K og 5600 K</td></tr>
+<tr><td>Preset / Gel</td><td>Armaturets egne indbyggede gelatiner eller farveforvalg, valgt efter nummer</td></tr>
+<tr><td>Gels → x/y</td><td>Farvekoordinater fra LEE og Rosco til armaturer med x og y</td></tr>
+</table>
+<p>RGB-værdierne under Gel presets kommer fra Asteras offentliggjorte farvedata. De bærer ingen lysstyrke, så den sætter du med faderen. Ved et armaturs indbyggede forvalg kan appen ikke altid vise, hvilket der er valgt.</p>
+<p>Listen bliver stående åben, efter at du har valgt, så du kan prøve dem efter tur. Luk den med ✕. Om den overhovedet dukker op, sættes under Settings → SETTINGS → Gels → Gel presets.</p>
+<h2 id="color--4">Sådan gemmer du farver, du bruger tit</h2>
+<ul><li><strong dir="auto">Save this color</strong> lægger en farve under ★. Den holdes pr. model. CCT og G/M er ikke med.</li><li><strong dir="auto">Save this temperature</strong> lægger en farvetemperatur væk. Den deles på tværs af modeller.</li></ul>
+<p>Tryk på en gemt knap for at lægge den på. Hold for at omdøbe, rette eller slette.</p>
+<h2 id="color--5">ADVANCED COLOR</h2>
+<figure class="shot"><div class="wrap" dir="ltr"><img src="img/3-picker.png" alt="Vælgeren under ADVANCED COLOR. Kulør går på tværs, mætning går nedad." width="294" height="640" loading="lazy"></div><figcaption>Vælgeren under ADVANCED COLOR. Kulør går på tværs, mætning går nedad.</figcaption></figure>
+<p>ADVANCED COLOR samler den betjening, appen selv regner ud, i stedet for armaturets egne kanaler.</p>
+<p>I vælgeren går kulør på tværs og mætning nedad. Lysstyrken er faderens arbejde. Træk tæt på det runde håndtag for at flytte farven; alle andre steder ruller panelet.</p>
+<p>RGB, den Hue og Saturation, der er regnet ud fra RGB, og CMY (255 − RGB) dukker op på armaturer, der kan tage dem. På et armatur, der kun modtager Hue og Saturation, eller kun x og y, bruger du i stedet betjeningen længere oppe.</p>
+<h2 id="color--6">Flere armaturer, og flere modeller</h2>
+<p><strong dir="auto">I dette panel lander alt, hvad du rører, på samme værdi for alt det markerede.</strong> Det gælder skyderne, ±-knapperne, forvalgene, indtastningen og de gemte farver lige meget. Vil du flytte dem og holde forskellene mellem dem, så markér faderne på Home i stedet.</p>
+<p>Er der markeret forskellige modeller, dukker kun Intensity, CCT, G/M, Crossfade og ★ op. Åbn én model for sig for at sætte RGB og lysdioder. CCT holdes inden for hvert armaturs eget område.</p>
+<h2 id="color--7">Pixels og gentagne farvegrupper</h2>
+<p>Hold et celleikon for at sætte den celles farve og intensitet. Ændrer du farven på selve armaturet, sættes hver celle; en celle, du har ændret i hånden, beholder sin egen. Armaturets Intensity gælder på tværs af alle cellerne.</p>
+<p>Bærer en tilstand samme farverolle mere end én gang, for eksempel Gel 1 og Gel 2, står de senere grupper længere nede i panelet. <strong dir="auto">Farvegrupper efter den første gemmes ikke i scener.</strong></p>
+<div class="next"><b>Næste</b><ul><li>Indstillinger for det enkelte armatur → kapitel 06</li><li>Sådan gemmer du billeder → kapitel 08</li></ul></div><a class="top" href="#top">↑ Indhold</a></section>
+<section class="chapter" id="s-fixture-settings"><h1 id="fixture-settings">06 Indstillinger for det enkelte armatur</h1>
+<p class="lead">Grænser, Lock og de rå kanaler på et enkelt armatur.</p>
+<p>Rul ned i det panel, du får ved at holde på et armaturikon, fra COLOR eller ved at holde på en model- eller gruppeknap.</p>
+<p>Limits, Lock, Switch function og Battery save kan sættes for flere armaturer ad gangen. Blandede værdier står som — eller n of m, og ændrer du ét, lægges det på dem alle. Channels, Mode, Channel roles og Patch dukker kun op, når ét armatur er åbent.</p>
+<h2 id="fixture-settings--1">Navn og visning</h2>
+<p>Ret navnet øverst i panelet. ‹ og › går videre til det næste armatur. Label er det viste navn, som deles på tværs af modellen; Label color er baggrunden bag nummeret. No label color rydder den.</p>
+<h2 id="fixture-settings--2">Grænser</h2>
+<p>Lower limit og Upper limit sætter det område, du kan arbejde i. Ret dem med ±1 og ±5, eller ryd dem. Uden for en grænse viser Home orange skravering.</p>
+<p>En celles grænser gælder inden for armaturets. Er armaturet holdt nede på 50, kan en celle med grænsen 80 stadig ikke komme over 50.</p>
+<h2 id="fixture-settings--3">Lock</h2>
+<div class="box warning"><b>WARNING</b><p>Fixture Lock slår <strong dir="auto">alting</strong>: grand master, blackout, BATTERY SAVE, kald af scener, MIDI og session. Et låst armatur går ikke ud, når du trykker på blackout. Se dine låse efter, før I optager.</p></div>
+<p>Med Lock slået til holdes armaturets udgang fast. Fadere, klavertilstand, ⏻, farve, rå kanaler, GM, B.O., BATTERY SAVE, scener, MIDI og sessionen lader det alle sammen være.</p>
+<p>Er der markeret flere armaturer, og nogle af dem er låst, rydder et tryk hver eneste lås. Er ingen låst, låser et tryk dem alle.</p>
+<p>Låser du under et tryk i klavertilstand eller på FLASH, stilles den midlertidige værdi tilbage først, og så holdes der fast. Ændrer du grænser, mens der er låst, flytter det ikke den aktuelle værdi; den føres ind i det nye område, når du låser op.</p>
+<h2 id="fixture-settings--4">De øvrige indstillinger</h2>
+<table>
+<tr><th>Punkt</th><th>Hvad det er</th></tr>
+<tr><td>Switch function</td><td>Hvad ⏻ gør: None, ON/OFF, FLASH ON eller FLASH OFF. ON/OFF er standard</td></tr>
+<tr><td>Battery save</td><td>Markerer dette armatur til BATTERY SAVE</td></tr>
+<tr><td>Invert</td><td>Vender trækretningen for Pan og Tilt. Den viste vinkel ændrer sig ikke</td></tr>
+<tr><td>Mode</td><td>Viser den aktuelle DMX-tilstand. Ret den fra RE-PATCH</td></tr>
+<tr><td>Channel roles</td><td>Retter rollen og navnet på hver kanal. Adresser flytter sig ikke</td></tr>
+</table>
+<p>Brug Channel roles, når et patchet armatur har kanaler, der behandles som den forkerte funktion. Skal rettelsen følge med over i armaturer, du patcher senere, så ret i stedet definitionen under Custom fixtures.</p>
+<h2 id="fixture-settings--5">Channels — den rå DMX (Advanced)</h2>
+<p>Brug først den betjening, der er lavet til farve, retning og resten. Channels er til at nå de funktioner, den betjening ikke dækker, én DMX-kanal ad gangen.</p>
+<p>Channels viser alting i DMX-rækkefølge, under DIMMER, COLOR, POSITION, GOBO, BEAM, FOCUS, SHAPERS og CONTROL. Tomme grupper skjules.</p>
+<table>
+<tr><th>Slags række</th><th>Sådan arbejder du med den</th></tr>
+<tr><td>En glidende værdi</td><td>Skyder, indtastning, eller − og +</td></tr>
+<tr><td>Navngivne værdier og områder</td><td>En menu op til 12 punkter, en søgbar liste derudover</td></tr>
+<tr><td>Kommandoer som Reset eller Lamp Off</td><td>Hold i den angivne tid. Slip før tiden for at afbryde. Kommandoer uden tid er et tryk</td></tr>
+<tr><td>En grå række mærket FADER eller COLOR</td><td>Trækkes af en dedikeret betjening og kan derfor ikke rettes her</td></tr>
+<tr><td>En række, der afhænger af en anden kanal</td><td>Viser, hvad der er muligt i den aktuelle tilstand, med en bemærkning, når det ikke er</td></tr>
+</table>
+<p>DMX øverst til højre skifter mellem rå værdier og procent. Home på en række stiller den tilbage til sin standardværdi; på Pan og Tilt kræver det et hold. Den er utilgængelig, når intet er ændret.</p>
+<p>Ændringer af rå kanaler gemmes i scener og skrives i HISTORY. På et pixelarmatur bærer panelet for selve armaturet armaturets kanaler, og et cellepanel bærer den celles.</p>
+<h2 id="fixture-settings--6">Sådan ændrer du patchen eller tilstanden</h2>
+<p>Ret fra RE-PATCH i afsnittet Patch. Du kan se og ændre universe og adresse, fixture number, model og tilstand. Next free flytter det til det næste hul.</p>
+<p>Change mode viser området før og efter og de armaturer, det ville overlappe, før du bekræfter. Du kan lægge det på hvert armatur af den model. Armaturerne efter flytter sig ikke af sig selv.</p>
+<p>Delete this fixture fjerner det efter en bekræftelse, sammen med dets værdier og indstillinger, og tager det ud af hver eneste scene.</p>
+<div class="next"><b>Næste</b><ul><li>Retning og lyskegle → kapitel 07</li><li>Hvad de enkelte låse gør → kapitel 10</li></ul></div><a class="top" href="#top">↑ Indhold</a></section>
+<section class="chapter" id="s-position"><h1 id="position">07 Retning og lyskegle</h1>
+<p class="lead">Pan, tilt, zoom, iris, frost og gobo på bevægelige armaturer.</p>
+<h2 id="position--1">Pan og Tilt</h2>
+<p>Hold på et armaturikon, og åbn Channels → POSITION. Denne version har ingen selvstændig skærm til retning.</p>
+<p>Pan og Tilt står i grader, hvor armaturdataene bærer vinkler, og i procent, hvor de ikke gør. På et 16-bit-armatur ligger grov og fin på samme række.</p>
+<ul><li>Træk tæt på håndtaget, og det flytter sig efter den strækning, din finger tilbagelægger. Alle andre steder ruller panelet.</li><li>Skriv en vinkel i feltet. Værdier uden for armaturets område afvises.</li><li>Trin med ±0.1°, ±1°, ±10° og så videre. Trinene kommer af enheden og opløsningen.</li><li>FINE og FINE+ sætter den ned til 1/10 og 1/100.</li><li>Hold Home for at sende det til armaturets egen udgangsstilling. Slip før tiden for at afbryde.</li></ul>
+<p>Invert vender trækretningen. Der flytter sig ingenting, mens armaturet er låst.</p>
+<p>Døde områder, hvor DMX-værdien ikke gør noget, springes over af både skyderen og trinene. På et armatur, hvis standardværdi ligger i et dødt område, flytter trinene sig ikke: brug skyderen, eller skriv en værdi, for først at komme ind i det levende område.</p>
+<p>Retning gemmes i scener og skrives i HISTORY.</p>
+<div class="box important"><b>IMPORTANT</b><p><strong dir="auto">En scenefade interpolerer ikke Pan og Tilt.</strong> De springer til den gemte værdi i det øjeblik, du kalder. At sætte en fadetid får ikke hovedet til at bevæge sig langsomt.</p></div>
+<h2 id="position--2">Zoom, iris, frost, fokus og gobo</h2>
+<p>Åbn BEAM, GOBO eller FOCUS under Channels. Glidende værdier får en skyder; gobo&#x27;er og prismer får navngivne valg. De virker nøjagtigt som de øvrige rækker i kapitel 06.</p>
+<p>Vil du sætte noget af det i bevægelse, så brug MOVE og BEAM i panelet EFFECT. MOVE arbejder omkring det sted, hovedet peger hen nu, og lægger sig oven på effekter på intensiteten.</p>
+<div class="next"><b>Næste</b><ul><li>Sådan sætter du bevægelse i gang → kapitel 09</li><li>Sådan gemmer du billeder → kapitel 08</li></ul></div><a class="top" href="#top">↑ Indhold</a></section>
+<section class="chapter" id="s-scenes"><h1 id="scenes">08 Sådan gemmer og kalder du billeder — Scenes</h1>
+<p class="lead">En scene er et gemt billede. Åbn Scenes, tryk på ＋ for at gemme, tryk på en række for at hente det frem igen.</p>
+<figure class="shot"><div class="wrap" dir="ltr"><img src="img/5-scenes.png" alt="Scenelisten. Den aktuelle scene har ravgul baggrund." width="294" height="640" loading="lazy"></div><figcaption>Scenelisten. Den aktuelle scene har ravgul baggrund.</figcaption></figure>
+<h2 id="scenes--1">Sådan gemmer du en scene</h2>
+<ol><li>Sæt intensitet, farve og eventuelle effekter på Home.</li><li>Tryk på Scenes → ＋. Det gemmes med det samme.</li><li>Vil du omdøbe den, så tryk på <strong dir="auto">Settings i den scenes række</strong>, og skriv et navn. Stryger du rækken mod venstre, åbner det samme panel.</li><li>Vil du beskytte det, der ligger i den, så slå Lock this scene til i samme panel.</li></ol>
+<p>Det Settings, der menes her, er det <strong dir="auto">inde i scenens række</strong>. Det er ikke fanen Settings nederst på skærmen.</p>
+<h2 id="scenes--2">Sådan kalder og rydder du op</h2>
+<table>
+<tr><th>Handling eller mærke</th><th>Hvad den gør</th></tr>
+<tr><td>Tryk på en række</td><td>Kalder, når du løfter fingeren</td></tr>
+<tr><td>NEXT / BACK</td><td>Den næste eller forrige scene. Den går rundt. Utilgængelig med kun én scene</td></tr>
+<tr><td>● og ravgul baggrund</td><td>Den aktuelle scene</td></tr>
+<tr><td>▸</td><td>Den scene, NEXT vil hente frem</td></tr>
+<tr><td>En prik efter en ændring</td><td>En scene, der er ændret, siden den blev kaldt</td></tr>
+<tr><td>🔒 og en grøn kant</td><td>Låst mod overskrivning</td></tr>
+<tr><td>Settings, eller stryg mod venstre</td><td>Navn, fadetid, lås, slet</td></tr>
+<tr><td>Edit</td><td>Omrokér, slet, slet flere</td></tr>
+</table>
+<p>Tallene er visningsrækkefølgen. Tiden under navnet er, hvornår indholdet sidst blev ændret.</p>
+<h2 id="scenes--3">Det, du ændrer efter et kald, bliver gemt</h2>
+<p><strong dir="auto">Så snart du kalder en scene, bliver alt, hvad du derefter gør ved lyset, skrevet tilbage i den.</strong> Der er ingen SAVE-knap; der skrives, når du løfter fingeren.</p>
+<p>Slå Lock this scene til på de scener, du vil have stående urørt. Du kan stadig kalde dem og stadig arbejde med lyset, men der gemmes ingenting.</p>
+<p>Det er ikke det samme som Fixture Lock. Scene Lock beskytter det, der er gemt; Fixture Lock holder på udgangen.</p>
+<p>Gemningen flytter til en anden scene, når du kalder en anden frem, når du sletter den, du står i, og når du åbner showet igen. Ændringer af en scenes indhold er ikke en del af HISTORY.</p>
+<h2 id="scenes--4">Hvad der gemmes, og hvad der ikke gør</h2>
+<table>
+<tr><th>Gemmes</th><th>Gemmes ikke</th></tr>
+<tr><td>Intensitet, CCT, G/M, crossfade, RGB, lysdioder</td><td>GM, B.O. og BATTERY SAVE</td></tr>
+<tr><td>Rå kanaler såsom retning og gobo</td><td>Grænser, Fixture Lock, tilstanden for ⏻, Switch function</td></tr>
+<tr><td>Cellefarve og -intensitet, effekter</td><td>Farvegrupper efter den første</td></tr>
+</table>
+<p>Et armatur med Lock slået til ændres ikke af et kald.</p>
+<h2 id="scenes--5">Fade</h2>
+<p>Sæt den pr. scene under Settings → Fade. 3 sekunder er standard. Der er forvalgene SNAP, 1, 2, 3, 5 og 10, og ±0.1 og ±1 til at justere med.</p>
+<p>Faderne bevæger sig under en fade, og du kan overtage i hånden undervejs. Retning, gobo og andre rå værdier interpolerer ikke; de springer ved kald.</p>
+<p>En scene med effekter i starter de effekter forfra ved kald. Kalder du en scene uden effekter, slippes alt det, der kører.</p>
+<p>Selve kaldet skrives i HISTORY som ét trin. Scener er en del af showfilen.</p>
+<div class="next"><b>Næste</b><ul><li>Sådan går du et skridt tilbage → kapitel 10</li><li>Sådan gemmer du showet → kapitel 11</li><li>En scene bliver ved med at ændre sig af sig selv → kapitel 14</li></ul></div><a class="top" href="#top">↑ Indhold</a></section>
+<section class="chapter" id="s-effects"><h1 id="effects">09 Effekter</h1>
+<p class="lead">Blink, ild, lyn og resten, lagt på dine armaturer.</p>
+<p>EFFECT på Home lægger en effekt på det, du har markeret. Fanen Effects nederst styrer alt det, der kører.</p>
+<h2 id="effects--1">Sådan lægger du en på</h2>
+<ol><li>Tryk på det runde ikon på et armatur eller en celle på Home for at markere det.</li><li>Åbn EFFECT.</li><li>Tryk på et effektnavn. Den starter med det samme.</li></ol>
+<p>Faderen sætter stadig intensiteten. Mens en effekt kører, bærer knappen EFFECT dens navn, og armaturikonet og faderen bevæger sig med.</p>
+<h2 id="effects--2">Pause, slip, start forfra</h2>
+<table>
+<tr><th>Handling</th><th>Hvad den gør</th></tr>
+<tr><td>PAUSE</td><td>Fryser bevægelsen ved den aktuelle intensitet og retning</td></tr>
+<tr><td>RESUME</td><td>Kører videre derfra, hvor den frøs</td></tr>
+<tr><td>RELEASE</td><td>Stopper den og giver styringen tilbage til de normale værdier. Indstillingerne bliver på listen</td></tr>
+<tr><td>START</td><td>Kører en sluppet effekt igen fra begyndelsen</td></tr>
+<tr><td>CLEAR</td><td>Fjerner den fra listen. Den spørger først</td></tr>
+</table>
+<h2 id="effects--3">ADJUST</h2>
+<table>
+<tr><th>Punkt</th><th>Hvad det er</th></tr>
+<tr><td>Speed</td><td>I hertz. Decimaler er tilladt</td></tr>
+<tr><td>Depth</td><td>Hvor langt ned den trækker intensiteten. 100 når bunden; 35 rører sig knap nok</td></tr>
+<tr><td>How often / Cycle</td><td>Hvor tit det sker. Kun på de slags, der bruger det</td></tr>
+<tr><td>Roughness</td><td>Hvor urolig flammen er</td></tr>
+<tr><td>Width</td><td>Hvor meget af rigget der lyser ad gangen, for eksempel 50% 2 / 4</td></tr>
+<tr><td>Tail</td><td>Længden af halen på COMET</td></tr>
+</table>
+<p>Hvilke punkter der dukker op, afhænger af effekten. SIGNAL har ingen Speed.</p>
+<h2 id="effects--4">ARRANGE</h2>
+<p>SPREAD forskyder armaturerne; TOGETHER holder dem i takt. RUNNER, FADE RUN, BOUNCE, COMET og SIGNAL tilbyder ikke valget.</p>
+<table>
+<tr><th>Opstilling</th><th>Hvad den gør</th></tr>
+<tr><td>IN ORDER</td><td>Jævnt forskudt efter nummer</td></tr>
+<tr><td>ALTERNATE</td><td>Ulige og lige, en halv omgang fra hinanden</td></tr>
+<tr><td>WINGS</td><td>Spejlet ud fra midten</td></tr>
+<tr><td>RANDOM</td><td>I tilfældig rækkefølge</td></tr>
+<tr><td>BOUNCE</td><td>Vender om i hver ende</td></tr>
+<tr><td>BUILD</td><td>Tænder ét ad gangen og rydder dem så samlet</td></tr>
+</table>
+<p>RUNS under IN ORDER er, hvor mange mønstre der kører ad gangen; mulighederne afhænger af, hvor mange armaturer der er. DIRECTION er FORWARD eller REVERSE. På ild kan du på armaturer, der kan begge dele, vælge mellem udgang som CCT og som RGB.</p>
+<h2 id="effects--5">Sådan skifter du mål og gemmer indstillinger</h2>
+<p>Applies to → SELECT ▾ vælger armaturer og grupper. Markeringen deles med Home, og listen bliver stående åben, mens du vælger.</p>
+<p>SAVE under SAVED lægger de indstillinger, du har drejet frem, væk under et navn. Tryk på en gemt knap for at lægge den på, tryk igen for at stoppe. Hold for at omdøbe eller slette. Armaturerne er ikke en del af en gemt indstilling.</p>
+<p>Markér de armaturer, der allerede kører, sammen med de nye, vælg samme effekt, og hastighed, dybde og fase følger med over. Hvor indstillingerne er forskellige, falder den tilbage til standardværdierne. Vil du slippe ét enkelt armatur, så markér kun det og tryk RELEASE.</p>
+<h2 id="effects--6">Sådan finder du en ud fra det, du vil have</h2>
+<table>
+<tr><th>Det, du vil have</th><th>Prøv</th></tr>
+<tr><td>Naturligt lys</td><td>FIRE 1 og 2, LIGHTNING, WATER, WIND, TV</td></tr>
+<tr><td>Lys, der løber langs rigget</td><td>RUNNER, FADE RUN, BOUNCE, COMET</td></tr>
+<tr><td>Bylys</td><td>NEON, SIGNAL, TOKYO, OSAKA, KYOTO, NARA, PACHINKO</td></tr>
+<tr><td>Blinkfyr</td><td>BEACON R/B, BLUE, RED, AMBER</td></tr>
+<tr><td>Almindeligt blink</td><td>BLINK, STROBE, PULSE, DOUBLE, RANDOM 1–3</td></tr>
+<tr><td>Et lysstofrør, der er ved at give op</td><td>FLUO 1–3</td></tr>
+<tr><td>Bevægelse af hovedet</td><td>Gruppen MOVE</td></tr>
+<tr><td>Bevægelse af zoom eller gobo</td><td>Gruppen BEAM</td></tr>
+</table>
+<h2 id="effects--7">Den fulde liste</h2>
+<table>
+<tr><th>Gruppe</th><th>Effekter</th></tr>
+<tr><td>BASIC</td><td>BLINK, STROBE, PULSE, DOUBLE, RANDOM 1–3, RUNNER, FADE RUN, BOUNCE, COMET</td></tr>
+<tr><td>LIGHTS</td><td>FLUO 1–3, FIRE 1 (stearinlys), FIRE 2 (bål), LIGHTNING, TV, NEON, SIGNAL</td></tr>
+<tr><td>SCENES</td><td>BEACON R/B, BLUE, RED, AMBER, TOKYO, OSAKA, KYOTO, NARA, PACHINKO, WATER, FIREWORKS, LANTERNS</td></tr>
+<tr><td>MOVE</td><td>DRIFT, PASS, ORBIT, EIGHT, BOX, SPIRAL, SEARCH, BREATHE, HANDHELD, WIND, JUMP, BALLYHOO</td></tr>
+<tr><td>BEAM</td><td>ZOOM PULSE, ZOOM BREATHE, IRIS PULSE, FROST BREATHE, GOBO SHAKE</td></tr>
+</table>
+<p>RUNNER, FADE RUN, BOUNCE og COMET kræver flere armaturer eller pixels. MOVE og BEAM dukker op, når de markerede armaturer understøtter dem.</p>
+<p>En ravgul prik øverst til højre ved et navn betyder, at effekten også ændrer farven. Uden prikken bruger den den farve, du selv har sat.</p>
+<h2 id="effects--8">SIGNAL — trafiklys</h2>
+<p>Vælg land, CAR eller WALK, START GREEN eller START RED, og REPEAT eller ONCE. NEXT går videre til næste tilstand. CAR og WALK kører på samme takt. Brug ONCE for at gå den frem i hånden, så den passer til handlingen.</p>
+<h2 id="effects--9">Sådan lægges LIGHT, MOVE og BEAM oven på hinanden</h2>
+<p>Ét armatur kan bære en LIGHT-effekt på intensitet og farve, en MOVE-effekt på hovedet og en BEAM-effekt på én gang. Vælger du en anden effekt i samme spor, erstatter den den forrige. Celler tager kun LIGHT.</p>
+<p>Åbner du panelet, viser det det første spor, der kører, i rækkefølgen LIGHT, MOVE, BEAM.</p>
+<h2 id="effects--10">Sådan styrer du dem fra fanen Effects</h2>
+<p>EDIT åbner en effekts indstillinger. RELEASE / START, PAUSE / RESUME og CLEAR ligger der. En sluppet effekt bliver på listen, mærket RELEASED.</p>
+<p>× ved siden af et armaturnavn tager det armatur ud af effekten; ＋ lægger den aktuelle markering, en gruppe eller All til. RELEASE ALL og START ALL gælder alting.</p>
+<p>Effekter tæller videre gennem et blackout. Ulåste armaturer bliver mørke og tager bevægelsen op dér, hvor den står, når du rydder det. Fixture Lock er dækket i kapitel 10.</p>
+<div class="next"><b>Næste</b><ul><li>Sådan gemmer du billeder → kapitel 08</li><li>Bevægelse af hovedet → kapitel 07</li></ul></div><a class="top" href="#top">↑ Indhold</a></section>
+<section class="chapter" id="s-safety"><h1 id="safety">10 Låse, sikkerhed og skridtet tilbage</h1>
+<p class="lead">Hvad der holder dig fra at lave en fejl midt i en optagelse, og hvad der lader dig fortryde en.</p>
+<h2 id="safety--1">Der findes 3 slags lås</h2>
+<p>Ordet dukker op 3 steder, og hvert sted beskytter det noget forskelligt.</p>
+<table>
+<tr><th>Navn</th><th>Hvad den beskytter</th><th>Hvor</th></tr>
+<tr><td>Fixture Lock</td><td>Det lys, der går ud nu. Værdien kan ikke ændre sig</td><td>Armaturpanelet</td></tr>
+<tr><td>Scene Lock</td><td>Det, der er gemt i en scene</td><td>Settings i scenens række</td></tr>
+<tr><td>SCREEN LOCK</td><td>Skærmen. Berøringer gør ingenting</td><td>Øverst på skærmen</td></tr>
+</table>
+<h2 id="safety--2">SCREEN LOCK</h2>
+<p>Hold SCREEN LOCK øverst på skærmen i 0.5 sekunder. Et kort tryk låser den ikke.</p>
+<p>Mens der er låst, ligger der en lilla flade med skravering hen over skærmen. Værdierne kan stadig læses, og udsendelse og fades kører videre. Du låser op ved at trække den lilla skyder i midten cirka 80% af vejen mod højre. Slipper du før tiden, bliver den låst.</p>
+<p>Du kan ikke låse skærmen, mens et panel som Patch står åbent.</p>
+<h2 id="safety--3">Fixture Lock</h2>
+<div class="box warning"><b>WARNING</b><p>Fixture Lock slår <strong dir="auto">grand master, blackout, BATTERY SAVE, kald af scener, MIDI og sessionen</strong>. Tryk på blackout, og et låst armatur bliver ved med at lyse. Antallet, der stadig lyser under et blackout, står ved siden af den grønne 🔒 øverst på skærmen.</p></div>
+<p>Hold på et armaturikon, og slå Lock til. Brug den, når et lys ikke må ændre sig.</p>
+<p>Mens der er låst, bærer armaturikon, fader, nummerknap og ⏻ alle grønt. Du rydder den fra armaturpanelet.</p>
+<h2 id="safety--4">BATTERY SAVE</h2>
+<p>Dæmper kun de armaturer, du markerer, til ventetiden mellem optagelserne.</p>
+<ol><li>Markér dem i armaturindstillingerne under Battery save, eller i Patch → Select many → Battery. Du kan også markere dem, mens du patcher.</li><li>Tryk på BATTERY SAVE øverst på skærmen. De markerede armaturer dæmpes.</li><li>Tryk igen for at hente dem tilbage.</li></ol>
+<p>Hold den for at sætte, hvor meget der dæmpes, og hvor lang fadetiden er. Save to tilbyder −25%, −50%, −65% og −75%, og −50% er standard. Fadetiden begynder på 1.5 sekunder.</p>
+<p>Knappen og skærmkanten bliver grønne, mens den er slået til. Den ganges sammen med grand master. Låste armaturer lades i fred. Er intet markeret, fortæller den dig, hvordan du markerer noget.</p>
+<p>Den dæmper dine armaturer. Det er ikke en batteriindstilling i din iPhone.</p>
+<h2 id="safety--5">HISTORY</h2>
+<p>Tryk eller hold på HISTORY på Home for at se de tilstande, du har været igennem. Vælg en række for at gå tilbage til den. HERE markerer, hvor du står.</p>
+<ul><li>Den beholder de sidste 50. Går du tilbage og arbejder videre, bliver de gamle tilstande stående, og den nye lægges til i enden.</li><li>Den dækker intensitet, farve, udgang til og fra, grænser, rå værdier, effekter, GM, B.O. og patchen.</li><li>Fixture Lock står uden for. Et låst armatur flytter sig ikke, når du går et skridt tilbage.</li><li>Kald af scener skrives ind, men at overskrive en scenes indhold kan ikke fortrydes.</li><li>Du kan ikke trække én enkelt ændring ud for sig. Du går tilbage til hele tilstanden i det øjeblik.</li><li>Den gemmes ikke. Lukker du appen eller åbner showet igen, ryddes den.</li></ul>
+<p>Fadetiden ved et kald sættes af Recall fade time. HISTORY er utilgængelig, når der ikke er noget at gå tilbage til.</p>
+<h2 id="safety--6">ZEN</h2>
+<p>Tryk på ZEN i et enkelt armaturs panel for at få en sort skærm med én stor fader og dens værdi. Den er der til armaturer, hvis intensitet du kan sætte.</p>
+<p>Træk hvor som helst på skærmen for at arbejde med den, relativt som altid. FINE virker. Grænser kan ændres fra indstillingerne øverst til højre. Tryk på skærmen for at gå ud; at flytte faderen og slippe gør det ikke.</p>
+<div class="next"><b>Næste</b><ul><li>Sådan gemmer du showet → kapitel 11</li><li>Noget vil ikke gå ud ved blackout → kapitel 14</li></ul></div><a class="top" href="#top">↑ Indhold</a></section>
+<section class="chapter" id="s-shows"><h1 id="shows">11 Sådan gemmer og deler du shows</h1>
+<p class="lead">Et show rummer én opgave: patchen, grupperne, scenerne og det aktuelle billede.</p>
+<p>Der er ingenting at trykke på. Det gemmer sig selv.</p>
+<h2 id="shows--1">Hvornår der gemmes</h2>
+<table>
+<tr><th>Hvad</th><th>Hvornår</th></tr>
+<tr><td>Patch, grupper, scener</td><td>I takt med at du ændrer dem</td></tr>
+<tr><td>Det aktuelle billede og armaturindstillingerne</td><td>Cirka 2 sekunder efter at du holder op, og når appen går i baggrunden</td></tr>
+</table>
+<p>Næste start henter det sidste show frem, som det blev gemt. Den allersidste ændring før en afslutning er der ingen garanti for, så brug Export show file, når du har brug for en fil at gemme eller give videre.</p>
+<h2 id="shows--2">Settings → SHOWS</h2>
+<table>
+<tr><th>Punkt</th><th>Hvad det gør</th></tr>
+<tr><td>CURRENT SHOW</td><td>Omdøber det show, du står i</td></tr>
+<tr><td>Save As</td><td>Lægger den aktuelle tilstand væk som et andet show og kører videre i kopien</td></tr>
+<tr><td>Export show file</td><td>Gemmer først og skriver så en .kanau-fil. Vælg hvorhen i delearket</td></tr>
+<tr><td>Import show file</td><td>Henter en .kanau ind som et nyt show. Dit aktuelle show røres ikke</td></tr>
+<tr><td>NEW SHOW</td><td>Giv det et navn, og tryk Create. Du får et tomt show, og Patch åbner</td></tr>
+<tr><td>OTHER SHOWS</td><td>Åbner et gemt show. ⧉ laver en kopi, ✕ sletter efter en bekræftelse</td></tr>
+</table>
+<p>En .kanau, der kommer ind via Filer eller AirDrop, kan åbnes med Kanau og kommer ind som et nyt show. En .kanaumidi behandles som en fil med en MIDI-tildeling.</p>
+<h2 id="shows--3">Åbning og genopretning</h2>
+<p>Er der intet gemt, åbner demoshowet. Et ældre show uden et gemt billede åbner med intensiteten i bund.</p>
+<p>Kan filen ikke læses, får du Saved patch could not be read. Showing an empty rig; the file is left as it is., og der startes tomt. <strong dir="auto">Den oprindelige fil beholdes og overskrives ikke.</strong></p>
+<p>En mislykket gemning viser Patch was not saved. med rødt. Kapitel 14 fortæller, hvad du gør.</p>
+<h2 id="shows--4">Hvad der ikke er med i showet</h2>
+<table>
+<tr><th>Hvad</th><th>Hvor det ligger</th></tr>
+<tr><td><code>SAVED</code> effektindstillinger</td><td>På enheden, til rådighed i hvert show</td></tr>
+<tr><td>Custom fixtures</td><td>På enheden. Definitionerne for patchede armaturer ligger også i showet</td></tr>
+<tr><td>Gemte ★-farver og -temperaturer</td><td>På enheden. Farver pr. model, temperaturer deles</td></tr>
+<tr><td>MIDI-tildeling</td><td>På enheden. Kan eksporteres for sig som .kanaumidi</td></tr>
+<tr><td>OUTPUT, visningsindstillinger, sprog</td><td>På enheden</td></tr>
+<tr><td>HISTORY</td><td>Gemmes ikke</td></tr>
+</table>
+<h2 id="shows--5">Settings → SETTINGS</h2>
+<p>Sprog, de forskellige fadetider, mængden for BATTERY SAVE, hvilket nummer der skal vises, rækkefølgen under All, All-rækken i Patch, Net / Sub / Uni, og om gelatiner dukker op. Et skift af sprog træder i kraft ved næste start. Tekststørrelsen følger indstillingen i iOS.</p>
+<div class="next"><b>Næste</b><ul><li>En gemning mislykkedes → kapitel 14</li><li>Sådan arbejder du fra 2 enheder → kapitel 13</li></ul></div><a class="top" href="#top">↑ Indhold</a></section>
+<section class="chapter" id="s-midi"><h1 id="midi">12 MIDI-controllere (Advanced)</h1>
+<p class="lead">Sådan lægger du knapper og drejeknapper fra en MIDI-controller ned på armaturer og betjening.</p>
+<p>Dette kapitel handler om skærmen med Learn.</p>
+<h2 id="midi--1">Tilslutning og tildeling</h2>
+<ol><li>Slå MIDI controller til under Settings → MIDI. Den er slået fra som standard.</li><li>Kontrollér, at dit grej dukker op under Inputs, og at Last CC ændrer sig, når du drejer på noget.</li><li>Begynd med MIDI channel på OMNI, og snævr den så ind til 1–16, hvis du har brug for det.</li><li>Vælg en Mode, og tildel så med Learn under Knobs eller Buttons.</li><li>Drej på en knap, mens Turn… står, eller tryk på den knap, du vil tildele.</li></ol>
+<p>Det grej, dette er bygget op imod, er Behringer X-Touch Mini og Compact, i Standard mode med absolutte værdier. MC mode bruges ikke.</p>
+<h2 id="midi--2">De 2 tilstande</h2>
+<table>
+<tr><th>Tilstand</th><th>Hvad en betjening følger</th></tr>
+<tr><td>GLOBAL 10</td><td>En plads på skærmen. Skifter du side eller gruppe, skifter målet med. GM kan også tildeles</td></tr>
+<tr><td>FIXED</td><td>Ét armatur. Det gør ingen forskel, om du skifter side eller gruppe</td></tr>
+</table>
+<p>FIXED tildeles ét armatur ad gangen med Learn; der er ingen automatisk nummerering. Under GLOBAL 10 er der et Learn på hver række fra Fader 1 til Fader 10 og på Grand master.</p>
+<h2 id="midi--3">Når en knap først ikke gør noget</h2>
+<p>Er knappen og værdien på skærmen uenige, <strong dir="auto">flytter der sig ingenting, før knappen passerer værdien på skærmen</strong>. Det er med vilje: det holder niveauet fra at springe. Det samme gælder, efter at du har skiftet side, gruppe eller tilstand.</p>
+<p>Slår du Send values back til, sender Kanau de aktuelle værdier tilbage til LED-ringene på grej, der understøtter det. Tomme pladser kommer tilbage som 0.</p>
+<h2 id="midi--4">Knapper, og filen med tildelingen</h2>
+<p>Du kan tildele FINE, PIANO, en side tilbage og frem, og kald af enkelte scener. B.O. kan ikke tildeles. Én knap bærer én handling. Fixture Lock gælder også for MIDI.</p>
+<p>Export og Import under MIDI map file skriver og læser tildelingen som en .kanaumidi-fil, adskilt fra showet.</p>
+<div class="next"><b>Næste</b><ul><li>Sådan arbejder du fra 2 enheder → kapitel 13</li></ul></div><a class="top" href="#top">↑ Indhold</a></section>
+<section class="chapter" id="s-session"><h1 id="session">13 Sådan arbejder du fra 2 enheder — SESSION</h1>
+<p class="lead">2 iPhones eller iPads på ét show. <strong dir="auto">Kun værten sender DMX</strong>; den anden arbejder med det samme lysbord gennem den.</p>
+<p>En session lader 2 enheder på samme netværk styre ét show. Gæsten sender det, du gør, videre til værten. Standser værten, er der ikke noget, der overtager af sig selv.</p>
+<h2 id="session--1">Hvem holder hvad</h2>
+<table>
+<tr><th></th><th>Vært</th><th>Gæst</th></tr>
+<tr><td>Sender DMX</td><td>Ja</td><td>Nej</td></tr>
+<tr><td>Ejer showet</td><td>Ja</td><td>Låner det</td></tr>
+<tr><td>Ændrer patchen</td><td>Ja</td><td>Nej</td></tr>
+<tr><td>Hvor en scene gemmes</td><td>Værtens show</td><td>Sendes til værten</td></tr>
+<tr><td>Arbejder med lyset</td><td>Ja</td><td>Ja</td></tr>
+</table>
+<p><strong dir="auto">Rører begge det samme armatur, vinder værten.</strong> Gæsten ser <code>TAKEN</code>.</p>
+<h2 id="session--2">Sådan starter du en session</h2>
+<ol><li>Vælg Settings → SESSION → Host på den enhed, der skal sende.</li><li>Giv det 4-cifrede tal til den anden person.</li><li>Vælg Settings → SESSION → Join på den anden enhed, og skriv tallet.</li><li>Se efter Joined og forbindelsestilstanden.</li></ol>
+<p>Looking for 1234… betyder, at der stadig søges. Tallet ændrer sig, hver gang du er vært. Kun 2 enheder ad gangen; en tredje kan ikke komme med.</p>
+<h2 id="session--3">Hvad en gæst kan</h2>
+<table>
+<tr><th>Gæsten kan</th><th>Værten gør</th><th>Hver enhed holder sit eget</th></tr>
+<tr><td>Fadere, farve og gelatiner, på armaturer og celler</td><td>Tilføje, fjerne og ændre patchen, navne, mærker</td><td>Hvilken gruppe og side der vises, hvilken fane</td></tr>
+<tr><td>Kalde scener, og ＋ for at gemme</td><td>Omrokere, slette, omdøbe, fade, låse</td><td>FINE, 10 / 5, PIXELS, PIANO-tilstand</td></tr>
+<tr><td>⏻, GM, B.O., BATTERY SAVE</td><td>OUTPUT, SHOWS</td><td>Visningsindstillinger, sprog, gelatiner</td></tr>
+<tr><td>Grænser, Fixture Lock, rydde en markering</td><td>Fadetider, Save to, Switch function</td><td>MIDI-tildeling, gemte ★-farver</td></tr>
+</table>
+<p>En scene, der gemmes fra gæsten, skrives af værten. Gæstens egen showfil røres ikke, og Leave session stiller den tilbage.</p>
+<h3 id="session--4">Effekter og gæsten</h3>
+<p>Nogle handlinger på effekter når frem til værten, og nogle gør ikke.</p>
+<table>
+<tr><th>Handling</th><th>Fra gæsten</th></tr>
+<tr><td>At lægge en effekt på</td><td>Virker</td></tr>
+<tr><td>RELEASE ALL</td><td>Virker</td></tr>
+<tr><td>At rydde en celles effekter</td><td>Virker</td></tr>
+<tr><td>SIGNAL NEXT</td><td>Virker</td></tr>
+</table>
+<div class="box important"><b>IMPORTANT</b><p><strong dir="auto">PAUSE, RESUME, at slippe én effekt og START når ikke frem til værten fra en gæst.</strong> Gæstens skærm kan se ud, som om der skete noget, men lyset ændrer sig ikke. Gør det på værten.</p></div>
+<h2 id="session--5">Samtidigt arbejde, og et tabt led</h2>
+<p>Det, gæsten ændrer, dukker straks op på gæstens skærm. Rører værten det samme armatur, vinder værten, og gæsten ser <code>TAKEN</code>. Et armatur, som den anden enhed arbejder med, står med en cyan kant og et navn.</p>
+<table>
+<tr><th>Forbindelse</th><th>Tilstand</th></tr>
+<tr><td>Grøn</td><td>Forbundet til værten</td></tr>
+<tr><td>Ravgul</td><td>Intet fra værten i cirka 3 sekunder</td></tr>
+<tr><td>Rød</td><td>Intet i cirka 15 sekunder. The host is no longer available. dukker op</td></tr>
+</table>
+<p>Falder leddet ud, bliver gæsten ved med at vise den sidste tilstand. Den går ikke ud af sig selv, så brug Leave session. Efter en genopkobling er faderne stadig relative.</p>
+<p>Der er ikke brug for internet. De 2 enheder skal kunne nå hinanden på samme netværk. Client isolation, en firewall og lignende indstillinger kan spærre sessionen, selv hvor DMX kommer igennem.</p>
+<div class="next"><b>Næste</b><ul><li>Sådan gemmer du showet → kapitel 11</li><li>Den vil ikke forbinde → kapitel 14</li></ul></div><a class="top" href="#top">↑ Indhold</a></section>
+<section class="chapter" id="s-troubleshooting"><h1 id="troubleshooting">14 Når noget driller</h1>
+<p class="lead">Ordnet efter det, du ser. Arbejd dig ned gennem listen.</p>
+<h2 id="troubleshooting--1">Der tænder ikke noget</h2>
+<table>
+<tr><th>Det, du ser</th><th>Hvad du gør</th></tr>
+<tr><td>idle</td><td>Kontrollér, at et netværk er slået til under Settings → OUTPUT</td></tr>
+<tr><td>Blocked</td><td>Kontrollér tilladelsen Local Network i iOS. Er sACN-multicast spærret, så skift til Unicast</td></tr>
+<tr><td>WAITING + IP</td><td>Et andet lysbord er på linjen. Stop det, eller vælg Send anyway? → Send</td></tr>
+<tr><td>No node</td><td>Kontrollér nodens strøm, netværk, adresse og protokolindstillinger</td></tr>
+<tr><td>B.O.</td><td>Tryk på det for at fjerne blackout</td></tr>
+<tr><td>GM 0</td><td>Åbn GM, og brug →100</td></tr>
+<tr><td>🔌 n</td><td>Slå det universe til igen under OUTPUT → Universes</td></tr>
+<tr><td>Et lilla ⏻ eller armaturikon</td><td>Slå armaturets udgang til igen</td></tr>
+<tr><td>Et grønt BATTERY SAVE</td><td>Ryd den, hvis du har brug for fuld udgang</td></tr>
+<tr><td>En lav Upper limit</td><td>Se armaturets grænser efter</td></tr>
+<tr><td>⚠ i Patch</td><td>Ret den overlappende adresse eller rækken, der går ud over 512</td></tr>
+<tr><td>En tilstand, der ikke passer</td><td>Sæt samme DMX-tilstand som på selve armaturet</td></tr>
+</table>
+<h2 id="troubleshooting--2">Der findes ingen node</h2>
+<p>Står der no reply under Network, så kontrollér, at din iPhone og noden er på samme netværk. Når AUTO ikke når frem, så brug Unicast og indtast nodens adresse. Kør RESCAN, når du har ændret noget ved forbindelsen.</p>
+<p>Kontrollér nodens egne kontakter for Art-Net og sACN, dens adresse og dens universe. For eksempel kommer LumenRadio CRMX Stardust fra fabrikken med Art-Net og sACN slået fra.</p>
+<p>Går du på en Stardusts eller en Aputure Sidus Fours eget Wi-Fi, så se efter, hvilket bånd grejet understøtter. På et eksternt adgangspunkt kan klienter på 2.4 GHz og 5 GHz ofte nå hinanden; et andet bånd betyder ikke altid et andet netværk.</p>
+<p>På en Stardust betyder små bogstaver i udgangsvisningen, at der ikke kommer data ind, og store bogstaver, at der gør. Se producentens egen manual for alt, der er særligt for modellen. Grej, der ikke svarer på polling, står med 0 under Nodes answering, selv mens det modtager.</p>
+<h2 id="troubleshooting--3">Det flimrer</h2>
+<p>Kontrollér, at det samme armatur ikke fodres både fra netværket og fra Bluetooth, eller fra mere end ét lysbord eller én DMX-kilde. Kig på advarslen om CRMX under OUTPUT og på enhver besked om SHARED eller WAITING, og skær det ned til én vej.</p>
+<p>En anden styreapp, eller en indstilling på armaturet, kan også være årsagen.</p>
+<h2 id="troubleshooting--4">Det hakker, eller reagerer langsomt</h2>
+<p>Åbn Settings → OUTPUT, og læs <strong dir="auto">oppefra og ned</strong>. Standser det ved et af disse punkter, behøver du ikke kigge længere ned.</p>
+<pre>Sending       sender lysbordet overhovedet
+   ↓
+Clock         sidder det fast inde i telefonen
+   ↓
+Touch → wire  er turen fra finger til pakke langsom
+   ↓
+Node RTT      er netværket eller grejet langsomt
+   ↓
+Fixture       er selve armaturet langsomt</pre>
+<table>
+<tr><th>Det, du ser</th><th>Hvad du kigger på</th></tr>
+<tr><td>Sending står på nothing</td><td>Destination, netværk, tilladelser i iOS</td></tr>
+<tr><td>Clock over 100 ms</td><td>Telefonen. Luk paneler, genstart appen, hvis du er nødt til det</td></tr>
+<tr><td>Noder svarer, men armaturerne opdaterer cirka én gang i sekundet</td><td>Den adresse, AUTO sender til. Melder noden sig selv forkert, så prøv Broadcast</td></tr>
+<tr><td>Clock er fin, men rundturen er lang</td><td>Trængsel på Wi-Fi, adgangspunktet, grejet, vejen derhen</td></tr>
+<tr><td>Tallene er fine, men lyset halter</td><td>Udjævning i armaturet, dets indgangsvej, en anden app, der trækker i det</td></tr>
+</table>
+<p>Broadcast hjælper, når destinationen under AUTO er problemet. Ved andre årsager hjælper den ikke og kan lægge mere belastning på.</p>
+<h2 id="troubleshooting--5">Nogle fadere gør ingenting</h2>
+<p>Se armaturets grænser efter, dets Lock, og om dets udgang er slået til. Faderkurven i Kanau er lineær; en dæmperkurve i armaturet kan få den nederste halvdel til at føles flad. Se efter på selve armaturet, eller under Dim curve i Channels.</p>
+<p>På et armatur importeret fra GDTF skyldes forkert intensitet eller farve som regel, at rollerne er forkerte. Ret dem under Channel roles. Skal rettelsen følge med over i armaturer, du patcher senere, så ret definitionen under Custom fixtures.</p>
+<h2 id="troubleshooting--6">En knap gør ingenting</h2>
+<table>
+<tr><th>Det, du ser</th><th>Hvorfor, og hvad du gør</th></tr>
+<tr><td>En lilla flade hen over skærmen</td><td>SCREEN LOCK. Træk skyderen i midten mod højre</td></tr>
+<tr><td>En grøn 🔒</td><td>Ryd armaturets Fixture Lock</td></tr>
+<tr><td>COLOR eller EFFECT er grå</td><td>Markér et armatur. COLOR kræver desuden, at armaturet har farve</td></tr>
+<tr><td>PIXELS er grå</td><td>Der er intet pixelarmatur på siden</td></tr>
+<tr><td>HISTORY er inaktiv</td><td>Der er ikke noget at gå tilbage til</td></tr>
+<tr><td>Nummerknapperne ændrer ikke intensiteten</td><td>Klavertilstanden står på LOCK. Brug ＋ −</td></tr>
+<tr><td>Home under Channels er inaktiv</td><td>Den står allerede på standardværdien</td></tr>
+<tr><td>Home for Pan eller Tilt gør ingenting</td><td>Den kræver et hold, ikke et tryk</td></tr>
+<tr><td>En scene vil ikke opdatere sig</td><td>Se Lock this scene efter</td></tr>
+<tr><td>En gæst kan ikke rette patchen</td><td>Gør det på værten</td></tr>
+</table>
+<h2 id="troubleshooting--7">Farven er forkert</h2>
+<table>
+<tr><th>Det, du ser</th><th>Hvad du kontrollerer</th></tr>
+<tr><td>En anden farve end den, du satte</td><td>Om tilstanden i Patch passer med armaturets egen DMX-tilstand</td></tr>
+<tr><td>Slet ingen farvebetjening</td><td>Om armaturet har farve. Blandede modeller viser kun de fælles punkter (kapitel 05)</td></tr>
+<tr><td>Farvetemperaturen standser for tidligt</td><td>Du står ved kanten af armaturets område. Der står MIN eller MAX</td></tr>
+<tr><td>Et importeret armatur rammer forkert</td><td>Se Channel roles efter (kapitel 06)</td></tr>
+<tr><td>Hvidt trækker mod grønt eller magenta</td><td>Green / Magenta står måske ikke på 0. Back to neutral stiller den tilbage</td></tr>
+</table>
+<h2 id="troubleshooting--8">Et armatur opfører sig forkert</h2>
+<p>Kontrollér først, at tilstanden i Patch passer med armaturets egen. Er den forkert, kommer intensitet ind som farve, og farve kommer ind som retning.</p>
+<p>En definition importeret fra GDTF kan have roller lagt anderledes end på det virkelige armatur. Ret dem under Channel roles (kapitel 06). Skal det følge med over i kommende patches, så ret definitionen under Custom fixtures.</p>
+<p>Alt, der er mærket <code>Imported data is not verified.</code>, bør holdes op mod det virkelige armatur.</p>
+<h2 id="troubleshooting--9">En scene bliver ved med at ændre sig af sig selv</h2>
+<p><strong dir="auto">Alt, hvad du gør efter at have kaldt en scene, bliver gemt tilbage i den</strong> (kapitel 08).</p>
+<p>Slå Lock this scene til under den scenes Settings på de scener, du vil have stående urørt. Du kan stadig kalde dem og stadig arbejde med lyset; der gemmes ingenting.</p>
+<h2 id="troubleshooting--10">En scene vil ikke gemme</h2>
+<table>
+<tr><th>Hvad du kontrollerer</th><th></th></tr>
+<tr><td>Lock this scene</td><td>Der gemmes ingenting, mens den er slået til</td></tr>
+<tr><td>Du står på en gæst</td><td>Omrokering, sletning og omdøbning er værtens (kapitel 13)</td></tr>
+<tr><td>Det, der aldrig gemmes</td><td>GM, B.O., BATTERY SAVE, grænser, Fixture Lock, tilstanden for ⏻ og senere farvegrupper (kapitel 08)</td></tr>
+</table>
+<h2 id="troubleshooting--11">Sessionen vil ikke forbinde</h2>
+<p>Vil Looking for ikke forsvinde, så kontrollér disse ting.</p>
+<ul><li>Begge enheder er på <strong dir="auto">samme netværk</strong>. Der er ikke brug for internet</li><li>De 4 cifre er rigtige. Tallet ændrer sig, hver gang du er vært</li><li>Der er ikke allerede 2 enheder forbundet. En tredje kan ikke komme med</li><li>Client isolation eller en firewall spærrer ikke trafikken mellem enhederne</li></ul>
+<p>DMX kan komme igennem på et netværk, hvor trafikken mellem enheder er spærret.</p>
+<h2 id="troubleshooting--12">Noget bliver ved med at lyse ved blackout</h2>
+<p>Se Fixture Lock efter. Den grønne 🔒 n øverst tæller de armaturer, der stadig lyser. Ryd låsen på de armaturer.</p>
+<h2 id="troubleshooting--13">Appen lukkede, eller leddet faldt ud</h2>
+<p>En genstart henter det sidst gemte show og billede frem. De allersidste ændringer før en afslutning er der måske ikke.</p>
+<p>Hvad dine armaturer gør, efter at appen eller leddet standser, afhænger af nodens og armaturets egne indstillinger for at holde på det sidste billede. Se grejet efter, hvis de skal holde.</p>
+<h2 id="troubleshooting--14">En gemning mislykkedes</h2>
+<p>Patch was not saved. betyder, at gemningen mislykkedes. Kontrollér den frie plads på enheden, og skriv, hvis du kan, den aktuelle tilstand ud med Export show file. Sørg for, at eksporten blev færdig, før du kører videre. At lukke advarslen med × betyder ikke, at der blev gemt.</p>
+<p>Kan en fil ikke læses, så åbn et andet show fra OTHER SHOWS, eller importér en .kanau, du har eksporteret tidligere. Den fil, der ikke kunne læses, beholdes.</p>
+<h2 id="troubleshooting--15">Sådan kontrollerer du DMX-værdierne</h2>
+<p>Settings → DMX MONITOR viser alle 512 kanaler i hvert universe. Den påvirker ikke det, der sendes.</p>
+<div class="next"><b>Næste</b><ul><li>Sådan læser du hele udgangsvisningen → kapitel 02</li><li>Hvad et ord betyder → ordliste</li></ul></div><a class="top" href="#top">↑ Indhold</a></section>
+<section class="chapter" id="s-glossary"><h1 id="glossary">Ordliste</h1>
+<table>
+<tr><th>På skærmen</th><th>Hvad det betyder</th></tr>
+<tr><td>Fixture</td><td>Et armatur. Den enhed, du patcher og styrer</td></tr>
+<tr><td>Patch</td><td>At registrere et armaturs model, tilstand og DMX-adresse</td></tr>
+<tr><td>Universe / Address</td><td>Et universe, og kanalpladsen inde i det</td></tr>
+<tr><td>Mode</td><td>Armaturets DMX-tilstand. Skal passe med selve armaturet</td></tr>
+<tr><td>Unit no. / Fixture number</td><td>Det automatiske nummer inden for en model / det nummer, du giver det</td></tr>
+<tr><td>Offset / Gap</td><td>Afstanden mellem armaturer / ekstra frie kanaler mellem dem</td></tr>
+<tr><td>Group / All</td><td>Et sæt armaturer / hvert armatur</td></tr>
+<tr><td>Pixel / Cell</td><td>En del af ét armatur, der kan styres for sig</td></tr>
+<tr><td>Intensity</td><td>Lysstyrke</td></tr>
+<tr><td>CCT</td><td>Farvetemperatur, i kelvin</td></tr>
+<tr><td>G/M</td><td>Korrektionen mellem grøn og magenta</td></tr>
+<tr><td>Crossfade</td><td>Balancen mellem den hvide og den farvede side</td></tr>
+<tr><td>Emitter</td><td>En LED eller anden lyskilde inde i armaturet</td></tr>
+<tr><td>Channels / Raw channels</td><td>At arbejde med én DMX-kanal ad gangen</td></tr>
+<tr><td>Channel roles</td><td>Hvilken funktion en kanal behandles som</td></tr>
+<tr><td>GM / B.O.</td><td>Grand master / blackout</td></tr>
+<tr><td>Lock / SCREEN LOCK</td><td>At holde på et armaturs udgang / at stoppe utilsigtede berøringer</td></tr>
+<tr><td>FINE / FINE+</td><td>1/10 og 1/100 af den normale følsomhed</td></tr>
+<tr><td>PIANO</td><td>At bruge nummerknapperne til at ændre intensiteten, mens de holdes nede</td></tr>
+<tr><td>Scene / Show</td><td>Et gemt billede / alting til én opgave</td></tr>
+<tr><td>SNAP / Fade</td><td>Med det samme / over en sat tid</td></tr>
+<tr><td>HISTORY / HERE</td><td>Listen over tidligere tilstande / hvor du står i den</td></tr>
+<tr><td>PAUSE / RESUME</td><td>At fryse en effekt / at køre videre derfra</td></tr>
+<tr><td>RELEASE / START</td><td>At stoppe en effekt / at køre den fra begyndelsen</td></tr>
+<tr><td>CLEAR</td><td>At rydde en markering, eller at fjerne en effekt. Det afhænger af, hvor du ser det</td></tr>
+<tr><td>SAVED</td><td>Gemte effektindstillinger</td></tr>
+<tr><td>Host / Join / Leave session</td><td>At være den sendende enhed / at gå med i en / at gå ud</td></tr>
+<tr><td>PROVISIONAL</td><td>En pladsholdertilstand for et armatur</td></tr>
+<tr><td>GDTF</td><td>Et filformat til armaturdefinitioner</td></tr>
+</table><a class="top" href="#top">↑ Indhold</a></section>
+<script>
+(function(){
+  var IDX = [{"id":"quick-start","title":"QUICK START","h":[{"id":"quick-start--1","t":"1. Ændr intensiteten"},{"id":"quick-start--2","t":"2. Ændr farven"},{"id":"quick-start--3","t":"3. Hent en scene frem"},{"id":"quick-start--4","t":"Se de værdier, der går ud"},{"id":"quick-start--5","t":"Hvad der ligger i øvelsesrigget"},{"id":"quick-start--6","t":"Tilslut rigtige armaturer"},{"id":"quick-start--7","t":"5 ting, det er værd at vide først"}],"text":"QUICK START — prøv Kanau på 3 minutter Du behøver ikke et eneste armatur for at nå så langt. Navne på knapper står præcis, som de står på skærmen. Appen åbner med et øvelsesrig, hvor 24 armaturer allerede er patchet. 3 minutter her viser dig det meste af, hvordan Kanau virker. 1. Ændr intensiteten Øverst på skærmen pulserer GM 20 rødt. Tryk på det. Tryk på →100 i panelet, der åbner. Alt bliver lysere. Luk panelet, og træk en fader op og ned. Tallet over den og farven på det runde ikon følger med. En fader flytter sig efter den strækning, din finger tilbagelægger, ikke det sted, du rørte . Hvor du begynder, betyder ingenting for resultatet. 2. Ændr farven Tryk og hold på det runde ikon over en fader. Farvepanelet åbner. Intensity sætter lysstyrken, Color temperature sætter hvidt, RGB sætter farven. Med ‹ › øverst går du videre til det næste armatur. Hvert armatur har sine egne funktioner, så de punkter, du får at se, skifter med armaturet. 3. Hent en scene frem Åbn fanen Scenes nederst. 5 scener venter: DIM , COLOR , CCT , PIXELS , FX . Tryk på en af dem. Tilbage på Home har fadere og farver skiftet til det billede. Alt, hvad du ændrer efter et kald, bliver skrevet tilbage i den scene. Lås en scene for at beskytte den (kapitel 08). Se de værdier, der går ud Selv uden armaturer tilsluttet viser Settings → DMX MONITOR de tal, Kanau rent faktisk sender. Flyt en fader, og tallene flytter sig med. Hvad der ligger i øvelsesrigget Demoen har 24 armaturer fra Generic: DIMMER, CCT, RGB, RGBW og BAR (4 pixels). De ligger i 3 grupper à 8, som hedder KEY, BACK og FLOOR. Grand master står på 20, 6 armaturer er markeret til Battery save og bærer et grønt mærkat, på FLOOR kører en ildeffekt, og 5 scener er gemt. Intet af det udgiver sig for at være et virkeligt produkt. Tilslut rigtige armaturer Når demoen giver mening, går du videre til dit eget grej. Forbind : sæt din iPhone på samme netværk som din DMX-node. Kontrollér under Settings → OUTPUT , at Nodes answering står på 1 eller mere, og at Sending lyser grønt (kapitel 02). Patch : Patch → ＋ new patch → add new fixture , og sæt derefter model, DMX-tilstand, universe og adresse. Det skal passe med armaturets egne indstillinger (kapitel 03). Byg billedet : sæt intensitet og farve på Home (kapitel 04 og 05). Gem det : tryk på ＋ i Scenes for at lægge billedet væk (kapitel 08). Øvelsesrigget er et helt almindeligt show. Slet det, når du patcher dine egne armaturer, eller lav et nyt med Settings → SHOWS → NEW SHOW . 5 ting, det er værd at vide først Fixture Lock slår blackout. Et låst armatur bliver ved med at lyse gennem B.O. (kapitel 10). En kaldt scene opdaterer sig selv, mens du arbejder. Lås dem, der skal stå urørt (kapitel 08). Der findes 3 slags lås. Fixture Lock holder på udgangen, Scene Lock beskytter den gemte scene, Screen Lock stopper utilsigtede berøringer (kapitel 10). Når grand master står under 100, pulserer skærmkanten rødt. Ser billedet mørkt ud, så kig der først. Sender et andet lysbord til de samme armaturer, ser du WAITING eller SHARED . Begge dele forklares i kapitel 02. WARNING Et armatur med Lock slået til går ikke ud, når du trykker på blackout, og det går ikke ud, når du trækker grand master i bund. Kontrollér, at ingen låse står tilbage, før I optager. Antallet af armaturer, der stadig lyser under et blackout, står ved siden af den grønne 🔒 øverst på skærmen. Næste Hvor alting ligger på skærmen → kapitel 01 Tilslutning af rigtige armaturer → kapitel 02 Sådan gemmer du billeder → kapitel 08"},{"id":"screen","title":"01 Sådan læser du skærmen","h":[{"id":"screen--1","t":"Lær disse 7 først"},{"id":"screen--2","t":"De 5 faner"},{"id":"screen--3","t":"Statuslinjen"},{"id":"screen--4","t":"Delene på Home"},{"id":"screen--5","t":"Farver og mærker"}],"text":"01 Sådan læser du skærmen Hvad der ligger på Home-skærmen, oppefra og ned, og hvordan du læser det, når noget ser forkert ud. 1 2 3 4 5 6 7 8 Home ved første start. De røde tal svarer til listen herunder. 1 Protokol og forbindelsestilstand 2 Grand master (GM) 3 Valg af, hvilke armaturer og grupper der vises 4 Skift mellem sider 5 Det runde armaturikon 6 Faderen 7 Nummerknappen 8 De 5 faner Lær disse 7 først Før de detaljerede tabeller: det her er de eneste steder, du behøver at kende. Sted Hvad det gør GM Samlet lysstyrke, øverst på skærmen Fixtures / Groups Vælger, hvilke armaturer der vises Fader Sætter intensiteten Scenes Gemmer billeder og henter dem frem igen Patch Registrerer armaturer Effects Viser og stopper effekter, der kører Settings Udgang, shows, MIDI, session Alt herunder er detaljer. De 5 faner Home er der, hvor du arbejder. Trykker du på en anden fane, åbner et panel oven på den. Træk håndtaget øverst nedad, eller tryk på Done, for at komme tilbage til Home. Fane Hvad den er til Se Scenes Gem og kald billeder frem Kapitel 08 Patch Armaturer, adresser, tilstande, grupper Kapitel 03 Home Sæt intensitet med fadere Kapitel 04 Effects Vis, justér og stop effekter Kapitel 09 Settings DMX-udgang, shows, MIDI, session, indstillinger Kapitel 02, 11–13 Statuslinjen Til venstre står protokollen og forbindelsestilstanden. ARTNET er Art-Net, SACN er sACN, BLUETOOTH betyder, at der kun sendes over Bluetooth. Vist Betydning Grøn prik Sender Ravgul prik Sat ned i tempo, eller forbinder igen (Reconnecting…) Rød prik, No node Ingen svarer Rød prik, Blocked iOS stopper trafikken Grå prik, idle Standset WAITING og en IP Et andet lysbord blev fundet, så dette holder igen SHARED og en IP Et andet lysbord sender til samme universe. Dette sender stadig med JOINED og et navn I en session. DMX går ud fra værten En grøn prik er ikke bevis for, at armaturet har modtaget noget. Kapitel 02 forklarer, hvordan du kontrollerer det; kapitel 14 handler om, hvad du gør, når det går galt. I midten og til højre i linjen ligger disse. Punkt Tryk Hold, eller bemærk GM 100 Åbner panelet for grand master Hold for dens indstillinger. Pulserer rødt under 100 B.O. Fjerner blackout Erstatter GM, mens der er blackout 🔌 n (rød) Ingenting Universer slået fra. Slå dem til igen under Settings → OUTPUT 🔒 n (grøn) Ingenting Låste armaturer, der stadig lyser under et blackout BATTERY SAVE Slår den til og fra Hold for at sætte mængden og fadetiden SCREEN LOCK Låser ikke Hold i 0.5 sekunder for at låse skærmen Delene på Home Punkt Sådan bruger du det Fixtures / Groups Skifter mellem visning efter model og visning efter gruppe 10 / 5 Fadere på en side. 5 gør hver af dem bredere HISTORY Åbner listen over tidligere tilstande Model- og gruppeknapper Tryk for at vise de armaturer. Hold for at sætte farve og intensitet for dem alle CLEAR n Rydder markeringen. Lyset ændrer sig ikke ‹ / › Skifter mellem sider Tal Intensitet fra 0 til 100. Vises stort øverst, mens du trækker Rundt armaturikon (…) Tryk for at markere. Hold for at åbne panelet for det armatur Fader Træk op og ned for at sætte intensiteten Modelnavn Markerer en række af samme model og tilstand Nummerknap Armaturets nummer. I klavertilstand ændrer den intensiteten, så længe du holder ⏻ Slår udgangen fra og til, men beholder værdien COLOR Sætter farve og intensitet for de markerede armaturer EFFECT Lægger en effekt på de markerede armaturer PIXELS Folder cellerne i pixelarmaturer ud og ind ＋ − Skifter klavertilstand rundt: LOCK → ＋ → − FINE Skifter følsomhed rundt: normal → FINE (1/10) → FINE+ (1/100) COLOR er utilgængelig, når intet er markeret, og ved armaturer uden farve. EFFECT kræver en markering. PIXELS kræver, at der er et pixelarmatur på siden. Farver og mærker Farve eller mærke Betydning Ravgul Markeret, eller aktiv Rød Blackout, lav grand master, et netværksproblem, klavertilstand. Noget, du skal se efter Grøn Sender. Fixture Lock. BATTERY SAVE slået til Lilla Udgangen slået fra, eller skærmen låst Cyan Bliver betjent af den anden enhed i en session Orange Ved en grænse, du selv har sat Grå Utilgængelig, eller standset Det runde ikon bærer armaturets farve og dets virkelige udgang. En markering viser en ravgul kant, en frakoblet udgang en lilla ring og ⏻, en lås en grøn yderring og 🔒. En effekt, der kører, får det til at bevæge sig. En rød puls langs skærmkanten betyder, at grand master står under 100. En grøn kant betyder, at BATTERY SAVE er slået til. Med begge dele ligger rød yderst og grøn inderst. Under et blackout erstattes den røde kant af B.O. i statuslinjen. Næste Hvordan fadere føles → kapitel 04 Sådan sætter du farve → kapitel 05 Der tænder ikke noget → kapitel 14"},{"id":"output","title":"02 Sådan sender du DMX","h":[{"id":"output--1","t":"Første forbindelse"},{"id":"output--2","t":"En enkelt Art-Net-node"},{"id":"output--3","t":"Indstillingerne i detaljer"},{"id":"output--4","t":"Protokol og netværk"},{"id":"output--5","t":"Valg af destination"},{"id":"output--6","t":"RESCAN"},{"id":"output--7","t":"Tilladelser i iOS"},{"id":"output--8","t":"Universer og Art-Net-nummerering"},{"id":"output--9","t":"CRMX over Bluetooth"},{"id":"output--10","t":"Når der findes et andet lysbord"},{"id":"output--11","t":"DMX Diagnostics — læs, hvad der sker"},{"id":"output--12","t":"DMX MONITOR"}],"text":"02 Sådan sender du DMX — OUTPUT Sådan sætter du forbindelsen op til dit lysgrej, og sådan kontrollerer du, at det når frem. 1 2 3 4 5 Settings → OUTPUT. De røde tal svarer til listen herunder. 1 Protokol. Art-Net eller sACN, det ene eller det andet 2 Netværk. Der sendes på dem, der er markeret 3 Hvor mange noder der svarede. no reply betyder, at ingen blev fundet 4 Destination. AUTO passer til de fleste rigge 5 Søg efter noder igen Første forbindelse En enkelt Art-Net-node Sæt din iPhone på samme Wi-Fi eller kablede netværk som noden. Åbn Settings → OUTPUT. Vælg Art-Net og AUTO. Begge dele er standard. Kontrollér, at Nodes answering står på 1 eller mere, og at Sending lyser grønt. Flyt en fader på Home, og se armaturet svare. Kanau sender hvert patchet universe uafbrudt, normalt med 44 Hz. Der er ingen startknap. Udsendelsen kan sættes på pause eller standse, når der opdages et andet lysbord, når netværksindstillingerne ændrer sig, eller når iOS nægter tilladelse. Indstillingerne i detaljer Protokol og netværk Art-Net og sACN udelukker hinanden: vælg én af dem. CRMX over Bluetooth kører ved siden af begge. Network viser dine Wi-Fi-, Ethernet- og Hotspot-forbindelser med deres adresser, og hvor mange noder der svarede på hver af dem. Som standard bruges hvert tilgængeligt netværk. Står alle valgt, og du trykker på ét, bliver kun det ene tilbage. Derefter slår hvert tryk ét til eller fra. Slår du dem alle fra, går der intet ud over netværket. Bluetooth sender videre. En forbindelse mærket no address kan ikke vælges. Bruger du kabel og Wi-Fi sammen, så kontrollér, at begge står på listen. Valg af destination Indstilling Hvor der sendes hen Hvornår du bruger den AUTO (Art-Net) Unicast til de noder, der svarede, plus én broadcast i sekundet på hvert netværk. Kun broadcast, hvis ingen svarede Det normale valg Broadcast (Art-Net) Hver pakke til hvert netværks subnet Når en node melder en forkert adresse, og AUTO er længe om at opdatere Unicast Direkte til de adresser, du indtaster Når broadcast ikke når frem, eller du vil udpege modtageren 255.255.255.255 (Art-Net) Broadcast på segmentet. Går ikke gennem en router Når adresserne ikke passer sammen, og almindelig broadcast svigter. iOS kan blokere den Multicast (sACN) Multicast-adressen for hvert universe Standard for sACN Med Unicast indtaster du nodens adresse og trykker på Add. Er der intet indtastet, får du No node IPs entered., og der sendes intet. Hvert universe går til hver adresse, du indtaster. Står Nodes answering på 1 eller mere med AUTO, men armaturerne opdaterer sig kun cirka én gang i sekundet, så se efter, om noden melder en forkert adresse for sig selv. Kig på Destination, og prøv Broadcast. Kapitel 14 gennemgår de øvrige årsager til forsinkelse. RESCAN Trykker du på RESCAN under Art-Net, opdateres listen over noder. Brug den, når du har tilføjet grej, fjernet grej eller ændret en adresse. Lader du den være, dukker en ny node op inden for cirka 3 sekunder, og en fjernet forsvinder efter cirka 10. Udsendelsen fortsætter, mens der søges. RESCAN er utilgængelig, når der ikke er noget brugbart netværk. Tilladelser i iOS Et rødt banner med teksten iOS is blocking this. betyder én af disse ting. Lokalt netværk : slå iPhone Settings → Kanau → Local Network til. sACN-multicast : ser du iOS blocked multicast., så skift til Unicast og indtast nodernes adresser. Rettigheden til multicast gives kun til versionerne fra TestFlight og App Store, ikke til en udviklingsversion. Universer og Art-Net-nummerering Universes viser hvert patchet universe med sit antal armaturer, hvor mange der lyser, og en ON/OFF-kontakt. IMPORTANT OFF stopper ikke udsendelsen. Der sendes nuller videre til det universe, så en modtager ikke kan blive stående med sine sidste værdier og lyse. Antallet af universer, der er slået fra, står ved siden af 🔌 øverst på skærmen. Vil din node hellere have Net / Sub-Net / Universe end ét enkelt tal, så slå Settings → SETTINGS → Art-Net → Net / Sub / Uni til. Sammenhængen er Net × 256 + Sub × 16 + Uni . sACN-prioritet kan være 0, 100 eller 200. Standard er 100. Sender flere kilder til samme universe, følger modtageren den højeste prioritet. CRMX over Bluetooth Slå Bluetooth til under Settings → OUTPUT → CRMX (Bluetooth). Giv Bluetooth lov, første gang iOS spørger. Vælg en sender på listen. Trykker du på den igen, afbrydes forbindelsen. Den sender, du vælger, bærer universe 1 (U1). Næste gang forbinder den til den samme, når du slår Bluetooth til. Sender du samme universe til samme armatur både over netværket og over Bluetooth, kan det flimre. Læs advarslen i afsnittet CRMX, og slå den ene vej fra. Kanau vælger ikke for dig. Nægter en sender at tage Art-Net, efter at du har slået Bluetooth fra, så kontrollér dens egen Bluetooth-indstilling og genstart den. På Aputure Sidus Four skal du også kontrollere indstillingen Sidus BT på selve enheden. Når der findes et andet lysbord Vist Hvad det betyder, og hvad du gør WAITING + IP Et andet lysbord sendte allerede, da dette startede, så dette holder igen. Stop det andet, eller tryk på beskeden og vælg Send anyway? → Send. Er det andet en Kanau-vært, kan du i stedet gå med i dens session SHARED + IP Et andet lysbord dukkede op, efter at dette var startet. Udsendelsen fortsætter, så stop en af dem, hvis du har brug for det Starter 2 enheder samtidig, og begge holder igen, begynder den med den laveste adresse at sende igen. DMX Diagnostics — læs, hvad der sker Den nederste halvdel af OUTPUT er der for at vise dig, hvor tingene gik i stå . Det er ikke et sæt indstillinger. Er udgangen langsom eller fraværende, så læs oppefra og ned (kapitel 14). Punkt Sådan læser du det Destination Hvor det virkelig går hen. ↦ efter en adresse betyder unicast til en node, der svarede Medium De forbindelser, der er i brug, for eksempel wi-fi + ethernet Sending Pakker i det sidste sekund. Omkring 44 er normalt. nothing betyder, at der ikke gik nogen ud Clock Det værste hul mellem to udsendelser. Omkring 23 ms er n"},{"id":"patch","title":"03 Sådan patcher du armaturer","h":[{"id":"patch--1","t":"Sådan tilføjer du armaturer"},{"id":"patch--2","t":"2 slags numre"},{"id":"patch--3","t":"Modeller og tilstande"},{"id":"patch--4","t":"Sådan ændrer du patchede armaturer"},{"id":"patch--5","t":"Sådan ændrer du mange på én gang"},{"id":"patch--6","t":"Re-patch — flyt ind i ledig plads"},{"id":"patch--7","t":"Sådan bygger du grupper"},{"id":"patch--8","t":"Armaturer uden for biblioteket (Advanced)"},{"id":"patch--9","t":"Fra GDTF Share"},{"id":"patch--10","t":"Fra en GDTF-fil"},{"id":"patch--11","t":"I hånden, ud fra et DMX-skema"},{"id":"patch--12","t":"Ved at kopiere en, du har"}],"text":"03 Sådan patcher du armaturer — Patch Registrér de armaturer, du bruger, og sæt model, DMX-tilstand, universe, adresse, nummer og grupper. Intensitet og farve sættes på Home (kapitel 04 og 05). Patch-skærmen. Patchede armaturer er samlet efter model og tilstand. Sådan tilføjer du armaturer Åbn Patch → ＋ new patch, og tryk på add new fixture for at få felterne frem. Vælg Manufacturer → Fixture → Mode. Tilstanden skal passe med den, der er sat på selve armaturet. Sæt antallet, universe og startadressen. Kontrollér området og eventuelle advarsler, og tryk så på Add. Det gemmes, i takt med at det tilføjes. Felt Hvad det er Favourites Sæt en stjerne ved en model for at nå den direkte næste gang Name Det viste navn. Står som modellen og deles af alle armaturer af den model Fixture number Det nummer, du kalder den ved på gulvet. Må stå tomt. Begynder ved det højeste i brug plus 1 Label Et kort mærke til visningen. Bruger en standard, hvis det står tomt How many Op til 4,096 Universe / Address Står som U1 / 1. Skifter du universe, stilles adressen tilbage til 1. U0 er tilladt Offset Afstanden mellem armaturerne. Udfyldes fra tilstandens antal kanaler Gap Ekstra kanaler, der skal stå frie mellem armaturerne Battery save Markerer de nye armaturer til BATTERY SAVE Label color Baggrunden bag nummeret. 7 farver, eller ingen Map Opbygningen med 512 kanaler. Træk og slip for at sætte startadressen Hvert armatur efter det første begynder ved det forrige armaturs startadresse plus Offset og Gap. Alt ud over 512 går videre i det næste universe. Er Offset mindre end tilstandens antal kanaler, kommer der en advarsel, men du kan køre videre. Bagefter får du et resultat som Added 3 × Titan Tube — U1 1–15. Already patched lader dig tilføje flere af en model, du allerede har. Patched viser den aktuelle opbygning. 2 slags numre Nummer Hvad det er Unit no. Et løbenummer inden for modellen. Tildeles for dig Fixture number Det nummer, du bruger på gulvet. Det sætter du selv Hvilket af dem Home viser, sættes under Settings → SETTINGS → Fixture numbers → Show the fixture number. Unit no. er standard. Gentagne fixture numbers giver en advarsel, men er tilladt. Modeller og tilstande Denne version kommer med 45 producenter, 578 armaturer og 11,347 tilstande . Er noget ikke i biblioteket, så brug definitionerne under Generic eller Custom fixtures. Generic rummer Dimmer, Dimmer 16-bit, Bi-color, CCT, RGB, RGBW, Dimmer + RGB, Dimmer + RGBW, Bulb og Desk lamp. PROVISIONAL (Advanced): en pladsholdertilstand, der bruges, hvor DMX-skemaet ikke er gennemarbejdet. Den sender intensitet på kanal 1 og ellers intet. Tilstande uden dæmperkanal : faderen trækker farvekanalerne samlet og virker som en virtuel dæmper. Sådan ændrer du patchede armaturer Patched viser armaturerne efter model og tilstand. Tryk på en overskrift for at folde den sammen. Tryk på et armaturs række for at åbne dets patchindstillinger. ⚠ markerer en overlappende adresse eller en række, der går ud over kanal 512. Udsendelsen fortsætter, mens mærket står, så gå indstillingerne efter. n fixture data problems handler om fejl fundet under indlæsningen af armaturdata; tryk på det for at se detaljerne. At arbejde i denne liste ændrer ikke, hvilke armaturer Home viser. Sådan ændrer du mange på én gang Tryk på Select many, og vælg armaturerne. ✓ på en modelrække tager hele den model. Handling Hvad den gør Select all / Select none Tager eller rydder alting, også sammenfoldede rækker Name Nummererer enden af navnet i den rækkefølge, du valgte Number Sætter fixture numbers i den rækkefølge, du valgte Address Lægger dem ud igen ud fra et universe, en startadresse og et mellemrum Battery Markerer dem til BATTERY SAVE eller fjerner markeringen New group Bygger en gruppe ud af markeringen Delete Fjerner dem. Se tallet efter, før du bekræfter Sletter du et armatur, forsvinder også dets intensitet, farve og grænser, og det tages ud af hver eneste scene. Sletter du inde fra en gruppe, fjernes det kun fra den gruppe; selve armaturet bliver. Re-patch — flyt ind i ledig plads Åbn Patch → Re-patch. Vælg det armatur, der skal flyttes, i listen ordnet efter adresse. Tryk på et ledigt område. Det flytter til begyndelsen af det. Kun områder, der er store nok, bliver tilbudt. Armaturer, der overlapper, vises med rødt. Sådan bygger du grupper Tryk på ＋ new group, og giv den et navn. Vælg armaturerne i den rækkefølge, du vil have dem på Home. Tryk på CREATE. Et armatur kan være med i flere grupper. Det kopieres ikke: ændrer du det fra en hvilken som helst gruppe, ændrer du det samme armatur. Lægger du det i en gruppe, bliver det liggende i All. Trykker du på et gruppenavn, kan du sætte navnet, se antallet og adresseområdet og opbygningen, ombytte rækkefølgen eller slette gruppen. Edit group — add &amp; reorder tilføjer og omrokerer armaturer; Add to an existing group lægger den aktuelle markering i en gruppe, du allerede har. Om Patch viser en All-række, sættes under Settings → SETTINGS → Groups → Show the All row. Armaturer uden for biblioteket (Advanced) Custom fixtures rummer de definitioner, du selv lægger ind. De er til rådighed i hvert show. Sletter du en definition, rører det ikke armaturer, der allerede er patchet fra den. Fra GDTF Share Åbn ＋ Browse GDTF Share, og tryk SIGN IN med din GDTF Share-konto. Tryk REFRESH for at opdatere listen, og vælg så producent, armatur, revision og tilstand. Search dækker hver producent. Læs importrapporten, og vælg SAVE, SAVE &amp; EDIT eller SAVE &amp; PATCH. SAVE &amp; PATCH åbner patchskærmen med den definition valgt. Remember on this device gemmer dit login; FORGET fjerner det. De definitioner, du allerede har hentet, bliver. Dit login går til GDTF Share. Fra en GDTF-fil ＋ Import a GDTF file → ＋ Open a GDTF file, vælg din .gdtf, kontrollér tilstanden og importrapporten, og gem så. Der er ikke brug for netværk. Rapporten viser, hvad der ikke kunne komme med over. En 16-bit-værdi, der er delt over adresser langt fra hinanden, beholder kun sin gro"},{"id":"intensity","title":"04 Sådan sætter du intensitet","h":[{"id":"intensity--1","t":"Sådan flytter du en fader"},{"id":"intensity--2","t":"FINE"},{"id":"intensity--3","t":"Sådan flytter du flere på én gang"},{"id":"intensity--4","t":"Nummerknapperne som et klaver"},{"id":"intensity--5","t":"⏻ — kun udgangen"},{"id":"intensity--6","t":"GM og B.O."},{"id":"intensity--7","t":"Sådan vælger du, hvad der er på siden"},{"id":"intensity--8","t":"Knapperne langs bunden"},{"id":"intensity--9","t":"Sådan arbejder du med pixels for sig"}],"text":"04 Sådan sætter du intensitet — Home Faderne på Home. Det er hjertet i Kanau. Sådan flytter du en fader En fader svarer på den strækning, din finger tilbagelægger , ikke på det sted, du rørte. Du kan trække den fra tallet, fra det runde ikon eller fra det tomme felt under faderen. Den er bygget, så du kan arbejde med blikket på scenen i stedet for på hånden. Oppefra: den aktuelle intensitet, det runde armaturikon, faderen. Tryk på ikonet for at markere, hold det for at åbne panelet for det armatur. Knappen vokser en anelse, når du rører den, og der flytter sig ingenting, før du har trukket et lille stykke , så det er trygt at lade en finger hvile på den. Mens du trækker, står nummer, navn og værdi stort øverst på skærmen. Har du sat grænser, bevæger den sig inden for dem. FINE Handling Hvad der sker Kort tryk Skifter rundt: normal → FINE (1/10) → FINE+ (1/100) → normal Hold Næste trin, så længe du holder. Tilbage til normal, når du slipper Skifter du midt i et træk, springer værdien ikke. FINE gælder også for rå kanaler og for Pan og Tilt. Sådan flytter du flere på én gang Markér 2 eller flere runde ikoner, og træk så i en af faderne. De flytter sig alle lige meget og holder forskellene mellem sig. Når den ene når en grænse, kører de andre videre. Låste armaturer holdes udenfor. Det er ikke det samme som at arbejde med flere armaturer i panelet COLOR, hvor de alle lander på samme værdi. Nummerknapperne som et klaver Knappen ＋ − nederst til højre sætter tilstanden. Tilstand Mens en nummerknap holdes nede LOCK (standard) Der ændrer sig ingenting ＋ Går til den øvre grænse, 100 som standard − Går til den nedre grænse, 0 som standard Slip, og den vender tilbage til, hvor den var. Du kan holde flere nede ad gangen eller glide sidelæns for at spille dem efter tur. Låste armaturer svarer ikke. Knapperne lyser rødt, mens ＋ eller − er spændt. Ved start står den altid på LOCK. ⏻ — kun udgangen Trykker du på ⏻, slår du et armaturs udgang fra og til, men beholder værdien. Den bliver lilla, mens den er slået fra, og tallet bliver stående. At flytte faderen, mens den er slået fra, tænder ingenting. ON/OFF er standard. Under armaturets Switch function kan du skifte til FLASH ON eller FLASH OFF, som kun varer, mens du holder. Låste armaturer svarer ikke. GM og B.O. Trykker du på GM øverst, åbner faderen for grand master, B.O. og →100. GM-faderen sætter den samlede lysstyrke. Den er relativ, og FINE virker på den. B.O. slår blackout til og fra. Værdien for GM bevares. →100 dukker op, når GM står under 100, og sætter den tilbage. Holder du GM nede, tilbydes 100, 75, 50, 25, 12.5 og 0. Det 0 dér slår blackout til; det sætter ikke GM i bund. Fadetiden for disse knapper sættes under Settings → SETTINGS → Master fade. SNAP er standard. At trække faderen med fingeren sker altid med det samme. WARNING Et armatur med Lock slået til svarer hverken på GM eller B.O. Det bliver ved med at lyse. Antallet af låste armaturer, der stadig lyser under et blackout, står ved siden af den grønne 🔒 øverst på skærmen. Sådan vælger du, hvad der er på siden Fixtures viser efter model og tilstand; Groups viser All og de grupper, du har bygget. Tryk på et navn for at skifte. Én fader er altid ét armatur, også inde i en gruppe. Rækkefølgen under All sættes under Settings → SETTINGS → Order on All, enten efter model og løbenummer eller efter fixture number. Inde i en gruppe er det den rækkefølge, du byggede. ‹ og › skifter side. Skifter du mellem 10 og 5, bliver det armatur, du arbejder med, i billedet. Knapperne langs bunden Fra venstre: COLOR, EFFECT, PIXELS, ＋ −, FINE. De grå kan ikke bruges i den aktuelle tilstand. COLOR og EFFECT kræver en markering. PIXELS bliver grå, når der ikke er noget pixelarmatur på siden. Sådan arbejder du med pixels for sig Trykker du på PIXELS, folder cellerne i sidens pixelarmaturer sig ud som deres egne fadere. De står som P1, P2 og så videre, og hver af dem bærer sin egen intensitet og farve. Tryk igen for at folde dem sammen. CLEAR n rydder kun markeringen. Værdier og udgange røres ikke. Næste Sådan sætter du farve → kapitel 05 Sådan gemmer du billeder → kapitel 08 Nogle fadere gør ingenting → kapitel 14"},{"id":"color","title":"05 Sådan sætter du farve","h":[{"id":"color--1","t":"Sådan åbner du panelet"},{"id":"color--2","t":"Intensitet og farve"},{"id":"color--3","t":"Gelatiner"},{"id":"color--4","t":"Sådan gemmer du farver, du bruger tit"},{"id":"color--5","t":"ADVANCED COLOR"},{"id":"color--6","t":"Flere armaturer, og flere modeller"},{"id":"color--7","t":"Pixels og gentagne farvegrupper"}],"text":"05 Sådan sætter du farve — COLOR Farve og intensitet for ét armatur eller mange. NOTE Hvad du får at se, afhænger af, hvad armaturet faktisk har. En dæmper med én kanal viser kun Intensity. Kanau viser ikke betjening for noget, armaturet ikke har. Farvepanelet. Kun de funktioner, armaturet bærer, bliver vist. Sådan åbner du panelet Hvordan Hvad det virker på Hold et armaturikon Det ene armatur Hold et celleikon Den celle Markér armaturer, og tryk så COLOR Alt det markerede Hold en model- eller gruppeknap Hvert armatur i den. All betyder hvert armatur Står ét armatur åbent, går ‹ og › videre til det næste. Intensitet og farve Punkt Sådan virker det Intensity 0 til 100, med skyder, indtastning, ±-knapper eller forvalg Color temperature (CCT) I kelvin, inden for armaturets område Green / Magenta Korrektionen mellem grøn og magenta. Back to neutral stiller den tilbage på 0 Crossfade Balancen mellem den hvide og den farvede side. Hvilken vej rundt er op til armaturet RGB og lysdioder R, G, B, W, Amber, Lime, Cyan og hvad armaturet ellers bærer Hue / Saturation / CIE x / CIE y Vises på armaturer, der har dem Intensity ±5 og ±10 runder til hele 5 eller 10: fra 47 giver +10 50. Forvalgene er 12.5%, 25%, 35%, 50% og 75%. Forvalgene for CCT er 2700, 3000, 3200, 4300, 5000, 5600, 6500 og 10000 K. Ud over armaturets område lander du på dets grænse, markeret MIN eller MAX. Et armatur med kun 2 farvetemperaturer viser 2 knapper i stedet for en skyder. Trinene for Green / Magenta kan rettes ved at holde på dem. Har et armatur mere end én crossfade, står de efterfølgende lige over den betjening, de hører til. Gelatiner Punkt Hvad det er Gel presets Forvalg fra LEE og Rosco til armaturer med RGB. Hver sin tabel for 3200 K og 5600 K Preset / Gel Armaturets egne indbyggede gelatiner eller farveforvalg, valgt efter nummer Gels → x/y Farvekoordinater fra LEE og Rosco til armaturer med x og y RGB-værdierne under Gel presets kommer fra Asteras offentliggjorte farvedata. De bærer ingen lysstyrke, så den sætter du med faderen. Ved et armaturs indbyggede forvalg kan appen ikke altid vise, hvilket der er valgt. Listen bliver stående åben, efter at du har valgt, så du kan prøve dem efter tur. Luk den med ✕. Om den overhovedet dukker op, sættes under Settings → SETTINGS → Gels → Gel presets. Sådan gemmer du farver, du bruger tit Save this color lægger en farve under ★. Den holdes pr. model. CCT og G/M er ikke med. Save this temperature lægger en farvetemperatur væk. Den deles på tværs af modeller. Tryk på en gemt knap for at lægge den på. Hold for at omdøbe, rette eller slette. ADVANCED COLOR Vælgeren under ADVANCED COLOR. Kulør går på tværs, mætning går nedad. ADVANCED COLOR samler den betjening, appen selv regner ud, i stedet for armaturets egne kanaler. I vælgeren går kulør på tværs og mætning nedad. Lysstyrken er faderens arbejde. Træk tæt på det runde håndtag for at flytte farven; alle andre steder ruller panelet. RGB, den Hue og Saturation, der er regnet ud fra RGB, og CMY (255 − RGB) dukker op på armaturer, der kan tage dem. På et armatur, der kun modtager Hue og Saturation, eller kun x og y, bruger du i stedet betjeningen længere oppe. Flere armaturer, og flere modeller I dette panel lander alt, hvad du rører, på samme værdi for alt det markerede. Det gælder skyderne, ±-knapperne, forvalgene, indtastningen og de gemte farver lige meget. Vil du flytte dem og holde forskellene mellem dem, så markér faderne på Home i stedet. Er der markeret forskellige modeller, dukker kun Intensity, CCT, G/M, Crossfade og ★ op. Åbn én model for sig for at sætte RGB og lysdioder. CCT holdes inden for hvert armaturs eget område. Pixels og gentagne farvegrupper Hold et celleikon for at sætte den celles farve og intensitet. Ændrer du farven på selve armaturet, sættes hver celle; en celle, du har ændret i hånden, beholder sin egen. Armaturets Intensity gælder på tværs af alle cellerne. Bærer en tilstand samme farverolle mere end én gang, for eksempel Gel 1 og Gel 2, står de senere grupper længere nede i panelet. Farvegrupper efter den første gemmes ikke i scener. Næste Indstillinger for det enkelte armatur → kapitel 06 Sådan gemmer du billeder → kapitel 08"},{"id":"fixture-settings","title":"06 Indstillinger for det enkelte armatur","h":[{"id":"fixture-settings--1","t":"Navn og visning"},{"id":"fixture-settings--2","t":"Grænser"},{"id":"fixture-settings--3","t":"Lock"},{"id":"fixture-settings--4","t":"De øvrige indstillinger"},{"id":"fixture-settings--5","t":"Channels — den rå DMX (Advanced)"},{"id":"fixture-settings--6","t":"Sådan ændrer du patchen eller tilstanden"}],"text":"06 Indstillinger for det enkelte armatur Grænser, Lock og de rå kanaler på et enkelt armatur. Rul ned i det panel, du får ved at holde på et armaturikon, fra COLOR eller ved at holde på en model- eller gruppeknap. Limits, Lock, Switch function og Battery save kan sættes for flere armaturer ad gangen. Blandede værdier står som — eller n of m, og ændrer du ét, lægges det på dem alle. Channels, Mode, Channel roles og Patch dukker kun op, når ét armatur er åbent. Navn og visning Ret navnet øverst i panelet. ‹ og › går videre til det næste armatur. Label er det viste navn, som deles på tværs af modellen; Label color er baggrunden bag nummeret. No label color rydder den. Grænser Lower limit og Upper limit sætter det område, du kan arbejde i. Ret dem med ±1 og ±5, eller ryd dem. Uden for en grænse viser Home orange skravering. En celles grænser gælder inden for armaturets. Er armaturet holdt nede på 50, kan en celle med grænsen 80 stadig ikke komme over 50. Lock WARNING Fixture Lock slår alting : grand master, blackout, BATTERY SAVE, kald af scener, MIDI og session. Et låst armatur går ikke ud, når du trykker på blackout. Se dine låse efter, før I optager. Med Lock slået til holdes armaturets udgang fast. Fadere, klavertilstand, ⏻, farve, rå kanaler, GM, B.O., BATTERY SAVE, scener, MIDI og sessionen lader det alle sammen være. Er der markeret flere armaturer, og nogle af dem er låst, rydder et tryk hver eneste lås. Er ingen låst, låser et tryk dem alle. Låser du under et tryk i klavertilstand eller på FLASH, stilles den midlertidige værdi tilbage først, og så holdes der fast. Ændrer du grænser, mens der er låst, flytter det ikke den aktuelle værdi; den føres ind i det nye område, når du låser op. De øvrige indstillinger Punkt Hvad det er Switch function Hvad ⏻ gør: None, ON/OFF, FLASH ON eller FLASH OFF. ON/OFF er standard Battery save Markerer dette armatur til BATTERY SAVE Invert Vender trækretningen for Pan og Tilt. Den viste vinkel ændrer sig ikke Mode Viser den aktuelle DMX-tilstand. Ret den fra RE-PATCH Channel roles Retter rollen og navnet på hver kanal. Adresser flytter sig ikke Brug Channel roles, når et patchet armatur har kanaler, der behandles som den forkerte funktion. Skal rettelsen følge med over i armaturer, du patcher senere, så ret i stedet definitionen under Custom fixtures. Channels — den rå DMX (Advanced) Brug først den betjening, der er lavet til farve, retning og resten. Channels er til at nå de funktioner, den betjening ikke dækker, én DMX-kanal ad gangen. Channels viser alting i DMX-rækkefølge, under DIMMER, COLOR, POSITION, GOBO, BEAM, FOCUS, SHAPERS og CONTROL. Tomme grupper skjules. Slags række Sådan arbejder du med den En glidende værdi Skyder, indtastning, eller − og + Navngivne værdier og områder En menu op til 12 punkter, en søgbar liste derudover Kommandoer som Reset eller Lamp Off Hold i den angivne tid. Slip før tiden for at afbryde. Kommandoer uden tid er et tryk En grå række mærket FADER eller COLOR Trækkes af en dedikeret betjening og kan derfor ikke rettes her En række, der afhænger af en anden kanal Viser, hvad der er muligt i den aktuelle tilstand, med en bemærkning, når det ikke er DMX øverst til højre skifter mellem rå værdier og procent. Home på en række stiller den tilbage til sin standardværdi; på Pan og Tilt kræver det et hold. Den er utilgængelig, når intet er ændret. Ændringer af rå kanaler gemmes i scener og skrives i HISTORY. På et pixelarmatur bærer panelet for selve armaturet armaturets kanaler, og et cellepanel bærer den celles. Sådan ændrer du patchen eller tilstanden Ret fra RE-PATCH i afsnittet Patch. Du kan se og ændre universe og adresse, fixture number, model og tilstand. Next free flytter det til det næste hul. Change mode viser området før og efter og de armaturer, det ville overlappe, før du bekræfter. Du kan lægge det på hvert armatur af den model. Armaturerne efter flytter sig ikke af sig selv. Delete this fixture fjerner det efter en bekræftelse, sammen med dets værdier og indstillinger, og tager det ud af hver eneste scene. Næste Retning og lyskegle → kapitel 07 Hvad de enkelte låse gør → kapitel 10"},{"id":"position","title":"07 Retning og lyskegle","h":[{"id":"position--1","t":"Pan og Tilt"},{"id":"position--2","t":"Zoom, iris, frost, fokus og gobo"}],"text":"07 Retning og lyskegle Pan, tilt, zoom, iris, frost og gobo på bevægelige armaturer. Pan og Tilt Hold på et armaturikon, og åbn Channels → POSITION. Denne version har ingen selvstændig skærm til retning. Pan og Tilt står i grader, hvor armaturdataene bærer vinkler, og i procent, hvor de ikke gør. På et 16-bit-armatur ligger grov og fin på samme række. Træk tæt på håndtaget, og det flytter sig efter den strækning, din finger tilbagelægger. Alle andre steder ruller panelet. Skriv en vinkel i feltet. Værdier uden for armaturets område afvises. Trin med ±0.1°, ±1°, ±10° og så videre. Trinene kommer af enheden og opløsningen. FINE og FINE+ sætter den ned til 1/10 og 1/100. Hold Home for at sende det til armaturets egen udgangsstilling. Slip før tiden for at afbryde. Invert vender trækretningen. Der flytter sig ingenting, mens armaturet er låst. Døde områder, hvor DMX-værdien ikke gør noget, springes over af både skyderen og trinene. På et armatur, hvis standardværdi ligger i et dødt område, flytter trinene sig ikke: brug skyderen, eller skriv en værdi, for først at komme ind i det levende område. Retning gemmes i scener og skrives i HISTORY. IMPORTANT En scenefade interpolerer ikke Pan og Tilt. De springer til den gemte værdi i det øjeblik, du kalder. At sætte en fadetid får ikke hovedet til at bevæge sig langsomt. Zoom, iris, frost, fokus og gobo Åbn BEAM, GOBO eller FOCUS under Channels. Glidende værdier får en skyder; gobo&#x27;er og prismer får navngivne valg. De virker nøjagtigt som de øvrige rækker i kapitel 06. Vil du sætte noget af det i bevægelse, så brug MOVE og BEAM i panelet EFFECT. MOVE arbejder omkring det sted, hovedet peger hen nu, og lægger sig oven på effekter på intensiteten. Næste Sådan sætter du bevægelse i gang → kapitel 09 Sådan gemmer du billeder → kapitel 08"},{"id":"scenes","title":"08 Sådan gemmer og kalder du billeder","h":[{"id":"scenes--1","t":"Sådan gemmer du en scene"},{"id":"scenes--2","t":"Sådan kalder og rydder du op"},{"id":"scenes--3","t":"Det, du ændrer efter et kald, bliver gemt"},{"id":"scenes--4","t":"Hvad der gemmes, og hvad der ikke gør"},{"id":"scenes--5","t":"Fade"}],"text":"08 Sådan gemmer og kalder du billeder — Scenes En scene er et gemt billede. Åbn Scenes, tryk på ＋ for at gemme, tryk på en række for at hente det frem igen. Scenelisten. Den aktuelle scene har ravgul baggrund. Sådan gemmer du en scene Sæt intensitet, farve og eventuelle effekter på Home. Tryk på Scenes → ＋. Det gemmes med det samme. Vil du omdøbe den, så tryk på Settings i den scenes række , og skriv et navn. Stryger du rækken mod venstre, åbner det samme panel. Vil du beskytte det, der ligger i den, så slå Lock this scene til i samme panel. Det Settings, der menes her, er det inde i scenens række . Det er ikke fanen Settings nederst på skærmen. Sådan kalder og rydder du op Handling eller mærke Hvad den gør Tryk på en række Kalder, når du løfter fingeren NEXT / BACK Den næste eller forrige scene. Den går rundt. Utilgængelig med kun én scene ● og ravgul baggrund Den aktuelle scene ▸ Den scene, NEXT vil hente frem En prik efter en ændring En scene, der er ændret, siden den blev kaldt 🔒 og en grøn kant Låst mod overskrivning Settings, eller stryg mod venstre Navn, fadetid, lås, slet Edit Omrokér, slet, slet flere Tallene er visningsrækkefølgen. Tiden under navnet er, hvornår indholdet sidst blev ændret. Det, du ændrer efter et kald, bliver gemt Så snart du kalder en scene, bliver alt, hvad du derefter gør ved lyset, skrevet tilbage i den. Der er ingen SAVE-knap; der skrives, når du løfter fingeren. Slå Lock this scene til på de scener, du vil have stående urørt. Du kan stadig kalde dem og stadig arbejde med lyset, men der gemmes ingenting. Det er ikke det samme som Fixture Lock. Scene Lock beskytter det, der er gemt; Fixture Lock holder på udgangen. Gemningen flytter til en anden scene, når du kalder en anden frem, når du sletter den, du står i, og når du åbner showet igen. Ændringer af en scenes indhold er ikke en del af HISTORY. Hvad der gemmes, og hvad der ikke gør Gemmes Gemmes ikke Intensitet, CCT, G/M, crossfade, RGB, lysdioder GM, B.O. og BATTERY SAVE Rå kanaler såsom retning og gobo Grænser, Fixture Lock, tilstanden for ⏻, Switch function Cellefarve og -intensitet, effekter Farvegrupper efter den første Et armatur med Lock slået til ændres ikke af et kald. Fade Sæt den pr. scene under Settings → Fade. 3 sekunder er standard. Der er forvalgene SNAP, 1, 2, 3, 5 og 10, og ±0.1 og ±1 til at justere med. Faderne bevæger sig under en fade, og du kan overtage i hånden undervejs. Retning, gobo og andre rå værdier interpolerer ikke; de springer ved kald. En scene med effekter i starter de effekter forfra ved kald. Kalder du en scene uden effekter, slippes alt det, der kører. Selve kaldet skrives i HISTORY som ét trin. Scener er en del af showfilen. Næste Sådan går du et skridt tilbage → kapitel 10 Sådan gemmer du showet → kapitel 11 En scene bliver ved med at ændre sig af sig selv → kapitel 14"},{"id":"effects","title":"09 Effekter","h":[{"id":"effects--1","t":"Sådan lægger du en på"},{"id":"effects--2","t":"Pause, slip, start forfra"},{"id":"effects--3","t":"ADJUST"},{"id":"effects--4","t":"ARRANGE"},{"id":"effects--5","t":"Sådan skifter du mål og gemmer indstillinger"},{"id":"effects--6","t":"Sådan finder du en ud fra det, du vil have"},{"id":"effects--7","t":"Den fulde liste"},{"id":"effects--8","t":"SIGNAL — trafiklys"},{"id":"effects--9","t":"Sådan lægges LIGHT, MOVE og BEAM oven på hinanden"},{"id":"effects--10","t":"Sådan styrer du dem fra fanen Effects"}],"text":"09 Effekter Blink, ild, lyn og resten, lagt på dine armaturer. EFFECT på Home lægger en effekt på det, du har markeret. Fanen Effects nederst styrer alt det, der kører. Sådan lægger du en på Tryk på det runde ikon på et armatur eller en celle på Home for at markere det. Åbn EFFECT. Tryk på et effektnavn. Den starter med det samme. Faderen sætter stadig intensiteten. Mens en effekt kører, bærer knappen EFFECT dens navn, og armaturikonet og faderen bevæger sig med. Pause, slip, start forfra Handling Hvad den gør PAUSE Fryser bevægelsen ved den aktuelle intensitet og retning RESUME Kører videre derfra, hvor den frøs RELEASE Stopper den og giver styringen tilbage til de normale værdier. Indstillingerne bliver på listen START Kører en sluppet effekt igen fra begyndelsen CLEAR Fjerner den fra listen. Den spørger først ADJUST Punkt Hvad det er Speed I hertz. Decimaler er tilladt Depth Hvor langt ned den trækker intensiteten. 100 når bunden; 35 rører sig knap nok How often / Cycle Hvor tit det sker. Kun på de slags, der bruger det Roughness Hvor urolig flammen er Width Hvor meget af rigget der lyser ad gangen, for eksempel 50% 2 / 4 Tail Længden af halen på COMET Hvilke punkter der dukker op, afhænger af effekten. SIGNAL har ingen Speed. ARRANGE SPREAD forskyder armaturerne; TOGETHER holder dem i takt. RUNNER, FADE RUN, BOUNCE, COMET og SIGNAL tilbyder ikke valget. Opstilling Hvad den gør IN ORDER Jævnt forskudt efter nummer ALTERNATE Ulige og lige, en halv omgang fra hinanden WINGS Spejlet ud fra midten RANDOM I tilfældig rækkefølge BOUNCE Vender om i hver ende BUILD Tænder ét ad gangen og rydder dem så samlet RUNS under IN ORDER er, hvor mange mønstre der kører ad gangen; mulighederne afhænger af, hvor mange armaturer der er. DIRECTION er FORWARD eller REVERSE. På ild kan du på armaturer, der kan begge dele, vælge mellem udgang som CCT og som RGB. Sådan skifter du mål og gemmer indstillinger Applies to → SELECT ▾ vælger armaturer og grupper. Markeringen deles med Home, og listen bliver stående åben, mens du vælger. SAVE under SAVED lægger de indstillinger, du har drejet frem, væk under et navn. Tryk på en gemt knap for at lægge den på, tryk igen for at stoppe. Hold for at omdøbe eller slette. Armaturerne er ikke en del af en gemt indstilling. Markér de armaturer, der allerede kører, sammen med de nye, vælg samme effekt, og hastighed, dybde og fase følger med over. Hvor indstillingerne er forskellige, falder den tilbage til standardværdierne. Vil du slippe ét enkelt armatur, så markér kun det og tryk RELEASE. Sådan finder du en ud fra det, du vil have Det, du vil have Prøv Naturligt lys FIRE 1 og 2, LIGHTNING, WATER, WIND, TV Lys, der løber langs rigget RUNNER, FADE RUN, BOUNCE, COMET Bylys NEON, SIGNAL, TOKYO, OSAKA, KYOTO, NARA, PACHINKO Blinkfyr BEACON R/B, BLUE, RED, AMBER Almindeligt blink BLINK, STROBE, PULSE, DOUBLE, RANDOM 1–3 Et lysstofrør, der er ved at give op FLUO 1–3 Bevægelse af hovedet Gruppen MOVE Bevægelse af zoom eller gobo Gruppen BEAM Den fulde liste Gruppe Effekter BASIC BLINK, STROBE, PULSE, DOUBLE, RANDOM 1–3, RUNNER, FADE RUN, BOUNCE, COMET LIGHTS FLUO 1–3, FIRE 1 (stearinlys), FIRE 2 (bål), LIGHTNING, TV, NEON, SIGNAL SCENES BEACON R/B, BLUE, RED, AMBER, TOKYO, OSAKA, KYOTO, NARA, PACHINKO, WATER, FIREWORKS, LANTERNS MOVE DRIFT, PASS, ORBIT, EIGHT, BOX, SPIRAL, SEARCH, BREATHE, HANDHELD, WIND, JUMP, BALLYHOO BEAM ZOOM PULSE, ZOOM BREATHE, IRIS PULSE, FROST BREATHE, GOBO SHAKE RUNNER, FADE RUN, BOUNCE og COMET kræver flere armaturer eller pixels. MOVE og BEAM dukker op, når de markerede armaturer understøtter dem. En ravgul prik øverst til højre ved et navn betyder, at effekten også ændrer farven. Uden prikken bruger den den farve, du selv har sat. SIGNAL — trafiklys Vælg land, CAR eller WALK, START GREEN eller START RED, og REPEAT eller ONCE. NEXT går videre til næste tilstand. CAR og WALK kører på samme takt. Brug ONCE for at gå den frem i hånden, så den passer til handlingen. Sådan lægges LIGHT, MOVE og BEAM oven på hinanden Ét armatur kan bære en LIGHT-effekt på intensitet og farve, en MOVE-effekt på hovedet og en BEAM-effekt på én gang. Vælger du en anden effekt i samme spor, erstatter den den forrige. Celler tager kun LIGHT. Åbner du panelet, viser det det første spor, der kører, i rækkefølgen LIGHT, MOVE, BEAM. Sådan styrer du dem fra fanen Effects EDIT åbner en effekts indstillinger. RELEASE / START, PAUSE / RESUME og CLEAR ligger der. En sluppet effekt bliver på listen, mærket RELEASED. × ved siden af et armaturnavn tager det armatur ud af effekten; ＋ lægger den aktuelle markering, en gruppe eller All til. RELEASE ALL og START ALL gælder alting. Effekter tæller videre gennem et blackout. Ulåste armaturer bliver mørke og tager bevægelsen op dér, hvor den står, når du rydder det. Fixture Lock er dækket i kapitel 10. Næste Sådan gemmer du billeder → kapitel 08 Bevægelse af hovedet → kapitel 07"},{"id":"safety","title":"10 Låse, sikkerhed og skridtet tilbage","h":[{"id":"safety--1","t":"Der findes 3 slags lås"},{"id":"safety--2","t":"SCREEN LOCK"},{"id":"safety--3","t":"Fixture Lock"},{"id":"safety--4","t":"BATTERY SAVE"},{"id":"safety--5","t":"HISTORY"},{"id":"safety--6","t":"ZEN"}],"text":"10 Låse, sikkerhed og skridtet tilbage Hvad der holder dig fra at lave en fejl midt i en optagelse, og hvad der lader dig fortryde en. Der findes 3 slags lås Ordet dukker op 3 steder, og hvert sted beskytter det noget forskelligt. Navn Hvad den beskytter Hvor Fixture Lock Det lys, der går ud nu. Værdien kan ikke ændre sig Armaturpanelet Scene Lock Det, der er gemt i en scene Settings i scenens række SCREEN LOCK Skærmen. Berøringer gør ingenting Øverst på skærmen SCREEN LOCK Hold SCREEN LOCK øverst på skærmen i 0.5 sekunder. Et kort tryk låser den ikke. Mens der er låst, ligger der en lilla flade med skravering hen over skærmen. Værdierne kan stadig læses, og udsendelse og fades kører videre. Du låser op ved at trække den lilla skyder i midten cirka 80% af vejen mod højre. Slipper du før tiden, bliver den låst. Du kan ikke låse skærmen, mens et panel som Patch står åbent. Fixture Lock WARNING Fixture Lock slår grand master, blackout, BATTERY SAVE, kald af scener, MIDI og sessionen . Tryk på blackout, og et låst armatur bliver ved med at lyse. Antallet, der stadig lyser under et blackout, står ved siden af den grønne 🔒 øverst på skærmen. Hold på et armaturikon, og slå Lock til. Brug den, når et lys ikke må ændre sig. Mens der er låst, bærer armaturikon, fader, nummerknap og ⏻ alle grønt. Du rydder den fra armaturpanelet. BATTERY SAVE Dæmper kun de armaturer, du markerer, til ventetiden mellem optagelserne. Markér dem i armaturindstillingerne under Battery save, eller i Patch → Select many → Battery. Du kan også markere dem, mens du patcher. Tryk på BATTERY SAVE øverst på skærmen. De markerede armaturer dæmpes. Tryk igen for at hente dem tilbage. Hold den for at sætte, hvor meget der dæmpes, og hvor lang fadetiden er. Save to tilbyder −25%, −50%, −65% og −75%, og −50% er standard. Fadetiden begynder på 1.5 sekunder. Knappen og skærmkanten bliver grønne, mens den er slået til. Den ganges sammen med grand master. Låste armaturer lades i fred. Er intet markeret, fortæller den dig, hvordan du markerer noget. Den dæmper dine armaturer. Det er ikke en batteriindstilling i din iPhone. HISTORY Tryk eller hold på HISTORY på Home for at se de tilstande, du har været igennem. Vælg en række for at gå tilbage til den. HERE markerer, hvor du står. Den beholder de sidste 50. Går du tilbage og arbejder videre, bliver de gamle tilstande stående, og den nye lægges til i enden. Den dækker intensitet, farve, udgang til og fra, grænser, rå værdier, effekter, GM, B.O. og patchen. Fixture Lock står uden for. Et låst armatur flytter sig ikke, når du går et skridt tilbage. Kald af scener skrives ind, men at overskrive en scenes indhold kan ikke fortrydes. Du kan ikke trække én enkelt ændring ud for sig. Du går tilbage til hele tilstanden i det øjeblik. Den gemmes ikke. Lukker du appen eller åbner showet igen, ryddes den. Fadetiden ved et kald sættes af Recall fade time. HISTORY er utilgængelig, når der ikke er noget at gå tilbage til. ZEN Tryk på ZEN i et enkelt armaturs panel for at få en sort skærm med én stor fader og dens værdi. Den er der til armaturer, hvis intensitet du kan sætte. Træk hvor som helst på skærmen for at arbejde med den, relativt som altid. FINE virker. Grænser kan ændres fra indstillingerne øverst til højre. Tryk på skærmen for at gå ud; at flytte faderen og slippe gør det ikke. Næste Sådan gemmer du showet → kapitel 11 Noget vil ikke gå ud ved blackout → kapitel 14"},{"id":"shows","title":"11 Sådan gemmer og deler du shows","h":[{"id":"shows--1","t":"Hvornår der gemmes"},{"id":"shows--2","t":"Settings → SHOWS"},{"id":"shows--3","t":"Åbning og genopretning"},{"id":"shows--4","t":"Hvad der ikke er med i showet"},{"id":"shows--5","t":"Settings → SETTINGS"}],"text":"11 Sådan gemmer og deler du shows Et show rummer én opgave: patchen, grupperne, scenerne og det aktuelle billede. Der er ingenting at trykke på. Det gemmer sig selv. Hvornår der gemmes Hvad Hvornår Patch, grupper, scener I takt med at du ændrer dem Det aktuelle billede og armaturindstillingerne Cirka 2 sekunder efter at du holder op, og når appen går i baggrunden Næste start henter det sidste show frem, som det blev gemt. Den allersidste ændring før en afslutning er der ingen garanti for, så brug Export show file, når du har brug for en fil at gemme eller give videre. Settings → SHOWS Punkt Hvad det gør CURRENT SHOW Omdøber det show, du står i Save As Lægger den aktuelle tilstand væk som et andet show og kører videre i kopien Export show file Gemmer først og skriver så en .kanau-fil. Vælg hvorhen i delearket Import show file Henter en .kanau ind som et nyt show. Dit aktuelle show røres ikke NEW SHOW Giv det et navn, og tryk Create. Du får et tomt show, og Patch åbner OTHER SHOWS Åbner et gemt show. ⧉ laver en kopi, ✕ sletter efter en bekræftelse En .kanau, der kommer ind via Filer eller AirDrop, kan åbnes med Kanau og kommer ind som et nyt show. En .kanaumidi behandles som en fil med en MIDI-tildeling. Åbning og genopretning Er der intet gemt, åbner demoshowet. Et ældre show uden et gemt billede åbner med intensiteten i bund. Kan filen ikke læses, får du Saved patch could not be read. Showing an empty rig; the file is left as it is., og der startes tomt. Den oprindelige fil beholdes og overskrives ikke. En mislykket gemning viser Patch was not saved. med rødt. Kapitel 14 fortæller, hvad du gør. Hvad der ikke er med i showet Hvad Hvor det ligger SAVED effektindstillinger På enheden, til rådighed i hvert show Custom fixtures På enheden. Definitionerne for patchede armaturer ligger også i showet Gemte ★-farver og -temperaturer På enheden. Farver pr. model, temperaturer deles MIDI-tildeling På enheden. Kan eksporteres for sig som .kanaumidi OUTPUT, visningsindstillinger, sprog På enheden HISTORY Gemmes ikke Settings → SETTINGS Sprog, de forskellige fadetider, mængden for BATTERY SAVE, hvilket nummer der skal vises, rækkefølgen under All, All-rækken i Patch, Net / Sub / Uni, og om gelatiner dukker op. Et skift af sprog træder i kraft ved næste start. Tekststørrelsen følger indstillingen i iOS. Næste En gemning mislykkedes → kapitel 14 Sådan arbejder du fra 2 enheder → kapitel 13"},{"id":"midi","title":"12 MIDI-controllere (Advanced)","h":[{"id":"midi--1","t":"Tilslutning og tildeling"},{"id":"midi--2","t":"De 2 tilstande"},{"id":"midi--3","t":"Når en knap først ikke gør noget"},{"id":"midi--4","t":"Knapper, og filen med tildelingen"}],"text":"12 MIDI-controllere (Advanced) Sådan lægger du knapper og drejeknapper fra en MIDI-controller ned på armaturer og betjening. Dette kapitel handler om skærmen med Learn. Tilslutning og tildeling Slå MIDI controller til under Settings → MIDI. Den er slået fra som standard. Kontrollér, at dit grej dukker op under Inputs, og at Last CC ændrer sig, når du drejer på noget. Begynd med MIDI channel på OMNI, og snævr den så ind til 1–16, hvis du har brug for det. Vælg en Mode, og tildel så med Learn under Knobs eller Buttons. Drej på en knap, mens Turn… står, eller tryk på den knap, du vil tildele. Det grej, dette er bygget op imod, er Behringer X-Touch Mini og Compact, i Standard mode med absolutte værdier. MC mode bruges ikke. De 2 tilstande Tilstand Hvad en betjening følger GLOBAL 10 En plads på skærmen. Skifter du side eller gruppe, skifter målet med. GM kan også tildeles FIXED Ét armatur. Det gør ingen forskel, om du skifter side eller gruppe FIXED tildeles ét armatur ad gangen med Learn; der er ingen automatisk nummerering. Under GLOBAL 10 er der et Learn på hver række fra Fader 1 til Fader 10 og på Grand master. Når en knap først ikke gør noget Er knappen og værdien på skærmen uenige, flytter der sig ingenting, før knappen passerer værdien på skærmen . Det er med vilje: det holder niveauet fra at springe. Det samme gælder, efter at du har skiftet side, gruppe eller tilstand. Slår du Send values back til, sender Kanau de aktuelle værdier tilbage til LED-ringene på grej, der understøtter det. Tomme pladser kommer tilbage som 0. Knapper, og filen med tildelingen Du kan tildele FINE, PIANO, en side tilbage og frem, og kald af enkelte scener. B.O. kan ikke tildeles. Én knap bærer én handling. Fixture Lock gælder også for MIDI. Export og Import under MIDI map file skriver og læser tildelingen som en .kanaumidi-fil, adskilt fra showet. Næste Sådan arbejder du fra 2 enheder → kapitel 13"},{"id":"session","title":"13 Sådan arbejder du fra 2 enheder","h":[{"id":"session--1","t":"Hvem holder hvad"},{"id":"session--2","t":"Sådan starter du en session"},{"id":"session--3","t":"Hvad en gæst kan"},{"id":"session--4","t":"Effekter og gæsten"},{"id":"session--5","t":"Samtidigt arbejde, og et tabt led"}],"text":"13 Sådan arbejder du fra 2 enheder — SESSION 2 iPhones eller iPads på ét show. Kun værten sender DMX ; den anden arbejder med det samme lysbord gennem den. En session lader 2 enheder på samme netværk styre ét show. Gæsten sender det, du gør, videre til værten. Standser værten, er der ikke noget, der overtager af sig selv. Hvem holder hvad Vært Gæst Sender DMX Ja Nej Ejer showet Ja Låner det Ændrer patchen Ja Nej Hvor en scene gemmes Værtens show Sendes til værten Arbejder med lyset Ja Ja Rører begge det samme armatur, vinder værten. Gæsten ser TAKEN . Sådan starter du en session Vælg Settings → SESSION → Host på den enhed, der skal sende. Giv det 4-cifrede tal til den anden person. Vælg Settings → SESSION → Join på den anden enhed, og skriv tallet. Se efter Joined og forbindelsestilstanden. Looking for 1234… betyder, at der stadig søges. Tallet ændrer sig, hver gang du er vært. Kun 2 enheder ad gangen; en tredje kan ikke komme med. Hvad en gæst kan Gæsten kan Værten gør Hver enhed holder sit eget Fadere, farve og gelatiner, på armaturer og celler Tilføje, fjerne og ændre patchen, navne, mærker Hvilken gruppe og side der vises, hvilken fane Kalde scener, og ＋ for at gemme Omrokere, slette, omdøbe, fade, låse FINE, 10 / 5, PIXELS, PIANO-tilstand ⏻, GM, B.O., BATTERY SAVE OUTPUT, SHOWS Visningsindstillinger, sprog, gelatiner Grænser, Fixture Lock, rydde en markering Fadetider, Save to, Switch function MIDI-tildeling, gemte ★-farver En scene, der gemmes fra gæsten, skrives af værten. Gæstens egen showfil røres ikke, og Leave session stiller den tilbage. Effekter og gæsten Nogle handlinger på effekter når frem til værten, og nogle gør ikke. Handling Fra gæsten At lægge en effekt på Virker RELEASE ALL Virker At rydde en celles effekter Virker SIGNAL NEXT Virker IMPORTANT PAUSE, RESUME, at slippe én effekt og START når ikke frem til værten fra en gæst. Gæstens skærm kan se ud, som om der skete noget, men lyset ændrer sig ikke. Gør det på værten. Samtidigt arbejde, og et tabt led Det, gæsten ændrer, dukker straks op på gæstens skærm. Rører værten det samme armatur, vinder værten, og gæsten ser TAKEN . Et armatur, som den anden enhed arbejder med, står med en cyan kant og et navn. Forbindelse Tilstand Grøn Forbundet til værten Ravgul Intet fra værten i cirka 3 sekunder Rød Intet i cirka 15 sekunder. The host is no longer available. dukker op Falder leddet ud, bliver gæsten ved med at vise den sidste tilstand. Den går ikke ud af sig selv, så brug Leave session. Efter en genopkobling er faderne stadig relative. Der er ikke brug for internet. De 2 enheder skal kunne nå hinanden på samme netværk. Client isolation, en firewall og lignende indstillinger kan spærre sessionen, selv hvor DMX kommer igennem. Næste Sådan gemmer du showet → kapitel 11 Den vil ikke forbinde → kapitel 14"},{"id":"troubleshooting","title":"14 Når noget driller","h":[{"id":"troubleshooting--1","t":"Der tænder ikke noget"},{"id":"troubleshooting--2","t":"Der findes ingen node"},{"id":"troubleshooting--3","t":"Det flimrer"},{"id":"troubleshooting--4","t":"Det hakker, eller reagerer langsomt"},{"id":"troubleshooting--5","t":"Nogle fadere gør ingenting"},{"id":"troubleshooting--6","t":"En knap gør ingenting"},{"id":"troubleshooting--7","t":"Farven er forkert"},{"id":"troubleshooting--8","t":"Et armatur opfører sig forkert"},{"id":"troubleshooting--9","t":"En scene bliver ved med at ændre sig af sig selv"},{"id":"troubleshooting--10","t":"En scene vil ikke gemme"},{"id":"troubleshooting--11","t":"Sessionen vil ikke forbinde"},{"id":"troubleshooting--12","t":"Noget bliver ved med at lyse ved blackout"},{"id":"troubleshooting--13","t":"Appen lukkede, eller leddet faldt ud"},{"id":"troubleshooting--14","t":"En gemning mislykkedes"},{"id":"troubleshooting--15","t":"Sådan kontrollerer du DMX-værdierne"}],"text":"14 Når noget driller Ordnet efter det, du ser. Arbejd dig ned gennem listen. Der tænder ikke noget Det, du ser Hvad du gør idle Kontrollér, at et netværk er slået til under Settings → OUTPUT Blocked Kontrollér tilladelsen Local Network i iOS. Er sACN-multicast spærret, så skift til Unicast WAITING + IP Et andet lysbord er på linjen. Stop det, eller vælg Send anyway? → Send No node Kontrollér nodens strøm, netværk, adresse og protokolindstillinger B.O. Tryk på det for at fjerne blackout GM 0 Åbn GM, og brug →100 🔌 n Slå det universe til igen under OUTPUT → Universes Et lilla ⏻ eller armaturikon Slå armaturets udgang til igen Et grønt BATTERY SAVE Ryd den, hvis du har brug for fuld udgang En lav Upper limit Se armaturets grænser efter ⚠ i Patch Ret den overlappende adresse eller rækken, der går ud over 512 En tilstand, der ikke passer Sæt samme DMX-tilstand som på selve armaturet Der findes ingen node Står der no reply under Network, så kontrollér, at din iPhone og noden er på samme netværk. Når AUTO ikke når frem, så brug Unicast og indtast nodens adresse. Kør RESCAN, når du har ændret noget ved forbindelsen. Kontrollér nodens egne kontakter for Art-Net og sACN, dens adresse og dens universe. For eksempel kommer LumenRadio CRMX Stardust fra fabrikken med Art-Net og sACN slået fra. Går du på en Stardusts eller en Aputure Sidus Fours eget Wi-Fi, så se efter, hvilket bånd grejet understøtter. På et eksternt adgangspunkt kan klienter på 2.4 GHz og 5 GHz ofte nå hinanden; et andet bånd betyder ikke altid et andet netværk. På en Stardust betyder små bogstaver i udgangsvisningen, at der ikke kommer data ind, og store bogstaver, at der gør. Se producentens egen manual for alt, der er særligt for modellen. Grej, der ikke svarer på polling, står med 0 under Nodes answering, selv mens det modtager. Det flimrer Kontrollér, at det samme armatur ikke fodres både fra netværket og fra Bluetooth, eller fra mere end ét lysbord eller én DMX-kilde. Kig på advarslen om CRMX under OUTPUT og på enhver besked om SHARED eller WAITING, og skær det ned til én vej. En anden styreapp, eller en indstilling på armaturet, kan også være årsagen. Det hakker, eller reagerer langsomt Åbn Settings → OUTPUT, og læs oppefra og ned . Standser det ved et af disse punkter, behøver du ikke kigge længere ned. Sending sender lysbordet overhovedet ↓ Clock sidder det fast inde i telefonen ↓ Touch → wire er turen fra finger til pakke langsom ↓ Node RTT er netværket eller grejet langsomt ↓ Fixture er selve armaturet langsomt Det, du ser Hvad du kigger på Sending står på nothing Destination, netværk, tilladelser i iOS Clock over 100 ms Telefonen. Luk paneler, genstart appen, hvis du er nødt til det Noder svarer, men armaturerne opdaterer cirka én gang i sekundet Den adresse, AUTO sender til. Melder noden sig selv forkert, så prøv Broadcast Clock er fin, men rundturen er lang Trængsel på Wi-Fi, adgangspunktet, grejet, vejen derhen Tallene er fine, men lyset halter Udjævning i armaturet, dets indgangsvej, en anden app, der trækker i det Broadcast hjælper, når destinationen under AUTO er problemet. Ved andre årsager hjælper den ikke og kan lægge mere belastning på. Nogle fadere gør ingenting Se armaturets grænser efter, dets Lock, og om dets udgang er slået til. Faderkurven i Kanau er lineær; en dæmperkurve i armaturet kan få den nederste halvdel til at føles flad. Se efter på selve armaturet, eller under Dim curve i Channels. På et armatur importeret fra GDTF skyldes forkert intensitet eller farve som regel, at rollerne er forkerte. Ret dem under Channel roles. Skal rettelsen følge med over i armaturer, du patcher senere, så ret definitionen under Custom fixtures. En knap gør ingenting Det, du ser Hvorfor, og hvad du gør En lilla flade hen over skærmen SCREEN LOCK. Træk skyderen i midten mod højre En grøn 🔒 Ryd armaturets Fixture Lock COLOR eller EFFECT er grå Markér et armatur. COLOR kræver desuden, at armaturet har farve PIXELS er grå Der er intet pixelarmatur på siden HISTORY er inaktiv Der er ikke noget at gå tilbage til Nummerknapperne ændrer ikke intensiteten Klavertilstanden står på LOCK. Brug ＋ − Home under Channels er inaktiv Den står allerede på standardværdien Home for Pan eller Tilt gør ingenting Den kræver et hold, ikke et tryk En scene vil ikke opdatere sig Se Lock this scene efter En gæst kan ikke rette patchen Gør det på værten Farven er forkert Det, du ser Hvad du kontrollerer En anden farve end den, du satte Om tilstanden i Patch passer med armaturets egen DMX-tilstand Slet ingen farvebetjening Om armaturet har farve. Blandede modeller viser kun de fælles punkter (kapitel 05) Farvetemperaturen standser for tidligt Du står ved kanten af armaturets område. Der står MIN eller MAX Et importeret armatur rammer forkert Se Channel roles efter (kapitel 06) Hvidt trækker mod grønt eller magenta Green / Magenta står måske ikke på 0. Back to neutral stiller den tilbage Et armatur opfører sig forkert Kontrollér først, at tilstanden i Patch passer med armaturets egen. Er den forkert, kommer intensitet ind som farve, og farve kommer ind som retning. En definition importeret fra GDTF kan have roller lagt anderledes end på det virkelige armatur. Ret dem under Channel roles (kapitel 06). Skal det følge med over i kommende patches, så ret definitionen under Custom fixtures. Alt, der er mærket Imported data is not verified. , bør holdes op mod det virkelige armatur. En scene bliver ved med at ændre sig af sig selv Alt, hvad du gør efter at have kaldt en scene, bliver gemt tilbage i den (kapitel 08). Slå Lock this scene til under den scenes Settings på de scener, du vil have stående urørt. Du kan stadig kalde dem og stadig arbejde med lyset; der gemmes ingenting. En scene vil ikke gemme Hvad du kontrollerer Lock this scene Der gemmes ingenting, mens den er slået til Du står på en gæst Omrokering, sletning og omdøbning er værtens (kapitel 13) Det, der aldrig gemmes GM, B.O., BATTERY SAVE, grænser, Fixture Lock, tilstanden for ⏻ og senere farv"},{"id":"glossary","title":"Ordliste","h":[],"text":"Ordliste På skærmen Hvad det betyder Fixture Et armatur. Den enhed, du patcher og styrer Patch At registrere et armaturs model, tilstand og DMX-adresse Universe / Address Et universe, og kanalpladsen inde i det Mode Armaturets DMX-tilstand. Skal passe med selve armaturet Unit no. / Fixture number Det automatiske nummer inden for en model / det nummer, du giver det Offset / Gap Afstanden mellem armaturer / ekstra frie kanaler mellem dem Group / All Et sæt armaturer / hvert armatur Pixel / Cell En del af ét armatur, der kan styres for sig Intensity Lysstyrke CCT Farvetemperatur, i kelvin G/M Korrektionen mellem grøn og magenta Crossfade Balancen mellem den hvide og den farvede side Emitter En LED eller anden lyskilde inde i armaturet Channels / Raw channels At arbejde med én DMX-kanal ad gangen Channel roles Hvilken funktion en kanal behandles som GM / B.O. Grand master / blackout Lock / SCREEN LOCK At holde på et armaturs udgang / at stoppe utilsigtede berøringer FINE / FINE+ 1/10 og 1/100 af den normale følsomhed PIANO At bruge nummerknapperne til at ændre intensiteten, mens de holdes nede Scene / Show Et gemt billede / alting til én opgave SNAP / Fade Med det samme / over en sat tid HISTORY / HERE Listen over tidligere tilstande / hvor du står i den PAUSE / RESUME At fryse en effekt / at køre videre derfra RELEASE / START At stoppe en effekt / at køre den fra begyndelsen CLEAR At rydde en markering, eller at fjerne en effekt. Det afhænger af, hvor du ser det SAVED Gemte effektindstillinger Host / Join / Leave session At være den sendende enhed / at gå med i en / at gå ud PROVISIONAL En pladsholdertilstand for et armatur GDTF Et filformat til armaturdefinitioner"}];
+  var NONE = "Ingen resultater";
+  var LEGACY = {"c-QUICK-START":"quick-start","c-01-Reading-the-screen":"screen","c-02-Sending-DMX":"output","c-03-Patching-fixtures":"patch","c-04-Setting-intensity":"intensity","c-05-Setting-colour":"color","c-06-Per-fixture-settings":"fixture-settings","c-07-Position-and-beam":"position","c-08-Storing-and-recalling-looks":"scenes","c-09-Effects":"effects","c-10-Locks-safety-and-stepping-back":"safety","c-11-Saving-and-sharing-shows":"shows","c-12-MIDI-controllers-Advanced":"midi","c-13-Working-from-two-devices":"session","c-14-Troubleshooting":"troubleshooting","c-Glossary":"glossary","c-QUICK-START--1-Change-the-intensity":"quick-start--1","c-QUICK-START--2-Change-the-colour":"quick-start--2","c-QUICK-START--3-Recall-a-scene":"quick-start--3","c-QUICK-START--See-the-values-going-out":"quick-start--4","c-QUICK-START--What-is-in-the-practice-rig":"quick-start--5","c-QUICK-START--Connecting-real-lights":"quick-start--6","c-QUICK-START--Five-things-worth-knowing-first":"quick-start--7","c-01-Reading-the-screen--Learn-these-seven-first":"screen--1","c-01-Reading-the-screen--The-five-tabs":"screen--2","c-01-Reading-the-screen--The-status-line":"screen--3","c-01-Reading-the-screen--The-parts-of-Home":"screen--4","c-01-Reading-the-screen--Colours-and-marks":"screen--5","c-02-Sending-DMX--First-connection":"output--1","c-02-Sending-DMX--One-Art-Net-node":"output--2","c-02-Sending-DMX--Settings-in-detail":"output--3","c-02-Sending-DMX--Protocol-and-networks":"output--4","c-02-Sending-DMX--Choosing-the-destination":"output--5","c-02-Sending-DMX--RESCAN":"output--6","c-02-Sending-DMX--iOS-permissions":"output--7","c-02-Sending-DMX--Universes-and-Art-Net-numbering":"output--8","c-02-Sending-DMX--CRMX-over-Bluetooth":"output--9","c-02-Sending-DMX--When-another-console-is-found":"output--10","c-02-Sending-DMX--DMX-Diagnostics-reading-what-is-happening":"output--11","c-02-Sending-DMX--DMX-MONITOR":"output--12","c-03-Patching-fixtures--Adding-fixtures":"patch--1","c-03-Patching-fixtures--Two-kinds-of-number":"patch--2","c-03-Patching-fixtures--Models-and-modes":"patch--3","c-03-Patching-fixtures--Changing-patched-fixtures":"patch--4","c-03-Patching-fixtures--Changing-many-at-once":"patch--5","c-03-Patching-fixtures--Re-patch-moving-into-free-space":"patch--6","c-03-Patching-fixtures--Building-groups":"patch--7","c-03-Patching-fixtures--Fixtures-not-in-the-library-Advanced":"patch--8","c-03-Patching-fixtures--From-GDTF-Share":"patch--9","c-03-Patching-fixtures--From-a-GDTF-file":"patch--10","c-03-Patching-fixtures--By-hand-from-a-DMX-chart":"patch--11","c-03-Patching-fixtures--By-copying-an-existing-one":"patch--12","c-04-Setting-intensity--Moving-a-fader":"intensity--1","c-04-Setting-intensity--FINE":"intensity--2","c-04-Setting-intensity--Moving-several-at-once":"intensity--3","c-04-Setting-intensity--The-number-buttons-as-a-piano":"intensity--4","c-04-Setting-intensity--output-only":"intensity--5","c-04-Setting-intensity--GM-and-B-O":"intensity--6","c-04-Setting-intensity--Choosing-what-is-on-the-page":"intensity--7","c-04-Setting-intensity--The-buttons-along-the-bottom":"intensity--8","c-04-Setting-intensity--Working-pixels-on-their-own":"intensity--9","c-05-Setting-colour--Opening-the-panel":"color--1","c-05-Setting-colour--Intensity-and-colour":"color--2","c-05-Setting-colour--Gels":"color--3","c-05-Setting-colour--Saving-colours-you-use-often":"color--4","c-05-Setting-colour--ADVANCED-COLOR":"color--5","c-05-Setting-colour--Several-fixtures-and-several-models":"color--6","c-05-Setting-colour--Pixels-and-repeated-colour-groups":"color--7","c-06-Per-fixture-settings--Name-and-display":"fixture-settings--1","c-06-Per-fixture-settings--Limits":"fixture-settings--2","c-06-Per-fixture-settings--Lock":"fixture-settings--3","c-06-Per-fixture-settings--The-other-settings":"fixture-settings--4","c-06-Per-fixture-settings--Channels-the-raw-DMX-Advanced":"fixture-settings--5","c-06-Per-fixture-settings--Changing-the-patch-or-the-mode":"fixture-settings--6","c-07-Position-and-beam--Pan-and-Tilt":"position--1","c-07-Position-and-beam--Zoom-iris-frost-focus-and-gobo":"position--2","c-08-Storing-and-recalling-looks--Storing-a-scene":"scenes--1","c-08-Storing-and-recalling-looks--Recalling-and-tidying":"scenes--2","c-08-Storing-and-recalling-looks--What-you-change-after-a-recall-is-saved":"scenes--3","c-08-Storing-and-recalling-looks--What-is-stored-and-what-is-not":"scenes--4","c-08-Storing-and-recalling-looks--Fade":"scenes--5","c-09-Effects--Applying-one":"effects--1","c-09-Effects--Pause-release-restart":"effects--2","c-09-Effects--ADJUST":"effects--3","c-09-Effects--ARRANGE":"effects--4","c-09-Effects--Changing-the-target-and-saving-settings":"effects--5","c-09-Effects--Finding-one-by-what-you-want":"effects--6","c-09-Effects--The-full-list":"effects--7","c-09-Effects--SIGNAL-traffic-lights":"effects--8","c-09-Effects--Layering-LIGHT-MOVE-and-BEAM":"effects--9","c-09-Effects--Managing-them-from-the-Effects-tab":"effects--10","c-10-Locks-safety-and-stepping-back--There-are-three-kinds-of-lock":"safety--1","c-10-Locks-safety-and-stepping-back--SCREEN-LOCK":"safety--2","c-10-Locks-safety-and-stepping-back--Fixture-Lock":"safety--3","c-10-Locks-safety-and-stepping-back--BATTERY-SAVE":"safety--4","c-10-Locks-safety-and-stepping-back--HISTORY":"safety--5","c-10-Locks-safety-and-stepping-back--ZEN":"safety--6","c-11-Saving-and-sharing-shows--When-it-saves":"shows--1","c-11-Saving-and-sharing-shows--Settings-SHOWS":"shows--2","c-11-Saving-and-sharing-shows--Opening-and-recovery":"shows--3","c-11-Saving-and-sharing-shows--What-is-not-in-the-show":"shows--4","c-11-Saving-and-sharing-shows--Settings-SETTINGS":"shows--5","c-12-MIDI-controllers-Advanced--Connecting-and-mapping":"midi--1","c-12-MIDI-controllers-Advanced--The-two-modes":"midi--2","c-12-MIDI-controllers-Advanced--When-a-knob-does-nothing-at-first":"midi--3","c-12-MIDI-controllers-Advanced--Buttons-and-the-mapping-file":"midi--4","c-13-Working-from-two-devices--Who-holds-what":"session--1","c-13-Working-from-two-devices--Starting-a-session":"session--2","c-13-Working-from-two-devices--What-a-guest-can-do":"session--3","c-13-Working-from-two-devices--Effects-and-the-guest":"session--4","c-13-Working-from-two-devices--Working-at-the-same-time-and-losing-the-link":"session--5","c-14-Troubleshooting--Nothing-lights-up":"troubleshooting--1","c-14-Troubleshooting--No-node-is-found":"troubleshooting--2","c-14-Troubleshooting--It-flickers":"troubleshooting--3","c-14-Troubleshooting--It-stutters-or-reacts-slowly":"troubleshooting--4","c-14-Troubleshooting--Some-faders-do-nothing":"troubleshooting--5","c-14-Troubleshooting--A-button-does-nothing":"troubleshooting--6","c-14-Troubleshooting--The-colour-is-wrong":"troubleshooting--7","c-14-Troubleshooting--A-fixture-does-not-behave":"troubleshooting--8","c-14-Troubleshooting--A-scene-keeps-changing-on-its-own":"troubleshooting--9","c-14-Troubleshooting--A-scene-will-not-save":"troubleshooting--10","c-14-Troubleshooting--The-session-will-not-connect":"troubleshooting--11","c-14-Troubleshooting--Something-stays-lit-on-blackout":"troubleshooting--12","c-14-Troubleshooting--The-app-quit-or-the-link-dropped":"troubleshooting--13","c-14-Troubleshooting--A-save-failed":"troubleshooting--14","c-14-Troubleshooting--Checking-the-DMX-values":"troubleshooting--15","c-01-画面の見方":"screen","c-02-DMX-を送信する":"output","c-03-灯体を登録する":"patch","c-04-明るさを操作する":"intensity","c-05-色を調整する":"color","c-06-灯体ごとの設定":"fixture-settings","c-07-向き-ビームを調整する":"position","c-08-明かりを保存-呼び出しする":"scenes","c-09-エフェクトを使う":"effects","c-10-誤操作を防ぐ-操作を戻す":"safety","c-11-ショーを保存-共有する":"shows","c-12-MIDI-コントローラーを使う-Advanced":"midi","c-13-2-台の端末で操作する":"session","c-14-困ったとき":"troubleshooting","c-用語集":"glossary","c-QUICK-START--1-明るさを変える":"quick-start--1","c-QUICK-START--2-色を変える":"quick-start--2","c-QUICK-START--3-シーンを呼ぶ":"quick-start--3","c-QUICK-START--送っている値を見る":"quick-start--4","c-QUICK-START--実際の灯体につなぐ":"quick-start--5","c-QUICK-START--練習用のデモに入っているもの":"quick-start--6","c-QUICK-START--現場で最初に知っておきたいこと":"quick-start--7","c-01-画面の見方--まず覚える場所":"screen--1","c-01-画面の見方--5-つのタブ":"screen--2","c-01-画面の見方--画面上部のステータス表示":"screen--3","c-01-画面の見方--Home-の各部":"screen--4","c-01-画面の見方--色とアイコンの意味":"screen--5","c-02-DMX-を送信する--最初の接続":"output--1","c-02-DMX-を送信する--Art-Net-ノード-1-台につなぐ":"output--2","c-02-DMX-を送信する--詳細設定":"output--3","c-02-DMX-を送信する--送信方式とネットワーク":"output--4","c-02-DMX-を送信する--宛先を選ぶ":"output--5","c-02-DMX-を送信する--RESCAN-でノードを再検索する":"output--6","c-02-DMX-を送信する--iOS-の許可を確認する":"output--7","c-02-DMX-を送信する--ユニバースと-Art-Net-の番号":"output--8","c-02-DMX-を送信する--Bluetooth-経由の-CRMX":"output--9","c-02-DMX-を送信する--別の卓を検出した場合":"output--10","c-02-DMX-を送信する--DMX-Diagnostics-届いているかを読む":"output--11","c-02-DMX-を送信する--DMX-MONITOR":"output--12","c-03-灯体を登録する--灯体を追加する":"patch--1","c-03-灯体を登録する--2-種類の灯体番号":"patch--2","c-03-灯体を登録する--機種とモードについて":"patch--3","c-03-灯体を登録する--登録済み灯体を変更する":"patch--4","c-03-灯体を登録する--複数台をまとめて変更する":"patch--5","c-03-灯体を登録する--Re-patch-で空きアドレスへ移動する":"patch--6","c-03-灯体を登録する--グループを作成する":"patch--7","c-03-灯体を登録する--ライブラリにない灯体を追加する-Advanced":"patch--8","c-03-灯体を登録する--GDTF-Share-から取得する":"patch--9","c-03-灯体を登録する--手元の-GDTF-ファイルを読み込む":"patch--10","c-03-灯体を登録する--DMX-チャートから手動で作成する":"patch--11","c-03-灯体を登録する--既存定義を複製して編集する":"patch--12","c-04-明るさを操作する--フェーダーを動かす":"intensity--1","c-04-明るさを操作する--FINE-で細かく調整する":"intensity--2","c-04-明るさを操作する--複数のフェーダーをまとめて動かす":"intensity--3","c-04-明るさを操作する--番号ボタンをピアノのように使う":"intensity--4","c-04-明るさを操作する--で出力だけを切り替える":"intensity--5","c-04-明るさを操作する--GM-と-B-O-を操作する":"intensity--6","c-04-明るさを操作する--表示する灯体を切り替える":"intensity--7","c-04-明るさを操作する--画面の一番下のボタン":"intensity--8","c-04-明るさを操作する--ピクセルを個別に操作する":"intensity--9","c-05-色を調整する--色の操作パネルを開く":"color--1","c-05-色を調整する--明るさと色の項目":"color--2","c-05-色を調整する--ジェルを選ぶ":"color--3","c-05-色を調整する--よく使う色を保存する":"color--4","c-05-色を調整する--ADVANCED-COLOR":"color--5","c-05-色を調整する--複数台-複数機種を操作する場合":"color--6","c-05-色を調整する--ピクセルと複数の色グループ":"color--7","c-06-灯体ごとの設定--名前と表示":"fixture-settings--1","c-06-灯体ごとの設定--上限-下限":"fixture-settings--2","c-06-灯体ごとの設定--Lock":"fixture-settings--3","c-06-灯体ごとの設定--その他の設定":"fixture-settings--4","c-06-灯体ごとの設定--Channels-で各チャンネルを操作する-Advanced":"fixture-settings--5","c-06-灯体ごとの設定--パッチ-モードを変更する":"fixture-settings--6","c-07-向き-ビームを調整する--Pan-Tilt":"position--1","c-07-向き-ビームを調整する--Zoom-Iris-Frost-Focus-Gobo":"position--2","c-08-明かりを保存-呼び出しする--シーンを保存する":"scenes--1","c-08-明かりを保存-呼び出しする--シーンを呼び出す-整理する":"scenes--2","c-08-明かりを保存-呼び出しする--呼び出し後の変更は自動保存される":"scenes--3","c-08-明かりを保存-呼び出しする--保存されるもの-されないもの":"scenes--4","c-08-明かりを保存-呼び出しする--フェード時間":"scenes--5","c-09-エフェクトを使う--エフェクトを適用する":"effects--1","c-09-エフェクトを使う--一時停止-解除-再開の違い":"effects--2","c-09-エフェクトを使う--ADJUST-で調整する":"effects--3","c-09-エフェクトを使う--ARRANGE-で並び方を設定する":"effects--4","c-09-エフェクトを使う--対象を変更-設定を保存する":"effects--5","c-09-エフェクトを使う--目的から探す":"effects--6","c-09-エフェクトを使う--エフェクト一覧":"effects--7","c-09-エフェクトを使う--SIGNAL-信号機":"effects--8","c-09-エフェクトを使う--LIGHT-MOVE-BEAM-を重ねる":"effects--9","c-09-エフェクトを使う--Effects-タブでまとめて管理する":"effects--10","c-10-誤操作を防ぐ-操作を戻す--SCREEN-LOCK":"safety--1","c-10-誤操作を防ぐ-操作を戻す--Lock-は-3-種類あります":"safety--2","c-10-誤操作を防ぐ-操作を戻す--灯体の-Lock":"safety--3","c-10-誤操作を防ぐ-操作を戻す--BATTERY-SAVE":"safety--4","c-10-誤操作を防ぐ-操作を戻す--HISTORY":"safety--5","c-10-誤操作を防ぐ-操作を戻す--ZEN":"safety--6","c-11-ショーを保存-共有する--保存のタイミング":"shows--1","c-11-ショーを保存-共有する--Settings-SHOWS":"shows--2","c-11-ショーを保存-共有する--起動-読み込み時の動作":"shows--3","c-11-ショーを保存-共有する--ショーに含まれないもの":"shows--4","c-11-ショーを保存-共有する--Settings-SETTINGS":"shows--5","c-12-MIDI-コントローラーを使う-Advanced--接続して割り当てる":"midi--1","c-12-MIDI-コントローラーを使う-Advanced--割り当てモード":"midi--2","c-12-MIDI-コントローラーを使う-Advanced--ノブがすぐに反応しない場合":"midi--3","c-12-MIDI-コントローラーを使う-Advanced--ボタンと設定ファイル":"midi--4","c-13-2-台の端末で操作する--どちらが何を持つか":"session--1","c-13-2-台の端末で操作する--セッションを開始する":"session--2","c-13-2-台の端末で操作する--参加端末でできること":"session--3","c-13-2-台の端末で操作する--参加端末とエフェクト":"session--4","c-13-2-台の端末で操作する--同時操作と接続切れ":"session--5","c-14-困ったとき--灯体が点灯しない":"troubleshooting--1","c-14-困ったとき--ノードが見つからない":"troubleshooting--2","c-14-困ったとき--ちらつく":"troubleshooting--3","c-14-困ったとき--動きがカクつく-反応が遅い":"troubleshooting--4","c-14-困ったとき--フェーダーの一部が効かない":"troubleshooting--5","c-14-困ったとき--ボタンが反応しない":"troubleshooting--6","c-14-困ったとき--色がおかしい":"troubleshooting--7","c-14-困ったとき--灯体が思ったとおりに動かない":"troubleshooting--8","c-14-困ったとき--シーンが勝手に変わる":"troubleshooting--9","c-14-困ったとき--シーンが保存されない":"troubleshooting--10","c-14-困ったとき--セッションがつながらない":"troubleshooting--11","c-14-困ったとき--B-O-でも消えない":"troubleshooting--12","c-14-困ったとき--アプリが終了した-接続が切れた":"troubleshooting--13","c-14-困ったとき--保存に失敗した":"troubleshooting--14","c-14-困ったとき--DMX-値を確認したい":"troubleshooting--15"};
+  var MATCH = {"en":"en","en-US":"en","ja":"ja","de":"de","de-DE":"de","fr":"fr","fr-FR":"fr","ko":"ko","zh-Hans":"zh-Hans","zh":"zh-Hans","zh-Hant":"zh-Hant","es":"es","es-ES":"es","pt-BR":"pt-BR","pt":"pt-BR","it":"it","nl":"nl","nl-NL":"nl","pl":"pl","cs":"cs","sv":"sv","da":"da","no":"no","fi":"fi","tr":"tr","id":"id","th":"th","ar":"ar","ar-SA":"ar","hi":"hi","vi":"vi","zh-CN":"zh-Hans","zh-TW":"zh-Hant"};
+  var HREF = {"en":"manual.html","ja":"manual-ja.html","de":"manual-de.html","fr":"manual-fr.html","ko":"manual-ko.html","zh-Hans":"manual-zh-Hans.html","zh-Hant":"manual-zh-Hant.html","es":"manual-es.html","pt-BR":"manual-pt-BR.html","it":"manual-it.html","nl":"manual-nl.html","pl":"manual-pl.html","cs":"manual-cs.html","sv":"manual-sv.html","da":"manual-da.html","no":"manual-no.html","fi":"manual-fi.html","tr":"manual-tr.html","id":"manual-id.html","th":"manual-th.html","ar":"manual-ar.html","hi":"manual-hi.html","vi":"manual-vi.html"};
+  var HERE = "da";
+
+  var q = document.getElementById('q'), box = document.getElementById('results');
+  function esc(s){return s.replace(/[&<>]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c];});}
+  function run(){
+    var v = q.value.trim();
+    if (v.length < 1){ box.hidden = true; box.innerHTML=''; return; }
+    var needle = v.toLowerCase(), hits = [];
+    IDX.forEach(function(ch){
+      if (ch.title.toLowerCase().indexOf(needle) >= 0)
+        hits.push({id: ch.id, label: ch.title, sub: ''});
+      ch.h.forEach(function(h){
+        if (h.t.toLowerCase().indexOf(needle) >= 0)
+          hits.push({id: h.id, label: h.t, sub: ch.title});
+      });
+      var p = ch.text.toLowerCase().indexOf(needle);
+      if (p >= 0 && hits.filter(function(x){return x.sub===ch.title||x.id===ch.id;}).length===0)
+        hits.push({id: ch.id, label: '\u2026' + ch.text.substr(Math.max(0,p-18), 56).trim() + '\u2026', sub: ch.title});
+    });
+    if (!hits.length){ box.innerHTML = '<p class="none">'+esc(NONE)+'</p>'; box.hidden = false; return; }
+    box.innerHTML = hits.slice(0,25).map(function(h){
+      return '<a href="#'+h.id+'">'+esc(h.label)+(h.sub?'<span>'+esc(h.sub)+'</span>':'')+'</a>';
+    }).join('');
+    box.hidden = false;
+  }
+  var t; q.addEventListener('input', function(){ clearTimeout(t); t = setTimeout(run, 90); });
+  q.addEventListener('keydown', function(e){ if (e.key === 'Escape'){ q.value=''; run(); q.blur(); } });
+  box.addEventListener('click', function(e){ if (e.target.closest('a')){ box.hidden = true; } });
+  document.addEventListener('keydown', function(e){
+    if (e.key === '/' && document.activeElement !== q){ e.preventDefault(); q.focus(); }
+  });
+  var jump = document.getElementById('qjump');
+  if (jump) jump.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'}); setTimeout(function(){ q.focus(); }, 350);
+  });
+
+  function jumpLegacy(){
+    var h = decodeURIComponent(location.hash.replace(/^#/, ''));
+    if (!h || document.getElementById(h)) return;
+    var to = LEGACY[h];
+    if (!to) return;
+    var el = document.getElementById(to);
+    if (el){ history.replaceState(null, '', '#' + to); el.scrollIntoView(); }
+  }
+  window.addEventListener('hashchange', jumpLegacy);
+  jumpLegacy();
+
+  var sels = document.querySelectorAll('.lang select');
+  Array.prototype.forEach.call(sels, function(sel){
+    sel.addEventListener('change', function(){
+      var opt = sel.options[sel.selectedIndex];
+      try { localStorage.setItem('kanau.manual.locale', opt.dataset.locale); } catch (e) {}
+      location.href = opt.value + location.hash;
+    });
+  });
+  // 初回だけブラウザの言語を見ます。明示の選択があればそちらを優先し、
+  // 強制の転送は繰り返しません。
+  try {
+    if (!localStorage.getItem('kanau.manual.locale') && !location.hash) {
+      var want = (navigator.languages || [navigator.language || '']).map(String);
+      for (var i = 0; i < want.length; i++) {
+        var hit = MATCH[want[i]] || MATCH[want[i].split('-')[0]];
+        if (hit && hit !== HERE) {
+          localStorage.setItem('kanau.manual.locale', hit);
+          location.replace(HREF[hit]);
+          break;
+        }
+        if (hit === HERE) break;
+      }
+    }
+  } catch (e) {}
+
+})();
+</script>
+</body>
+</html>

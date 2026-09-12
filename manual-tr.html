@@ -1,0 +1,928 @@
+<!doctype html>
+<!-- GENERATED FILE — DO NOT EDIT DIRECTLY.
+     原稿は docs/manual-tr/ 、作り直しは python3 docs/site/render-manual.py -->
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kanau Kullanım Kılavuzu</title>
+<meta name="description" content="Sinema ve televizyon için, iPhone&#x27;a göre tasarlanmış bir ışık konsolu. Armatürleri Art-Net, sACN ve CRMX üzerinden denetleyin; renk, sahneler, efektler ve tanıl">
+<link rel="icon" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/icon.png">
+<link rel="canonical" href="manual-tr.html">
+<link rel="alternate" hreflang="en" href="manual.html">
+<link rel="alternate" hreflang="ja" href="manual-ja.html">
+<link rel="alternate" hreflang="de" href="manual-de.html">
+<link rel="alternate" hreflang="fr" href="manual-fr.html">
+<link rel="alternate" hreflang="ko" href="manual-ko.html">
+<link rel="alternate" hreflang="zh-Hans" href="manual-zh-Hans.html">
+<link rel="alternate" hreflang="zh-Hant" href="manual-zh-Hant.html">
+<link rel="alternate" hreflang="es" href="manual-es.html">
+<link rel="alternate" hreflang="pt-BR" href="manual-pt-BR.html">
+<link rel="alternate" hreflang="it" href="manual-it.html">
+<link rel="alternate" hreflang="nl" href="manual-nl.html">
+<link rel="alternate" hreflang="pl" href="manual-pl.html">
+<link rel="alternate" hreflang="cs" href="manual-cs.html">
+<link rel="alternate" hreflang="sv" href="manual-sv.html">
+<link rel="alternate" hreflang="da" href="manual-da.html">
+<link rel="alternate" hreflang="no" href="manual-no.html">
+<link rel="alternate" hreflang="fi" href="manual-fi.html">
+<link rel="alternate" hreflang="tr" href="manual-tr.html">
+<link rel="alternate" hreflang="id" href="manual-id.html">
+<link rel="alternate" hreflang="th" href="manual-th.html">
+<link rel="alternate" hreflang="ar" href="manual-ar.html">
+<link rel="alternate" hreflang="hi" href="manual-hi.html">
+<link rel="alternate" hreflang="vi" href="manual-vi.html">
+<link rel="stylesheet" href="theme.css">
+</head>
+<body>
+
+<div class="stickybar"><a class="toc" href="#top" title="İçindekiler">&#9776;</a><button id="qjump" type="button">Ara</button><a class="trouble" href="#troubleshooting">Sorun</a><label class="lang"><span class="vh">Dil</span><select data-where="bar"><option value="manual.html" data-locale="en">English</option><option value="manual-ja.html" data-locale="ja">日本語</option><option value="manual-de.html" data-locale="de">Deutsch</option><option value="manual-fr.html" data-locale="fr">Français</option><option value="manual-ko.html" data-locale="ko">한국어</option><option value="manual-zh-Hans.html" data-locale="zh-Hans">简体中文</option><option value="manual-zh-Hant.html" data-locale="zh-Hant">繁體中文</option><option value="manual-es.html" data-locale="es">Español</option><option value="manual-pt-BR.html" data-locale="pt-BR">Português (Brasil)</option><option value="manual-it.html" data-locale="it">Italiano</option><option value="manual-nl.html" data-locale="nl">Nederlands</option><option value="manual-pl.html" data-locale="pl">Polski</option><option value="manual-cs.html" data-locale="cs">Čeština</option><option value="manual-sv.html" data-locale="sv">Svenska</option><option value="manual-da.html" data-locale="da">Dansk</option><option value="manual-no.html" data-locale="no">Norsk</option><option value="manual-fi.html" data-locale="fi">Suomi</option><option value="manual-tr.html" data-locale="tr" selected>Türkçe</option><option value="manual-id.html" data-locale="id">Bahasa Indonesia</option><option value="manual-th.html" data-locale="th">ไทย</option><option value="manual-ar.html" data-locale="ar">العربية</option><option value="manual-hi.html" data-locale="hi">हिन्दी</option><option value="manual-vi.html" data-locale="vi">Tiếng Việt</option></select></label></div>
+<div class="hero" id="top">
+  <div class="brand"><img src="img/icon.png" alt="" width="180" height="180">
+    <div><h1>Kanau</h1><p class="kicker">iPhone Lighting Console</p></div>
+    <label class="lang"><span class="vh">Dil</span><select data-where="hero"><option value="manual.html" data-locale="en">English</option><option value="manual-ja.html" data-locale="ja">日本語</option><option value="manual-de.html" data-locale="de">Deutsch</option><option value="manual-fr.html" data-locale="fr">Français</option><option value="manual-ko.html" data-locale="ko">한국어</option><option value="manual-zh-Hans.html" data-locale="zh-Hans">简体中文</option><option value="manual-zh-Hant.html" data-locale="zh-Hant">繁體中文</option><option value="manual-es.html" data-locale="es">Español</option><option value="manual-pt-BR.html" data-locale="pt-BR">Português (Brasil)</option><option value="manual-it.html" data-locale="it">Italiano</option><option value="manual-nl.html" data-locale="nl">Nederlands</option><option value="manual-pl.html" data-locale="pl">Polski</option><option value="manual-cs.html" data-locale="cs">Čeština</option><option value="manual-sv.html" data-locale="sv">Svenska</option><option value="manual-da.html" data-locale="da">Dansk</option><option value="manual-no.html" data-locale="no">Norsk</option><option value="manual-fi.html" data-locale="fi">Suomi</option><option value="manual-tr.html" data-locale="tr" selected>Türkçe</option><option value="manual-id.html" data-locale="id">Bahasa Indonesia</option><option value="manual-th.html" data-locale="th">ไทย</option><option value="manual-ar.html" data-locale="ar">العربية</option><option value="manual-hi.html" data-locale="hi">हिन्दी</option><option value="manual-vi.html" data-locale="vi">Tiếng Việt</option></select></label></div>
+  <p class="sub">Sinema ve televizyon için, iPhone&#x27;a göre tasarlanmış bir ışık konsolu. Armatürleri Art-Net, sACN ve CRMX üzerinden denetleyin; renk, sahneler, efektler ve tanılama cebinizde.</p>
+  <p class="appnote">Uygulamanın kendisi İngilizcedir. Bu kılavuz o İngilizce ekranları anlatır.</p>
+  <div class="doors"><a class="door" href="#quick-start"><b>3 dakikada başlayın</b><span>Armatüre gerek yok</span></a><a class="door" href="#screen"><b>Kullanım Kılavuzu</b><span>Ekranlar ve denetimler</span></a><a class="door" href="#troubleshooting"><b>Sorun giderme</b><span>Belirtiden bulun</span></a></div>
+  <p class="adv">Daha fazla:
+     <a href="#patch">Fixture / GDTF</a>
+     <a href="#output">Output / Diagnostics</a>
+     <a href="#midi">MIDI</a>
+     <a href="#session">Session</a></p>
+  <p class="ver">Son güncelleme <bdi dir="ltr">2026-09-13</bdi> ・ <bdi dir="ltr">0.2 build 233</bdi> ile denetlendi</p>
+</div>
+
+<div class="findbar">
+  <input id="q" type="search" placeholder="Kılavuzda ara (/)" autocomplete="off"
+         aria-label="Kılavuzda ara">
+  <div id="results" hidden></div>
+</div>
+
+<nav><a href="#quick-start">QUICK START</a> <a href="#screen">01 Ekranı okumak</a> <a href="#output">02 DMX göndermek</a> <a href="#patch">03 Armatürleri yamalamak</a> <a href="#intensity">04 Yoğunluk ayarlamak</a> <a href="#color">05 Renk ayarlamak</a> <a href="#fixture-settings">06 Armatür başına ayarlar</a> <a href="#position">07 Konum ve ışık huzmesi</a> <a href="#scenes">08 Görünümleri saklamak ve çağırmak</a> <a href="#effects">09 Efektler</a> <a href="#safety">10 Kilitler, güvenlik ve geri adım atmak</a> <a href="#shows">11 Show&#x27;ları kaydetmek ve paylaşmak</a> <a href="#midi">12 MIDI denetleyicileri (Advanced)</a> <a href="#session">13 2 cihazdan çalışmak</a> <a href="#troubleshooting">14 Sorun giderme</a> <a href="#glossary">Sözlük</a></nav>
+
+<section class="chapter" id="s-quick-start"><h1 id="quick-start">QUICK START — Kanau&#x27;yu 3 dakikada deneyin</h1>
+<p class="lead">Buraya kadar gelmek için tek bir armatüre bile ihtiyacınız yok. Düğme adları, ekranda göründükleri gibi yazılmıştır.</p>
+<p>Uygulama, 24 armatürü önceden yamalanmış bir alıştırma rig&#x27;i ile açılır. Burada geçireceğiniz 3 dakika, Kanau&#x27;nun nasıl çalıştığının büyük kısmını size gösterir.</p>
+<h3 id="quick-start--1">1. Yoğunluğu değiştirin</h3>
+<ol><li>Ekranın üst kısmında <code>GM 20</code> kırmızı yanıp sönüyor. Üzerine dokunun.</li><li>Açılan panelde <code>→100</code> öğesine dokunun. Her şey aydınlanır.</li><li>Paneli kapatın ve bir fader&#x27;ı yukarı aşağı sürükleyin. Üstündeki sayı ve yuvarlak simgenin rengi onunla birlikte değişir.</li></ol>
+<p>Bir fader, <strong dir="auto">dokunduğunuz yere değil, parmağınızın kat ettiği mesafeye</strong> göre hareket eder. Nereden başladığınızın sonuca hiçbir etkisi yoktur.</p>
+<h3 id="quick-start--2">2. Rengi değiştirin</h3>
+<ol><li>Bir fader&#x27;ın üstündeki yuvarlak simgeye <strong dir="auto">basılı tutun</strong>.</li><li>Renk paneli açılır. <code>Intensity</code> parlaklığı, <code>Color temperature</code> beyazı, <code>RGB</code> rengi ayarlar.</li><li>Üst kısımdaki ‹ › işaretleri sizi bir sonraki armatüre götürür.</li></ol>
+<p>Her armatür farklı özellikler taşır; bu nedenle karşınıza çıkan öğeler de armatüre göre değişir.</p>
+<h3 id="quick-start--3">3. Bir sahne çağırın</h3>
+<ol><li>Alttaki <code>Scenes</code> sekmesini açın.</li><li>Sizi 5 sahne bekliyor: <code>DIM</code>, <code>COLOR</code>, <code>CCT</code>, <code>PIXELS</code>, <code>FX</code>. Birine dokunun.</li><li>Home ekranına döndüğünüzde fader&#x27;lar ve renkler o görünüme geçmiş olur.</li></ol>
+<p><strong dir="auto">Bir çağırmanın ardından değiştirdiğiniz her şey o sahneye geri yazılır.</strong> Korumak istediğiniz sahneyi kilitleyin (bölüm 08).</p>
+<h3 id="quick-start--4">Dışarı giden değerleri görün</h3>
+<p>Hiçbir armatür bağlı olmasa bile <code>Settings</code> → <code>DMX MONITOR</code>, Kanau&#x27;nun gerçekte gönderdiği sayıları gösterir. Bir fader&#x27;ı hareket ettirin; sayılar da onunla birlikte hareket eder.</p>
+<h2 id="quick-start--5">Alıştırma rig&#x27;inde neler var</h2>
+<p>Demo, Generic altında 24 armatür içerir: DIMMER, CCT, RGB, RGBW ve BAR (4 piksel). Bunlar 8&#x27;erli 3 grup hâlindedir ve KEY, BACK ve FLOOR adlarını taşır.</p>
+<p>Grand master 20 değerinde başlar, 6 armatür Battery save için işaretlenmiştir ve yeşil bir etiket taşır, FLOOR üzerinde bir ateş efekti çalışır ve 5 sahne kayıtlıdır. Bunların hiçbiri gerçek bir ürün olma iddiası taşımaz.</p>
+<h2 id="quick-start--6">Gerçek armatürleri bağlamak</h2>
+<p>Demo anlaşılır hâle geldiğinde kendi ekipmanınıza geçin.</p>
+<ol><li><strong dir="auto">Bağlayın</strong>: iPhone&#x27;u DMX node&#x27;unuzla aynı ağa alın. <code>Settings</code> → <code>OUTPUT</code> altında Nodes answering değerinin 1 veya daha fazla, Sending göstergesinin yeşil olduğunu doğrulayın (bölüm 02).</li><li><strong dir="auto">Yamalayın</strong>: <code>Patch</code> → <code>＋ new patch</code> → <code>add new fixture</code> yolunu izleyin, ardından modeli, DMX modunu, universe&#x27;ü ve adresi ayarlayın. Armatürün kendi ayarlarıyla eşleştirin (bölüm 03).</li><li><strong dir="auto">Görünümü kurun</strong>: Home ekranında yoğunluğu ve rengi ayarlayın (bölüm 04 ve 05).</li><li><strong dir="auto">Kaydedin</strong>: Görünümü saklamak için <code>Scenes</code> içindeki ＋ düğmesine dokunun (bölüm 08).</li></ol>
+<p>Alıştırma rig&#x27;i sıradan bir show&#x27;dur. Kendi armatürlerinizi yamaladığınızda onu silin ya da <code>Settings</code> → <code>SHOWS</code> → <code>NEW SHOW</code> ile yeni bir tane oluşturun.</p>
+<h2 id="quick-start--7">Önce bilmeye değer 5 şey</h2>
+<ol><li><strong dir="auto">Fixture Lock, blackout&#x27;u yener.</strong> Kilitli bir armatür, B.O. boyunca yanık kalır (bölüm 10).</li><li><strong dir="auto">Çağrılan bir sahne, siz çalışırken kendini günceller.</strong> Dokunulmasını istemediklerinizi kilitleyin (bölüm 08).</li><li><strong dir="auto">3 tür kilit vardır.</strong> Fixture Lock çıkışı tutar, Scene Lock kayıtlı sahneyi korur, Screen Lock istenmeyen dokunuşları engeller (bölüm 10).</li><li><strong dir="auto">Grand master 100 değerinin altındayken ekranın kenarı kırmızı yanıp söner.</strong> Ortalık sönük görünüyorsa önce oraya bakın.</li><li><strong dir="auto">Aynı armatürlere başka bir konsol da gönderim yapıyorsa <code>WAITING</code> ya da <code>SHARED</code> görürsünüz.</strong> İkisi de bölüm 02 içinde anlatılır.</li></ol>
+<div class="box warning"><b>WARNING</b><p>Lock açık olan bir armatür, blackout&#x27;a bastığınızda sönmez; grand master&#x27;ı sıfıra çektiğinizde de sönmez. Bir çekim öncesinde kilitlerinizin temiz olduğunu kontrol edin. Bir blackout sırasında hâlâ yanan armatürlerin sayısı, ekranın üst kısmında yeşil 🔒 işaretinin yanında gösterilir.</p></div>
+<div class="next"><b>Sonraki</b><ul><li>Ekranda her şeyin yeri → bölüm 01</li><li>Gerçek armatürleri bağlamak → bölüm 02</li><li>Görünümleri saklamak → bölüm 08</li></ul></div><a class="top" href="#top">↑ İçindekiler</a></section>
+<section class="chapter" id="s-screen"><h1 id="screen">01 Ekranı okumak</h1>
+<p class="lead">Home ekranında yukarıdan aşağıya neler bulunduğu ve bir şey ters göründüğünde bunların nasıl okunacağı.</p>
+<figure class="shot"><div class="wrap" dir="ltr"><img src="img/1-home.png" alt="İlk açılışta Home ekranı. Kırmızı sayılar aşağıdaki listeyle eşleşir." width="294" height="640" loading="lazy"><span class="pin" style="left:10%;top:9%">1</span><span class="pin" style="left:40%;top:9%">2</span><span class="pin" style="left:20%;top:22.5%">3</span><span class="pin" style="left:50%;top:30%">4</span><span class="pin" style="left:7%;top:38.5%">5</span><span class="pin" style="left:7%;top:55%">6</span><span class="pin" style="left:7%;top:77%">7</span><span class="pin" style="left:50%;top:94%">8</span></div><figcaption>İlk açılışta Home ekranı. Kırmızı sayılar aşağıdaki listeyle eşleşir.</figcaption><ul class="pins"><li><b>1</b> Protokol ve bağlantı durumu</li><li><b>2</b> Grand master (GM)</li><li><b>3</b> Hangi armatürlerin ve grupların gösterileceğini seçme</li><li><b>4</b> Sayfalar arasında geçiş</li><li><b>5</b> Yuvarlak armatür simgesi</li><li><b>6</b> Fader</li><li><b>7</b> Numara düğmesi</li><li><b>8</b> 5 sekme</li></ul></figure>
+<h2 id="screen--1">Önce şu 7 yeri öğrenin</h2>
+<p>Ayrıntılı tablolara geçmeden önce, bilmeniz gereken yerler yalnızca bunlar.</p>
+<table>
+<tr><th>Yer</th><th>Ne işe yarar</th></tr>
+<tr><td>GM</td><td>Genel parlaklık, ekranın üst kısmında</td></tr>
+<tr><td>Fixtures / Groups</td><td>Hangi armatürlerin görüneceğini belirler</td></tr>
+<tr><td>Fader</td><td>Yoğunluğu ayarlar</td></tr>
+<tr><td>Scenes</td><td>Görünümleri saklar ve geri getirir</td></tr>
+<tr><td>Patch</td><td>Armatürleri kaydeder</td></tr>
+<tr><td>Effects</td><td>Çalışan efektleri listeler ve durdurur</td></tr>
+<tr><td>Settings</td><td>Çıkış, show&#x27;lar, MIDI, oturum</td></tr>
+</table>
+<p>Bundan sonrası ayrıntıdır.</p>
+<h2 id="screen--2">5 sekme</h2>
+<p>Çalıştığınız yer Home ekranıdır. Başka bir sekmeye dokunduğunuzda onun üzerine bir panel açılır. Home ekranına dönmek için üstteki tutamağı aşağı sürükleyin ya da Done öğesine dokunun.</p>
+<table>
+<tr><th>Sekme</th><th>Ne için kullanılır</th><th>Bakınız</th></tr>
+<tr><td>Scenes</td><td>Görünümleri kaydetmek ve çağırmak</td><td>bölüm 08</td></tr>
+<tr><td>Patch</td><td>Armatürler, adresler, modlar, gruplar</td><td>bölüm 03</td></tr>
+<tr><td>Home</td><td>Fader&#x27;larla yoğunluk ayarlamak</td><td>bölüm 04</td></tr>
+<tr><td>Effects</td><td>Efektleri listelemek, ayarlamak ve durdurmak</td><td>bölüm 09</td></tr>
+<tr><td>Settings</td><td>DMX çıkışı, show&#x27;lar, MIDI, oturum, tercihler</td><td>bölüm 02, 11–13</td></tr>
+</table>
+<h2 id="screen--3">Durum satırı</h2>
+<p>Solda protokol ve bağlantı durumu yer alır. ARTNET Art-Net&#x27;i, SACN sACN&#x27;i gösterir; BLUETOOTH ise yalnızca Bluetooth üzerinden gönderim yapıldığı anlamına gelir.</p>
+<table>
+<tr><th>Görünen</th><th>Anlamı</th></tr>
+<tr><td>Yeşil nokta</td><td>Gönderim sürüyor</td></tr>
+<tr><td>Kehribar nokta</td><td>Yavaşlamış ya da yeniden bağlanıyor (Reconnecting…)</td></tr>
+<tr><td>Kırmızı nokta, No node</td><td>Hiçbir cihaz yanıt vermiyor</td></tr>
+<tr><td>Kırmızı nokta, Blocked</td><td>iOS trafiği engelliyor</td></tr>
+<tr><td>Gri nokta, idle</td><td>Durdurulmuş</td></tr>
+<tr><td>WAITING ve bir IP</td><td>Başka bir konsol bulundu, bu yüzden bu cihaz geri çekildi</td></tr>
+<tr><td>SHARED ve bir IP</td><td>Başka bir konsol aynı universe&#x27;e gönderim yapıyor. Bu cihaz da göndermeyi sürdürüyor</td></tr>
+<tr><td>JOINED ve bir ad</td><td>Bir oturum içinde. DMX, host üzerinden çıkıyor</td></tr>
+</table>
+<p>Yeşil nokta, armatürün bir şey aldığını kanıtlamaz. Nasıl kontrol edeceğiniz bölüm 02 içinde, işler ters gittiğinde ne yapacağınız bölüm 14 içinde anlatılır.</p>
+<p>Satırın ortası ve sağı şunları taşır.</p>
+<table>
+<tr><th>Öğe</th><th>Dokunma</th><th>Basılı tutma ya da not</th></tr>
+<tr><td>GM 100</td><td>Grand master panelini açar</td><td>Ayarları için basılı tutun. 100 değerinin altında kırmızı yanıp söner</td></tr>
+<tr><td>B.O.</td><td>Blackout&#x27;u kaldırır</td><td>Blackout sırasında GM yerine görünür</td></tr>
+<tr><td>🔌 n (kırmızı)</td><td>Bir şey olmaz</td><td>Kapatılmış universe&#x27;ler. Settings → OUTPUT altından yeniden açın</td></tr>
+<tr><td>🔒 n (yeşil)</td><td>Bir şey olmaz</td><td>Blackout sırasında hâlâ yanan kilitli armatürler</td></tr>
+<tr><td>BATTERY SAVE</td><td>Açar ve kapatır</td><td>Miktarı ve geçiş süresini ayarlamak için basılı tutun</td></tr>
+<tr><td>SCREEN LOCK</td><td>Kilitlemez</td><td>Ekranı kilitlemek için 0.5 saniye basılı tutun</td></tr>
+</table>
+<h2 id="screen--4">Home ekranının parçaları</h2>
+<table>
+<tr><th>Öğe</th><th>Nasıl kullanılır</th></tr>
+<tr><td>Fixtures / Groups</td><td>Modele göre gösterim ile gruba göre gösterim arasında geçiş yapar</td></tr>
+<tr><td>10 / 5</td><td>Sayfadaki fader sayısı. 5 seçeneği her birini genişletir</td></tr>
+<tr><td>HISTORY</td><td>Önceki durumların listesini açar</td></tr>
+<tr><td>Model ve grup düğmeleri</td><td>O armatürleri göstermek için dokunun. Hepsinin rengini ve yoğunluğunu ayarlamak için basılı tutun</td></tr>
+<tr><td>CLEAR n</td><td>Seçimi temizler. Işıkta bir değişiklik olmaz</td></tr>
+<tr><td>‹ / ›</td><td>Sayfalar arasında geçiş yapar</td></tr>
+<tr><td>Sayı</td><td>0 ile 100 arasında yoğunluk. Sürüklerken üst kısımda büyük gösterilir</td></tr>
+<tr><td>Yuvarlak armatür simgesi (…)</td><td>Seçmek için dokunun. O armatürün panelini açmak için <strong dir="auto">basılı tutun</strong></td></tr>
+<tr><td>Fader</td><td>Yoğunluğu ayarlamak için yukarı aşağı sürükleyin</td></tr>
+<tr><td>Model adı</td><td>Aynı model ve moddan oluşan bir diziyi işaretler</td></tr>
+<tr><td>Numara düğmesi</td><td>Armatür numarası. Piyano modunda basılı tutuldukça yoğunluğu değiştirir</td></tr>
+<tr><td>⏻</td><td>Değeri koruyarak çıkışı kapatır ve açar</td></tr>
+<tr><td>COLOR</td><td>Seçili armatürlerin rengini ve yoğunluğunu ayarlar</td></tr>
+<tr><td>EFFECT</td><td>Seçili armatürlere bir efekt uygular</td></tr>
+<tr><td>PIXELS</td><td>Piksel armatürlerinin hücrelerini açar ve kapatır</td></tr>
+<tr><td>＋ −</td><td>Piyano modunu sırayla değiştirir: LOCK → ＋ → −</td></tr>
+<tr><td>FINE</td><td>Hassasiyeti sırayla değiştirir: normal → FINE (1/10) → FINE+ (1/100)</td></tr>
+</table>
+<p>Hiçbir şey seçili değilken ve rengi olmayan armatürlerde COLOR kullanılamaz. EFFECT bir seçim gerektirir. PIXELS ise sayfada bir piksel armatürü bulunmasını gerektirir.</p>
+<h2 id="screen--5">Renkler ve işaretler</h2>
+<table>
+<tr><th>Renk ya da işaret</th><th>Anlamı</th></tr>
+<tr><td>Kehribar</td><td>Seçili ya da etkin</td></tr>
+<tr><td>Kırmızı</td><td>Blackout, düşük bir grand master, bir ağ sorunu, piyano modu. Kontrol edilmesi gereken bir şey</td></tr>
+<tr><td>Yeşil</td><td>Gönderim sürüyor. Fixture Lock. BATTERY SAVE açık</td></tr>
+<tr><td>Mor</td><td>Çıkış kapatılmış ya da ekran kilitli</td></tr>
+<tr><td>Camgöbeği</td><td>Oturumdaki diğer cihaz tarafından çalışılıyor</td></tr>
+<tr><td>Turuncu</td><td>Belirlediğiniz bir sınırda</td></tr>
+<tr><td>Gri</td><td>Kullanılamaz ya da durdurulmuş</td></tr>
+</table>
+<p>Yuvarlak simge, armatürün rengini ve gerçek çıkışını taşır. Seçim kehribar bir çerçeveyle, kapatılmış çıkış mor bir halka ve ⏻ işaretiyle, kilit ise yeşil bir dış halka ve 🔒 işaretiyle gösterilir. Çalışan bir efekt simgeyi hareketlendirir.</p>
+<p>Ekranın kenarındaki kırmızı yanıp sönme, grand master&#x27;ın 100 değerinin altında olduğu anlamına gelir. Yeşil kenar, BATTERY SAVE açık demektir. İkisi birdeyse kırmızı dışta, yeşil içte olur. Blackout sırasında kırmızı kenarın yerini durum satırındaki B.O. alır.</p>
+<div class="next"><b>Sonraki</b><ul><li>Fader&#x27;ların hissi → bölüm 04</li><li>Renk ayarlamak → bölüm 05</li><li>Hiçbir şey yanmıyor → bölüm 14</li></ul></div><a class="top" href="#top">↑ İçindekiler</a></section>
+<section class="chapter" id="s-output"><h1 id="output">02 DMX göndermek — OUTPUT</h1>
+<p class="lead">Işık ekipmanınıza giden bağlantıyı kurmak ve verinin karşı tarafa ulaştığını doğrulamak.</p>
+<figure class="shot"><div class="wrap" dir="ltr"><img src="img/6-output.png" alt="Settings → OUTPUT. Kırmızı sayılar aşağıdaki listeyle eşleşir." width="640" height="1334" loading="lazy"><span class="pin" style="left:26%;top:22.7%">1</span><span class="pin" style="left:14%;top:32.6%">2</span><span class="pin" style="left:88%;top:32.6%">3</span><span class="pin" style="left:26%;top:79.5%">4</span><span class="pin" style="left:50%;top:96.7%">5</span></div><figcaption>Settings → OUTPUT. Kırmızı sayılar aşağıdaki listeyle eşleşir.</figcaption><ul class="pins"><li><b>1</b> Protokol. Art-Net ya da sACN, ikisinden biri</li><li><b>2</b> Ağlar. Gönderim, işaretli olanlar üzerinden yapılır</li><li><b>3</b> Kaç cihazın yanıt verdiği. no reply hiçbiri bulunamadı demektir</li><li><b>4</b> Hedef. Çoğu rig için doğru seçenek AUTO</li><li><b>5</b> Cihazları yeniden ara</li></ul></figure>
+<h2 id="output--1">İlk bağlantı</h2>
+<h3 id="output--2">Tek bir Art-Net cihazı</h3>
+<ol><li>iPhone&#x27;u, cihazla aynı Wi-Fi ya da kablolu ağa alın.</li><li>Settings → OUTPUT ekranını açın.</li><li>Art-Net ve AUTO seçeneklerini işaretleyin. İkisi de varsayılandır.</li><li>Nodes answering değerinin 1 veya daha fazla, Sending göstergesinin yeşil olduğunu doğrulayın.</li><li>Home ekranında bir fader&#x27;ı hareket ettirin ve armatürün tepki verdiğini görün.</li></ol>
+<p>Kanau, yamalanmış her universe&#x27;ü sürekli olarak, normalde 44 Hz hızında gönderir. Başlatma düğmesi yoktur. Başka bir konsol algılandığında, ağ ayarları değiştiğinde ya da iOS izni geri çektiğinde gönderim duraklayabilir veya durabilir.</p>
+<h2 id="output--3">Ayarlar ayrıntılı olarak</h2>
+<h3 id="output--4">Protokol ve ağlar</h3>
+<p>Art-Net ile sACN birbirini dışlar: birini seçin. Bluetooth üzerinden CRMX, ikisinin de yanında çalışabilir.</p>
+<p>Network listesi Wi-Fi, Ethernet ve Hotspot bağlantılarınızı adresleriyle ve her birinde kaç cihazın yanıt verdiğiyle birlikte listeler.</p>
+<ul><li>Varsayılan olarak kullanılabilir her ağı kullanır.</li><li>Hepsi seçiliyken birine dokunduğunuzda yalnızca o açık kalır. Bundan sonra her dokunuş birini açar ya da kapatır.</li><li>Hepsini kapatırsanız ağ üzerinden hiçbir şey çıkmaz. Bluetooth göndermeyi sürdürür.</li><li>no address olarak işaretlenmiş bir bağlantı seçilemez.</li></ul>
+<p>Kablolu bağlantı ile Wi-Fi&#x27;yi birlikte kullanıyorsanız, ikisinin de listede göründüğünü kontrol edin.</p>
+<h3 id="output--5">Hedefi seçmek</h3>
+<table>
+<tr><th>Ayar</th><th>Nereye gönderir</th><th>Ne zaman kullanılır</th></tr>
+<tr><td>AUTO (Art-Net)</td><td>Yanıt veren cihazlara unicast, ayrıca her ağda saniyede bir yayın. Hiçbiri yanıt vermediyse yalnızca yayın</td><td>Olağan seçim</td></tr>
+<tr><td>Broadcast (Art-Net)</td><td>Her kareyi her ağın alt ağına gönderir</td><td>Bir cihaz yanlış adres bildirdiğinde ve AUTO yavaş güncellendiğinde</td></tr>
+<tr><td>Unicast</td><td>Doğrudan girdiğiniz adreslere</td><td>Yayın ulaşmadığında ya da hedefi siz belirtmek istediğinizde</td></tr>
+<tr><td>255.255.255.255 (Art-Net)</td><td>Segment üzerinde yayın. Yönlendiriciden geçmez</td><td>Adresleme oturmadığında ve olağan yayın işe yaramadığında. iOS bunu engelleyebilir</td></tr>
+<tr><td>Multicast (sACN)</td><td>Her universe için multicast adresi</td><td>sACN varsayılanı</td></tr>
+</table>
+<p>Unicast ile cihazın adresini yazıp Add öğesine dokunun. Hiçbir adres girilmemişse No node IPs entered. uyarısını alırsınız ve hiçbir şey gönderilmez. Her universe, girdiğiniz her adrese gider.</p>
+<p>AUTO seçiliyken Nodes answering değeri 1 veya daha fazla olduğu hâlde armatürler yaklaşık saniyede bir güncelleniyorsa, cihazın kendi adresini yanlış bildirip bildirmediğine bakın. Destination satırını inceleyin ve Broadcast seçeneğini deneyin. Gecikmenin diğer nedenleri bölüm 14 içinde ele alınır.</p>
+<h3 id="output--6">RESCAN</h3>
+<p>Art-Net altındaki RESCAN öğesine dokunmak cihaz listesini yeniler. Ekipman eklendikten, çıkarıldıktan ya da bir adres değiştirildikten sonra kullanın. Kendi hâline bırakılırsa yeni bir cihaz yaklaşık 3 saniye içinde görünür, kaldırılan bir cihaz ise yaklaşık 10 sonra listeden düşer.</p>
+<p>Tarama sürerken gönderim devam eder. Kullanılabilir ağ yoksa RESCAN kullanılamaz.</p>
+<h3 id="output--7">iOS izinleri</h3>
+<p>iOS is blocking this. yazan kırmızı bir şerit, şunlardan birini gösterir.</p>
+<ul><li><strong dir="auto">Yerel ağ</strong>: iPhone Settings → Kanau → Local Network iznini açın.</li><li><strong dir="auto">sACN multicast</strong>: iOS blocked multicast. görüyorsanız Unicast seçeneğine geçin ve cihaz adreslerini girin. Multicast yetkisi yalnızca TestFlight ve App Store sürümlerine verilir, geliştirme sürümüne verilmez.</li></ul>
+<h3 id="output--8">Universe&#x27;ler ve Art-Net numaralandırması</h3>
+<p>Universes bölümü, yamalanmış her universe&#x27;ü armatür sayısı, kaçının yanık olduğu ve bir ON/OFF anahtarıyla birlikte listeler.</p>
+<div class="box important"><b>IMPORTANT</b><p>OFF, göndermeyi <strong dir="auto">durdurmaz</strong>. O universe&#x27;e sıfır göndermeyi sürdürür; böylece bir alıcı son değerlerini tutup yanık kalamaz. Kapatılmış universe sayısı, ekranın üst kısmında 🔌 işaretinin yanında görünür.</p></div>
+<p>Cihazınız tek bir sayı yerine Net / Sub-Net / Universe istiyorsa Settings → SETTINGS → Art-Net → Net / Sub / Uni ayarını açın. İlişki şöyledir: <strong dir="auto">Net × 256 + Sub × 16 + Uni</strong>.</p>
+<p>sACN önceliği 0, 100 ya da 200 olabilir. Varsayılan değer 100&#x27;dür. Aynı universe&#x27;e birden çok kaynak gönderim yaptığında alıcı, en yüksek önceliği izler.</p>
+<h3 id="output--9">Bluetooth üzerinden CRMX</h3>
+<ol><li>Settings → OUTPUT → CRMX (Bluetooth) altında Bluetooth&#x27;u açın.</li><li>iOS ilk kez sorduğunda Bluetooth&#x27;a izin verin.</li><li>Listeden bir verici seçin. Aynı öğeye yeniden dokunmak bağlantıyı keser.</li></ol>
+<p>Seçtiğiniz verici, universe 1 (U1) değerini taşır. Bir sonraki sefer Bluetooth&#x27;u açtığınızda aynı vericiye yeniden bağlanılır.</p>
+<p>Aynı universe&#x27;ü aynı armatüre hem ağ hem de Bluetooth üzerinden göndermek titremeye yol açabilir. CRMX başlığı altındaki uyarıyı okuyun ve yollardan birini kapatın. Kanau bu seçimi sizin yerinize yapmaz.</p>
+<p>Bluetooth&#x27;u kapattıktan sonra bir verici Art-Net&#x27;i kabul etmiyorsa, cihazın kendi Bluetooth ayarını kontrol edin ve yeniden başlatın. Aputure Sidus Four üzerinde ayrıca cihazdaki Sidus BT ayarını da kontrol edin.</p>
+<h3 id="output--10">Başka bir konsol bulunduğunda</h3>
+<table>
+<tr><th>Görünen</th><th>Anlamı ve ne yapmalı</th></tr>
+<tr><td>WAITING + IP</td><td>Bu cihaz başladığında başka bir konsol zaten gönderim yapıyordu, bu yüzden bu cihaz geri çekildi. Diğerini durdurun ya da iletiye dokunup Send anyway? → Send seçin. Diğeri bir Kanau host&#x27;u ise bunun yerine onun oturumuna katılabilirsiniz</td></tr>
+<tr><td>SHARED + IP</td><td>Bu cihaz başladıktan sonra başka bir konsol ortaya çıktı. Gönderim sürer; gerekiyorsa birini durdurun</td></tr>
+</table>
+<p>İki cihaz aynı anda başlar ve ikisi de geri çekilirse, adresi düşük olan yeniden göndermeye başlar.</p>
+<h2 id="output--11">DMX Diagnostics — olup biteni okumak</h2>
+<p>OUTPUT ekranının alt yarısı, <strong dir="auto">işlerin nerede durduğunu göstermek</strong> içindir. Bir ayarlar alanı değildir. Çıkış yavaş ya da yoksa buradaki satırları yukarıdan aşağıya doğru okuyun (bölüm 14).</p>
+<table>
+<tr><th>Öğe</th><th>Nasıl okunur</th></tr>
+<tr><td>Destination</td><td>Verinin gerçekte nereye gittiği. Bir adresin ardındaki ↦ işareti, yanıt veren bir cihaza unicast anlamına gelir</td></tr>
+<tr><td>Medium</td><td>Kullanımdaki bağlantılar, örneğin wi-fi + ethernet</td></tr>
+<tr><td>Sending</td><td>Son saniyedeki paket sayısı. 44 civarı normaldir. nothing hiçbirinin çıkmadığı anlamına gelir</td></tr>
+<tr><td>Clock</td><td>Gönderimler arasındaki en kötü boşluk. Yaklaşık 23 ms normaldir. 100 ms üzeri telefonu işaret eder</td></tr>
+<tr><td>Touch → wire</td><td>Parmağınızdan pakete kadar geçen süre. Yaklaşık 25 ms normaldir</td></tr>
+<tr><td>Nodes answering</td><td>Kaç cihazın yanıt verdiği; ad, adres, bağlantı ve gidiş dönüş süresiyle birlikte. Parantez içindeki değer, son 10 saniyenin en kötüsüdür</td></tr>
+<tr><td>Type these into the node</td><td>O gösterim açıkken cihaza girilecek Net / Sub / Uni değerleri</td></tr>
+</table>
+<p>Bunlar sorunu daraltır; başarıyı kanıtlamaz. Bir uyumsuzluk ya da karşı taraftaki bir arıza armatürleri karanlıkta tutarken Sending yeşil olabilir. Yoklamaya yanıt vermeyen ekipman, veriyi alırken bile Nodes answering altında 0 gösterir.</p>
+<h3 id="output--12">DMX MONITOR</h3>
+<p>Settings → DMX MONITOR, her universe&#x27;ün çıkan 512 kanalının tamamını gösterir. Saniyede 10 kez yenilenir ve gönderimi etkilemez.</p>
+<div class="next"><b>Sonraki</b><ul><li>Armatürleri yamalamak → bölüm 03</li><li>Hiçbir şey ulaşmıyor ya da yavaş → bölüm 14</li></ul></div><a class="top" href="#top">↑ İçindekiler</a></section>
+<section class="chapter" id="s-patch"><h1 id="patch">03 Armatürleri yamalamak — Patch</h1>
+<p class="lead">Kullandığınız armatürleri kaydedin; modeli, DMX modunu, universe&#x27;ü, adresi, numarayı ve grupları belirleyin.</p>
+<p>Yoğunluk ve renk Home ekranından ayarlanır (bölüm 04 ve 05).</p>
+<figure class="shot"><div class="wrap" dir="ltr"><img src="img/4-patch.png" alt="Patch ekranı. Yamalanmış armatürler model ve moda göre gruplanır." width="294" height="640" loading="lazy"></div><figcaption>Patch ekranı. Yamalanmış armatürler model ve moda göre gruplanır.</figcaption></figure>
+<h2 id="patch--1">Armatür eklemek</h2>
+<ol><li>Patch → ＋ new patch yolunu açın ve alanları göstermek için add new fixture öğesine dokunun.</li><li>Manufacturer → Fixture → Mode seçimini yapın. Mod, armatürün kendisinde ayarlı olanla aynı olmalıdır.</li><li>Kaç adet olduğunu, universe&#x27;ü ve başlangıç adresini belirleyin.</li><li>Aralığı ve varsa uyarıları kontrol edin, sonra Add öğesine dokunun. Eklenirken kaydedilir.</li></ol>
+<table>
+<tr><th>Alan</th><th>Ne işe yarar</th></tr>
+<tr><td>Favourites</td><td>Bir modeli yıldızlayın, bir dahaki sefere doğrudan ulaşın</td></tr>
+<tr><td>Name</td><td>Görünen ad. Varsayılan olarak model adıdır ve o modelin bütün armatürlerince paylaşılır</td></tr>
+<tr><td>Fixture number</td><td>Sette o armatüre seslenirken kullandığınız numara. Boş bırakılabilir. Kullanımdaki en yüksek numaranın bir fazlasından başlar</td></tr>
+<tr><td>Label</td><td>Ekran için kısa bir işaret. Boş bırakılırsa varsayılan kullanılır</td></tr>
+<tr><td>How many</td><td>En fazla 4,096</td></tr>
+<tr><td>Universe / Address</td><td>Varsayılan U1 / 1. Universe&#x27;ü değiştirmek adresi 1 değerine döndürür. U0 kullanılabilir</td></tr>
+<tr><td>Offset</td><td>Armatürler arasındaki aralık. Modun kanal sayısından doldurulur</td></tr>
+<tr><td>Gap</td><td>Armatürler arasında bırakılacak ek kanallar</td></tr>
+<tr><td>Battery save</td><td>Yeni armatürleri BATTERY SAVE için işaretler</td></tr>
+<tr><td>Label color</td><td>Numaranın arka planı. 7 renk ya da renksiz</td></tr>
+<tr><td>Map</td><td>512 kanallık yerleşim. Başlangıç adresini belirlemek için sürükleyip bırakın</td></tr>
+</table>
+<p>İlkinden sonraki her armatür, bir öncekinin başlangıç adresine Offset ve Gap eklenerek başlar. 512 değerini aşan her şey bir sonraki universe&#x27;e taşar. Modun kanal sayısından küçük bir Offset uyarı çıkarır, ancak devam edebilirsiniz.</p>
+<p>İşlem sonunda Added 3 × Titan Tube — U1 1–15 gibi bir sonuç alırsınız. Already patched, hâlihazırda sahip olduğunuz bir modelden daha fazlasını eklemenizi sağlar. Patched now ise güncel yerleşimi gösterir.</p>
+<h2 id="patch--2">İki tür numara</h2>
+<table>
+<tr><th>Numara</th><th>Ne işe yarar</th></tr>
+<tr><td>Unit no.</td><td>Model içinde ilerleyen bir numara. Sizin için atanır</td></tr>
+<tr><td>Fixture number</td><td>Sette kullandığınız numara. Siz belirlersiniz</td></tr>
+</table>
+<p>Home ekranının hangisini göstereceği Settings → SETTINGS → Fixture numbers → Show the fixture number ayarından belirlenir. Varsayılan Unit no. seçeneğidir. Yinelenen armatür numaraları uyarı çıkarır ama kabul edilir.</p>
+<h2 id="patch--3">Modeller ve modlar</h2>
+<p>Bu sürüm <strong dir="auto">45 üretici, 578 armatür ve 11,347 mod</strong> ile gelir. Kitaplıkta olmayan her şey için Generic tanımlarını ya da Custom fixtures listesini kullanın.</p>
+<p>Generic içinde Dimmer, Dimmer 16-bit, Bi-color, CCT, RGB, RGBW, Dimmer + RGB, Dimmer + RGBW, Bulb ve Desk lamp bulunur.</p>
+<ul><li><strong dir="auto">PROVISIONAL</strong> (Advanced): DMX tablosu üzerinde çalışılmamış yerlerde kullanılan yer tutucu bir mod. Yoğunluğu 1. kanaldan gönderir, başka bir şey göndermez.</li><li><strong dir="auto">Dimmer kanalı olmayan modlar</strong>: fader, renk kanallarını birlikte sürer ve sanal bir dimmer gibi davranır.</li></ul>
+<h2 id="patch--4">Yamalanmış armatürleri değiştirmek</h2>
+<p>Patched, armatürleri model ve moda göre listeler. Bir başlığa dokunarak katlayın. Bir armatürün satırına dokunarak yama ayarlarını açın.</p>
+<p>⚠ işareti, çakışan bir adresi ya da 512 kanalını aşan bir diziyi gösterir. Bu işaret görünürken gönderim sürer, bu yüzden ayarları kontrol edin. n fixture data problems, armatür verileri yüklenirken bulunan hataları gösterir; ayrıntı için üzerine dokunun.</p>
+<p>Bu listede çalışmak, Home ekranının hangi armatürleri gösterdiğini değiştirmez.</p>
+<h2 id="patch--5">Birçoğunu bir arada değiştirmek</h2>
+<p>Select many öğesine dokunun ve armatürleri seçin. Bir model satırındaki ✓ işareti o modelin tamamını alır.</p>
+<table>
+<tr><th>Eylem</th><th>Ne yapar</th></tr>
+<tr><td>Select all / Select none</td><td>Katlanmış satırlar dâhil her şeyi seçer ya da seçimi temizler</td></tr>
+<tr><td>Name</td><td>Adın sonunu, seçtiğiniz sıraya göre numaralandırır</td></tr>
+<tr><td>Number</td><td>Armatür numaralarını seçtiğiniz sıraya göre belirler</td></tr>
+<tr><td>Address</td><td>Bir universe, başlangıç adresi ve boşluk değerinden yeniden yerleştirir</td></tr>
+<tr><td>Battery</td><td>BATTERY SAVE için işaretler ya da işareti kaldırır</td></tr>
+<tr><td>New group</td><td>Seçimden bir grup oluşturur</td></tr>
+<tr><td>Delete</td><td>Onları kaldırır. Onaylamadan önce sayıyı kontrol edin</td></tr>
+</table>
+<p>Bir armatürü silmek, onun yoğunluğunu, rengini ve sınırlarını da kaldırır ve onu her sahneden çıkarır. Bir grubun içinden silmek yalnızca o gruptan çıkarır; armatürün kendisi kalır.</p>
+<h2 id="patch--6">Re-patch — boş alana taşımak</h2>
+<ol><li>Patch → Re-patch ekranını açın.</li><li>Adrese göre sıralanmış listede taşınacak armatürü seçin.</li><li>Boş bir aralığa dokunun. Armatür o aralığın başına taşınır.</li></ol>
+<p>Yalnızca yeterince büyük aralıklar sunulur. Çakışan armatürler kırmızı gösterilir.</p>
+<h2 id="patch--7">Grup oluşturmak</h2>
+<ol><li>＋ new group öğesine dokunun ve bir ad verin.</li><li>Armatürleri, Home ekranında görmek istediğiniz sırayla seçin.</li><li>CREATE öğesine dokunun.</li></ol>
+<p>Bir armatür birkaç grupta birden bulunabilir. Kopyalanmaz: herhangi bir gruptan değiştirmek aynı armatürü değiştirir. Bir gruba eklemek onu All içinde de bırakır.</p>
+<p>Bir grup adına dokunmak; adı belirlemenizi, sayıyı, adres aralığını ve yerleşimi görmenizi, sırayı değiştirmenizi ya da grubu silmenizi sağlar. Edit group — add &amp; reorder armatür ekler ve yeniden sıralar; Add to an existing group ise geçerli seçimi hâlihazırda sahip olduğunuz bir gruba koyar.</p>
+<p>Patch ekranında All satırının görünüp görünmeyeceği Settings → SETTINGS → Groups → Show the All row ayarından belirlenir.</p>
+<h2 id="patch--8">Kitaplıkta olmayan armatürler (Advanced)</h2>
+<p>Custom fixtures, kendi eklediğiniz tanımları barındırır. Bu tanımlar her show&#x27;da kullanılabilir. Bir tanımı silmek, ondan yamalanmış armatürleri etkilemez.</p>
+<h3 id="patch--9">GDTF Share üzerinden</h3>
+<ol><li>＋ Browse GDTF Share ekranını açın ve GDTF Share hesabınızla SIGN IN yapın.</li><li>Listeyi REFRESH ile yenileyin, sonra üretici, armatür, revizyon ve modu seçin. Arama bütün üreticileri kapsar.</li><li>İçe aktarma raporunu okuyun ve SAVE, SAVE &amp; EDIT ya da SAVE &amp; PATCH seçeneklerinden birini seçin.</li></ol>
+<p>SAVE &amp; PATCH, o tanım seçili hâlde yama ekranını açar. Remember on this device oturum bilgilerinizi saklar; FORGET bunu kaldırır. Daha önce indirdiğiniz tanımlar kalır. Oturum bilgileriniz GDTF Share&#x27;e gider.</p>
+<h3 id="patch--10">Bir GDTF dosyasından</h3>
+<p>＋ Import a GDTF file → ＋ Open a GDTF file yolunu izleyin, .gdtf dosyasını seçin, modu ve içe aktarma raporunu kontrol edin, sonra kaydedin. Ağ bağlantısı gerekmez.</p>
+<p>Rapor, aktarılamayan şeyleri listeler. Birbirinden uzak adreslere bölünmüş 16-bit bir değerin yalnızca kaba baytı korunur, kullanılmayan adresler boş yuva olarak tutulur ve başka bir DMX break üzerindeki kanallar atılır. Adreslerin çakıştığı yerde önceki kanal kazanır. Bilinmeyen işlevler özgün adlarını korur.</p>
+<p><code>Imported data is not verified.</code> olarak işaretlenmiş bir tanım, gerçek armatürle karşılaştırılarak kontrol edilmelidir. Yanlış rolleri SAVE &amp; EDIT ile düzeltin; düzeltme, sonrasında o tanımdan yamaladığınız armatürlere uygulanır. <code>This mode has no channels.</code> ifadesi, başka bir mod seçmeniz gerektiği anlamına gelir.</p>
+<h3 id="patch--11">Elle, bir DMX tablosundan</h3>
+<p>＋ Build by hand ekranını açın ve boş bir tanımdan ya da bir şablondan başlayın: Dimmer, CCT, Bi-color, RGB, HSI, x y, CCT + HSI, Dimmer + RGBW, Full color, Full color + white, Multi-emitter.</p>
+<p>Her kanala bir etiket verin; gerektiği kadarıyla rolü, 8 ya da 16 bit çözünürlüğü, varsayılanı ve gerçek dünya birimini ayarlayın. Kanal numaraları ve toplam sizin için hesaplanır. Rolünü bilmediğiniz bir yuvayı kullanılmamış bırakın; onu yine de Channels üzerinden sürebilirsiniz. Bir ERROR varken CREATE kaydetmeyi reddeder.</p>
+<h3 id="patch--12">Var olan bir tanımı kopyalayarak</h3>
+<p>Duplicate and edit; adı, renk sıcaklığı aralığını, kanal rollerini ve adlarını, etiketleri ve varsayılanları değiştirmenizi sağlar. Kanal sayısı, 16-bit yerleşim, aralıklar ve anahtar yapısı değiştirilemez.</p>
+<div class="next"><b>Sonraki</b><ul><li>Yoğunluk ayarlamak → bölüm 04</li><li>Armatür başına ayarlar → bölüm 06</li><li>Yamalanmış bir armatür beklendiği gibi davranmıyor → bölüm 14</li></ul></div><a class="top" href="#top">↑ İçindekiler</a></section>
+<section class="chapter" id="s-intensity"><h1 id="intensity">04 Yoğunluk ayarlamak — Home</h1>
+<p class="lead">Home ekranındaki fader&#x27;lar. Kanau&#x27;nun kalbi burasıdır.</p>
+<h2 id="intensity--1">Bir fader&#x27;ı hareket ettirmek</h2>
+<p>Bir fader, dokunduğunuz yere değil, <strong dir="auto">parmağınızın kat ettiği mesafeye</strong> tepki verir. Onu sayıdan, yuvarlak simgeden ya da fader&#x27;ın altındaki boşluktan sürebilirsiniz. Elinize değil sahneye bakarak çalışabilmeniz için böyle tasarlanmıştır.</p>
+<figure class="shot"><div class="wrap" dir="ltr"><img src="img/zoom-dot.png" alt="Yukarıdan aşağıya: geçerli yoğunluk, yuvarlak armatür simgesi, fader. Seçmek için simgeye dokunun, o armatürün panelini açmak için basılı tutun." width="640" height="388" loading="lazy"></div><figcaption>Yukarıdan aşağıya: geçerli yoğunluk, yuvarlak armatür simgesi, fader. Seçmek için simgeye dokunun, o armatürün panelini açmak için basılı tutun.</figcaption></figure>
+<p>Dokunduğunuzda tutamak biraz büyür ve <strong dir="auto">kısa bir mesafe sürükleyene kadar hiçbir şey hareket etmez</strong>; bu yüzden üzerine parmağınızı dayamanız güvenlidir. Sürüklerken numara, ad ve değer ekranın üst kısmında büyük olarak görünür. Sınır belirlediyseniz fader bu sınırlar içinde hareket eder.</p>
+<h2 id="intensity--2">FINE</h2>
+<table>
+<tr><th>Eylem</th><th>Ne olur</th></tr>
+<tr><td>Kısa dokunuş</td><td>Sırayla değiştirir: normal → FINE (1/10) → FINE+ (1/100) → normal</td></tr>
+<tr><td>Basılı tutma</td><td>Basılı tuttuğunuz sürece bir sonraki kademe. Bıraktığınızda normale döner</td></tr>
+</table>
+<p>Sürükleme sırasında geçiş yapmak değeri sıçratmaz. FINE, ham kanallar ile Pan ve Tilt için de geçerlidir.</p>
+<h2 id="intensity--3">Birkaçını bir arada hareket ettirmek</h2>
+<p>2 ya da daha fazla yuvarlak simgeyi seçin, sonra fader&#x27;lardan birini sürükleyin. Hepsi aralarındaki farkları koruyarak aynı miktarda hareket eder. Biri bir sınıra ulaştığında diğerleri yoluna devam eder. Kilitli armatürler kapsam dışında kalır.</p>
+<p>Bu, COLOR panelinde birkaç armatürle çalışmakla aynı şey değildir; orada hepsi aynı değere iner.</p>
+<h2 id="intensity--4">Numara düğmeleri piyano gibi</h2>
+<p>Sağ alttaki ＋ − düğmesi modu belirler.</p>
+<table>
+<tr><th>Mod</th><th>Bir numara düğmesi basılı tutulurken</th></tr>
+<tr><td>LOCK (varsayılan)</td><td>Hiçbir şey değişmez</td></tr>
+<tr><td>＋</td><td>Üst sınıra gider, varsayılan olarak 100</td></tr>
+<tr><td>−</td><td>Alt sınıra gider, varsayılan olarak 0</td></tr>
+</table>
+<p>Bıraktığınızda eski değerine döner. Birkaçını aynı anda basılı tutabilir ya da yana kaydırarak sırayla çalabilirsiniz. Kilitli armatürler tepki vermez.</p>
+<p>＋ ya da − kurulduğunda düğmeler kırmızıya döner. Açılışta mod her zaman LOCK olur.</p>
+<h2 id="intensity--5">⏻ — yalnızca çıkış</h2>
+<p>⏻ düğmesine dokunmak, bir armatürün değerini koruyarak çıkışını kapatır ve açar. Kapalıyken mor olur ve sayı yerinde kalır. Kapalıyken fader&#x27;ı hareket ettirmek hiçbir şeyi yakmaz.</p>
+<p>Varsayılan ON/OFF seçeneğidir. Armatürün Switch function ayarında bunu, yalnızca basılı tutulduğu sürece süren FLASH ON ya da FLASH OFF olarak değiştirebilirsiniz. Kilitli armatürler tepki vermez.</p>
+<h2 id="intensity--6">GM ve B.O.</h2>
+<p>Üstteki GM öğesine dokunmak grand master fader&#x27;ını, B.O. düğmesini ve →100 düğmesini açar.</p>
+<ul><li><strong dir="auto">GM fader&#x27;ı</strong> genel parlaklığı ayarlar. Görelidir ve FINE onun üzerinde de çalışır.</li><li><strong dir="auto">B.O.</strong> blackout&#x27;u açar ve kapatır. GM değeri korunur.</li><li><strong dir="auto">→100</strong> düğmesi GM 100 değerinin altındayken görünür ve onu geri getirir.</li></ul>
+<p>GM öğesini basılı tutmak 100, 75, 50, 25, 12.5 ve 0 seçeneklerini sunar. Buradaki 0 blackout&#x27;u açar; GM&#x27;yi sıfıra ayarlamaz.</p>
+<p>Bu düğmelerin geçiş süresi Settings → SETTINGS → Master fade ayarından belirlenir. Varsayılan SNAP seçeneğidir. Fader&#x27;ı parmakla sürüklemek her zaman anında etki eder.</p>
+<div class="box warning"><b>WARNING</b><p><strong dir="auto">Lock açık olan bir armatür GM ya da B.O. komutlarına tepki vermez.</strong> Yanık kalır. Bir blackout sırasında hâlâ yanan kilitli armatürlerin sayısı, ekranın üst kısmında yeşil 🔒 işaretinin yanında gösterilir.</p></div>
+<h2 id="intensity--7">Sayfada ne olacağını seçmek</h2>
+<p>Fixtures model ve moda göre gösterir; Groups ise All ile kurduğunuz grupları gösterir. Geçiş yapmak için bir ada dokunun. Bir grubun içinde bile bir fader her zaman tek bir armatürdür.</p>
+<p>All altındaki sıralama Settings → SETTINGS → Order on All ayarından belirlenir; ya modele ve sıra numarasına ya da armatür numarasına göre. Bir grubun içinde sıra, sizin kurduğunuz sıradır.</p>
+<p>‹ ve › sayfayı değiştirir. 10 ile 5 arasında geçiş yapmak, üzerinde çalıştığınız armatürü görüş alanında tutar.</p>
+<h2 id="intensity--8">Alt sıradaki düğmeler</h2>
+<figure class="shot"><div class="wrap" dir="ltr"><img src="img/zoom-bottom.png" alt="Soldan sağa: COLOR, EFFECT, PIXELS, ＋ −, FINE. Gri olanlar mevcut durumda kullanılamaz." width="640" height="152" loading="lazy"></div><figcaption>Soldan sağa: COLOR, EFFECT, PIXELS, ＋ −, FINE. Gri olanlar mevcut durumda kullanılamaz.</figcaption></figure>
+<p>COLOR ve EFFECT bir seçim gerektirir. Sayfada piksel armatürü yoksa PIXELS griye döner.</p>
+<h2 id="intensity--9">Pikselleri tek tek çalışmak</h2>
+<p>PIXELS öğesine dokunmak, sayfadaki piksel armatürlerinin hücrelerini kendi fader&#x27;ları olarak açar. Bunlar P1, P2 gibi görünür ve her biri kendi yoğunluğunu ve rengini taşır. Katlamak için yeniden dokunun.</p>
+<p>CLEAR n yalnızca seçimi temizler. Değerlere ve çıkışlara dokunulmaz.</p>
+<div class="next"><b>Sonraki</b><ul><li>Renk ayarlamak → bölüm 05</li><li>Görünümleri saklamak → bölüm 08</li><li>Bazı fader&#x27;lar hiçbir şey yapmıyor → bölüm 14</li></ul></div><a class="top" href="#top">↑ İçindekiler</a></section>
+<section class="chapter" id="s-color"><h1 id="color">05 Renk ayarlamak — COLOR</h1>
+<p class="lead">Tek bir armatür ya da birçoğu için renk ve yoğunluk.</p>
+<div class="box note"><b>NOTE</b><p>Gördükleriniz, armatürün gerçekte neye sahip olduğuna bağlıdır. Tek kanallı bir dimmer yalnızca Intensity gösterir. Kanau, bir armatürde bulunmayan denetimleri göstermez.</p></div>
+<figure class="shot"><div class="wrap" dir="ltr"><img src="img/2-color-cct.png" alt="Renk paneli. Yalnızca armatürün taşıdığı özellikler gösterilir." width="294" height="640" loading="lazy"></div><figcaption>Renk paneli. Yalnızca armatürün taşıdığı özellikler gösterilir.</figcaption></figure>
+<h2 id="color--1">Paneli açmak</h2>
+<table>
+<tr><th>Nasıl</th><th>Neyin üzerinde çalışır</th></tr>
+<tr><td>Bir armatür simgesini basılı tutun</td><td>Yalnızca o armatür</td></tr>
+<tr><td>Bir hücre simgesini basılı tutun</td><td>Yalnızca o hücre</td></tr>
+<tr><td>Armatürleri seçin, sonra COLOR</td><td>Seçili olan her şey</td></tr>
+<tr><td>Bir model ya da grup düğmesini basılı tutun</td><td>İçindeki her armatür. All bütün armatürler demektir</td></tr>
+</table>
+<p>Tek bir armatür açıkken ‹ ve › sizi bir sonrakine götürür.</p>
+<h2 id="color--2">Yoğunluk ve renk</h2>
+<table>
+<tr><th>Öğe</th><th>Nasıl çalışır</th></tr>
+<tr><td>Intensity</td><td>0 ile 100 arasında; kaydırıcıyla, yazarak, ± düğmeleriyle ya da hazır değerlerle</td></tr>
+<tr><td>Color temperature (CCT)</td><td>Armatürün aralığı içinde, kelvin cinsinden</td></tr>
+<tr><td>Green / Magenta</td><td>Yeşil–macenta düzeltmesi. Back to neutral onu 0 değerine döndürür</td></tr>
+<tr><td>Crossfade</td><td>Beyaz taraf ile renkli taraf arasındaki denge. Hangi yönün hangisi olduğu armatüre bağlıdır</td></tr>
+<tr><td>RGB ve ışık kaynakları</td><td>R, G, B, W, Amber, Lime, Cyan ve armatürün taşıdığı diğer her şey</td></tr>
+<tr><td>Hue / Saturation / CIE x / CIE y</td><td>Bunlara sahip armatürlerde gösterilir</td></tr>
+</table>
+<p>Intensity için ±5 ve ±10, 5 ya da 10 katlarına oturur: 47 değerinden +10, 50 verir. Hazır değerler %12.5, %25, %35, %50 ve %75 şeklindedir.</p>
+<p>CCT hazır değerleri 2700, 3000, 3200, 4300, 5000, 5600, 6500 ve 10000 K değerleridir. Armatürün aralığının dışında kalan yerlerde onun sınırına oturursunuz ve MIN ya da MAX işareti görünür. Yalnızca 2 renk sıcaklığı olan bir armatür, kaydırıcı yerine 2 düğme gösterir.</p>
+<p>Green / Magenta kademeleri basılı tutularak düzenlenebilir. Bir armatürde birden fazla crossfade varsa, sonrakiler besledikleri denetimlerin hemen üstünde görünür.</p>
+<h2 id="color--3">Jeller</h2>
+<table>
+<tr><th>Öğe</th><th>Ne işe yarar</th></tr>
+<tr><td>Gel presets</td><td>RGB&#x27;si olan armatürler için LEE ve Rosco hazır değerleri. 3200 K ve 5600 K için ayrı tablolar</td></tr>
+<tr><td>Preset / Gel</td><td>Armatürün kendi yerleşik jelleri ya da renk hazır değerleri, numarayla seçilir</td></tr>
+<tr><td>Gels → x/y</td><td>x ve y&#x27;si olan armatürler için LEE ve Rosco renklilik değerleri</td></tr>
+</table>
+<p>Gel presets altındaki RGB değerleri, Astera&#x27;nın yayımladığı renk verilerinden gelir. Parlaklık taşımazlar, bu yüzden parlaklığı fader ile ayarlayın. Bir armatürün yerleşik hazır değerlerinde uygulama, hangisinin seçili olduğunu her zaman gösteremez.</p>
+<p>Liste seçim yaptıktan sonra açık kalır, böylece birini diğerinin ardından deneyebilirsiniz. ✕ ile kapatın. Listenin görünüp görünmeyeceği Settings → SETTINGS → Gels → Gel presets ayarından belirlenir.</p>
+<h2 id="color--4">Sık kullandığınız renkleri kaydetmek</h2>
+<ul><li><strong dir="auto">Save this color</strong> bir rengi ★ altında saklar. Model başına tutulur. CCT ve G/M buna dâhil değildir.</li><li><strong dir="auto">Save this temperature</strong> bir renk sıcaklığı saklar. Bu değer bütün modeller arasında paylaşılır.</li></ul>
+<p>Uygulamak için kayıtlı bir düğmeye dokunun. Yeniden adlandırmak, düzenlemek ya da silmek için basılı tutun.</p>
+<h2 id="color--5">ADVANCED COLOR</h2>
+<figure class="shot"><div class="wrap" dir="ltr"><img src="img/3-picker.png" alt="ADVANCED COLOR altındaki seçici. Ton yatayda, doygunluk dikeyde ilerler." width="294" height="640" loading="lazy"></div><figcaption>ADVANCED COLOR altındaki seçici. Ton yatayda, doygunluk dikeyde ilerler.</figcaption></figure>
+<p>ADVANCED COLOR, armatürün kendi kanalları yerine uygulamanın kendi hesapladığı denetimleri bir araya toplar.</p>
+<p>Seçicide ton yatayda, doygunluk dikeyde ilerler. Parlaklık fader&#x27;ın işidir. Rengi taşımak için yuvarlak tutamağın yakınından sürükleyin; başka her yer paneli kaydırır.</p>
+<p>RGB, RGB&#x27;den hesaplanan Hue ve Saturation değerleri ve CMY (255 − RGB) bunları kabul edebilen armatürlerde görünür. Yalnızca Hue ve Saturation ya da yalnızca x ve y alan bir armatürde bunun yerine yukarıdaki denetimleri kullanın.</p>
+<h2 id="color--6">Birkaç armatür ve birkaç model</h2>
+<p><strong dir="auto">Bu panelde neye dokunursanız dokunun, seçili olan her şey aynı değere iner.</strong> Bu; kaydırıcılar, ± düğmeleri, hazır değerler, yazarak giriş ve kayıtlı renkler için aynı şekilde geçerlidir. Aralarındaki farkları koruyarak hareket ettirmek için bunun yerine Home ekranındaki fader&#x27;ları seçin.</p>
+<p>Farklı modeller seçiliyken yalnızca Intensity, CCT, G/M, Crossfade ve ★ görünür. RGB ve ışık kaynaklarını ayarlamak için tek bir modeli kendi başına açın. CCT, her armatürün kendi aralığı içinde tutulur.</p>
+<h2 id="color--7">Pikseller ve yinelenen renk grupları</h2>
+<p>Bir hücrenin rengini ve yoğunluğunu ayarlamak için hücre simgesini basılı tutun. Gövde rengini değiştirmek bütün hücreleri ayarlar; elle değiştirdiğiniz bir hücre kendi rengini korur. Gövdedeki Intensity bütün hücreler için geçerlidir.</p>
+<p>Bir modun aynı renk rolünü birden fazla taşıdığı yerlerde, örneğin Gel 1 ve Gel 2, sonraki gruplar panelin alt kısmında görünür. <strong dir="auto">İlkinden sonraki renk grupları sahnelerde saklanmaz.</strong></p>
+<div class="next"><b>Sonraki</b><ul><li>Armatür başına ayarlar → bölüm 06</li><li>Görünümleri saklamak → bölüm 08</li></ul></div><a class="top" href="#top">↑ İçindekiler</a></section>
+<section class="chapter" id="s-fixture-settings"><h1 id="fixture-settings">06 Armatür başına ayarlar</h1>
+<p class="lead">Tek bir armatürün sınırları, Lock ayarı ve ham kanalları.</p>
+<p>Bir armatür simgesini basılı tutarak, COLOR üzerinden ya da bir model veya grup düğmesini basılı tutarak açtığınız panelde aşağı kaydırın.</p>
+<p>Limits, Lock, Switch function ve Battery save birkaç armatür için bir arada ayarlanabilir. Karışık değerler — ya da n of m biçiminde görünür ve birini değiştirmek hepsine uygulanır. Channels, Mode, Channel roles ve Patch yalnızca tek bir armatür açıkken görünür.</p>
+<h2 id="fixture-settings--1">Ad ve görünüm</h2>
+<p>Adı panelin üst kısmından düzenleyin. ‹ ve › sizi bir sonraki armatüre götürür. Label, model genelinde paylaşılan görünen addır; Label color ise numaranın arka planıdır. No label color bunu temizler.</p>
+<h2 id="fixture-settings--2">Sınırlar</h2>
+<p>Lower limit ve Upper limit, çalışabileceğiniz aralığı belirler. Bunları ±1 ve ±5 ile değiştirin ya da temizleyin. Bir sınırın dışında Home ekranı turuncu tarama gösterir.</p>
+<p>Bir hücrenin sınırları, gövdenin sınırları içinde geçerlidir. Gövde 50 değerinde sınırlıysa, 80 değerinde sınırlı bir hücre yine de 50 değerini aşamaz.</p>
+<h2 id="fixture-settings--3">Lock</h2>
+<div class="box warning"><b>WARNING</b><p>Fixture Lock <strong dir="auto">her şeyi</strong> yener: grand master, blackout, BATTERY SAVE, sahne çağırmaları, MIDI ve oturum. Kilitli bir armatür, blackout&#x27;a bastığınızda sönmez. Bir çekim öncesinde kilitlerinizi kontrol edin.</p></div>
+<p>Lock açıkken armatürün çıkışı sabit tutulur. Fader&#x27;lar, piyano modu, ⏻, renk, ham kanallar, GM, B.O., BATTERY SAVE, sahneler, MIDI ve oturum ona dokunmaz.</p>
+<p>Birkaç armatür seçiliyken bazıları kilitliyse, dokunmak bütün kilitleri kaldırır. Hiçbiri kilitli değilken dokunmak hepsini kilitler.</p>
+<p>Bir piyano ya da FLASH basışı sırasında kilitlemek önce geçici değeri geri koyar, sonra sabitler. Kilitliyken sınırları değiştirmek geçerli değeri oynatmaz; kilidi açtığınızda değer yeni aralığa çekilir.</p>
+<h2 id="fixture-settings--4">Diğer ayarlar</h2>
+<table>
+<tr><th>Öğe</th><th>Ne işe yarar</th></tr>
+<tr><td>Switch function</td><td>⏻ düğmesinin ne yaptığı: None, ON/OFF, FLASH ON ya da FLASH OFF. Varsayılan ON/OFF</td></tr>
+<tr><td>Battery save</td><td>Bu armatürü BATTERY SAVE için işaretler</td></tr>
+<tr><td>Invert</td><td>Pan ve Tilt için sürükleme yönünü ters çevirir. Gösterilen açı değişmez</td></tr>
+<tr><td>Mode</td><td>Geçerli DMX modunu gösterir. RE-PATCH üzerinden değiştirin</td></tr>
+<tr><td>Channel roles</td><td>Her kanalın rolünü ve adını düzeltir. Adresler yerinden oynamaz</td></tr>
+</table>
+<p>Yamalanmış bir armatürde kanallar yanlış işlev olarak ele alınıyorsa Channel roles ayarını kullanın. Düzeltmenin sonradan yamalayacağınız armatürlere de taşınması için bunun yerine Custom fixtures altındaki tanımı düzenleyin.</p>
+<h2 id="fixture-settings--5">Channels — ham DMX (Advanced)</h2>
+<p>Önce renk, konum ve diğerleri için ayrılmış denetimleri kullanın. Channels, bu denetimlerin kapsamadığı işlevlere tek tek DMX kanalı üzerinden ulaşmak içindir.</p>
+<p>Channels her şeyi DMX sırasına göre; DIMMER, COLOR, POSITION, GOBO, BEAM, FOCUS, SHAPERS ve CONTROL başlıkları altında listeler. Boş gruplar gizlenir.</p>
+<table>
+<tr><th>Satır türü</th><th>Nasıl çalışılır</th></tr>
+<tr><td>Sürekli bir değer</td><td>Kaydırıcı, yazarak giriş ya da − ve +</td></tr>
+<tr><td>Adlandırılmış değerler ve aralıklar</td><td>12 girişe kadar bir menü, fazlasında aranabilir bir liste</td></tr>
+<tr><td>Reset ya da Lamp Off gibi komutlar</td><td>Belirtilen süre boyunca basılı tutun. Erken bırakmak iptal eder. Süresi olmayan komutlar tek dokunuştur</td></tr>
+<tr><td>FADER ya da COLOR işaretli gri bir satır</td><td>Ayrılmış bir denetim tarafından sürülür, bu yüzden burada düzenlenemez</td></tr>
+<tr><td>Başka bir kanala bağlı bir satır</td><td>Mevcut durumda neyin kullanılabilir olduğunu gösterir, kullanılamadığında bir not düşer</td></tr>
+</table>
+<p>Sağ üstteki DMX öğesi ham değerler ile yüzdeler arasında geçiş yapar. Bir satırdaki Home onu varsayılanına döndürür; Pan ve Tilt için bu basılı tutmayı gerektirir. Hiçbir şey değiştirilmemişse kullanılamaz.</p>
+<p>Ham kanallardaki değişiklikler sahnelerde saklanır ve HISTORY içinde kaydedilir. Bir piksel armatüründe gövde paneli gövde kanallarını, hücre paneli ise o hücrenin kanallarını taşır.</p>
+<h2 id="fixture-settings--6">Yamayı ya da modu değiştirmek</h2>
+<p>Patch altındaki RE-PATCH üzerinden düzenleyin. Universe ve adresi, armatür numarasını, modeli ve modu görebilir ve değiştirebilirsiniz. Next free onu bir sonraki boşluğa taşır.</p>
+<p>Change mode, onaylamadan önce öncesindeki ve sonrasındaki aralığı ve çakışacak armatürleri gösterir. Bunu o modelin bütün armatürlerine uygulayabilirsiniz. Sonraki armatürler kendiliğinden yer değiştirmez.</p>
+<p>Delete this fixture, bir onaydan sonra armatürü değerleri ve ayarlarıyla birlikte kaldırır ve onu her sahneden çıkarır.</p>
+<div class="next"><b>Sonraki</b><ul><li>Konum ve ışık huzmesi → bölüm 07</li><li>Hangi kilit ne yapar → bölüm 10</li></ul></div><a class="top" href="#top">↑ İçindekiler</a></section>
+<section class="chapter" id="s-position"><h1 id="position">07 Konum ve ışık huzmesi</h1>
+<p class="lead">Hareketli armatürlerde pan, tilt, zoom, iris, frost ve gobo.</p>
+<h2 id="position--1">Pan ve Tilt</h2>
+<p>Bir armatür simgesini basılı tutun ve Channels → POSITION ekranını açın. Bu sürümde konum için ayrı bir ekran yoktur.</p>
+<p>Armatür verileri açı taşıdığında Pan ve Tilt derece cinsinden, taşımadığında yüzde cinsinden okunur. 16-bit bir armatürde kaba ve ince değerler tek bir satırda yer alır.</p>
+<ul><li>Tutamağın yakınından sürüklediğinizde parmağınızın kat ettiği mesafe kadar hareket eder. Başka her yer paneli kaydırır.</li><li>Alana bir açı yazın. Armatürün aralığı dışındaki değerler kabul edilmez.</li><li>±0.1°, ±1°, ±10° gibi kademelerle ilerleyin. Kademeler birimden ve çözünürlükten gelir.</li><li>FINE ve FINE+ bunu 1/10 ve 1/100 oranında yavaşlatır.</li><li>Armatürü kendi başlangıç konumuna göndermek için Home öğesini basılı tutun. İptal etmek için erken bırakın.</li></ul>
+<p>Invert sürükleme yönünü ters çevirir. Armatür kilitliyken hiçbir şey hareket etmez.</p>
+<p>DMX değerinin hiçbir işe yaramadığı ölü aralıklar hem kaydırıcı hem de kademeler tarafından atlanır. Varsayılanı ölü bir aralığın içinde kalan bir armatürde kademeler hareket etmez: önce canlı aralığa girmek için kaydırıcıyı kullanın ya da bir değer yazın.</p>
+<p>Konum sahnelerde saklanır ve HISTORY içinde kaydedilir.</p>
+<div class="box important"><b>IMPORTANT</b><p><strong dir="auto">Bir sahne geçişi Pan ve Tilt değerlerini ara değerlerle geçirmez.</strong> Çağırdığınız anda kayıtlı değere atlarlar. Bir geçiş süresi belirlemek kafanın yavaş hareket etmesini sağlamaz.</p></div>
+<h2 id="position--2">Zoom, iris, frost, focus ve gobo</h2>
+<p>Channels altında BEAM, GOBO ya da FOCUS başlığını açın. Sürekli değerler bir kaydırıcı alır; gobo ve prizmalar adlandırılmış seçenekler alır. Bunlar bölüm 06 içindeki diğer satırlarla tam olarak aynı şekilde çalışır.</p>
+<p>Bunların herhangi birini hareketlendirmek için EFFECT panelindeki MOVE ve BEAM gruplarını kullanın. MOVE, kafanın o anda baktığı yerin çevresinde çalışır ve yoğunluk efektlerinin üzerine katmanlanır.</p>
+<div class="next"><b>Sonraki</b><ul><li>Hareketi canlandırmak → bölüm 09</li><li>Görünümleri saklamak → bölüm 08</li></ul></div><a class="top" href="#top">↑ İçindekiler</a></section>
+<section class="chapter" id="s-scenes"><h1 id="scenes">08 Görünümleri saklamak ve çağırmak — Scenes</h1>
+<p class="lead">Bir sahne, kayıtlı bir görünümdür. Scenes sekmesini açın, saklamak için ＋ düğmesine, geri getirmek için bir satıra dokunun.</p>
+<figure class="shot"><div class="wrap" dir="ltr"><img src="img/5-scenes.png" alt="Sahne listesi. Geçerli sahnenin arka planı kehribar rengidir." width="294" height="640" loading="lazy"></div><figcaption>Sahne listesi. Geçerli sahnenin arka planı kehribar rengidir.</figcaption></figure>
+<h2 id="scenes--1">Bir sahne saklamak</h2>
+<ol><li>Home ekranında yoğunluğu, rengi ve varsa efektleri ayarlayın.</li><li>Scenes → ＋ öğesine dokunun. Sahne hemen saklanır.</li><li>Yeniden adlandırmak için <strong dir="auto">o sahnenin satırındaki Settings</strong> öğesine dokunun ve bir ad yazın. Satırı sola kaydırmak da aynı paneli açar.</li><li>İçindekileri korumak için aynı panelde Lock this scene seçeneğini açın.</li></ol>
+<p>Buradaki Settings, <strong dir="auto">sahnenin satırının içindeki</strong> Settings öğesidir. Ekranın altındaki Settings sekmesi değildir.</p>
+<h2 id="scenes--2">Çağırmak ve düzene sokmak</h2>
+<table>
+<tr><th>Eylem ya da işaret</th><th>Ne yapar</th></tr>
+<tr><td>Bir satıra dokunma</td><td>Parmağınızı kaldırdığınızda çağırır</td></tr>
+<tr><td>NEXT / BACK</td><td>Bir sonraki ya da bir önceki sahne. Başa döner. Tek sahne varken kullanılamaz</td></tr>
+<tr><td>● ve kehribar arka plan</td><td>Geçerli sahne</td></tr>
+<tr><td>▸</td><td>NEXT ile gelecek olan sahne</td></tr>
+<tr><td>Düzenlemeden sonraki bir nokta</td><td>Çağrıldığından bu yana değişmiş bir sahne</td></tr>
+<tr><td>🔒 ve yeşil bir kenar</td><td>Üzerine yazılmaya karşı kilitli</td></tr>
+<tr><td>Settings ya da sola kaydırma</td><td>Ad, geçiş süresi, kilit, silme</td></tr>
+<tr><td>Edit</td><td>Yeniden sıralama, silme, birkaçını birden silme</td></tr>
+</table>
+<p>Sayılar görüntüleme sırasıdır. Adın altındaki saat, içeriğin en son ne zaman değiştiğini gösterir.</p>
+<h2 id="scenes--3">Çağırdıktan sonra değiştirdikleriniz kaydedilir</h2>
+<p><strong dir="auto">Bir sahneyi çağırdıktan sonra ışığa yaptığınız her şey o sahneye geri yazılır.</strong> SAVE düğmesi yoktur; parmağınızı kaldırdığınızda yazılır.</p>
+<p>Dokunulmasını istemediğiniz sahnelerde Lock this scene seçeneğini açın. Onları yine çağırabilir, ışığı yine çalışabilirsiniz, ama hiçbir şey kaydedilmez.</p>
+<p>Bu, Fixture Lock ile aynı şey değildir. Scene Lock kayıtlı olanı korur; Fixture Lock çıkışı tutar.</p>
+<p>Başka bir sahne çağırdığınızda, üzerinde bulunduğunuz sahneyi sildiğinizde ve show&#x27;u yeniden açtığınızda kayıt başka bir sahneyi izler. Bir sahnenin içeriğindeki değişiklikler HISTORY kapsamında değildir.</p>
+<h2 id="scenes--4">Neler saklanır, neler saklanmaz</h2>
+<table>
+<tr><th>Saklanır</th><th>Saklanmaz</th></tr>
+<tr><td>Yoğunluk, CCT, G/M, crossfade, RGB, ışık kaynakları</td><td>GM, B.O. ve BATTERY SAVE</td></tr>
+<tr><td>Konum ve gobo gibi ham kanallar</td><td>Sınırlar, Fixture Lock, ⏻ durumu, Switch function</td></tr>
+<tr><td>Hücre rengi ve yoğunluğu, efektler</td><td>İlkinden sonraki renk grupları</td></tr>
+</table>
+<p>Lock açık olan bir armatür, çağırmadan etkilenmez.</p>
+<h2 id="scenes--5">Geçiş süresi</h2>
+<p>Sahne başına Settings → Fade altından ayarlayın. Varsayılan 3 saniyedir. SNAP, 1, 2, 3, 5 ve 10 hazır değerleri ile ayarlama için ±0.1 ve ±1 vardır.</p>
+<p>Geçiş sırasında fader&#x27;lar hareket eder ve yolun ortasında elle devralabilirsiniz. Konum, gobo ve diğer ham değerler ara değerlerle geçmez; çağırmada anında atlar.</p>
+<p>İçinde efekt olan bir sahne, çağrıldığında o efektleri yeniden başlatır. İçinde efekt olmayan bir sahneyi çağırmak, çalışan her şeyi bırakır.</p>
+<p>Çağırmanın kendisi HISTORY içinde tek bir adım olarak kaydedilir. Sahneler show dosyasının parçasıdır.</p>
+<div class="next"><b>Sonraki</b><ul><li>Geri adım atmak → bölüm 10</li><li>Show&#x27;u kaydetmek → bölüm 11</li><li>Bir sahne kendi kendine değişip duruyor → bölüm 14</li></ul></div><a class="top" href="#top">↑ İçindekiler</a></section>
+<section class="chapter" id="s-effects"><h1 id="effects">09 Efektler</h1>
+<p class="lead">Yanıp sönme, ateş, şimşek ve diğerleri, armatürlerinize uygulanır.</p>
+<p>Home ekranındaki EFFECT, seçtiğiniz şeye bir efekt uygular. Alttaki Effects sekmesi ise çalışan her şeyi yönetir.</p>
+<h2 id="effects--1">Bir efekt uygulamak</h2>
+<ol><li>Home ekranında bir armatürün ya da hücrenin yuvarlak simgesine dokunarak onu seçin.</li><li>EFFECT panelini açın.</li><li>Bir efekt adına dokunun. Efekt hemen başlar.</li></ol>
+<p>Yoğunluğu yine fader belirler. Bir efekt çalışırken EFFECT düğmesi onun adını taşır, armatür simgesi ve fader da onunla birlikte hareket eder.</p>
+<h2 id="effects--2">Duraklatma, bırakma, yeniden başlatma</h2>
+<table>
+<tr><th>Eylem</th><th>Ne yapar</th></tr>
+<tr><td>PAUSE</td><td>Hareketi geçerli yoğunlukta ve konumda dondurur</td></tr>
+<tr><td>RESUME</td><td>Donduğu yerden devam eder</td></tr>
+<tr><td>RELEASE</td><td>Efekti durdurur ve denetimi olağan değerlere geri verir. Ayarlar listede kalır</td></tr>
+<tr><td>START</td><td>Bırakılmış bir efekti baştan yeniden çalıştırır</td></tr>
+<tr><td>CLEAR</td><td>Efekti listeden kaldırır. Önce sorar</td></tr>
+</table>
+<h2 id="effects--3">ADJUST</h2>
+<table>
+<tr><th>Öğe</th><th>Ne işe yarar</th></tr>
+<tr><td>Speed</td><td>Hertz cinsinden. Ondalık değerler kabul edilir</td></tr>
+<tr><td>Depth</td><td>Yoğunluğu ne kadar aşağı çektiği. 100 sıfıra ulaşır; 35 neredeyse hiç oynatmaz</td></tr>
+<tr><td>How often / Cycle</td><td>Ne sıklıkta gerçekleştiği. Yalnızca bunu kullanan türlerde</td></tr>
+<tr><td>Roughness</td><td>Alevin ne kadar düzensiz olduğu</td></tr>
+<tr><td>Width</td><td>Rig&#x27;in ne kadarının aynı anda yandığı, örneğin 50% 2 / 4</td></tr>
+<tr><td>Tail</td><td>COMET efektinin kuyruğunun uzunluğu</td></tr>
+</table>
+<p>Hangi öğelerin görüneceği efekte bağlıdır. SIGNAL efektinde Speed yoktur.</p>
+<h2 id="effects--4">ARRANGE</h2>
+<p>SPREAD armatürleri kaydırarak sıralar; TOGETHER onları aynı adımda tutar. RUNNER, FADE RUN, BOUNCE, COMET ve SIGNAL bu seçeneği sunmaz.</p>
+<table>
+<tr><th>Düzen</th><th>Ne yapar</th></tr>
+<tr><td>IN ORDER</td><td>Numaraya göre eşit aralıklarla kaydırılmış</td></tr>
+<tr><td>ALTERNATE</td><td>Tek ve çift, yarım çevrim arayla</td></tr>
+<tr><td>WINGS</td><td>Merkezden dışa doğru aynalanmış</td></tr>
+<tr><td>RANDOM</td><td>Rastgele bir sırada</td></tr>
+<tr><td>BOUNCE</td><td>Her uçta geri döner</td></tr>
+<tr><td>BUILD</td><td>Birer birer yakar, sonra hepsini birlikte söndürür</td></tr>
+</table>
+<p>IN ORDER altındaki RUNS, aynı anda kaç desenin çalışacağını belirler; seçenekler kaç armatür olduğuna bağlıdır. DIRECTION ise FORWARD ya da REVERSE olur. Ateş efektinde, ikisini de yapabilen armatürlerde CCT ve RGB çıkışı arasında seçim yapabilirsiniz.</p>
+<h2 id="effects--5">Hedefi değiştirmek ve ayarları kaydetmek</h2>
+<p>Applies to → SELECT ▾ armatürleri ve grupları seçer. Seçim Home ekranıyla paylaşılır ve siz seçerken liste açık kalır.</p>
+<p>SAVED altındaki SAVE, ayarladığınız değerleri bir ad altında saklar. Uygulamak için kayıtlı bir düğmeye dokunun, durdurmak için yeniden dokunun. Yeniden adlandırmak ya da silmek için basılı tutun. Armatürler kayıtlı bir ayarın parçası değildir.</p>
+<p>Zaten çalışan armatürleri yenileriyle birlikte seçip aynı efekti seçerseniz hız, derinlik ve faz aktarılır. Ayarların farklı olduğu yerlerde varsayılanlara dönülür. Yalnızca tek bir armatürü bırakmak için yalnızca onu seçin ve RELEASE uygulayın.</p>
+<h2 id="effects--6">İstediğiniz şeye göre efekt bulmak</h2>
+<table>
+<tr><th>Ne istiyorsunuz</th><th>Şunu deneyin</th></tr>
+<tr><td>Doğal ışık</td><td>FIRE 1 ve 2, LIGHTNING, WATER, WIND, TV</td></tr>
+<tr><td>Rig boyunca koşan ışık</td><td>RUNNER, FADE RUN, BOUNCE, COMET</td></tr>
+<tr><td>Şehir ışığı</td><td>NEON, SIGNAL, TOKYO, OSAKA, KYOTO, NARA, PACHINKO</td></tr>
+<tr><td>İkaz lambaları</td><td>BEACON R/B, BLUE, RED, AMBER</td></tr>
+<tr><td>Düz yanıp sönme</td><td>BLINK, STROBE, PULSE, DOUBLE, RANDOM 1–3</td></tr>
+<tr><td>Bozulan bir floresan</td><td>FLUO 1–3</td></tr>
+<tr><td>Kafayı hareket ettirme</td><td>MOVE grubu</td></tr>
+<tr><td>Zoom ya da gobo hareketi</td><td>BEAM grubu</td></tr>
+</table>
+<h2 id="effects--7">Tam liste</h2>
+<table>
+<tr><th>Grup</th><th>Efektler</th></tr>
+<tr><td>BASIC</td><td>BLINK, STROBE, PULSE, DOUBLE, RANDOM 1–3, RUNNER, FADE RUN, BOUNCE, COMET</td></tr>
+<tr><td>LIGHTS</td><td>FLUO 1–3, FIRE 1 (mum), FIRE 2 (şenlik ateşi), LIGHTNING, TV, NEON, SIGNAL</td></tr>
+<tr><td>SCENES</td><td>BEACON R/B, BLUE, RED, AMBER, TOKYO, OSAKA, KYOTO, NARA, PACHINKO, WATER, FIREWORKS, LANTERNS</td></tr>
+<tr><td>MOVE</td><td>DRIFT, PASS, ORBIT, EIGHT, BOX, SPIRAL, SEARCH, BREATHE, HANDHELD, WIND, JUMP, BALLYHOO</td></tr>
+<tr><td>BEAM</td><td>ZOOM PULSE, ZOOM BREATHE, IRIS PULSE, FROST BREATHE, GOBO SHAKE</td></tr>
+</table>
+<p>RUNNER, FADE RUN, BOUNCE ve COMET birkaç armatüre ya da piksele ihtiyaç duyar. MOVE ve BEAM, seçili armatürler bunları destekliyorsa görünür.</p>
+<p>Bir adın sağ üstündeki kehribar nokta, efektin rengi de değiştirdiği anlamına gelir. Nokta yoksa efekt, elle ayarladığınız rengi kullanır.</p>
+<h2 id="effects--8">SIGNAL — trafik lambaları</h2>
+<p>Ülkeyi, CAR ya da WALK seçeneğini, START GREEN ya da START RED seçeneğini ve REPEAT ya da ONCE seçeneğini belirleyin. NEXT bir sonraki duruma geçirir. CAR ve WALK aynı zamanlamayla çalışır. Aksiyona uydurmak için elle adım adım ilerletmek üzere ONCE kullanın.</p>
+<h2 id="effects--9">LIGHT, MOVE ve BEAM katmanları</h2>
+<p>Tek bir armatür aynı anda yoğunluk ve renk için bir LIGHT efekti, kafa için bir MOVE efekti ve bir de BEAM efekti taşıyabilir. Aynı şeritte başka bir efekt seçmek öncekinin yerine geçer. Hücreler yalnızca LIGHT alır.</p>
+<p>Paneli açtığınızda LIGHT, MOVE, BEAM sırasıyla çalışan ilk şerit gösterilir.</p>
+<h2 id="effects--10">Effects sekmesinden yönetmek</h2>
+<p>EDIT bir efektin ayarlarını açar. RELEASE / START, PAUSE / RESUME ve CLEAR buradadır. Bırakılmış bir efekt listede RELEASED işaretiyle kalır.</p>
+<p>Bir armatür adının yanındaki ×, o armatürü efektten çıkarır; ＋ ise geçerli seçimi, bir grubu ya da All öğesini ekler. RELEASE ALL ve START ALL her şey için geçerlidir.</p>
+<p>Efektler bir blackout boyunca saymayı sürdürür. Kilitli olmayan armatürler kararır ve blackout&#x27;u kaldırdığınızda hareketi bulunduğu yerden alır. Fixture Lock, bölüm 10 içinde ele alınır.</p>
+<div class="next"><b>Sonraki</b><ul><li>Görünümleri saklamak → bölüm 08</li><li>Kafayı hareket ettirmek → bölüm 07</li></ul></div><a class="top" href="#top">↑ İçindekiler</a></section>
+<section class="chapter" id="s-safety"><h1 id="safety">10 Kilitler, güvenlik ve geri adım atmak</h1>
+<p class="lead">Bir çekimin ortasında hata yapmanızı engelleyen şeyler ve yaptığınız hatayı geri almanızı sağlayan şey.</p>
+<h2 id="safety--1">3 tür kilit vardır</h2>
+<p>Bu sözcük 3 yerde karşınıza çıkar ve her biri farklı bir şeyi korur.</p>
+<table>
+<tr><th>Ad</th><th>Neyi korur</th><th>Nerede</th></tr>
+<tr><td>Fixture Lock</td><td>Şu anda yanan ışığı. Değer değişemez</td><td>Armatür paneli</td></tr>
+<tr><td>Scene Lock</td><td>Bir sahnede saklanan şeyi</td><td>Sahnenin satırındaki Settings</td></tr>
+<tr><td>SCREEN LOCK</td><td>Ekranı. Dokunuşlar işe yaramaz</td><td>Ekranın üst kısmı</td></tr>
+</table>
+<h2 id="safety--2">SCREEN LOCK</h2>
+<p>Ekranın üst kısmındaki SCREEN LOCK öğesini 0.5 saniye basılı tutun. Kısa bir dokunuş ekranı kilitlemez.</p>
+<p>Kilitliyken ekranı mor bir örtü ve tarama kaplar. Değerler okunabilir kalır, gönderim ve geçişler sürer. Kilidi açmak için ortadaki mor kaydırıcıyı sağa doğru yaklaşık %80 kadar sürükleyin. Erken bırakırsanız kilitli kalır.</p>
+<p>Patch gibi bir panel açıkken ekranı kilitleyemezsiniz.</p>
+<h2 id="safety--3">Fixture Lock</h2>
+<div class="box warning"><b>WARNING</b><p>Fixture Lock; <strong dir="auto">grand master, blackout, BATTERY SAVE, sahne çağırmaları, MIDI ve oturumu</strong> yener. Blackout&#x27;a bastığınızda kilitli bir armatür yanık kalır. Bir blackout sırasında hâlâ yanan armatürlerin sayısı, ekranın üst kısmında yeşil 🔒 işaretinin yanında gösterilir.</p></div>
+<p>Bir armatür simgesini basılı tutun ve Lock seçeneğini açın. Bir ışığın değişmemesi gerektiğinde bunu kullanın.</p>
+<p>Kilitliyken armatür simgesi, fader, numara düğmesi ve ⏻ yeşile döner. Kilidi armatür panelinden kaldırın.</p>
+<h2 id="safety--4">BATTERY SAVE</h2>
+<p>Çekimler arasındaki bekleme için yalnızca işaretlediğiniz armatürleri kısar.</p>
+<ol><li>Onları armatür ayarlarındaki Battery save altından ya da Patch → Select many → Battery yolundan işaretleyin. Yamalarken de işaretleyebilirsiniz.</li><li>Ekranın üst kısmındaki BATTERY SAVE öğesine dokunun. İşaretli armatürler kısılır.</li><li>Onları geri getirmek için yeniden dokunun.</li></ol>
+<p>Ne kadar kısacağını ve geçişin ne kadar süreceğini ayarlamak için basılı tutun. Save to seçenekleri −%25, −%50, −%65 ve −%75 şeklindedir; varsayılan −%50 değeridir. Geçiş 1.5 saniyeden başlar.</p>
+<p>Açıkken düğme ve ekranın kenarı yeşile döner. Grand master ile çarpılır. Kilitli armatürlere dokunulmaz. Hiçbir şey işaretlenmemişse size nasıl işaretleyeceğinizi anlatır.</p>
+<p>Bu, armatürlerinizi kısar. Bir iPhone pil ayarı değildir.</p>
+<h2 id="safety--5">HISTORY</h2>
+<p>Geçtiğiniz durumları görmek için Home ekranındaki HISTORY öğesine dokunun ya da basılı tutun. Geri dönmek için bir satır seçin. HERE işareti nerede olduğunuzu gösterir.</p>
+<ul><li>Son 50 durumu tutar. Geri gidip sonra çalışmak eski durumları yerinde bırakır ve yenisini sona ekler.</li><li>Yoğunluğu, rengi, çıkışın açılıp kapanmasını, sınırları, ham değerleri, efektleri, GM, B.O. ve yamayı kapsar.</li><li>Fixture Lock bunun dışındadır. Geri adım attığınızda kilitli bir armatür hareket etmez.</li><li>Sahne çağırmaları kaydedilir, ancak bir sahnenin içeriğinin üzerine yazılması geri alınamaz.</li><li>Tek bir değişikliği ayrı olarak geri çekemezsiniz. O andaki durumun tamamına dönersiniz.</li><li>Kaydedilmez. Uygulamadan çıkmak ya da show&#x27;u yeniden açmak onu temizler.</li></ul>
+<p>Bir çağırmadaki geçiş süresi Recall fade time ayarından belirlenir. Geri dönülecek bir şey yoksa HISTORY kullanılamaz.</p>
+<h2 id="safety--6">ZEN</h2>
+<p>Tek bir armatürün panelindeki ZEN öğesine dokunduğunuzda siyah bir ekran, üzerinde tek bir büyük fader ve onun değeri görünür. Yoğunluğunu ayarlayabildiğiniz armatürler için vardır.</p>
+<p>Çalıştırmak için ekranın herhangi bir yerinden sürükleyin; her zamanki gibi görelidir. FINE çalışır. Sınırlar sağ üstteki ayarlardan değiştirilebilir. Çıkmak için ekrana dokunun; fader&#x27;ı hareket ettirip bırakmak çıkmaz.</p>
+<div class="next"><b>Sonraki</b><ul><li>Show&#x27;u kaydetmek → bölüm 11</li><li>Blackout sırasında bir şey sönmüyor → bölüm 14</li></ul></div><a class="top" href="#top">↑ İçindekiler</a></section>
+<section class="chapter" id="s-shows"><h1 id="shows">11 Show&#x27;ları kaydetmek ve paylaşmak</h1>
+<p class="lead">Bir show tek bir işi barındırır: yama, gruplar, sahneler ve geçerli görünüm.</p>
+<p>Basılacak bir şey yoktur. Kendi kendini kaydeder.</p>
+<h2 id="shows--1">Ne zaman kaydeder</h2>
+<table>
+<tr><th>Ne</th><th>Ne zaman</th></tr>
+<tr><td>Yama, gruplar, sahneler</td><td>Siz değiştirdikçe</td></tr>
+<tr><td>Geçerli görünüm ve armatür ayarları</td><td>Siz durduktan yaklaşık 2 saniye sonra ve uygulama arka plana geçtiğinde</td></tr>
+</table>
+<p>Bir sonraki açılış, son show&#x27;u kaydedildiği hâliyle geri yükler. Çıkıştan hemen önceki son değişiklik garanti değildir; bu yüzden saklamak ya da devretmek üzere bir dosyaya ihtiyacınız olduğunda Export show file kullanın.</p>
+<h2 id="shows--2">Settings → SHOWS</h2>
+<table>
+<tr><th>Öğe</th><th>Ne yapar</th></tr>
+<tr><td>CURRENT SHOW</td><td>İçinde bulunduğunuz show&#x27;u yeniden adlandırır</td></tr>
+<tr><td>Save As</td><td>Geçerli durumu başka bir show olarak saklar ve kopyanın içinden devam eder</td></tr>
+<tr><td>Export show file</td><td>Önce kaydeder, sonra bir .kanau dosyası yazar. Nereye yazılacağını paylaşım sayfasından seçin</td></tr>
+<tr><td>Import show file</td><td>Bir .kanau dosyasını yeni bir show olarak alır. Geçerli show&#x27;unuza dokunulmaz</td></tr>
+<tr><td>NEW SHOW</td><td>Ad verip Create deyin. Boş bir show alırsınız ve Patch ekranı açılır</td></tr>
+<tr><td>OTHER SHOWS</td><td>Kayıtlı bir show&#x27;u açar. ⧉ çoğaltır, ✕ bir onaydan sonra siler</td></tr>
+</table>
+<p>Files ya da AirDrop üzerinden gelen bir .kanau dosyası Kanau ile açılabilir ve yeni bir show olarak gelir. Bir .kanaumidi dosyası ise MIDI eşleme dosyası olarak ele alınır.</p>
+<h2 id="shows--3">Açılış ve kurtarma</h2>
+<p>Kayıtlı hiçbir şey yoksa demo show&#x27;u açılır. Kayıtlı görünümü olmayan eski bir show, yoğunluk kısık hâlde açılır.</p>
+<p>Dosya okunamazsa Saved patch could not be read. Showing an empty rig; the file is left as it is. iletisini alırsınız ve uygulama boş başlar. <strong dir="auto">Özgün dosya korunur ve üzerine yazılmaz.</strong></p>
+<p>Başarısız bir kayıt, kırmızı renkte Patch was not saved. iletisini gösterir. Ne yapılacağı bölüm 14 içinde ele alınır.</p>
+<h2 id="shows--4">Show&#x27;un içinde olmayanlar</h2>
+<table>
+<tr><th>Ne</th><th>Nerede durur</th></tr>
+<tr><td><code>SAVED</code> efekt ayarları</td><td>Cihazda, her show&#x27;da kullanılabilir</td></tr>
+<tr><td>Custom fixtures</td><td>Cihazda. Yamalanmış armatürlerin tanımları ayrıca show&#x27;un içinde de tutulur</td></tr>
+<tr><td>Kayıtlı ★ renkleri ve sıcaklıkları</td><td>Cihazda. Renkler model başına, sıcaklıklar paylaşılır</td></tr>
+<tr><td>MIDI eşlemesi</td><td>Cihazda. Tek başına .kanaumidi olarak dışa aktarılabilir</td></tr>
+<tr><td>OUTPUT, görüntü ayarları, dil</td><td>Cihazda</td></tr>
+<tr><td>HISTORY</td><td>Kaydedilmez</td></tr>
+</table>
+<h2 id="shows--5">Settings → SETTINGS</h2>
+<p>Dil, çeşitli geçiş süreleri, BATTERY SAVE miktarı, hangi numaranın gösterileceği, All altındaki sıralama, Patch ekranındaki All satırı, Net / Sub / Uni ve jellerin görünüp görünmeyeceği. Dil değişikliği bir sonraki açılışta etkili olur. Metin boyutu iOS ayarını izler.</p>
+<div class="next"><b>Sonraki</b><ul><li>Bir kayıt başarısız oldu → bölüm 14</li><li>2 cihazdan çalışmak → bölüm 13</li></ul></div><a class="top" href="#top">↑ İçindekiler</a></section>
+<section class="chapter" id="s-midi"><h1 id="midi">12 MIDI denetleyicileri (Advanced)</h1>
+<p class="lead">Bir MIDI denetleyicisinin düğmelerini ve tuşlarını armatürlere ve denetimlere eşlemek.</p>
+<p>Bu bölüm, Learn tarzı ekranı anlatır.</p>
+<h2 id="midi--1">Bağlamak ve eşlemek</h2>
+<ol><li>Settings → MIDI altında MIDI controller seçeneğini açın. Varsayılan olarak kapalıdır.</li><li>Ekipmanınızın Inputs altında göründüğünü ve bir şeyi hareket ettirdiğinizde Last CC değerinin değiştiğini doğrulayın.</li><li>MIDI channel ayarını OMNI ile başlatın, gerekirse 1–16 arasına daraltın.</li><li>Bir Mode seçin, sonra Knobs ya da Buttons altındaki Learn ile eşleyin.</li><li>Turn… görünürken bir düğmeyi çevirin ya da eşlemek istediğiniz tuşa basın.</li></ol>
+<p>Bu özelliğin geliştirilmesinde temel alınan ekipman, mutlak değer gönderen Standard modundaki Behringer X-Touch Mini ve Compact&#x27;tır. MC modu kullanılmaz.</p>
+<h2 id="midi--2">2 mod</h2>
+<table>
+<tr><th>Mod</th><th>Bir denetim neyi izler</th></tr>
+<tr><td>GLOBAL 10</td><td>Ekrandaki bir konumu. Sayfayı ya da grubu değiştirin, hedef de onunla birlikte değişir. GM de eşlenebilir</td></tr>
+<tr><td>FIXED</td><td>Tek bir armatürü. Sayfa ya da grup değiştirmek fark yaratmaz</td></tr>
+</table>
+<p>FIXED, Learn ile her seferinde tek bir armatür olarak eşlenir; otomatik numaralandırma yoktur. GLOBAL 10 altında Fader 1 ile Fader 10 arasındaki her satırda ve Grand master satırında bir Learn bulunur.</p>
+<h2 id="midi--3">Bir düğme başta hiçbir şey yapmadığında</h2>
+<p>Düğme ile ekrandaki değer uyuşmuyorsa, <strong dir="auto">düğme ekrandaki değeri geçene kadar hiçbir şey hareket etmez</strong>. Bu bilinçli bir tercihtir: seviyenin sıçramasını engeller. Aynı durum sayfa, grup ya da mod değiştirdikten sonra da geçerlidir.</p>
+<p>Send values back seçeneğini açtığınızda Kanau, bunu destekleyen ekipmanda geçerli değerleri LED halkalarına geri gönderir. Boş konumlar 0 olarak döner.</p>
+<h2 id="midi--4">Tuşlar ve eşleme dosyası</h2>
+<p>FINE, PIANO, sayfa ileri ve geri ile tek tek sahne çağırmalarını eşleyebilirsiniz. B.O. eşlenemez. Bir tuş bir eylem taşır. Fixture Lock, MIDI için de geçerlidir.</p>
+<p>MIDI map file altındaki Export ve Import, eşlemeyi show&#x27;dan ayrı olarak bir .kanaumidi dosyasına yazar ve ondan okur.</p>
+<div class="next"><b>Sonraki</b><ul><li>2 cihazdan çalışmak → bölüm 13</li></ul></div><a class="top" href="#top">↑ İçindekiler</a></section>
+<section class="chapter" id="s-session"><h1 id="session">13 2 cihazdan çalışmak — SESSION</h1>
+<p class="lead">Tek bir show üzerinde 2 iPhone ya da iPad. <strong dir="auto">DMX&#x27;i yalnızca host gönderir</strong>; diğeri aynı konsolu onun üzerinden çalışır.</p>
+<p>Bir oturum, aynı ağdaki 2 cihazın tek bir show&#x27;u sürmesini sağlar. Guest, yaptıklarınızı host&#x27;a gönderir. Host durursa hiçbir şey kendiliğinden devralmaz.</p>
+<h2 id="session--1">Kim neyi elinde tutar</h2>
+<table>
+<tr><th></th><th>Host</th><th>Guest</th></tr>
+<tr><td>DMX gönderme</td><td>Evet</td><td>Hayır</td></tr>
+<tr><td>Show&#x27;un sahibi</td><td>Evet</td><td>Ödünç alır</td></tr>
+<tr><td>Yamayı değiştirme</td><td>Evet</td><td>Hayır</td></tr>
+<tr><td>Bir sahnenin nereye kaydedildiği</td><td>Host&#x27;un show&#x27;una</td><td>Host&#x27;a gönderilir</td></tr>
+<tr><td>Işığı çalışma</td><td>Evet</td><td>Evet</td></tr>
+</table>
+<p><strong dir="auto">İkisi de aynı armatüre dokunduğunda host kazanır.</strong> Guest <code>TAKEN</code> görür.</p>
+<h2 id="session--2">Bir oturum başlatmak</h2>
+<ol><li>Gönderimi yapacak cihazda Settings → SESSION → Host seçin.</li><li>4 haneli numarayı karşı tarafa verin.</li><li>Diğer cihazda Settings → SESSION → Join seçin ve numarayı yazın.</li><li>Joined ifadesini ve bağlantı durumunu kontrol edin.</li></ol>
+<p>Looking for 1234… ifadesi aramanın sürdüğü anlamına gelir. Numara her host olduğunuzda değişir. Aynı anda yalnızca 2 cihaz olabilir; üçüncüsü katılamaz.</p>
+<h2 id="session--3">Bir guest neler yapabilir</h2>
+<table>
+<tr><th>Guest şunları yapabilir</th><th>Host şunları yapar</th><th>Her cihaz kendine saklar</th></tr>
+<tr><td>Armatürler ve hücreler üzerinde fader&#x27;lar, renk ve jeller</td><td>Yama ekleme, kaldırma ve değiştirme, adlar, etiketler</td><td>Hangi grubun ve sayfanın göründüğü, hangi sekmenin açık olduğu</td></tr>
+<tr><td>Sahne çağırma ve saklamak için ＋</td><td>Yeniden sıralama, silme, yeniden adlandırma, geçiş süresi, kilit</td><td>FINE, 10 / 5, PIXELS, PIANO modu</td></tr>
+<tr><td>⏻, GM, B.O., BATTERY SAVE</td><td>OUTPUT, SHOWS</td><td>Görüntü ayarları, dil, jeller</td></tr>
+<tr><td>Sınırlar, Fixture Lock, seçimi temizleme</td><td>Geçiş süreleri, Save to, Switch function</td><td>MIDI eşlemesi, kayıtlı ★ renkleri</td></tr>
+</table>
+<p>Guest&#x27;ten saklanan bir sahneyi host yazar. Guest&#x27;in kendi show dosyasına dokunulmaz ve Leave session onu geri getirir.</p>
+<h3 id="session--4">Efektler ve guest</h3>
+<p>Bazı efekt eylemleri host&#x27;a ulaşır, bazıları ulaşmaz.</p>
+<table>
+<tr><th>Eylem</th><th>Guest&#x27;ten</th></tr>
+<tr><td>Bir efekt uygulama</td><td>Çalışır</td></tr>
+<tr><td>RELEASE ALL</td><td>Çalışır</td></tr>
+<tr><td>Bir hücrenin efektlerini temizleme</td><td>Çalışır</td></tr>
+<tr><td>SIGNAL NEXT</td><td>Çalışır</td></tr>
+</table>
+<div class="box important"><b>IMPORTANT</b><p><strong dir="auto">PAUSE, RESUME, tek bir efekti bırakma ve START komutları guest&#x27;ten host&#x27;a ulaşmaz.</strong> Guest&#x27;in ekranı bir şey olmuş gibi görünebilir, ama ışık değişmez. Bunları host üzerinde yapın.</p></div>
+<h2 id="session--5">Aynı anda çalışmak ve bağlantıyı kaybetmek</h2>
+<p>Guest&#x27;in değiştirdiği şey guest&#x27;in ekranında hemen görünür. Host aynı armatüre dokunursa host kazanır ve guest <code>TAKEN</code> görür. Diğer cihazın üzerinde çalıştığı bir armatür, bir adla birlikte camgöbeği bir kenar gösterir.</p>
+<table>
+<tr><th>Bağlantı</th><th>Durum</th></tr>
+<tr><td>Yeşil</td><td>Host&#x27;a bağlı</td></tr>
+<tr><td>Kehribar</td><td>Yaklaşık 3 saniyedir host&#x27;tan bir şey gelmiyor</td></tr>
+<tr><td>Kırmızı</td><td>Yaklaşık 15 saniyedir bir şey gelmiyor. The host is no longer available. iletisi görünür</td></tr>
+</table>
+<p>Bağlantı koparsa guest son durumu göstermeyi sürdürür. Kendiliğinden ayrılmaz, bu yüzden Leave session kullanın. Yeniden bağlandıktan sonra fader&#x27;lar hâlâ görelidir.</p>
+<p>İnternet gerekmez. 2 cihazın aynı ağda birbirine erişebiliyor olması gerekir. İstemci yalıtımı, güvenlik duvarı ve benzeri ayarlar, DMX geçse bile oturumu engelleyebilir.</p>
+<div class="next"><b>Sonraki</b><ul><li>Show&#x27;u kaydetmek → bölüm 11</li><li>Bağlanmıyor → bölüm 14</li></ul></div><a class="top" href="#top">↑ İçindekiler</a></section>
+<section class="chapter" id="s-troubleshooting"><h1 id="troubleshooting">14 Sorun giderme</h1>
+<p class="lead">Gördüğünüz şeye göre düzenlenmiştir. Listeyi yukarıdan aşağıya çalışın.</p>
+<h2 id="troubleshooting--1">Hiçbir şey yanmıyor</h2>
+<table>
+<tr><th>Gördüğünüz</th><th>Ne yapmalı</th></tr>
+<tr><td>idle</td><td>Settings → OUTPUT altında bir ağın etkin olduğunu kontrol edin</td></tr>
+<tr><td>Blocked</td><td>iOS Local Network iznini kontrol edin. sACN multicast engellenmişse Unicast seçeneğine geçin</td></tr>
+<tr><td>WAITING + IP</td><td>Hatta başka bir konsol var. Onu durdurun ya da Send anyway? → Send seçin</td></tr>
+<tr><td>No node</td><td>Cihazın gücünü, ağını, adresini ve protokol ayarlarını kontrol edin</td></tr>
+<tr><td>B.O.</td><td>Blackout&#x27;u kaldırmak için üzerine dokunun</td></tr>
+<tr><td>GM 0</td><td>GM panelini açın ve →100 kullanın</td></tr>
+<tr><td>🔌 n</td><td>Universe&#x27;ü OUTPUT → Universes altından yeniden açın</td></tr>
+<tr><td>Mor bir ⏻ ya da armatür simgesi</td><td>Armatürün çıkışını yeniden açın</td></tr>
+<tr><td>Yeşil bir BATTERY SAVE</td><td>Tam çıkış gerekiyorsa bunu kaldırın</td></tr>
+<tr><td>Düşük bir Upper limit</td><td>Armatürün sınırlarını kontrol edin</td></tr>
+<tr><td>Patch ekranında ⚠</td><td>Çakışan adresi ya da 512 kanalını aşan diziyi düzeltin</td></tr>
+<tr><td>Uyuşmayan bir mod</td><td>Armatürün kendisiyle aynı DMX modunu ayarlayın</td></tr>
+</table>
+<h2 id="troubleshooting--2">Hiçbir cihaz bulunamıyor</h2>
+<p>Network listesinde no reply görünüyorsa, iPhone ile cihazın aynı ağda olduğunu kontrol edin. AUTO ona ulaşamıyorsa Unicast kullanın ve cihazın adresini girin. Bağlantıyla ilgili bir şeyi değiştirdikten sonra RESCAN çalıştırın.</p>
+<p>Cihazın kendi Art-Net ve sACN anahtarlarını, adresini ve universe&#x27;ünü kontrol edin. Örneğin LumenRadio CRMX Stardust, Art-Net ve sACN kapalı olarak gelir.</p>
+<p>Bir Stardust&#x27;ın ya da bir Aputure Sidus Four&#x27;un kendi Wi-Fi ağına katılıyorsanız, ekipmanın hangi bandı desteklediğini kontrol edin. Harici bir erişim noktasında 2.4 GHz ve 5 GHz istemcileri çoğu zaman birbirine ulaşabilir; farklı bir bant her zaman farklı bir ağ anlamına gelmez.</p>
+<p>Bir Stardust&#x27;ta çıkış göstergesindeki küçük harf veri gelmediğini, büyük harf ise geldiğini gösterir. Modele özgü her şey için üreticinin kendi kılavuzuna bakın. Yoklamaya yanıt vermeyen ekipman, veriyi alırken bile Nodes answering altında 0 gösterir.</p>
+<h2 id="troubleshooting--3">Titriyor</h2>
+<p>Aynı armatürün hem ağdan hem de Bluetooth&#x27;tan ya da birden fazla konsoldan veya DMX kaynağından beslenmediğini kontrol edin. OUTPUT altındaki CRMX uyarısına ve varsa SHARED ya da WAITING iletisine bakın ve yolu tek bir hatta indirin.</p>
+<p>Başka bir denetim uygulaması ya da armatürdeki bir ayar da buna yol açabilir.</p>
+<h2 id="troubleshooting--4">Takılıyor ya da geç tepki veriyor</h2>
+<p>Settings → OUTPUT ekranını açın ve <strong dir="auto">yukarıdan aşağıya</strong> okuyun. Bunlardan birinde takılıyorsa daha aşağıya bakmanıza gerek yoktur.</p>
+<pre>Sending       konsol gönderim yapıyor mu
+   ↓
+Clock         telefonun içinde mi sıkışmış
+   ↓
+Touch → wire  parmaktan pakete yolculuk yavaş mı
+   ↓
+Node RTT      ağ ya da ekipman mı yavaş
+   ↓
+Fixture       armatürün kendisi mi yavaş</pre>
+<table>
+<tr><th>Gördüğünüz</th><th>Neye bakmalı</th></tr>
+<tr><td>Sending değeri nothing</td><td>Hedef, ağ, iOS izinleri</td></tr>
+<tr><td>Clock değeri 100 ms üzeri</td><td>Telefon. Panelleri kapatın, gerekirse uygulamayı yeniden başlatın</td></tr>
+<tr><td>Cihazlar yanıt veriyor ama armatürler yaklaşık saniyede bir güncelleniyor</td><td>AUTO&#x27;nun gönderdiği adres. Cihaz kendini yanlış bildiriyorsa Broadcast deneyin</td></tr>
+<tr><td>Clock iyi ama gidiş dönüş süresi uzun</td><td>Wi-Fi yoğunluğu, erişim noktası, ekipman, yol</td></tr>
+<tr><td>Sayılar iyi ama ışık geç kalıyor</td><td>Armatürdeki yumuşatma, onun giriş yolu, onu süren başka bir uygulama</td></tr>
+</table>
+<p>AUTO&#x27;nun hedefi sorunluysa Broadcast yardımcı olur. Diğer nedenlerde yardımcı olmaz ve yük ekleyebilir.</p>
+<h2 id="troubleshooting--5">Bazı fader&#x27;lar hiçbir şey yapmıyor</h2>
+<p>Armatürün sınırlarını, Lock durumunu ve çıkışının açık olup olmadığını kontrol edin. Kanau&#x27;daki fader eğrisi doğrusaldır; armatürdeki bir dimmer eğrisi alt yarının düz hissettirmesine yol açabilir. Armatürün kendisini ya da Channels altındaki Dim curve ayarını kontrol edin.</p>
+<p>GDTF&#x27;den içe aktarılmış bir armatürde yanlış yoğunluk ya da renk genellikle rollerin yanlış olduğu anlamına gelir. Onları Channel roles altında düzeltin. Düzeltmenin sonradan yamalayacağınız armatürlere taşınması için Custom fixtures altındaki tanımı düzenleyin.</p>
+<h2 id="troubleshooting--6">Bir düğme hiçbir şey yapmıyor</h2>
+<table>
+<tr><th>Gördüğünüz</th><th>Nedeni ve ne yapmalı</th></tr>
+<tr><td>Ekranı kaplayan mor bir örtü</td><td>SCREEN LOCK. Ortadaki kaydırıcıyı sağa sürükleyin</td></tr>
+<tr><td>Yeşil bir 🔒</td><td>Fixture Lock kilidini kaldırın</td></tr>
+<tr><td>COLOR ya da EFFECT gri</td><td>Bir armatür seçin. COLOR ayrıca armatürün renge sahip olmasını gerektirir</td></tr>
+<tr><td>PIXELS gri</td><td>Sayfada piksel armatürü yok</td></tr>
+<tr><td>HISTORY etkin değil</td><td>Geri dönülecek bir şey yok</td></tr>
+<tr><td>Numara düğmeleri yoğunluğu değiştirmiyor</td><td>Piyano modu LOCK konumunda. ＋ − kullanın</td></tr>
+<tr><td>Channels altındaki Home etkin değil</td><td>Zaten varsayılan değerinde</td></tr>
+<tr><td>Pan ya da Tilt için Home hiçbir şey yapmıyor</td><td>Dokunuş değil, basılı tutma gerektirir</td></tr>
+<tr><td>Bir sahne güncellenmiyor</td><td>Lock this scene ayarını kontrol edin</td></tr>
+<tr><td>Guest yamayı düzenleyemiyor</td><td>Bunu host üzerinde yapın</td></tr>
+</table>
+<h2 id="troubleshooting--7">Renk yanlış</h2>
+<table>
+<tr><th>Gördüğünüz</th><th>Neyi kontrol etmeli</th></tr>
+<tr><td>Ayarladığınızdan farklı bir renk</td><td>Patch modunun armatürün kendi DMX moduyla eşleşip eşleşmediğini</td></tr>
+<tr><td>Hiç renk denetimi yok</td><td>Armatürün renge sahip olup olmadığını. Karışık modeller yalnızca ortak öğeleri gösterir (bölüm 05)</td></tr>
+<tr><td>Renk sıcaklığı erken duruyor</td><td>Armatürün aralığının ucundasınız. MIN ya da MAX okur</td></tr>
+<tr><td>İçe aktarılmış bir armatür şaşırmış</td><td>Channel roles ayarını kontrol edin (bölüm 06)</td></tr>
+<tr><td>Beyaz yeşile ya da macentaya kaçıyor</td><td>Green / Magenta 0 değerinde olmayabilir. Back to neutral onu sıfırlar</td></tr>
+</table>
+<h2 id="troubleshooting--8">Bir armatür beklendiği gibi davranmıyor</h2>
+<p>Önce Patch modunun armatürün kendi moduyla eşleştiğini kontrol edin. Bu yanlış olduğunda yoğunluk renk olarak, renk ise konum olarak ulaşır.</p>
+<p>GDTF&#x27;den içe aktarılmış bir tanımda roller gerçek armatürden farklı atanmış olabilir. Onları Channel roles altında düzeltin (bölüm 06). Bunun gelecekteki yamalara taşınması için Custom fixtures tanımını düzenleyin.</p>
+<p><code>Imported data is not verified.</code> olarak işaretlenmiş her şeyi gerçek armatürle karşılaştırarak kontrol edin.</p>
+<h2 id="troubleshooting--9">Bir sahne kendi kendine değişip duruyor</h2>
+<p><strong dir="auto">Bir sahneyi çağırdıktan sonra yaptığınız her şey o sahneye geri kaydedilir</strong> (bölüm 08).</p>
+<p>Dokunulmasını istemediğiniz sahnelerde, o sahnenin Settings paneli altındaki Lock this scene seçeneğini açın. Onları yine çağırabilir, ışığı yine çalışabilirsiniz; hiçbir şey saklanmaz.</p>
+<h2 id="troubleshooting--10">Bir sahne kaydedilmiyor</h2>
+<table>
+<tr><th>Neyi kontrol etmeli</th><th></th></tr>
+<tr><td>Lock this scene</td><td>Bu açıkken hiçbir şey kaydedilmez</td></tr>
+<tr><td>Bir guest üzerindesiniz</td><td>Yeniden sıralama, silme ve yeniden adlandırma host&#x27;a aittir (bölüm 13)</td></tr>
+<tr><td>Asla saklanmayanlar</td><td>GM, B.O., BATTERY SAVE, sınırlar, Fixture Lock, ⏻ durumu ve sonraki renk grupları (bölüm 08)</td></tr>
+</table>
+<h2 id="troubleshooting--11">Oturum bağlanmıyor</h2>
+<p>Looking for ifadesi kaybolmuyorsa şunları kontrol edin.</p>
+<ul><li>Her 2 cihaz da <strong dir="auto">aynı ağda</strong>. İnternet gerekmez</li><li>4 hane doğru. Numara her host olduğunuzda değişir</li><li>2 cihaz zaten bağlı değil. Üçüncüsü katılamaz</li><li>İstemci yalıtımı ya da bir güvenlik duvarı, cihazdan cihaza trafiği engellemiyor</li></ul>
+<p>Cihazdan cihaza trafiğin engellendiği bir ağda DMX yine de geçebilir.</p>
+<h2 id="troubleshooting--12">Blackout sırasında bir şey yanık kalıyor</h2>
+<p>Fixture Lock durumunu kontrol edin. Üstteki yeşil 🔒 n, hâlâ yanan armatürleri sayar. O armatürlerdeki kilidi kaldırın.</p>
+<h2 id="troubleshooting--13">Uygulama kapandı ya da bağlantı koptu</h2>
+<p>Yeniden başlatmak, son kaydedilen show&#x27;u ve görünümü geri yükler. Çıkıştan hemen önceki son değişiklikler orada olmayabilir.</p>
+<p>Uygulama ya da bağlantı durduktan sonra armatürlerinizin ne yapacağı, cihazın ve armatürün kendi son değeri tutma ayarlarına bağlıdır. Tutmalarını istiyorsanız ekipmanı kontrol edin.</p>
+<h2 id="troubleshooting--14">Bir kayıt başarısız oldu</h2>
+<p>Patch was not saved. iletisi kaydın başarısız olduğu anlamına gelir. Cihazdaki boş alanı kontrol edin ve yapabiliyorsanız geçerli durumu Export show file ile dışarı yazın. Devam etmeden önce dışa aktarmanın bittiğinden emin olun. Uyarıyı × ile kapatmak, kaydedildiği anlamına gelmez.</p>
+<p>Bir dosya okunamıyorsa OTHER SHOWS altından başka bir show açın ya da daha önce dışa aktardığınız bir .kanau dosyasını Import edin. Okunamayan dosya korunur.</p>
+<h2 id="troubleshooting--15">DMX değerlerini kontrol etmek</h2>
+<p>Settings → DMX MONITOR, her universe&#x27;ün 512 kanalının tamamını gösterir. Gönderilen veriyi etkilemez.</p>
+<div class="next"><b>Sonraki</b><ul><li>Çıkış göstergesini tam olarak okumak → bölüm 02</li><li>Bir sözcüğün anlamı → sözlük</li></ul></div><a class="top" href="#top">↑ İçindekiler</a></section>
+<section class="chapter" id="s-glossary"><h1 id="glossary">Sözlük</h1>
+<table>
+<tr><th>Ekranda</th><th>Anlamı</th></tr>
+<tr><td>Fixture</td><td>Bir armatür. Yamaladığınız ve denetlediğiniz birim</td></tr>
+<tr><td>Patch</td><td>Bir armatürün modelini, modunu ve DMX adresini kaydetme</td></tr>
+<tr><td>Universe / Address</td><td>Bir universe ve onun içindeki kanal konumu</td></tr>
+<tr><td>Mode</td><td>Armatürün DMX modu. Armatürün kendisiyle eşleşmelidir</td></tr>
+<tr><td>Unit no. / Fixture number</td><td>Model içindeki otomatik numara / sizin verdiğiniz numara</td></tr>
+<tr><td>Offset / Gap</td><td>Armatürler arasındaki aralık / aralarında bırakılan ek boş kanallar</td></tr>
+<tr><td>Group / All</td><td>Bir armatür kümesi / bütün armatürler</td></tr>
+<tr><td>Pixel / Cell</td><td>Tek bir armatürün ayrı denetlenebilen bir parçası</td></tr>
+<tr><td>Intensity</td><td>Parlaklık</td></tr>
+<tr><td>CCT</td><td>Renk sıcaklığı, kelvin cinsinden</td></tr>
+<tr><td>G/M</td><td>Yeşil–macenta düzeltmesi</td></tr>
+<tr><td>Crossfade</td><td>Beyaz taraf ile renkli taraf arasındaki denge</td></tr>
+<tr><td>Emitter</td><td>Armatürün içindeki bir LED ya da başka bir ışık kaynağı</td></tr>
+<tr><td>Channels / Raw channels</td><td>Tek seferde tek bir DMX kanalıyla çalışma</td></tr>
+<tr><td>Channel roles</td><td>Bir kanalın hangi işlev olarak ele alındığı</td></tr>
+<tr><td>GM / B.O.</td><td>Grand master / blackout</td></tr>
+<tr><td>Lock / SCREEN LOCK</td><td>Bir armatürün çıkışını tutma / istenmeyen dokunuşları engelleme</td></tr>
+<tr><td>FINE / FINE+</td><td>Olağan hassasiyetin 1/10 ve 1/100 katı</td></tr>
+<tr><td>PIANO</td><td>Basılı tutuldukça yoğunluğu değiştirmek için numara düğmelerini kullanma</td></tr>
+<tr><td>Scene / Show</td><td>Kayıtlı bir görünüm / tek bir iş için gereken her şey</td></tr>
+<tr><td>SNAP / Fade</td><td>Anında / belirlenen bir süre boyunca</td></tr>
+<tr><td>HISTORY / HERE</td><td>Önceki durumların listesi / listede bulunduğunuz yer</td></tr>
+<tr><td>PAUSE / RESUME</td><td>Bir efekti dondurma / oradan devam etme</td></tr>
+<tr><td>RELEASE / START</td><td>Bir efekti durdurma / baştan çalıştırma</td></tr>
+<tr><td>CLEAR</td><td>Bir seçimi temizleme ya da bir efekti kaldırma. Nerede gördüğünüze bağlıdır</td></tr>
+<tr><td>SAVED</td><td>Kayıtlı efekt ayarları</td></tr>
+<tr><td>Host / Join / Leave session</td><td>Gönderimi yapan cihaz olma / birine katılma / ayrılma</td></tr>
+<tr><td>PROVISIONAL</td><td>Yer tutucu bir armatür modu</td></tr>
+<tr><td>GDTF</td><td>Armatür tanımları için bir dosya biçimi</td></tr>
+</table><a class="top" href="#top">↑ İçindekiler</a></section>
+<script>
+(function(){
+  var IDX = [{"id":"quick-start","title":"QUICK START","h":[{"id":"quick-start--1","t":"1. Yoğunluğu değiştirin"},{"id":"quick-start--2","t":"2. Rengi değiştirin"},{"id":"quick-start--3","t":"3. Bir sahne çağırın"},{"id":"quick-start--4","t":"Dışarı giden değerleri görün"},{"id":"quick-start--5","t":"Alıştırma rig'inde neler var"},{"id":"quick-start--6","t":"Gerçek armatürleri bağlamak"},{"id":"quick-start--7","t":"Önce bilmeye değer 5 şey"}],"text":"QUICK START — Kanau&#x27;yu 3 dakikada deneyin Buraya kadar gelmek için tek bir armatüre bile ihtiyacınız yok. Düğme adları, ekranda göründükleri gibi yazılmıştır. Uygulama, 24 armatürü önceden yamalanmış bir alıştırma rig&#x27;i ile açılır. Burada geçireceğiniz 3 dakika, Kanau&#x27;nun nasıl çalıştığının büyük kısmını size gösterir. 1. Yoğunluğu değiştirin Ekranın üst kısmında GM 20 kırmızı yanıp sönüyor. Üzerine dokunun. Açılan panelde →100 öğesine dokunun. Her şey aydınlanır. Paneli kapatın ve bir fader&#x27;ı yukarı aşağı sürükleyin. Üstündeki sayı ve yuvarlak simgenin rengi onunla birlikte değişir. Bir fader, dokunduğunuz yere değil, parmağınızın kat ettiği mesafeye göre hareket eder. Nereden başladığınızın sonuca hiçbir etkisi yoktur. 2. Rengi değiştirin Bir fader&#x27;ın üstündeki yuvarlak simgeye basılı tutun . Renk paneli açılır. Intensity parlaklığı, Color temperature beyazı, RGB rengi ayarlar. Üst kısımdaki ‹ › işaretleri sizi bir sonraki armatüre götürür. Her armatür farklı özellikler taşır; bu nedenle karşınıza çıkan öğeler de armatüre göre değişir. 3. Bir sahne çağırın Alttaki Scenes sekmesini açın. Sizi 5 sahne bekliyor: DIM , COLOR , CCT , PIXELS , FX . Birine dokunun. Home ekranına döndüğünüzde fader&#x27;lar ve renkler o görünüme geçmiş olur. Bir çağırmanın ardından değiştirdiğiniz her şey o sahneye geri yazılır. Korumak istediğiniz sahneyi kilitleyin (bölüm 08). Dışarı giden değerleri görün Hiçbir armatür bağlı olmasa bile Settings → DMX MONITOR , Kanau&#x27;nun gerçekte gönderdiği sayıları gösterir. Bir fader&#x27;ı hareket ettirin; sayılar da onunla birlikte hareket eder. Alıştırma rig&#x27;inde neler var Demo, Generic altında 24 armatür içerir: DIMMER, CCT, RGB, RGBW ve BAR (4 piksel). Bunlar 8&#x27;erli 3 grup hâlindedir ve KEY, BACK ve FLOOR adlarını taşır. Grand master 20 değerinde başlar, 6 armatür Battery save için işaretlenmiştir ve yeşil bir etiket taşır, FLOOR üzerinde bir ateş efekti çalışır ve 5 sahne kayıtlıdır. Bunların hiçbiri gerçek bir ürün olma iddiası taşımaz. Gerçek armatürleri bağlamak Demo anlaşılır hâle geldiğinde kendi ekipmanınıza geçin. Bağlayın : iPhone&#x27;u DMX node&#x27;unuzla aynı ağa alın. Settings → OUTPUT altında Nodes answering değerinin 1 veya daha fazla, Sending göstergesinin yeşil olduğunu doğrulayın (bölüm 02). Yamalayın : Patch → ＋ new patch → add new fixture yolunu izleyin, ardından modeli, DMX modunu, universe&#x27;ü ve adresi ayarlayın. Armatürün kendi ayarlarıyla eşleştirin (bölüm 03). Görünümü kurun : Home ekranında yoğunluğu ve rengi ayarlayın (bölüm 04 ve 05). Kaydedin : Görünümü saklamak için Scenes içindeki ＋ düğmesine dokunun (bölüm 08). Alıştırma rig&#x27;i sıradan bir show&#x27;dur. Kendi armatürlerinizi yamaladığınızda onu silin ya da Settings → SHOWS → NEW SHOW ile yeni bir tane oluşturun. Önce bilmeye değer 5 şey Fixture Lock, blackout&#x27;u yener. Kilitli bir armatür, B.O. boyunca yanık kalır (bölüm 10). Çağrılan bir sahne, siz çalışırken kendini günceller. Dokunulmasını istemediklerinizi kilitleyin (bölüm 08). 3 tür kilit vardır. Fixture Lock çıkışı tutar, Scene Lock kayıtlı sahneyi korur, Screen Lock istenmeyen dokunuşları engeller (bölüm 10). Grand master 100 değerinin altındayken ekranın kenarı kırmızı yanıp söner. Ortalık sönük görünüyorsa önce oraya bakın. Aynı armatürlere başka bir konsol da gönderim yapıyorsa WAITING ya da SHARED görürsünüz. İkisi de bölüm 02 içinde anlatılır. WARNING Lock açık olan bir armatür, blackout&#x27;a bastığınızda sönmez; grand master&#x27;ı sıfıra çektiğinizde de sönmez. Bir çekim öncesinde kilitlerinizin temiz olduğunu kontrol edin. Bir blackout sırasında hâlâ yanan armatürlerin sayısı, ekranın üst kısmında yeşil 🔒 işaretinin yanında gösterilir. Sonraki Ekranda her şeyin yeri → bölüm 01 Gerçek armatürleri bağlamak → bölüm 02 Görünümleri saklamak → bölüm 08"},{"id":"screen","title":"01 Ekranı okumak","h":[{"id":"screen--1","t":"Önce şu 7 yeri öğrenin"},{"id":"screen--2","t":"5 sekme"},{"id":"screen--3","t":"Durum satırı"},{"id":"screen--4","t":"Home ekranının parçaları"},{"id":"screen--5","t":"Renkler ve işaretler"}],"text":"01 Ekranı okumak Home ekranında yukarıdan aşağıya neler bulunduğu ve bir şey ters göründüğünde bunların nasıl okunacağı. 1 2 3 4 5 6 7 8 İlk açılışta Home ekranı. Kırmızı sayılar aşağıdaki listeyle eşleşir. 1 Protokol ve bağlantı durumu 2 Grand master (GM) 3 Hangi armatürlerin ve grupların gösterileceğini seçme 4 Sayfalar arasında geçiş 5 Yuvarlak armatür simgesi 6 Fader 7 Numara düğmesi 8 5 sekme Önce şu 7 yeri öğrenin Ayrıntılı tablolara geçmeden önce, bilmeniz gereken yerler yalnızca bunlar. Yer Ne işe yarar GM Genel parlaklık, ekranın üst kısmında Fixtures / Groups Hangi armatürlerin görüneceğini belirler Fader Yoğunluğu ayarlar Scenes Görünümleri saklar ve geri getirir Patch Armatürleri kaydeder Effects Çalışan efektleri listeler ve durdurur Settings Çıkış, show&#x27;lar, MIDI, oturum Bundan sonrası ayrıntıdır. 5 sekme Çalıştığınız yer Home ekranıdır. Başka bir sekmeye dokunduğunuzda onun üzerine bir panel açılır. Home ekranına dönmek için üstteki tutamağı aşağı sürükleyin ya da Done öğesine dokunun. Sekme Ne için kullanılır Bakınız Scenes Görünümleri kaydetmek ve çağırmak bölüm 08 Patch Armatürler, adresler, modlar, gruplar bölüm 03 Home Fader&#x27;larla yoğunluk ayarlamak bölüm 04 Effects Efektleri listelemek, ayarlamak ve durdurmak bölüm 09 Settings DMX çıkışı, show&#x27;lar, MIDI, oturum, tercihler bölüm 02, 11–13 Durum satırı Solda protokol ve bağlantı durumu yer alır. ARTNET Art-Net&#x27;i, SACN sACN&#x27;i gösterir; BLUETOOTH ise yalnızca Bluetooth üzerinden gönderim yapıldığı anlamına gelir. Görünen Anlamı Yeşil nokta Gönderim sürüyor Kehribar nokta Yavaşlamış ya da yeniden bağlanıyor (Reconnecting…) Kırmızı nokta, No node Hiçbir cihaz yanıt vermiyor Kırmızı nokta, Blocked iOS trafiği engelliyor Gri nokta, idle Durdurulmuş WAITING ve bir IP Başka bir konsol bulundu, bu yüzden bu cihaz geri çekildi SHARED ve bir IP Başka bir konsol aynı universe&#x27;e gönderim yapıyor. Bu cihaz da göndermeyi sürdürüyor JOINED ve bir ad Bir oturum içinde. DMX, host üzerinden çıkıyor Yeşil nokta, armatürün bir şey aldığını kanıtlamaz. Nasıl kontrol edeceğiniz bölüm 02 içinde, işler ters gittiğinde ne yapacağınız bölüm 14 içinde anlatılır. Satırın ortası ve sağı şunları taşır. Öğe Dokunma Basılı tutma ya da not GM 100 Grand master panelini açar Ayarları için basılı tutun. 100 değerinin altında kırmızı yanıp söner B.O. Blackout&#x27;u kaldırır Blackout sırasında GM yerine görünür 🔌 n (kırmızı) Bir şey olmaz Kapatılmış universe&#x27;ler. Settings → OUTPUT altından yeniden açın 🔒 n (yeşil) Bir şey olmaz Blackout sırasında hâlâ yanan kilitli armatürler BATTERY SAVE Açar ve kapatır Miktarı ve geçiş süresini ayarlamak için basılı tutun SCREEN LOCK Kilitlemez Ekranı kilitlemek için 0.5 saniye basılı tutun Home ekranının parçaları Öğe Nasıl kullanılır Fixtures / Groups Modele göre gösterim ile gruba göre gösterim arasında geçiş yapar 10 / 5 Sayfadaki fader sayısı. 5 seçeneği her birini genişletir HISTORY Önceki durumların listesini açar Model ve grup düğmeleri O armatürleri göstermek için dokunun. Hepsinin rengini ve yoğunluğunu ayarlamak için basılı tutun CLEAR n Seçimi temizler. Işıkta bir değişiklik olmaz ‹ / › Sayfalar arasında geçiş yapar Sayı 0 ile 100 arasında yoğunluk. Sürüklerken üst kısımda büyük gösterilir Yuvarlak armatür simgesi (…) Seçmek için dokunun. O armatürün panelini açmak için basılı tutun Fader Yoğunluğu ayarlamak için yukarı aşağı sürükleyin Model adı Aynı model ve moddan oluşan bir diziyi işaretler Numara düğmesi Armatür numarası. Piyano modunda basılı tutuldukça yoğunluğu değiştirir ⏻ Değeri koruyarak çıkışı kapatır ve açar COLOR Seçili armatürlerin rengini ve yoğunluğunu ayarlar EFFECT Seçili armatürlere bir efekt uygular PIXELS Piksel armatürlerinin hücrelerini açar ve kapatır ＋ − Piyano modunu sırayla değiştirir: LOCK → ＋ → − FINE Hassasiyeti sırayla değiştirir: normal → FINE (1/10) → FINE+ (1/100) Hiçbir şey seçili değilken ve rengi olmayan armatürlerde COLOR kullanılamaz. EFFECT bir seçim gerektirir. PIXELS ise sayfada bir piksel armatürü bulunmasını gerektirir. Renkler ve işaretler Renk ya da işaret Anlamı Kehribar Seçili ya da etkin Kırmızı Blackout, düşük bir grand master, bir ağ sorunu, piyano modu. Kontrol edilmesi gereken bir şey Yeşil Gönderim sürüyor. Fixture Lock. BATTERY SAVE açık Mor Çıkış kapatılmış ya da ekran kilitli Camgöbeği Oturumdaki diğer cihaz tarafından çalışılıyor Turuncu Belirlediğiniz bir sınırda Gri Kullanılamaz ya da durdurulmuş Yuvarlak simge, armatürün rengini ve gerçek çıkışını taşır. Seçim kehribar bir çerçeveyle, kapatılmış çıkış mor bir halka ve ⏻ işaretiyle, kilit ise yeşil bir dış halka ve 🔒 işaretiyle gösterilir. Çalışan bir efekt simgeyi hareketlendirir. Ekranın kenarındaki kırmızı yanıp sönme, grand master&#x27;ın 100 değerinin altında olduğu anlamına gelir. Yeşil kenar, BATTERY SAVE açık demektir. İkisi birdeyse kırmızı dışta, yeşil içte olur. Blackout sırasında kırmızı kenarın yerini durum satırındaki B.O. alır. Sonraki Fader&#x27;ların hissi → bölüm 04 Renk ayarlamak → bölüm 05 Hiçbir şey yanmıyor → bölüm 14"},{"id":"output","title":"02 DMX göndermek","h":[{"id":"output--1","t":"İlk bağlantı"},{"id":"output--2","t":"Tek bir Art-Net cihazı"},{"id":"output--3","t":"Ayarlar ayrıntılı olarak"},{"id":"output--4","t":"Protokol ve ağlar"},{"id":"output--5","t":"Hedefi seçmek"},{"id":"output--6","t":"RESCAN"},{"id":"output--7","t":"iOS izinleri"},{"id":"output--8","t":"Universe'ler ve Art-Net numaralandırması"},{"id":"output--9","t":"Bluetooth üzerinden CRMX"},{"id":"output--10","t":"Başka bir konsol bulunduğunda"},{"id":"output--11","t":"DMX Diagnostics — olup biteni okumak"},{"id":"output--12","t":"DMX MONITOR"}],"text":"02 DMX göndermek — OUTPUT Işık ekipmanınıza giden bağlantıyı kurmak ve verinin karşı tarafa ulaştığını doğrulamak. 1 2 3 4 5 Settings → OUTPUT. Kırmızı sayılar aşağıdaki listeyle eşleşir. 1 Protokol. Art-Net ya da sACN, ikisinden biri 2 Ağlar. Gönderim, işaretli olanlar üzerinden yapılır 3 Kaç cihazın yanıt verdiği. no reply hiçbiri bulunamadı demektir 4 Hedef. Çoğu rig için doğru seçenek AUTO 5 Cihazları yeniden ara İlk bağlantı Tek bir Art-Net cihazı iPhone&#x27;u, cihazla aynı Wi-Fi ya da kablolu ağa alın. Settings → OUTPUT ekranını açın. Art-Net ve AUTO seçeneklerini işaretleyin. İkisi de varsayılandır. Nodes answering değerinin 1 veya daha fazla, Sending göstergesinin yeşil olduğunu doğrulayın. Home ekranında bir fader&#x27;ı hareket ettirin ve armatürün tepki verdiğini görün. Kanau, yamalanmış her universe&#x27;ü sürekli olarak, normalde 44 Hz hızında gönderir. Başlatma düğmesi yoktur. Başka bir konsol algılandığında, ağ ayarları değiştiğinde ya da iOS izni geri çektiğinde gönderim duraklayabilir veya durabilir. Ayarlar ayrıntılı olarak Protokol ve ağlar Art-Net ile sACN birbirini dışlar: birini seçin. Bluetooth üzerinden CRMX, ikisinin de yanında çalışabilir. Network listesi Wi-Fi, Ethernet ve Hotspot bağlantılarınızı adresleriyle ve her birinde kaç cihazın yanıt verdiğiyle birlikte listeler. Varsayılan olarak kullanılabilir her ağı kullanır. Hepsi seçiliyken birine dokunduğunuzda yalnızca o açık kalır. Bundan sonra her dokunuş birini açar ya da kapatır. Hepsini kapatırsanız ağ üzerinden hiçbir şey çıkmaz. Bluetooth göndermeyi sürdürür. no address olarak işaretlenmiş bir bağlantı seçilemez. Kablolu bağlantı ile Wi-Fi&#x27;yi birlikte kullanıyorsanız, ikisinin de listede göründüğünü kontrol edin. Hedefi seçmek Ayar Nereye gönderir Ne zaman kullanılır AUTO (Art-Net) Yanıt veren cihazlara unicast, ayrıca her ağda saniyede bir yayın. Hiçbiri yanıt vermediyse yalnızca yayın Olağan seçim Broadcast (Art-Net) Her kareyi her ağın alt ağına gönderir Bir cihaz yanlış adres bildirdiğinde ve AUTO yavaş güncellendiğinde Unicast Doğrudan girdiğiniz adreslere Yayın ulaşmadığında ya da hedefi siz belirtmek istediğinizde 255.255.255.255 (Art-Net) Segment üzerinde yayın. Yönlendiriciden geçmez Adresleme oturmadığında ve olağan yayın işe yaramadığında. iOS bunu engelleyebilir Multicast (sACN) Her universe için multicast adresi sACN varsayılanı Unicast ile cihazın adresini yazıp Add öğesine dokunun. Hiçbir adres girilmemişse No node IPs entered. uyarısını alırsınız ve hiçbir şey gönderilmez. Her universe, girdiğiniz her adrese gider. AUTO seçiliyken Nodes answering değeri 1 veya daha fazla olduğu hâlde armatürler yaklaşık saniyede bir güncelleniyorsa, cihazın kendi adresini yanlış bildirip bildirmediğine bakın. Destination satırını inceleyin ve Broadcast seçeneğini deneyin. Gecikmenin diğer nedenleri bölüm 14 içinde ele alınır. RESCAN Art-Net altındaki RESCAN öğesine dokunmak cihaz listesini yeniler. Ekipman eklendikten, çıkarıldıktan ya da bir adres değiştirildikten sonra kullanın. Kendi hâline bırakılırsa yeni bir cihaz yaklaşık 3 saniye içinde görünür, kaldırılan bir cihaz ise yaklaşık 10 sonra listeden düşer. Tarama sürerken gönderim devam eder. Kullanılabilir ağ yoksa RESCAN kullanılamaz. iOS izinleri iOS is blocking this. yazan kırmızı bir şerit, şunlardan birini gösterir. Yerel ağ : iPhone Settings → Kanau → Local Network iznini açın. sACN multicast : iOS blocked multicast. görüyorsanız Unicast seçeneğine geçin ve cihaz adreslerini girin. Multicast yetkisi yalnızca TestFlight ve App Store sürümlerine verilir, geliştirme sürümüne verilmez. Universe&#x27;ler ve Art-Net numaralandırması Universes bölümü, yamalanmış her universe&#x27;ü armatür sayısı, kaçının yanık olduğu ve bir ON/OFF anahtarıyla birlikte listeler. IMPORTANT OFF, göndermeyi durdurmaz . O universe&#x27;e sıfır göndermeyi sürdürür; böylece bir alıcı son değerlerini tutup yanık kalamaz. Kapatılmış universe sayısı, ekranın üst kısmında 🔌 işaretinin yanında görünür. Cihazınız tek bir sayı yerine Net / Sub-Net / Universe istiyorsa Settings → SETTINGS → Art-Net → Net / Sub / Uni ayarını açın. İlişki şöyledir: Net × 256 + Sub × 16 + Uni . sACN önceliği 0, 100 ya da 200 olabilir. Varsayılan değer 100&#x27;dür. Aynı universe&#x27;e birden çok kaynak gönderim yaptığında alıcı, en yüksek önceliği izler. Bluetooth üzerinden CRMX Settings → OUTPUT → CRMX (Bluetooth) altında Bluetooth&#x27;u açın. iOS ilk kez sorduğunda Bluetooth&#x27;a izin verin. Listeden bir verici seçin. Aynı öğeye yeniden dokunmak bağlantıyı keser. Seçtiğiniz verici, universe 1 (U1) değerini taşır. Bir sonraki sefer Bluetooth&#x27;u açtığınızda aynı vericiye yeniden bağlanılır. Aynı universe&#x27;ü aynı armatüre hem ağ hem de Bluetooth üzerinden göndermek titremeye yol açabilir. CRMX başlığı altındaki uyarıyı okuyun ve yollardan birini kapatın. Kanau bu seçimi sizin yerinize yapmaz. Bluetooth&#x27;u kapattıktan sonra bir verici Art-Net&#x27;i kabul etmiyorsa, cihazın kendi Bluetooth ayarını kontrol edin ve yeniden başlatın. Aputure Sidus Four üzerinde ayrıca cihazdaki Sidus BT ayarını da kontrol edin. Başka bir konsol bulunduğunda Görünen Anlamı ve ne yapmalı WAITING + IP Bu cihaz başladığında başka bir konsol zaten gönderim yapıyordu, bu yüzden bu cihaz geri çekildi. Diğerini durdurun ya da iletiye dokunup Send anyway? → Send seçin. Diğeri bir Kanau host&#x27;u ise bunun yerine onun oturumuna katılabilirsiniz SHARED + IP Bu cihaz başladıktan sonra başka bir konsol ortaya çıktı. Gönderim sürer; gerekiyorsa birini durdurun İki cihaz aynı anda başlar ve ikisi de geri çekilirse, adresi düşük olan yeniden göndermeye başlar. DMX Diagnostics — olup biteni okumak OUTPUT ekranının alt yarısı, işlerin nerede durduğunu göstermek içindir. Bir ayarlar alanı değildir. Çıkış yavaş ya da yoksa buradaki satırları yukarıdan aşağıya doğru okuyun (bölüm 14). Öğe Nasıl okunur Destination Verinin gerçekte nereye gittiği. Bir adresin ardındaki ↦ işareti, yanıt veren bir cihaza unicast anlamına g"},{"id":"patch","title":"03 Armatürleri yamalamak","h":[{"id":"patch--1","t":"Armatür eklemek"},{"id":"patch--2","t":"İki tür numara"},{"id":"patch--3","t":"Modeller ve modlar"},{"id":"patch--4","t":"Yamalanmış armatürleri değiştirmek"},{"id":"patch--5","t":"Birçoğunu bir arada değiştirmek"},{"id":"patch--6","t":"Re-patch — boş alana taşımak"},{"id":"patch--7","t":"Grup oluşturmak"},{"id":"patch--8","t":"Kitaplıkta olmayan armatürler (Advanced)"},{"id":"patch--9","t":"GDTF Share üzerinden"},{"id":"patch--10","t":"Bir GDTF dosyasından"},{"id":"patch--11","t":"Elle, bir DMX tablosundan"},{"id":"patch--12","t":"Var olan bir tanımı kopyalayarak"}],"text":"03 Armatürleri yamalamak — Patch Kullandığınız armatürleri kaydedin; modeli, DMX modunu, universe&#x27;ü, adresi, numarayı ve grupları belirleyin. Yoğunluk ve renk Home ekranından ayarlanır (bölüm 04 ve 05). Patch ekranı. Yamalanmış armatürler model ve moda göre gruplanır. Armatür eklemek Patch → ＋ new patch yolunu açın ve alanları göstermek için add new fixture öğesine dokunun. Manufacturer → Fixture → Mode seçimini yapın. Mod, armatürün kendisinde ayarlı olanla aynı olmalıdır. Kaç adet olduğunu, universe&#x27;ü ve başlangıç adresini belirleyin. Aralığı ve varsa uyarıları kontrol edin, sonra Add öğesine dokunun. Eklenirken kaydedilir. Alan Ne işe yarar Favourites Bir modeli yıldızlayın, bir dahaki sefere doğrudan ulaşın Name Görünen ad. Varsayılan olarak model adıdır ve o modelin bütün armatürlerince paylaşılır Fixture number Sette o armatüre seslenirken kullandığınız numara. Boş bırakılabilir. Kullanımdaki en yüksek numaranın bir fazlasından başlar Label Ekran için kısa bir işaret. Boş bırakılırsa varsayılan kullanılır How many En fazla 4,096 Universe / Address Varsayılan U1 / 1. Universe&#x27;ü değiştirmek adresi 1 değerine döndürür. U0 kullanılabilir Offset Armatürler arasındaki aralık. Modun kanal sayısından doldurulur Gap Armatürler arasında bırakılacak ek kanallar Battery save Yeni armatürleri BATTERY SAVE için işaretler Label color Numaranın arka planı. 7 renk ya da renksiz Map 512 kanallık yerleşim. Başlangıç adresini belirlemek için sürükleyip bırakın İlkinden sonraki her armatür, bir öncekinin başlangıç adresine Offset ve Gap eklenerek başlar. 512 değerini aşan her şey bir sonraki universe&#x27;e taşar. Modun kanal sayısından küçük bir Offset uyarı çıkarır, ancak devam edebilirsiniz. İşlem sonunda Added 3 × Titan Tube — U1 1–15 gibi bir sonuç alırsınız. Already patched, hâlihazırda sahip olduğunuz bir modelden daha fazlasını eklemenizi sağlar. Patched now ise güncel yerleşimi gösterir. İki tür numara Numara Ne işe yarar Unit no. Model içinde ilerleyen bir numara. Sizin için atanır Fixture number Sette kullandığınız numara. Siz belirlersiniz Home ekranının hangisini göstereceği Settings → SETTINGS → Fixture numbers → Show the fixture number ayarından belirlenir. Varsayılan Unit no. seçeneğidir. Yinelenen armatür numaraları uyarı çıkarır ama kabul edilir. Modeller ve modlar Bu sürüm 45 üretici, 578 armatür ve 11,347 mod ile gelir. Kitaplıkta olmayan her şey için Generic tanımlarını ya da Custom fixtures listesini kullanın. Generic içinde Dimmer, Dimmer 16-bit, Bi-color, CCT, RGB, RGBW, Dimmer + RGB, Dimmer + RGBW, Bulb ve Desk lamp bulunur. PROVISIONAL (Advanced): DMX tablosu üzerinde çalışılmamış yerlerde kullanılan yer tutucu bir mod. Yoğunluğu 1. kanaldan gönderir, başka bir şey göndermez. Dimmer kanalı olmayan modlar : fader, renk kanallarını birlikte sürer ve sanal bir dimmer gibi davranır. Yamalanmış armatürleri değiştirmek Patched, armatürleri model ve moda göre listeler. Bir başlığa dokunarak katlayın. Bir armatürün satırına dokunarak yama ayarlarını açın. ⚠ işareti, çakışan bir adresi ya da 512 kanalını aşan bir diziyi gösterir. Bu işaret görünürken gönderim sürer, bu yüzden ayarları kontrol edin. n fixture data problems, armatür verileri yüklenirken bulunan hataları gösterir; ayrıntı için üzerine dokunun. Bu listede çalışmak, Home ekranının hangi armatürleri gösterdiğini değiştirmez. Birçoğunu bir arada değiştirmek Select many öğesine dokunun ve armatürleri seçin. Bir model satırındaki ✓ işareti o modelin tamamını alır. Eylem Ne yapar Select all / Select none Katlanmış satırlar dâhil her şeyi seçer ya da seçimi temizler Name Adın sonunu, seçtiğiniz sıraya göre numaralandırır Number Armatür numaralarını seçtiğiniz sıraya göre belirler Address Bir universe, başlangıç adresi ve boşluk değerinden yeniden yerleştirir Battery BATTERY SAVE için işaretler ya da işareti kaldırır New group Seçimden bir grup oluşturur Delete Onları kaldırır. Onaylamadan önce sayıyı kontrol edin Bir armatürü silmek, onun yoğunluğunu, rengini ve sınırlarını da kaldırır ve onu her sahneden çıkarır. Bir grubun içinden silmek yalnızca o gruptan çıkarır; armatürün kendisi kalır. Re-patch — boş alana taşımak Patch → Re-patch ekranını açın. Adrese göre sıralanmış listede taşınacak armatürü seçin. Boş bir aralığa dokunun. Armatür o aralığın başına taşınır. Yalnızca yeterince büyük aralıklar sunulur. Çakışan armatürler kırmızı gösterilir. Grup oluşturmak ＋ new group öğesine dokunun ve bir ad verin. Armatürleri, Home ekranında görmek istediğiniz sırayla seçin. CREATE öğesine dokunun. Bir armatür birkaç grupta birden bulunabilir. Kopyalanmaz: herhangi bir gruptan değiştirmek aynı armatürü değiştirir. Bir gruba eklemek onu All içinde de bırakır. Bir grup adına dokunmak; adı belirlemenizi, sayıyı, adres aralığını ve yerleşimi görmenizi, sırayı değiştirmenizi ya da grubu silmenizi sağlar. Edit group — add &amp; reorder armatür ekler ve yeniden sıralar; Add to an existing group ise geçerli seçimi hâlihazırda sahip olduğunuz bir gruba koyar. Patch ekranında All satırının görünüp görünmeyeceği Settings → SETTINGS → Groups → Show the All row ayarından belirlenir. Kitaplıkta olmayan armatürler (Advanced) Custom fixtures, kendi eklediğiniz tanımları barındırır. Bu tanımlar her show&#x27;da kullanılabilir. Bir tanımı silmek, ondan yamalanmış armatürleri etkilemez. GDTF Share üzerinden ＋ Browse GDTF Share ekranını açın ve GDTF Share hesabınızla SIGN IN yapın. Listeyi REFRESH ile yenileyin, sonra üretici, armatür, revizyon ve modu seçin. Arama bütün üreticileri kapsar. İçe aktarma raporunu okuyun ve SAVE, SAVE &amp; EDIT ya da SAVE &amp; PATCH seçeneklerinden birini seçin. SAVE &amp; PATCH, o tanım seçili hâlde yama ekranını açar. Remember on this device oturum bilgilerinizi saklar; FORGET bunu kaldırır. Daha önce indirdiğiniz tanımlar kalır. Oturum bilgileriniz GDTF Share&#x27;e gider. Bir GDTF dosyasından ＋ Import a GDTF file → ＋ Open a GDTF file yolunu izleyin, .gdtf dosyasını seçin, modu ve içe aktarma raporunu kont"},{"id":"intensity","title":"04 Yoğunluk ayarlamak","h":[{"id":"intensity--1","t":"Bir fader'ı hareket ettirmek"},{"id":"intensity--2","t":"FINE"},{"id":"intensity--3","t":"Birkaçını bir arada hareket ettirmek"},{"id":"intensity--4","t":"Numara düğmeleri piyano gibi"},{"id":"intensity--5","t":"⏻ — yalnızca çıkış"},{"id":"intensity--6","t":"GM ve B.O."},{"id":"intensity--7","t":"Sayfada ne olacağını seçmek"},{"id":"intensity--8","t":"Alt sıradaki düğmeler"},{"id":"intensity--9","t":"Pikselleri tek tek çalışmak"}],"text":"04 Yoğunluk ayarlamak — Home Home ekranındaki fader&#x27;lar. Kanau&#x27;nun kalbi burasıdır. Bir fader&#x27;ı hareket ettirmek Bir fader, dokunduğunuz yere değil, parmağınızın kat ettiği mesafeye tepki verir. Onu sayıdan, yuvarlak simgeden ya da fader&#x27;ın altındaki boşluktan sürebilirsiniz. Elinize değil sahneye bakarak çalışabilmeniz için böyle tasarlanmıştır. Yukarıdan aşağıya: geçerli yoğunluk, yuvarlak armatür simgesi, fader. Seçmek için simgeye dokunun, o armatürün panelini açmak için basılı tutun. Dokunduğunuzda tutamak biraz büyür ve kısa bir mesafe sürükleyene kadar hiçbir şey hareket etmez ; bu yüzden üzerine parmağınızı dayamanız güvenlidir. Sürüklerken numara, ad ve değer ekranın üst kısmında büyük olarak görünür. Sınır belirlediyseniz fader bu sınırlar içinde hareket eder. FINE Eylem Ne olur Kısa dokunuş Sırayla değiştirir: normal → FINE (1/10) → FINE+ (1/100) → normal Basılı tutma Basılı tuttuğunuz sürece bir sonraki kademe. Bıraktığınızda normale döner Sürükleme sırasında geçiş yapmak değeri sıçratmaz. FINE, ham kanallar ile Pan ve Tilt için de geçerlidir. Birkaçını bir arada hareket ettirmek 2 ya da daha fazla yuvarlak simgeyi seçin, sonra fader&#x27;lardan birini sürükleyin. Hepsi aralarındaki farkları koruyarak aynı miktarda hareket eder. Biri bir sınıra ulaştığında diğerleri yoluna devam eder. Kilitli armatürler kapsam dışında kalır. Bu, COLOR panelinde birkaç armatürle çalışmakla aynı şey değildir; orada hepsi aynı değere iner. Numara düğmeleri piyano gibi Sağ alttaki ＋ − düğmesi modu belirler. Mod Bir numara düğmesi basılı tutulurken LOCK (varsayılan) Hiçbir şey değişmez ＋ Üst sınıra gider, varsayılan olarak 100 − Alt sınıra gider, varsayılan olarak 0 Bıraktığınızda eski değerine döner. Birkaçını aynı anda basılı tutabilir ya da yana kaydırarak sırayla çalabilirsiniz. Kilitli armatürler tepki vermez. ＋ ya da − kurulduğunda düğmeler kırmızıya döner. Açılışta mod her zaman LOCK olur. ⏻ — yalnızca çıkış ⏻ düğmesine dokunmak, bir armatürün değerini koruyarak çıkışını kapatır ve açar. Kapalıyken mor olur ve sayı yerinde kalır. Kapalıyken fader&#x27;ı hareket ettirmek hiçbir şeyi yakmaz. Varsayılan ON/OFF seçeneğidir. Armatürün Switch function ayarında bunu, yalnızca basılı tutulduğu sürece süren FLASH ON ya da FLASH OFF olarak değiştirebilirsiniz. Kilitli armatürler tepki vermez. GM ve B.O. Üstteki GM öğesine dokunmak grand master fader&#x27;ını, B.O. düğmesini ve →100 düğmesini açar. GM fader&#x27;ı genel parlaklığı ayarlar. Görelidir ve FINE onun üzerinde de çalışır. B.O. blackout&#x27;u açar ve kapatır. GM değeri korunur. →100 düğmesi GM 100 değerinin altındayken görünür ve onu geri getirir. GM öğesini basılı tutmak 100, 75, 50, 25, 12.5 ve 0 seçeneklerini sunar. Buradaki 0 blackout&#x27;u açar; GM&#x27;yi sıfıra ayarlamaz. Bu düğmelerin geçiş süresi Settings → SETTINGS → Master fade ayarından belirlenir. Varsayılan SNAP seçeneğidir. Fader&#x27;ı parmakla sürüklemek her zaman anında etki eder. WARNING Lock açık olan bir armatür GM ya da B.O. komutlarına tepki vermez. Yanık kalır. Bir blackout sırasında hâlâ yanan kilitli armatürlerin sayısı, ekranın üst kısmında yeşil 🔒 işaretinin yanında gösterilir. Sayfada ne olacağını seçmek Fixtures model ve moda göre gösterir; Groups ise All ile kurduğunuz grupları gösterir. Geçiş yapmak için bir ada dokunun. Bir grubun içinde bile bir fader her zaman tek bir armatürdür. All altındaki sıralama Settings → SETTINGS → Order on All ayarından belirlenir; ya modele ve sıra numarasına ya da armatür numarasına göre. Bir grubun içinde sıra, sizin kurduğunuz sıradır. ‹ ve › sayfayı değiştirir. 10 ile 5 arasında geçiş yapmak, üzerinde çalıştığınız armatürü görüş alanında tutar. Alt sıradaki düğmeler Soldan sağa: COLOR, EFFECT, PIXELS, ＋ −, FINE. Gri olanlar mevcut durumda kullanılamaz. COLOR ve EFFECT bir seçim gerektirir. Sayfada piksel armatürü yoksa PIXELS griye döner. Pikselleri tek tek çalışmak PIXELS öğesine dokunmak, sayfadaki piksel armatürlerinin hücrelerini kendi fader&#x27;ları olarak açar. Bunlar P1, P2 gibi görünür ve her biri kendi yoğunluğunu ve rengini taşır. Katlamak için yeniden dokunun. CLEAR n yalnızca seçimi temizler. Değerlere ve çıkışlara dokunulmaz. Sonraki Renk ayarlamak → bölüm 05 Görünümleri saklamak → bölüm 08 Bazı fader&#x27;lar hiçbir şey yapmıyor → bölüm 14"},{"id":"color","title":"05 Renk ayarlamak","h":[{"id":"color--1","t":"Paneli açmak"},{"id":"color--2","t":"Yoğunluk ve renk"},{"id":"color--3","t":"Jeller"},{"id":"color--4","t":"Sık kullandığınız renkleri kaydetmek"},{"id":"color--5","t":"ADVANCED COLOR"},{"id":"color--6","t":"Birkaç armatür ve birkaç model"},{"id":"color--7","t":"Pikseller ve yinelenen renk grupları"}],"text":"05 Renk ayarlamak — COLOR Tek bir armatür ya da birçoğu için renk ve yoğunluk. NOTE Gördükleriniz, armatürün gerçekte neye sahip olduğuna bağlıdır. Tek kanallı bir dimmer yalnızca Intensity gösterir. Kanau, bir armatürde bulunmayan denetimleri göstermez. Renk paneli. Yalnızca armatürün taşıdığı özellikler gösterilir. Paneli açmak Nasıl Neyin üzerinde çalışır Bir armatür simgesini basılı tutun Yalnızca o armatür Bir hücre simgesini basılı tutun Yalnızca o hücre Armatürleri seçin, sonra COLOR Seçili olan her şey Bir model ya da grup düğmesini basılı tutun İçindeki her armatür. All bütün armatürler demektir Tek bir armatür açıkken ‹ ve › sizi bir sonrakine götürür. Yoğunluk ve renk Öğe Nasıl çalışır Intensity 0 ile 100 arasında; kaydırıcıyla, yazarak, ± düğmeleriyle ya da hazır değerlerle Color temperature (CCT) Armatürün aralığı içinde, kelvin cinsinden Green / Magenta Yeşil–macenta düzeltmesi. Back to neutral onu 0 değerine döndürür Crossfade Beyaz taraf ile renkli taraf arasındaki denge. Hangi yönün hangisi olduğu armatüre bağlıdır RGB ve ışık kaynakları R, G, B, W, Amber, Lime, Cyan ve armatürün taşıdığı diğer her şey Hue / Saturation / CIE x / CIE y Bunlara sahip armatürlerde gösterilir Intensity için ±5 ve ±10, 5 ya da 10 katlarına oturur: 47 değerinden +10, 50 verir. Hazır değerler %12.5, %25, %35, %50 ve %75 şeklindedir. CCT hazır değerleri 2700, 3000, 3200, 4300, 5000, 5600, 6500 ve 10000 K değerleridir. Armatürün aralığının dışında kalan yerlerde onun sınırına oturursunuz ve MIN ya da MAX işareti görünür. Yalnızca 2 renk sıcaklığı olan bir armatür, kaydırıcı yerine 2 düğme gösterir. Green / Magenta kademeleri basılı tutularak düzenlenebilir. Bir armatürde birden fazla crossfade varsa, sonrakiler besledikleri denetimlerin hemen üstünde görünür. Jeller Öğe Ne işe yarar Gel presets RGB&#x27;si olan armatürler için LEE ve Rosco hazır değerleri. 3200 K ve 5600 K için ayrı tablolar Preset / Gel Armatürün kendi yerleşik jelleri ya da renk hazır değerleri, numarayla seçilir Gels → x/y x ve y&#x27;si olan armatürler için LEE ve Rosco renklilik değerleri Gel presets altındaki RGB değerleri, Astera&#x27;nın yayımladığı renk verilerinden gelir. Parlaklık taşımazlar, bu yüzden parlaklığı fader ile ayarlayın. Bir armatürün yerleşik hazır değerlerinde uygulama, hangisinin seçili olduğunu her zaman gösteremez. Liste seçim yaptıktan sonra açık kalır, böylece birini diğerinin ardından deneyebilirsiniz. ✕ ile kapatın. Listenin görünüp görünmeyeceği Settings → SETTINGS → Gels → Gel presets ayarından belirlenir. Sık kullandığınız renkleri kaydetmek Save this color bir rengi ★ altında saklar. Model başına tutulur. CCT ve G/M buna dâhil değildir. Save this temperature bir renk sıcaklığı saklar. Bu değer bütün modeller arasında paylaşılır. Uygulamak için kayıtlı bir düğmeye dokunun. Yeniden adlandırmak, düzenlemek ya da silmek için basılı tutun. ADVANCED COLOR ADVANCED COLOR altındaki seçici. Ton yatayda, doygunluk dikeyde ilerler. ADVANCED COLOR, armatürün kendi kanalları yerine uygulamanın kendi hesapladığı denetimleri bir araya toplar. Seçicide ton yatayda, doygunluk dikeyde ilerler. Parlaklık fader&#x27;ın işidir. Rengi taşımak için yuvarlak tutamağın yakınından sürükleyin; başka her yer paneli kaydırır. RGB, RGB&#x27;den hesaplanan Hue ve Saturation değerleri ve CMY (255 − RGB) bunları kabul edebilen armatürlerde görünür. Yalnızca Hue ve Saturation ya da yalnızca x ve y alan bir armatürde bunun yerine yukarıdaki denetimleri kullanın. Birkaç armatür ve birkaç model Bu panelde neye dokunursanız dokunun, seçili olan her şey aynı değere iner. Bu; kaydırıcılar, ± düğmeleri, hazır değerler, yazarak giriş ve kayıtlı renkler için aynı şekilde geçerlidir. Aralarındaki farkları koruyarak hareket ettirmek için bunun yerine Home ekranındaki fader&#x27;ları seçin. Farklı modeller seçiliyken yalnızca Intensity, CCT, G/M, Crossfade ve ★ görünür. RGB ve ışık kaynaklarını ayarlamak için tek bir modeli kendi başına açın. CCT, her armatürün kendi aralığı içinde tutulur. Pikseller ve yinelenen renk grupları Bir hücrenin rengini ve yoğunluğunu ayarlamak için hücre simgesini basılı tutun. Gövde rengini değiştirmek bütün hücreleri ayarlar; elle değiştirdiğiniz bir hücre kendi rengini korur. Gövdedeki Intensity bütün hücreler için geçerlidir. Bir modun aynı renk rolünü birden fazla taşıdığı yerlerde, örneğin Gel 1 ve Gel 2, sonraki gruplar panelin alt kısmında görünür. İlkinden sonraki renk grupları sahnelerde saklanmaz. Sonraki Armatür başına ayarlar → bölüm 06 Görünümleri saklamak → bölüm 08"},{"id":"fixture-settings","title":"06 Armatür başına ayarlar","h":[{"id":"fixture-settings--1","t":"Ad ve görünüm"},{"id":"fixture-settings--2","t":"Sınırlar"},{"id":"fixture-settings--3","t":"Lock"},{"id":"fixture-settings--4","t":"Diğer ayarlar"},{"id":"fixture-settings--5","t":"Channels — ham DMX (Advanced)"},{"id":"fixture-settings--6","t":"Yamayı ya da modu değiştirmek"}],"text":"06 Armatür başına ayarlar Tek bir armatürün sınırları, Lock ayarı ve ham kanalları. Bir armatür simgesini basılı tutarak, COLOR üzerinden ya da bir model veya grup düğmesini basılı tutarak açtığınız panelde aşağı kaydırın. Limits, Lock, Switch function ve Battery save birkaç armatür için bir arada ayarlanabilir. Karışık değerler — ya da n of m biçiminde görünür ve birini değiştirmek hepsine uygulanır. Channels, Mode, Channel roles ve Patch yalnızca tek bir armatür açıkken görünür. Ad ve görünüm Adı panelin üst kısmından düzenleyin. ‹ ve › sizi bir sonraki armatüre götürür. Label, model genelinde paylaşılan görünen addır; Label color ise numaranın arka planıdır. No label color bunu temizler. Sınırlar Lower limit ve Upper limit, çalışabileceğiniz aralığı belirler. Bunları ±1 ve ±5 ile değiştirin ya da temizleyin. Bir sınırın dışında Home ekranı turuncu tarama gösterir. Bir hücrenin sınırları, gövdenin sınırları içinde geçerlidir. Gövde 50 değerinde sınırlıysa, 80 değerinde sınırlı bir hücre yine de 50 değerini aşamaz. Lock WARNING Fixture Lock her şeyi yener: grand master, blackout, BATTERY SAVE, sahne çağırmaları, MIDI ve oturum. Kilitli bir armatür, blackout&#x27;a bastığınızda sönmez. Bir çekim öncesinde kilitlerinizi kontrol edin. Lock açıkken armatürün çıkışı sabit tutulur. Fader&#x27;lar, piyano modu, ⏻, renk, ham kanallar, GM, B.O., BATTERY SAVE, sahneler, MIDI ve oturum ona dokunmaz. Birkaç armatür seçiliyken bazıları kilitliyse, dokunmak bütün kilitleri kaldırır. Hiçbiri kilitli değilken dokunmak hepsini kilitler. Bir piyano ya da FLASH basışı sırasında kilitlemek önce geçici değeri geri koyar, sonra sabitler. Kilitliyken sınırları değiştirmek geçerli değeri oynatmaz; kilidi açtığınızda değer yeni aralığa çekilir. Diğer ayarlar Öğe Ne işe yarar Switch function ⏻ düğmesinin ne yaptığı: None, ON/OFF, FLASH ON ya da FLASH OFF. Varsayılan ON/OFF Battery save Bu armatürü BATTERY SAVE için işaretler Invert Pan ve Tilt için sürükleme yönünü ters çevirir. Gösterilen açı değişmez Mode Geçerli DMX modunu gösterir. RE-PATCH üzerinden değiştirin Channel roles Her kanalın rolünü ve adını düzeltir. Adresler yerinden oynamaz Yamalanmış bir armatürde kanallar yanlış işlev olarak ele alınıyorsa Channel roles ayarını kullanın. Düzeltmenin sonradan yamalayacağınız armatürlere de taşınması için bunun yerine Custom fixtures altındaki tanımı düzenleyin. Channels — ham DMX (Advanced) Önce renk, konum ve diğerleri için ayrılmış denetimleri kullanın. Channels, bu denetimlerin kapsamadığı işlevlere tek tek DMX kanalı üzerinden ulaşmak içindir. Channels her şeyi DMX sırasına göre; DIMMER, COLOR, POSITION, GOBO, BEAM, FOCUS, SHAPERS ve CONTROL başlıkları altında listeler. Boş gruplar gizlenir. Satır türü Nasıl çalışılır Sürekli bir değer Kaydırıcı, yazarak giriş ya da − ve + Adlandırılmış değerler ve aralıklar 12 girişe kadar bir menü, fazlasında aranabilir bir liste Reset ya da Lamp Off gibi komutlar Belirtilen süre boyunca basılı tutun. Erken bırakmak iptal eder. Süresi olmayan komutlar tek dokunuştur FADER ya da COLOR işaretli gri bir satır Ayrılmış bir denetim tarafından sürülür, bu yüzden burada düzenlenemez Başka bir kanala bağlı bir satır Mevcut durumda neyin kullanılabilir olduğunu gösterir, kullanılamadığında bir not düşer Sağ üstteki DMX öğesi ham değerler ile yüzdeler arasında geçiş yapar. Bir satırdaki Home onu varsayılanına döndürür; Pan ve Tilt için bu basılı tutmayı gerektirir. Hiçbir şey değiştirilmemişse kullanılamaz. Ham kanallardaki değişiklikler sahnelerde saklanır ve HISTORY içinde kaydedilir. Bir piksel armatüründe gövde paneli gövde kanallarını, hücre paneli ise o hücrenin kanallarını taşır. Yamayı ya da modu değiştirmek Patch altındaki RE-PATCH üzerinden düzenleyin. Universe ve adresi, armatür numarasını, modeli ve modu görebilir ve değiştirebilirsiniz. Next free onu bir sonraki boşluğa taşır. Change mode, onaylamadan önce öncesindeki ve sonrasındaki aralığı ve çakışacak armatürleri gösterir. Bunu o modelin bütün armatürlerine uygulayabilirsiniz. Sonraki armatürler kendiliğinden yer değiştirmez. Delete this fixture, bir onaydan sonra armatürü değerleri ve ayarlarıyla birlikte kaldırır ve onu her sahneden çıkarır. Sonraki Konum ve ışık huzmesi → bölüm 07 Hangi kilit ne yapar → bölüm 10"},{"id":"position","title":"07 Konum ve ışık huzmesi","h":[{"id":"position--1","t":"Pan ve Tilt"},{"id":"position--2","t":"Zoom, iris, frost, focus ve gobo"}],"text":"07 Konum ve ışık huzmesi Hareketli armatürlerde pan, tilt, zoom, iris, frost ve gobo. Pan ve Tilt Bir armatür simgesini basılı tutun ve Channels → POSITION ekranını açın. Bu sürümde konum için ayrı bir ekran yoktur. Armatür verileri açı taşıdığında Pan ve Tilt derece cinsinden, taşımadığında yüzde cinsinden okunur. 16-bit bir armatürde kaba ve ince değerler tek bir satırda yer alır. Tutamağın yakınından sürüklediğinizde parmağınızın kat ettiği mesafe kadar hareket eder. Başka her yer paneli kaydırır. Alana bir açı yazın. Armatürün aralığı dışındaki değerler kabul edilmez. ±0.1°, ±1°, ±10° gibi kademelerle ilerleyin. Kademeler birimden ve çözünürlükten gelir. FINE ve FINE+ bunu 1/10 ve 1/100 oranında yavaşlatır. Armatürü kendi başlangıç konumuna göndermek için Home öğesini basılı tutun. İptal etmek için erken bırakın. Invert sürükleme yönünü ters çevirir. Armatür kilitliyken hiçbir şey hareket etmez. DMX değerinin hiçbir işe yaramadığı ölü aralıklar hem kaydırıcı hem de kademeler tarafından atlanır. Varsayılanı ölü bir aralığın içinde kalan bir armatürde kademeler hareket etmez: önce canlı aralığa girmek için kaydırıcıyı kullanın ya da bir değer yazın. Konum sahnelerde saklanır ve HISTORY içinde kaydedilir. IMPORTANT Bir sahne geçişi Pan ve Tilt değerlerini ara değerlerle geçirmez. Çağırdığınız anda kayıtlı değere atlarlar. Bir geçiş süresi belirlemek kafanın yavaş hareket etmesini sağlamaz. Zoom, iris, frost, focus ve gobo Channels altında BEAM, GOBO ya da FOCUS başlığını açın. Sürekli değerler bir kaydırıcı alır; gobo ve prizmalar adlandırılmış seçenekler alır. Bunlar bölüm 06 içindeki diğer satırlarla tam olarak aynı şekilde çalışır. Bunların herhangi birini hareketlendirmek için EFFECT panelindeki MOVE ve BEAM gruplarını kullanın. MOVE, kafanın o anda baktığı yerin çevresinde çalışır ve yoğunluk efektlerinin üzerine katmanlanır. Sonraki Hareketi canlandırmak → bölüm 09 Görünümleri saklamak → bölüm 08"},{"id":"scenes","title":"08 Görünümleri saklamak ve çağırmak","h":[{"id":"scenes--1","t":"Bir sahne saklamak"},{"id":"scenes--2","t":"Çağırmak ve düzene sokmak"},{"id":"scenes--3","t":"Çağırdıktan sonra değiştirdikleriniz kaydedilir"},{"id":"scenes--4","t":"Neler saklanır, neler saklanmaz"},{"id":"scenes--5","t":"Geçiş süresi"}],"text":"08 Görünümleri saklamak ve çağırmak — Scenes Bir sahne, kayıtlı bir görünümdür. Scenes sekmesini açın, saklamak için ＋ düğmesine, geri getirmek için bir satıra dokunun. Sahne listesi. Geçerli sahnenin arka planı kehribar rengidir. Bir sahne saklamak Home ekranında yoğunluğu, rengi ve varsa efektleri ayarlayın. Scenes → ＋ öğesine dokunun. Sahne hemen saklanır. Yeniden adlandırmak için o sahnenin satırındaki Settings öğesine dokunun ve bir ad yazın. Satırı sola kaydırmak da aynı paneli açar. İçindekileri korumak için aynı panelde Lock this scene seçeneğini açın. Buradaki Settings, sahnenin satırının içindeki Settings öğesidir. Ekranın altındaki Settings sekmesi değildir. Çağırmak ve düzene sokmak Eylem ya da işaret Ne yapar Bir satıra dokunma Parmağınızı kaldırdığınızda çağırır NEXT / BACK Bir sonraki ya da bir önceki sahne. Başa döner. Tek sahne varken kullanılamaz ● ve kehribar arka plan Geçerli sahne ▸ NEXT ile gelecek olan sahne Düzenlemeden sonraki bir nokta Çağrıldığından bu yana değişmiş bir sahne 🔒 ve yeşil bir kenar Üzerine yazılmaya karşı kilitli Settings ya da sola kaydırma Ad, geçiş süresi, kilit, silme Edit Yeniden sıralama, silme, birkaçını birden silme Sayılar görüntüleme sırasıdır. Adın altındaki saat, içeriğin en son ne zaman değiştiğini gösterir. Çağırdıktan sonra değiştirdikleriniz kaydedilir Bir sahneyi çağırdıktan sonra ışığa yaptığınız her şey o sahneye geri yazılır. SAVE düğmesi yoktur; parmağınızı kaldırdığınızda yazılır. Dokunulmasını istemediğiniz sahnelerde Lock this scene seçeneğini açın. Onları yine çağırabilir, ışığı yine çalışabilirsiniz, ama hiçbir şey kaydedilmez. Bu, Fixture Lock ile aynı şey değildir. Scene Lock kayıtlı olanı korur; Fixture Lock çıkışı tutar. Başka bir sahne çağırdığınızda, üzerinde bulunduğunuz sahneyi sildiğinizde ve show&#x27;u yeniden açtığınızda kayıt başka bir sahneyi izler. Bir sahnenin içeriğindeki değişiklikler HISTORY kapsamında değildir. Neler saklanır, neler saklanmaz Saklanır Saklanmaz Yoğunluk, CCT, G/M, crossfade, RGB, ışık kaynakları GM, B.O. ve BATTERY SAVE Konum ve gobo gibi ham kanallar Sınırlar, Fixture Lock, ⏻ durumu, Switch function Hücre rengi ve yoğunluğu, efektler İlkinden sonraki renk grupları Lock açık olan bir armatür, çağırmadan etkilenmez. Geçiş süresi Sahne başına Settings → Fade altından ayarlayın. Varsayılan 3 saniyedir. SNAP, 1, 2, 3, 5 ve 10 hazır değerleri ile ayarlama için ±0.1 ve ±1 vardır. Geçiş sırasında fader&#x27;lar hareket eder ve yolun ortasında elle devralabilirsiniz. Konum, gobo ve diğer ham değerler ara değerlerle geçmez; çağırmada anında atlar. İçinde efekt olan bir sahne, çağrıldığında o efektleri yeniden başlatır. İçinde efekt olmayan bir sahneyi çağırmak, çalışan her şeyi bırakır. Çağırmanın kendisi HISTORY içinde tek bir adım olarak kaydedilir. Sahneler show dosyasının parçasıdır. Sonraki Geri adım atmak → bölüm 10 Show&#x27;u kaydetmek → bölüm 11 Bir sahne kendi kendine değişip duruyor → bölüm 14"},{"id":"effects","title":"09 Efektler","h":[{"id":"effects--1","t":"Bir efekt uygulamak"},{"id":"effects--2","t":"Duraklatma, bırakma, yeniden başlatma"},{"id":"effects--3","t":"ADJUST"},{"id":"effects--4","t":"ARRANGE"},{"id":"effects--5","t":"Hedefi değiştirmek ve ayarları kaydetmek"},{"id":"effects--6","t":"İstediğiniz şeye göre efekt bulmak"},{"id":"effects--7","t":"Tam liste"},{"id":"effects--8","t":"SIGNAL — trafik lambaları"},{"id":"effects--9","t":"LIGHT, MOVE ve BEAM katmanları"},{"id":"effects--10","t":"Effects sekmesinden yönetmek"}],"text":"09 Efektler Yanıp sönme, ateş, şimşek ve diğerleri, armatürlerinize uygulanır. Home ekranındaki EFFECT, seçtiğiniz şeye bir efekt uygular. Alttaki Effects sekmesi ise çalışan her şeyi yönetir. Bir efekt uygulamak Home ekranında bir armatürün ya da hücrenin yuvarlak simgesine dokunarak onu seçin. EFFECT panelini açın. Bir efekt adına dokunun. Efekt hemen başlar. Yoğunluğu yine fader belirler. Bir efekt çalışırken EFFECT düğmesi onun adını taşır, armatür simgesi ve fader da onunla birlikte hareket eder. Duraklatma, bırakma, yeniden başlatma Eylem Ne yapar PAUSE Hareketi geçerli yoğunlukta ve konumda dondurur RESUME Donduğu yerden devam eder RELEASE Efekti durdurur ve denetimi olağan değerlere geri verir. Ayarlar listede kalır START Bırakılmış bir efekti baştan yeniden çalıştırır CLEAR Efekti listeden kaldırır. Önce sorar ADJUST Öğe Ne işe yarar Speed Hertz cinsinden. Ondalık değerler kabul edilir Depth Yoğunluğu ne kadar aşağı çektiği. 100 sıfıra ulaşır; 35 neredeyse hiç oynatmaz How often / Cycle Ne sıklıkta gerçekleştiği. Yalnızca bunu kullanan türlerde Roughness Alevin ne kadar düzensiz olduğu Width Rig&#x27;in ne kadarının aynı anda yandığı, örneğin 50% 2 / 4 Tail COMET efektinin kuyruğunun uzunluğu Hangi öğelerin görüneceği efekte bağlıdır. SIGNAL efektinde Speed yoktur. ARRANGE SPREAD armatürleri kaydırarak sıralar; TOGETHER onları aynı adımda tutar. RUNNER, FADE RUN, BOUNCE, COMET ve SIGNAL bu seçeneği sunmaz. Düzen Ne yapar IN ORDER Numaraya göre eşit aralıklarla kaydırılmış ALTERNATE Tek ve çift, yarım çevrim arayla WINGS Merkezden dışa doğru aynalanmış RANDOM Rastgele bir sırada BOUNCE Her uçta geri döner BUILD Birer birer yakar, sonra hepsini birlikte söndürür IN ORDER altındaki RUNS, aynı anda kaç desenin çalışacağını belirler; seçenekler kaç armatür olduğuna bağlıdır. DIRECTION ise FORWARD ya da REVERSE olur. Ateş efektinde, ikisini de yapabilen armatürlerde CCT ve RGB çıkışı arasında seçim yapabilirsiniz. Hedefi değiştirmek ve ayarları kaydetmek Applies to → SELECT ▾ armatürleri ve grupları seçer. Seçim Home ekranıyla paylaşılır ve siz seçerken liste açık kalır. SAVED altındaki SAVE, ayarladığınız değerleri bir ad altında saklar. Uygulamak için kayıtlı bir düğmeye dokunun, durdurmak için yeniden dokunun. Yeniden adlandırmak ya da silmek için basılı tutun. Armatürler kayıtlı bir ayarın parçası değildir. Zaten çalışan armatürleri yenileriyle birlikte seçip aynı efekti seçerseniz hız, derinlik ve faz aktarılır. Ayarların farklı olduğu yerlerde varsayılanlara dönülür. Yalnızca tek bir armatürü bırakmak için yalnızca onu seçin ve RELEASE uygulayın. İstediğiniz şeye göre efekt bulmak Ne istiyorsunuz Şunu deneyin Doğal ışık FIRE 1 ve 2, LIGHTNING, WATER, WIND, TV Rig boyunca koşan ışık RUNNER, FADE RUN, BOUNCE, COMET Şehir ışığı NEON, SIGNAL, TOKYO, OSAKA, KYOTO, NARA, PACHINKO İkaz lambaları BEACON R/B, BLUE, RED, AMBER Düz yanıp sönme BLINK, STROBE, PULSE, DOUBLE, RANDOM 1–3 Bozulan bir floresan FLUO 1–3 Kafayı hareket ettirme MOVE grubu Zoom ya da gobo hareketi BEAM grubu Tam liste Grup Efektler BASIC BLINK, STROBE, PULSE, DOUBLE, RANDOM 1–3, RUNNER, FADE RUN, BOUNCE, COMET LIGHTS FLUO 1–3, FIRE 1 (mum), FIRE 2 (şenlik ateşi), LIGHTNING, TV, NEON, SIGNAL SCENES BEACON R/B, BLUE, RED, AMBER, TOKYO, OSAKA, KYOTO, NARA, PACHINKO, WATER, FIREWORKS, LANTERNS MOVE DRIFT, PASS, ORBIT, EIGHT, BOX, SPIRAL, SEARCH, BREATHE, HANDHELD, WIND, JUMP, BALLYHOO BEAM ZOOM PULSE, ZOOM BREATHE, IRIS PULSE, FROST BREATHE, GOBO SHAKE RUNNER, FADE RUN, BOUNCE ve COMET birkaç armatüre ya da piksele ihtiyaç duyar. MOVE ve BEAM, seçili armatürler bunları destekliyorsa görünür. Bir adın sağ üstündeki kehribar nokta, efektin rengi de değiştirdiği anlamına gelir. Nokta yoksa efekt, elle ayarladığınız rengi kullanır. SIGNAL — trafik lambaları Ülkeyi, CAR ya da WALK seçeneğini, START GREEN ya da START RED seçeneğini ve REPEAT ya da ONCE seçeneğini belirleyin. NEXT bir sonraki duruma geçirir. CAR ve WALK aynı zamanlamayla çalışır. Aksiyona uydurmak için elle adım adım ilerletmek üzere ONCE kullanın. LIGHT, MOVE ve BEAM katmanları Tek bir armatür aynı anda yoğunluk ve renk için bir LIGHT efekti, kafa için bir MOVE efekti ve bir de BEAM efekti taşıyabilir. Aynı şeritte başka bir efekt seçmek öncekinin yerine geçer. Hücreler yalnızca LIGHT alır. Paneli açtığınızda LIGHT, MOVE, BEAM sırasıyla çalışan ilk şerit gösterilir. Effects sekmesinden yönetmek EDIT bir efektin ayarlarını açar. RELEASE / START, PAUSE / RESUME ve CLEAR buradadır. Bırakılmış bir efekt listede RELEASED işaretiyle kalır. Bir armatür adının yanındaki ×, o armatürü efektten çıkarır; ＋ ise geçerli seçimi, bir grubu ya da All öğesini ekler. RELEASE ALL ve START ALL her şey için geçerlidir. Efektler bir blackout boyunca saymayı sürdürür. Kilitli olmayan armatürler kararır ve blackout&#x27;u kaldırdığınızda hareketi bulunduğu yerden alır. Fixture Lock, bölüm 10 içinde ele alınır. Sonraki Görünümleri saklamak → bölüm 08 Kafayı hareket ettirmek → bölüm 07"},{"id":"safety","title":"10 Kilitler, güvenlik ve geri adım atmak","h":[{"id":"safety--1","t":"3 tür kilit vardır"},{"id":"safety--2","t":"SCREEN LOCK"},{"id":"safety--3","t":"Fixture Lock"},{"id":"safety--4","t":"BATTERY SAVE"},{"id":"safety--5","t":"HISTORY"},{"id":"safety--6","t":"ZEN"}],"text":"10 Kilitler, güvenlik ve geri adım atmak Bir çekimin ortasında hata yapmanızı engelleyen şeyler ve yaptığınız hatayı geri almanızı sağlayan şey. 3 tür kilit vardır Bu sözcük 3 yerde karşınıza çıkar ve her biri farklı bir şeyi korur. Ad Neyi korur Nerede Fixture Lock Şu anda yanan ışığı. Değer değişemez Armatür paneli Scene Lock Bir sahnede saklanan şeyi Sahnenin satırındaki Settings SCREEN LOCK Ekranı. Dokunuşlar işe yaramaz Ekranın üst kısmı SCREEN LOCK Ekranın üst kısmındaki SCREEN LOCK öğesini 0.5 saniye basılı tutun. Kısa bir dokunuş ekranı kilitlemez. Kilitliyken ekranı mor bir örtü ve tarama kaplar. Değerler okunabilir kalır, gönderim ve geçişler sürer. Kilidi açmak için ortadaki mor kaydırıcıyı sağa doğru yaklaşık %80 kadar sürükleyin. Erken bırakırsanız kilitli kalır. Patch gibi bir panel açıkken ekranı kilitleyemezsiniz. Fixture Lock WARNING Fixture Lock; grand master, blackout, BATTERY SAVE, sahne çağırmaları, MIDI ve oturumu yener. Blackout&#x27;a bastığınızda kilitli bir armatür yanık kalır. Bir blackout sırasında hâlâ yanan armatürlerin sayısı, ekranın üst kısmında yeşil 🔒 işaretinin yanında gösterilir. Bir armatür simgesini basılı tutun ve Lock seçeneğini açın. Bir ışığın değişmemesi gerektiğinde bunu kullanın. Kilitliyken armatür simgesi, fader, numara düğmesi ve ⏻ yeşile döner. Kilidi armatür panelinden kaldırın. BATTERY SAVE Çekimler arasındaki bekleme için yalnızca işaretlediğiniz armatürleri kısar. Onları armatür ayarlarındaki Battery save altından ya da Patch → Select many → Battery yolundan işaretleyin. Yamalarken de işaretleyebilirsiniz. Ekranın üst kısmındaki BATTERY SAVE öğesine dokunun. İşaretli armatürler kısılır. Onları geri getirmek için yeniden dokunun. Ne kadar kısacağını ve geçişin ne kadar süreceğini ayarlamak için basılı tutun. Save to seçenekleri −%25, −%50, −%65 ve −%75 şeklindedir; varsayılan −%50 değeridir. Geçiş 1.5 saniyeden başlar. Açıkken düğme ve ekranın kenarı yeşile döner. Grand master ile çarpılır. Kilitli armatürlere dokunulmaz. Hiçbir şey işaretlenmemişse size nasıl işaretleyeceğinizi anlatır. Bu, armatürlerinizi kısar. Bir iPhone pil ayarı değildir. HISTORY Geçtiğiniz durumları görmek için Home ekranındaki HISTORY öğesine dokunun ya da basılı tutun. Geri dönmek için bir satır seçin. HERE işareti nerede olduğunuzu gösterir. Son 50 durumu tutar. Geri gidip sonra çalışmak eski durumları yerinde bırakır ve yenisini sona ekler. Yoğunluğu, rengi, çıkışın açılıp kapanmasını, sınırları, ham değerleri, efektleri, GM, B.O. ve yamayı kapsar. Fixture Lock bunun dışındadır. Geri adım attığınızda kilitli bir armatür hareket etmez. Sahne çağırmaları kaydedilir, ancak bir sahnenin içeriğinin üzerine yazılması geri alınamaz. Tek bir değişikliği ayrı olarak geri çekemezsiniz. O andaki durumun tamamına dönersiniz. Kaydedilmez. Uygulamadan çıkmak ya da show&#x27;u yeniden açmak onu temizler. Bir çağırmadaki geçiş süresi Recall fade time ayarından belirlenir. Geri dönülecek bir şey yoksa HISTORY kullanılamaz. ZEN Tek bir armatürün panelindeki ZEN öğesine dokunduğunuzda siyah bir ekran, üzerinde tek bir büyük fader ve onun değeri görünür. Yoğunluğunu ayarlayabildiğiniz armatürler için vardır. Çalıştırmak için ekranın herhangi bir yerinden sürükleyin; her zamanki gibi görelidir. FINE çalışır. Sınırlar sağ üstteki ayarlardan değiştirilebilir. Çıkmak için ekrana dokunun; fader&#x27;ı hareket ettirip bırakmak çıkmaz. Sonraki Show&#x27;u kaydetmek → bölüm 11 Blackout sırasında bir şey sönmüyor → bölüm 14"},{"id":"shows","title":"11 Show'ları kaydetmek ve paylaşmak","h":[{"id":"shows--1","t":"Ne zaman kaydeder"},{"id":"shows--2","t":"Settings → SHOWS"},{"id":"shows--3","t":"Açılış ve kurtarma"},{"id":"shows--4","t":"Show'un içinde olmayanlar"},{"id":"shows--5","t":"Settings → SETTINGS"}],"text":"11 Show&#x27;ları kaydetmek ve paylaşmak Bir show tek bir işi barındırır: yama, gruplar, sahneler ve geçerli görünüm. Basılacak bir şey yoktur. Kendi kendini kaydeder. Ne zaman kaydeder Ne Ne zaman Yama, gruplar, sahneler Siz değiştirdikçe Geçerli görünüm ve armatür ayarları Siz durduktan yaklaşık 2 saniye sonra ve uygulama arka plana geçtiğinde Bir sonraki açılış, son show&#x27;u kaydedildiği hâliyle geri yükler. Çıkıştan hemen önceki son değişiklik garanti değildir; bu yüzden saklamak ya da devretmek üzere bir dosyaya ihtiyacınız olduğunda Export show file kullanın. Settings → SHOWS Öğe Ne yapar CURRENT SHOW İçinde bulunduğunuz show&#x27;u yeniden adlandırır Save As Geçerli durumu başka bir show olarak saklar ve kopyanın içinden devam eder Export show file Önce kaydeder, sonra bir .kanau dosyası yazar. Nereye yazılacağını paylaşım sayfasından seçin Import show file Bir .kanau dosyasını yeni bir show olarak alır. Geçerli show&#x27;unuza dokunulmaz NEW SHOW Ad verip Create deyin. Boş bir show alırsınız ve Patch ekranı açılır OTHER SHOWS Kayıtlı bir show&#x27;u açar. ⧉ çoğaltır, ✕ bir onaydan sonra siler Files ya da AirDrop üzerinden gelen bir .kanau dosyası Kanau ile açılabilir ve yeni bir show olarak gelir. Bir .kanaumidi dosyası ise MIDI eşleme dosyası olarak ele alınır. Açılış ve kurtarma Kayıtlı hiçbir şey yoksa demo show&#x27;u açılır. Kayıtlı görünümü olmayan eski bir show, yoğunluk kısık hâlde açılır. Dosya okunamazsa Saved patch could not be read. Showing an empty rig; the file is left as it is. iletisini alırsınız ve uygulama boş başlar. Özgün dosya korunur ve üzerine yazılmaz. Başarısız bir kayıt, kırmızı renkte Patch was not saved. iletisini gösterir. Ne yapılacağı bölüm 14 içinde ele alınır. Show&#x27;un içinde olmayanlar Ne Nerede durur SAVED efekt ayarları Cihazda, her show&#x27;da kullanılabilir Custom fixtures Cihazda. Yamalanmış armatürlerin tanımları ayrıca show&#x27;un içinde de tutulur Kayıtlı ★ renkleri ve sıcaklıkları Cihazda. Renkler model başına, sıcaklıklar paylaşılır MIDI eşlemesi Cihazda. Tek başına .kanaumidi olarak dışa aktarılabilir OUTPUT, görüntü ayarları, dil Cihazda HISTORY Kaydedilmez Settings → SETTINGS Dil, çeşitli geçiş süreleri, BATTERY SAVE miktarı, hangi numaranın gösterileceği, All altındaki sıralama, Patch ekranındaki All satırı, Net / Sub / Uni ve jellerin görünüp görünmeyeceği. Dil değişikliği bir sonraki açılışta etkili olur. Metin boyutu iOS ayarını izler. Sonraki Bir kayıt başarısız oldu → bölüm 14 2 cihazdan çalışmak → bölüm 13"},{"id":"midi","title":"12 MIDI denetleyicileri (Advanced)","h":[{"id":"midi--1","t":"Bağlamak ve eşlemek"},{"id":"midi--2","t":"2 mod"},{"id":"midi--3","t":"Bir düğme başta hiçbir şey yapmadığında"},{"id":"midi--4","t":"Tuşlar ve eşleme dosyası"}],"text":"12 MIDI denetleyicileri (Advanced) Bir MIDI denetleyicisinin düğmelerini ve tuşlarını armatürlere ve denetimlere eşlemek. Bu bölüm, Learn tarzı ekranı anlatır. Bağlamak ve eşlemek Settings → MIDI altında MIDI controller seçeneğini açın. Varsayılan olarak kapalıdır. Ekipmanınızın Inputs altında göründüğünü ve bir şeyi hareket ettirdiğinizde Last CC değerinin değiştiğini doğrulayın. MIDI channel ayarını OMNI ile başlatın, gerekirse 1–16 arasına daraltın. Bir Mode seçin, sonra Knobs ya da Buttons altındaki Learn ile eşleyin. Turn… görünürken bir düğmeyi çevirin ya da eşlemek istediğiniz tuşa basın. Bu özelliğin geliştirilmesinde temel alınan ekipman, mutlak değer gönderen Standard modundaki Behringer X-Touch Mini ve Compact&#x27;tır. MC modu kullanılmaz. 2 mod Mod Bir denetim neyi izler GLOBAL 10 Ekrandaki bir konumu. Sayfayı ya da grubu değiştirin, hedef de onunla birlikte değişir. GM de eşlenebilir FIXED Tek bir armatürü. Sayfa ya da grup değiştirmek fark yaratmaz FIXED, Learn ile her seferinde tek bir armatür olarak eşlenir; otomatik numaralandırma yoktur. GLOBAL 10 altında Fader 1 ile Fader 10 arasındaki her satırda ve Grand master satırında bir Learn bulunur. Bir düğme başta hiçbir şey yapmadığında Düğme ile ekrandaki değer uyuşmuyorsa, düğme ekrandaki değeri geçene kadar hiçbir şey hareket etmez . Bu bilinçli bir tercihtir: seviyenin sıçramasını engeller. Aynı durum sayfa, grup ya da mod değiştirdikten sonra da geçerlidir. Send values back seçeneğini açtığınızda Kanau, bunu destekleyen ekipmanda geçerli değerleri LED halkalarına geri gönderir. Boş konumlar 0 olarak döner. Tuşlar ve eşleme dosyası FINE, PIANO, sayfa ileri ve geri ile tek tek sahne çağırmalarını eşleyebilirsiniz. B.O. eşlenemez. Bir tuş bir eylem taşır. Fixture Lock, MIDI için de geçerlidir. MIDI map file altındaki Export ve Import, eşlemeyi show&#x27;dan ayrı olarak bir .kanaumidi dosyasına yazar ve ondan okur. Sonraki 2 cihazdan çalışmak → bölüm 13"},{"id":"session","title":"13 2 cihazdan çalışmak","h":[{"id":"session--1","t":"Kim neyi elinde tutar"},{"id":"session--2","t":"Bir oturum başlatmak"},{"id":"session--3","t":"Bir guest neler yapabilir"},{"id":"session--4","t":"Efektler ve guest"},{"id":"session--5","t":"Aynı anda çalışmak ve bağlantıyı kaybetmek"}],"text":"13 2 cihazdan çalışmak — SESSION Tek bir show üzerinde 2 iPhone ya da iPad. DMX&#x27;i yalnızca host gönderir ; diğeri aynı konsolu onun üzerinden çalışır. Bir oturum, aynı ağdaki 2 cihazın tek bir show&#x27;u sürmesini sağlar. Guest, yaptıklarınızı host&#x27;a gönderir. Host durursa hiçbir şey kendiliğinden devralmaz. Kim neyi elinde tutar Host Guest DMX gönderme Evet Hayır Show&#x27;un sahibi Evet Ödünç alır Yamayı değiştirme Evet Hayır Bir sahnenin nereye kaydedildiği Host&#x27;un show&#x27;una Host&#x27;a gönderilir Işığı çalışma Evet Evet İkisi de aynı armatüre dokunduğunda host kazanır. Guest TAKEN görür. Bir oturum başlatmak Gönderimi yapacak cihazda Settings → SESSION → Host seçin. 4 haneli numarayı karşı tarafa verin. Diğer cihazda Settings → SESSION → Join seçin ve numarayı yazın. Joined ifadesini ve bağlantı durumunu kontrol edin. Looking for 1234… ifadesi aramanın sürdüğü anlamına gelir. Numara her host olduğunuzda değişir. Aynı anda yalnızca 2 cihaz olabilir; üçüncüsü katılamaz. Bir guest neler yapabilir Guest şunları yapabilir Host şunları yapar Her cihaz kendine saklar Armatürler ve hücreler üzerinde fader&#x27;lar, renk ve jeller Yama ekleme, kaldırma ve değiştirme, adlar, etiketler Hangi grubun ve sayfanın göründüğü, hangi sekmenin açık olduğu Sahne çağırma ve saklamak için ＋ Yeniden sıralama, silme, yeniden adlandırma, geçiş süresi, kilit FINE, 10 / 5, PIXELS, PIANO modu ⏻, GM, B.O., BATTERY SAVE OUTPUT, SHOWS Görüntü ayarları, dil, jeller Sınırlar, Fixture Lock, seçimi temizleme Geçiş süreleri, Save to, Switch function MIDI eşlemesi, kayıtlı ★ renkleri Guest&#x27;ten saklanan bir sahneyi host yazar. Guest&#x27;in kendi show dosyasına dokunulmaz ve Leave session onu geri getirir. Efektler ve guest Bazı efekt eylemleri host&#x27;a ulaşır, bazıları ulaşmaz. Eylem Guest&#x27;ten Bir efekt uygulama Çalışır RELEASE ALL Çalışır Bir hücrenin efektlerini temizleme Çalışır SIGNAL NEXT Çalışır IMPORTANT PAUSE, RESUME, tek bir efekti bırakma ve START komutları guest&#x27;ten host&#x27;a ulaşmaz. Guest&#x27;in ekranı bir şey olmuş gibi görünebilir, ama ışık değişmez. Bunları host üzerinde yapın. Aynı anda çalışmak ve bağlantıyı kaybetmek Guest&#x27;in değiştirdiği şey guest&#x27;in ekranında hemen görünür. Host aynı armatüre dokunursa host kazanır ve guest TAKEN görür. Diğer cihazın üzerinde çalıştığı bir armatür, bir adla birlikte camgöbeği bir kenar gösterir. Bağlantı Durum Yeşil Host&#x27;a bağlı Kehribar Yaklaşık 3 saniyedir host&#x27;tan bir şey gelmiyor Kırmızı Yaklaşık 15 saniyedir bir şey gelmiyor. The host is no longer available. iletisi görünür Bağlantı koparsa guest son durumu göstermeyi sürdürür. Kendiliğinden ayrılmaz, bu yüzden Leave session kullanın. Yeniden bağlandıktan sonra fader&#x27;lar hâlâ görelidir. İnternet gerekmez. 2 cihazın aynı ağda birbirine erişebiliyor olması gerekir. İstemci yalıtımı, güvenlik duvarı ve benzeri ayarlar, DMX geçse bile oturumu engelleyebilir. Sonraki Show&#x27;u kaydetmek → bölüm 11 Bağlanmıyor → bölüm 14"},{"id":"troubleshooting","title":"14 Sorun giderme","h":[{"id":"troubleshooting--1","t":"Hiçbir şey yanmıyor"},{"id":"troubleshooting--2","t":"Hiçbir cihaz bulunamıyor"},{"id":"troubleshooting--3","t":"Titriyor"},{"id":"troubleshooting--4","t":"Takılıyor ya da geç tepki veriyor"},{"id":"troubleshooting--5","t":"Bazı fader'lar hiçbir şey yapmıyor"},{"id":"troubleshooting--6","t":"Bir düğme hiçbir şey yapmıyor"},{"id":"troubleshooting--7","t":"Renk yanlış"},{"id":"troubleshooting--8","t":"Bir armatür beklendiği gibi davranmıyor"},{"id":"troubleshooting--9","t":"Bir sahne kendi kendine değişip duruyor"},{"id":"troubleshooting--10","t":"Bir sahne kaydedilmiyor"},{"id":"troubleshooting--11","t":"Oturum bağlanmıyor"},{"id":"troubleshooting--12","t":"Blackout sırasında bir şey yanık kalıyor"},{"id":"troubleshooting--13","t":"Uygulama kapandı ya da bağlantı koptu"},{"id":"troubleshooting--14","t":"Bir kayıt başarısız oldu"},{"id":"troubleshooting--15","t":"DMX değerlerini kontrol etmek"}],"text":"14 Sorun giderme Gördüğünüz şeye göre düzenlenmiştir. Listeyi yukarıdan aşağıya çalışın. Hiçbir şey yanmıyor Gördüğünüz Ne yapmalı idle Settings → OUTPUT altında bir ağın etkin olduğunu kontrol edin Blocked iOS Local Network iznini kontrol edin. sACN multicast engellenmişse Unicast seçeneğine geçin WAITING + IP Hatta başka bir konsol var. Onu durdurun ya da Send anyway? → Send seçin No node Cihazın gücünü, ağını, adresini ve protokol ayarlarını kontrol edin B.O. Blackout&#x27;u kaldırmak için üzerine dokunun GM 0 GM panelini açın ve →100 kullanın 🔌 n Universe&#x27;ü OUTPUT → Universes altından yeniden açın Mor bir ⏻ ya da armatür simgesi Armatürün çıkışını yeniden açın Yeşil bir BATTERY SAVE Tam çıkış gerekiyorsa bunu kaldırın Düşük bir Upper limit Armatürün sınırlarını kontrol edin Patch ekranında ⚠ Çakışan adresi ya da 512 kanalını aşan diziyi düzeltin Uyuşmayan bir mod Armatürün kendisiyle aynı DMX modunu ayarlayın Hiçbir cihaz bulunamıyor Network listesinde no reply görünüyorsa, iPhone ile cihazın aynı ağda olduğunu kontrol edin. AUTO ona ulaşamıyorsa Unicast kullanın ve cihazın adresini girin. Bağlantıyla ilgili bir şeyi değiştirdikten sonra RESCAN çalıştırın. Cihazın kendi Art-Net ve sACN anahtarlarını, adresini ve universe&#x27;ünü kontrol edin. Örneğin LumenRadio CRMX Stardust, Art-Net ve sACN kapalı olarak gelir. Bir Stardust&#x27;ın ya da bir Aputure Sidus Four&#x27;un kendi Wi-Fi ağına katılıyorsanız, ekipmanın hangi bandı desteklediğini kontrol edin. Harici bir erişim noktasında 2.4 GHz ve 5 GHz istemcileri çoğu zaman birbirine ulaşabilir; farklı bir bant her zaman farklı bir ağ anlamına gelmez. Bir Stardust&#x27;ta çıkış göstergesindeki küçük harf veri gelmediğini, büyük harf ise geldiğini gösterir. Modele özgü her şey için üreticinin kendi kılavuzuna bakın. Yoklamaya yanıt vermeyen ekipman, veriyi alırken bile Nodes answering altında 0 gösterir. Titriyor Aynı armatürün hem ağdan hem de Bluetooth&#x27;tan ya da birden fazla konsoldan veya DMX kaynağından beslenmediğini kontrol edin. OUTPUT altındaki CRMX uyarısına ve varsa SHARED ya da WAITING iletisine bakın ve yolu tek bir hatta indirin. Başka bir denetim uygulaması ya da armatürdeki bir ayar da buna yol açabilir. Takılıyor ya da geç tepki veriyor Settings → OUTPUT ekranını açın ve yukarıdan aşağıya okuyun. Bunlardan birinde takılıyorsa daha aşağıya bakmanıza gerek yoktur. Sending konsol gönderim yapıyor mu ↓ Clock telefonun içinde mi sıkışmış ↓ Touch → wire parmaktan pakete yolculuk yavaş mı ↓ Node RTT ağ ya da ekipman mı yavaş ↓ Fixture armatürün kendisi mi yavaş Gördüğünüz Neye bakmalı Sending değeri nothing Hedef, ağ, iOS izinleri Clock değeri 100 ms üzeri Telefon. Panelleri kapatın, gerekirse uygulamayı yeniden başlatın Cihazlar yanıt veriyor ama armatürler yaklaşık saniyede bir güncelleniyor AUTO&#x27;nun gönderdiği adres. Cihaz kendini yanlış bildiriyorsa Broadcast deneyin Clock iyi ama gidiş dönüş süresi uzun Wi-Fi yoğunluğu, erişim noktası, ekipman, yol Sayılar iyi ama ışık geç kalıyor Armatürdeki yumuşatma, onun giriş yolu, onu süren başka bir uygulama AUTO&#x27;nun hedefi sorunluysa Broadcast yardımcı olur. Diğer nedenlerde yardımcı olmaz ve yük ekleyebilir. Bazı fader&#x27;lar hiçbir şey yapmıyor Armatürün sınırlarını, Lock durumunu ve çıkışının açık olup olmadığını kontrol edin. Kanau&#x27;daki fader eğrisi doğrusaldır; armatürdeki bir dimmer eğrisi alt yarının düz hissettirmesine yol açabilir. Armatürün kendisini ya da Channels altındaki Dim curve ayarını kontrol edin. GDTF&#x27;den içe aktarılmış bir armatürde yanlış yoğunluk ya da renk genellikle rollerin yanlış olduğu anlamına gelir. Onları Channel roles altında düzeltin. Düzeltmenin sonradan yamalayacağınız armatürlere taşınması için Custom fixtures altındaki tanımı düzenleyin. Bir düğme hiçbir şey yapmıyor Gördüğünüz Nedeni ve ne yapmalı Ekranı kaplayan mor bir örtü SCREEN LOCK. Ortadaki kaydırıcıyı sağa sürükleyin Yeşil bir 🔒 Fixture Lock kilidini kaldırın COLOR ya da EFFECT gri Bir armatür seçin. COLOR ayrıca armatürün renge sahip olmasını gerektirir PIXELS gri Sayfada piksel armatürü yok HISTORY etkin değil Geri dönülecek bir şey yok Numara düğmeleri yoğunluğu değiştirmiyor Piyano modu LOCK konumunda. ＋ − kullanın Channels altındaki Home etkin değil Zaten varsayılan değerinde Pan ya da Tilt için Home hiçbir şey yapmıyor Dokunuş değil, basılı tutma gerektirir Bir sahne güncellenmiyor Lock this scene ayarını kontrol edin Guest yamayı düzenleyemiyor Bunu host üzerinde yapın Renk yanlış Gördüğünüz Neyi kontrol etmeli Ayarladığınızdan farklı bir renk Patch modunun armatürün kendi DMX moduyla eşleşip eşleşmediğini Hiç renk denetimi yok Armatürün renge sahip olup olmadığını. Karışık modeller yalnızca ortak öğeleri gösterir (bölüm 05) Renk sıcaklığı erken duruyor Armatürün aralığının ucundasınız. MIN ya da MAX okur İçe aktarılmış bir armatür şaşırmış Channel roles ayarını kontrol edin (bölüm 06) Beyaz yeşile ya da macentaya kaçıyor Green / Magenta 0 değerinde olmayabilir. Back to neutral onu sıfırlar Bir armatür beklendiği gibi davranmıyor Önce Patch modunun armatürün kendi moduyla eşleştiğini kontrol edin. Bu yanlış olduğunda yoğunluk renk olarak, renk ise konum olarak ulaşır. GDTF&#x27;den içe aktarılmış bir tanımda roller gerçek armatürden farklı atanmış olabilir. Onları Channel roles altında düzeltin (bölüm 06). Bunun gelecekteki yamalara taşınması için Custom fixtures tanımını düzenleyin. Imported data is not verified. olarak işaretlenmiş her şeyi gerçek armatürle karşılaştırarak kontrol edin. Bir sahne kendi kendine değişip duruyor Bir sahneyi çağırdıktan sonra yaptığınız her şey o sahneye geri kaydedilir (bölüm 08). Dokunulmasını istemediğiniz sahnelerde, o sahnenin Settings paneli altındaki Lock this scene seçeneğini açın. Onları yine çağırabilir, ışığı yine çalışabilirsiniz; hiçbir şey saklanmaz. Bir sahne kaydedilmiyor Neyi kontrol etmeli Lock this scene Bu açıkken hiçbir şey kaydedilmez Bir guest üzerindesiniz Yeniden sıralama, silme ve yeniden adl"},{"id":"glossary","title":"Sözlük","h":[],"text":"Sözlük Ekranda Anlamı Fixture Bir armatür. Yamaladığınız ve denetlediğiniz birim Patch Bir armatürün modelini, modunu ve DMX adresini kaydetme Universe / Address Bir universe ve onun içindeki kanal konumu Mode Armatürün DMX modu. Armatürün kendisiyle eşleşmelidir Unit no. / Fixture number Model içindeki otomatik numara / sizin verdiğiniz numara Offset / Gap Armatürler arasındaki aralık / aralarında bırakılan ek boş kanallar Group / All Bir armatür kümesi / bütün armatürler Pixel / Cell Tek bir armatürün ayrı denetlenebilen bir parçası Intensity Parlaklık CCT Renk sıcaklığı, kelvin cinsinden G/M Yeşil–macenta düzeltmesi Crossfade Beyaz taraf ile renkli taraf arasındaki denge Emitter Armatürün içindeki bir LED ya da başka bir ışık kaynağı Channels / Raw channels Tek seferde tek bir DMX kanalıyla çalışma Channel roles Bir kanalın hangi işlev olarak ele alındığı GM / B.O. Grand master / blackout Lock / SCREEN LOCK Bir armatürün çıkışını tutma / istenmeyen dokunuşları engelleme FINE / FINE+ Olağan hassasiyetin 1/10 ve 1/100 katı PIANO Basılı tutuldukça yoğunluğu değiştirmek için numara düğmelerini kullanma Scene / Show Kayıtlı bir görünüm / tek bir iş için gereken her şey SNAP / Fade Anında / belirlenen bir süre boyunca HISTORY / HERE Önceki durumların listesi / listede bulunduğunuz yer PAUSE / RESUME Bir efekti dondurma / oradan devam etme RELEASE / START Bir efekti durdurma / baştan çalıştırma CLEAR Bir seçimi temizleme ya da bir efekti kaldırma. Nerede gördüğünüze bağlıdır SAVED Kayıtlı efekt ayarları Host / Join / Leave session Gönderimi yapan cihaz olma / birine katılma / ayrılma PROVISIONAL Yer tutucu bir armatür modu GDTF Armatür tanımları için bir dosya biçimi"}];
+  var NONE = "Sonuç yok";
+  var LEGACY = {"c-QUICK-START":"quick-start","c-01-Reading-the-screen":"screen","c-02-Sending-DMX":"output","c-03-Patching-fixtures":"patch","c-04-Setting-intensity":"intensity","c-05-Setting-colour":"color","c-06-Per-fixture-settings":"fixture-settings","c-07-Position-and-beam":"position","c-08-Storing-and-recalling-looks":"scenes","c-09-Effects":"effects","c-10-Locks-safety-and-stepping-back":"safety","c-11-Saving-and-sharing-shows":"shows","c-12-MIDI-controllers-Advanced":"midi","c-13-Working-from-two-devices":"session","c-14-Troubleshooting":"troubleshooting","c-Glossary":"glossary","c-QUICK-START--1-Change-the-intensity":"quick-start--1","c-QUICK-START--2-Change-the-colour":"quick-start--2","c-QUICK-START--3-Recall-a-scene":"quick-start--3","c-QUICK-START--See-the-values-going-out":"quick-start--4","c-QUICK-START--What-is-in-the-practice-rig":"quick-start--5","c-QUICK-START--Connecting-real-lights":"quick-start--6","c-QUICK-START--Five-things-worth-knowing-first":"quick-start--7","c-01-Reading-the-screen--Learn-these-seven-first":"screen--1","c-01-Reading-the-screen--The-five-tabs":"screen--2","c-01-Reading-the-screen--The-status-line":"screen--3","c-01-Reading-the-screen--The-parts-of-Home":"screen--4","c-01-Reading-the-screen--Colours-and-marks":"screen--5","c-02-Sending-DMX--First-connection":"output--1","c-02-Sending-DMX--One-Art-Net-node":"output--2","c-02-Sending-DMX--Settings-in-detail":"output--3","c-02-Sending-DMX--Protocol-and-networks":"output--4","c-02-Sending-DMX--Choosing-the-destination":"output--5","c-02-Sending-DMX--RESCAN":"output--6","c-02-Sending-DMX--iOS-permissions":"output--7","c-02-Sending-DMX--Universes-and-Art-Net-numbering":"output--8","c-02-Sending-DMX--CRMX-over-Bluetooth":"output--9","c-02-Sending-DMX--When-another-console-is-found":"output--10","c-02-Sending-DMX--DMX-Diagnostics-reading-what-is-happening":"output--11","c-02-Sending-DMX--DMX-MONITOR":"output--12","c-03-Patching-fixtures--Adding-fixtures":"patch--1","c-03-Patching-fixtures--Two-kinds-of-number":"patch--2","c-03-Patching-fixtures--Models-and-modes":"patch--3","c-03-Patching-fixtures--Changing-patched-fixtures":"patch--4","c-03-Patching-fixtures--Changing-many-at-once":"patch--5","c-03-Patching-fixtures--Re-patch-moving-into-free-space":"patch--6","c-03-Patching-fixtures--Building-groups":"patch--7","c-03-Patching-fixtures--Fixtures-not-in-the-library-Advanced":"patch--8","c-03-Patching-fixtures--From-GDTF-Share":"patch--9","c-03-Patching-fixtures--From-a-GDTF-file":"patch--10","c-03-Patching-fixtures--By-hand-from-a-DMX-chart":"patch--11","c-03-Patching-fixtures--By-copying-an-existing-one":"patch--12","c-04-Setting-intensity--Moving-a-fader":"intensity--1","c-04-Setting-intensity--FINE":"intensity--2","c-04-Setting-intensity--Moving-several-at-once":"intensity--3","c-04-Setting-intensity--The-number-buttons-as-a-piano":"intensity--4","c-04-Setting-intensity--output-only":"intensity--5","c-04-Setting-intensity--GM-and-B-O":"intensity--6","c-04-Setting-intensity--Choosing-what-is-on-the-page":"intensity--7","c-04-Setting-intensity--The-buttons-along-the-bottom":"intensity--8","c-04-Setting-intensity--Working-pixels-on-their-own":"intensity--9","c-05-Setting-colour--Opening-the-panel":"color--1","c-05-Setting-colour--Intensity-and-colour":"color--2","c-05-Setting-colour--Gels":"color--3","c-05-Setting-colour--Saving-colours-you-use-often":"color--4","c-05-Setting-colour--ADVANCED-COLOR":"color--5","c-05-Setting-colour--Several-fixtures-and-several-models":"color--6","c-05-Setting-colour--Pixels-and-repeated-colour-groups":"color--7","c-06-Per-fixture-settings--Name-and-display":"fixture-settings--1","c-06-Per-fixture-settings--Limits":"fixture-settings--2","c-06-Per-fixture-settings--Lock":"fixture-settings--3","c-06-Per-fixture-settings--The-other-settings":"fixture-settings--4","c-06-Per-fixture-settings--Channels-the-raw-DMX-Advanced":"fixture-settings--5","c-06-Per-fixture-settings--Changing-the-patch-or-the-mode":"fixture-settings--6","c-07-Position-and-beam--Pan-and-Tilt":"position--1","c-07-Position-and-beam--Zoom-iris-frost-focus-and-gobo":"position--2","c-08-Storing-and-recalling-looks--Storing-a-scene":"scenes--1","c-08-Storing-and-recalling-looks--Recalling-and-tidying":"scenes--2","c-08-Storing-and-recalling-looks--What-you-change-after-a-recall-is-saved":"scenes--3","c-08-Storing-and-recalling-looks--What-is-stored-and-what-is-not":"scenes--4","c-08-Storing-and-recalling-looks--Fade":"scenes--5","c-09-Effects--Applying-one":"effects--1","c-09-Effects--Pause-release-restart":"effects--2","c-09-Effects--ADJUST":"effects--3","c-09-Effects--ARRANGE":"effects--4","c-09-Effects--Changing-the-target-and-saving-settings":"effects--5","c-09-Effects--Finding-one-by-what-you-want":"effects--6","c-09-Effects--The-full-list":"effects--7","c-09-Effects--SIGNAL-traffic-lights":"effects--8","c-09-Effects--Layering-LIGHT-MOVE-and-BEAM":"effects--9","c-09-Effects--Managing-them-from-the-Effects-tab":"effects--10","c-10-Locks-safety-and-stepping-back--There-are-three-kinds-of-lock":"safety--1","c-10-Locks-safety-and-stepping-back--SCREEN-LOCK":"safety--2","c-10-Locks-safety-and-stepping-back--Fixture-Lock":"safety--3","c-10-Locks-safety-and-stepping-back--BATTERY-SAVE":"safety--4","c-10-Locks-safety-and-stepping-back--HISTORY":"safety--5","c-10-Locks-safety-and-stepping-back--ZEN":"safety--6","c-11-Saving-and-sharing-shows--When-it-saves":"shows--1","c-11-Saving-and-sharing-shows--Settings-SHOWS":"shows--2","c-11-Saving-and-sharing-shows--Opening-and-recovery":"shows--3","c-11-Saving-and-sharing-shows--What-is-not-in-the-show":"shows--4","c-11-Saving-and-sharing-shows--Settings-SETTINGS":"shows--5","c-12-MIDI-controllers-Advanced--Connecting-and-mapping":"midi--1","c-12-MIDI-controllers-Advanced--The-two-modes":"midi--2","c-12-MIDI-controllers-Advanced--When-a-knob-does-nothing-at-first":"midi--3","c-12-MIDI-controllers-Advanced--Buttons-and-the-mapping-file":"midi--4","c-13-Working-from-two-devices--Who-holds-what":"session--1","c-13-Working-from-two-devices--Starting-a-session":"session--2","c-13-Working-from-two-devices--What-a-guest-can-do":"session--3","c-13-Working-from-two-devices--Effects-and-the-guest":"session--4","c-13-Working-from-two-devices--Working-at-the-same-time-and-losing-the-link":"session--5","c-14-Troubleshooting--Nothing-lights-up":"troubleshooting--1","c-14-Troubleshooting--No-node-is-found":"troubleshooting--2","c-14-Troubleshooting--It-flickers":"troubleshooting--3","c-14-Troubleshooting--It-stutters-or-reacts-slowly":"troubleshooting--4","c-14-Troubleshooting--Some-faders-do-nothing":"troubleshooting--5","c-14-Troubleshooting--A-button-does-nothing":"troubleshooting--6","c-14-Troubleshooting--The-colour-is-wrong":"troubleshooting--7","c-14-Troubleshooting--A-fixture-does-not-behave":"troubleshooting--8","c-14-Troubleshooting--A-scene-keeps-changing-on-its-own":"troubleshooting--9","c-14-Troubleshooting--A-scene-will-not-save":"troubleshooting--10","c-14-Troubleshooting--The-session-will-not-connect":"troubleshooting--11","c-14-Troubleshooting--Something-stays-lit-on-blackout":"troubleshooting--12","c-14-Troubleshooting--The-app-quit-or-the-link-dropped":"troubleshooting--13","c-14-Troubleshooting--A-save-failed":"troubleshooting--14","c-14-Troubleshooting--Checking-the-DMX-values":"troubleshooting--15","c-01-画面の見方":"screen","c-02-DMX-を送信する":"output","c-03-灯体を登録する":"patch","c-04-明るさを操作する":"intensity","c-05-色を調整する":"color","c-06-灯体ごとの設定":"fixture-settings","c-07-向き-ビームを調整する":"position","c-08-明かりを保存-呼び出しする":"scenes","c-09-エフェクトを使う":"effects","c-10-誤操作を防ぐ-操作を戻す":"safety","c-11-ショーを保存-共有する":"shows","c-12-MIDI-コントローラーを使う-Advanced":"midi","c-13-2-台の端末で操作する":"session","c-14-困ったとき":"troubleshooting","c-用語集":"glossary","c-QUICK-START--1-明るさを変える":"quick-start--1","c-QUICK-START--2-色を変える":"quick-start--2","c-QUICK-START--3-シーンを呼ぶ":"quick-start--3","c-QUICK-START--送っている値を見る":"quick-start--4","c-QUICK-START--実際の灯体につなぐ":"quick-start--5","c-QUICK-START--練習用のデモに入っているもの":"quick-start--6","c-QUICK-START--現場で最初に知っておきたいこと":"quick-start--7","c-01-画面の見方--まず覚える場所":"screen--1","c-01-画面の見方--5-つのタブ":"screen--2","c-01-画面の見方--画面上部のステータス表示":"screen--3","c-01-画面の見方--Home-の各部":"screen--4","c-01-画面の見方--色とアイコンの意味":"screen--5","c-02-DMX-を送信する--最初の接続":"output--1","c-02-DMX-を送信する--Art-Net-ノード-1-台につなぐ":"output--2","c-02-DMX-を送信する--詳細設定":"output--3","c-02-DMX-を送信する--送信方式とネットワーク":"output--4","c-02-DMX-を送信する--宛先を選ぶ":"output--5","c-02-DMX-を送信する--RESCAN-でノードを再検索する":"output--6","c-02-DMX-を送信する--iOS-の許可を確認する":"output--7","c-02-DMX-を送信する--ユニバースと-Art-Net-の番号":"output--8","c-02-DMX-を送信する--Bluetooth-経由の-CRMX":"output--9","c-02-DMX-を送信する--別の卓を検出した場合":"output--10","c-02-DMX-を送信する--DMX-Diagnostics-届いているかを読む":"output--11","c-02-DMX-を送信する--DMX-MONITOR":"output--12","c-03-灯体を登録する--灯体を追加する":"patch--1","c-03-灯体を登録する--2-種類の灯体番号":"patch--2","c-03-灯体を登録する--機種とモードについて":"patch--3","c-03-灯体を登録する--登録済み灯体を変更する":"patch--4","c-03-灯体を登録する--複数台をまとめて変更する":"patch--5","c-03-灯体を登録する--Re-patch-で空きアドレスへ移動する":"patch--6","c-03-灯体を登録する--グループを作成する":"patch--7","c-03-灯体を登録する--ライブラリにない灯体を追加する-Advanced":"patch--8","c-03-灯体を登録する--GDTF-Share-から取得する":"patch--9","c-03-灯体を登録する--手元の-GDTF-ファイルを読み込む":"patch--10","c-03-灯体を登録する--DMX-チャートから手動で作成する":"patch--11","c-03-灯体を登録する--既存定義を複製して編集する":"patch--12","c-04-明るさを操作する--フェーダーを動かす":"intensity--1","c-04-明るさを操作する--FINE-で細かく調整する":"intensity--2","c-04-明るさを操作する--複数のフェーダーをまとめて動かす":"intensity--3","c-04-明るさを操作する--番号ボタンをピアノのように使う":"intensity--4","c-04-明るさを操作する--で出力だけを切り替える":"intensity--5","c-04-明るさを操作する--GM-と-B-O-を操作する":"intensity--6","c-04-明るさを操作する--表示する灯体を切り替える":"intensity--7","c-04-明るさを操作する--画面の一番下のボタン":"intensity--8","c-04-明るさを操作する--ピクセルを個別に操作する":"intensity--9","c-05-色を調整する--色の操作パネルを開く":"color--1","c-05-色を調整する--明るさと色の項目":"color--2","c-05-色を調整する--ジェルを選ぶ":"color--3","c-05-色を調整する--よく使う色を保存する":"color--4","c-05-色を調整する--ADVANCED-COLOR":"color--5","c-05-色を調整する--複数台-複数機種を操作する場合":"color--6","c-05-色を調整する--ピクセルと複数の色グループ":"color--7","c-06-灯体ごとの設定--名前と表示":"fixture-settings--1","c-06-灯体ごとの設定--上限-下限":"fixture-settings--2","c-06-灯体ごとの設定--Lock":"fixture-settings--3","c-06-灯体ごとの設定--その他の設定":"fixture-settings--4","c-06-灯体ごとの設定--Channels-で各チャンネルを操作する-Advanced":"fixture-settings--5","c-06-灯体ごとの設定--パッチ-モードを変更する":"fixture-settings--6","c-07-向き-ビームを調整する--Pan-Tilt":"position--1","c-07-向き-ビームを調整する--Zoom-Iris-Frost-Focus-Gobo":"position--2","c-08-明かりを保存-呼び出しする--シーンを保存する":"scenes--1","c-08-明かりを保存-呼び出しする--シーンを呼び出す-整理する":"scenes--2","c-08-明かりを保存-呼び出しする--呼び出し後の変更は自動保存される":"scenes--3","c-08-明かりを保存-呼び出しする--保存されるもの-されないもの":"scenes--4","c-08-明かりを保存-呼び出しする--フェード時間":"scenes--5","c-09-エフェクトを使う--エフェクトを適用する":"effects--1","c-09-エフェクトを使う--一時停止-解除-再開の違い":"effects--2","c-09-エフェクトを使う--ADJUST-で調整する":"effects--3","c-09-エフェクトを使う--ARRANGE-で並び方を設定する":"effects--4","c-09-エフェクトを使う--対象を変更-設定を保存する":"effects--5","c-09-エフェクトを使う--目的から探す":"effects--6","c-09-エフェクトを使う--エフェクト一覧":"effects--7","c-09-エフェクトを使う--SIGNAL-信号機":"effects--8","c-09-エフェクトを使う--LIGHT-MOVE-BEAM-を重ねる":"effects--9","c-09-エフェクトを使う--Effects-タブでまとめて管理する":"effects--10","c-10-誤操作を防ぐ-操作を戻す--SCREEN-LOCK":"safety--1","c-10-誤操作を防ぐ-操作を戻す--Lock-は-3-種類あります":"safety--2","c-10-誤操作を防ぐ-操作を戻す--灯体の-Lock":"safety--3","c-10-誤操作を防ぐ-操作を戻す--BATTERY-SAVE":"safety--4","c-10-誤操作を防ぐ-操作を戻す--HISTORY":"safety--5","c-10-誤操作を防ぐ-操作を戻す--ZEN":"safety--6","c-11-ショーを保存-共有する--保存のタイミング":"shows--1","c-11-ショーを保存-共有する--Settings-SHOWS":"shows--2","c-11-ショーを保存-共有する--起動-読み込み時の動作":"shows--3","c-11-ショーを保存-共有する--ショーに含まれないもの":"shows--4","c-11-ショーを保存-共有する--Settings-SETTINGS":"shows--5","c-12-MIDI-コントローラーを使う-Advanced--接続して割り当てる":"midi--1","c-12-MIDI-コントローラーを使う-Advanced--割り当てモード":"midi--2","c-12-MIDI-コントローラーを使う-Advanced--ノブがすぐに反応しない場合":"midi--3","c-12-MIDI-コントローラーを使う-Advanced--ボタンと設定ファイル":"midi--4","c-13-2-台の端末で操作する--どちらが何を持つか":"session--1","c-13-2-台の端末で操作する--セッションを開始する":"session--2","c-13-2-台の端末で操作する--参加端末でできること":"session--3","c-13-2-台の端末で操作する--参加端末とエフェクト":"session--4","c-13-2-台の端末で操作する--同時操作と接続切れ":"session--5","c-14-困ったとき--灯体が点灯しない":"troubleshooting--1","c-14-困ったとき--ノードが見つからない":"troubleshooting--2","c-14-困ったとき--ちらつく":"troubleshooting--3","c-14-困ったとき--動きがカクつく-反応が遅い":"troubleshooting--4","c-14-困ったとき--フェーダーの一部が効かない":"troubleshooting--5","c-14-困ったとき--ボタンが反応しない":"troubleshooting--6","c-14-困ったとき--色がおかしい":"troubleshooting--7","c-14-困ったとき--灯体が思ったとおりに動かない":"troubleshooting--8","c-14-困ったとき--シーンが勝手に変わる":"troubleshooting--9","c-14-困ったとき--シーンが保存されない":"troubleshooting--10","c-14-困ったとき--セッションがつながらない":"troubleshooting--11","c-14-困ったとき--B-O-でも消えない":"troubleshooting--12","c-14-困ったとき--アプリが終了した-接続が切れた":"troubleshooting--13","c-14-困ったとき--保存に失敗した":"troubleshooting--14","c-14-困ったとき--DMX-値を確認したい":"troubleshooting--15"};
+  var MATCH = {"en":"en","en-US":"en","ja":"ja","de":"de","de-DE":"de","fr":"fr","fr-FR":"fr","ko":"ko","zh-Hans":"zh-Hans","zh":"zh-Hans","zh-Hant":"zh-Hant","es":"es","es-ES":"es","pt-BR":"pt-BR","pt":"pt-BR","it":"it","nl":"nl","nl-NL":"nl","pl":"pl","cs":"cs","sv":"sv","da":"da","no":"no","fi":"fi","tr":"tr","id":"id","th":"th","ar":"ar","ar-SA":"ar","hi":"hi","vi":"vi","zh-CN":"zh-Hans","zh-TW":"zh-Hant"};
+  var HREF = {"en":"manual.html","ja":"manual-ja.html","de":"manual-de.html","fr":"manual-fr.html","ko":"manual-ko.html","zh-Hans":"manual-zh-Hans.html","zh-Hant":"manual-zh-Hant.html","es":"manual-es.html","pt-BR":"manual-pt-BR.html","it":"manual-it.html","nl":"manual-nl.html","pl":"manual-pl.html","cs":"manual-cs.html","sv":"manual-sv.html","da":"manual-da.html","no":"manual-no.html","fi":"manual-fi.html","tr":"manual-tr.html","id":"manual-id.html","th":"manual-th.html","ar":"manual-ar.html","hi":"manual-hi.html","vi":"manual-vi.html"};
+  var HERE = "tr";
+
+  var q = document.getElementById('q'), box = document.getElementById('results');
+  function esc(s){return s.replace(/[&<>]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c];});}
+  function run(){
+    var v = q.value.trim();
+    if (v.length < 1){ box.hidden = true; box.innerHTML=''; return; }
+    var needle = v.toLowerCase(), hits = [];
+    IDX.forEach(function(ch){
+      if (ch.title.toLowerCase().indexOf(needle) >= 0)
+        hits.push({id: ch.id, label: ch.title, sub: ''});
+      ch.h.forEach(function(h){
+        if (h.t.toLowerCase().indexOf(needle) >= 0)
+          hits.push({id: h.id, label: h.t, sub: ch.title});
+      });
+      var p = ch.text.toLowerCase().indexOf(needle);
+      if (p >= 0 && hits.filter(function(x){return x.sub===ch.title||x.id===ch.id;}).length===0)
+        hits.push({id: ch.id, label: '\u2026' + ch.text.substr(Math.max(0,p-18), 56).trim() + '\u2026', sub: ch.title});
+    });
+    if (!hits.length){ box.innerHTML = '<p class="none">'+esc(NONE)+'</p>'; box.hidden = false; return; }
+    box.innerHTML = hits.slice(0,25).map(function(h){
+      return '<a href="#'+h.id+'">'+esc(h.label)+(h.sub?'<span>'+esc(h.sub)+'</span>':'')+'</a>';
+    }).join('');
+    box.hidden = false;
+  }
+  var t; q.addEventListener('input', function(){ clearTimeout(t); t = setTimeout(run, 90); });
+  q.addEventListener('keydown', function(e){ if (e.key === 'Escape'){ q.value=''; run(); q.blur(); } });
+  box.addEventListener('click', function(e){ if (e.target.closest('a')){ box.hidden = true; } });
+  document.addEventListener('keydown', function(e){
+    if (e.key === '/' && document.activeElement !== q){ e.preventDefault(); q.focus(); }
+  });
+  var jump = document.getElementById('qjump');
+  if (jump) jump.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'}); setTimeout(function(){ q.focus(); }, 350);
+  });
+
+  function jumpLegacy(){
+    var h = decodeURIComponent(location.hash.replace(/^#/, ''));
+    if (!h || document.getElementById(h)) return;
+    var to = LEGACY[h];
+    if (!to) return;
+    var el = document.getElementById(to);
+    if (el){ history.replaceState(null, '', '#' + to); el.scrollIntoView(); }
+  }
+  window.addEventListener('hashchange', jumpLegacy);
+  jumpLegacy();
+
+  var sels = document.querySelectorAll('.lang select');
+  Array.prototype.forEach.call(sels, function(sel){
+    sel.addEventListener('change', function(){
+      var opt = sel.options[sel.selectedIndex];
+      try { localStorage.setItem('kanau.manual.locale', opt.dataset.locale); } catch (e) {}
+      location.href = opt.value + location.hash;
+    });
+  });
+  // 初回だけブラウザの言語を見ます。明示の選択があればそちらを優先し、
+  // 強制の転送は繰り返しません。
+  try {
+    if (!localStorage.getItem('kanau.manual.locale') && !location.hash) {
+      var want = (navigator.languages || [navigator.language || '']).map(String);
+      for (var i = 0; i < want.length; i++) {
+        var hit = MATCH[want[i]] || MATCH[want[i].split('-')[0]];
+        if (hit && hit !== HERE) {
+          localStorage.setItem('kanau.manual.locale', hit);
+          location.replace(HREF[hit]);
+          break;
+        }
+        if (hit === HERE) break;
+      }
+    }
+  } catch (e) {}
+
+})();
+</script>
+</body>
+</html>

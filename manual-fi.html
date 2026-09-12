@@ -1,0 +1,928 @@
+<!doctype html>
+<!-- GENERATED FILE — DO NOT EDIT DIRECTLY.
+     原稿は docs/manual-fi/ 、作り直しは python3 docs/site/render-manual.py -->
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kanau — Käyttöohje</title>
+<meta name="description" content="Valopöytä elokuvalle ja televisiolle, rakennettu iPhonelle. Ohjaa valaisimia Art-Netin, sACN:n ja CRMX:n yli — värit, tilanteet, efektit ja diagnostiikka taskus">
+<link rel="icon" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/icon.png">
+<link rel="canonical" href="manual-fi.html">
+<link rel="alternate" hreflang="en" href="manual.html">
+<link rel="alternate" hreflang="ja" href="manual-ja.html">
+<link rel="alternate" hreflang="de" href="manual-de.html">
+<link rel="alternate" hreflang="fr" href="manual-fr.html">
+<link rel="alternate" hreflang="ko" href="manual-ko.html">
+<link rel="alternate" hreflang="zh-Hans" href="manual-zh-Hans.html">
+<link rel="alternate" hreflang="zh-Hant" href="manual-zh-Hant.html">
+<link rel="alternate" hreflang="es" href="manual-es.html">
+<link rel="alternate" hreflang="pt-BR" href="manual-pt-BR.html">
+<link rel="alternate" hreflang="it" href="manual-it.html">
+<link rel="alternate" hreflang="nl" href="manual-nl.html">
+<link rel="alternate" hreflang="pl" href="manual-pl.html">
+<link rel="alternate" hreflang="cs" href="manual-cs.html">
+<link rel="alternate" hreflang="sv" href="manual-sv.html">
+<link rel="alternate" hreflang="da" href="manual-da.html">
+<link rel="alternate" hreflang="no" href="manual-no.html">
+<link rel="alternate" hreflang="fi" href="manual-fi.html">
+<link rel="alternate" hreflang="tr" href="manual-tr.html">
+<link rel="alternate" hreflang="id" href="manual-id.html">
+<link rel="alternate" hreflang="th" href="manual-th.html">
+<link rel="alternate" hreflang="ar" href="manual-ar.html">
+<link rel="alternate" hreflang="hi" href="manual-hi.html">
+<link rel="alternate" hreflang="vi" href="manual-vi.html">
+<link rel="stylesheet" href="theme.css">
+</head>
+<body>
+
+<div class="stickybar"><a class="toc" href="#top" title="Sisällys">&#9776;</a><button id="qjump" type="button">Hae</button><a class="trouble" href="#troubleshooting">Vianetsintä</a><label class="lang"><span class="vh">Kieli</span><select data-where="bar"><option value="manual.html" data-locale="en">English</option><option value="manual-ja.html" data-locale="ja">日本語</option><option value="manual-de.html" data-locale="de">Deutsch</option><option value="manual-fr.html" data-locale="fr">Français</option><option value="manual-ko.html" data-locale="ko">한국어</option><option value="manual-zh-Hans.html" data-locale="zh-Hans">简体中文</option><option value="manual-zh-Hant.html" data-locale="zh-Hant">繁體中文</option><option value="manual-es.html" data-locale="es">Español</option><option value="manual-pt-BR.html" data-locale="pt-BR">Português (Brasil)</option><option value="manual-it.html" data-locale="it">Italiano</option><option value="manual-nl.html" data-locale="nl">Nederlands</option><option value="manual-pl.html" data-locale="pl">Polski</option><option value="manual-cs.html" data-locale="cs">Čeština</option><option value="manual-sv.html" data-locale="sv">Svenska</option><option value="manual-da.html" data-locale="da">Dansk</option><option value="manual-no.html" data-locale="no">Norsk</option><option value="manual-fi.html" data-locale="fi" selected>Suomi</option><option value="manual-tr.html" data-locale="tr">Türkçe</option><option value="manual-id.html" data-locale="id">Bahasa Indonesia</option><option value="manual-th.html" data-locale="th">ไทย</option><option value="manual-ar.html" data-locale="ar">العربية</option><option value="manual-hi.html" data-locale="hi">हिन्दी</option><option value="manual-vi.html" data-locale="vi">Tiếng Việt</option></select></label></div>
+<div class="hero" id="top">
+  <div class="brand"><img src="img/icon.png" alt="" width="180" height="180">
+    <div><h1>Kanau</h1><p class="kicker">iPhone Lighting Console</p></div>
+    <label class="lang"><span class="vh">Kieli</span><select data-where="hero"><option value="manual.html" data-locale="en">English</option><option value="manual-ja.html" data-locale="ja">日本語</option><option value="manual-de.html" data-locale="de">Deutsch</option><option value="manual-fr.html" data-locale="fr">Français</option><option value="manual-ko.html" data-locale="ko">한국어</option><option value="manual-zh-Hans.html" data-locale="zh-Hans">简体中文</option><option value="manual-zh-Hant.html" data-locale="zh-Hant">繁體中文</option><option value="manual-es.html" data-locale="es">Español</option><option value="manual-pt-BR.html" data-locale="pt-BR">Português (Brasil)</option><option value="manual-it.html" data-locale="it">Italiano</option><option value="manual-nl.html" data-locale="nl">Nederlands</option><option value="manual-pl.html" data-locale="pl">Polski</option><option value="manual-cs.html" data-locale="cs">Čeština</option><option value="manual-sv.html" data-locale="sv">Svenska</option><option value="manual-da.html" data-locale="da">Dansk</option><option value="manual-no.html" data-locale="no">Norsk</option><option value="manual-fi.html" data-locale="fi" selected>Suomi</option><option value="manual-tr.html" data-locale="tr">Türkçe</option><option value="manual-id.html" data-locale="id">Bahasa Indonesia</option><option value="manual-th.html" data-locale="th">ไทย</option><option value="manual-ar.html" data-locale="ar">العربية</option><option value="manual-hi.html" data-locale="hi">हिन्दी</option><option value="manual-vi.html" data-locale="vi">Tiếng Việt</option></select></label></div>
+  <p class="sub">Valopöytä elokuvalle ja televisiolle, rakennettu iPhonelle. Ohjaa valaisimia Art-Netin, sACN:n ja CRMX:n yli — värit, tilanteet, efektit ja diagnostiikka taskussasi.</p>
+  <p class="appnote">Sovellus itse on englanniksi. Tämä ohje selittää nuo englanninkieliset näkymät.</p>
+  <div class="doors"><a class="door" href="#quick-start"><b>Aloita 3 minuutissa</b><span>Valaisimia ei tarvita</span></a><a class="door" href="#screen"><b>Käyttöohje</b><span>Näkymät ja säätimet</span></a><a class="door" href="#troubleshooting"><b>Vianetsintä</b><span>Etsi oireen mukaan</span></a></div>
+  <p class="adv">Lisää:
+     <a href="#patch">Fixture / GDTF</a>
+     <a href="#output">Output / Diagnostics</a>
+     <a href="#midi">MIDI</a>
+     <a href="#session">Session</a></p>
+  <p class="ver">Päivitetty <bdi dir="ltr">2026-09-13</bdi> ・ tarkistettu versiossa <bdi dir="ltr">0.2 build 233</bdi></p>
+</div>
+
+<div class="findbar">
+  <input id="q" type="search" placeholder="Hae ohjeesta (/)" autocomplete="off"
+         aria-label="Hae ohjeesta">
+  <div id="results" hidden></div>
+</div>
+
+<nav><a href="#quick-start">QUICK START</a> <a href="#screen">01 Ruudun lukeminen</a> <a href="#output">02 DMX:n lähettäminen</a> <a href="#patch">03 Valaisimien patchaaminen</a> <a href="#intensity">04 Kirkkauden säätäminen</a> <a href="#color">05 Värin asettaminen</a> <a href="#fixture-settings">06 Valaisinkohtaiset asetukset</a> <a href="#position">07 Suunta ja keila</a> <a href="#scenes">08 Valaistuskuvien tallentaminen ja hakeminen</a> <a href="#effects">09 Efektit</a> <a href="#safety">10 Lukot, turvallisuus ja askel taaksepäin</a> <a href="#shows">11 Show&#x27;jen tallentaminen ja jakaminen</a> <a href="#midi">12 MIDI-ohjaimet (Advanced)</a> <a href="#session">13 Työskentely kahdella laitteella</a> <a href="#troubleshooting">14 Vianetsintä</a> <a href="#glossary">Sanasto</a></nav>
+
+<section class="chapter" id="s-quick-start"><h1 id="quick-start">QUICK START — kokeile Kanau-sovellusta 3 minuutissa</h1>
+<p class="lead">Tähän asti pääset ilman yhtäkään valaisinta. Painikkeiden nimet on kirjoitettu täsmälleen niin kuin ne näkyvät ruudulla.</p>
+<p>Sovellus avautuu harjoitusrigiin, jossa on valmiiksi patchattuna 24 valaisinta. Kolme minuuttia täällä näyttää sinulle suurimman osan siitä, miten Kanau toimii.</p>
+<h3 id="quick-start--1">1. Muuta kirkkautta</h3>
+<ol><li>Ruudun yläreunassa <code>GM 20</code> sykkii punaisena. Napauta sitä.</li><li>Napauta avautuvasta paneelista <code>→100</code>. Kaikki kirkastuu.</li><li>Sulje paneeli ja vedä faderia ylös ja alas. Sen yläpuolella oleva luku ja pyöreän kuvakkeen väri muuttuvat mukana.</li></ol>
+<p>Fader liikkuu <strong dir="auto">sen matkan mukaan, jonka sormesi kulkee, ei sen kohdan mukaan, johon kosketit</strong>. Aloituskohdalla ei ole vaikutusta lopputulokseen.</p>
+<h3 id="quick-start--2">2. Muuta väriä</h3>
+<ol><li><strong dir="auto">Paina pohjaan</strong> faderin yläpuolella oleva pyöreä kuvake.</li><li>Väripaneeli avautuu. <code>Intensity</code> säätää kirkkautta, <code>Color temperature</code> valkoista ja <code>RGB</code> väriä.</li><li>Yläreunan ‹ › siirtävät seuraavaan valaisimeen.</li></ol>
+<p>Jokaisessa valaisimessa on omat ominaisuutensa, joten näkyvät kohdat vaihtuvat sen mukana.</p>
+<h3 id="quick-start--3">3. Hae tilanne takaisin</h3>
+<ol><li>Avaa alareunasta välilehti <code>Scenes</code>.</li><li>Valmiina odottaa viisi tilannetta: <code>DIM</code>, <code>COLOR</code>, <code>CCT</code>, <code>PIXELS</code>, <code>FX</code>. Napauta yhtä.</li><li>Kun palaat Home-näkymään, faderit ja värit ovat muuttuneet sen mukaisiksi.</li></ol>
+<p><strong dir="auto">Kaikki minkä muutat haun jälkeen tallentuu takaisin samaan tilanteeseen.</strong> Lukitse tilanne, niin se pysyy suojassa (luku 08).</p>
+<h3 id="quick-start--4">Katso ulos lähtevät arvot</h3>
+<p>Vaikka yhtään valaisinta ei olisi kytkettynä, <code>Settings</code> → <code>DMX MONITOR</code> näyttää numerot, joita Kanau todella lähettää. Liikuta faderia, niin numerot liikkuvat mukana.</p>
+<h2 id="quick-start--5">Mitä harjoitusrigissä on</h2>
+<p>Demossa on 24 valaisinta valmistajalta Generic: DIMMER, CCT, RGB, RGBW ja BAR (4 pikseliä). Ne on jaettu kolmeen kahdeksan valaisimen ryhmään, joiden nimet ovat KEY, BACK ja FLOOR.</p>
+<p>Grand master on arvossa 20, kuusi valaisinta on merkitty Battery save -toimintoon ja niissä on vihreä nimilappu, ryhmässä FLOOR on käynnissä tuliefekti, ja tallennettuna on viisi tilannetta. Mikään siitä ei esitä olevansa todellinen tuote.</p>
+<h2 id="quick-start--6">Oikeiden valaisimien kytkeminen</h2>
+<p>Kun demo on tullut tutuksi, siirry omaan kalustoosi.</p>
+<ol><li><strong dir="auto">Yhdistä</strong>: tuo iPhone samaan verkkoon kuin DMX-solmusi. Tarkista kohdasta <code>Settings</code> → <code>OUTPUT</code>, että Nodes answering näyttää 1 tai enemmän ja Sending on vihreä (luku 02).</li><li><strong dir="auto">Patchaa</strong>: <code>Patch</code> → <code>＋ new patch</code> → <code>add new fixture</code>, ja aseta sitten malli, DMX-tila, universumi ja osoite. Aseta ne samoiksi kuin valaisimen omat asetukset (luku 03).</li><li><strong dir="auto">Rakenna valaistuskuva</strong>: aseta kirkkaus ja väri Home-näkymässä (luvut 04 ja 05).</li><li><strong dir="auto">Tallenna se</strong>: napauta näkymässä <code>Scenes</code> ＋ (luku 08).</li></ol>
+<p>Harjoitusrigi on aivan tavallinen show. Poista se kun patchaat omat valaisimesi, tai tee uusi komennolla <code>Settings</code> → <code>SHOWS</code> → <code>NEW SHOW</code>.</p>
+<h2 id="quick-start--7">Viisi asiaa, jotka kannattaa tietää ensin</h2>
+<ol><li><strong dir="auto">Fixture Lock voittaa blackoutin.</strong> Lukittu valaisin palaa B.O. -tilan läpi (luku 10).</li><li><strong dir="auto">Haettu tilanne päivittää itseään sitä mukaa kun työskentelet.</strong> Lukitse ne, jotka haluat jättää rauhaan (luku 08).</li><li><strong dir="auto">Lukkoja on kolmea lajia.</strong> Fixture Lock pitää lähdön paikallaan, Scene Lock suojaa tallennetun tilanteen ja Screen Lock estää vahinkokosketukset (luku 10).</li><li><strong dir="auto">Kun grand master on alle 100, ruudun reuna sykkii punaisena.</strong> Jos valaistus näyttää himmeältä, katso ensin sinne.</li><li><strong dir="auto">Jos samoille valaisimille lähettää toinen valopöytä, näet ilmoituksen <code>WAITING</code> tai <code>SHARED</code>.</strong> Molemmat selitetään luvussa 02.</li></ol>
+<div class="box warning"><b>WARNING</b><p>Valaisin, jossa Lock on päällä, ei sammu kun painat blackoutia, eikä sammu kun vedät grand masterin nollaan. Tarkista ennen ottoa, että lukot ovat pois päältä. Blackoutin aikana yhä palavien valaisimien määrä näkyy ruudun yläreunassa vihreän 🔒-merkin vieressä.</p></div>
+<div class="next"><b>Seuraava</b><ul><li>Missä kaikki on ruudulla → luku 01</li><li>Oikeiden valaisimien kytkeminen → luku 02</li><li>Valaistuskuvien tallentaminen → luku 08</li></ul></div><a class="top" href="#top">↑ Sisällys</a></section>
+<section class="chapter" id="s-screen"><h1 id="screen">01 Ruudun lukeminen</h1>
+<p class="lead">Mitä Home-näkymässä on ylhäältä alas, ja miten sitä luetaan silloin kun jokin näyttää olevan pielessä.</p>
+<figure class="shot"><div class="wrap" dir="ltr"><img src="img/1-home.png" alt="Home ensimmäisellä käynnistyksellä. Punaiset numerot vastaavat alla olevaa luetteloa." width="294" height="640" loading="lazy"><span class="pin" style="left:10%;top:9%">1</span><span class="pin" style="left:40%;top:9%">2</span><span class="pin" style="left:20%;top:22.5%">3</span><span class="pin" style="left:50%;top:30%">4</span><span class="pin" style="left:7%;top:38.5%">5</span><span class="pin" style="left:7%;top:55%">6</span><span class="pin" style="left:7%;top:77%">7</span><span class="pin" style="left:50%;top:94%">8</span></div><figcaption>Home ensimmäisellä käynnistyksellä. Punaiset numerot vastaavat alla olevaa luetteloa.</figcaption><ul class="pins"><li><b>1</b> Protokolla ja yhteyden tila</li><li><b>2</b> Grand master (GM)</li><li><b>3</b> Näytettävien valaisimien ja ryhmien valinta</li><li><b>4</b> Sivulta toiselle siirtyminen</li><li><b>5</b> Valaisimen pyöreä kuvake</li><li><b>6</b> Fader</li><li><b>7</b> Numeropainike</li><li><b>8</b> Viisi välilehteä</li></ul></figure>
+<h2 id="screen--1">Opettele ensin nämä seitsemän</h2>
+<p>Ennen tarkkoja taulukoita: nämä ovat ainoat paikat, jotka sinun on tunnettava.</p>
+<table>
+<tr><th>Paikka</th><th>Mitä se tekee</th></tr>
+<tr><td>GM</td><td>Kokonaiskirkkaus, ruudun yläreunassa</td></tr>
+<tr><td>Fixtures / Groups</td><td>Valitsee, mitkä valaisimet näkyvät</td></tr>
+<tr><td>Fader</td><td>Säätää kirkkautta</td></tr>
+<tr><td>Scenes</td><td>Tallentaa valaistuskuvat ja hakee ne takaisin</td></tr>
+<tr><td>Patch</td><td>Rekisteröi valaisimet</td></tr>
+<tr><td>Effects</td><td>Luetteloi ja pysäyttää käynnissä olevat efektit</td></tr>
+<tr><td>Settings</td><td>Lähtö, show&#x27;t, MIDI, sessio</td></tr>
+</table>
+<p>Kaikki tämän jälkeen tuleva on yksityiskohtaa.</p>
+<h2 id="screen--2">Viisi välilehteä</h2>
+<p>Home on se näkymä, jossa työskentelet. Toisen välilehden napauttaminen avaa paneelin sen päälle. Palaa Home-näkymään vetämällä yläreunan kahvaa alas tai napauttamalla Done.</p>
+<table>
+<tr><th>Välilehti</th><th>Mihin se on</th><th>Katso</th></tr>
+<tr><td>Scenes</td><td>Valaistuskuvien tallentaminen ja hakeminen</td><td>Luku 08</td></tr>
+<tr><td>Patch</td><td>Valaisimet, osoitteet, tilat, ryhmät</td><td>Luku 03</td></tr>
+<tr><td>Home</td><td>Kirkkauden säätö fadereilla</td><td>Luku 04</td></tr>
+<tr><td>Effects</td><td>Efektien luettelointi, säätö ja pysäytys</td><td>Luku 09</td></tr>
+<tr><td>Settings</td><td>DMX-lähtö, show&#x27;t, MIDI, sessio, asetukset</td><td>Luvut 02, 11–13</td></tr>
+</table>
+<h2 id="screen--3">Tilarivi</h2>
+<p>Vasemmalla on protokolla ja yhteyden tila. ARTNET on Art-Net, SACN on sACN, ja BLUETOOTH tarkoittaa että lähetys kulkee vain Bluetoothin kautta.</p>
+<table>
+<tr><th>Näkyy</th><th>Merkitys</th></tr>
+<tr><td>Vihreä piste</td><td>Lähettää</td></tr>
+<tr><td>Keltainen piste</td><td>Hidastettu tai yhteyttä muodostetaan uudelleen (Reconnecting…)</td></tr>
+<tr><td>Punainen piste, No node</td><td>Mikään ei vastaa</td></tr>
+<tr><td>Punainen piste, Blocked</td><td>iOS estää liikenteen</td></tr>
+<tr><td>Harmaa piste, idle</td><td>Pysäytetty</td></tr>
+<tr><td>WAITING ja IP-osoite</td><td>Toinen valopöytä löytyi, joten tämä pidättäytyy</td></tr>
+<tr><td>SHARED ja IP-osoite</td><td>Toinen valopöytä lähettää samaan universumiin. Tämäkin lähettää edelleen</td></tr>
+<tr><td>JOINED ja nimi</td><td>Sessiossa. DMX lähtee isännältä</td></tr>
+</table>
+<p>Vihreä piste ei todista, että valaisin olisi saanut mitään. Luku 02 kertoo, miten asian tarkistat, ja luku 14 sen, mitä tehdä kun jokin menee vikaan.</p>
+<p>Rivin keskellä ja oikeassa reunassa ovat nämä.</p>
+<table>
+<tr><th>Kohta</th><th>Napautus</th><th>Pohjaan painaminen tai huomio</th></tr>
+<tr><td>GM 100</td><td>Avaa grand masterin paneelin</td><td>Pidä pohjassa, niin saat sen asetukset. Sykkii punaisena alle arvon 100</td></tr>
+<tr><td>B.O.</td><td>Poistaa blackoutin</td><td>Korvaa GM:n blackoutin ajaksi</td></tr>
+<tr><td>🔌 n (punainen)</td><td>Ei mitään</td><td>Universumeja on kytketty pois. Kytke ne takaisin: Settings → OUTPUT</td></tr>
+<tr><td>🔒 n (vihreä)</td><td>Ei mitään</td><td>Lukittuja valaisimia palaa yhä blackoutin aikana</td></tr>
+<tr><td>BATTERY SAVE</td><td>Kytkee päälle ja pois</td><td>Pidä pohjassa, niin asetat määrän ja häivytyksen</td></tr>
+<tr><td>SCREEN LOCK</td><td>Ei lukitse</td><td>Lukitse ruutu pitämällä pohjassa 0.5 sekuntia</td></tr>
+</table>
+<h2 id="screen--4">Home-näkymän osat</h2>
+<table>
+<tr><th>Kohta</th><th>Miten sitä käytetään</th></tr>
+<tr><td>Fixtures / Groups</td><td>Vaihtaa mallin mukaisen ja ryhmän mukaisen näkymän välillä</td></tr>
+<tr><td>10 / 5</td><td>Fadereita sivulla. Viidellä kukin on leveämpi</td></tr>
+<tr><td>HISTORY</td><td>Avaa aiempien tilojen luettelon</td></tr>
+<tr><td>Mallien ja ryhmien painikkeet</td><td>Napauta, niin näet ne valaisimet. Pidä pohjassa, niin asetat värin ja kirkkauden niille kaikille</td></tr>
+<tr><td>CLEAR n</td><td>Poistaa valinnan. Valo ei muutu</td></tr>
+<tr><td>‹ / ›</td><td>Siirtää sivulta toiselle</td></tr>
+<tr><td>Luku</td><td>Kirkkaus 0–100. Näkyy suurena yläreunassa vedon aikana</td></tr>
+<tr><td>Valaisimen pyöreä kuvake (…)</td><td>Napauta, niin valitset. <strong dir="auto">Pidä pohjassa</strong>, niin avaat kyseisen valaisimen paneelin</td></tr>
+<tr><td>Fader</td><td>Vedä ylös ja alas, niin säädät kirkkautta</td></tr>
+<tr><td>Mallin nimi</td><td>Merkitsee saman mallin ja tilan yhtenäisen jakson</td></tr>
+<tr><td>Numeropainike</td><td>Valaisimen numero. Pianotilassa se muuttaa kirkkautta pohjassa pidettäessä</td></tr>
+<tr><td>⏻</td><td>Kytkee lähdön pois ja päälle arvon säilyttäen</td></tr>
+<tr><td>COLOR</td><td>Asettaa värin ja kirkkauden valituille valaisimille</td></tr>
+<tr><td>EFFECT</td><td>Ajaa efektin valituille valaisimille</td></tr>
+<tr><td>PIXELS</td><td>Avaa ja sulkee pikselivalaisimien solut</td></tr>
+<tr><td>＋ −</td><td>Kierrättää pianotilaa: LOCK → ＋ → −</td></tr>
+<tr><td>FINE</td><td>Kierrättää herkkyyttä: tavallinen → FINE (1/10) → FINE+ (1/100)</td></tr>
+</table>
+<p>COLOR ei ole käytettävissä silloin kun mitään ei ole valittuna eikä valaisimilla, joissa ei ole väriä. EFFECT vaatii valinnan. PIXELS vaatii, että sivulla on pikselivalaisin.</p>
+<h2 id="screen--5">Värit ja merkit</h2>
+<table>
+<tr><th>Väri tai merkki</th><th>Merkitys</th></tr>
+<tr><td>Keltainen</td><td>Valittu tai aktiivinen</td></tr>
+<tr><td>Punainen</td><td>Blackout, matala grand master, verkko-ongelma, pianotila. Jotain tarkistettavaa</td></tr>
+<tr><td>Vihreä</td><td>Lähettää. Fixture Lock. BATTERY SAVE päällä</td></tr>
+<tr><td>Violetti</td><td>Lähtö kytketty pois tai ruutu lukittu</td></tr>
+<tr><td>Syaani</td><td>Session toinen laite työstää tätä</td></tr>
+<tr><td>Oranssi</td><td>Asettamassasi rajassa kiinni</td></tr>
+<tr><td>Harmaa</td><td>Ei käytettävissä tai pysäytetty</td></tr>
+</table>
+<p>Pyöreä kuvake kantaa valaisimen värin ja sen todellisen lähdön. Valinta näkyy keltaisena kehyksenä, pois kytketty lähtö violettina renkaana ja ⏻-merkkinä, lukko vihreänä ulkorenkaana ja 🔒-merkkinä. Käynnissä oleva efekti saa sen liikkumaan.</p>
+<p>Punainen syke ruudun reunoilla tarkoittaa, että grand master on alle arvon 100. Vihreä reuna tarkoittaa, että BATTERY SAVE on päällä. Kun molemmat ovat päällä, punainen on ulkona ja vihreä sisällä. Blackoutin aikana punaisen reunan tilalla on B.O. tilarivillä.</p>
+<div class="next"><b>Seuraava</b><ul><li>Miltä faderit tuntuvat → luku 04</li><li>Värin asettaminen → luku 05</li><li>Mikään ei syty → luku 14</li></ul></div><a class="top" href="#top">↑ Sisällys</a></section>
+<section class="chapter" id="s-output"><h1 id="output">02 DMX:n lähettäminen — OUTPUT</h1>
+<p class="lead">Yhteyden pystyttäminen valokalustoosi, ja sen tarkistaminen että data myös menee perille.</p>
+<figure class="shot"><div class="wrap" dir="ltr"><img src="img/6-output.png" alt="Settings → OUTPUT. Punaiset numerot vastaavat alla olevaa luetteloa." width="640" height="1334" loading="lazy"><span class="pin" style="left:26%;top:22.7%">1</span><span class="pin" style="left:14%;top:32.6%">2</span><span class="pin" style="left:88%;top:32.6%">3</span><span class="pin" style="left:26%;top:79.5%">4</span><span class="pin" style="left:50%;top:96.7%">5</span></div><figcaption>Settings → OUTPUT. Punaiset numerot vastaavat alla olevaa luetteloa.</figcaption><ul class="pins"><li><b>1</b> Protokolla. Art-Net tai sACN, jompikumpi</li><li><b>2</b> Verkot. Lähetys kulkee niihin, jotka on rastitettu</li><li><b>3</b> Kuinka moni solmu vastasi. no reply tarkoittaa ettei yhtään löytynyt</li><li><b>4</b> Kohde. AUTO sopii useimpiin rigeihin</li><li><b>5</b> Etsi solmut uudelleen</li></ul></figure>
+<h2 id="output--1">Ensimmäinen yhteys</h2>
+<h3 id="output--2">Yksi Art-Net-solmu</h3>
+<ol><li>Tuo iPhone samaan langattomaan tai langalliseen verkkoon kuin solmu.</li><li>Avaa Settings → OUTPUT.</li><li>Valitse Art-Net ja AUTO. Molemmat ovat oletuksia.</li><li>Tarkista, että Nodes answering näyttää 1 tai enemmän ja Sending on vihreä.</li><li>Liikuta faderia Home-näkymässä ja katso, miten valaisin vastaa.</li></ol>
+<p>Kanau lähettää jokaista patchattua universumia jatkuvasti, tavallisesti nopeudella 44 Hz. Aloituspainiketta ei ole. Lähetys voi keskeytyä tai pysähtyä, jos toinen valopöytä havaitaan, jos verkkoasetukset muuttuvat tai jos iOS pidättää luvan.</p>
+<h2 id="output--3">Asetukset tarkemmin</h2>
+<h3 id="output--4">Protokolla ja verkot</h3>
+<p>Art-Net ja sACN ovat toisensa poissulkevia: valitse toinen. CRMX Bluetoothin yli kulkee kumman tahansa rinnalla.</p>
+<p>Network luettelee langattomat, Ethernet- ja Hotspot-yhteytesi osoitteineen ja sen, montako solmua kussakin vastasi.</p>
+<ul><li>Oletuksena käytetään jokaista käytettävissä olevaa verkkoa.</li><li>Kun kaikki ovat valittuina, yhden napautus jättää päälle vain sen. Sen jälkeen kukin napautus kytkee yhden päälle tai pois.</li><li>Kytke kaikki pois, eikä verkkoon lähde mitään. Bluetooth lähettää edelleen.</li><li>Yhteyttä, jonka kohdalla lukee no address, ei voi valita.</li></ul>
+<p>Jos käytät langallista ja langatonta rinnakkain, tarkista että molemmat näkyvät luettelossa.</p>
+<h3 id="output--5">Kohteen valinta</h3>
+<table>
+<tr><th>Asetus</th><th>Minne lähetys menee</th><th>Milloin tätä käytetään</th></tr>
+<tr><td>AUTO (Art-Net)</td><td>Unicastina vastanneille solmuille, ja lisäksi yksi broadcast sekunnissa kuhunkin verkkoon. Pelkkä broadcast, jos mikään ei vastannut</td><td>Tavallinen valinta</td></tr>
+<tr><td>Broadcast (Art-Net)</td><td>Joka ruutu kunkin verkon aliverkkoon</td><td>Kun solmu ilmoittaa väärän osoitteen ja AUTO päivittyy hitaasti</td></tr>
+<tr><td>Unicast</td><td>Suoraan syöttämiisi osoitteisiin</td><td>Kun broadcast ei yllä perille tai haluat nimetä kohteen</td></tr>
+<tr><td>255.255.255.255 (Art-Net)</td><td>Broadcast omaan segmenttiin. Ei kulje reitittimen läpi</td><td>Kun osoitteet eivät täsmää ja tavallinen broadcast ei toimi. iOS saattaa estää tämän</td></tr>
+<tr><td>Multicast (sACN)</td><td>Kunkin universumin multicast-osoitteeseen</td><td>sACN:n oletus</td></tr>
+</table>
+<p>Unicastilla kirjoitat solmun osoitteen ja napautat Add. Jos yhtään ei ole syötetty, saat ilmoituksen No node IPs entered. eikä mitään lähetetä. Jokainen universumi menee jokaiseen syöttämääsi osoitteeseen.</p>
+<p>Jos Nodes answering näyttää AUTO-tilassa 1 tai enemmän mutta valaisimet päivittyvät vain noin kerran sekunnissa, tarkista ilmoittaako solmu itsestään väärän osoitteen. Katso kohtaa Destination ja kokeile asetusta Broadcast. Luku 14 käy läpi viiveen muut syyt.</p>
+<h3 id="output--6">RESCAN</h3>
+<p>Art-Netin alla olevan RESCAN-painikkeen napautus päivittää solmuluettelon. Käytä sitä kun olet lisännyt tai poistanut kalustoa tai muuttanut osoitetta. Ilman sitäkin uusi solmu ilmestyy noin 3 sekunnissa ja poistettu häviää noin ajassa 10.</p>
+<p>Lähetys jatkuu etsinnän aikana. RESCAN ei ole käytettävissä ilman kelvollista verkkoa.</p>
+<h3 id="output--7">iOS:n käyttöoikeudet</h3>
+<p>Punainen palkki, jossa lukee iOS is blocking this., tarkoittaa jompaakumpaa näistä.</p>
+<ul><li><strong dir="auto">Paikallisverkko</strong>: kytke päälle iPhonen Settings → Kanau → Local Network.</li><li><strong dir="auto">sACN-multicast</strong>: jos näet ilmoituksen iOS blocked multicast., vaihda asetukseen Unicast ja syötä solmujen osoitteet. Multicast-oikeus myönnetään vain TestFlight- ja App Store -versioille, ei kehitysversiolle.</li></ul>
+<h3 id="output--8">Universumit ja Art-Netin numerointi</h3>
+<p>Universes luettelee jokaisen patchatun universumin, sen valaisinmäärän, montako niistä palaa, ja ON/OFF-kytkimen.</p>
+<div class="box important"><b>IMPORTANT</b><p>OFF <strong dir="auto">ei</strong> lopeta lähettämistä. Se lähettää kyseiseen universumiin nollia, jottei vastaanotin jäisi pitämään viimeisiä arvojaan ja palamaan. Pois kytkettyjen universumien määrä näkyy ruudun yläreunassa 🔌-merkin vieressä.</p></div>
+<p>Jos solmusi haluaa yhden numeron sijaan arvot Net / Sub-Net / Universe, kytke päälle Settings → SETTINGS → Art-Net → Net / Sub / Uni. Suhde on <strong dir="auto">Net × 256 + Sub × 16 + Uni</strong>.</p>
+<p>sACN:n prioriteetti voi olla 0, 100 tai 200. Oletus on 100. Kun useampi lähde lähettää samaan universumiin, vastaanotin seuraa korkeinta prioriteettia.</p>
+<h3 id="output--9">CRMX Bluetoothin yli</h3>
+<ol><li>Kytke Bluetooth päälle: Settings → OUTPUT → CRMX (Bluetooth).</li><li>Anna iOS:lle lupa Bluetoothin käyttöön, kun se ensimmäisen kerran kysyy.</li><li>Valitse lähetin luettelosta. Uusi napautus katkaisee yhteyden.</li></ol>
+<p>Valitsemasi lähetin kantaa universumia 1 (U1). Seuraavalla kerralla Bluetoothin kytkeminen päälle yhdistää samaan lähettimeen.</p>
+<p>Saman universumin lähettäminen samaan valaisimeen sekä verkon että Bluetoothin yli voi saada sen välkkymään. Katso varoitus CRMX-osiosta ja kytke toinen reitti pois. Kanau ei valitse puolestasi.</p>
+<p>Jos lähetin ei suostu ottamaan Art-Netiä vastaan sen jälkeen kun olet kytkenyt Bluetoothin pois, tarkista sen oma Bluetooth-asetus ja käynnistä laite uudelleen. Aputure Sidus Four -lähettimessä tarkista myös laitteen oma Sidus BT -asetus.</p>
+<h3 id="output--10">Kun toinen valopöytä löytyy</h3>
+<table>
+<tr><th>Näkyy</th><th>Mitä se tarkoittaa ja mitä tehdä</th></tr>
+<tr><td>WAITING + IP-osoite</td><td>Toinen valopöytä lähetti jo tämän käynnistyessä, joten tämä pidättäytyy. Pysäytä toinen, tai napauta ilmoitusta ja valitse Send anyway? → Send. Jos toinen on Kanau-isäntä, voit sen sijaan liittyä sen sessioon</td></tr>
+<tr><td>SHARED + IP-osoite</td><td>Toinen valopöytä ilmestyi tämän käynnistyttyä. Lähetys jatkuu, joten pysäytä toinen niistä jos on tarpeen</td></tr>
+</table>
+<p>Jos kaksi laitetta käynnistyy yhtä aikaa ja molemmat pidättäytyvät, se jonka osoite on pienempi alkaa lähettää uudelleen.</p>
+<h2 id="output--11">DMX Diagnostics — sen lukeminen mitä tapahtuu</h2>
+<p>OUTPUT-näkymän alaosa on siellä <strong dir="auto">näyttämässä, mihin asiat pysähtyivät</strong>. Se ei ole joukko asetuksia. Kun lähtö on hidas tai puuttuu, lue sitä ylhäältä alas (luku 14).</p>
+<table>
+<tr><th>Kohta</th><th>Miten sitä luetaan</th></tr>
+<tr><td>Destination</td><td>Minne lähetys todella menee. ↦ osoitteen jäljessä tarkoittaa unicastia vastanneeseen solmuun</td></tr>
+<tr><td>Medium</td><td>Käytössä olevat yhteydet, esimerkiksi wi-fi + ethernet</td></tr>
+<tr><td>Sending</td><td>Paketit viimeisen sekunnin aikana. Noin 44 on normaali. nothing tarkoittaa ettei yhtään lähtenyt</td></tr>
+<tr><td>Clock</td><td>Pisin väli lähetysten välillä. Noin 23 ms on normaali. Yli 100 ms viittaa puhelimeen</td></tr>
+<tr><td>Touch → wire</td><td>Sormesta pakettiin. Noin 25 ms on normaali</td></tr>
+<tr><td>Nodes answering</td><td>Montako vastasi, nimineen, osoitteineen, yhteyksineen ja kiertoaikoineen. Suluissa oleva luku on pisin viimeisten 10 sekunnin aikana</td></tr>
+<tr><td>Type these into the node</td><td>Solmuun syötettävät Net / Sub / Uni, kun se näyttö on päällä</td></tr>
+</table>
+<p>Nämä rajaavat ongelmaa; ne eivät todista onnistumista. Sending voi olla vihreä, vaikka epäsopiva asetus tai vika toisessa päässä pitää valaisimet pimeinä. Kalusto, joka ei vastaa kyselyyn, näkyy nollana kohdassa Nodes answering vaikka se vastaanottaisikin.</p>
+<h3 id="output--12">DMX MONITOR</h3>
+<p>Settings → DMX MONITOR näyttää kunkin universumin kaikki 512 kanavaa sellaisina kuin ne lähtevät ulos. Se päivittyy 10 kertaa sekunnissa eikä vaikuta lähettämiseen.</p>
+<div class="next"><b>Seuraava</b><ul><li>Valaisimien patchaaminen → luku 03</li><li>Mitään ei tule perille, tai se on hidasta → luku 14</li></ul></div><a class="top" href="#top">↑ Sisällys</a></section>
+<section class="chapter" id="s-patch"><h1 id="patch">03 Valaisimien patchaaminen — Patch</h1>
+<p class="lead">Rekisteröi käyttämäsi valaisimet ja aseta malli, DMX-tila, universumi, osoite, numero ja ryhmät.</p>
+<p>Kirkkaus ja väri asetetaan Home-näkymässä (luvut 04 ja 05).</p>
+<figure class="shot"><div class="wrap" dir="ltr"><img src="img/4-patch.png" alt="Patch-näkymä. Patchatut valaisimet on ryhmitelty mallin ja tilan mukaan." width="294" height="640" loading="lazy"></div><figcaption>Patch-näkymä. Patchatut valaisimet on ryhmitelty mallin ja tilan mukaan.</figcaption></figure>
+<h2 id="patch--1">Valaisimien lisääminen</h2>
+<ol><li>Avaa Patch → ＋ new patch ja napauta add new fixture, niin kentät tulevat näkyviin.</li><li>Valitse Manufacturer → Fixture → Mode. Tilan on vastattava sitä, joka on asetettu itse valaisimeen.</li><li>Aseta kappalemäärä, universumi ja aloitusosoite.</li><li>Tarkista alue ja mahdolliset varoitukset, ja napauta sitten Add. Tallennus tapahtuu lisäyksen yhteydessä.</li></ol>
+<table>
+<tr><th>Kenttä</th><th>Mikä se on</th></tr>
+<tr><td>Favourites</td><td>Merkitse malli tähdellä, niin löydät sen suoraan ensi kerralla</td></tr>
+<tr><td>Name</td><td>Näyttönimi. Oletuksena mallin nimi, jaettuna kaikkien saman mallin valaisimien kesken</td></tr>
+<tr><td>Fixture number</td><td>Numero, jolla kutsut sitä lattialla. Voi jättää tyhjäksi. Alkaa käytössä olevasta suurimmasta plus yksi</td></tr>
+<tr><td>Label</td><td>Lyhyt merkintä näyttöä varten. Käyttää oletusta, jos jätät tyhjäksi</td></tr>
+<tr><td>How many</td><td>Enintään 4,096</td></tr>
+<tr><td>Universe / Address</td><td>Oletuksena U1 / 1. Universumin vaihtaminen palauttaa osoitteeksi 1. U0 on sallittu</td></tr>
+<tr><td>Offset</td><td>Valaisimien välinen jako. Täytetään tilan kanavamäärästä</td></tr>
+<tr><td>Gap</td><td>Valaisimien väliin jätettävät ylimääräiset kanavat</td></tr>
+<tr><td>Battery save</td><td>Merkitsee uudet valaisimet BATTERY SAVE -toimintoon</td></tr>
+<tr><td>Label color</td><td>Numeron tausta. Seitsemän väriä, tai ei mitään</td></tr>
+<tr><td>Map</td><td>512 kanavan asettelu. Vedä ja päästä irti, niin asetat aloitusosoitteen</td></tr>
+</table>
+<p>Ensimmäistä seuraava valaisin alkaa edellisestä aloitusosoitteesta plus Offset ja Gap. Kaikki mikä menee yli rajan 512 siirtyy seuraavaan universumiin. Tilan kanavamäärää pienempi Offset nostaa varoituksen, mutta voit jatkaa.</p>
+<p>Jälkeenpäin saat tuloksen tyyliin Added 3 × Titan Tube — U1 1–15. Already patched antaa lisätä lisää jo käytössä olevaa mallia. Patched now näyttää nykyisen asettelun.</p>
+<h2 id="patch--2">Kaksi numerolajia</h2>
+<table>
+<tr><th>Numero</th><th>Mikä se on</th></tr>
+<tr><td>Unit no.</td><td>Juokseva numero mallin sisällä. Annetaan puolestasi</td></tr>
+<tr><td>Fixture number</td><td>Numero, jota käytät lattialla. Sinä asetat sen</td></tr>
+</table>
+<p>Kumpi näistä Home-näkymässä näkyy, asetetaan kohdassa Settings → SETTINGS → Fixture numbers → Show the fixture number. Unit no. on oletus. Samat valaisinnumerot kahdesti nostavat varoituksen, mutta ne sallitaan.</p>
+<h2 id="patch--3">Mallit ja tilat</h2>
+<p>Tämän version mukana tulee <strong dir="auto">45 valmistajaa, 578 valaisinta ja 11,347 tilaa</strong>. Kaikelle mitä kirjastossa ei ole, käytä Generic-määrittelyjä tai kohtaa Custom fixtures.</p>
+<p>Generic sisältää nämä: Dimmer, Dimmer 16-bit, Bi-color, CCT, RGB, RGBW, Dimmer + RGB, Dimmer + RGBW, Bulb ja Desk lamp.</p>
+<ul><li><strong dir="auto">PROVISIONAL</strong> (Advanced): paikanvaraajatila, jota käytetään silloin kun DMX-taulukkoa ei ole käyty läpi. Se lähettää kirkkauden kanavalla 1 eikä muuta.</li><li><strong dir="auto">Tilat, joissa ei ole himmenninkanavaa</strong>: fader ajaa värikanavia yhdessä ja toimii virtuaalisena himmentimenä.</li></ul>
+<h2 id="patch--4">Patchattujen valaisimien muuttaminen</h2>
+<p>Patched luettelee valaisimet mallin ja tilan mukaan. Napauta otsikkoa, niin taitat sen kokoon. Napauta valaisimen riviä, niin avaat sen patch-asetukset.</p>
+<p>⚠ merkitsee päällekkäistä osoitetta tai kanavan 512 yli menevää jaksoa. Lähetys jatkuu merkin näkyessä, joten tarkista asetukset. n fixture data problems viittaa vikoihin, jotka löytyivät valaisindataa ladattaessa; napauta sitä, niin näet erittelyn.</p>
+<p>Tässä luettelossa työskentely ei muuta sitä, mitä valaisimia Home näyttää.</p>
+<h2 id="patch--5">Monen muuttaminen kerralla</h2>
+<p>Napauta Select many ja valitse valaisimet. Mallirivin ✓ ottaa kaikki sen mallin valaisimet.</p>
+<table>
+<tr><th>Toiminto</th><th>Mitä se tekee</th></tr>
+<tr><td>Select all / Select none</td><td>Ottaa tai tyhjentää kaiken, myös kokoon taitetut rivit</td></tr>
+<tr><td>Name</td><td>Numeroi nimen lopun siinä järjestyksessä kuin valitsit</td></tr>
+<tr><td>Number</td><td>Asettaa valaisinnumerot siinä järjestyksessä kuin valitsit</td></tr>
+<tr><td>Address</td><td>Latoo ne uudelleen universumista, aloitusosoitteesta ja välistä</td></tr>
+<tr><td>Battery</td><td>Merkitsee ne BATTERY SAVE -toimintoon tai poistaa merkinnän</td></tr>
+<tr><td>New group</td><td>Rakentaa valinnasta ryhmän</td></tr>
+<tr><td>Delete</td><td>Poistaa ne. Tarkista lukumäärä ennen kuin vahvistat</td></tr>
+</table>
+<p>Valaisimen poistaminen poistaa myös sen kirkkauden, värin ja rajat, ja ottaa sen pois jokaisesta tilanteesta. Ryhmän sisältä poistaminen poistaa sen vain siitä ryhmästä; itse valaisin jää.</p>
+<h2 id="patch--6">Re-patch — siirtäminen vapaaseen tilaan</h2>
+<ol><li>Avaa Patch → Re-patch.</li><li>Valitse osoitejärjestyksessä olevasta luettelosta siirrettävä valaisin.</li><li>Napauta vapaata aluetta. Valaisin siirtyy sen alkuun.</li></ol>
+<p>Vain riittävän suuret alueet tarjotaan. Päällekkäiset valaisimet näkyvät punaisina.</p>
+<h2 id="patch--7">Ryhmien rakentaminen</h2>
+<ol><li>Napauta ＋ new group ja anna sille nimi.</li><li>Valitse valaisimet siinä järjestyksessä, jossa haluat ne Home-näkymään.</li><li>Napauta CREATE.</li></ol>
+<p>Valaisin voi olla useassa ryhmässä. Sitä ei kopioida: sen muuttaminen mistä tahansa ryhmästä muuttaa samaa valaisinta. Ryhmään lisääminen jättää sen myös kohtaan All.</p>
+<p>Ryhmän nimen napauttaminen antaa asettaa nimen, nähdä lukumäärän ja osoitealueen ja asettelun, järjestää uudelleen tai poistaa ryhmän. Edit group — add &amp; reorder lisää ja järjestelee valaisimia; Add to an existing group panee nykyisen valinnan valmiiseen ryhmään.</p>
+<p>Näyttääkö Patch rivin All, asetetaan kohdassa Settings → SETTINGS → Groups → Show the All row.</p>
+<h2 id="patch--8">Valaisimet joita kirjastossa ei ole (Advanced)</h2>
+<p>Custom fixtures pitää sisällään itse lisäämäsi määrittelyt. Ne ovat käytettävissä jokaisessa show&#x27;ssa. Määrittelyn poistaminen ei vaikuta valaisimiin, jotka on jo patchattu sen pohjalta.</p>
+<h3 id="patch--9">GDTF Share -palvelusta</h3>
+<ol><li>Avaa ＋ Browse GDTF Share ja kirjaudu sisään painikkeella SIGN IN GDTF Share -tunnuksillasi.</li><li>Päivitä luettelo painikkeella REFRESH, ja valitse sitten valmistaja, valaisin, revisio ja tila. Search kattaa kaikki valmistajat.</li><li>Lue tuontiraportti ja valitse SAVE, SAVE &amp; EDIT tai SAVE &amp; PATCH.</li></ol>
+<p>SAVE &amp; PATCH avaa patch-näkymän kyseinen määrittely valittuna. Remember on this device tallentaa kirjautumisesi; FORGET poistaa sen. Jo haetut määrittelyt jäävät. Kirjautumisesi menee GDTF Share -palveluun.</p>
+<h3 id="patch--10">GDTF-tiedostosta</h3>
+<p>＋ Import a GDTF file → ＋ Open a GDTF file, valitse .gdtf, tarkista tila ja tuontiraportti, ja tallenna sitten. Verkkoa ei tarvita.</p>
+<p>Raportti luettelee sen, mitä ei voitu tuoda mukana. Kauas toisistaan jaetuista osoitteista koostuva 16-bittinen arvo säilyttää vain karkean tavunsa, käyttämättömät osoitteet pidetään tyhjinä paikkoina, ja toisella DMX-katkolla olevat kanavat pudotetaan. Kun osoitteet menevät päällekkäin, aiempi kanava voittaa. Tuntemattomat toiminnot säilyttävät alkuperäiset nimensä.</p>
+<p>Määrittely, jossa lukee <code>Imported data is not verified.</code>, kannattaa tarkistaa todellista valaisinta vasten. Korjaa väärät roolit painikkeella SAVE &amp; EDIT; korjaus vaikuttaa niihin valaisimiin, jotka patchaat sen pohjalta jälkeenpäin. <code>This mode has no channels.</code> tarkoittaa, että sinun kannattaa valita toinen tila.</p>
+<h3 id="patch--11">Käsin, DMX-taulukosta</h3>
+<p>Avaa ＋ Build by hand ja aloita tyhjästä määrittelystä tai mallipohjasta: Dimmer, CCT, Bi-color, RGB, HSI, x y, CCT + HSI, Dimmer + RGBW, Full color, Full color + white, Multi-emitter.</p>
+<p>Anna kullekin kanavalle nimilappu, ja aseta rooli, 8 tai 16 bittiä, oletus ja todellinen yksikkö tarpeen mukaan. Kanavanumerot ja kokonaismäärä lasketaan puolestasi. Jätä paikka käyttämättömäksi jos et tiedä sen roolia, ja voit silti ajaa sitä kohdasta Channels. CREATE kieltäytyy tallentamasta niin kauan kuin näkyvissä on ERROR.</p>
+<h3 id="patch--12">Kopioimalla olemassa olevasta</h3>
+<p>Duplicate and edit antaa muuttaa nimen, värilämpötila-alueen, kanavien roolit ja nimet, nimilaput ja oletukset. Kanavamäärää, 16-bittistä asettelua, alueita ja kytkinrakennetta ei voi muuttaa.</p>
+<div class="next"><b>Seuraava</b><ul><li>Kirkkauden asettaminen → luku 04</li><li>Valaisinkohtaiset asetukset → luku 06</li><li>Patchattu valaisin ei käyttäydy oikein → luku 14</li></ul></div><a class="top" href="#top">↑ Sisällys</a></section>
+<section class="chapter" id="s-intensity"><h1 id="intensity">04 Kirkkauden säätäminen — Home</h1>
+<p class="lead">Home-näkymän faderit. Tämä on Kanaun sydän.</p>
+<h2 id="intensity--1">Faderin liikuttaminen</h2>
+<p>Fader vastaa <strong dir="auto">siihen matkaan, jonka sormesi kulkee</strong>, ei siihen kohtaan, johon kosketit. Voit ajaa sitä numerosta, pyöreästä kuvakkeesta tai faderin alapuolisesta tyhjästä tilasta. Se on rakennettu niin, että voit työskennellä katse näyttämöllä eikä kädessä.</p>
+<figure class="shot"><div class="wrap" dir="ltr"><img src="img/zoom-dot.png" alt="Ylhäältä alas: nykyinen kirkkaus, valaisimen pyöreä kuvake, fader. Napauta kuvaketta, niin valitset; pidä pohjassa, niin avaat kyseisen valaisimen paneelin." width="640" height="388" loading="lazy"></div><figcaption>Ylhäältä alas: nykyinen kirkkaus, valaisimen pyöreä kuvake, fader. Napauta kuvaketta, niin valitset; pidä pohjassa, niin avaat kyseisen valaisimen paneelin.</figcaption></figure>
+<p>Nuppi kasvaa hieman kun kosketat sitä, eikä <strong dir="auto">mikään liiku ennen kuin olet vetänyt lyhyen matkan</strong>, joten sormen lepuuttaminen sen päällä on turvallista. Vedon aikana numero, nimi ja arvo näkyvät suurina ruudun yläreunassa. Jos olet asettanut rajat, liike tapahtuu niiden sisällä.</p>
+<h2 id="intensity--2">FINE</h2>
+<table>
+<tr><th>Toiminto</th><th>Mitä tapahtuu</th></tr>
+<tr><td>Lyhyt napautus</td><td>Kierrättää: tavallinen → FINE (1/10) → FINE+ (1/100) → tavallinen</td></tr>
+<tr><td>Pohjassa pitäminen</td><td>Seuraava porras pidon ajan. Palaa tavalliseen kun päästät irti</td></tr>
+</table>
+<p>Kesken vedon vaihtaminen ei saa arvoa hyppäämään. FINE vaikuttaa myös raakakanaviin sekä Pan- ja Tilt-arvoihin.</p>
+<h2 id="intensity--3">Monen liikuttaminen kerralla</h2>
+<p>Valitse kaksi tai useampi pyöreä kuvake, ja vedä sitten yhtä fadereista. Ne kaikki liikkuvat saman verran ja keskinäiset erot säilyvät. Kun yksi osuu rajaan, muut jatkavat. Lukitut valaisimet jäävät ulkopuolelle.</p>
+<p>Tämä ei ole sama asia kuin usean valaisimen työstäminen COLOR-paneelissa, jossa ne kaikki päätyvät samaan arvoon.</p>
+<h2 id="intensity--4">Numeropainikkeet pianona</h2>
+<p>Oikean alanurkan ＋ − -painike asettaa tilan.</p>
+<table>
+<tr><th>Tila</th><th>Kun numeropainiketta pidetään pohjassa</th></tr>
+<tr><td>LOCK (oletus)</td><td>Mikään ei muutu</td></tr>
+<tr><td>＋</td><td>Menee ylärajaan, oletuksena arvoon 100</td></tr>
+<tr><td>−</td><td>Menee alarajaan, oletuksena nollaan</td></tr>
+</table>
+<p>Kun päästät irti, arvo palaa siihen missä se oli. Voit pitää useampaa pohjassa yhtä aikaa tai liu&#x27;uttaa sivusuunnassa ja soittaa niitä vuoron perään. Lukitut valaisimet eivät vastaa.</p>
+<p>Painikkeet muuttuvat punaisiksi kun ＋ tai − on viritettynä. Käynnistyksessä tila on aina LOCK.</p>
+<h2 id="intensity--5">⏻ — pelkkä lähtö</h2>
+<p>⏻-painikkeen napautus kytkee valaisimen lähdön pois ja päälle arvon säilyttäen. Se muuttuu violetiksi pois kytkettynä, ja numero jää näkyviin. Faderin liikuttaminen lähdön ollessa pois ei sytytä mitään.</p>
+<p>ON/OFF on oletus. Valaisimen kohdasta Switch function voit vaihtaa sen asetukseksi FLASH ON tai FLASH OFF, jotka kestävät vain pidon ajan. Lukitut valaisimet eivät vastaa.</p>
+<h2 id="intensity--6">GM ja B.O.</h2>
+<p>Yläreunan GM-painikkeen napautus avaa grand master -faderin sekä painikkeet B.O. ja →100.</p>
+<ul><li><strong dir="auto">GM-fader</strong> asettaa kokonaiskirkkauden. Se on suhteellinen, ja FINE toimii siinä.</li><li><strong dir="auto">B.O.</strong> kytkee blackoutin päälle ja pois. GM:n arvo säilyy.</li><li><strong dir="auto">→100</strong> ilmestyy kun GM on alle arvon 100, ja palauttaa sen.</li></ul>
+<p>GM:n pohjassa pitäminen tarjoaa arvot 100, 75, 50, 25, 12.5 ja 0. Siellä oleva 0 kytkee blackoutin päälle; se ei aseta GM:ää nollaan.</p>
+<p>Näiden painikkeiden häivytys asetetaan kohdassa Settings → SETTINGS → Master fade. SNAP on oletus. Faderin vetäminen sormella on aina välitön.</p>
+<div class="box warning"><b>WARNING</b><p><strong dir="auto">Valaisin, jossa Lock on päällä, ei vastaa GM:ään eikä B.O. -tilaan.</strong> Se jää palamaan. Blackoutin aikana yhä palavien lukittujen valaisimien määrä näkyy ruudun yläreunassa vihreän 🔒-merkin vieressä.</p></div>
+<h2 id="intensity--7">Sen valitseminen, mitä sivulla on</h2>
+<p>Fixtures näyttää mallin ja tilan mukaan; Groups näyttää kohdan All ja rakentamasi ryhmät. Napauta nimeä, niin vaihdat. Yksi fader on aina yksi valaisin, myös ryhmän sisällä.</p>
+<p>Kohdan All järjestys asetetaan kohdassa Settings → SETTINGS → Order on All, joko mallin ja juoksevan numeron tai valaisinnumeron mukaan. Ryhmän sisällä järjestys on se, jossa sen rakensit.</p>
+<p>‹ ja › vaihtavat sivua. Vaihto 10:n ja 5:n välillä pitää työstämäsi valaisimen näkyvissä.</p>
+<h2 id="intensity--8">Alareunan painikkeet</h2>
+<figure class="shot"><div class="wrap" dir="ltr"><img src="img/zoom-bottom.png" alt="Vasemmalta: COLOR, EFFECT, PIXELS, ＋ −, FINE. Harmaita ei voi käyttää nykyisessä tilassa." width="640" height="152" loading="lazy"></div><figcaption>Vasemmalta: COLOR, EFFECT, PIXELS, ＋ −, FINE. Harmaita ei voi käyttää nykyisessä tilassa.</figcaption></figure>
+<p>COLOR ja EFFECT vaativat valinnan. PIXELS harmaantuu kun sivulla ei ole yhtään pikselivalaisinta.</p>
+<h2 id="intensity--9">Pikselien työstäminen erikseen</h2>
+<p>PIXELS-painikkeen napautus avaa sivun pikselivalaisimien solut omiksi fadereikseen. Ne näkyvät nimillä P1, P2 ja niin edelleen, ja kullakin on oma kirkkautensa ja värinsä. Uusi napautus taittaa ne kokoon.</p>
+<p>CLEAR n poistaa vain valinnan. Arvoihin ja lähtöihin ei kosketa.</p>
+<div class="next"><b>Seuraava</b><ul><li>Värin asettaminen → luku 05</li><li>Valaistuskuvien tallentaminen → luku 08</li><li>Jotkin faderit eivät tee mitään → luku 14</li></ul></div><a class="top" href="#top">↑ Sisällys</a></section>
+<section class="chapter" id="s-color"><h1 id="color">05 Värin asettaminen — COLOR</h1>
+<p class="lead">Väri ja kirkkaus yhdelle valaisimelle tai monelle.</p>
+<div class="box note"><b>NOTE</b><p>Se mitä näet riippuu siitä, mitä valaisimessa todella on. Yksikanavainen himmennin näyttää vain kohdan Intensity. Kanau ei näytä säätimiä, joita valaisimessa ei ole.</p></div>
+<figure class="shot"><div class="wrap" dir="ltr"><img src="img/2-color-cct.png" alt="Väripaneeli. Näkyvissä ovat vain ne ominaisuudet, jotka valaisimessa on." width="294" height="640" loading="lazy"></div><figcaption>Väripaneeli. Näkyvissä ovat vain ne ominaisuudet, jotka valaisimessa on.</figcaption></figure>
+<h2 id="color--1">Paneelin avaaminen</h2>
+<table>
+<tr><th>Miten</th><th>Mihin se vaikuttaa</th></tr>
+<tr><td>Pidä valaisimen kuvaketta pohjassa</td><td>Kyseiseen yhteen valaisimeen</td></tr>
+<tr><td>Pidä solun kuvaketta pohjassa</td><td>Kyseiseen soluun</td></tr>
+<tr><td>Valitse valaisimet, sitten COLOR</td><td>Kaikkeen valittuun</td></tr>
+<tr><td>Pidä mallin tai ryhmän painiketta pohjassa</td><td>Jokaiseen sen valaisimeen. All tarkoittaa jokaista valaisinta</td></tr>
+</table>
+<p>Kun yksi valaisin on auki, ‹ ja › siirtävät seuraavaan.</p>
+<h2 id="color--2">Kirkkaus ja väri</h2>
+<table>
+<tr><th>Kohta</th><th>Miten se toimii</th></tr>
+<tr><td>Intensity</td><td>0–100, liukusäätimellä, kirjoittamalla, ± -painikkeilla tai esivalinnoilla</td></tr>
+<tr><td>Color temperature (CCT)</td><td>Kelvineinä, valaisimen oman alueen sisällä</td></tr>
+<tr><td>Green / Magenta</td><td>Vihreä–magenta-korjaus. Back to neutral palauttaa sen nollaan</td></tr>
+<tr><td>Crossfade</td><td>Tasapaino valkoisen ja värin puolen välillä. Kumpi päin, riippuu valaisimesta</td></tr>
+<tr><td>RGB ja emitterit</td><td>R, G, B, W, Amber, Lime, Cyan ja mitä muuta valaisimessa onkin</td></tr>
+<tr><td>Hue / Saturation / CIE x / CIE y</td><td>Näkyvät niissä valaisimissa, joissa ne ovat</td></tr>
+</table>
+<p>Kirkkauden ±5 ja ±10 napsahtavat viiden tai kymmenen monikertoihin: arvosta 47 +10 antaa 50. Esivalinnat ovat 12.5 %, 25 %, 35 %, 50 % ja 75 %.</p>
+<p>CCT-esivalinnat ovat 2700, 3000, 3200, 4300, 5000, 5600, 6500 ja 10000 K. Valaisimen alueen ulkopuolella päädyt sen rajaan, merkintänä MIN tai MAX. Valaisin, jossa on vain kaksi värilämpötilaa, näyttää liukusäätimen sijaan kaksi painiketta.</p>
+<p>Green / Magenta -portaita voi muokata pitämällä niitä pohjassa. Kun valaisimessa on useampi kuin yksi crossfade, myöhemmät ilmestyvät juuri niiden säätimien yläpuolelle, joita ne syöttävät.</p>
+<h2 id="color--3">Geelit</h2>
+<table>
+<tr><th>Kohta</th><th>Mikä se on</th></tr>
+<tr><td>Gel presets</td><td>LEE- ja Rosco-esivalinnat valaisimille, joissa on RGB. Erilliset taulukot arvoille 3200 K ja 5600 K</td></tr>
+<tr><td>Preset / Gel</td><td>Valaisimen omat sisäänrakennetut geelit tai väriesivalinnat, valitaan numerolla</td></tr>
+<tr><td>Gels → x/y</td><td>LEE:n ja Roscon väriarvot valaisimille, joissa on x ja y</td></tr>
+</table>
+<p>Kohdan Gel presets RGB-arvot tulevat Asteran julkaisemasta väridatasta. Ne eivät kanna kirkkautta, joten se asetetaan faderilla. Valaisimen omilla esivalinnoilla sovellus ei aina pysty näyttämään, mikä niistä on valittuna.</p>
+<p>Luettelo jää auki valinnan jälkeen, joten voit kokeilla yhtä toisensa jälkeen. Sulje se merkillä ✕. Näkyykö se lainkaan, asetetaan kohdassa Settings → SETTINGS → Gels → Gel presets.</p>
+<h2 id="color--4">Usein käyttämiesi värien tallentaminen</h2>
+<ul><li><strong dir="auto">Save this color</strong> tallentaa värin tähden ★ alle. Se säilytetään mallikohtaisesti. CCT ja G/M eivät sisälly siihen.</li><li><strong dir="auto">Save this temperature</strong> tallentaa värilämpötilan. Se taas on yhteinen kaikille malleille.</li></ul>
+<p>Napauta tallennettua painiketta, niin otat sen käyttöön. Pidä pohjassa, niin nimeät uudelleen, muokkaat tai poistat.</p>
+<h2 id="color--5">ADVANCED COLOR</h2>
+<figure class="shot"><div class="wrap" dir="ltr"><img src="img/3-picker.png" alt="Valitsin kohdassa ADVANCED COLOR. Sävy kulkee vaakasuuntaan, kylläisyys pystysuuntaan." width="294" height="640" loading="lazy"></div><figcaption>Valitsin kohdassa ADVANCED COLOR. Sävy kulkee vaakasuuntaan, kylläisyys pystysuuntaan.</figcaption></figure>
+<p>ADVANCED COLOR kokoaa yhteen ne säätimet, jotka sovellus laskee itse, eikä valaisimen omia kanavia.</p>
+<p>Valitsimessa sävy kulkee vaakasuuntaan ja kylläisyys pystysuuntaan. Kirkkaus on faderin tehtävä. Vedä pyöreän kahvan läheltä, niin väri liikkuu; muualta vetäminen vierittää paneelia.</p>
+<p>RGB, RGB:stä lasketut Hue ja Saturation sekä CMY (255 − RGB) näkyvät niissä valaisimissa, jotka voivat ottaa ne vastaan. Valaisimessa, joka vastaanottaa vain arvot Hue ja Saturation tai vain x ja y, käytä sen sijaan ylempänä olevia säätimiä.</p>
+<h2 id="color--6">Monta valaisinta ja monta mallia</h2>
+<p><strong dir="auto">Tässä paneelissa kaikki mihin kosket päätyy samaksi arvoksi kaikelle valitulle.</strong> Tämä pätee yhtä lailla liukusäätimiin, ± -painikkeisiin, esivalintoihin, kirjoittamiseen ja tallennettuihin väreihin. Jos haluat liikuttaa niitä erot säilyttäen, valitse sen sijaan faderit Home-näkymässä.</p>
+<p>Kun valittuna on eri malleja, näkyvissä ovat vain Intensity, CCT, G/M, Crossfade ja ★. Avaa yksi malli yksinään, niin asetat RGB:n ja emitterit. CCT pidetään kunkin valaisimen oman alueen sisällä.</p>
+<h2 id="color--7">Pikselit ja toistuvat väriryhmät</h2>
+<p>Pidä solun kuvaketta pohjassa, niin asetat sen solun värin ja kirkkauden. Rungon värin muuttaminen asettaa kaikki solut; käsin muuttamasi solu pitää omansa. Rungon Intensity vaikuttaa kaikkiin soluihin.</p>
+<p>Kun tilassa on sama värirooli useammin kuin kerran, kuten Gel 1 ja Gel 2, myöhemmät ryhmät näkyvät paneelissa alempana. <strong dir="auto">Ensimmäistä seuraavia väriryhmiä ei tallenneta tilanteisiin.</strong></p>
+<div class="next"><b>Seuraava</b><ul><li>Valaisinkohtaiset asetukset → luku 06</li><li>Valaistuskuvien tallentaminen → luku 08</li></ul></div><a class="top" href="#top">↑ Sisällys</a></section>
+<section class="chapter" id="s-fixture-settings"><h1 id="fixture-settings">06 Valaisinkohtaiset asetukset</h1>
+<p class="lead">Yhden valaisimen rajat, lukko ja raakakanavat.</p>
+<p>Vieritä alaspäin siinä paneelissa, jonka saat pitämällä valaisimen kuvaketta pohjassa, kohdasta COLOR tai pitämällä mallin tai ryhmän painiketta pohjassa.</p>
+<p>Rajat, Lock, Switch function ja Battery save voidaan asettaa usealle valaisimelle kerralla. Sekalaiset arvot näkyvät muodossa — tai n of m, ja yhden muuttaminen vaikuttaa niihin kaikkiin. Channels, Mode, Channel roles ja Patch näkyvät vain silloin kun auki on yksi valaisin.</p>
+<h2 id="fixture-settings--1">Nimi ja näyttö</h2>
+<p>Muokkaa nimeä paneelin yläreunassa. ‹ ja › siirtävät seuraavaan valaisimeen. Label on mallin kesken jaettu näyttönimi; Label color on numeron tausta. No label color tyhjentää sen.</p>
+<h2 id="fixture-settings--2">Rajat</h2>
+<p>Lower limit ja Upper limit asettavat alueen, jonka sisällä voit työskennellä. Muuta niitä painikkeilla ±1 ja ±5, tai tyhjennä ne. Rajan ulkopuolella Home näyttää oranssia viivoitusta.</p>
+<p>Solun rajat toimivat rungon rajojen sisällä. Jos runko on katkaistu arvoon 50, arvoon 80 katkaistu solu ei siltikään pääse yli arvon 50.</p>
+<h2 id="fixture-settings--3">Lock</h2>
+<div class="box warning"><b>WARNING</b><p>Fixture Lock voittaa <strong dir="auto">kaiken</strong>: grand masterin, blackoutin, BATTERY SAVE -toiminnon, tilanteiden haun, MIDI:n ja session. Lukittu valaisin ei sammu kun painat blackoutia. Tarkista lukkosi ennen ottoa.</p></div>
+<p>Kun Lock on päällä, valaisimen lähtö pysyy paikallaan. Faderit, pianotila, ⏻, väri, raakakanavat, GM, B.O., BATTERY SAVE, tilanteet, MIDI ja sessio jättävät sen kaikki rauhaan.</p>
+<p>Kun valittuna on useita valaisimia ja osa niistä on lukittuja, napautus poistaa jokaisen lukon. Kun yksikään ei ole lukittu, napautus lukitsee ne kaikki.</p>
+<p>Lukitseminen kesken piano- tai FLASH-painalluksen palauttaa ensin väliaikaisen arvon ja pitää sitten kiinni. Rajojen muuttaminen lukittuna ei liikuta nykyistä arvoa; se tuodaan uudelle alueelle kun avaat lukon.</p>
+<h2 id="fixture-settings--4">Muut asetukset</h2>
+<table>
+<tr><th>Kohta</th><th>Mikä se on</th></tr>
+<tr><td>Switch function</td><td>Mitä ⏻ tekee: None, ON/OFF, FLASH ON tai FLASH OFF. ON/OFF on oletus</td></tr>
+<tr><td>Battery save</td><td>Merkitsee tämän valaisimen BATTERY SAVE -toimintoon</td></tr>
+<tr><td>Invert</td><td>Kääntää vetosuunnan arvoille Pan ja Tilt. Näytetty kulma ei muutu</td></tr>
+<tr><td>Mode</td><td>Näyttää nykyisen DMX-tilan. Vaihda se kohdasta RE-PATCH</td></tr>
+<tr><td>Channel roles</td><td>Korjaa kunkin kanavan roolin ja nimen. Osoitteet eivät siirry</td></tr>
+</table>
+<p>Käytä kohtaa Channel roles kun patchatun valaisimen kanavia käsitellään väärinä toimintoina. Jos haluat korjauksen siirtyvän myöhemmin patchaamiisi valaisimiin, muokkaa sen sijaan määrittelyä kohdassa Custom fixtures.</p>
+<h2 id="fixture-settings--5">Channels — raaka DMX (Advanced)</h2>
+<p>Käytä ensin värin, suunnan ja muiden omia säätimiä. Channels on siellä niitä toimintoja varten, joita nuo säätimet eivät kata, yksi DMX-kanava kerrallaan.</p>
+<p>Channels luettelee kaiken DMX-järjestyksessä otsikoiden DIMMER, COLOR, POSITION, GOBO, BEAM, FOCUS, SHAPERS ja CONTROL alla. Tyhjät ryhmät piilotetaan.</p>
+<table>
+<tr><th>Rivin laji</th><th>Miten sitä käytetään</th></tr>
+<tr><td>Portaaton arvo</td><td>Liukusäädin, kirjoittaminen tai − ja +</td></tr>
+<tr><td>Nimetyt arvot ja alueet</td><td>Valikko 12 kohtaan asti, sitä laajemmat haettavana luettelona</td></tr>
+<tr><td>Komennot kuten Reset tai Lamp Off</td><td>Pidä pohjassa ilmoitettu aika. Peruuta päästämällä irti ennen aikaa. Komennot, joilla ei ole aikaa, ovat napautuksia</td></tr>
+<tr><td>Harmaa rivi merkinnällä FADER tai COLOR</td><td>Ajetaan omalla säätimellään, joten sitä ei voi muokata täällä</td></tr>
+<tr><td>Rivi, joka riippuu toisesta kanavasta</td><td>Näyttää mikä on käytettävissä nykyisessä tilassa, ja huomautuksen kun ei ole</td></tr>
+</table>
+<p>Oikean yläkulman DMX vaihtaa raakojen arvojen ja prosenttien välillä. Rivin Home palauttaa sen oletukseen; arvoilla Pan ja Tilt se vaatii pohjassa pitämisen. Se ei ole käytettävissä silloin kun mitään ei ole muutettu.</p>
+<p>Raakakanavien muutokset tallentuvat tilanteisiin ja kirjautuvat kohtaan HISTORY. Pikselivalaisimessa rungon paneeli kantaa rungon kanavat ja solun paneeli kyseisen solun kanavat.</p>
+<h2 id="fixture-settings--6">Patchin tai tilan muuttaminen</h2>
+<p>Muokkaa kohdasta RE-PATCH osiossa Patch. Voit nähdä ja muuttaa universumin ja osoitteen, valaisinnumeron, mallin ja tilan. Next free siirtää sen seuraavaan aukkoon.</p>
+<p>Change mode näyttää alueen ennen ja jälkeen sekä ne valaisimet, joiden kanssa se menisi päällekkäin, ennen kuin vahvistat. Voit ottaa sen käyttöön kaikissa saman mallin valaisimissa. Sen jälkeiset valaisimet eivät siirry itsestään.</p>
+<p>Delete this fixture poistaa valaisimen vahvistuksen jälkeen yhdessä sen arvojen ja asetusten kanssa, ja ottaa sen pois jokaisesta tilanteesta.</p>
+<div class="next"><b>Seuraava</b><ul><li>Suunta ja keila → luku 07</li><li>Mikä lukko tekee mitäkin → luku 10</li></ul></div><a class="top" href="#top">↑ Sisällys</a></section>
+<section class="chapter" id="s-position"><h1 id="position">07 Suunta ja keila</h1>
+<p class="lead">Pan, tilt, zoom, iiris, frost ja gobo liikkuvissa valaisimissa.</p>
+<h2 id="position--1">Pan ja Tilt</h2>
+<p>Pidä valaisimen kuvaketta pohjassa ja avaa Channels → POSITION. Tässä versiossa suunnalle ei ole omaa näkymää.</p>
+<p>Pan ja Tilt näkyvät asteina silloin kun valaisindata kantaa kulmat, ja prosentteina silloin kun ei. 16-bittisessä valaisimessa karkea ja hieno ovat samalla rivillä.</p>
+<ul><li>Vedä kahvan läheltä, niin liike vastaa sitä matkaa, jonka sormesi kulkee. Muualta vetäminen vierittää paneelia.</li><li>Kirjoita kulma kenttään. Valaisimen alueen ulkopuoliset arvot hylätään.</li><li>Askella arvoilla ±0.1°, ±1°, ±10° ja niin edelleen. Portaat tulevat yksiköstä ja tarkkuudesta.</li><li>FINE ja FINE+ hidastavat sen suhteisiin 1/10 ja 1/100.</li><li>Pidä Home pohjassa, niin lähetät sen valaisimen omaan aloitusasentoon. Peruuta päästämällä irti ennen aikaa.</li></ul>
+<p>Invert kääntää vetosuunnan. Mikään ei liiku niin kauan kuin valaisin on lukittu.</p>
+<p>Kuolleet alueet, joilla DMX-arvo ei tee mitään, ohitetaan sekä liukusäätimellä että portailla. Valaisimessa, jonka oletus on kuolleen alueen sisällä, portaat eivät liiku: pääse ensin elävälle alueelle liukusäätimellä tai kirjoittamalla arvo.</p>
+<p>Suunta tallentuu tilanteisiin ja kirjautuu kohtaan HISTORY.</p>
+<div class="box important"><b>IMPORTANT</b><p><strong dir="auto">Tilanteen häivytys ei interpoloi arvoja Pan ja Tilt.</strong> Ne napsahtavat tallennettuun arvoon sillä hetkellä kun haet tilanteen. Häivytysajan asettaminen ei saa päätä liikkumaan hitaasti.</p></div>
+<h2 id="position--2">Zoom, iiris, frost, tarkennus ja gobo</h2>
+<p>Avaa BEAM, GOBO tai FOCUS kohdassa Channels. Portaattomat arvot saavat liukusäätimen; gobot ja prismat saavat nimetyt vaihtoehdot. Ne toimivat täsmälleen kuten muutkin rivit luvussa 06.</p>
+<p>Jos haluat animoida jotakin näistä, käytä ryhmiä MOVE ja BEAM EFFECT-paneelissa. MOVE työskentelee sen ympärillä, mihin pää nyt osoittaa, ja kerrostuu kirkkausefektien päälle.</p>
+<div class="next"><b>Seuraava</b><ul><li>Liikkeen animointi → luku 09</li><li>Valaistuskuvien tallentaminen → luku 08</li></ul></div><a class="top" href="#top">↑ Sisällys</a></section>
+<section class="chapter" id="s-scenes"><h1 id="scenes">08 Valaistuskuvien tallentaminen ja hakeminen — Scenes</h1>
+<p class="lead">Tilanne on tallennettu valaistuskuva. Avaa Scenes, napauta ＋ niin tallennat, napauta riviä niin haet sen takaisin.</p>
+<figure class="shot"><div class="wrap" dir="ltr"><img src="img/5-scenes.png" alt="Tilanneluettelo. Nykyisellä tilanteella on keltainen tausta." width="294" height="640" loading="lazy"></div><figcaption>Tilanneluettelo. Nykyisellä tilanteella on keltainen tausta.</figcaption></figure>
+<h2 id="scenes--1">Tilanteen tallentaminen</h2>
+<ol><li>Aseta kirkkaus, väri ja mahdolliset efektit Home-näkymässä.</li><li>Napauta Scenes → ＋. Tallennus tapahtuu heti.</li><li>Nimeä se uudelleen napauttamalla <strong dir="auto">kyseisen tilanteen rivillä olevaa kohtaa Settings</strong> ja kirjoittamalla nimi. Rivin pyyhkäisy vasemmalle avaa saman paneelin.</li><li>Suojaa sen sisältö kytkemällä samasta paneelista päälle Lock this scene.</li></ol>
+<p>Tämä Settings on se, joka on <strong dir="auto">tilanteen rivin sisällä</strong>. Se ei ole ruudun alareunan Settings-välilehti.</p>
+<h2 id="scenes--2">Hakeminen ja siivoaminen</h2>
+<table>
+<tr><th>Toiminto tai merkki</th><th>Mitä se tekee</th></tr>
+<tr><td>Rivin napautus</td><td>Hakee tilanteen kun nostat sormen</td></tr>
+<tr><td>NEXT / BACK</td><td>Seuraava tai edellinen tilanne. Kiertää ympäri. Ei käytettävissä kun tilanteita on vain yksi</td></tr>
+<tr><td>● ja keltainen tausta</td><td>Nykyinen tilanne</td></tr>
+<tr><td>▸</td><td>Tilanne, jonka NEXT tuo esiin</td></tr>
+<tr><td>Piste muokkauksen jälkeen</td><td>Tilanne on muuttunut sen jälkeen kun se haettiin</td></tr>
+<tr><td>🔒 ja vihreä reuna</td><td>Lukittu ylikirjoitusta vastaan</td></tr>
+<tr><td>Settings, tai pyyhkäisy vasemmalle</td><td>Nimi, häivytysaika, lukko, poisto</td></tr>
+<tr><td>Edit</td><td>Uudelleenjärjestely, poisto, monen poisto</td></tr>
+</table>
+<p>Numerot ovat näyttöjärjestys. Nimen alla oleva aika kertoo, milloin sisältö viimeksi muuttui.</p>
+<h2 id="scenes--3">Se mitä muutat haun jälkeen tallentuu</h2>
+<p><strong dir="auto">Kun olet kerran hakenut tilanteen, kaikki mitä sen jälkeen teet valolle kirjoitetaan takaisin siihen.</strong> SAVE-painiketta ei ole; kirjoitus tapahtuu kun nostat sormen.</p>
+<p>Kytke päälle Lock this scene niissä tilanteissa, jotka haluat jättää rauhaan. Voit yhä hakea ne ja yhä työstää valoa, mutta mitään ei tallenneta.</p>
+<p>Tämä ei ole sama asia kuin Fixture Lock. Scene Lock suojaa sen mikä on tallennettu; Fixture Lock pitää lähdön paikallaan.</p>
+<p>Tallennus siirtyy toiseen tilanteeseen kun haet toisen, kun poistat sen jossa olet, ja kun avaat show&#x27;n uudelleen. Tilanteen sisällön muutokset eivät kuulu kohtaan HISTORY.</p>
+<h2 id="scenes--4">Mitä tallentuu ja mitä ei</h2>
+<table>
+<tr><th>Tallentuu</th><th>Ei tallennu</th></tr>
+<tr><td>Kirkkaus, CCT, G/M, crossfade, RGB, emitterit</td><td>GM, B.O. ja BATTERY SAVE</td></tr>
+<tr><td>Raakakanavat kuten suunta ja gobo</td><td>Rajat, Fixture Lock, ⏻:n tila, Switch function</td></tr>
+<tr><td>Solun väri ja kirkkaus, efektit</td><td>Ensimmäistä seuraavat väriryhmät</td></tr>
+</table>
+<p>Valaisin, jossa Lock on päällä, ei muutu haussa.</p>
+<h2 id="scenes--5">Häivytys</h2>
+<p>Aseta se tilannekohtaisesti kohdassa Settings → Fade. Oletus on 3 sekuntia. Esivalintoina ovat SNAP, 1, 2, 3, 5 ja 10, ja säätöön ±0.1 ja ±1.</p>
+<p>Faderit liikkuvat häivytyksen aikana, ja voit ottaa ohjat käsin kesken kaiken. Suunta, gobo ja muut raa&#x27;at arvot eivät interpoloi; ne napsahtavat haettaessa.</p>
+<p>Tilanne, jossa on efektejä, käynnistää ne efektit uudelleen haettaessa. Sellaisen tilanteen hakeminen, jossa ei ole efektejä, vapauttaa kaiken käynnissä olevan.</p>
+<p>Itse haku kirjautuu kohtaan HISTORY yhtenä askeleena. Tilanteet ovat osa show-tiedostoa.</p>
+<div class="next"><b>Seuraava</b><ul><li>Askel taaksepäin → luku 10</li><li>Show&#x27;n tallentaminen → luku 11</li><li>Tilanne muuttuu itsestään → luku 14</li></ul></div><a class="top" href="#top">↑ Sisällys</a></section>
+<section class="chapter" id="s-effects"><h1 id="effects">09 Efektit</h1>
+<p class="lead">Vilkkua, tulta, salamointia ja muuta sellaista valaisimillesi ajettuna.</p>
+<p>Home-näkymän EFFECT ajaa efektin sille, minkä olet valinnut. Alareunan Effects-välilehti hallinnoi kaikkea käynnissä olevaa.</p>
+<h2 id="effects--1">Efektin ajaminen</h2>
+<ol><li>Napauta Home-näkymässä valaisimen tai solun pyöreää kuvaketta, niin valitset sen.</li><li>Avaa EFFECT.</li><li>Napauta efektin nimeä. Se käynnistyy välittömästi.</li></ol>
+<p>Fader säätää edelleen kirkkautta. Efektin käydessä EFFECT-painike kantaa sen nimen, ja valaisimen kuvake ja fader liikkuvat mukana.</p>
+<h2 id="effects--2">Tauko, vapautus, uudelleenkäynnistys</h2>
+<table>
+<tr><th>Toiminto</th><th>Mitä se tekee</th></tr>
+<tr><td>PAUSE</td><td>Jäädyttää liikkeen nykyiseen kirkkauteen ja asentoon</td></tr>
+<tr><td>RESUME</td><td>Jatkaa siitä mihin se jäätyi</td></tr>
+<tr><td>RELEASE</td><td>Pysäyttää sen ja antaa ohjat takaisin tavallisille arvoille. Asetukset jäävät luetteloon</td></tr>
+<tr><td>START</td><td>Ajaa vapautetun efektin uudelleen alusta</td></tr>
+<tr><td>CLEAR</td><td>Poistaa sen luettelosta. Kysyy ensin</td></tr>
+</table>
+<h2 id="effects--3">ADJUST</h2>
+<table>
+<tr><th>Kohta</th><th>Mikä se on</th></tr>
+<tr><td>Speed</td><td>Hertseinä. Desimaalit sallittuja</td></tr>
+<tr><td>Depth</td><td>Kuinka alas se vetää kirkkauden. 100 yltää nollaan, 35 tuskin liikahtaa</td></tr>
+<tr><td>How often / Cycle</td><td>Kuinka usein se tapahtuu. Vain niissä lajeissa, jotka käyttävät sitä</td></tr>
+<tr><td>Roughness</td><td>Kuinka rosoinen liekki on</td></tr>
+<tr><td>Width</td><td>Kuinka suuri osa rigistä palaa kerralla, esimerkiksi 50% 2 / 4</td></tr>
+<tr><td>Tail</td><td>Efektin COMET hännän pituus</td></tr>
+</table>
+<p>Se mitkä kohdat näkyvät riippuu efektistä. Efektillä SIGNAL ei ole kohtaa Speed.</p>
+<h2 id="effects--4">ARRANGE</h2>
+<p>SPREAD porrastaa valaisimet; TOGETHER pitää ne tahdissa. Efektit RUNNER, FADE RUN, BOUNCE, COMET ja SIGNAL eivät tarjoa tätä valintaa.</p>
+<table>
+<tr><th>Järjestely</th><th>Mitä se tekee</th></tr>
+<tr><td>IN ORDER</td><td>Tasaisesti porrastettuna numeron mukaan</td></tr>
+<tr><td>ALTERNATE</td><td>Parittomat ja parilliset, puoli jaksoa toisistaan</td></tr>
+<tr><td>WINGS</td><td>Peilattuna keskeltä ulospäin</td></tr>
+<tr><td>RANDOM</td><td>Satunnaisessa järjestyksessä</td></tr>
+<tr><td>BOUNCE</td><td>Kääntyy takaisin kummassakin päässä</td></tr>
+<tr><td>BUILD</td><td>Sytyttää yhden kerrallaan ja tyhjentää sitten kaikki yhdessä</td></tr>
+</table>
+<p>RUNS kohdan IN ORDER alla kertoo, montako kuviota ajetaan kerralla; vaihtoehdot riippuvat valaisimien määrästä. DIRECTION on FORWARD tai REVERSE. Tulessa ne valaisimet, jotka osaavat molemmat, antavat valita CCT- ja RGB-lähdön välillä.</p>
+<h2 id="effects--5">Kohteen vaihtaminen ja asetusten tallentaminen</h2>
+<p>Applies to → SELECT ▾ valitsee valaisimet ja ryhmät. Valinta on yhteinen Home-näkymän kanssa, ja luettelo pysyy auki valinnan ajan.</p>
+<p>SAVE kohdassa SAVED tallentaa säätämäsi asetukset nimen alle. Napauta tallennettua painiketta, niin otat sen käyttöön; napauta uudelleen, niin pysäytät sen. Pidä pohjassa, niin nimeät uudelleen tai poistat. Valaisimet eivät kuulu tallennettuun asetukseen.</p>
+<p>Valitse jo käynnissä olevat valaisimet yhdessä uusien kanssa, valitse sama efekti, ja nopeus, syvyys ja vaihe siirtyvät mukana. Kun asetukset eroavat, se putoaa takaisin oletuksiin. Jos haluat vapauttaa vain yhden valaisimen, valitse vain se ja RELEASE.</p>
+<h2 id="effects--6">Efektin löytäminen sen mukaan mitä haluat</h2>
+<table>
+<tr><th>Mitä haluat</th><th>Kokeile</th></tr>
+<tr><td>Luonnonvaloa</td><td>FIRE 1 ja 2, LIGHTNING, WATER, WIND, TV</td></tr>
+<tr><td>Rigiä pitkin juoksevaa valoa</td><td>RUNNER, FADE RUN, BOUNCE, COMET</td></tr>
+<tr><td>Kaupungin valoa</td><td>NEON, SIGNAL, TOKYO, OSAKA, KYOTO, NARA, PACHINKO</td></tr>
+<tr><td>Majakoita</td><td>BEACON R/B, BLUE, RED, AMBER</td></tr>
+<tr><td>Pelkkää vilkkua</td><td>BLINK, STROBE, PULSE, DOUBLE, RANDOM 1–3</td></tr>
+<tr><td>Sammuvaa loistelamppua</td><td>FLUO 1–3</td></tr>
+<tr><td>Pään liikuttamista</td><td>Ryhmä MOVE</td></tr>
+<tr><td>Zoomin tai gobon liikuttamista</td><td>Ryhmä BEAM</td></tr>
+</table>
+<h2 id="effects--7">Koko luettelo</h2>
+<table>
+<tr><th>Ryhmä</th><th>Efektit</th></tr>
+<tr><td>BASIC</td><td>BLINK, STROBE, PULSE, DOUBLE, RANDOM 1–3, RUNNER, FADE RUN, BOUNCE, COMET</td></tr>
+<tr><td>LIGHTS</td><td>FLUO 1–3, FIRE 1 (kynttilä), FIRE 2 (nuotio), LIGHTNING, TV, NEON, SIGNAL</td></tr>
+<tr><td>SCENES</td><td>BEACON R/B, BLUE, RED, AMBER, TOKYO, OSAKA, KYOTO, NARA, PACHINKO, WATER, FIREWORKS, LANTERNS</td></tr>
+<tr><td>MOVE</td><td>DRIFT, PASS, ORBIT, EIGHT, BOX, SPIRAL, SEARCH, BREATHE, HANDHELD, WIND, JUMP, BALLYHOO</td></tr>
+<tr><td>BEAM</td><td>ZOOM PULSE, ZOOM BREATHE, IRIS PULSE, FROST BREATHE, GOBO SHAKE</td></tr>
+</table>
+<p>Efektit RUNNER, FADE RUN, BOUNCE ja COMET vaativat useita valaisimia tai pikseleitä. MOVE ja BEAM näkyvät silloin kun valitut valaisimet tukevat niitä.</p>
+<p>Keltainen piste nimen oikeassa yläkulmassa tarkoittaa, että efekti muuttaa myös väriä. Ilman pistettä se käyttää sitä väriä, jonka olet käsin asettanut.</p>
+<h2 id="effects--8">SIGNAL — liikennevalot</h2>
+<p>Valitse maa, CAR tai WALK, START GREEN tai START RED, ja REPEAT tai ONCE. NEXT siirtyy seuraavaan tilaan. CAR ja WALK kulkevat samalla ajoituksella. Käytä vaihtoehtoa ONCE, kun haluat askeltaa sen käsin tapahtumaan sopivaksi.</p>
+<h2 id="effects--9">LIGHT-, MOVE- ja BEAM-efektien kerrostaminen</h2>
+<p>Yksi valaisin voi kantaa yhtä aikaa LIGHT-efektin kirkkaudelle ja värille, MOVE-efektin päälle ja BEAM-efektin. Toisen efektin valitseminen samalle kaistalle korvaa sen. Solut ottavat vastaan vain LIGHT-efektin.</p>
+<p>Paneelin avaaminen näyttää ensimmäisen käynnissä olevan kaistan järjestyksessä LIGHT, MOVE, BEAM.</p>
+<h2 id="effects--10">Efektien hallinta Effects-välilehdeltä</h2>
+<p>EDIT avaa efektin asetukset. RELEASE / START, PAUSE / RESUME ja CLEAR ovat siellä. Vapautettu efekti jää luetteloon merkinnällä RELEASED.</p>
+<p>Valaisimen nimen vieressä oleva × pudottaa sen valaisimen efektistä; ＋ lisää nykyisen valinnan, ryhmän tai kohdan All. RELEASE ALL ja START ALL vaikuttavat kaikkeen.</p>
+<p>Efektit jatkavat laskemista blackoutin läpi. Lukitsemattomat valaisimet pimenevät ja poimivat liikkeen siitä, missä se on kun poistat blackoutin. Fixture Lock käsitellään luvussa 10.</p>
+<div class="next"><b>Seuraava</b><ul><li>Valaistuskuvien tallentaminen → luku 08</li><li>Pään liikuttaminen → luku 07</li></ul></div><a class="top" href="#top">↑ Sisällys</a></section>
+<section class="chapter" id="s-safety"><h1 id="safety">10 Lukot, turvallisuus ja askel taaksepäin</h1>
+<p class="lead">Mikä estää sinua tekemästä virhettä kesken oton, ja mikä antaa perua sellaisen.</p>
+<h2 id="safety--1">Lukkoja on kolmea lajia</h2>
+<p>Sana esiintyy kolmessa paikassa, ja kukin niistä suojaa eri asiaa.</p>
+<table>
+<tr><th>Nimi</th><th>Mitä se suojaa</th><th>Missä</th></tr>
+<tr><td>Fixture Lock</td><td>Nyt palavaa valoa. Arvo ei voi muuttua</td><td>Valaisimen paneeli</td></tr>
+<tr><td>Scene Lock</td><td>Sitä mikä on tallennettu tilanteeseen</td><td>Settings tilanteen rivillä</td></tr>
+<tr><td>SCREEN LOCK</td><td>Ruutua. Kosketukset eivät tee mitään</td><td>Ruudun yläreuna</td></tr>
+</table>
+<h2 id="safety--2">SCREEN LOCK</h2>
+<p>Pidä ruudun yläreunan SCREEN LOCK pohjassa 0.5 sekuntia. Lyhyt napautus ei lukitse sitä.</p>
+<p>Lukittuna ruudun peittää violetti sävy ja viivoitus. Arvot pysyvät luettavina, ja lähetys ja häivytykset jatkuvat. Avaa lukitus vetämällä keskellä olevaa violettia liukusäädintä noin 80 % matkasta oikealle. Jos päästät irti aikaisemmin, lukitus jää päälle.</p>
+<p>Ruutua ei voi lukita silloin kun paneeli kuten Patch on auki.</p>
+<h2 id="safety--3">Fixture Lock</h2>
+<div class="box warning"><b>WARNING</b><p>Fixture Lock voittaa <strong dir="auto">grand masterin, blackoutin, BATTERY SAVE -toiminnon, tilanteiden haun, MIDI:n ja session</strong>. Paina blackoutia, ja lukittu valaisin jää palamaan. Blackoutin aikana yhä palavien määrä näkyy ruudun yläreunassa vihreän 🔒-merkin vieressä.</p></div>
+<p>Pidä valaisimen kuvaketta pohjassa ja kytke Lock päälle. Käytä sitä silloin kun valo ei saa muuttua.</p>
+<p>Lukittuna valaisimen kuvake, fader, numeropainike ja ⏻ kantavat kaikki vihreää. Poista lukitus valaisimen paneelista.</p>
+<h2 id="safety--4">BATTERY SAVE</h2>
+<p>Himmentää vain merkitsemäsi valaisimet, ottojen välistä odottelua varten.</p>
+<ol><li>Merkitse ne valaisimen asetuksissa kohdassa Battery save, tai kohdassa Patch → Select many → Battery. Voit merkitä ne myös patchatessasi.</li><li>Napauta ruudun yläreunan painiketta BATTERY SAVE. Merkityt valaisimet himmenevät.</li><li>Napauta sitä uudelleen, niin saat ne takaisin.</li></ol>
+<p>Pidä sitä pohjassa, niin asetat kuinka paljon se himmentää ja kuinka kauan häivytys kestää. Save to tarjoaa arvot −25 %, −50 %, −65 % ja −75 %, ja oletus on −50 %. Häivytys alkaa arvosta 1.5 sekuntia.</p>
+<p>Painike ja ruudun reuna muuttuvat vihreiksi sen ollessa päällä. Se kertautuu grand masterin kanssa. Lukitut valaisimet jäävät rauhaan. Jos mitään ei ole merkitty, se kertoo miten merkintä tehdään.</p>
+<p>Tämä himmentää valaisimiasi. Se ei ole iPhonen akkuasetus.</p>
+<h2 id="safety--5">HISTORY</h2>
+<p>Napauta tai pidä pohjassa Home-näkymän HISTORY, niin näet ne tilat, joiden läpi olet kulkenut. Valitse rivi, niin palaat siihen. HERE merkitsee sen, missä olet.</p>
+<ul><li>Se säilyttää viimeiset 50. Taaksepäin palaaminen ja sen jälkeen työskentely jättää vanhat tilat paikoilleen ja lisää uuden loppuun.</li><li>Se kattaa kirkkauden, värin, lähdön päälle ja pois, rajat, raa&#x27;at arvot, efektit, GM:n, B.O. -tilan ja patchin.</li><li>Fixture Lock on sen ulkopuolella. Lukittu valaisin ei liiku kun askellat taaksepäin.</li><li>Tilanteiden haut kirjautuvat, mutta tilanteen sisällön ylikirjoitusta ei voi perua.</li><li>Yhtä muutosta ei voi vetää ulos erikseen. Palaat sen hetken koko tilaan.</li><li>Sitä ei tallenneta. Sovelluksen sulkeminen tai show&#x27;n uudelleen avaaminen tyhjentää sen.</li></ul>
+<p>Haun häivytys asetetaan kohdassa Recall fade time. HISTORY ei ole käytettävissä silloin kun mitään ei ole mihin palata.</p>
+<h2 id="safety--6">ZEN</h2>
+<p>Napauta ZEN yhden valaisimen paneelissa, niin saat mustan ruudun, jossa on yksi suuri fader ja sen arvo. Se on siellä niitä valaisimia varten, joiden kirkkautta voi säätää.</p>
+<p>Vedä mistä tahansa kohtaa ruutua, niin ajat sitä, tapansa mukaan suhteellisesti. FINE toimii. Rajoja voi muuttaa oikean yläkulman asetuksista. Poistu napauttamalla ruutua; faderin liikuttaminen ja irti päästäminen ei poistu.</p>
+<div class="next"><b>Seuraava</b><ul><li>Show&#x27;n tallentaminen → luku 11</li><li>Jokin ei sammu blackoutissa → luku 14</li></ul></div><a class="top" href="#top">↑ Sisällys</a></section>
+<section class="chapter" id="s-shows"><h1 id="shows">11 Show&#x27;jen tallentaminen ja jakaminen</h1>
+<p class="lead">Show pitää sisällään yhden työn: patchin, ryhmät, tilanteet ja nykyisen valaistuskuvan.</p>
+<p>Mitään ei tarvitse painaa. Se tallentaa itsensä.</p>
+<h2 id="shows--1">Milloin se tallentaa</h2>
+<table>
+<tr><th>Mitä</th><th>Milloin</th></tr>
+<tr><td>Patch, ryhmät, tilanteet</td><td>Sitä mukaa kun muutat niitä</td></tr>
+<tr><td>Nykyinen valaistuskuva ja valaisinasetukset</td><td>Noin kaksi sekuntia sen jälkeen kun lopetat, ja kun sovellus siirtyy taustalle</td></tr>
+</table>
+<p>Seuraava käynnistys palauttaa viimeisimmän show&#x27;n sellaisena kuin se tallennettiin. Aivan viimeisintä muutosta ennen sulkemista ei taata, joten käytä toimintoa Export show file silloin kun tarvitset tiedoston talteen tai eteenpäin annettavaksi.</p>
+<h2 id="shows--2">Settings → SHOWS</h2>
+<table>
+<tr><th>Kohta</th><th>Mitä se tekee</th></tr>
+<tr><td>CURRENT SHOW</td><td>Nimeää uudelleen sen show&#x27;n, jossa olet</td></tr>
+<tr><td>Save As</td><td>Tallentaa nykyisen tilan toiseksi show&#x27;ksi ja jatkaa kopiossa</td></tr>
+<tr><td>Export show file</td><td>Tallentaa ensin, kirjoittaa sitten .kanau-tiedoston. Valitse sijainti jakolomakkeesta</td></tr>
+<tr><td>Import show file</td><td>Tuo .kanau-tiedoston uutena show&#x27;na. Nykyiseen show&#x27;hun ei kosketa</td></tr>
+<tr><td>NEW SHOW</td><td>Nimeä se ja valitse Create. Saat tyhjän show&#x27;n, ja Patch avautuu</td></tr>
+<tr><td>OTHER SHOWS</td><td>Avaa tallennetun show&#x27;n. ⧉ monistaa, ✕ poistaa vahvistuksen jälkeen</td></tr>
+</table>
+<p>Tiedostojen tai AirDropin kautta saapuvan .kanau-tiedoston voi avata Kanau-sovelluksella, ja se tulee sisään uutena show&#x27;na. Tiedostoa .kanaumidi käsitellään MIDI-kartoitustiedostona.</p>
+<h2 id="shows--3">Avaaminen ja palautuminen</h2>
+<p>Jos mitään ei ole tallennettuna, avautuu demo-show. Vanhempi show, jolla ei ole tallennettua valaistuskuvaa, avautuu kirkkaudet alhaalla.</p>
+<p>Jos tiedostoa ei voi lukea, saat ilmoituksen Saved patch could not be read. Showing an empty rig; the file is left as it is., ja sovellus alkaa tyhjänä. <strong dir="auto">Alkuperäinen tiedosto säilytetään eikä sitä ylikirjoiteta.</strong></p>
+<p>Epäonnistunut tallennus näyttää punaisena tekstin Patch was not saved. Luku 14 kertoo, mitä tehdä.</p>
+<h2 id="shows--4">Mitä show&#x27;ssa ei ole</h2>
+<table>
+<tr><th>Mitä</th><th>Missä se sijaitsee</th></tr>
+<tr><td><code>SAVED</code>-efektiasetukset</td><td>Laitteessa, käytettävissä jokaisessa show&#x27;ssa</td></tr>
+<tr><td>Custom fixtures</td><td>Laitteessa. Patchattujen valaisimien määrittelyt säilytetään myös show&#x27;ssa</td></tr>
+<tr><td>Tallennetut ★-värit ja -lämpötilat</td><td>Laitteessa. Värit mallikohtaisesti, lämpötilat yhteisinä</td></tr>
+<tr><td>MIDI-kartoitus</td><td>Laitteessa. Vietävissä erikseen muodossa .kanaumidi</td></tr>
+<tr><td>OUTPUT, näyttöasetukset, kieli</td><td>Laitteessa</td></tr>
+<tr><td>HISTORY</td><td>Ei tallenneta</td></tr>
+</table>
+<h2 id="shows--5">Settings → SETTINGS</h2>
+<p>Kieli, eri häivytysajat, BATTERY SAVE -toiminnon määrä, kumpi numero näytetään, kohdan All järjestys, All-rivi Patch-näkymässä, Net / Sub / Uni, ja näkyvätkö geelit. Kielen vaihto tulee voimaan seuraavassa käynnistyksessä. Tekstikoko seuraa iOS:n asetusta.</p>
+<div class="next"><b>Seuraava</b><ul><li>Tallennus epäonnistui → luku 14</li><li>Työskentely kahdella laitteella → luku 13</li></ul></div><a class="top" href="#top">↑ Sisällys</a></section>
+<section class="chapter" id="s-midi"><h1 id="midi">12 MIDI-ohjaimet (Advanced)</h1>
+<p class="lead">MIDI-ohjaimen nuppien ja painikkeiden kartoittaminen valaisimiin ja säätimiin.</p>
+<p>Tämä luku käsittelee Learn-tyylistä näkymää.</p>
+<h2 id="midi--1">Yhdistäminen ja kartoittaminen</h2>
+<ol><li>Kytke MIDI controller päälle kohdassa Settings → MIDI. Se on oletuksena pois.</li><li>Tarkista, että kalustosi näkyy kohdassa Inputs ja että Last CC muuttuu kun liikutat jotakin.</li><li>Aloita asetuksella MIDI channel arvossa OMNI, ja kavenna se sitten väliltä 1–16 jos on tarpeen.</li><li>Valitse Mode, ja kartoita sitten painikkeella Learn kohdassa Knobs tai Buttons.</li><li>Käännä nuppia Turn… -kehotuksen näkyessä, tai paina sitä painiketta jonka haluat kartoittaa.</li></ol>
+<p>Kalusto, jota vasten tämä on rakennettu, on Behringer X-Touch Mini ja Compact Standard-tilassa absoluuttisia arvoja lähettäen. MC-tilaa ei käytetä.</p>
+<h2 id="midi--2">Kaksi tilaa</h2>
+<table>
+<tr><th>Tila</th><th>Mitä säädin seuraa</th></tr>
+<tr><td>GLOBAL 10</td><td>Paikkaa ruudulla. Vaihda sivua tai ryhmää, ja kohde vaihtuu mukana. Myös GM voidaan kartoittaa</td></tr>
+<tr><td>FIXED</td><td>Yhtä valaisinta. Sivun tai ryhmän vaihdolla ei ole vaikutusta</td></tr>
+</table>
+<p>FIXED kartoitetaan yksi valaisin kerrallaan painikkeella Learn; automaattista numerointia ei ole. Tilassa GLOBAL 10 on oma Learn jokaisella rivillä väliltä Fader 1 – Fader 10 sekä kohdassa Grand master.</p>
+<h2 id="midi--3">Kun nuppi ei aluksi tee mitään</h2>
+<p>Jos nuppi ja ruudulla oleva arvo ovat eri mieltä, <strong dir="auto">mikään ei liiku ennen kuin nuppi ohittaa ruudulla olevan arvon</strong>. Se on tarkoituksellista: se estää tason hyppäämisen. Sama pätee sen jälkeen kun vaihdat sivua, ryhmää tai tilaa.</p>
+<p>Kytke päälle Send values back, niin Kanau palauttaa nykyiset arvot sitä tukevan kaluston LED-renkaisiin. Tyhjät paikat palautuvat nollina.</p>
+<h2 id="midi--4">Painikkeet ja kartoitustiedosto</h2>
+<p>Voit kartoittaa toiminnot FINE ja PIANO, sivun taakse ja eteen, sekä yksittäisten tilanteiden haut. B.O. ei ole kartoitettavissa. Yksi painike kantaa yhden toiminnon. Fixture Lock koskee myös MIDI:ä.</p>
+<p>Export ja Import kohdassa MIDI map file kirjoittavat ja lukevat kartoituksen .kanaumidi-tiedostona, show&#x27;sta erillään.</p>
+<div class="next"><b>Seuraava</b><ul><li>Työskentely kahdella laitteella → luku 13</li></ul></div><a class="top" href="#top">↑ Sisällys</a></section>
+<section class="chapter" id="s-session"><h1 id="session">13 Työskentely kahdella laitteella — SESSION</h1>
+<p class="lead">Kaksi iPhonea tai iPadia yhdessä show&#x27;ssa. <strong dir="auto">Vain isäntä lähettää DMX:ää</strong>; toinen ajaa samaa valopöytää sen kautta.</p>
+<p>Sessio antaa kahden samassa verkossa olevan laitteen ajaa yhtä show&#x27;ta. Vieras lähettää tekemisensä isännälle. Jos isäntä pysähtyy, mikään ei ota tehtävää automaattisesti.</p>
+<h2 id="session--1">Kummalla on mikäkin</h2>
+<table>
+<tr><th></th><th>Isäntä</th><th>Vieras</th></tr>
+<tr><td>DMX:n lähettäminen</td><td>Kyllä</td><td>Ei</td></tr>
+<tr><td>Show&#x27;n omistus</td><td>Kyllä</td><td>Lainaa sitä</td></tr>
+<tr><td>Patchin muuttaminen</td><td>Kyllä</td><td>Ei</td></tr>
+<tr><td>Minne tilanne tallennetaan</td><td>Isännän show&#x27;hun</td><td>Lähetetään isännälle</td></tr>
+<tr><td>Valon työstäminen</td><td>Kyllä</td><td>Kyllä</td></tr>
+</table>
+<p><strong dir="auto">Kun molemmat koskevat samaan valaisimeen, isäntä voittaa.</strong> Vieras näkee merkinnän <code>TAKEN</code>.</p>
+<h2 id="session--2">Session aloittaminen</h2>
+<ol><li>Valitse lähettävällä laitteella Settings → SESSION → Host.</li><li>Anna 4-numeroinen luku toiselle henkilölle.</li><li>Valitse toisella laitteella Settings → SESSION → Join ja kirjoita luku.</li><li>Tarkista, että näkyvissä on Joined ja yhteyden tila.</li></ol>
+<p>Looking for 1234… tarkoittaa, että etsintä on yhä kesken. Luku vaihtuu joka kerta kun isännöit. Laitteita voi olla vain 2 kerrallaan; kolmas ei pääse mukaan.</p>
+<h2 id="session--3">Mitä vieras voi tehdä</h2>
+<table>
+<tr><th>Vieras voi</th><th>Isäntä tekee</th><th>Kumpikin laite pitää omansa</th></tr>
+<tr><td>Faderit, värit ja geelit, valaisimiin ja soluihin</td><td>Patchin lisäykset, poistot ja muutokset, nimet, nimilaput</td><td>Näkyvä ryhmä ja sivu, näkyvä välilehti</td></tr>
+<tr><td>Tilanteiden hakeminen, ja ＋ tallentamiseen</td><td>Uudelleenjärjestely, poisto, uudelleennimeäminen, häivytys, lukko</td><td>FINE, 10 / 5, PIXELS, PIANO-tila</td></tr>
+<tr><td>⏻, GM, B.O., BATTERY SAVE</td><td>OUTPUT, SHOWS</td><td>Näyttöasetukset, kieli, geelit</td></tr>
+<tr><td>Rajat, Fixture Lock, valinnan tyhjennys</td><td>Häivytysajat, Save to, Switch function</td><td>MIDI-kartoitus, tallennetut ★-värit</td></tr>
+</table>
+<p>Vieraalta tallennetun tilanteen kirjoittaa isäntä. Vieraan omaan show-tiedostoon ei kosketa, ja Leave session palauttaa sen.</p>
+<h3 id="session--4">Efektit ja vieras</h3>
+<p>Osa efektitoiminnoista yltää isännälle asti ja osa ei.</p>
+<table>
+<tr><th>Toiminto</th><th>Vieraalta</th></tr>
+<tr><td>Efektin ajaminen</td><td>Toimii</td></tr>
+<tr><td>RELEASE ALL</td><td>Toimii</td></tr>
+<tr><td>Solun efektien tyhjennys</td><td>Toimii</td></tr>
+<tr><td>SIGNAL NEXT</td><td>Toimii</td></tr>
+</table>
+<div class="box important"><b>IMPORTANT</b><p><strong dir="auto">PAUSE, RESUME, yhden efektin vapauttaminen ja START eivät yllä vieraalta isännälle.</strong> Vieraan ruutu voi näyttää siltä kuin jotain olisi tapahtunut, mutta valo ei muutu. Tee nämä isännällä.</p></div>
+<h2 id="session--5">Yhtäaikainen työskentely ja yhteyden menettäminen</h2>
+<p>Se minkä vieras muuttaa näkyy vieraan ruudulla heti. Jos isäntä koskee samaan valaisimeen, isäntä voittaa ja vieras näkee merkinnän <code>TAKEN</code>. Valaisin, jota toinen laite työstää, näkyy syaanina reunana ja nimenä.</p>
+<table>
+<tr><th>Yhteys</th><th>Tila</th></tr>
+<tr><td>Vihreä</td><td>Yhdistetty isäntään</td></tr>
+<tr><td>Keltainen</td><td>Isännältä ei ole kuulunut mitään noin 3 sekuntiin</td></tr>
+<tr><td>Punainen</td><td>Ei mitään noin 15 sekuntiin. Näkyviin tulee The host is no longer available.</td></tr>
+</table>
+<p>Jos yhteys katkeaa, vieras näyttää edelleen viimeisintä tilaa. Se ei poistu itsestään, joten käytä toimintoa Leave session. Uudelleen yhdistämisen jälkeen faderit ovat yhä suhteellisia.</p>
+<p>Internetiä ei tarvita. Laitteiden on pystyttävä tavoittamaan toisensa samassa verkossa. Asiakaseristys, palomuuri ja vastaavat asetukset voivat estää session, vaikka DMX pääsisi läpi.</p>
+<div class="next"><b>Seuraava</b><ul><li>Show&#x27;n tallentaminen → luku 11</li><li>Yhteys ei muodostu → luku 14</li></ul></div><a class="top" href="#top">↑ Sisällys</a></section>
+<section class="chapter" id="s-troubleshooting"><h1 id="troubleshooting">14 Vianetsintä</h1>
+<p class="lead">Järjestetty sen mukaan, mitä näet. Käy luetteloa läpi ylhäältä alas.</p>
+<h2 id="troubleshooting--1">Mikään ei syty</h2>
+<table>
+<tr><th>Mitä näet</th><th>Mitä tehdä</th></tr>
+<tr><td>idle</td><td>Tarkista, että jokin verkko on käytössä kohdassa Settings → OUTPUT</td></tr>
+<tr><td>Blocked</td><td>Tarkista iOS:n paikallisverkko-oikeus. Jos sACN-multicast on estetty, vaihda asetukseen Unicast</td></tr>
+<tr><td>WAITING + IP-osoite</td><td>Toinen valopöytä on linjalla. Pysäytä se, tai valitse Send anyway? → Send</td></tr>
+<tr><td>No node</td><td>Tarkista solmun virta, verkko, osoite ja protokolla-asetukset</td></tr>
+<tr><td>B.O.</td><td>Napauta sitä, niin poistat blackoutin</td></tr>
+<tr><td>GM 0</td><td>Avaa GM ja käytä painiketta →100</td></tr>
+<tr><td>🔌 n</td><td>Kytke universumi takaisin päälle kohdassa OUTPUT → Universes</td></tr>
+<tr><td>Violetti ⏻ tai valaisimen kuvake</td><td>Kytke valaisimen lähtö takaisin päälle</td></tr>
+<tr><td>Vihreä BATTERY SAVE</td><td>Poista se, jos tarvitset täyden lähdön</td></tr>
+<tr><td>Matala Upper limit</td><td>Tarkista valaisimen rajat</td></tr>
+<tr><td>⚠ Patch-näkymässä</td><td>Korjaa päällekkäinen osoite tai kanavan 512 yli menevä jakso</td></tr>
+<tr><td>Tila joka ei täsmää</td><td>Aseta sama DMX-tila kuin itse valaisimessa</td></tr>
+</table>
+<h2 id="troubleshooting--2">Yhtään solmua ei löydy</h2>
+<p>Jos Network näyttää no reply, tarkista että iPhone ja solmu ovat samassa verkossa. Jos AUTO ei yllä sinne, käytä asetusta Unicast ja syötä solmun osoite. Aja RESCAN aina kun olet muuttanut yhteydessä jotakin.</p>
+<p>Tarkista solmun omat Art-Net- ja sACN-kytkimet, sen osoite ja sen universumi. Esimerkiksi LumenRadio CRMX Stardust toimitetaan Art-Net ja sACN pois kytkettyinä.</p>
+<p>Jos liityt Stardustin tai Aputure Sidus Four -laitteen omaan langattomaan verkkoon, tarkista mitä taajuusaluetta kalusto tukee. Ulkoisessa tukiasemassa 2.4 GHz:n ja 5 GHz:n asiakkaat pääsevät usein toistensa luo; eri taajuusalue ei aina tarkoita eri verkkoa.</p>
+<p>Stardustissa pienet kirjaimet lähtönäytössä tarkoittavat, ettei dataa saavu, ja isot kirjaimet että saapuu. Tarkista mallikohtaiset asiat valmistajan omasta ohjekirjasta. Kalusto, joka ei vastaa kyselyyn, näkyy nollana kohdassa Nodes answering vaikka se vastaanottaisikin.</p>
+<h2 id="troubleshooting--3">Valo välkkyy</h2>
+<p>Tarkista, ettei samaa valaisinta syötetä sekä verkon että Bluetoothin kautta, tai useammasta kuin yhdestä valopöydästä tai DMX-lähteestä. Katso CRMX-varoitusta kohdassa OUTPUT sekä mahdollisia ilmoituksia SHARED tai WAITING, ja karsi reitit yhteen.</p>
+<p>Myös jokin toinen ohjaussovellus tai valaisimen asetus voi aiheuttaa tämän.</p>
+<h2 id="troubleshooting--4">Valo nykii tai reagoi hitaasti</h2>
+<p>Avaa Settings → OUTPUT ja lue sitä <strong dir="auto">ylhäältä alas</strong>. Jos se pysähtyy johonkin näistä, alempaa ei tarvitse katsoa.</p>
+<pre>Sending       lähettääkö valopöytä ylipäätään
+   ↓
+Clock         onko puhelimen sisällä tukos
+   ↓
+Touch → wire  onko matka sormesta pakettiin hidas
+   ↓
+Node RTT      onko verkko tai kalusto hidas
+   ↓
+Fixture       onko itse valaisin hidas</pre>
+<table>
+<tr><th>Mitä näet</th><th>Mitä katsoa</th></tr>
+<tr><td>Sending on nothing</td><td>Destination, verkko, iOS:n käyttöoikeudet</td></tr>
+<tr><td>Clock yli 100 ms</td><td>Puhelin. Sulje paneelit, käynnistä sovellus tarvittaessa uudelleen</td></tr>
+<tr><td>Solmut vastaavat, mutta valaisimet päivittyvät noin kerran sekunnissa</td><td>Osoite, johon AUTO lähettää. Jos solmu ilmoittaa itsensä väärin, kokeile asetusta Broadcast</td></tr>
+<tr><td>Clock on kunnossa mutta kiertoaika on pitkä</td><td>Langattoman verkon ruuhka, tukiasema, kalusto, reitti</td></tr>
+<tr><td>Lukemat ovat kunnossa mutta valo laahaa</td><td>Valaisimen pehmennys, sen tuloreitti, jokin toinen sovellus joka ajaa sitä</td></tr>
+</table>
+<p>Broadcast auttaa silloin kun ongelma on AUTO-tilan kohteessa. Muihin syihin se ei auta, ja voi lisätä kuormaa.</p>
+<h2 id="troubleshooting--5">Jotkin faderit eivät tee mitään</h2>
+<p>Tarkista valaisimen rajat, sen Lock ja onko sen lähtö päällä. Kanaun faderikäyrä on lineaarinen; valaisimen oma himmennyskäyrä voi saada alapuoliskon tuntumaan lattealta. Tarkista itse valaisin tai Dim curve kohdassa Channels.</p>
+<p>GDTF:stä tuodussa valaisimessa väärä kirkkaus tai väri tarkoittaa yleensä, että roolit ovat väärin. Korjaa ne kohdassa Channel roles. Jos haluat korjauksen siirtyvän myöhemmin patchaamiisi valaisimiin, muokkaa määrittelyä kohdassa Custom fixtures.</p>
+<h2 id="troubleshooting--6">Painike ei tee mitään</h2>
+<table>
+<tr><th>Mitä näet</th><th>Miksi, ja mitä tehdä</th></tr>
+<tr><td>Violetti sävy ruudun päällä</td><td>SCREEN LOCK. Vedä keskellä olevaa liukusäädintä oikealle</td></tr>
+<tr><td>Vihreä 🔒</td><td>Poista Fixture Lock</td></tr>
+<tr><td>COLOR tai EFFECT on harmaa</td><td>Valitse valaisin. COLOR vaatii lisäksi, että valaisimessa on väri</td></tr>
+<tr><td>PIXELS on harmaa</td><td>Sivulla ei ole yhtään pikselivalaisinta</td></tr>
+<tr><td>HISTORY ei ole aktiivinen</td><td>Ei ole mitään mihin palata</td></tr>
+<tr><td>Numeropainikkeet eivät muuta kirkkautta</td><td>Pianotila on asennossa LOCK. Käytä painiketta ＋ −</td></tr>
+<tr><td>Home kohdassa Channels ei ole aktiivinen</td><td>Se on jo oletuksessaan</td></tr>
+<tr><td>Home ei tee mitään arvoille Pan tai Tilt</td><td>Se vaatii pohjassa pitämisen, ei napautusta</td></tr>
+<tr><td>Tilanne ei päivity</td><td>Tarkista Lock this scene</td></tr>
+<tr><td>Vieras ei voi muokata patchia</td><td>Tee se isännällä</td></tr>
+</table>
+<h2 id="troubleshooting--7">Väri on väärin</h2>
+<table>
+<tr><th>Mitä näet</th><th>Mitä tarkistaa</th></tr>
+<tr><td>Eri väri kuin asettamasi</td><td>Vastaako Patch-tila valaisimen omaa DMX-tilaa</td></tr>
+<tr><td>Ei värisäätimiä lainkaan</td><td>Onko valaisimessa väriä. Sekalaiset mallit näyttävät vain yhteiset kohdat (luku 05)</td></tr>
+<tr><td>Värilämpötila loppuu kesken</td><td>Olet valaisimen alueen reunassa. Näkyviin tulee MIN tai MAX</td></tr>
+<tr><td>Tuotu valaisin on pielessä</td><td>Tarkista Channel roles (luku 06)</td></tr>
+<tr><td>Valkoinen vetää vihreään tai magentaan</td><td>Green / Magenta ei ehkä ole nollassa. Back to neutral nollaa sen</td></tr>
+</table>
+<h2 id="troubleshooting--8">Valaisin ei käyttäydy oikein</h2>
+<p>Tarkista ensin, että Patch-tila vastaa valaisimen omaa. Kun se on väärin, kirkkaus saapuu värinä ja väri saapuu suuntana.</p>
+<p>GDTF:stä tuodussa määrittelyssä roolit voivat olla annettuina toisin kuin todellisessa valaisimessa. Korjaa ne kohdassa Channel roles (luku 06). Jos haluat sen siirtyvän tuleviin patchauksiin, muokkaa määrittelyä kohdassa Custom fixtures.</p>
+<p>Tarkista todellista valaisinta vasten kaikki, missä lukee <code>Imported data is not verified.</code>.</p>
+<h2 id="troubleshooting--9">Tilanne muuttuu itsestään</h2>
+<p><strong dir="auto">Kaikki mitä teet tilanteen haun jälkeen tallentuu takaisin siihen</strong> (luku 08).</p>
+<p>Kytke päälle Lock this scene kyseisen tilanteen kohdassa Settings niissä tilanteissa, jotka haluat jättää rauhaan. Voit yhä hakea ne ja yhä työstää valoa; mitään ei tallenneta.</p>
+<h2 id="troubleshooting--10">Tilanne ei tallennu</h2>
+<table>
+<tr><th>Mitä tarkistaa</th><th></th></tr>
+<tr><td>Lock this scene</td><td>Mitään ei tallenneta niin kauan kuin se on päällä</td></tr>
+<tr><td>Olet vieraalla</td><td>Uudelleenjärjestely, poisto ja uudelleennimeäminen kuuluvat isännälle (luku 13)</td></tr>
+<tr><td>Mitä ei koskaan tallenneta</td><td>GM, B.O., BATTERY SAVE, rajat, Fixture Lock, ⏻:n tila ja myöhemmät väriryhmät (luku 08)</td></tr>
+</table>
+<h2 id="troubleshooting--11">Sessio ei muodosta yhteyttä</h2>
+<p>Jos Looking for ei häviä, tarkista nämä.</p>
+<ul><li>Molemmat laitteet ovat <strong dir="auto">samassa verkossa</strong>. Internetiä ei tarvita</li><li>Numerot, joita on 4, ovat oikein. Luku vaihtuu joka kerta kun isännöit</li><li>Yhteydessä ei ole jo 2 laitetta. Kolmas ei pääse mukaan</li><li>Asiakaseristys tai palomuuri ei estä laitteiden välistä liikennettä</li></ul>
+<p>DMX voi päästä läpi verkossa, jossa laitteiden välinen liikenne on estetty.</p>
+<h2 id="troubleshooting--12">Jokin jää palamaan blackoutissa</h2>
+<p>Tarkista Fixture Lock. Yläreunan vihreä 🔒 n laskee yhä palavat valaisimet. Poista lukitus niistä valaisimista.</p>
+<h2 id="troubleshooting--13">Sovellus sulkeutui tai yhteys katkesi</h2>
+<p>Uudelleenkäynnistys palauttaa viimeksi tallennetun show&#x27;n ja valaistuskuvan. Aivan viimeisimmät muutokset ennen sulkeutumista eivät ehkä ole mukana.</p>
+<p>Se mitä valaisimesi tekevät sovelluksen tai yhteyden pysähdyttyä riippuu solmun ja valaisimen omista hold-last-look-asetuksista. Tarkista kalusto, jos haluat niiden pitävän arvot.</p>
+<h2 id="troubleshooting--14">Tallennus epäonnistui</h2>
+<p>Patch was not saved. tarkoittaa, että tallennus epäonnistui. Tarkista laitteen vapaa tila, ja kirjoita nykyinen tila ulos toiminnolla Export show file jos suinkin voit. Varmista että vienti ehti valmiiksi ennen kuin jatkat. Varoituksen sulkeminen ×-merkillä ei tarkoita, että tallennus onnistui.</p>
+<p>Jos tiedostoa ei voi lukea, avaa toinen show kohdasta OTHER SHOWS, tai tuo aiemmin viemäsi .kanau-tiedosto. Tiedosto, jota ei voitu lukea, säilytetään.</p>
+<h2 id="troubleshooting--15">DMX-arvojen tarkistaminen</h2>
+<p>Settings → DMX MONITOR näyttää kunkin universumin kaikki 512 kanavaa. Se ei vaikuta siihen, mitä lähetetään.</p>
+<div class="next"><b>Seuraava</b><ul><li>Lähtönäytön lukeminen kokonaisuudessaan → luku 02</li><li>Mitä jokin sana tarkoittaa → sanasto</li></ul></div><a class="top" href="#top">↑ Sisällys</a></section>
+<section class="chapter" id="s-glossary"><h1 id="glossary">Sanasto</h1>
+<table>
+<tr><th>Ruudulla</th><th>Mitä se tarkoittaa</th></tr>
+<tr><td>Fixture</td><td>Valaisin. Yksikkö, jonka patchaat ja jota ohjaat</td></tr>
+<tr><td>Patch</td><td>Valaisimen mallin, tilan ja DMX-osoitteen rekisteröinti</td></tr>
+<tr><td>Universe / Address</td><td>Universumi, ja kanavan paikka sen sisällä</td></tr>
+<tr><td>Mode</td><td>Valaisimen DMX-tila. Täsmättävä itse valaisimeen</td></tr>
+<tr><td>Unit no. / Fixture number</td><td>Automaattinen numero mallin sisällä / numero, jonka itse annat</td></tr>
+<tr><td>Offset / Gap</td><td>Valaisimien välinen jako / ylimääräiset vapaat kanavat niiden välissä</td></tr>
+<tr><td>Group / All</td><td>Joukko valaisimia / jokainen valaisin</td></tr>
+<tr><td>Pixel / Cell</td><td>Erikseen ohjattava osa yhdestä valaisimesta</td></tr>
+<tr><td>Intensity</td><td>Kirkkaus</td></tr>
+<tr><td>CCT</td><td>Värilämpötila kelvineinä</td></tr>
+<tr><td>G/M</td><td>Vihreä–magenta-korjaus</td></tr>
+<tr><td>Crossfade</td><td>Tasapaino valkoisen ja värin puolen välillä</td></tr>
+<tr><td>Emitter</td><td>Valaisimen sisällä oleva LED tai muu valonlähde</td></tr>
+<tr><td>Channels / Raw channels</td><td>Työskentely yksi DMX-kanava kerrallaan</td></tr>
+<tr><td>Channel roles</td><td>Minä toimintona kanavaa käsitellään</td></tr>
+<tr><td>GM / B.O.</td><td>Grand master / blackout</td></tr>
+<tr><td>Lock / SCREEN LOCK</td><td>Valaisimen lähdön pitäminen paikallaan / vahinkokosketusten estäminen</td></tr>
+<tr><td>FINE / FINE+</td><td>1/10 ja 1/100 tavallisesta herkkyydestä</td></tr>
+<tr><td>PIANO</td><td>Numeropainikkeiden käyttö kirkkauden muuttamiseen pohjassa pidettäessä</td></tr>
+<tr><td>Scene / Show</td><td>Tallennettu valaistuskuva / kaikki yhtä työtä varten</td></tr>
+<tr><td>SNAP / Fade</td><td>Välitön / määrätyn ajan kuluessa</td></tr>
+<tr><td>HISTORY / HERE</td><td>Aiempien tilojen luettelo / se kohta, jossa olet</td></tr>
+<tr><td>PAUSE / RESUME</td><td>Efektin jäädyttäminen / siitä jatkaminen</td></tr>
+<tr><td>RELEASE / START</td><td>Efektin pysäyttäminen / sen ajaminen alusta</td></tr>
+<tr><td>CLEAR</td><td>Valinnan tyhjentäminen tai efektin poistaminen. Riippuu siitä, missä sen näet</td></tr>
+<tr><td>SAVED</td><td>Tallennetut efektiasetukset</td></tr>
+<tr><td>Host / Join / Leave session</td><td>Lähettävänä laitteena oleminen / sellaiseen liittyminen / poistuminen</td></tr>
+<tr><td>PROVISIONAL</td><td>Paikanvaraajana toimiva valaisintila</td></tr>
+<tr><td>GDTF</td><td>Valaisinmäärittelyjen tiedostomuoto</td></tr>
+</table><a class="top" href="#top">↑ Sisällys</a></section>
+<script>
+(function(){
+  var IDX = [{"id":"quick-start","title":"QUICK START","h":[{"id":"quick-start--1","t":"1. Muuta kirkkautta"},{"id":"quick-start--2","t":"2. Muuta väriä"},{"id":"quick-start--3","t":"3. Hae tilanne takaisin"},{"id":"quick-start--4","t":"Katso ulos lähtevät arvot"},{"id":"quick-start--5","t":"Mitä harjoitusrigissä on"},{"id":"quick-start--6","t":"Oikeiden valaisimien kytkeminen"},{"id":"quick-start--7","t":"Viisi asiaa, jotka kannattaa tietää ensin"}],"text":"QUICK START — kokeile Kanau-sovellusta 3 minuutissa Tähän asti pääset ilman yhtäkään valaisinta. Painikkeiden nimet on kirjoitettu täsmälleen niin kuin ne näkyvät ruudulla. Sovellus avautuu harjoitusrigiin, jossa on valmiiksi patchattuna 24 valaisinta. Kolme minuuttia täällä näyttää sinulle suurimman osan siitä, miten Kanau toimii. 1. Muuta kirkkautta Ruudun yläreunassa GM 20 sykkii punaisena. Napauta sitä. Napauta avautuvasta paneelista →100 . Kaikki kirkastuu. Sulje paneeli ja vedä faderia ylös ja alas. Sen yläpuolella oleva luku ja pyöreän kuvakkeen väri muuttuvat mukana. Fader liikkuu sen matkan mukaan, jonka sormesi kulkee, ei sen kohdan mukaan, johon kosketit . Aloituskohdalla ei ole vaikutusta lopputulokseen. 2. Muuta väriä Paina pohjaan faderin yläpuolella oleva pyöreä kuvake. Väripaneeli avautuu. Intensity säätää kirkkautta, Color temperature valkoista ja RGB väriä. Yläreunan ‹ › siirtävät seuraavaan valaisimeen. Jokaisessa valaisimessa on omat ominaisuutensa, joten näkyvät kohdat vaihtuvat sen mukana. 3. Hae tilanne takaisin Avaa alareunasta välilehti Scenes . Valmiina odottaa viisi tilannetta: DIM , COLOR , CCT , PIXELS , FX . Napauta yhtä. Kun palaat Home-näkymään, faderit ja värit ovat muuttuneet sen mukaisiksi. Kaikki minkä muutat haun jälkeen tallentuu takaisin samaan tilanteeseen. Lukitse tilanne, niin se pysyy suojassa (luku 08). Katso ulos lähtevät arvot Vaikka yhtään valaisinta ei olisi kytkettynä, Settings → DMX MONITOR näyttää numerot, joita Kanau todella lähettää. Liikuta faderia, niin numerot liikkuvat mukana. Mitä harjoitusrigissä on Demossa on 24 valaisinta valmistajalta Generic: DIMMER, CCT, RGB, RGBW ja BAR (4 pikseliä). Ne on jaettu kolmeen kahdeksan valaisimen ryhmään, joiden nimet ovat KEY, BACK ja FLOOR. Grand master on arvossa 20, kuusi valaisinta on merkitty Battery save -toimintoon ja niissä on vihreä nimilappu, ryhmässä FLOOR on käynnissä tuliefekti, ja tallennettuna on viisi tilannetta. Mikään siitä ei esitä olevansa todellinen tuote. Oikeiden valaisimien kytkeminen Kun demo on tullut tutuksi, siirry omaan kalustoosi. Yhdistä : tuo iPhone samaan verkkoon kuin DMX-solmusi. Tarkista kohdasta Settings → OUTPUT , että Nodes answering näyttää 1 tai enemmän ja Sending on vihreä (luku 02). Patchaa : Patch → ＋ new patch → add new fixture , ja aseta sitten malli, DMX-tila, universumi ja osoite. Aseta ne samoiksi kuin valaisimen omat asetukset (luku 03). Rakenna valaistuskuva : aseta kirkkaus ja väri Home-näkymässä (luvut 04 ja 05). Tallenna se : napauta näkymässä Scenes ＋ (luku 08). Harjoitusrigi on aivan tavallinen show. Poista se kun patchaat omat valaisimesi, tai tee uusi komennolla Settings → SHOWS → NEW SHOW . Viisi asiaa, jotka kannattaa tietää ensin Fixture Lock voittaa blackoutin. Lukittu valaisin palaa B.O. -tilan läpi (luku 10). Haettu tilanne päivittää itseään sitä mukaa kun työskentelet. Lukitse ne, jotka haluat jättää rauhaan (luku 08). Lukkoja on kolmea lajia. Fixture Lock pitää lähdön paikallaan, Scene Lock suojaa tallennetun tilanteen ja Screen Lock estää vahinkokosketukset (luku 10). Kun grand master on alle 100, ruudun reuna sykkii punaisena. Jos valaistus näyttää himmeältä, katso ensin sinne. Jos samoille valaisimille lähettää toinen valopöytä, näet ilmoituksen WAITING tai SHARED . Molemmat selitetään luvussa 02. WARNING Valaisin, jossa Lock on päällä, ei sammu kun painat blackoutia, eikä sammu kun vedät grand masterin nollaan. Tarkista ennen ottoa, että lukot ovat pois päältä. Blackoutin aikana yhä palavien valaisimien määrä näkyy ruudun yläreunassa vihreän 🔒-merkin vieressä. Seuraava Missä kaikki on ruudulla → luku 01 Oikeiden valaisimien kytkeminen → luku 02 Valaistuskuvien tallentaminen → luku 08"},{"id":"screen","title":"01 Ruudun lukeminen","h":[{"id":"screen--1","t":"Opettele ensin nämä seitsemän"},{"id":"screen--2","t":"Viisi välilehteä"},{"id":"screen--3","t":"Tilarivi"},{"id":"screen--4","t":"Home-näkymän osat"},{"id":"screen--5","t":"Värit ja merkit"}],"text":"01 Ruudun lukeminen Mitä Home-näkymässä on ylhäältä alas, ja miten sitä luetaan silloin kun jokin näyttää olevan pielessä. 1 2 3 4 5 6 7 8 Home ensimmäisellä käynnistyksellä. Punaiset numerot vastaavat alla olevaa luetteloa. 1 Protokolla ja yhteyden tila 2 Grand master (GM) 3 Näytettävien valaisimien ja ryhmien valinta 4 Sivulta toiselle siirtyminen 5 Valaisimen pyöreä kuvake 6 Fader 7 Numeropainike 8 Viisi välilehteä Opettele ensin nämä seitsemän Ennen tarkkoja taulukoita: nämä ovat ainoat paikat, jotka sinun on tunnettava. Paikka Mitä se tekee GM Kokonaiskirkkaus, ruudun yläreunassa Fixtures / Groups Valitsee, mitkä valaisimet näkyvät Fader Säätää kirkkautta Scenes Tallentaa valaistuskuvat ja hakee ne takaisin Patch Rekisteröi valaisimet Effects Luetteloi ja pysäyttää käynnissä olevat efektit Settings Lähtö, show&#x27;t, MIDI, sessio Kaikki tämän jälkeen tuleva on yksityiskohtaa. Viisi välilehteä Home on se näkymä, jossa työskentelet. Toisen välilehden napauttaminen avaa paneelin sen päälle. Palaa Home-näkymään vetämällä yläreunan kahvaa alas tai napauttamalla Done. Välilehti Mihin se on Katso Scenes Valaistuskuvien tallentaminen ja hakeminen Luku 08 Patch Valaisimet, osoitteet, tilat, ryhmät Luku 03 Home Kirkkauden säätö fadereilla Luku 04 Effects Efektien luettelointi, säätö ja pysäytys Luku 09 Settings DMX-lähtö, show&#x27;t, MIDI, sessio, asetukset Luvut 02, 11–13 Tilarivi Vasemmalla on protokolla ja yhteyden tila. ARTNET on Art-Net, SACN on sACN, ja BLUETOOTH tarkoittaa että lähetys kulkee vain Bluetoothin kautta. Näkyy Merkitys Vihreä piste Lähettää Keltainen piste Hidastettu tai yhteyttä muodostetaan uudelleen (Reconnecting…) Punainen piste, No node Mikään ei vastaa Punainen piste, Blocked iOS estää liikenteen Harmaa piste, idle Pysäytetty WAITING ja IP-osoite Toinen valopöytä löytyi, joten tämä pidättäytyy SHARED ja IP-osoite Toinen valopöytä lähettää samaan universumiin. Tämäkin lähettää edelleen JOINED ja nimi Sessiossa. DMX lähtee isännältä Vihreä piste ei todista, että valaisin olisi saanut mitään. Luku 02 kertoo, miten asian tarkistat, ja luku 14 sen, mitä tehdä kun jokin menee vikaan. Rivin keskellä ja oikeassa reunassa ovat nämä. Kohta Napautus Pohjaan painaminen tai huomio GM 100 Avaa grand masterin paneelin Pidä pohjassa, niin saat sen asetukset. Sykkii punaisena alle arvon 100 B.O. Poistaa blackoutin Korvaa GM:n blackoutin ajaksi 🔌 n (punainen) Ei mitään Universumeja on kytketty pois. Kytke ne takaisin: Settings → OUTPUT 🔒 n (vihreä) Ei mitään Lukittuja valaisimia palaa yhä blackoutin aikana BATTERY SAVE Kytkee päälle ja pois Pidä pohjassa, niin asetat määrän ja häivytyksen SCREEN LOCK Ei lukitse Lukitse ruutu pitämällä pohjassa 0.5 sekuntia Home-näkymän osat Kohta Miten sitä käytetään Fixtures / Groups Vaihtaa mallin mukaisen ja ryhmän mukaisen näkymän välillä 10 / 5 Fadereita sivulla. Viidellä kukin on leveämpi HISTORY Avaa aiempien tilojen luettelon Mallien ja ryhmien painikkeet Napauta, niin näet ne valaisimet. Pidä pohjassa, niin asetat värin ja kirkkauden niille kaikille CLEAR n Poistaa valinnan. Valo ei muutu ‹ / › Siirtää sivulta toiselle Luku Kirkkaus 0–100. Näkyy suurena yläreunassa vedon aikana Valaisimen pyöreä kuvake (…) Napauta, niin valitset. Pidä pohjassa , niin avaat kyseisen valaisimen paneelin Fader Vedä ylös ja alas, niin säädät kirkkautta Mallin nimi Merkitsee saman mallin ja tilan yhtenäisen jakson Numeropainike Valaisimen numero. Pianotilassa se muuttaa kirkkautta pohjassa pidettäessä ⏻ Kytkee lähdön pois ja päälle arvon säilyttäen COLOR Asettaa värin ja kirkkauden valituille valaisimille EFFECT Ajaa efektin valituille valaisimille PIXELS Avaa ja sulkee pikselivalaisimien solut ＋ − Kierrättää pianotilaa: LOCK → ＋ → − FINE Kierrättää herkkyyttä: tavallinen → FINE (1/10) → FINE+ (1/100) COLOR ei ole käytettävissä silloin kun mitään ei ole valittuna eikä valaisimilla, joissa ei ole väriä. EFFECT vaatii valinnan. PIXELS vaatii, että sivulla on pikselivalaisin. Värit ja merkit Väri tai merkki Merkitys Keltainen Valittu tai aktiivinen Punainen Blackout, matala grand master, verkko-ongelma, pianotila. Jotain tarkistettavaa Vihreä Lähettää. Fixture Lock. BATTERY SAVE päällä Violetti Lähtö kytketty pois tai ruutu lukittu Syaani Session toinen laite työstää tätä Oranssi Asettamassasi rajassa kiinni Harmaa Ei käytettävissä tai pysäytetty Pyöreä kuvake kantaa valaisimen värin ja sen todellisen lähdön. Valinta näkyy keltaisena kehyksenä, pois kytketty lähtö violettina renkaana ja ⏻-merkkinä, lukko vihreänä ulkorenkaana ja 🔒-merkkinä. Käynnissä oleva efekti saa sen liikkumaan. Punainen syke ruudun reunoilla tarkoittaa, että grand master on alle arvon 100. Vihreä reuna tarkoittaa, että BATTERY SAVE on päällä. Kun molemmat ovat päällä, punainen on ulkona ja vihreä sisällä. Blackoutin aikana punaisen reunan tilalla on B.O. tilarivillä. Seuraava Miltä faderit tuntuvat → luku 04 Värin asettaminen → luku 05 Mikään ei syty → luku 14"},{"id":"output","title":"02 DMX:n lähettäminen","h":[{"id":"output--1","t":"Ensimmäinen yhteys"},{"id":"output--2","t":"Yksi Art-Net-solmu"},{"id":"output--3","t":"Asetukset tarkemmin"},{"id":"output--4","t":"Protokolla ja verkot"},{"id":"output--5","t":"Kohteen valinta"},{"id":"output--6","t":"RESCAN"},{"id":"output--7","t":"iOS:n käyttöoikeudet"},{"id":"output--8","t":"Universumit ja Art-Netin numerointi"},{"id":"output--9","t":"CRMX Bluetoothin yli"},{"id":"output--10","t":"Kun toinen valopöytä löytyy"},{"id":"output--11","t":"DMX Diagnostics — sen lukeminen mitä tapahtuu"},{"id":"output--12","t":"DMX MONITOR"}],"text":"02 DMX:n lähettäminen — OUTPUT Yhteyden pystyttäminen valokalustoosi, ja sen tarkistaminen että data myös menee perille. 1 2 3 4 5 Settings → OUTPUT. Punaiset numerot vastaavat alla olevaa luetteloa. 1 Protokolla. Art-Net tai sACN, jompikumpi 2 Verkot. Lähetys kulkee niihin, jotka on rastitettu 3 Kuinka moni solmu vastasi. no reply tarkoittaa ettei yhtään löytynyt 4 Kohde. AUTO sopii useimpiin rigeihin 5 Etsi solmut uudelleen Ensimmäinen yhteys Yksi Art-Net-solmu Tuo iPhone samaan langattomaan tai langalliseen verkkoon kuin solmu. Avaa Settings → OUTPUT. Valitse Art-Net ja AUTO. Molemmat ovat oletuksia. Tarkista, että Nodes answering näyttää 1 tai enemmän ja Sending on vihreä. Liikuta faderia Home-näkymässä ja katso, miten valaisin vastaa. Kanau lähettää jokaista patchattua universumia jatkuvasti, tavallisesti nopeudella 44 Hz. Aloituspainiketta ei ole. Lähetys voi keskeytyä tai pysähtyä, jos toinen valopöytä havaitaan, jos verkkoasetukset muuttuvat tai jos iOS pidättää luvan. Asetukset tarkemmin Protokolla ja verkot Art-Net ja sACN ovat toisensa poissulkevia: valitse toinen. CRMX Bluetoothin yli kulkee kumman tahansa rinnalla. Network luettelee langattomat, Ethernet- ja Hotspot-yhteytesi osoitteineen ja sen, montako solmua kussakin vastasi. Oletuksena käytetään jokaista käytettävissä olevaa verkkoa. Kun kaikki ovat valittuina, yhden napautus jättää päälle vain sen. Sen jälkeen kukin napautus kytkee yhden päälle tai pois. Kytke kaikki pois, eikä verkkoon lähde mitään. Bluetooth lähettää edelleen. Yhteyttä, jonka kohdalla lukee no address, ei voi valita. Jos käytät langallista ja langatonta rinnakkain, tarkista että molemmat näkyvät luettelossa. Kohteen valinta Asetus Minne lähetys menee Milloin tätä käytetään AUTO (Art-Net) Unicastina vastanneille solmuille, ja lisäksi yksi broadcast sekunnissa kuhunkin verkkoon. Pelkkä broadcast, jos mikään ei vastannut Tavallinen valinta Broadcast (Art-Net) Joka ruutu kunkin verkon aliverkkoon Kun solmu ilmoittaa väärän osoitteen ja AUTO päivittyy hitaasti Unicast Suoraan syöttämiisi osoitteisiin Kun broadcast ei yllä perille tai haluat nimetä kohteen 255.255.255.255 (Art-Net) Broadcast omaan segmenttiin. Ei kulje reitittimen läpi Kun osoitteet eivät täsmää ja tavallinen broadcast ei toimi. iOS saattaa estää tämän Multicast (sACN) Kunkin universumin multicast-osoitteeseen sACN:n oletus Unicastilla kirjoitat solmun osoitteen ja napautat Add. Jos yhtään ei ole syötetty, saat ilmoituksen No node IPs entered. eikä mitään lähetetä. Jokainen universumi menee jokaiseen syöttämääsi osoitteeseen. Jos Nodes answering näyttää AUTO-tilassa 1 tai enemmän mutta valaisimet päivittyvät vain noin kerran sekunnissa, tarkista ilmoittaako solmu itsestään väärän osoitteen. Katso kohtaa Destination ja kokeile asetusta Broadcast. Luku 14 käy läpi viiveen muut syyt. RESCAN Art-Netin alla olevan RESCAN-painikkeen napautus päivittää solmuluettelon. Käytä sitä kun olet lisännyt tai poistanut kalustoa tai muuttanut osoitetta. Ilman sitäkin uusi solmu ilmestyy noin 3 sekunnissa ja poistettu häviää noin ajassa 10. Lähetys jatkuu etsinnän aikana. RESCAN ei ole käytettävissä ilman kelvollista verkkoa. iOS:n käyttöoikeudet Punainen palkki, jossa lukee iOS is blocking this., tarkoittaa jompaakumpaa näistä. Paikallisverkko : kytke päälle iPhonen Settings → Kanau → Local Network. sACN-multicast : jos näet ilmoituksen iOS blocked multicast., vaihda asetukseen Unicast ja syötä solmujen osoitteet. Multicast-oikeus myönnetään vain TestFlight- ja App Store -versioille, ei kehitysversiolle. Universumit ja Art-Netin numerointi Universes luettelee jokaisen patchatun universumin, sen valaisinmäärän, montako niistä palaa, ja ON/OFF-kytkimen. IMPORTANT OFF ei lopeta lähettämistä. Se lähettää kyseiseen universumiin nollia, jottei vastaanotin jäisi pitämään viimeisiä arvojaan ja palamaan. Pois kytkettyjen universumien määrä näkyy ruudun yläreunassa 🔌-merkin vieressä. Jos solmusi haluaa yhden numeron sijaan arvot Net / Sub-Net / Universe, kytke päälle Settings → SETTINGS → Art-Net → Net / Sub / Uni. Suhde on Net × 256 + Sub × 16 + Uni . sACN:n prioriteetti voi olla 0, 100 tai 200. Oletus on 100. Kun useampi lähde lähettää samaan universumiin, vastaanotin seuraa korkeinta prioriteettia. CRMX Bluetoothin yli Kytke Bluetooth päälle: Settings → OUTPUT → CRMX (Bluetooth). Anna iOS:lle lupa Bluetoothin käyttöön, kun se ensimmäisen kerran kysyy. Valitse lähetin luettelosta. Uusi napautus katkaisee yhteyden. Valitsemasi lähetin kantaa universumia 1 (U1). Seuraavalla kerralla Bluetoothin kytkeminen päälle yhdistää samaan lähettimeen. Saman universumin lähettäminen samaan valaisimeen sekä verkon että Bluetoothin yli voi saada sen välkkymään. Katso varoitus CRMX-osiosta ja kytke toinen reitti pois. Kanau ei valitse puolestasi. Jos lähetin ei suostu ottamaan Art-Netiä vastaan sen jälkeen kun olet kytkenyt Bluetoothin pois, tarkista sen oma Bluetooth-asetus ja käynnistä laite uudelleen. Aputure Sidus Four -lähettimessä tarkista myös laitteen oma Sidus BT -asetus. Kun toinen valopöytä löytyy Näkyy Mitä se tarkoittaa ja mitä tehdä WAITING + IP-osoite Toinen valopöytä lähetti jo tämän käynnistyessä, joten tämä pidättäytyy. Pysäytä toinen, tai napauta ilmoitusta ja valitse Send anyway? → Send. Jos toinen on Kanau-isäntä, voit sen sijaan liittyä sen sessioon SHARED + IP-osoite Toinen valopöytä ilmestyi tämän käynnistyttyä. Lähetys jatkuu, joten pysäytä toinen niistä jos on tarpeen Jos kaksi laitetta käynnistyy yhtä aikaa ja molemmat pidättäytyvät, se jonka osoite on pienempi alkaa lähettää uudelleen. DMX Diagnostics — sen lukeminen mitä tapahtuu OUTPUT-näkymän alaosa on siellä näyttämässä, mihin asiat pysähtyivät . Se ei ole joukko asetuksia. Kun lähtö on hidas tai puuttuu, lue sitä ylhäältä alas (luku 14). Kohta Miten sitä luetaan Destination Minne lähetys todella menee. ↦ osoitteen jäljessä tarkoittaa unicastia vastanneeseen solmuun Medium Käytössä olevat yhteydet, esimerkiksi wi-fi + ethernet Sending Paketit viimeis"},{"id":"patch","title":"03 Valaisimien patchaaminen","h":[{"id":"patch--1","t":"Valaisimien lisääminen"},{"id":"patch--2","t":"Kaksi numerolajia"},{"id":"patch--3","t":"Mallit ja tilat"},{"id":"patch--4","t":"Patchattujen valaisimien muuttaminen"},{"id":"patch--5","t":"Monen muuttaminen kerralla"},{"id":"patch--6","t":"Re-patch — siirtäminen vapaaseen tilaan"},{"id":"patch--7","t":"Ryhmien rakentaminen"},{"id":"patch--8","t":"Valaisimet joita kirjastossa ei ole (Advanced)"},{"id":"patch--9","t":"GDTF Share -palvelusta"},{"id":"patch--10","t":"GDTF-tiedostosta"},{"id":"patch--11","t":"Käsin, DMX-taulukosta"},{"id":"patch--12","t":"Kopioimalla olemassa olevasta"}],"text":"03 Valaisimien patchaaminen — Patch Rekisteröi käyttämäsi valaisimet ja aseta malli, DMX-tila, universumi, osoite, numero ja ryhmät. Kirkkaus ja väri asetetaan Home-näkymässä (luvut 04 ja 05). Patch-näkymä. Patchatut valaisimet on ryhmitelty mallin ja tilan mukaan. Valaisimien lisääminen Avaa Patch → ＋ new patch ja napauta add new fixture, niin kentät tulevat näkyviin. Valitse Manufacturer → Fixture → Mode. Tilan on vastattava sitä, joka on asetettu itse valaisimeen. Aseta kappalemäärä, universumi ja aloitusosoite. Tarkista alue ja mahdolliset varoitukset, ja napauta sitten Add. Tallennus tapahtuu lisäyksen yhteydessä. Kenttä Mikä se on Favourites Merkitse malli tähdellä, niin löydät sen suoraan ensi kerralla Name Näyttönimi. Oletuksena mallin nimi, jaettuna kaikkien saman mallin valaisimien kesken Fixture number Numero, jolla kutsut sitä lattialla. Voi jättää tyhjäksi. Alkaa käytössä olevasta suurimmasta plus yksi Label Lyhyt merkintä näyttöä varten. Käyttää oletusta, jos jätät tyhjäksi How many Enintään 4,096 Universe / Address Oletuksena U1 / 1. Universumin vaihtaminen palauttaa osoitteeksi 1. U0 on sallittu Offset Valaisimien välinen jako. Täytetään tilan kanavamäärästä Gap Valaisimien väliin jätettävät ylimääräiset kanavat Battery save Merkitsee uudet valaisimet BATTERY SAVE -toimintoon Label color Numeron tausta. Seitsemän väriä, tai ei mitään Map 512 kanavan asettelu. Vedä ja päästä irti, niin asetat aloitusosoitteen Ensimmäistä seuraava valaisin alkaa edellisestä aloitusosoitteesta plus Offset ja Gap. Kaikki mikä menee yli rajan 512 siirtyy seuraavaan universumiin. Tilan kanavamäärää pienempi Offset nostaa varoituksen, mutta voit jatkaa. Jälkeenpäin saat tuloksen tyyliin Added 3 × Titan Tube — U1 1–15. Already patched antaa lisätä lisää jo käytössä olevaa mallia. Patched now näyttää nykyisen asettelun. Kaksi numerolajia Numero Mikä se on Unit no. Juokseva numero mallin sisällä. Annetaan puolestasi Fixture number Numero, jota käytät lattialla. Sinä asetat sen Kumpi näistä Home-näkymässä näkyy, asetetaan kohdassa Settings → SETTINGS → Fixture numbers → Show the fixture number. Unit no. on oletus. Samat valaisinnumerot kahdesti nostavat varoituksen, mutta ne sallitaan. Mallit ja tilat Tämän version mukana tulee 45 valmistajaa, 578 valaisinta ja 11,347 tilaa . Kaikelle mitä kirjastossa ei ole, käytä Generic-määrittelyjä tai kohtaa Custom fixtures. Generic sisältää nämä: Dimmer, Dimmer 16-bit, Bi-color, CCT, RGB, RGBW, Dimmer + RGB, Dimmer + RGBW, Bulb ja Desk lamp. PROVISIONAL (Advanced): paikanvaraajatila, jota käytetään silloin kun DMX-taulukkoa ei ole käyty läpi. Se lähettää kirkkauden kanavalla 1 eikä muuta. Tilat, joissa ei ole himmenninkanavaa : fader ajaa värikanavia yhdessä ja toimii virtuaalisena himmentimenä. Patchattujen valaisimien muuttaminen Patched luettelee valaisimet mallin ja tilan mukaan. Napauta otsikkoa, niin taitat sen kokoon. Napauta valaisimen riviä, niin avaat sen patch-asetukset. ⚠ merkitsee päällekkäistä osoitetta tai kanavan 512 yli menevää jaksoa. Lähetys jatkuu merkin näkyessä, joten tarkista asetukset. n fixture data problems viittaa vikoihin, jotka löytyivät valaisindataa ladattaessa; napauta sitä, niin näet erittelyn. Tässä luettelossa työskentely ei muuta sitä, mitä valaisimia Home näyttää. Monen muuttaminen kerralla Napauta Select many ja valitse valaisimet. Mallirivin ✓ ottaa kaikki sen mallin valaisimet. Toiminto Mitä se tekee Select all / Select none Ottaa tai tyhjentää kaiken, myös kokoon taitetut rivit Name Numeroi nimen lopun siinä järjestyksessä kuin valitsit Number Asettaa valaisinnumerot siinä järjestyksessä kuin valitsit Address Latoo ne uudelleen universumista, aloitusosoitteesta ja välistä Battery Merkitsee ne BATTERY SAVE -toimintoon tai poistaa merkinnän New group Rakentaa valinnasta ryhmän Delete Poistaa ne. Tarkista lukumäärä ennen kuin vahvistat Valaisimen poistaminen poistaa myös sen kirkkauden, värin ja rajat, ja ottaa sen pois jokaisesta tilanteesta. Ryhmän sisältä poistaminen poistaa sen vain siitä ryhmästä; itse valaisin jää. Re-patch — siirtäminen vapaaseen tilaan Avaa Patch → Re-patch. Valitse osoitejärjestyksessä olevasta luettelosta siirrettävä valaisin. Napauta vapaata aluetta. Valaisin siirtyy sen alkuun. Vain riittävän suuret alueet tarjotaan. Päällekkäiset valaisimet näkyvät punaisina. Ryhmien rakentaminen Napauta ＋ new group ja anna sille nimi. Valitse valaisimet siinä järjestyksessä, jossa haluat ne Home-näkymään. Napauta CREATE. Valaisin voi olla useassa ryhmässä. Sitä ei kopioida: sen muuttaminen mistä tahansa ryhmästä muuttaa samaa valaisinta. Ryhmään lisääminen jättää sen myös kohtaan All. Ryhmän nimen napauttaminen antaa asettaa nimen, nähdä lukumäärän ja osoitealueen ja asettelun, järjestää uudelleen tai poistaa ryhmän. Edit group — add &amp; reorder lisää ja järjestelee valaisimia; Add to an existing group panee nykyisen valinnan valmiiseen ryhmään. Näyttääkö Patch rivin All, asetetaan kohdassa Settings → SETTINGS → Groups → Show the All row. Valaisimet joita kirjastossa ei ole (Advanced) Custom fixtures pitää sisällään itse lisäämäsi määrittelyt. Ne ovat käytettävissä jokaisessa show&#x27;ssa. Määrittelyn poistaminen ei vaikuta valaisimiin, jotka on jo patchattu sen pohjalta. GDTF Share -palvelusta Avaa ＋ Browse GDTF Share ja kirjaudu sisään painikkeella SIGN IN GDTF Share -tunnuksillasi. Päivitä luettelo painikkeella REFRESH, ja valitse sitten valmistaja, valaisin, revisio ja tila. Search kattaa kaikki valmistajat. Lue tuontiraportti ja valitse SAVE, SAVE &amp; EDIT tai SAVE &amp; PATCH. SAVE &amp; PATCH avaa patch-näkymän kyseinen määrittely valittuna. Remember on this device tallentaa kirjautumisesi; FORGET poistaa sen. Jo haetut määrittelyt jäävät. Kirjautumisesi menee GDTF Share -palveluun. GDTF-tiedostosta ＋ Import a GDTF file → ＋ Open a GDTF file, valitse .gdtf, tarkista tila ja tuontiraportti, ja tallenna sitten. Verkkoa ei tarvita. Raportti luettelee sen, mitä ei voitu tuoda mukana. Kauas toisistaan j"},{"id":"intensity","title":"04 Kirkkauden säätäminen","h":[{"id":"intensity--1","t":"Faderin liikuttaminen"},{"id":"intensity--2","t":"FINE"},{"id":"intensity--3","t":"Monen liikuttaminen kerralla"},{"id":"intensity--4","t":"Numeropainikkeet pianona"},{"id":"intensity--5","t":"⏻ — pelkkä lähtö"},{"id":"intensity--6","t":"GM ja B.O."},{"id":"intensity--7","t":"Sen valitseminen, mitä sivulla on"},{"id":"intensity--8","t":"Alareunan painikkeet"},{"id":"intensity--9","t":"Pikselien työstäminen erikseen"}],"text":"04 Kirkkauden säätäminen — Home Home-näkymän faderit. Tämä on Kanaun sydän. Faderin liikuttaminen Fader vastaa siihen matkaan, jonka sormesi kulkee , ei siihen kohtaan, johon kosketit. Voit ajaa sitä numerosta, pyöreästä kuvakkeesta tai faderin alapuolisesta tyhjästä tilasta. Se on rakennettu niin, että voit työskennellä katse näyttämöllä eikä kädessä. Ylhäältä alas: nykyinen kirkkaus, valaisimen pyöreä kuvake, fader. Napauta kuvaketta, niin valitset; pidä pohjassa, niin avaat kyseisen valaisimen paneelin. Nuppi kasvaa hieman kun kosketat sitä, eikä mikään liiku ennen kuin olet vetänyt lyhyen matkan , joten sormen lepuuttaminen sen päällä on turvallista. Vedon aikana numero, nimi ja arvo näkyvät suurina ruudun yläreunassa. Jos olet asettanut rajat, liike tapahtuu niiden sisällä. FINE Toiminto Mitä tapahtuu Lyhyt napautus Kierrättää: tavallinen → FINE (1/10) → FINE+ (1/100) → tavallinen Pohjassa pitäminen Seuraava porras pidon ajan. Palaa tavalliseen kun päästät irti Kesken vedon vaihtaminen ei saa arvoa hyppäämään. FINE vaikuttaa myös raakakanaviin sekä Pan- ja Tilt-arvoihin. Monen liikuttaminen kerralla Valitse kaksi tai useampi pyöreä kuvake, ja vedä sitten yhtä fadereista. Ne kaikki liikkuvat saman verran ja keskinäiset erot säilyvät. Kun yksi osuu rajaan, muut jatkavat. Lukitut valaisimet jäävät ulkopuolelle. Tämä ei ole sama asia kuin usean valaisimen työstäminen COLOR-paneelissa, jossa ne kaikki päätyvät samaan arvoon. Numeropainikkeet pianona Oikean alanurkan ＋ − -painike asettaa tilan. Tila Kun numeropainiketta pidetään pohjassa LOCK (oletus) Mikään ei muutu ＋ Menee ylärajaan, oletuksena arvoon 100 − Menee alarajaan, oletuksena nollaan Kun päästät irti, arvo palaa siihen missä se oli. Voit pitää useampaa pohjassa yhtä aikaa tai liu&#x27;uttaa sivusuunnassa ja soittaa niitä vuoron perään. Lukitut valaisimet eivät vastaa. Painikkeet muuttuvat punaisiksi kun ＋ tai − on viritettynä. Käynnistyksessä tila on aina LOCK. ⏻ — pelkkä lähtö ⏻-painikkeen napautus kytkee valaisimen lähdön pois ja päälle arvon säilyttäen. Se muuttuu violetiksi pois kytkettynä, ja numero jää näkyviin. Faderin liikuttaminen lähdön ollessa pois ei sytytä mitään. ON/OFF on oletus. Valaisimen kohdasta Switch function voit vaihtaa sen asetukseksi FLASH ON tai FLASH OFF, jotka kestävät vain pidon ajan. Lukitut valaisimet eivät vastaa. GM ja B.O. Yläreunan GM-painikkeen napautus avaa grand master -faderin sekä painikkeet B.O. ja →100. GM-fader asettaa kokonaiskirkkauden. Se on suhteellinen, ja FINE toimii siinä. B.O. kytkee blackoutin päälle ja pois. GM:n arvo säilyy. →100 ilmestyy kun GM on alle arvon 100, ja palauttaa sen. GM:n pohjassa pitäminen tarjoaa arvot 100, 75, 50, 25, 12.5 ja 0. Siellä oleva 0 kytkee blackoutin päälle; se ei aseta GM:ää nollaan. Näiden painikkeiden häivytys asetetaan kohdassa Settings → SETTINGS → Master fade. SNAP on oletus. Faderin vetäminen sormella on aina välitön. WARNING Valaisin, jossa Lock on päällä, ei vastaa GM:ään eikä B.O. -tilaan. Se jää palamaan. Blackoutin aikana yhä palavien lukittujen valaisimien määrä näkyy ruudun yläreunassa vihreän 🔒-merkin vieressä. Sen valitseminen, mitä sivulla on Fixtures näyttää mallin ja tilan mukaan; Groups näyttää kohdan All ja rakentamasi ryhmät. Napauta nimeä, niin vaihdat. Yksi fader on aina yksi valaisin, myös ryhmän sisällä. Kohdan All järjestys asetetaan kohdassa Settings → SETTINGS → Order on All, joko mallin ja juoksevan numeron tai valaisinnumeron mukaan. Ryhmän sisällä järjestys on se, jossa sen rakensit. ‹ ja › vaihtavat sivua. Vaihto 10:n ja 5:n välillä pitää työstämäsi valaisimen näkyvissä. Alareunan painikkeet Vasemmalta: COLOR, EFFECT, PIXELS, ＋ −, FINE. Harmaita ei voi käyttää nykyisessä tilassa. COLOR ja EFFECT vaativat valinnan. PIXELS harmaantuu kun sivulla ei ole yhtään pikselivalaisinta. Pikselien työstäminen erikseen PIXELS-painikkeen napautus avaa sivun pikselivalaisimien solut omiksi fadereikseen. Ne näkyvät nimillä P1, P2 ja niin edelleen, ja kullakin on oma kirkkautensa ja värinsä. Uusi napautus taittaa ne kokoon. CLEAR n poistaa vain valinnan. Arvoihin ja lähtöihin ei kosketa. Seuraava Värin asettaminen → luku 05 Valaistuskuvien tallentaminen → luku 08 Jotkin faderit eivät tee mitään → luku 14"},{"id":"color","title":"05 Värin asettaminen","h":[{"id":"color--1","t":"Paneelin avaaminen"},{"id":"color--2","t":"Kirkkaus ja väri"},{"id":"color--3","t":"Geelit"},{"id":"color--4","t":"Usein käyttämiesi värien tallentaminen"},{"id":"color--5","t":"ADVANCED COLOR"},{"id":"color--6","t":"Monta valaisinta ja monta mallia"},{"id":"color--7","t":"Pikselit ja toistuvat väriryhmät"}],"text":"05 Värin asettaminen — COLOR Väri ja kirkkaus yhdelle valaisimelle tai monelle. NOTE Se mitä näet riippuu siitä, mitä valaisimessa todella on. Yksikanavainen himmennin näyttää vain kohdan Intensity. Kanau ei näytä säätimiä, joita valaisimessa ei ole. Väripaneeli. Näkyvissä ovat vain ne ominaisuudet, jotka valaisimessa on. Paneelin avaaminen Miten Mihin se vaikuttaa Pidä valaisimen kuvaketta pohjassa Kyseiseen yhteen valaisimeen Pidä solun kuvaketta pohjassa Kyseiseen soluun Valitse valaisimet, sitten COLOR Kaikkeen valittuun Pidä mallin tai ryhmän painiketta pohjassa Jokaiseen sen valaisimeen. All tarkoittaa jokaista valaisinta Kun yksi valaisin on auki, ‹ ja › siirtävät seuraavaan. Kirkkaus ja väri Kohta Miten se toimii Intensity 0–100, liukusäätimellä, kirjoittamalla, ± -painikkeilla tai esivalinnoilla Color temperature (CCT) Kelvineinä, valaisimen oman alueen sisällä Green / Magenta Vihreä–magenta-korjaus. Back to neutral palauttaa sen nollaan Crossfade Tasapaino valkoisen ja värin puolen välillä. Kumpi päin, riippuu valaisimesta RGB ja emitterit R, G, B, W, Amber, Lime, Cyan ja mitä muuta valaisimessa onkin Hue / Saturation / CIE x / CIE y Näkyvät niissä valaisimissa, joissa ne ovat Kirkkauden ±5 ja ±10 napsahtavat viiden tai kymmenen monikertoihin: arvosta 47 +10 antaa 50. Esivalinnat ovat 12.5 %, 25 %, 35 %, 50 % ja 75 %. CCT-esivalinnat ovat 2700, 3000, 3200, 4300, 5000, 5600, 6500 ja 10000 K. Valaisimen alueen ulkopuolella päädyt sen rajaan, merkintänä MIN tai MAX. Valaisin, jossa on vain kaksi värilämpötilaa, näyttää liukusäätimen sijaan kaksi painiketta. Green / Magenta -portaita voi muokata pitämällä niitä pohjassa. Kun valaisimessa on useampi kuin yksi crossfade, myöhemmät ilmestyvät juuri niiden säätimien yläpuolelle, joita ne syöttävät. Geelit Kohta Mikä se on Gel presets LEE- ja Rosco-esivalinnat valaisimille, joissa on RGB. Erilliset taulukot arvoille 3200 K ja 5600 K Preset / Gel Valaisimen omat sisäänrakennetut geelit tai väriesivalinnat, valitaan numerolla Gels → x/y LEE:n ja Roscon väriarvot valaisimille, joissa on x ja y Kohdan Gel presets RGB-arvot tulevat Asteran julkaisemasta väridatasta. Ne eivät kanna kirkkautta, joten se asetetaan faderilla. Valaisimen omilla esivalinnoilla sovellus ei aina pysty näyttämään, mikä niistä on valittuna. Luettelo jää auki valinnan jälkeen, joten voit kokeilla yhtä toisensa jälkeen. Sulje se merkillä ✕. Näkyykö se lainkaan, asetetaan kohdassa Settings → SETTINGS → Gels → Gel presets. Usein käyttämiesi värien tallentaminen Save this color tallentaa värin tähden ★ alle. Se säilytetään mallikohtaisesti. CCT ja G/M eivät sisälly siihen. Save this temperature tallentaa värilämpötilan. Se taas on yhteinen kaikille malleille. Napauta tallennettua painiketta, niin otat sen käyttöön. Pidä pohjassa, niin nimeät uudelleen, muokkaat tai poistat. ADVANCED COLOR Valitsin kohdassa ADVANCED COLOR. Sävy kulkee vaakasuuntaan, kylläisyys pystysuuntaan. ADVANCED COLOR kokoaa yhteen ne säätimet, jotka sovellus laskee itse, eikä valaisimen omia kanavia. Valitsimessa sävy kulkee vaakasuuntaan ja kylläisyys pystysuuntaan. Kirkkaus on faderin tehtävä. Vedä pyöreän kahvan läheltä, niin väri liikkuu; muualta vetäminen vierittää paneelia. RGB, RGB:stä lasketut Hue ja Saturation sekä CMY (255 − RGB) näkyvät niissä valaisimissa, jotka voivat ottaa ne vastaan. Valaisimessa, joka vastaanottaa vain arvot Hue ja Saturation tai vain x ja y, käytä sen sijaan ylempänä olevia säätimiä. Monta valaisinta ja monta mallia Tässä paneelissa kaikki mihin kosket päätyy samaksi arvoksi kaikelle valitulle. Tämä pätee yhtä lailla liukusäätimiin, ± -painikkeisiin, esivalintoihin, kirjoittamiseen ja tallennettuihin väreihin. Jos haluat liikuttaa niitä erot säilyttäen, valitse sen sijaan faderit Home-näkymässä. Kun valittuna on eri malleja, näkyvissä ovat vain Intensity, CCT, G/M, Crossfade ja ★. Avaa yksi malli yksinään, niin asetat RGB:n ja emitterit. CCT pidetään kunkin valaisimen oman alueen sisällä. Pikselit ja toistuvat väriryhmät Pidä solun kuvaketta pohjassa, niin asetat sen solun värin ja kirkkauden. Rungon värin muuttaminen asettaa kaikki solut; käsin muuttamasi solu pitää omansa. Rungon Intensity vaikuttaa kaikkiin soluihin. Kun tilassa on sama värirooli useammin kuin kerran, kuten Gel 1 ja Gel 2, myöhemmät ryhmät näkyvät paneelissa alempana. Ensimmäistä seuraavia väriryhmiä ei tallenneta tilanteisiin. Seuraava Valaisinkohtaiset asetukset → luku 06 Valaistuskuvien tallentaminen → luku 08"},{"id":"fixture-settings","title":"06 Valaisinkohtaiset asetukset","h":[{"id":"fixture-settings--1","t":"Nimi ja näyttö"},{"id":"fixture-settings--2","t":"Rajat"},{"id":"fixture-settings--3","t":"Lock"},{"id":"fixture-settings--4","t":"Muut asetukset"},{"id":"fixture-settings--5","t":"Channels — raaka DMX (Advanced)"},{"id":"fixture-settings--6","t":"Patchin tai tilan muuttaminen"}],"text":"06 Valaisinkohtaiset asetukset Yhden valaisimen rajat, lukko ja raakakanavat. Vieritä alaspäin siinä paneelissa, jonka saat pitämällä valaisimen kuvaketta pohjassa, kohdasta COLOR tai pitämällä mallin tai ryhmän painiketta pohjassa. Rajat, Lock, Switch function ja Battery save voidaan asettaa usealle valaisimelle kerralla. Sekalaiset arvot näkyvät muodossa — tai n of m, ja yhden muuttaminen vaikuttaa niihin kaikkiin. Channels, Mode, Channel roles ja Patch näkyvät vain silloin kun auki on yksi valaisin. Nimi ja näyttö Muokkaa nimeä paneelin yläreunassa. ‹ ja › siirtävät seuraavaan valaisimeen. Label on mallin kesken jaettu näyttönimi; Label color on numeron tausta. No label color tyhjentää sen. Rajat Lower limit ja Upper limit asettavat alueen, jonka sisällä voit työskennellä. Muuta niitä painikkeilla ±1 ja ±5, tai tyhjennä ne. Rajan ulkopuolella Home näyttää oranssia viivoitusta. Solun rajat toimivat rungon rajojen sisällä. Jos runko on katkaistu arvoon 50, arvoon 80 katkaistu solu ei siltikään pääse yli arvon 50. Lock WARNING Fixture Lock voittaa kaiken : grand masterin, blackoutin, BATTERY SAVE -toiminnon, tilanteiden haun, MIDI:n ja session. Lukittu valaisin ei sammu kun painat blackoutia. Tarkista lukkosi ennen ottoa. Kun Lock on päällä, valaisimen lähtö pysyy paikallaan. Faderit, pianotila, ⏻, väri, raakakanavat, GM, B.O., BATTERY SAVE, tilanteet, MIDI ja sessio jättävät sen kaikki rauhaan. Kun valittuna on useita valaisimia ja osa niistä on lukittuja, napautus poistaa jokaisen lukon. Kun yksikään ei ole lukittu, napautus lukitsee ne kaikki. Lukitseminen kesken piano- tai FLASH-painalluksen palauttaa ensin väliaikaisen arvon ja pitää sitten kiinni. Rajojen muuttaminen lukittuna ei liikuta nykyistä arvoa; se tuodaan uudelle alueelle kun avaat lukon. Muut asetukset Kohta Mikä se on Switch function Mitä ⏻ tekee: None, ON/OFF, FLASH ON tai FLASH OFF. ON/OFF on oletus Battery save Merkitsee tämän valaisimen BATTERY SAVE -toimintoon Invert Kääntää vetosuunnan arvoille Pan ja Tilt. Näytetty kulma ei muutu Mode Näyttää nykyisen DMX-tilan. Vaihda se kohdasta RE-PATCH Channel roles Korjaa kunkin kanavan roolin ja nimen. Osoitteet eivät siirry Käytä kohtaa Channel roles kun patchatun valaisimen kanavia käsitellään väärinä toimintoina. Jos haluat korjauksen siirtyvän myöhemmin patchaamiisi valaisimiin, muokkaa sen sijaan määrittelyä kohdassa Custom fixtures. Channels — raaka DMX (Advanced) Käytä ensin värin, suunnan ja muiden omia säätimiä. Channels on siellä niitä toimintoja varten, joita nuo säätimet eivät kata, yksi DMX-kanava kerrallaan. Channels luettelee kaiken DMX-järjestyksessä otsikoiden DIMMER, COLOR, POSITION, GOBO, BEAM, FOCUS, SHAPERS ja CONTROL alla. Tyhjät ryhmät piilotetaan. Rivin laji Miten sitä käytetään Portaaton arvo Liukusäädin, kirjoittaminen tai − ja + Nimetyt arvot ja alueet Valikko 12 kohtaan asti, sitä laajemmat haettavana luettelona Komennot kuten Reset tai Lamp Off Pidä pohjassa ilmoitettu aika. Peruuta päästämällä irti ennen aikaa. Komennot, joilla ei ole aikaa, ovat napautuksia Harmaa rivi merkinnällä FADER tai COLOR Ajetaan omalla säätimellään, joten sitä ei voi muokata täällä Rivi, joka riippuu toisesta kanavasta Näyttää mikä on käytettävissä nykyisessä tilassa, ja huomautuksen kun ei ole Oikean yläkulman DMX vaihtaa raakojen arvojen ja prosenttien välillä. Rivin Home palauttaa sen oletukseen; arvoilla Pan ja Tilt se vaatii pohjassa pitämisen. Se ei ole käytettävissä silloin kun mitään ei ole muutettu. Raakakanavien muutokset tallentuvat tilanteisiin ja kirjautuvat kohtaan HISTORY. Pikselivalaisimessa rungon paneeli kantaa rungon kanavat ja solun paneeli kyseisen solun kanavat. Patchin tai tilan muuttaminen Muokkaa kohdasta RE-PATCH osiossa Patch. Voit nähdä ja muuttaa universumin ja osoitteen, valaisinnumeron, mallin ja tilan. Next free siirtää sen seuraavaan aukkoon. Change mode näyttää alueen ennen ja jälkeen sekä ne valaisimet, joiden kanssa se menisi päällekkäin, ennen kuin vahvistat. Voit ottaa sen käyttöön kaikissa saman mallin valaisimissa. Sen jälkeiset valaisimet eivät siirry itsestään. Delete this fixture poistaa valaisimen vahvistuksen jälkeen yhdessä sen arvojen ja asetusten kanssa, ja ottaa sen pois jokaisesta tilanteesta. Seuraava Suunta ja keila → luku 07 Mikä lukko tekee mitäkin → luku 10"},{"id":"position","title":"07 Suunta ja keila","h":[{"id":"position--1","t":"Pan ja Tilt"},{"id":"position--2","t":"Zoom, iiris, frost, tarkennus ja gobo"}],"text":"07 Suunta ja keila Pan, tilt, zoom, iiris, frost ja gobo liikkuvissa valaisimissa. Pan ja Tilt Pidä valaisimen kuvaketta pohjassa ja avaa Channels → POSITION. Tässä versiossa suunnalle ei ole omaa näkymää. Pan ja Tilt näkyvät asteina silloin kun valaisindata kantaa kulmat, ja prosentteina silloin kun ei. 16-bittisessä valaisimessa karkea ja hieno ovat samalla rivillä. Vedä kahvan läheltä, niin liike vastaa sitä matkaa, jonka sormesi kulkee. Muualta vetäminen vierittää paneelia. Kirjoita kulma kenttään. Valaisimen alueen ulkopuoliset arvot hylätään. Askella arvoilla ±0.1°, ±1°, ±10° ja niin edelleen. Portaat tulevat yksiköstä ja tarkkuudesta. FINE ja FINE+ hidastavat sen suhteisiin 1/10 ja 1/100. Pidä Home pohjassa, niin lähetät sen valaisimen omaan aloitusasentoon. Peruuta päästämällä irti ennen aikaa. Invert kääntää vetosuunnan. Mikään ei liiku niin kauan kuin valaisin on lukittu. Kuolleet alueet, joilla DMX-arvo ei tee mitään, ohitetaan sekä liukusäätimellä että portailla. Valaisimessa, jonka oletus on kuolleen alueen sisällä, portaat eivät liiku: pääse ensin elävälle alueelle liukusäätimellä tai kirjoittamalla arvo. Suunta tallentuu tilanteisiin ja kirjautuu kohtaan HISTORY. IMPORTANT Tilanteen häivytys ei interpoloi arvoja Pan ja Tilt. Ne napsahtavat tallennettuun arvoon sillä hetkellä kun haet tilanteen. Häivytysajan asettaminen ei saa päätä liikkumaan hitaasti. Zoom, iiris, frost, tarkennus ja gobo Avaa BEAM, GOBO tai FOCUS kohdassa Channels. Portaattomat arvot saavat liukusäätimen; gobot ja prismat saavat nimetyt vaihtoehdot. Ne toimivat täsmälleen kuten muutkin rivit luvussa 06. Jos haluat animoida jotakin näistä, käytä ryhmiä MOVE ja BEAM EFFECT-paneelissa. MOVE työskentelee sen ympärillä, mihin pää nyt osoittaa, ja kerrostuu kirkkausefektien päälle. Seuraava Liikkeen animointi → luku 09 Valaistuskuvien tallentaminen → luku 08"},{"id":"scenes","title":"08 Valaistuskuvien tallentaminen ja hakeminen","h":[{"id":"scenes--1","t":"Tilanteen tallentaminen"},{"id":"scenes--2","t":"Hakeminen ja siivoaminen"},{"id":"scenes--3","t":"Se mitä muutat haun jälkeen tallentuu"},{"id":"scenes--4","t":"Mitä tallentuu ja mitä ei"},{"id":"scenes--5","t":"Häivytys"}],"text":"08 Valaistuskuvien tallentaminen ja hakeminen — Scenes Tilanne on tallennettu valaistuskuva. Avaa Scenes, napauta ＋ niin tallennat, napauta riviä niin haet sen takaisin. Tilanneluettelo. Nykyisellä tilanteella on keltainen tausta. Tilanteen tallentaminen Aseta kirkkaus, väri ja mahdolliset efektit Home-näkymässä. Napauta Scenes → ＋. Tallennus tapahtuu heti. Nimeä se uudelleen napauttamalla kyseisen tilanteen rivillä olevaa kohtaa Settings ja kirjoittamalla nimi. Rivin pyyhkäisy vasemmalle avaa saman paneelin. Suojaa sen sisältö kytkemällä samasta paneelista päälle Lock this scene. Tämä Settings on se, joka on tilanteen rivin sisällä . Se ei ole ruudun alareunan Settings-välilehti. Hakeminen ja siivoaminen Toiminto tai merkki Mitä se tekee Rivin napautus Hakee tilanteen kun nostat sormen NEXT / BACK Seuraava tai edellinen tilanne. Kiertää ympäri. Ei käytettävissä kun tilanteita on vain yksi ● ja keltainen tausta Nykyinen tilanne ▸ Tilanne, jonka NEXT tuo esiin Piste muokkauksen jälkeen Tilanne on muuttunut sen jälkeen kun se haettiin 🔒 ja vihreä reuna Lukittu ylikirjoitusta vastaan Settings, tai pyyhkäisy vasemmalle Nimi, häivytysaika, lukko, poisto Edit Uudelleenjärjestely, poisto, monen poisto Numerot ovat näyttöjärjestys. Nimen alla oleva aika kertoo, milloin sisältö viimeksi muuttui. Se mitä muutat haun jälkeen tallentuu Kun olet kerran hakenut tilanteen, kaikki mitä sen jälkeen teet valolle kirjoitetaan takaisin siihen. SAVE-painiketta ei ole; kirjoitus tapahtuu kun nostat sormen. Kytke päälle Lock this scene niissä tilanteissa, jotka haluat jättää rauhaan. Voit yhä hakea ne ja yhä työstää valoa, mutta mitään ei tallenneta. Tämä ei ole sama asia kuin Fixture Lock. Scene Lock suojaa sen mikä on tallennettu; Fixture Lock pitää lähdön paikallaan. Tallennus siirtyy toiseen tilanteeseen kun haet toisen, kun poistat sen jossa olet, ja kun avaat show&#x27;n uudelleen. Tilanteen sisällön muutokset eivät kuulu kohtaan HISTORY. Mitä tallentuu ja mitä ei Tallentuu Ei tallennu Kirkkaus, CCT, G/M, crossfade, RGB, emitterit GM, B.O. ja BATTERY SAVE Raakakanavat kuten suunta ja gobo Rajat, Fixture Lock, ⏻:n tila, Switch function Solun väri ja kirkkaus, efektit Ensimmäistä seuraavat väriryhmät Valaisin, jossa Lock on päällä, ei muutu haussa. Häivytys Aseta se tilannekohtaisesti kohdassa Settings → Fade. Oletus on 3 sekuntia. Esivalintoina ovat SNAP, 1, 2, 3, 5 ja 10, ja säätöön ±0.1 ja ±1. Faderit liikkuvat häivytyksen aikana, ja voit ottaa ohjat käsin kesken kaiken. Suunta, gobo ja muut raa&#x27;at arvot eivät interpoloi; ne napsahtavat haettaessa. Tilanne, jossa on efektejä, käynnistää ne efektit uudelleen haettaessa. Sellaisen tilanteen hakeminen, jossa ei ole efektejä, vapauttaa kaiken käynnissä olevan. Itse haku kirjautuu kohtaan HISTORY yhtenä askeleena. Tilanteet ovat osa show-tiedostoa. Seuraava Askel taaksepäin → luku 10 Show&#x27;n tallentaminen → luku 11 Tilanne muuttuu itsestään → luku 14"},{"id":"effects","title":"09 Efektit","h":[{"id":"effects--1","t":"Efektin ajaminen"},{"id":"effects--2","t":"Tauko, vapautus, uudelleenkäynnistys"},{"id":"effects--3","t":"ADJUST"},{"id":"effects--4","t":"ARRANGE"},{"id":"effects--5","t":"Kohteen vaihtaminen ja asetusten tallentaminen"},{"id":"effects--6","t":"Efektin löytäminen sen mukaan mitä haluat"},{"id":"effects--7","t":"Koko luettelo"},{"id":"effects--8","t":"SIGNAL — liikennevalot"},{"id":"effects--9","t":"LIGHT-, MOVE- ja BEAM-efektien kerrostaminen"},{"id":"effects--10","t":"Efektien hallinta Effects-välilehdeltä"}],"text":"09 Efektit Vilkkua, tulta, salamointia ja muuta sellaista valaisimillesi ajettuna. Home-näkymän EFFECT ajaa efektin sille, minkä olet valinnut. Alareunan Effects-välilehti hallinnoi kaikkea käynnissä olevaa. Efektin ajaminen Napauta Home-näkymässä valaisimen tai solun pyöreää kuvaketta, niin valitset sen. Avaa EFFECT. Napauta efektin nimeä. Se käynnistyy välittömästi. Fader säätää edelleen kirkkautta. Efektin käydessä EFFECT-painike kantaa sen nimen, ja valaisimen kuvake ja fader liikkuvat mukana. Tauko, vapautus, uudelleenkäynnistys Toiminto Mitä se tekee PAUSE Jäädyttää liikkeen nykyiseen kirkkauteen ja asentoon RESUME Jatkaa siitä mihin se jäätyi RELEASE Pysäyttää sen ja antaa ohjat takaisin tavallisille arvoille. Asetukset jäävät luetteloon START Ajaa vapautetun efektin uudelleen alusta CLEAR Poistaa sen luettelosta. Kysyy ensin ADJUST Kohta Mikä se on Speed Hertseinä. Desimaalit sallittuja Depth Kuinka alas se vetää kirkkauden. 100 yltää nollaan, 35 tuskin liikahtaa How often / Cycle Kuinka usein se tapahtuu. Vain niissä lajeissa, jotka käyttävät sitä Roughness Kuinka rosoinen liekki on Width Kuinka suuri osa rigistä palaa kerralla, esimerkiksi 50% 2 / 4 Tail Efektin COMET hännän pituus Se mitkä kohdat näkyvät riippuu efektistä. Efektillä SIGNAL ei ole kohtaa Speed. ARRANGE SPREAD porrastaa valaisimet; TOGETHER pitää ne tahdissa. Efektit RUNNER, FADE RUN, BOUNCE, COMET ja SIGNAL eivät tarjoa tätä valintaa. Järjestely Mitä se tekee IN ORDER Tasaisesti porrastettuna numeron mukaan ALTERNATE Parittomat ja parilliset, puoli jaksoa toisistaan WINGS Peilattuna keskeltä ulospäin RANDOM Satunnaisessa järjestyksessä BOUNCE Kääntyy takaisin kummassakin päässä BUILD Sytyttää yhden kerrallaan ja tyhjentää sitten kaikki yhdessä RUNS kohdan IN ORDER alla kertoo, montako kuviota ajetaan kerralla; vaihtoehdot riippuvat valaisimien määrästä. DIRECTION on FORWARD tai REVERSE. Tulessa ne valaisimet, jotka osaavat molemmat, antavat valita CCT- ja RGB-lähdön välillä. Kohteen vaihtaminen ja asetusten tallentaminen Applies to → SELECT ▾ valitsee valaisimet ja ryhmät. Valinta on yhteinen Home-näkymän kanssa, ja luettelo pysyy auki valinnan ajan. SAVE kohdassa SAVED tallentaa säätämäsi asetukset nimen alle. Napauta tallennettua painiketta, niin otat sen käyttöön; napauta uudelleen, niin pysäytät sen. Pidä pohjassa, niin nimeät uudelleen tai poistat. Valaisimet eivät kuulu tallennettuun asetukseen. Valitse jo käynnissä olevat valaisimet yhdessä uusien kanssa, valitse sama efekti, ja nopeus, syvyys ja vaihe siirtyvät mukana. Kun asetukset eroavat, se putoaa takaisin oletuksiin. Jos haluat vapauttaa vain yhden valaisimen, valitse vain se ja RELEASE. Efektin löytäminen sen mukaan mitä haluat Mitä haluat Kokeile Luonnonvaloa FIRE 1 ja 2, LIGHTNING, WATER, WIND, TV Rigiä pitkin juoksevaa valoa RUNNER, FADE RUN, BOUNCE, COMET Kaupungin valoa NEON, SIGNAL, TOKYO, OSAKA, KYOTO, NARA, PACHINKO Majakoita BEACON R/B, BLUE, RED, AMBER Pelkkää vilkkua BLINK, STROBE, PULSE, DOUBLE, RANDOM 1–3 Sammuvaa loistelamppua FLUO 1–3 Pään liikuttamista Ryhmä MOVE Zoomin tai gobon liikuttamista Ryhmä BEAM Koko luettelo Ryhmä Efektit BASIC BLINK, STROBE, PULSE, DOUBLE, RANDOM 1–3, RUNNER, FADE RUN, BOUNCE, COMET LIGHTS FLUO 1–3, FIRE 1 (kynttilä), FIRE 2 (nuotio), LIGHTNING, TV, NEON, SIGNAL SCENES BEACON R/B, BLUE, RED, AMBER, TOKYO, OSAKA, KYOTO, NARA, PACHINKO, WATER, FIREWORKS, LANTERNS MOVE DRIFT, PASS, ORBIT, EIGHT, BOX, SPIRAL, SEARCH, BREATHE, HANDHELD, WIND, JUMP, BALLYHOO BEAM ZOOM PULSE, ZOOM BREATHE, IRIS PULSE, FROST BREATHE, GOBO SHAKE Efektit RUNNER, FADE RUN, BOUNCE ja COMET vaativat useita valaisimia tai pikseleitä. MOVE ja BEAM näkyvät silloin kun valitut valaisimet tukevat niitä. Keltainen piste nimen oikeassa yläkulmassa tarkoittaa, että efekti muuttaa myös väriä. Ilman pistettä se käyttää sitä väriä, jonka olet käsin asettanut. SIGNAL — liikennevalot Valitse maa, CAR tai WALK, START GREEN tai START RED, ja REPEAT tai ONCE. NEXT siirtyy seuraavaan tilaan. CAR ja WALK kulkevat samalla ajoituksella. Käytä vaihtoehtoa ONCE, kun haluat askeltaa sen käsin tapahtumaan sopivaksi. LIGHT-, MOVE- ja BEAM-efektien kerrostaminen Yksi valaisin voi kantaa yhtä aikaa LIGHT-efektin kirkkaudelle ja värille, MOVE-efektin päälle ja BEAM-efektin. Toisen efektin valitseminen samalle kaistalle korvaa sen. Solut ottavat vastaan vain LIGHT-efektin. Paneelin avaaminen näyttää ensimmäisen käynnissä olevan kaistan järjestyksessä LIGHT, MOVE, BEAM. Efektien hallinta Effects-välilehdeltä EDIT avaa efektin asetukset. RELEASE / START, PAUSE / RESUME ja CLEAR ovat siellä. Vapautettu efekti jää luetteloon merkinnällä RELEASED. Valaisimen nimen vieressä oleva × pudottaa sen valaisimen efektistä; ＋ lisää nykyisen valinnan, ryhmän tai kohdan All. RELEASE ALL ja START ALL vaikuttavat kaikkeen. Efektit jatkavat laskemista blackoutin läpi. Lukitsemattomat valaisimet pimenevät ja poimivat liikkeen siitä, missä se on kun poistat blackoutin. Fixture Lock käsitellään luvussa 10. Seuraava Valaistuskuvien tallentaminen → luku 08 Pään liikuttaminen → luku 07"},{"id":"safety","title":"10 Lukot, turvallisuus ja askel taaksepäin","h":[{"id":"safety--1","t":"Lukkoja on kolmea lajia"},{"id":"safety--2","t":"SCREEN LOCK"},{"id":"safety--3","t":"Fixture Lock"},{"id":"safety--4","t":"BATTERY SAVE"},{"id":"safety--5","t":"HISTORY"},{"id":"safety--6","t":"ZEN"}],"text":"10 Lukot, turvallisuus ja askel taaksepäin Mikä estää sinua tekemästä virhettä kesken oton, ja mikä antaa perua sellaisen. Lukkoja on kolmea lajia Sana esiintyy kolmessa paikassa, ja kukin niistä suojaa eri asiaa. Nimi Mitä se suojaa Missä Fixture Lock Nyt palavaa valoa. Arvo ei voi muuttua Valaisimen paneeli Scene Lock Sitä mikä on tallennettu tilanteeseen Settings tilanteen rivillä SCREEN LOCK Ruutua. Kosketukset eivät tee mitään Ruudun yläreuna SCREEN LOCK Pidä ruudun yläreunan SCREEN LOCK pohjassa 0.5 sekuntia. Lyhyt napautus ei lukitse sitä. Lukittuna ruudun peittää violetti sävy ja viivoitus. Arvot pysyvät luettavina, ja lähetys ja häivytykset jatkuvat. Avaa lukitus vetämällä keskellä olevaa violettia liukusäädintä noin 80 % matkasta oikealle. Jos päästät irti aikaisemmin, lukitus jää päälle. Ruutua ei voi lukita silloin kun paneeli kuten Patch on auki. Fixture Lock WARNING Fixture Lock voittaa grand masterin, blackoutin, BATTERY SAVE -toiminnon, tilanteiden haun, MIDI:n ja session . Paina blackoutia, ja lukittu valaisin jää palamaan. Blackoutin aikana yhä palavien määrä näkyy ruudun yläreunassa vihreän 🔒-merkin vieressä. Pidä valaisimen kuvaketta pohjassa ja kytke Lock päälle. Käytä sitä silloin kun valo ei saa muuttua. Lukittuna valaisimen kuvake, fader, numeropainike ja ⏻ kantavat kaikki vihreää. Poista lukitus valaisimen paneelista. BATTERY SAVE Himmentää vain merkitsemäsi valaisimet, ottojen välistä odottelua varten. Merkitse ne valaisimen asetuksissa kohdassa Battery save, tai kohdassa Patch → Select many → Battery. Voit merkitä ne myös patchatessasi. Napauta ruudun yläreunan painiketta BATTERY SAVE. Merkityt valaisimet himmenevät. Napauta sitä uudelleen, niin saat ne takaisin. Pidä sitä pohjassa, niin asetat kuinka paljon se himmentää ja kuinka kauan häivytys kestää. Save to tarjoaa arvot −25 %, −50 %, −65 % ja −75 %, ja oletus on −50 %. Häivytys alkaa arvosta 1.5 sekuntia. Painike ja ruudun reuna muuttuvat vihreiksi sen ollessa päällä. Se kertautuu grand masterin kanssa. Lukitut valaisimet jäävät rauhaan. Jos mitään ei ole merkitty, se kertoo miten merkintä tehdään. Tämä himmentää valaisimiasi. Se ei ole iPhonen akkuasetus. HISTORY Napauta tai pidä pohjassa Home-näkymän HISTORY, niin näet ne tilat, joiden läpi olet kulkenut. Valitse rivi, niin palaat siihen. HERE merkitsee sen, missä olet. Se säilyttää viimeiset 50. Taaksepäin palaaminen ja sen jälkeen työskentely jättää vanhat tilat paikoilleen ja lisää uuden loppuun. Se kattaa kirkkauden, värin, lähdön päälle ja pois, rajat, raa&#x27;at arvot, efektit, GM:n, B.O. -tilan ja patchin. Fixture Lock on sen ulkopuolella. Lukittu valaisin ei liiku kun askellat taaksepäin. Tilanteiden haut kirjautuvat, mutta tilanteen sisällön ylikirjoitusta ei voi perua. Yhtä muutosta ei voi vetää ulos erikseen. Palaat sen hetken koko tilaan. Sitä ei tallenneta. Sovelluksen sulkeminen tai show&#x27;n uudelleen avaaminen tyhjentää sen. Haun häivytys asetetaan kohdassa Recall fade time. HISTORY ei ole käytettävissä silloin kun mitään ei ole mihin palata. ZEN Napauta ZEN yhden valaisimen paneelissa, niin saat mustan ruudun, jossa on yksi suuri fader ja sen arvo. Se on siellä niitä valaisimia varten, joiden kirkkautta voi säätää. Vedä mistä tahansa kohtaa ruutua, niin ajat sitä, tapansa mukaan suhteellisesti. FINE toimii. Rajoja voi muuttaa oikean yläkulman asetuksista. Poistu napauttamalla ruutua; faderin liikuttaminen ja irti päästäminen ei poistu. Seuraava Show&#x27;n tallentaminen → luku 11 Jokin ei sammu blackoutissa → luku 14"},{"id":"shows","title":"11 Show'jen tallentaminen ja jakaminen","h":[{"id":"shows--1","t":"Milloin se tallentaa"},{"id":"shows--2","t":"Settings → SHOWS"},{"id":"shows--3","t":"Avaaminen ja palautuminen"},{"id":"shows--4","t":"Mitä show'ssa ei ole"},{"id":"shows--5","t":"Settings → SETTINGS"}],"text":"11 Show&#x27;jen tallentaminen ja jakaminen Show pitää sisällään yhden työn: patchin, ryhmät, tilanteet ja nykyisen valaistuskuvan. Mitään ei tarvitse painaa. Se tallentaa itsensä. Milloin se tallentaa Mitä Milloin Patch, ryhmät, tilanteet Sitä mukaa kun muutat niitä Nykyinen valaistuskuva ja valaisinasetukset Noin kaksi sekuntia sen jälkeen kun lopetat, ja kun sovellus siirtyy taustalle Seuraava käynnistys palauttaa viimeisimmän show&#x27;n sellaisena kuin se tallennettiin. Aivan viimeisintä muutosta ennen sulkemista ei taata, joten käytä toimintoa Export show file silloin kun tarvitset tiedoston talteen tai eteenpäin annettavaksi. Settings → SHOWS Kohta Mitä se tekee CURRENT SHOW Nimeää uudelleen sen show&#x27;n, jossa olet Save As Tallentaa nykyisen tilan toiseksi show&#x27;ksi ja jatkaa kopiossa Export show file Tallentaa ensin, kirjoittaa sitten .kanau-tiedoston. Valitse sijainti jakolomakkeesta Import show file Tuo .kanau-tiedoston uutena show&#x27;na. Nykyiseen show&#x27;hun ei kosketa NEW SHOW Nimeä se ja valitse Create. Saat tyhjän show&#x27;n, ja Patch avautuu OTHER SHOWS Avaa tallennetun show&#x27;n. ⧉ monistaa, ✕ poistaa vahvistuksen jälkeen Tiedostojen tai AirDropin kautta saapuvan .kanau-tiedoston voi avata Kanau-sovelluksella, ja se tulee sisään uutena show&#x27;na. Tiedostoa .kanaumidi käsitellään MIDI-kartoitustiedostona. Avaaminen ja palautuminen Jos mitään ei ole tallennettuna, avautuu demo-show. Vanhempi show, jolla ei ole tallennettua valaistuskuvaa, avautuu kirkkaudet alhaalla. Jos tiedostoa ei voi lukea, saat ilmoituksen Saved patch could not be read. Showing an empty rig; the file is left as it is., ja sovellus alkaa tyhjänä. Alkuperäinen tiedosto säilytetään eikä sitä ylikirjoiteta. Epäonnistunut tallennus näyttää punaisena tekstin Patch was not saved. Luku 14 kertoo, mitä tehdä. Mitä show&#x27;ssa ei ole Mitä Missä se sijaitsee SAVED -efektiasetukset Laitteessa, käytettävissä jokaisessa show&#x27;ssa Custom fixtures Laitteessa. Patchattujen valaisimien määrittelyt säilytetään myös show&#x27;ssa Tallennetut ★-värit ja -lämpötilat Laitteessa. Värit mallikohtaisesti, lämpötilat yhteisinä MIDI-kartoitus Laitteessa. Vietävissä erikseen muodossa .kanaumidi OUTPUT, näyttöasetukset, kieli Laitteessa HISTORY Ei tallenneta Settings → SETTINGS Kieli, eri häivytysajat, BATTERY SAVE -toiminnon määrä, kumpi numero näytetään, kohdan All järjestys, All-rivi Patch-näkymässä, Net / Sub / Uni, ja näkyvätkö geelit. Kielen vaihto tulee voimaan seuraavassa käynnistyksessä. Tekstikoko seuraa iOS:n asetusta. Seuraava Tallennus epäonnistui → luku 14 Työskentely kahdella laitteella → luku 13"},{"id":"midi","title":"12 MIDI-ohjaimet (Advanced)","h":[{"id":"midi--1","t":"Yhdistäminen ja kartoittaminen"},{"id":"midi--2","t":"Kaksi tilaa"},{"id":"midi--3","t":"Kun nuppi ei aluksi tee mitään"},{"id":"midi--4","t":"Painikkeet ja kartoitustiedosto"}],"text":"12 MIDI-ohjaimet (Advanced) MIDI-ohjaimen nuppien ja painikkeiden kartoittaminen valaisimiin ja säätimiin. Tämä luku käsittelee Learn-tyylistä näkymää. Yhdistäminen ja kartoittaminen Kytke MIDI controller päälle kohdassa Settings → MIDI. Se on oletuksena pois. Tarkista, että kalustosi näkyy kohdassa Inputs ja että Last CC muuttuu kun liikutat jotakin. Aloita asetuksella MIDI channel arvossa OMNI, ja kavenna se sitten väliltä 1–16 jos on tarpeen. Valitse Mode, ja kartoita sitten painikkeella Learn kohdassa Knobs tai Buttons. Käännä nuppia Turn… -kehotuksen näkyessä, tai paina sitä painiketta jonka haluat kartoittaa. Kalusto, jota vasten tämä on rakennettu, on Behringer X-Touch Mini ja Compact Standard-tilassa absoluuttisia arvoja lähettäen. MC-tilaa ei käytetä. Kaksi tilaa Tila Mitä säädin seuraa GLOBAL 10 Paikkaa ruudulla. Vaihda sivua tai ryhmää, ja kohde vaihtuu mukana. Myös GM voidaan kartoittaa FIXED Yhtä valaisinta. Sivun tai ryhmän vaihdolla ei ole vaikutusta FIXED kartoitetaan yksi valaisin kerrallaan painikkeella Learn; automaattista numerointia ei ole. Tilassa GLOBAL 10 on oma Learn jokaisella rivillä väliltä Fader 1 – Fader 10 sekä kohdassa Grand master. Kun nuppi ei aluksi tee mitään Jos nuppi ja ruudulla oleva arvo ovat eri mieltä, mikään ei liiku ennen kuin nuppi ohittaa ruudulla olevan arvon . Se on tarkoituksellista: se estää tason hyppäämisen. Sama pätee sen jälkeen kun vaihdat sivua, ryhmää tai tilaa. Kytke päälle Send values back, niin Kanau palauttaa nykyiset arvot sitä tukevan kaluston LED-renkaisiin. Tyhjät paikat palautuvat nollina. Painikkeet ja kartoitustiedosto Voit kartoittaa toiminnot FINE ja PIANO, sivun taakse ja eteen, sekä yksittäisten tilanteiden haut. B.O. ei ole kartoitettavissa. Yksi painike kantaa yhden toiminnon. Fixture Lock koskee myös MIDI:ä. Export ja Import kohdassa MIDI map file kirjoittavat ja lukevat kartoituksen .kanaumidi-tiedostona, show&#x27;sta erillään. Seuraava Työskentely kahdella laitteella → luku 13"},{"id":"session","title":"13 Työskentely kahdella laitteella","h":[{"id":"session--1","t":"Kummalla on mikäkin"},{"id":"session--2","t":"Session aloittaminen"},{"id":"session--3","t":"Mitä vieras voi tehdä"},{"id":"session--4","t":"Efektit ja vieras"},{"id":"session--5","t":"Yhtäaikainen työskentely ja yhteyden menettäminen"}],"text":"13 Työskentely kahdella laitteella — SESSION Kaksi iPhonea tai iPadia yhdessä show&#x27;ssa. Vain isäntä lähettää DMX:ää ; toinen ajaa samaa valopöytää sen kautta. Sessio antaa kahden samassa verkossa olevan laitteen ajaa yhtä show&#x27;ta. Vieras lähettää tekemisensä isännälle. Jos isäntä pysähtyy, mikään ei ota tehtävää automaattisesti. Kummalla on mikäkin Isäntä Vieras DMX:n lähettäminen Kyllä Ei Show&#x27;n omistus Kyllä Lainaa sitä Patchin muuttaminen Kyllä Ei Minne tilanne tallennetaan Isännän show&#x27;hun Lähetetään isännälle Valon työstäminen Kyllä Kyllä Kun molemmat koskevat samaan valaisimeen, isäntä voittaa. Vieras näkee merkinnän TAKEN . Session aloittaminen Valitse lähettävällä laitteella Settings → SESSION → Host. Anna 4-numeroinen luku toiselle henkilölle. Valitse toisella laitteella Settings → SESSION → Join ja kirjoita luku. Tarkista, että näkyvissä on Joined ja yhteyden tila. Looking for 1234… tarkoittaa, että etsintä on yhä kesken. Luku vaihtuu joka kerta kun isännöit. Laitteita voi olla vain 2 kerrallaan; kolmas ei pääse mukaan. Mitä vieras voi tehdä Vieras voi Isäntä tekee Kumpikin laite pitää omansa Faderit, värit ja geelit, valaisimiin ja soluihin Patchin lisäykset, poistot ja muutokset, nimet, nimilaput Näkyvä ryhmä ja sivu, näkyvä välilehti Tilanteiden hakeminen, ja ＋ tallentamiseen Uudelleenjärjestely, poisto, uudelleennimeäminen, häivytys, lukko FINE, 10 / 5, PIXELS, PIANO-tila ⏻, GM, B.O., BATTERY SAVE OUTPUT, SHOWS Näyttöasetukset, kieli, geelit Rajat, Fixture Lock, valinnan tyhjennys Häivytysajat, Save to, Switch function MIDI-kartoitus, tallennetut ★-värit Vieraalta tallennetun tilanteen kirjoittaa isäntä. Vieraan omaan show-tiedostoon ei kosketa, ja Leave session palauttaa sen. Efektit ja vieras Osa efektitoiminnoista yltää isännälle asti ja osa ei. Toiminto Vieraalta Efektin ajaminen Toimii RELEASE ALL Toimii Solun efektien tyhjennys Toimii SIGNAL NEXT Toimii IMPORTANT PAUSE, RESUME, yhden efektin vapauttaminen ja START eivät yllä vieraalta isännälle. Vieraan ruutu voi näyttää siltä kuin jotain olisi tapahtunut, mutta valo ei muutu. Tee nämä isännällä. Yhtäaikainen työskentely ja yhteyden menettäminen Se minkä vieras muuttaa näkyy vieraan ruudulla heti. Jos isäntä koskee samaan valaisimeen, isäntä voittaa ja vieras näkee merkinnän TAKEN . Valaisin, jota toinen laite työstää, näkyy syaanina reunana ja nimenä. Yhteys Tila Vihreä Yhdistetty isäntään Keltainen Isännältä ei ole kuulunut mitään noin 3 sekuntiin Punainen Ei mitään noin 15 sekuntiin. Näkyviin tulee The host is no longer available. Jos yhteys katkeaa, vieras näyttää edelleen viimeisintä tilaa. Se ei poistu itsestään, joten käytä toimintoa Leave session. Uudelleen yhdistämisen jälkeen faderit ovat yhä suhteellisia. Internetiä ei tarvita. Laitteiden on pystyttävä tavoittamaan toisensa samassa verkossa. Asiakaseristys, palomuuri ja vastaavat asetukset voivat estää session, vaikka DMX pääsisi läpi. Seuraava Show&#x27;n tallentaminen → luku 11 Yhteys ei muodostu → luku 14"},{"id":"troubleshooting","title":"14 Vianetsintä","h":[{"id":"troubleshooting--1","t":"Mikään ei syty"},{"id":"troubleshooting--2","t":"Yhtään solmua ei löydy"},{"id":"troubleshooting--3","t":"Valo välkkyy"},{"id":"troubleshooting--4","t":"Valo nykii tai reagoi hitaasti"},{"id":"troubleshooting--5","t":"Jotkin faderit eivät tee mitään"},{"id":"troubleshooting--6","t":"Painike ei tee mitään"},{"id":"troubleshooting--7","t":"Väri on väärin"},{"id":"troubleshooting--8","t":"Valaisin ei käyttäydy oikein"},{"id":"troubleshooting--9","t":"Tilanne muuttuu itsestään"},{"id":"troubleshooting--10","t":"Tilanne ei tallennu"},{"id":"troubleshooting--11","t":"Sessio ei muodosta yhteyttä"},{"id":"troubleshooting--12","t":"Jokin jää palamaan blackoutissa"},{"id":"troubleshooting--13","t":"Sovellus sulkeutui tai yhteys katkesi"},{"id":"troubleshooting--14","t":"Tallennus epäonnistui"},{"id":"troubleshooting--15","t":"DMX-arvojen tarkistaminen"}],"text":"14 Vianetsintä Järjestetty sen mukaan, mitä näet. Käy luetteloa läpi ylhäältä alas. Mikään ei syty Mitä näet Mitä tehdä idle Tarkista, että jokin verkko on käytössä kohdassa Settings → OUTPUT Blocked Tarkista iOS:n paikallisverkko-oikeus. Jos sACN-multicast on estetty, vaihda asetukseen Unicast WAITING + IP-osoite Toinen valopöytä on linjalla. Pysäytä se, tai valitse Send anyway? → Send No node Tarkista solmun virta, verkko, osoite ja protokolla-asetukset B.O. Napauta sitä, niin poistat blackoutin GM 0 Avaa GM ja käytä painiketta →100 🔌 n Kytke universumi takaisin päälle kohdassa OUTPUT → Universes Violetti ⏻ tai valaisimen kuvake Kytke valaisimen lähtö takaisin päälle Vihreä BATTERY SAVE Poista se, jos tarvitset täyden lähdön Matala Upper limit Tarkista valaisimen rajat ⚠ Patch-näkymässä Korjaa päällekkäinen osoite tai kanavan 512 yli menevä jakso Tila joka ei täsmää Aseta sama DMX-tila kuin itse valaisimessa Yhtään solmua ei löydy Jos Network näyttää no reply, tarkista että iPhone ja solmu ovat samassa verkossa. Jos AUTO ei yllä sinne, käytä asetusta Unicast ja syötä solmun osoite. Aja RESCAN aina kun olet muuttanut yhteydessä jotakin. Tarkista solmun omat Art-Net- ja sACN-kytkimet, sen osoite ja sen universumi. Esimerkiksi LumenRadio CRMX Stardust toimitetaan Art-Net ja sACN pois kytkettyinä. Jos liityt Stardustin tai Aputure Sidus Four -laitteen omaan langattomaan verkkoon, tarkista mitä taajuusaluetta kalusto tukee. Ulkoisessa tukiasemassa 2.4 GHz:n ja 5 GHz:n asiakkaat pääsevät usein toistensa luo; eri taajuusalue ei aina tarkoita eri verkkoa. Stardustissa pienet kirjaimet lähtönäytössä tarkoittavat, ettei dataa saavu, ja isot kirjaimet että saapuu. Tarkista mallikohtaiset asiat valmistajan omasta ohjekirjasta. Kalusto, joka ei vastaa kyselyyn, näkyy nollana kohdassa Nodes answering vaikka se vastaanottaisikin. Valo välkkyy Tarkista, ettei samaa valaisinta syötetä sekä verkon että Bluetoothin kautta, tai useammasta kuin yhdestä valopöydästä tai DMX-lähteestä. Katso CRMX-varoitusta kohdassa OUTPUT sekä mahdollisia ilmoituksia SHARED tai WAITING, ja karsi reitit yhteen. Myös jokin toinen ohjaussovellus tai valaisimen asetus voi aiheuttaa tämän. Valo nykii tai reagoi hitaasti Avaa Settings → OUTPUT ja lue sitä ylhäältä alas . Jos se pysähtyy johonkin näistä, alempaa ei tarvitse katsoa. Sending lähettääkö valopöytä ylipäätään ↓ Clock onko puhelimen sisällä tukos ↓ Touch → wire onko matka sormesta pakettiin hidas ↓ Node RTT onko verkko tai kalusto hidas ↓ Fixture onko itse valaisin hidas Mitä näet Mitä katsoa Sending on nothing Destination, verkko, iOS:n käyttöoikeudet Clock yli 100 ms Puhelin. Sulje paneelit, käynnistä sovellus tarvittaessa uudelleen Solmut vastaavat, mutta valaisimet päivittyvät noin kerran sekunnissa Osoite, johon AUTO lähettää. Jos solmu ilmoittaa itsensä väärin, kokeile asetusta Broadcast Clock on kunnossa mutta kiertoaika on pitkä Langattoman verkon ruuhka, tukiasema, kalusto, reitti Lukemat ovat kunnossa mutta valo laahaa Valaisimen pehmennys, sen tuloreitti, jokin toinen sovellus joka ajaa sitä Broadcast auttaa silloin kun ongelma on AUTO-tilan kohteessa. Muihin syihin se ei auta, ja voi lisätä kuormaa. Jotkin faderit eivät tee mitään Tarkista valaisimen rajat, sen Lock ja onko sen lähtö päällä. Kanaun faderikäyrä on lineaarinen; valaisimen oma himmennyskäyrä voi saada alapuoliskon tuntumaan lattealta. Tarkista itse valaisin tai Dim curve kohdassa Channels. GDTF:stä tuodussa valaisimessa väärä kirkkaus tai väri tarkoittaa yleensä, että roolit ovat väärin. Korjaa ne kohdassa Channel roles. Jos haluat korjauksen siirtyvän myöhemmin patchaamiisi valaisimiin, muokkaa määrittelyä kohdassa Custom fixtures. Painike ei tee mitään Mitä näet Miksi, ja mitä tehdä Violetti sävy ruudun päällä SCREEN LOCK. Vedä keskellä olevaa liukusäädintä oikealle Vihreä 🔒 Poista Fixture Lock COLOR tai EFFECT on harmaa Valitse valaisin. COLOR vaatii lisäksi, että valaisimessa on väri PIXELS on harmaa Sivulla ei ole yhtään pikselivalaisinta HISTORY ei ole aktiivinen Ei ole mitään mihin palata Numeropainikkeet eivät muuta kirkkautta Pianotila on asennossa LOCK. Käytä painiketta ＋ − Home kohdassa Channels ei ole aktiivinen Se on jo oletuksessaan Home ei tee mitään arvoille Pan tai Tilt Se vaatii pohjassa pitämisen, ei napautusta Tilanne ei päivity Tarkista Lock this scene Vieras ei voi muokata patchia Tee se isännällä Väri on väärin Mitä näet Mitä tarkistaa Eri väri kuin asettamasi Vastaako Patch-tila valaisimen omaa DMX-tilaa Ei värisäätimiä lainkaan Onko valaisimessa väriä. Sekalaiset mallit näyttävät vain yhteiset kohdat (luku 05) Värilämpötila loppuu kesken Olet valaisimen alueen reunassa. Näkyviin tulee MIN tai MAX Tuotu valaisin on pielessä Tarkista Channel roles (luku 06) Valkoinen vetää vihreään tai magentaan Green / Magenta ei ehkä ole nollassa. Back to neutral nollaa sen Valaisin ei käyttäydy oikein Tarkista ensin, että Patch-tila vastaa valaisimen omaa. Kun se on väärin, kirkkaus saapuu värinä ja väri saapuu suuntana. GDTF:stä tuodussa määrittelyssä roolit voivat olla annettuina toisin kuin todellisessa valaisimessa. Korjaa ne kohdassa Channel roles (luku 06). Jos haluat sen siirtyvän tuleviin patchauksiin, muokkaa määrittelyä kohdassa Custom fixtures. Tarkista todellista valaisinta vasten kaikki, missä lukee Imported data is not verified. . Tilanne muuttuu itsestään Kaikki mitä teet tilanteen haun jälkeen tallentuu takaisin siihen (luku 08). Kytke päälle Lock this scene kyseisen tilanteen kohdassa Settings niissä tilanteissa, jotka haluat jättää rauhaan. Voit yhä hakea ne ja yhä työstää valoa; mitään ei tallenneta. Tilanne ei tallennu Mitä tarkistaa Lock this scene Mitään ei tallenneta niin kauan kuin se on päällä Olet vieraalla Uudelleenjärjestely, poisto ja uudelleennimeäminen kuuluvat isännälle (luku 13) Mitä ei koskaan tallenneta GM, B.O., BATTERY SAVE, rajat, Fixture Lock, ⏻:n tila ja myöhemmät väriryhmät (luku 08) Sessio ei muodosta yhteyttä Jos Looking for ei häviä, tarkista"},{"id":"glossary","title":"Sanasto","h":[],"text":"Sanasto Ruudulla Mitä se tarkoittaa Fixture Valaisin. Yksikkö, jonka patchaat ja jota ohjaat Patch Valaisimen mallin, tilan ja DMX-osoitteen rekisteröinti Universe / Address Universumi, ja kanavan paikka sen sisällä Mode Valaisimen DMX-tila. Täsmättävä itse valaisimeen Unit no. / Fixture number Automaattinen numero mallin sisällä / numero, jonka itse annat Offset / Gap Valaisimien välinen jako / ylimääräiset vapaat kanavat niiden välissä Group / All Joukko valaisimia / jokainen valaisin Pixel / Cell Erikseen ohjattava osa yhdestä valaisimesta Intensity Kirkkaus CCT Värilämpötila kelvineinä G/M Vihreä–magenta-korjaus Crossfade Tasapaino valkoisen ja värin puolen välillä Emitter Valaisimen sisällä oleva LED tai muu valonlähde Channels / Raw channels Työskentely yksi DMX-kanava kerrallaan Channel roles Minä toimintona kanavaa käsitellään GM / B.O. Grand master / blackout Lock / SCREEN LOCK Valaisimen lähdön pitäminen paikallaan / vahinkokosketusten estäminen FINE / FINE+ 1/10 ja 1/100 tavallisesta herkkyydestä PIANO Numeropainikkeiden käyttö kirkkauden muuttamiseen pohjassa pidettäessä Scene / Show Tallennettu valaistuskuva / kaikki yhtä työtä varten SNAP / Fade Välitön / määrätyn ajan kuluessa HISTORY / HERE Aiempien tilojen luettelo / se kohta, jossa olet PAUSE / RESUME Efektin jäädyttäminen / siitä jatkaminen RELEASE / START Efektin pysäyttäminen / sen ajaminen alusta CLEAR Valinnan tyhjentäminen tai efektin poistaminen. Riippuu siitä, missä sen näet SAVED Tallennetut efektiasetukset Host / Join / Leave session Lähettävänä laitteena oleminen / sellaiseen liittyminen / poistuminen PROVISIONAL Paikanvaraajana toimiva valaisintila GDTF Valaisinmäärittelyjen tiedostomuoto"}];
+  var NONE = "Ei osumia";
+  var LEGACY = {"c-QUICK-START":"quick-start","c-01-Reading-the-screen":"screen","c-02-Sending-DMX":"output","c-03-Patching-fixtures":"patch","c-04-Setting-intensity":"intensity","c-05-Setting-colour":"color","c-06-Per-fixture-settings":"fixture-settings","c-07-Position-and-beam":"position","c-08-Storing-and-recalling-looks":"scenes","c-09-Effects":"effects","c-10-Locks-safety-and-stepping-back":"safety","c-11-Saving-and-sharing-shows":"shows","c-12-MIDI-controllers-Advanced":"midi","c-13-Working-from-two-devices":"session","c-14-Troubleshooting":"troubleshooting","c-Glossary":"glossary","c-QUICK-START--1-Change-the-intensity":"quick-start--1","c-QUICK-START--2-Change-the-colour":"quick-start--2","c-QUICK-START--3-Recall-a-scene":"quick-start--3","c-QUICK-START--See-the-values-going-out":"quick-start--4","c-QUICK-START--What-is-in-the-practice-rig":"quick-start--5","c-QUICK-START--Connecting-real-lights":"quick-start--6","c-QUICK-START--Five-things-worth-knowing-first":"quick-start--7","c-01-Reading-the-screen--Learn-these-seven-first":"screen--1","c-01-Reading-the-screen--The-five-tabs":"screen--2","c-01-Reading-the-screen--The-status-line":"screen--3","c-01-Reading-the-screen--The-parts-of-Home":"screen--4","c-01-Reading-the-screen--Colours-and-marks":"screen--5","c-02-Sending-DMX--First-connection":"output--1","c-02-Sending-DMX--One-Art-Net-node":"output--2","c-02-Sending-DMX--Settings-in-detail":"output--3","c-02-Sending-DMX--Protocol-and-networks":"output--4","c-02-Sending-DMX--Choosing-the-destination":"output--5","c-02-Sending-DMX--RESCAN":"output--6","c-02-Sending-DMX--iOS-permissions":"output--7","c-02-Sending-DMX--Universes-and-Art-Net-numbering":"output--8","c-02-Sending-DMX--CRMX-over-Bluetooth":"output--9","c-02-Sending-DMX--When-another-console-is-found":"output--10","c-02-Sending-DMX--DMX-Diagnostics-reading-what-is-happening":"output--11","c-02-Sending-DMX--DMX-MONITOR":"output--12","c-03-Patching-fixtures--Adding-fixtures":"patch--1","c-03-Patching-fixtures--Two-kinds-of-number":"patch--2","c-03-Patching-fixtures--Models-and-modes":"patch--3","c-03-Patching-fixtures--Changing-patched-fixtures":"patch--4","c-03-Patching-fixtures--Changing-many-at-once":"patch--5","c-03-Patching-fixtures--Re-patch-moving-into-free-space":"patch--6","c-03-Patching-fixtures--Building-groups":"patch--7","c-03-Patching-fixtures--Fixtures-not-in-the-library-Advanced":"patch--8","c-03-Patching-fixtures--From-GDTF-Share":"patch--9","c-03-Patching-fixtures--From-a-GDTF-file":"patch--10","c-03-Patching-fixtures--By-hand-from-a-DMX-chart":"patch--11","c-03-Patching-fixtures--By-copying-an-existing-one":"patch--12","c-04-Setting-intensity--Moving-a-fader":"intensity--1","c-04-Setting-intensity--FINE":"intensity--2","c-04-Setting-intensity--Moving-several-at-once":"intensity--3","c-04-Setting-intensity--The-number-buttons-as-a-piano":"intensity--4","c-04-Setting-intensity--output-only":"intensity--5","c-04-Setting-intensity--GM-and-B-O":"intensity--6","c-04-Setting-intensity--Choosing-what-is-on-the-page":"intensity--7","c-04-Setting-intensity--The-buttons-along-the-bottom":"intensity--8","c-04-Setting-intensity--Working-pixels-on-their-own":"intensity--9","c-05-Setting-colour--Opening-the-panel":"color--1","c-05-Setting-colour--Intensity-and-colour":"color--2","c-05-Setting-colour--Gels":"color--3","c-05-Setting-colour--Saving-colours-you-use-often":"color--4","c-05-Setting-colour--ADVANCED-COLOR":"color--5","c-05-Setting-colour--Several-fixtures-and-several-models":"color--6","c-05-Setting-colour--Pixels-and-repeated-colour-groups":"color--7","c-06-Per-fixture-settings--Name-and-display":"fixture-settings--1","c-06-Per-fixture-settings--Limits":"fixture-settings--2","c-06-Per-fixture-settings--Lock":"fixture-settings--3","c-06-Per-fixture-settings--The-other-settings":"fixture-settings--4","c-06-Per-fixture-settings--Channels-the-raw-DMX-Advanced":"fixture-settings--5","c-06-Per-fixture-settings--Changing-the-patch-or-the-mode":"fixture-settings--6","c-07-Position-and-beam--Pan-and-Tilt":"position--1","c-07-Position-and-beam--Zoom-iris-frost-focus-and-gobo":"position--2","c-08-Storing-and-recalling-looks--Storing-a-scene":"scenes--1","c-08-Storing-and-recalling-looks--Recalling-and-tidying":"scenes--2","c-08-Storing-and-recalling-looks--What-you-change-after-a-recall-is-saved":"scenes--3","c-08-Storing-and-recalling-looks--What-is-stored-and-what-is-not":"scenes--4","c-08-Storing-and-recalling-looks--Fade":"scenes--5","c-09-Effects--Applying-one":"effects--1","c-09-Effects--Pause-release-restart":"effects--2","c-09-Effects--ADJUST":"effects--3","c-09-Effects--ARRANGE":"effects--4","c-09-Effects--Changing-the-target-and-saving-settings":"effects--5","c-09-Effects--Finding-one-by-what-you-want":"effects--6","c-09-Effects--The-full-list":"effects--7","c-09-Effects--SIGNAL-traffic-lights":"effects--8","c-09-Effects--Layering-LIGHT-MOVE-and-BEAM":"effects--9","c-09-Effects--Managing-them-from-the-Effects-tab":"effects--10","c-10-Locks-safety-and-stepping-back--There-are-three-kinds-of-lock":"safety--1","c-10-Locks-safety-and-stepping-back--SCREEN-LOCK":"safety--2","c-10-Locks-safety-and-stepping-back--Fixture-Lock":"safety--3","c-10-Locks-safety-and-stepping-back--BATTERY-SAVE":"safety--4","c-10-Locks-safety-and-stepping-back--HISTORY":"safety--5","c-10-Locks-safety-and-stepping-back--ZEN":"safety--6","c-11-Saving-and-sharing-shows--When-it-saves":"shows--1","c-11-Saving-and-sharing-shows--Settings-SHOWS":"shows--2","c-11-Saving-and-sharing-shows--Opening-and-recovery":"shows--3","c-11-Saving-and-sharing-shows--What-is-not-in-the-show":"shows--4","c-11-Saving-and-sharing-shows--Settings-SETTINGS":"shows--5","c-12-MIDI-controllers-Advanced--Connecting-and-mapping":"midi--1","c-12-MIDI-controllers-Advanced--The-two-modes":"midi--2","c-12-MIDI-controllers-Advanced--When-a-knob-does-nothing-at-first":"midi--3","c-12-MIDI-controllers-Advanced--Buttons-and-the-mapping-file":"midi--4","c-13-Working-from-two-devices--Who-holds-what":"session--1","c-13-Working-from-two-devices--Starting-a-session":"session--2","c-13-Working-from-two-devices--What-a-guest-can-do":"session--3","c-13-Working-from-two-devices--Effects-and-the-guest":"session--4","c-13-Working-from-two-devices--Working-at-the-same-time-and-losing-the-link":"session--5","c-14-Troubleshooting--Nothing-lights-up":"troubleshooting--1","c-14-Troubleshooting--No-node-is-found":"troubleshooting--2","c-14-Troubleshooting--It-flickers":"troubleshooting--3","c-14-Troubleshooting--It-stutters-or-reacts-slowly":"troubleshooting--4","c-14-Troubleshooting--Some-faders-do-nothing":"troubleshooting--5","c-14-Troubleshooting--A-button-does-nothing":"troubleshooting--6","c-14-Troubleshooting--The-colour-is-wrong":"troubleshooting--7","c-14-Troubleshooting--A-fixture-does-not-behave":"troubleshooting--8","c-14-Troubleshooting--A-scene-keeps-changing-on-its-own":"troubleshooting--9","c-14-Troubleshooting--A-scene-will-not-save":"troubleshooting--10","c-14-Troubleshooting--The-session-will-not-connect":"troubleshooting--11","c-14-Troubleshooting--Something-stays-lit-on-blackout":"troubleshooting--12","c-14-Troubleshooting--The-app-quit-or-the-link-dropped":"troubleshooting--13","c-14-Troubleshooting--A-save-failed":"troubleshooting--14","c-14-Troubleshooting--Checking-the-DMX-values":"troubleshooting--15","c-01-画面の見方":"screen","c-02-DMX-を送信する":"output","c-03-灯体を登録する":"patch","c-04-明るさを操作する":"intensity","c-05-色を調整する":"color","c-06-灯体ごとの設定":"fixture-settings","c-07-向き-ビームを調整する":"position","c-08-明かりを保存-呼び出しする":"scenes","c-09-エフェクトを使う":"effects","c-10-誤操作を防ぐ-操作を戻す":"safety","c-11-ショーを保存-共有する":"shows","c-12-MIDI-コントローラーを使う-Advanced":"midi","c-13-2-台の端末で操作する":"session","c-14-困ったとき":"troubleshooting","c-用語集":"glossary","c-QUICK-START--1-明るさを変える":"quick-start--1","c-QUICK-START--2-色を変える":"quick-start--2","c-QUICK-START--3-シーンを呼ぶ":"quick-start--3","c-QUICK-START--送っている値を見る":"quick-start--4","c-QUICK-START--実際の灯体につなぐ":"quick-start--5","c-QUICK-START--練習用のデモに入っているもの":"quick-start--6","c-QUICK-START--現場で最初に知っておきたいこと":"quick-start--7","c-01-画面の見方--まず覚える場所":"screen--1","c-01-画面の見方--5-つのタブ":"screen--2","c-01-画面の見方--画面上部のステータス表示":"screen--3","c-01-画面の見方--Home-の各部":"screen--4","c-01-画面の見方--色とアイコンの意味":"screen--5","c-02-DMX-を送信する--最初の接続":"output--1","c-02-DMX-を送信する--Art-Net-ノード-1-台につなぐ":"output--2","c-02-DMX-を送信する--詳細設定":"output--3","c-02-DMX-を送信する--送信方式とネットワーク":"output--4","c-02-DMX-を送信する--宛先を選ぶ":"output--5","c-02-DMX-を送信する--RESCAN-でノードを再検索する":"output--6","c-02-DMX-を送信する--iOS-の許可を確認する":"output--7","c-02-DMX-を送信する--ユニバースと-Art-Net-の番号":"output--8","c-02-DMX-を送信する--Bluetooth-経由の-CRMX":"output--9","c-02-DMX-を送信する--別の卓を検出した場合":"output--10","c-02-DMX-を送信する--DMX-Diagnostics-届いているかを読む":"output--11","c-02-DMX-を送信する--DMX-MONITOR":"output--12","c-03-灯体を登録する--灯体を追加する":"patch--1","c-03-灯体を登録する--2-種類の灯体番号":"patch--2","c-03-灯体を登録する--機種とモードについて":"patch--3","c-03-灯体を登録する--登録済み灯体を変更する":"patch--4","c-03-灯体を登録する--複数台をまとめて変更する":"patch--5","c-03-灯体を登録する--Re-patch-で空きアドレスへ移動する":"patch--6","c-03-灯体を登録する--グループを作成する":"patch--7","c-03-灯体を登録する--ライブラリにない灯体を追加する-Advanced":"patch--8","c-03-灯体を登録する--GDTF-Share-から取得する":"patch--9","c-03-灯体を登録する--手元の-GDTF-ファイルを読み込む":"patch--10","c-03-灯体を登録する--DMX-チャートから手動で作成する":"patch--11","c-03-灯体を登録する--既存定義を複製して編集する":"patch--12","c-04-明るさを操作する--フェーダーを動かす":"intensity--1","c-04-明るさを操作する--FINE-で細かく調整する":"intensity--2","c-04-明るさを操作する--複数のフェーダーをまとめて動かす":"intensity--3","c-04-明るさを操作する--番号ボタンをピアノのように使う":"intensity--4","c-04-明るさを操作する--で出力だけを切り替える":"intensity--5","c-04-明るさを操作する--GM-と-B-O-を操作する":"intensity--6","c-04-明るさを操作する--表示する灯体を切り替える":"intensity--7","c-04-明るさを操作する--画面の一番下のボタン":"intensity--8","c-04-明るさを操作する--ピクセルを個別に操作する":"intensity--9","c-05-色を調整する--色の操作パネルを開く":"color--1","c-05-色を調整する--明るさと色の項目":"color--2","c-05-色を調整する--ジェルを選ぶ":"color--3","c-05-色を調整する--よく使う色を保存する":"color--4","c-05-色を調整する--ADVANCED-COLOR":"color--5","c-05-色を調整する--複数台-複数機種を操作する場合":"color--6","c-05-色を調整する--ピクセルと複数の色グループ":"color--7","c-06-灯体ごとの設定--名前と表示":"fixture-settings--1","c-06-灯体ごとの設定--上限-下限":"fixture-settings--2","c-06-灯体ごとの設定--Lock":"fixture-settings--3","c-06-灯体ごとの設定--その他の設定":"fixture-settings--4","c-06-灯体ごとの設定--Channels-で各チャンネルを操作する-Advanced":"fixture-settings--5","c-06-灯体ごとの設定--パッチ-モードを変更する":"fixture-settings--6","c-07-向き-ビームを調整する--Pan-Tilt":"position--1","c-07-向き-ビームを調整する--Zoom-Iris-Frost-Focus-Gobo":"position--2","c-08-明かりを保存-呼び出しする--シーンを保存する":"scenes--1","c-08-明かりを保存-呼び出しする--シーンを呼び出す-整理する":"scenes--2","c-08-明かりを保存-呼び出しする--呼び出し後の変更は自動保存される":"scenes--3","c-08-明かりを保存-呼び出しする--保存されるもの-されないもの":"scenes--4","c-08-明かりを保存-呼び出しする--フェード時間":"scenes--5","c-09-エフェクトを使う--エフェクトを適用する":"effects--1","c-09-エフェクトを使う--一時停止-解除-再開の違い":"effects--2","c-09-エフェクトを使う--ADJUST-で調整する":"effects--3","c-09-エフェクトを使う--ARRANGE-で並び方を設定する":"effects--4","c-09-エフェクトを使う--対象を変更-設定を保存する":"effects--5","c-09-エフェクトを使う--目的から探す":"effects--6","c-09-エフェクトを使う--エフェクト一覧":"effects--7","c-09-エフェクトを使う--SIGNAL-信号機":"effects--8","c-09-エフェクトを使う--LIGHT-MOVE-BEAM-を重ねる":"effects--9","c-09-エフェクトを使う--Effects-タブでまとめて管理する":"effects--10","c-10-誤操作を防ぐ-操作を戻す--SCREEN-LOCK":"safety--1","c-10-誤操作を防ぐ-操作を戻す--Lock-は-3-種類あります":"safety--2","c-10-誤操作を防ぐ-操作を戻す--灯体の-Lock":"safety--3","c-10-誤操作を防ぐ-操作を戻す--BATTERY-SAVE":"safety--4","c-10-誤操作を防ぐ-操作を戻す--HISTORY":"safety--5","c-10-誤操作を防ぐ-操作を戻す--ZEN":"safety--6","c-11-ショーを保存-共有する--保存のタイミング":"shows--1","c-11-ショーを保存-共有する--Settings-SHOWS":"shows--2","c-11-ショーを保存-共有する--起動-読み込み時の動作":"shows--3","c-11-ショーを保存-共有する--ショーに含まれないもの":"shows--4","c-11-ショーを保存-共有する--Settings-SETTINGS":"shows--5","c-12-MIDI-コントローラーを使う-Advanced--接続して割り当てる":"midi--1","c-12-MIDI-コントローラーを使う-Advanced--割り当てモード":"midi--2","c-12-MIDI-コントローラーを使う-Advanced--ノブがすぐに反応しない場合":"midi--3","c-12-MIDI-コントローラーを使う-Advanced--ボタンと設定ファイル":"midi--4","c-13-2-台の端末で操作する--どちらが何を持つか":"session--1","c-13-2-台の端末で操作する--セッションを開始する":"session--2","c-13-2-台の端末で操作する--参加端末でできること":"session--3","c-13-2-台の端末で操作する--参加端末とエフェクト":"session--4","c-13-2-台の端末で操作する--同時操作と接続切れ":"session--5","c-14-困ったとき--灯体が点灯しない":"troubleshooting--1","c-14-困ったとき--ノードが見つからない":"troubleshooting--2","c-14-困ったとき--ちらつく":"troubleshooting--3","c-14-困ったとき--動きがカクつく-反応が遅い":"troubleshooting--4","c-14-困ったとき--フェーダーの一部が効かない":"troubleshooting--5","c-14-困ったとき--ボタンが反応しない":"troubleshooting--6","c-14-困ったとき--色がおかしい":"troubleshooting--7","c-14-困ったとき--灯体が思ったとおりに動かない":"troubleshooting--8","c-14-困ったとき--シーンが勝手に変わる":"troubleshooting--9","c-14-困ったとき--シーンが保存されない":"troubleshooting--10","c-14-困ったとき--セッションがつながらない":"troubleshooting--11","c-14-困ったとき--B-O-でも消えない":"troubleshooting--12","c-14-困ったとき--アプリが終了した-接続が切れた":"troubleshooting--13","c-14-困ったとき--保存に失敗した":"troubleshooting--14","c-14-困ったとき--DMX-値を確認したい":"troubleshooting--15"};
+  var MATCH = {"en":"en","en-US":"en","ja":"ja","de":"de","de-DE":"de","fr":"fr","fr-FR":"fr","ko":"ko","zh-Hans":"zh-Hans","zh":"zh-Hans","zh-Hant":"zh-Hant","es":"es","es-ES":"es","pt-BR":"pt-BR","pt":"pt-BR","it":"it","nl":"nl","nl-NL":"nl","pl":"pl","cs":"cs","sv":"sv","da":"da","no":"no","fi":"fi","tr":"tr","id":"id","th":"th","ar":"ar","ar-SA":"ar","hi":"hi","vi":"vi","zh-CN":"zh-Hans","zh-TW":"zh-Hant"};
+  var HREF = {"en":"manual.html","ja":"manual-ja.html","de":"manual-de.html","fr":"manual-fr.html","ko":"manual-ko.html","zh-Hans":"manual-zh-Hans.html","zh-Hant":"manual-zh-Hant.html","es":"manual-es.html","pt-BR":"manual-pt-BR.html","it":"manual-it.html","nl":"manual-nl.html","pl":"manual-pl.html","cs":"manual-cs.html","sv":"manual-sv.html","da":"manual-da.html","no":"manual-no.html","fi":"manual-fi.html","tr":"manual-tr.html","id":"manual-id.html","th":"manual-th.html","ar":"manual-ar.html","hi":"manual-hi.html","vi":"manual-vi.html"};
+  var HERE = "fi";
+
+  var q = document.getElementById('q'), box = document.getElementById('results');
+  function esc(s){return s.replace(/[&<>]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c];});}
+  function run(){
+    var v = q.value.trim();
+    if (v.length < 1){ box.hidden = true; box.innerHTML=''; return; }
+    var needle = v.toLowerCase(), hits = [];
+    IDX.forEach(function(ch){
+      if (ch.title.toLowerCase().indexOf(needle) >= 0)
+        hits.push({id: ch.id, label: ch.title, sub: ''});
+      ch.h.forEach(function(h){
+        if (h.t.toLowerCase().indexOf(needle) >= 0)
+          hits.push({id: h.id, label: h.t, sub: ch.title});
+      });
+      var p = ch.text.toLowerCase().indexOf(needle);
+      if (p >= 0 && hits.filter(function(x){return x.sub===ch.title||x.id===ch.id;}).length===0)
+        hits.push({id: ch.id, label: '\u2026' + ch.text.substr(Math.max(0,p-18), 56).trim() + '\u2026', sub: ch.title});
+    });
+    if (!hits.length){ box.innerHTML = '<p class="none">'+esc(NONE)+'</p>'; box.hidden = false; return; }
+    box.innerHTML = hits.slice(0,25).map(function(h){
+      return '<a href="#'+h.id+'">'+esc(h.label)+(h.sub?'<span>'+esc(h.sub)+'</span>':'')+'</a>';
+    }).join('');
+    box.hidden = false;
+  }
+  var t; q.addEventListener('input', function(){ clearTimeout(t); t = setTimeout(run, 90); });
+  q.addEventListener('keydown', function(e){ if (e.key === 'Escape'){ q.value=''; run(); q.blur(); } });
+  box.addEventListener('click', function(e){ if (e.target.closest('a')){ box.hidden = true; } });
+  document.addEventListener('keydown', function(e){
+    if (e.key === '/' && document.activeElement !== q){ e.preventDefault(); q.focus(); }
+  });
+  var jump = document.getElementById('qjump');
+  if (jump) jump.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'}); setTimeout(function(){ q.focus(); }, 350);
+  });
+
+  function jumpLegacy(){
+    var h = decodeURIComponent(location.hash.replace(/^#/, ''));
+    if (!h || document.getElementById(h)) return;
+    var to = LEGACY[h];
+    if (!to) return;
+    var el = document.getElementById(to);
+    if (el){ history.replaceState(null, '', '#' + to); el.scrollIntoView(); }
+  }
+  window.addEventListener('hashchange', jumpLegacy);
+  jumpLegacy();
+
+  var sels = document.querySelectorAll('.lang select');
+  Array.prototype.forEach.call(sels, function(sel){
+    sel.addEventListener('change', function(){
+      var opt = sel.options[sel.selectedIndex];
+      try { localStorage.setItem('kanau.manual.locale', opt.dataset.locale); } catch (e) {}
+      location.href = opt.value + location.hash;
+    });
+  });
+  // 初回だけブラウザの言語を見ます。明示の選択があればそちらを優先し、
+  // 強制の転送は繰り返しません。
+  try {
+    if (!localStorage.getItem('kanau.manual.locale') && !location.hash) {
+      var want = (navigator.languages || [navigator.language || '']).map(String);
+      for (var i = 0; i < want.length; i++) {
+        var hit = MATCH[want[i]] || MATCH[want[i].split('-')[0]];
+        if (hit && hit !== HERE) {
+          localStorage.setItem('kanau.manual.locale', hit);
+          location.replace(HREF[hit]);
+          break;
+        }
+        if (hit === HERE) break;
+      }
+    }
+  } catch (e) {}
+
+})();
+</script>
+</body>
+</html>

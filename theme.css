@@ -274,11 +274,15 @@ figure.shot ul.pins b {
 
 /* ---- 入口(トップ) ---- */
 
-.hero { margin-bottom: 2.5rem; }
+/* ☰ は #top へ飛ぶので、固定バーの下に潜らないよう逃がす */
+.hero { margin-bottom: 2.5rem; scroll-margin-top: 3.5rem; }
 .hero h1 { font-size: 2rem; margin: 0; letter-spacing: 0.02em; }
 .kicker { margin: 0.1rem 0 0; color: var(--amber);
           font-size: 0.95rem; letter-spacing: 0.04em; }
 .hero .sub { margin: 1rem 0 0; color: var(--subtext); font-size: 0.95rem; }
+/* アプリが英語で開く言語に出る一行 */
+.appnote { margin: 0.6rem 0 0; color: var(--faint); font-size: 0.85rem;
+           border-inline-start: 2px solid var(--divider); padding-inline-start: 0.7rem; }
 .ver { color: var(--faint); font-size: 0.82rem; margin: 1.25rem 0 0; }
 
 .doors { display: grid; gap: 0.6rem; margin: 1.75rem 0 0.9rem;

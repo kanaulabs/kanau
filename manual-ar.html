@@ -1,0 +1,928 @@
+<!doctype html>
+<!-- GENERATED FILE — DO NOT EDIT DIRECTLY.
+     原稿は docs/manual-ar/ 、作り直しは python3 docs/site/render-manual.py -->
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>دليل Kanau</title>
+<meta name="description" content="وحدة تحكم إضاءة للسينما والتلفزيون، مصنوعة للـ iPhone. تحكّم بوحدات الإضاءة عبر Art-Net وsACN وCRMX، ومعك اللون والمشاهد والمؤثّرات والتشخيص في جيبك.">
+<link rel="icon" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/icon.png">
+<link rel="canonical" href="manual-ar.html">
+<link rel="alternate" hreflang="en" href="manual.html">
+<link rel="alternate" hreflang="ja" href="manual-ja.html">
+<link rel="alternate" hreflang="de" href="manual-de.html">
+<link rel="alternate" hreflang="fr" href="manual-fr.html">
+<link rel="alternate" hreflang="ko" href="manual-ko.html">
+<link rel="alternate" hreflang="zh-Hans" href="manual-zh-Hans.html">
+<link rel="alternate" hreflang="zh-Hant" href="manual-zh-Hant.html">
+<link rel="alternate" hreflang="es" href="manual-es.html">
+<link rel="alternate" hreflang="pt-BR" href="manual-pt-BR.html">
+<link rel="alternate" hreflang="it" href="manual-it.html">
+<link rel="alternate" hreflang="nl" href="manual-nl.html">
+<link rel="alternate" hreflang="pl" href="manual-pl.html">
+<link rel="alternate" hreflang="cs" href="manual-cs.html">
+<link rel="alternate" hreflang="sv" href="manual-sv.html">
+<link rel="alternate" hreflang="da" href="manual-da.html">
+<link rel="alternate" hreflang="no" href="manual-no.html">
+<link rel="alternate" hreflang="fi" href="manual-fi.html">
+<link rel="alternate" hreflang="tr" href="manual-tr.html">
+<link rel="alternate" hreflang="id" href="manual-id.html">
+<link rel="alternate" hreflang="th" href="manual-th.html">
+<link rel="alternate" hreflang="ar" href="manual-ar.html">
+<link rel="alternate" hreflang="hi" href="manual-hi.html">
+<link rel="alternate" hreflang="vi" href="manual-vi.html">
+<link rel="stylesheet" href="theme.css">
+</head>
+<body>
+
+<div class="stickybar"><a class="toc" href="#top" title="المحتويات">&#9776;</a><button id="qjump" type="button">بحث</button><a class="trouble" href="#troubleshooting">المشكلات</a><label class="lang"><span class="vh">اللغة</span><select data-where="bar"><option value="manual.html" data-locale="en">English</option><option value="manual-ja.html" data-locale="ja">日本語</option><option value="manual-de.html" data-locale="de">Deutsch</option><option value="manual-fr.html" data-locale="fr">Français</option><option value="manual-ko.html" data-locale="ko">한국어</option><option value="manual-zh-Hans.html" data-locale="zh-Hans">简体中文</option><option value="manual-zh-Hant.html" data-locale="zh-Hant">繁體中文</option><option value="manual-es.html" data-locale="es">Español</option><option value="manual-pt-BR.html" data-locale="pt-BR">Português (Brasil)</option><option value="manual-it.html" data-locale="it">Italiano</option><option value="manual-nl.html" data-locale="nl">Nederlands</option><option value="manual-pl.html" data-locale="pl">Polski</option><option value="manual-cs.html" data-locale="cs">Čeština</option><option value="manual-sv.html" data-locale="sv">Svenska</option><option value="manual-da.html" data-locale="da">Dansk</option><option value="manual-no.html" data-locale="no">Norsk</option><option value="manual-fi.html" data-locale="fi">Suomi</option><option value="manual-tr.html" data-locale="tr">Türkçe</option><option value="manual-id.html" data-locale="id">Bahasa Indonesia</option><option value="manual-th.html" data-locale="th">ไทย</option><option value="manual-ar.html" data-locale="ar" selected>العربية</option><option value="manual-hi.html" data-locale="hi">हिन्दी</option><option value="manual-vi.html" data-locale="vi">Tiếng Việt</option></select></label></div>
+<div class="hero" id="top">
+  <div class="brand"><img src="img/icon.png" alt="" width="180" height="180">
+    <div><h1>Kanau</h1><p class="kicker">iPhone Lighting Console</p></div>
+    <label class="lang"><span class="vh">اللغة</span><select data-where="hero"><option value="manual.html" data-locale="en">English</option><option value="manual-ja.html" data-locale="ja">日本語</option><option value="manual-de.html" data-locale="de">Deutsch</option><option value="manual-fr.html" data-locale="fr">Français</option><option value="manual-ko.html" data-locale="ko">한국어</option><option value="manual-zh-Hans.html" data-locale="zh-Hans">简体中文</option><option value="manual-zh-Hant.html" data-locale="zh-Hant">繁體中文</option><option value="manual-es.html" data-locale="es">Español</option><option value="manual-pt-BR.html" data-locale="pt-BR">Português (Brasil)</option><option value="manual-it.html" data-locale="it">Italiano</option><option value="manual-nl.html" data-locale="nl">Nederlands</option><option value="manual-pl.html" data-locale="pl">Polski</option><option value="manual-cs.html" data-locale="cs">Čeština</option><option value="manual-sv.html" data-locale="sv">Svenska</option><option value="manual-da.html" data-locale="da">Dansk</option><option value="manual-no.html" data-locale="no">Norsk</option><option value="manual-fi.html" data-locale="fi">Suomi</option><option value="manual-tr.html" data-locale="tr">Türkçe</option><option value="manual-id.html" data-locale="id">Bahasa Indonesia</option><option value="manual-th.html" data-locale="th">ไทย</option><option value="manual-ar.html" data-locale="ar" selected>العربية</option><option value="manual-hi.html" data-locale="hi">हिन्दी</option><option value="manual-vi.html" data-locale="vi">Tiếng Việt</option></select></label></div>
+  <p class="sub">وحدة تحكم إضاءة للسينما والتلفزيون، مصنوعة للـ iPhone. تحكّم بوحدات الإضاءة عبر Art-Net وsACN وCRMX، ومعك اللون والمشاهد والمؤثّرات والتشخيص في جيبك.</p>
+  
+  <div class="doors"><a class="door" href="#quick-start"><b>ابدأ في 3 دقائق</b><span>بلا وحدات إضاءة</span></a><a class="door" href="#screen"><b>الدليل</b><span>الشاشات وأدوات التحكم</span></a><a class="door" href="#troubleshooting"><b>حل المشكلات</b><span>ابحث بحسب العَرَض</span></a></div>
+  <p class="adv">المزيد:
+     <a href="#patch">Fixture / GDTF</a>
+     <a href="#output">Output / Diagnostics</a>
+     <a href="#midi">MIDI</a>
+     <a href="#session">Session</a></p>
+  <p class="ver">آخر تحديث <bdi dir="ltr">2026-09-13</bdi> ・ جرى التحقق على <bdi dir="ltr">0.2 build 233</bdi></p>
+</div>
+
+<div class="findbar">
+  <input id="q" type="search" placeholder="ابحث في الدليل (/)" autocomplete="off"
+         aria-label="ابحث في الدليل">
+  <div id="results" hidden></div>
+</div>
+
+<nav><a href="#quick-start">QUICK START</a> <a href="#screen">01 قراءة الشاشة</a> <a href="#output">02 إرسال DMX</a> <a href="#patch">03 تسجيل وحدات الإضاءة</a> <a href="#intensity">04 ضبط الشدة</a> <a href="#color">05 ضبط اللون</a> <a href="#fixture-settings">06 إعدادات كل وحدة</a> <a href="#position">07 الموضع والشعاع</a> <a href="#scenes">08 حفظ الحالات واستدعاؤها</a> <a href="#effects">09 المؤثّرات</a> <a href="#safety">10 الأقفال والسلامة والرجوع خطوة</a> <a href="#shows">11 حفظ العروض وتبادلها</a> <a href="#midi">12 وحدات تحكم MIDI ‏(Advanced)</a> <a href="#session">13 العمل من جهازين</a> <a href="#troubleshooting">14 حل المشكلات</a> <a href="#glossary">المسرد</a></nav>
+
+<section class="chapter" id="s-quick-start"><h1 id="quick-start">QUICK START — جرّب Kanau في 3 دقائق</h1>
+<p class="lead">لا تحتاج إلى أي وحدة إضاءة للوصول إلى هنا. أسماء الأزرار مكتوبة تماماً كما تظهر على الشاشة.</p>
+<p>يفتح التطبيق ومعه طقم تدريب فيه 24 وحدة إضاءة مسجّلة مسبقاً. ثلاث دقائق هنا تكفي لترى معظم طريقة عمل Kanau.</p>
+<h3 id="quick-start--1">1. غيّر شدة الإضاءة</h3>
+<ol><li>في أعلى الشاشة يومض <code>GM 20</code> بالأحمر. المسه.</li><li>في اللوحة التي تفتح المس <code>→100</code>. يزداد كل شيء سطوعاً.</li><li>أغلق اللوحة واسحب أحد الـ fader إلى أعلى وإلى أسفل. يتغيّر الرقم فوقه ولون الأيقونة الدائرية معه.</li></ol>
+<p>الـ fader يستجيب لـ <strong dir="auto">المسافة التي يقطعها إصبعك، لا للموضع الذي لمسته</strong>. نقطة البداية لا تغيّر النتيجة.</p>
+<h3 id="quick-start--2">2. غيّر اللون</h3>
+<ol><li><strong dir="auto">اضغط مطوّلاً</strong> على الأيقونة الدائرية فوق أحد الـ fader.</li><li>تفتح لوحة اللون. يضبط <code>Intensity</code> السطوع، و<code>Color temperature</code> الأبيض، و<code>RGB</code> اللون.</li><li>ينقلك الرمزان ‹ › في الأعلى إلى الوحدة التالية.</li></ol>
+<p>كل وحدة إضاءة لها إمكانات مختلفة، لذلك تتغيّر البنود التي تراها معها.</p>
+<h3 id="quick-start--3">3. استدعِ مشهداً</h3>
+<ol><li>افتح تبويب <code>Scenes</code> في الأسفل.</li><li>في انتظارك خمسة مشاهد: <code>DIM</code> و<code>COLOR</code> و<code>CCT</code> و<code>PIXELS</code> و<code>FX</code>. المس أحدها.</li><li>بالعودة إلى Home تكون الـ fader والألوان قد أخذت تلك الحالة.</li></ol>
+<p><strong dir="auto">كل ما تغيّره بعد الاستدعاء يُكتب مرة أخرى داخل ذلك المشهد.</strong> اقفل المشهد لحمايته (الفصل 08).</p>
+<h3 id="quick-start--4">شاهد القيم الخارجة</h3>
+<p>حتى بدون أي وحدة إضاءة موصولة، يعرض <code>Settings</code> ← <code>DMX MONITOR</code> الأرقام التي يرسلها Kanau فعلاً. حرّك أحد الـ fader فتتحرك الأرقام معه.</p>
+<h2 id="quick-start--5">ماذا يوجد في طقم التدريب</h2>
+<p>يضم العرض التجريبي 24 وحدة من Generic: ‏DIMMER و‏CCT و‏RGB و‏RGBW و‏BAR (‏4 بكسلات). وهي موزّعة على ثلاث مجموعات من ثماني وحدات، اسمها KEY وBACK وFLOOR.</p>
+<p>يبدأ الماستر العام من 20، وست وحدات مؤشّرة لـ Battery save وتحمل بطاقة خضراء، وعلى FLOOR مؤثّر نار يعمل، وهناك خمسة مشاهد محفوظة. لا شيء من هذا يدّعي أنه منتج حقيقي.</p>
+<h2 id="quick-start--6">توصيل وحدات إضاءة حقيقية</h2>
+<p>بعد أن يتضح العرض التجريبي، انتقل إلى معداتك أنت.</p>
+<ol><li><strong dir="auto">الوصل</strong>: ضع الـ iPhone على الشبكة نفسها التي عليها عقدة DMX. في <code>Settings</code> ← <code>OUTPUT</code> تأكد أن Nodes answering يساوي 1 أو أكثر وأن Sending باللون الأخضر (الفصل 02).</li><li><strong dir="auto">التسجيل</strong>: <code>Patch</code> ← <code>＋ new patch</code> ← <code>add new fixture</code>، ثم اضبط الطراز ووضع DMX والكون والعنوان. يجب أن تطابق إعدادات الوحدة نفسها (الفصل 03).</li><li><strong dir="auto">بناء الحالة</strong>: اضبط الشدة واللون في Home (الفصل 04 و05).</li><li><strong dir="auto">الحفظ</strong>: المس ＋ في <code>Scenes</code> لتخزين الحالة (الفصل 08).</li></ol>
+<p>طقم التدريب عرض عادي. احذفه عندما تسجّل وحداتك، أو أنشئ عرضاً جديداً عبر <code>Settings</code> ← <code>SHOWS</code> ← <code>NEW SHOW</code>.</p>
+<h2 id="quick-start--7">خمسة أمور يحسن معرفتها أولاً</h2>
+<ol><li><strong dir="auto">Fixture Lock يتفوّق على الإظلام.</strong> تبقى الوحدة المقفولة مضاءة أثناء B.O. ‏(الفصل 10).</li><li><strong dir="auto">المشهد المستدعى يحدّث نفسه أثناء عملك.</strong> اقفل ما تريد إبقاءه كما هو (الفصل 08).</li><li><strong dir="auto">هناك ثلاثة أنواع من القفل.</strong> يثبّت Fixture Lock الخرج، ويحمي Scene Lock المشهد المحفوظ، ويمنع Screen Lock اللمسات العارضة (الفصل 10).</li><li><strong dir="auto">عندما ينزل الماستر العام تحت 100 تنبض حافة الشاشة بالأحمر.</strong> إن بدا كل شيء معتماً فانظر هناك أولاً.</li><li><strong dir="auto">إن كانت هناك وحدة تحكم أخرى ترسل إلى وحدات الإضاءة نفسها فسترى <code>WAITING</code> أو <code>SHARED</code>.</strong> كلاهما مشروح في الفصل 02.</li></ol>
+<div class="box warning"><b>WARNING</b><p>الوحدة التي عليها Lock لا تنطفئ عند ضغط الإظلام، ولا تنطفئ عند إنزال الماستر العام إلى الصفر. تأكد من أن الأقفال محلولة قبل التصوير. يظهر عدد الوحدات التي تبقى مضاءة أثناء الإظلام بجوار 🔒 الخضراء في أعلى الشاشة.</p></div>
+<div class="next"><b>التالي</b><ul><li>أين يقع كل شيء على الشاشة ← الفصل 01</li><li>توصيل وحدات إضاءة حقيقية ← الفصل 02</li><li>حفظ الحالات ← الفصل 08</li></ul></div><a class="top" href="#top">↑ المحتويات</a></section>
+<section class="chapter" id="s-screen"><h1 id="screen">01 قراءة الشاشة</h1>
+<p class="lead">ما الذي يوجد على شاشة Home من الأعلى إلى الأسفل، وكيف تقرأها حين يبدو شيء غير سليم.</p>
+<figure class="shot"><div class="wrap" dir="ltr"><img src="img/1-home.png" alt="شاشة Home عند أول تشغيل. الأرقام الحمراء تقابل القائمة أدناه." width="294" height="640" loading="lazy"><span class="pin" style="left:10%;top:9%">1</span><span class="pin" style="left:40%;top:9%">2</span><span class="pin" style="left:20%;top:22.5%">3</span><span class="pin" style="left:50%;top:30%">4</span><span class="pin" style="left:7%;top:38.5%">5</span><span class="pin" style="left:7%;top:55%">6</span><span class="pin" style="left:7%;top:77%">7</span><span class="pin" style="left:50%;top:94%">8</span></div><figcaption>شاشة Home عند أول تشغيل. الأرقام الحمراء تقابل القائمة أدناه.</figcaption><ul class="pins"><li><b>1</b> البروتوكول وحالة الاتصال</li><li><b>2</b> الماستر العام (GM)</li><li><b>3</b> اختيار وحدات الإضاءة والمجموعات المعروضة</li><li><b>4</b> التنقل بين الصفحات</li><li><b>5</b> أيقونة وحدة الإضاءة الدائرية</li><li><b>6</b> الـ fader</li><li><b>7</b> زر الرقم</li><li><b>8</b> التبويبات الخمسة</li></ul></figure>
+<h2 id="screen--1">تعلّم هذه السبعة أولاً</h2>
+<p>قبل الجداول التفصيلية، هذه هي المواضع الوحيدة التي تحتاج إلى معرفتها.</p>
+<table>
+<tr><th>الموضع</th><th>ما يفعله</th></tr>
+<tr><td>GM</td><td>السطوع العام، في أعلى الشاشة</td></tr>
+<tr><td>Fixtures / Groups</td><td>يختار وحدات الإضاءة الظاهرة</td></tr>
+<tr><td>Fader</td><td>يضبط الشدة</td></tr>
+<tr><td>Scenes</td><td>يحفظ الحالات ويعيدها</td></tr>
+<tr><td>Patch</td><td>يسجّل وحدات الإضاءة</td></tr>
+<tr><td>Effects</td><td>يسرد المؤثّرات العاملة ويوقفها</td></tr>
+<tr><td>Settings</td><td>الخرج والعروض وMIDI والجلسة</td></tr>
+</table>
+<p>كل ما دون ذلك تفصيل.</p>
+<h2 id="screen--2">التبويبات الخمسة</h2>
+<p>Home هو مكان العمل. لمس تبويب آخر يفتح لوحة فوقه. اسحب المقبض في الأعلى إلى أسفل، أو المس Done، للعودة إلى Home.</p>
+<table>
+<tr><th>التبويب</th><th>فيمَ يُستعمل</th><th>انظر</th></tr>
+<tr><td>Scenes</td><td>حفظ الحالات واستدعاؤها</td><td>الفصل 08</td></tr>
+<tr><td>Patch</td><td>وحدات الإضاءة والعناوين والأوضاع والمجموعات</td><td>الفصل 03</td></tr>
+<tr><td>Home</td><td>ضبط الشدة عبر الـ fader</td><td>الفصل 04</td></tr>
+<tr><td>Effects</td><td>سرد المؤثّرات وتعديلها وإيقافها</td><td>الفصل 09</td></tr>
+<tr><td>Settings</td><td>خرج DMX والعروض وMIDI والجلسة والتفضيلات</td><td>الفصل 02 والفصول 11–13</td></tr>
+</table>
+<h2 id="screen--3">سطر الحالة</h2>
+<p>على اليسار البروتوكول وحالة الاتصال. ‏ARTNET يعني Art-Net، وSACN يعني sACN، وBLUETOOTH يعني أن الإرسال عبر Bluetooth وحده.</p>
+<table>
+<tr><th>المعروض</th><th>المعنى</th></tr>
+<tr><td>نقطة خضراء</td><td>يرسل</td></tr>
+<tr><td>نقطة كهرمانية</td><td>تباطؤ، أو إعادة اتصال (Reconnecting…)</td></tr>
+<tr><td>نقطة حمراء، No node</td><td>لا شيء يردّ</td></tr>
+<tr><td>نقطة حمراء، Blocked</td><td>‏iOS يوقف المرور</td></tr>
+<tr><td>نقطة رمادية، idle</td><td>متوقّف</td></tr>
+<tr><td>WAITING مع عنوان IP</td><td>عُثر على وحدة تحكم أخرى، فتراجعت هذه</td></tr>
+<tr><td>SHARED مع عنوان IP</td><td>وحدة تحكم أخرى ترسل إلى الكون نفسه. وهذه ما زالت ترسل أيضاً</td></tr>
+<tr><td>JOINED مع اسم</td><td>داخل جلسة. يخرج DMX من المضيف</td></tr>
+</table>
+<p>النقطة الخضراء لا تثبت أن وحدة الإضاءة استقبلت شيئاً. يشرح الفصل 02 كيف تتحقق، ويغطي الفصل 14 ما تفعله حين يتعطّل الأمر.</p>
+<p>يحمل وسط السطر ويمينه ما يلي.</p>
+<table>
+<tr><th>البند</th><th>عند اللمس</th><th>عند الضغط المطوّل، أو ملاحظة</th></tr>
+<tr><td>GM 100</td><td>يفتح لوحة الماستر العام</td><td>اضغط مطوّلاً لإعداداته. ينبض بالأحمر تحت 100</td></tr>
+<tr><td>B.O.</td><td>يرفع الإظلام</td><td>يحل محل GM أثناء الإظلام</td></tr>
+<tr><td>🔌 n (أحمر)</td><td>لا شيء</td><td>أكوان مطفأة. أعد تشغيلها من Settings ← OUTPUT</td></tr>
+<tr><td>🔒 n (أخضر)</td><td>لا شيء</td><td>وحدات مقفولة ما زالت مضاءة أثناء الإظلام</td></tr>
+<tr><td>BATTERY SAVE</td><td>يشغّله ويطفئه</td><td>اضغط مطوّلاً لضبط المقدار والتلاشي</td></tr>
+<tr><td>SCREEN LOCK</td><td>لا يقفل</td><td>اضغط مطوّلاً 0.5 ثانية لقفل الشاشة</td></tr>
+</table>
+<h2 id="screen--4">أجزاء Home</h2>
+<table>
+<tr><th>البند</th><th>كيف يُستعمل</th></tr>
+<tr><td>Fixtures / Groups</td><td>يبدّل بين العرض حسب الطراز والعرض حسب المجموعة</td></tr>
+<tr><td>10 / 5</td><td>عدد الـ fader في الصفحة. خمسة تجعل كلاً منها أعرض</td></tr>
+<tr><td>HISTORY</td><td>يفتح قائمة الحالات السابقة</td></tr>
+<tr><td>أزرار الطراز والمجموعة</td><td>المس لعرض تلك الوحدات. اضغط مطوّلاً لضبط اللون والشدة لها جميعاً</td></tr>
+<tr><td>CLEAR n</td><td>يلغي التحديد. لا تتغيّر وحدة الإضاءة</td></tr>
+<tr><td>‹ / ›</td><td>ينقل بين الصفحات</td></tr>
+<tr><td>الرقم</td><td>الشدة من 0 إلى 100. يظهر كبيراً في الأعلى أثناء السحب</td></tr>
+<tr><td>أيقونة الوحدة الدائرية (…)</td><td>المس للتحديد. <strong dir="auto">اضغط مطوّلاً</strong> لفتح لوحة تلك الوحدة</td></tr>
+<tr><td>Fader</td><td>اسحب إلى أعلى وأسفل لضبط الشدة</td></tr>
+<tr><td>اسم الطراز</td><td>يحدّد سلسلة من الطراز والوضع نفسيهما</td></tr>
+<tr><td>زر الرقم</td><td>رقم وحدة الإضاءة. في وضع البيانو يغيّر الشدة أثناء الضغط</td></tr>
+<tr><td>⏻</td><td>يطفئ الخرج ويشغّله مع الحفاظ على القيمة</td></tr>
+<tr><td>COLOR</td><td>يضبط اللون والشدة للوحدات المحدّدة</td></tr>
+<tr><td>EFFECT</td><td>يطبّق مؤثّراً على الوحدات المحدّدة</td></tr>
+<tr><td>PIXELS</td><td>يفتح خلايا وحدات البكسل ويغلقها</td></tr>
+<tr><td>＋ −</td><td>يدوّر وضع البيانو: LOCK ← ＋ ← −</td></tr>
+<tr><td>FINE</td><td>يدوّر الحساسية: عادي ← FINE ‏(1/10) ← FINE+ ‏(1/100)</td></tr>
+</table>
+<p>لا يتاح COLOR بلا تحديد، ولا مع وحدات بلا لون. يحتاج EFFECT إلى تحديد. ويحتاج PIXELS إلى وحدة بكسل في الصفحة.</p>
+<h2 id="screen--5">الألوان والعلامات</h2>
+<table>
+<tr><th>اللون أو العلامة</th><th>المعنى</th></tr>
+<tr><td>كهرماني</td><td>محدّد، أو فعّال</td></tr>
+<tr><td>أحمر</td><td>إظلام، أو ماستر عام منخفض، أو مشكلة شبكة، أو وضع البيانو. شيء يستحق النظر</td></tr>
+<tr><td>أخضر</td><td>يرسل. ‏Fixture Lock. ‏BATTERY SAVE مشغّل</td></tr>
+<tr><td>بنفسجي</td><td>الخرج مطفأ، أو الشاشة مقفولة</td></tr>
+<tr><td>سماوي</td><td>يعمل عليه الجهاز الآخر في جلسة</td></tr>
+<tr><td>برتقالي</td><td>عند حد ضبطته أنت</td></tr>
+<tr><td>رمادي</td><td>غير متاح، أو متوقّف</td></tr>
+</table>
+<p>تحمل الأيقونة الدائرية لون وحدة الإضاءة وخرجها الحقيقي. يظهر التحديد بإطار كهرماني، والخرج المطفأ بحلقة بنفسجية و⏻، والقفل بحلقة خارجية خضراء و🔒. والمؤثّر العامل يجعلها تتحرك.</p>
+<p>نبض أحمر حول حافة الشاشة يعني أن الماستر العام تحت 100. والحافة الخضراء تعني أن BATTERY SAVE مشغّل. ومع وجودهما معاً يكون الأحمر في الخارج والأخضر في الداخل. وأثناء الإظلام تُستبدل الحافة الحمراء بـ B.O. في سطر الحالة.</p>
+<div class="next"><b>التالي</b><ul><li>كيف تستجيب الـ fader ← الفصل 04</li><li>ضبط اللون ← الفصل 05</li><li>لا شيء يضيء ← الفصل 14</li></ul></div><a class="top" href="#top">↑ المحتويات</a></section>
+<section class="chapter" id="s-output"><h1 id="output">02 إرسال DMX — OUTPUT</h1>
+<p class="lead">إعداد الوصلة إلى معدات الإضاءة، والتأكد من وصولها.</p>
+<figure class="shot"><div class="wrap" dir="ltr"><img src="img/6-output.png" alt="‏Settings ← OUTPUT. الأرقام الحمراء تقابل القائمة أدناه." width="640" height="1334" loading="lazy"><span class="pin" style="left:26%;top:22.7%">1</span><span class="pin" style="left:14%;top:32.6%">2</span><span class="pin" style="left:88%;top:32.6%">3</span><span class="pin" style="left:26%;top:79.5%">4</span><span class="pin" style="left:50%;top:96.7%">5</span></div><figcaption>‏Settings ← OUTPUT. الأرقام الحمراء تقابل القائمة أدناه.</figcaption><ul class="pins"><li><b>1</b> البروتوكول. ‏Art-Net أو sACN، واحد منهما</li><li><b>2</b> الشبكات. يرسل عبر المؤشّر عليها</li><li><b>3</b> كم عقدة ردّت. ‏no reply تعني أنه لم يُعثر على أي عقدة</li><li><b>4</b> الوجهة. ‏AUTO مناسب لمعظم الأطقم</li><li><b>5</b> ابحث عن العقد من جديد</li></ul></figure>
+<h2 id="output--1">أول اتصال</h2>
+<h3 id="output--2">عقدة Art-Net واحدة</h3>
+<ol><li>ضع الـ iPhone على شبكة Wi-Fi أو الشبكة السلكية نفسها التي عليها العقدة.</li><li>افتح Settings ← OUTPUT.</li><li>اختر Art-Net وAUTO. كلاهما القيمة الافتراضية.</li><li>تأكد أن Nodes answering يساوي 1 أو أكثر وأن Sending أخضر.</li><li>حرّك أحد الـ fader في Home وراقب استجابة وحدة الإضاءة.</li></ol>
+<p>يرسل Kanau كل كون مسجّل باستمرار، عادة بمعدل 44 Hz. لا يوجد زر بدء. قد يتوقّف الإرسال أو يتعطّل مؤقتاً عند اكتشاف وحدة تحكم أخرى، أو عند تغيّر إعدادات الشبكة، أو عند حجب iOS للإذن.</p>
+<h2 id="output--3">الإعدادات بالتفصيل</h2>
+<h3 id="output--4">البروتوكول والشبكات</h3>
+<p>‏Art-Net وsACN متعارضان: اختر واحداً. ويعمل CRMX عبر Bluetooth إلى جانب أي منهما.</p>
+<p>يسرد Network اتصالات Wi-Fi وEthernet وHotspot مع عناوينها وعدد العقد التي ردّت على كل منها.</p>
+<ul><li>يستعمل افتراضياً كل شبكة متاحة.</li><li>من حالة تحديد الكل، لمس واحدة يُبقي تلك وحدها. وبعدها كل لمسة تشغّل واحدة أو تطفئها.</li><li>أطفئها كلها فلا يخرج شيء عبر الشبكة. ويبقى Bluetooth يرسل.</li><li>الاتصال المؤشّر عليه no address لا يمكن تحديده.</li></ul>
+<p>إن كنت تستعمل السلك وWi-Fi معاً فتأكد من ظهورهما كليهما في القائمة.</p>
+<h3 id="output--5">اختيار الوجهة</h3>
+<table>
+<tr><th>الإعداد</th><th>إلى أين يرسل</th><th>متى تستعمله</th></tr>
+<tr><td>AUTO (Art-Net)</td><td>إرسال أحادي إلى العقد التي ردّت، مع بث واحد في الثانية على كل شبكة. بث فقط إن لم يردّ شيء</td><td>الخيار المعتاد</td></tr>
+<tr><td>Broadcast (Art-Net)</td><td>كل إطار إلى الشبكة الفرعية لكل شبكة</td><td>حين تبلّغ عقدة عن عنوان خاطئ ويتأخر تحديث AUTO</td></tr>
+<tr><td>Unicast</td><td>مباشرة إلى العناوين التي تدخلها</td><td>حين لا يصل البث، أو حين تريد تسمية الهدف</td></tr>
+<tr><td>255.255.255.255 (Art-Net)</td><td>بث على المقطع. لا يعبر الموجّه</td><td>حين لا تتوافق العنونة ويفشل البث العادي. قد يحجبه iOS</td></tr>
+<tr><td>Multicast (sACN)</td><td>عنوان البث المتعدّد لكل كون</td><td>الافتراضي في sACN</td></tr>
+</table>
+<p>مع Unicast اكتب عنوان العقدة والمس Add. ومن دون إدخال أي عنوان تظهر No node IPs entered. ولا يُرسل شيء. ويذهب كل كون إلى كل عنوان تدخله.</p>
+<p>إن كان Nodes answering يساوي 1 أو أكثر مع AUTO لكن وحدات الإضاءة تتحدّث مرة في الثانية تقريباً، فتحقق مما إذا كانت العقدة تبلّغ عن عنوان خاطئ لنفسها. انظر إلى Destination وجرّب Broadcast. ويغطي الفصل 14 أسباب التأخر الأخرى.</p>
+<h3 id="output--6">RESCAN</h3>
+<p>لمس RESCAN تحت Art-Net يحدّث قائمة العقد. استعمله بعد إضافة معدات أو إزالتها أو تغيير عنوان. ومن دون ذلك تظهر العقدة الجديدة خلال 3 ثوانٍ تقريباً، وتختفي العقدة المرفوعة بعد نحو 10.</p>
+<p>يستمر الإرسال أثناء البحث. ولا يتاح RESCAN من دون شبكة صالحة.</p>
+<h3 id="output--7">أذونات iOS</h3>
+<p>شريط أحمر مكتوب عليه iOS is blocking this. يعني أحد أمرين.</p>
+<ul><li><strong dir="auto">الشبكة المحلية</strong>: شغّل إعدادات iPhone ← Kanau ← الشبكة المحلية.</li><li><strong dir="auto">البث المتعدّد في sACN</strong>: إن رأيت iOS blocked multicast. فانتقل إلى Unicast وأدخل عناوين العقد. صلاحية البث المتعدّد تُمنح لنسختي TestFlight وApp Store فقط، لا لنسخة التطوير.</li></ul>
+<h3 id="output--8">الأكوان وترقيم Art-Net</h3>
+<p>يسرد Universes كل كون مسجّل مع عدد وحداته وكم منها مضاء ومفتاح ON/OFF.</p>
+<div class="box important"><b>IMPORTANT</b><p>‏OFF <strong dir="auto">لا</strong> يوقف الإرسال. بل يواصل إرسال أصفار إلى ذلك الكون، حتى لا يبقى المستقبِل ممسكاً بآخر قيمه ويظل مضاءً. ويظهر عدد الأكوان المطفأة بجوار 🔌 في أعلى الشاشة.</p></div>
+<p>إن كانت عقدتك تريد Net / Sub-Net / Universe بدل رقم واحد، فشغّل Settings ← SETTINGS ← Art-Net ← Net / Sub / Uni. والعلاقة هي <strong dir="auto">Net × 256 + Sub × 16 + Uni</strong>.</p>
+<p>أولوية sACN يمكن أن تكون 0 أو 100 أو 200. والافتراضي 100. وحين ترسل عدة مصادر إلى الكون نفسه يتبع المستقبِل الأولوية الأعلى.</p>
+<h3 id="output--9">CRMX عبر Bluetooth</h3>
+<ol><li>شغّل Bluetooth في Settings ← OUTPUT ← CRMX (Bluetooth).</li><li>اسمح بـ Bluetooth حين يطلبه iOS أول مرة.</li><li>اختر مرسِلاً من القائمة. ولمسه مرة أخرى يقطع الاتصال.</li></ol>
+<p>يحمل المرسِل الذي تختاره الكون 1 ‏(U1). وفي المرة التالية يعيد تشغيل Bluetooth الوصل بالمرسِل نفسه.</p>
+<p>إرسال الكون نفسه إلى وحدة الإضاءة نفسها عبر الشبكة وBluetooth معاً قد يسبّب وميضاً. انظر إلى التحذير في قسم CRMX وأطفئ أحد المسارين. ولن يختار Kanau عنك.</p>
+<p>إن رفض مرسِل استقبال Art-Net بعد إطفائك Bluetooth، فتحقق من إعداد Bluetooth فيه وأعد تشغيله. وفي Aputure Sidus Four تحقق أيضاً من إعداد Sidus BT على الجهاز.</p>
+<h3 id="output--10">حين يُعثر على وحدة تحكم أخرى</h3>
+<table>
+<tr><th>المعروض</th><th>ما يعنيه وما تفعله</th></tr>
+<tr><td>WAITING + IP</td><td>كانت وحدة تحكم أخرى ترسل قبل بدء هذه، فتراجعت هذه. أوقف الأخرى، أو المس الرسالة واختر Send anyway? ← Send. وإن كانت الأخرى مضيف Kanau فيمكنك الانضمام إلى جلستها</td></tr>
+<tr><td>SHARED + IP</td><td>ظهرت وحدة تحكم أخرى بعد بدء هذه. يستمر الإرسال، فأوقف إحداهما إن لزم</td></tr>
+</table>
+<p>إن بدأ جهازان معاً وتراجع كلاهما، يعود صاحب العنوان الأصغر إلى الإرسال.</p>
+<h2 id="output--11">DMX Diagnostics — قراءة ما يجري</h2>
+<p>النصف السفلي من OUTPUT موجود <strong dir="auto">ليريك أين توقّفت الأمور</strong>. وليس مجموعة إعدادات. وحين يكون الخرج بطيئاً أو غائباً فاقرأه من الأعلى (الفصل 14).</p>
+<table>
+<tr><th>البند</th><th>كيف تقرأه</th></tr>
+<tr><td>Destination</td><td>إلى أين يذهب فعلاً. ‏↦ بعد عنوان تعني إرسالاً أحادياً إلى عقدة ردّت</td></tr>
+<tr><td>Medium</td><td>الاتصالات المستعملة، مثل wi-fi + ethernet</td></tr>
+<tr><td>Sending</td><td>الحزم في الثانية الأخيرة. نحو 44 هو الطبيعي. و‏nothing تعني أنه لم يخرج شيء</td></tr>
+<tr><td>Clock</td><td>أسوأ فجوة بين إرسالين. نحو 23 ms هو الطبيعي. وفوق 100 ms يشير إلى الهاتف</td></tr>
+<tr><td>Touch → wire</td><td>من إصبعك إلى الحزمة. نحو 25 ms هو الطبيعي</td></tr>
+<tr><td>Nodes answering</td><td>كم عقدة ردّت، مع الاسم والعنوان والاتصال وزمن الذهاب والإياب. والرقم بين قوسين هو الأسوأ خلال 10 ثانية الأخيرة</td></tr>
+<tr><td>Type these into the node</td><td>قيم Net / Sub / Uni التي تُدخلها في العقدة، حين يكون ذلك العرض مشغّلاً</td></tr>
+</table>
+<p>هذه تضيّق دائرة المشكلة، ولا تثبت النجاح. فقد يكون Sending أخضر بينما يبقي خطأ في المطابقة أو عطل في الطرف الآخر وحدات الإضاءة مطفأة. والمعدات التي لا تردّ على الاستطلاع تُظهر 0 في Nodes answering حتى وهي تستقبل.</p>
+<h3 id="output--12">DMX MONITOR</h3>
+<p>يعرض Settings ← DMX MONITOR قنوات كل كون الـ 512 كما تخرج. ويتحدّث 10 مرات في الثانية ولا يؤثّر في الإرسال.</p>
+<div class="next"><b>التالي</b><ul><li>تسجيل وحدات الإضاءة ← الفصل 03</li><li>لا يصل شيء، أو الأمر بطيء ← الفصل 14</li></ul></div><a class="top" href="#top">↑ المحتويات</a></section>
+<section class="chapter" id="s-patch"><h1 id="patch">03 تسجيل وحدات الإضاءة — Patch</h1>
+<p class="lead">سجّل وحدات الإضاءة التي تستعملها، واضبط الطراز ووضع DMX والكون والعنوان والرقم والمجموعات.</p>
+<p>تُضبط الشدة واللون في Home ‏(الفصل 04 و05).</p>
+<figure class="shot"><div class="wrap" dir="ltr"><img src="img/4-patch.png" alt="شاشة Patch. تُجمَّع الوحدات المسجّلة حسب الطراز والوضع." width="294" height="640" loading="lazy"></div><figcaption>شاشة Patch. تُجمَّع الوحدات المسجّلة حسب الطراز والوضع.</figcaption></figure>
+<h2 id="patch--1">إضافة وحدات</h2>
+<ol><li>افتح Patch ← ＋ new patch والمس add new fixture لإظهار الحقول.</li><li>اختر Manufacturer ← Fixture ← Mode. يجب أن يطابق الوضع ما هو مضبوط في الوحدة نفسها.</li><li>اضبط العدد والكون وعنوان البداية.</li><li>تحقق من المدى والتحذيرات ثم المس Add. تُحفظ عند إضافتها.</li></ol>
+<table>
+<tr><th>الحقل</th><th>ما هو</th></tr>
+<tr><td>Favourites</td><td>ضع نجمة على طراز لتصل إليه مباشرة في المرة القادمة</td></tr>
+<tr><td>Name</td><td>الاسم المعروض. افتراضياً اسم الطراز، ويشترك فيه كل وحدات ذلك الطراز</td></tr>
+<tr><td>Fixture number</td><td>الرقم الذي تناديه به في الموقع. يمكن تركه فارغاً. يبدأ من أعلى رقم مستعمل زائد واحد</td></tr>
+<tr><td>Label</td><td>علامة قصيرة للعرض. يستعمل قيمة افتراضية إن تُرك فارغاً</td></tr>
+<tr><td>العدد</td><td>حتى 4,096</td></tr>
+<tr><td>Universe / Address</td><td>افتراضياً U1 / 1. تغيير الكون يعيد العنوان إلى 1. و‏U0 مسموح</td></tr>
+<tr><td>Offset</td><td>التباعد بين الوحدات. يُملأ من عدد قنوات الوضع</td></tr>
+<tr><td>Gap</td><td>قنوات إضافية تُترك بين الوحدات</td></tr>
+<tr><td>Battery save</td><td>يؤشّر الوحدات الجديدة لـ BATTERY SAVE</td></tr>
+<tr><td>Label color</td><td>خلفية الرقم. سبعة ألوان، أو بلا لون</td></tr>
+<tr><td>Map</td><td>توزيع القنوات الـ 512. اسحب وأفلت لضبط عنوان البداية</td></tr>
+</table>
+<p>تبدأ كل وحدة بعد الأولى من عنوان بداية سابقتها زائد Offset وGap. وما يتجاوز 512 ينتقل إلى الكون التالي. و‏Offset أصغر من عدد قنوات الوضع يرفع تحذيراً، لكن يمكنك المتابعة.</p>
+<p>بعدها تحصل على نتيجة مثل Added 3 × Titan Tube — U1 1–15. ويتيح Already patched إضافة المزيد من طراز عندك أصلاً. ويعرض Patched التوزيع الحالي.</p>
+<h2 id="patch--2">نوعان من الأرقام</h2>
+<table>
+<tr><th>الرقم</th><th>ما هو</th></tr>
+<tr><td>Unit no.</td><td>رقم متسلسل داخل الطراز. يُسنَد تلقائياً</td></tr>
+<tr><td>Fixture number</td><td>الرقم الذي تستعمله في الموقع. تضبطه أنت</td></tr>
+</table>
+<p>أيّهما يعرض Home يُضبط في Settings ← SETTINGS ← Fixture numbers ← Show the fixture number. والافتراضي Unit no.. وتكرار Fixture number يرفع تحذيراً لكنه مسموح.</p>
+<h2 id="patch--3">الطرازات والأوضاع</h2>
+<p>تأتي هذه النسخة بـ <strong dir="auto">45 مصنّعاً و578 وحدة إضاءة و11,347 وضعاً</strong>. ولما ليس في المكتبة استعمل تعريفات Generic أو Custom fixtures.</p>
+<p>يضم Generic أنواع Dimmer وDimmer 16-bit وBi-color وCCT وRGB وRGBW وDimmer + RGB وDimmer + RGBW وBulb وDesk lamp.</p>
+<ul><li><strong dir="auto">PROVISIONAL</strong> ‏(Advanced): وضع مؤقت يُستعمل حيث لم يُستكمل جدول DMX. يرسل الشدة على القناة 1 ولا شيء غير ذلك.</li><li><strong dir="auto">الأوضاع بلا قناة تعتيم</strong>: يقود الـ fader قنوات اللون معاً، فيعمل كمعتّم افتراضي.</li></ul>
+<h2 id="patch--4">تعديل الوحدات المسجّلة</h2>
+<p>يسرد Patched الوحدات حسب الطراز والوضع. المس عنواناً لطيّه. والمس صف وحدة لفتح إعدادات تسجيلها.</p>
+<p>تشير ⚠ إلى تداخل في العنونة أو سلسلة تتجاوز القناة 512. ويستمر الإرسال أثناء ظهورها، فتحقق من الإعدادات. و‏n fixture data problems تشير إلى أعطال وُجدت أثناء تحميل بيانات وحدات الإضاءة؛ المسها للتفصيل.</p>
+<p>العمل في هذه القائمة لا يغيّر الوحدات التي يعرضها Home.</p>
+<h2 id="patch--5">تعديل عدة وحدات دفعة واحدة</h2>
+<p>المس Select many واختر الوحدات. وعلامة ✓ في صف طراز تأخذ كل وحداته.</p>
+<table>
+<tr><th>الإجراء</th><th>ما يفعله</th></tr>
+<tr><td>Select all / Select none</td><td>يأخذ كل شيء أو يفرغه، بما في ذلك الصفوف المطويّة</td></tr>
+<tr><td>Name</td><td>يرقّم نهاية الاسم بترتيب تحديدك</td></tr>
+<tr><td>Number</td><td>يضبط Fixture number بترتيب تحديدك</td></tr>
+<tr><td>Address</td><td>يعيد توزيعها من كون وعنوان بداية وفجوة</td></tr>
+<tr><td>Battery</td><td>يؤشّرها لـ BATTERY SAVE أو يزيل التأشير</td></tr>
+<tr><td>New group</td><td>يبني مجموعة من التحديد</td></tr>
+<tr><td>Delete</td><td>يزيلها. تحقق من العدد قبل التأكيد</td></tr>
+</table>
+<p>حذف وحدة يزيل أيضاً شدتها ولونها وحدودها، ويخرجها من كل المشاهد. والحذف من داخل مجموعة يخرجها من تلك المجموعة فقط؛ وتبقى الوحدة نفسها.</p>
+<h2 id="patch--6">Re-patch — النقل إلى فراغ</h2>
+<ol><li>افتح Patch ← Re-patch.</li><li>في القائمة المرتّبة بالعنوان، اختر الوحدة المراد نقلها.</li><li>المس مدى فارغاً. تنتقل إلى بدايته.</li></ol>
+<p>لا تُعرض إلا المديات الواسعة بما يكفي. وتظهر الوحدات المتداخلة بالأحمر.</p>
+<h2 id="patch--7">بناء المجموعات</h2>
+<ol><li>المس ＋ new group وأعطها اسماً.</li><li>اختر الوحدات بالترتيب الذي تريده في Home.</li><li>المس CREATE.</li></ol>
+<p>يمكن أن تكون الوحدة في عدة مجموعات. ولا تُنسخ: تعديلها من أي مجموعة يعدّل الوحدة نفسها. وإضافتها إلى مجموعة تُبقيها في All.</p>
+<p>لمس اسم مجموعة يتيح ضبط الاسم ورؤية العدد ومدى العناوين والتوزيع، وإعادة الترتيب أو الحذف. ويضيف Edit group — add &amp; reorder وحدات ويعيد ترتيبها؛ ويضع Add to an existing group التحديد الحالي في مجموعة عندك أصلاً.</p>
+<p>ظهور صف All في Patch من عدمه يُضبط في Settings ← SETTINGS ← Groups ← Show the All row.</p>
+<h2 id="patch--8">وحدات ليست في المكتبة (Advanced)</h2>
+<p>يحفظ Custom fixtures التعريفات التي تضيفها بنفسك. وهي متاحة لكل العروض. وحذف تعريف لا يؤثّر في الوحدات المسجّلة منه سابقاً.</p>
+<h3 id="patch--9">من GDTF Share</h3>
+<ol><li>افتح ＋ Browse GDTF Share وسجّل الدخول عبر SIGN IN بحساب GDTF Share.</li><li>حدّث القائمة بـ REFRESH ثم اختر المصنّع والوحدة والمراجعة والوضع. ويشمل البحث كل المصنّعين.</li><li>اقرأ تقرير الاستيراد واختر SAVE أو SAVE &amp; EDIT أو SAVE &amp; PATCH.</li></ol>
+<p>يفتح SAVE &amp; PATCH شاشة التسجيل مع ذلك التعريف محدّداً. ويحفظ Remember on this device تسجيل دخولك؛ ويزيله FORGET. وتبقى التعريفات التي جلبتها. ويذهب تسجيل دخولك إلى GDTF Share.</p>
+<h3 id="patch--10">من ملف GDTF</h3>
+<p>‏＋ Import a GDTF file ← ＋ Open a GDTF file، اختر ملف .gdtf، وتحقق من الوضع ومن تقرير الاستيراد، ثم احفظ. ولا حاجة إلى شبكة.</p>
+<p>يسرد التقرير ما لم يمكن نقله. فالقيمة ذات 16 بت الموزّعة على عنوانين متباعدين تحتفظ ببايتها الخشن وحده، والعناوين غير المستعملة تُحفظ كفراغات، والقنوات على DMX break آخر تُسقَط. وحيث تتداخل العناوين تفوز القناة الأسبق. وتحتفظ الوظائف المجهولة بأسمائها الأصلية.</p>
+<p>التعريف المؤشّر بـ <code>Imported data is not verified.</code> ينبغي التحقق منه أمام الوحدة الحقيقية. صحّح الأدوار الخاطئة عبر SAVE &amp; EDIT؛ ويسري التصحيح على الوحدات التي تسجّلها بعد ذلك. و<code>This mode has no channels.</code> تعني أنه ينبغي اختيار وضع آخر.</p>
+<h3 id="patch--11">يدوياً من جدول DMX</h3>
+<p>افتح ＋ Build by hand وابدأ من تعريف فارغ أو من قالب: ‏Dimmer أو CCT أو Bi-color أو RGB أو HSI أو x y أو CCT + HSI أو Dimmer + RGBW أو Full color أو Full color + white أو Multi-emitter.</p>
+<p>أعطِ كل قناة تسمية، واضبط الدور و8 أو 16 بت والقيمة الافتراضية والوحدة الواقعية حسب الحاجة. وتُحسب أرقام القنوات ومجموعها تلقائياً. واترك خانة بلا استعمال إن كنت تجهل دورها، وسيظل بإمكانك قيادتها من Channels. ويرفض CREATE الحفظ ما دام هناك ERROR.</p>
+<h3 id="patch--12">بنسخ تعريف موجود</h3>
+<p>يتيح Duplicate and edit تغيير الاسم ومدى درجة حرارة اللون وأدوار القنوات وأسماءها والتسميات والقيم الافتراضية. ولا يمكن تغيير عدد القنوات ولا توزيع الـ 16 بت ولا المديات ولا بنية التبديل.</p>
+<div class="next"><b>التالي</b><ul><li>ضبط الشدة ← الفصل 04</li><li>إعدادات كل وحدة ← الفصل 06</li><li>وحدة مسجّلة لا تتصرف كما ينبغي ← الفصل 14</li></ul></div><a class="top" href="#top">↑ المحتويات</a></section>
+<section class="chapter" id="s-intensity"><h1 id="intensity">04 ضبط الشدة — Home</h1>
+<p class="lead">الـ fader في Home. هذا هو قلب Kanau.</p>
+<h2 id="intensity--1">تحريك الـ fader</h2>
+<p>يستجيب الـ fader لـ <strong dir="auto">المسافة التي يقطعها إصبعك</strong>، لا للموضع الذي لمسته. ويمكنك قيادته من الرقم أو من الأيقونة الدائرية أو من الفراغ أسفل الـ fader. وقد صُنع هكذا لتعمل وأنت تنظر إلى الموقع لا إلى يدك.</p>
+<figure class="shot"><div class="wrap" dir="ltr"><img src="img/zoom-dot.png" alt="من الأعلى: الشدة الحالية، وأيقونة وحدة الإضاءة الدائرية، والـ fader. المس الأيقونة للتحديد، واضغط مطوّلاً لفتح لوحة تلك الوحدة." width="640" height="388" loading="lazy"></div><figcaption>من الأعلى: الشدة الحالية، وأيقونة وحدة الإضاءة الدائرية، والـ fader. المس الأيقونة للتحديد، واضغط مطوّلاً لفتح لوحة تلك الوحدة.</figcaption></figure>
+<p>يكبر المقبض قليلاً عند لمسه، و<strong dir="auto">لا يتحرك شيء قبل أن تسحب مسافة قصيرة</strong>، فإراحة إصبعك عليه آمنة. وأثناء السحب يظهر الرقم والاسم والقيمة بحجم كبير في أعلى الشاشة. وإن كنت قد ضبطت حدوداً فإنه يتحرك داخلها.</p>
+<h2 id="intensity--2">FINE</h2>
+<table>
+<tr><th>الإجراء</th><th>ما يحدث</th></tr>
+<tr><td>لمسة قصيرة</td><td>يدوّر عادي ← FINE ‏(1/10) ← FINE+ ‏(1/100) ← عادي</td></tr>
+<tr><td>ضغط مطوّل</td><td>الدرجة التالية أثناء الضغط. ويعود إلى العادي عند الإفلات</td></tr>
+</table>
+<p>التبديل في منتصف السحب لا يجعل القيمة تقفز. و‏FINE يسري أيضاً على القنوات الخام وعلى Pan وTilt.</p>
+<h2 id="intensity--3">تحريك عدة وحدات معاً</h2>
+<p>حدّد أيقونتين دائريتين أو أكثر ثم اسحب أحد الـ fader. تتحرك كلها بالمقدار نفسه، محتفظة بالفروق بينها. وحين يبلغ أحدها حداً تتابع البقية. وتُستثنى الوحدات المقفولة.</p>
+<p>هذا يختلف عن العمل على عدة وحدات في لوحة COLOR، حيث تصل كلها إلى القيمة نفسها.</p>
+<h2 id="intensity--4">أزرار الأرقام كبيانو</h2>
+<p>يضبط زر ＋ − في أسفل اليمين الوضع.</p>
+<table>
+<tr><th>الوضع</th><th>أثناء الضغط على زر رقم</th></tr>
+<tr><td>LOCK (الافتراضي)</td><td>لا يتغيّر شيء</td></tr>
+<tr><td>＋</td><td>يذهب إلى الحد الأعلى، وهو 100 افتراضياً</td></tr>
+<tr><td>−</td><td>يذهب إلى الحد الأدنى، وهو 0 افتراضياً</td></tr>
+</table>
+<p>عند الإفلات يعود إلى ما كان عليه. ويمكنك الضغط على عدة أزرار معاً، أو التمرير جانبياً لعزفها بالتناوب. ولا تستجيب الوحدات المقفولة.</p>
+<p>تصير الأزرار حمراء ما دام ＋ أو − مسلّحاً. وعند التشغيل يكون الوضع LOCK دائماً.</p>
+<h2 id="intensity--5">⏻ — الخرج وحده</h2>
+<p>لمس ⏻ يطفئ خرج وحدة ويشغّله مع الحفاظ على القيمة. وتصير بنفسجية أثناء الإطفاء، ويبقى الرقم. وتحريك الـ fader والخرج مطفأ لا يضيء شيئاً.</p>
+<p>‏ON/OFF هو الافتراضي. وفي Switch function الخاص بالوحدة يمكنك تغييره إلى FLASH ON أو FLASH OFF، وهما لا يدومان إلا أثناء الضغط. ولا تستجيب الوحدات المقفولة.</p>
+<h2 id="intensity--6">GM وB.O.</h2>
+<p>لمس GM في الأعلى يفتح fader الماستر العام وB.O. و→100.</p>
+<ul><li><strong dir="auto">fader الـ GM</strong> يضبط السطوع العام. وهو نسبي، و‏FINE يعمل عليه.</li><li><strong dir="auto">B.O.</strong> يشغّل الإظلام ويرفعه. وتُحفظ قيمة GM.</li><li><strong dir="auto">→100</strong> يظهر حين ينزل GM تحت 100، ويعيده.</li></ul>
+<p>الضغط المطوّل على GM يعرض 100 و75 و50 و25 و12.5 و0. والصفر هناك يشغّل الإظلام؛ ولا يضع GM على الصفر.</p>
+<p>يُضبط تلاشي هذه الأزرار في Settings ← SETTINGS ← Master fade. والافتراضي SNAP. وسحب الـ fader بالإصبع فوري دائماً.</p>
+<div class="box warning"><b>WARNING</b><p><strong dir="auto">الوحدة التي عليها Lock لا تستجيب لـ GM ولا لـ B.O.</strong> وتبقى مضاءة. ويظهر عدد الوحدات المقفولة التي تبقى مضاءة أثناء الإظلام بجوار 🔒 الخضراء في أعلى الشاشة.</p></div>
+<h2 id="intensity--7">اختيار ما يظهر في الصفحة</h2>
+<p>يعرض Fixtures حسب الطراز والوضع؛ ويعرض Groups صف All والمجموعات التي بنيتها. المس اسماً للتبديل. ويظل كل fader لوحدة واحدة، حتى داخل مجموعة.</p>
+<p>يُضبط الترتيب داخل All في Settings ← SETTINGS ← Order on All، إما بالطراز والرقم المتسلسل أو بـ Fixture number. وداخل المجموعة يكون بالترتيب الذي بنيتها به.</p>
+<p>ينقل ‹ و› بين الصفحات. والتبديل بين 10 و5 يبقي الوحدة التي تعمل عليها في المشهد.</p>
+<h2 id="intensity--8">الأزرار في الأسفل</h2>
+<figure class="shot"><div class="wrap" dir="ltr"><img src="img/zoom-bottom.png" alt="من اليسار: ‏COLOR وEFFECT وPIXELS و＋ − وFINE. والرمادية منها لا يمكن استعمالها في الحالة الراهنة." width="640" height="152" loading="lazy"></div><figcaption>من اليسار: ‏COLOR وEFFECT وPIXELS و＋ − وFINE. والرمادية منها لا يمكن استعمالها في الحالة الراهنة.</figcaption></figure>
+<p>يحتاج COLOR وEFFECT إلى تحديد. ويصير PIXELS رمادياً حين لا توجد وحدة بكسل في الصفحة.</p>
+<h2 id="intensity--9">تشغيل البكسلات وحدها</h2>
+<p>لمس PIXELS يفتح خلايا وحدات البكسل في الصفحة على هيئة fader مستقلة. وتظهر باسم P1 وP2 وهكذا، ولكل منها شدتها ولونها. والمسه مرة أخرى لطيّها.</p>
+<p>‏CLEAR n يلغي التحديد فقط. ولا تُمَس القيم ولا المخارج.</p>
+<div class="next"><b>التالي</b><ul><li>ضبط اللون ← الفصل 05</li><li>حفظ الحالات ← الفصل 08</li><li>بعض الـ fader لا تفعل شيئاً ← الفصل 14</li></ul></div><a class="top" href="#top">↑ المحتويات</a></section>
+<section class="chapter" id="s-color"><h1 id="color">05 ضبط اللون — COLOR</h1>
+<p class="lead">اللون والشدة لوحدة واحدة أو لعدة وحدات.</p>
+<div class="box note"><b>NOTE</b><p>ما تراه يتوقّف على ما تملكه وحدة الإضاءة فعلاً. فمعتّم بقناة واحدة لا يعرض إلا Intensity. و‏Kanau لا يعرض أدوات تحكم لا تملكها الوحدة.</p></div>
+<figure class="shot"><div class="wrap" dir="ltr"><img src="img/2-color-cct.png" alt="لوحة اللون. لا تظهر إلا الإمكانات التي تحملها الوحدة." width="294" height="640" loading="lazy"></div><figcaption>لوحة اللون. لا تظهر إلا الإمكانات التي تحملها الوحدة.</figcaption></figure>
+<h2 id="color--1">فتح اللوحة</h2>
+<table>
+<tr><th>الطريقة</th><th>ما تعمل عليه</th></tr>
+<tr><td>ضغط مطوّل على أيقونة وحدة</td><td>تلك الوحدة</td></tr>
+<tr><td>ضغط مطوّل على أيقونة خلية</td><td>تلك الخلية</td></tr>
+<tr><td>تحديد وحدات ثم COLOR</td><td>كل ما هو محدّد</td></tr>
+<tr><td>ضغط مطوّل على زر طراز أو مجموعة</td><td>كل الوحدات فيه. و‏All تعني كل الوحدات</td></tr>
+</table>
+<p>مع فتح وحدة واحدة ينقلك ‹ و› إلى التالية.</p>
+<h2 id="color--2">الشدة واللون</h2>
+<table>
+<tr><th>البند</th><th>كيف يعمل</th></tr>
+<tr><td>Intensity</td><td>من 0 إلى 100، بالمنزلق أو بالكتابة أو بزرّي ± أو بالقيم الجاهزة</td></tr>
+<tr><td>درجة حرارة اللون (CCT)</td><td>بالكلفن، داخل مدى الوحدة</td></tr>
+<tr><td>Green / Magenta</td><td>تصحيح الأخضر والأرجواني. ويعيده Back to neutral إلى 0</td></tr>
+<tr><td>Crossfade</td><td>التوازن بين جانب الأبيض وجانب اللون. وأي الجانبين أيّهما يتوقّف على الوحدة</td></tr>
+<tr><td>RGB والبواعث</td><td>‏R وG وB وW وAmber وLime وCyan وما تحمله الوحدة غير ذلك</td></tr>
+<tr><td>Hue / Saturation / CIE x / CIE y</td><td>تظهر في الوحدات التي تملكها</td></tr>
+</table>
+<p>يلتزم ±5 و±10 في Intensity بمضاعفات 5 أو 10: فمن 47 يعطي 10+ القيمة 50. والقيم الجاهزة هي 12.5% و25% و35% و50% و75%.</p>
+<p>القيم الجاهزة لـ CCT هي 2700 و3000 و3200 و4300 و5000 و5600 و6500 و10000 K. وخارج مدى الوحدة تستقر عند حدّها، مؤشّراً بـ MIN أو MAX. والوحدة التي لها درجتا حرارة لون فقط تعرض زرّين بدل منزلق.</p>
+<p>يمكن تحرير درجات Green / Magenta بالضغط المطوّل عليها. وحيث تملك وحدة أكثر من crossfade تظهر التالية منها فوق أدوات التحكم التي تغذّيها مباشرة.</p>
+<h2 id="color--3">الجيلاتين</h2>
+<table>
+<tr><th>البند</th><th>ما هو</th></tr>
+<tr><td>Gel presets</td><td>قيم LEE وRosco الجاهزة للوحدات التي فيها RGB. وجدولان منفصلان لـ 3200 K و5600 K</td></tr>
+<tr><td>Preset / Gel</td><td>الجيلاتين أو قيم اللون المدمجة في الوحدة نفسها، تُختار بالرقم</td></tr>
+<tr><td>Gels → x/y</td><td>إحداثيات لون LEE وRosco للوحدات التي فيها x وy</td></tr>
+</table>
+<p>قيم RGB تحت Gel presets مأخوذة من بيانات اللون التي تنشرها Astera. وهي لا تحمل سطوعاً، فاضبطه بالـ fader. ومع القيم الجاهزة المدمجة في وحدة لا يستطيع التطبيق دائماً إظهار أيّها المحدّد.</p>
+<p>تبقى القائمة مفتوحة بعد الاختيار، فتستطيع تجربة واحدة بعد أخرى. أغلقها بـ ✕. وظهورها من عدمه يُضبط في Settings ← SETTINGS ← Gels ← Gel presets.</p>
+<h2 id="color--4">حفظ الألوان التي تكثر من استعمالها</h2>
+<ul><li><strong dir="auto">Save this color</strong> يخزّن لوناً تحت ★. ويُحفظ لكل طراز على حدة. ولا يشمل CCT ولا G/M.</li><li><strong dir="auto">Save this temperature</strong> يخزّن درجة حرارة لون. وهذه مشتركة بين الطرازات.</li></ul>
+<p>المس زراً مخزّناً لتطبيقه. واضغط مطوّلاً لإعادة التسمية أو التحرير أو الحذف.</p>
+<h2 id="color--5">ADVANCED COLOR</h2>
+<figure class="shot"><div class="wrap" dir="ltr"><img src="img/3-picker.png" alt="المنتقي تحت ADVANCED COLOR. تجري درجة اللون أفقياً، والتشبّع رأسياً." width="294" height="640" loading="lazy"></div><figcaption>المنتقي تحت ADVANCED COLOR. تجري درجة اللون أفقياً، والتشبّع رأسياً.</figcaption></figure>
+<p>يجمع ADVANCED COLOR أدوات التحكم التي يحسبها التطبيق بنفسه، لا قنوات وحدة الإضاءة.</p>
+<p>في المنتقي تجري درجة اللون أفقياً والتشبّع رأسياً. والسطوع من عمل الـ fader. اسحب قرب المقبض الدائري لتحريك اللون؛ وأي موضع آخر يمرّر اللوحة.</p>
+<p>يظهر RGB، وقيمتا Hue وSaturation المحسوبتان منه، وCMY ‏(255 − RGB) في الوحدات التي تقبلها. وفي وحدة لا تستقبل إلا Hue وSaturation، أو x وy فقط، استعمل أدوات التحكم الأعلى.</p>
+<h2 id="color--6">عدة وحدات وعدة طرازات</h2>
+<p><strong dir="auto">في هذه اللوحة يصل كل ما تلمسه إلى القيمة نفسها لكل ما هو محدّد.</strong> وهذا يصدق على المنزلقات وأزرار ± والقيم الجاهزة والكتابة والألوان المخزّنة على حد سواء. ولتحريكها مع الحفاظ على فروقها، حدّد الـ fader في Home بدل ذلك.</p>
+<p>مع تحديد طرازات مختلفة لا يظهر إلا Intensity وCCT وG/M وCrossfade و★. افتح طرازاً بمفرده لضبط RGB والبواعث. ويبقى CCT داخل مدى كل وحدة.</p>
+<h2 id="color--7">البكسلات ومجموعات اللون المتكرّرة</h2>
+<p>اضغط مطوّلاً على أيقونة خلية لضبط لون تلك الخلية وشدتها. وتغيير لون الجسم يضبط كل الخلايا؛ أما الخلية التي غيّرتها يدوياً فتحتفظ بلونها. وتسري Intensity الجسم على كل الخلايا.</p>
+<p>وحيث يحمل وضع الدور اللوني نفسه أكثر من مرة، مثل Gel 1 وGel 2، تظهر المجموعات التالية أسفل اللوحة. <strong dir="auto">ومجموعات اللون بعد الأولى لا تُحفظ في المشاهد.</strong></p>
+<div class="next"><b>التالي</b><ul><li>إعدادات كل وحدة ← الفصل 06</li><li>حفظ الحالات ← الفصل 08</li></ul></div><a class="top" href="#top">↑ المحتويات</a></section>
+<section class="chapter" id="s-fixture-settings"><h1 id="fixture-settings">06 إعدادات كل وحدة</h1>
+<p class="lead">الحدود وLock والقنوات الخام لوحدة إضاءة واحدة.</p>
+<p>مرّر إلى أسفل في اللوحة التي تحصل عليها بالضغط المطوّل على أيقونة وحدة، أو من COLOR، أو بالضغط المطوّل على زر طراز أو مجموعة.</p>
+<p>يمكن ضبط Limits وLock وSwitch function وBattery save لعدة وحدات دفعة واحدة. وتظهر القيم المختلطة على هيئة — أو n of m، وتغيير واحدة يطبّقها عليها جميعاً. ولا يظهر Channels وMode وChannel roles وPatch إلا مع فتح وحدة واحدة.</p>
+<h2 id="fixture-settings--1">الاسم والعرض</h2>
+<p>حرّر الاسم في أعلى اللوحة. وينقل ‹ و› إلى الوحدة التالية. و‏Label هو الاسم المعروض المشترك بين وحدات الطراز؛ و‏Label color خلفية الرقم. ويمسحه No label color.</p>
+<h2 id="fixture-settings--2">الحدود</h2>
+<p>يضبط Lower limit وUpper limit المدى الذي يمكنك العمل فيه. غيّرهما بـ ±1 و±5، أو امسحهما. وخارج الحد يعرض Home تظليلاً برتقالياً مخطّطاً.</p>
+<p>تسري حدود الخلية داخل حدود الجسم. فإن كان الجسم محدوداً عند 50، فالخلية المحدودة عند 80 تبقى عاجزة عن تجاوز 50.</p>
+<h2 id="fixture-settings--3">Lock</h2>
+<div class="box warning"><b>WARNING</b><p>‏Fixture Lock يتفوّق على <strong dir="auto">كل شيء</strong>: الماستر العام والإظلام وBATTERY SAVE واستدعاء المشاهد وMIDI والجلسة. والوحدة المقفولة لن تنطفئ عند ضغط الإظلام. تحقق من أقفالك قبل التصوير.</p></div>
+<p>مع تشغيل Lock يُثبَّت خرج الوحدة. فلا تمسّها الـ fader ولا وضع البيانو ولا ⏻ ولا اللون ولا القنوات الخام ولا GM ولا B.O. ولا BATTERY SAVE ولا المشاهد ولا MIDI ولا الجلسة.</p>
+<p>ومع تحديد عدة وحدات وبعضها مقفول، يزيل اللمس كل الأقفال. ومع عدم قفل أي منها، يقفلها اللمس جميعاً.</p>
+<p>القفل أثناء ضغطة بيانو أو FLASH يعيد القيمة المؤقتة أولاً ثم يثبّت. وتغيير الحدود أثناء القفل لا يحرّك القيمة الحالية؛ بل تُجلب إلى المدى الجديد عند فك القفل.</p>
+<h2 id="fixture-settings--4">بقية الإعدادات</h2>
+<table>
+<tr><th>البند</th><th>ما هو</th></tr>
+<tr><td>Switch function</td><td>ما يفعله ⏻: ‏None أو ON/OFF أو FLASH ON أو FLASH OFF. والافتراضي ON/OFF</td></tr>
+<tr><td>Battery save</td><td>يؤشّر هذه الوحدة لـ BATTERY SAVE</td></tr>
+<tr><td>Invert</td><td>يعكس اتجاه السحب لـ Pan وTilt. ولا تتغيّر الزاوية المعروضة</td></tr>
+<tr><td>Mode</td><td>يعرض وضع DMX الحالي. غيّره من RE-PATCH</td></tr>
+<tr><td>Channel roles</td><td>يصحّح دور كل قناة واسمها. ولا تتحرك العناوين</td></tr>
+</table>
+<p>استعمل Channel roles حين تكون قنوات وحدة مسجّلة معامَلة على أنها وظيفة خاطئة. ولحمل التصحيح إلى الوحدات التي تسجّلها لاحقاً، حرّر التعريف تحت Custom fixtures.</p>
+<h2 id="fixture-settings--5">Channels — الـ DMX الخام (Advanced)</h2>
+<p>استعمل أولاً أدوات التحكم المخصّصة للّون والموضع وسواهما. و‏Channels للوصول إلى وظائف لا تغطيها تلك الأدوات، قناة DMX واحدة في كل مرة.</p>
+<p>يسرد Channels كل شيء بترتيب DMX، تحت DIMMER وCOLOR وPOSITION وGOBO وBEAM وFOCUS وSHAPERS وCONTROL. وتُخفى المجموعات الفارغة.</p>
+<table>
+<tr><th>نوع الصف</th><th>كيف تشغّله</th></tr>
+<tr><td>قيمة متصلة</td><td>منزلق أو كتابة أو − و+</td></tr>
+<tr><td>قيم ومديات مسمّاة</td><td>قائمة حتى 12 مدخلاً، ولائحة قابلة للبحث فوق ذلك</td></tr>
+<tr><td>أوامر مثل Reset أو Lamp Off</td><td>اضغط مطوّلاً المدة المذكورة. والإفلات مبكراً يلغي. والأوامر بلا مدة لمسة واحدة</td></tr>
+<tr><td>صف رمادي مؤشّر بـ FADER أو COLOR</td><td>تقوده أداة مخصّصة، فلا يمكن تحريره هنا</td></tr>
+<tr><td>صف يعتمد على قناة أخرى</td><td>يعرض المتاح في الحالة الراهنة، مع ملاحظة حين لا يكون متاحاً</td></tr>
+</table>
+<p>يبدّل DMX في أعلى اليمين بين القيم الخام والنسب المئوية. و‏Home في صف يعيده إلى قيمته الافتراضية؛ وفي Pan وTilt يحتاج ذلك إلى ضغط مطوّل. ولا يتاح حين لا يكون شيء قد تغيّر.</p>
+<p>تُحفظ تغييرات القنوات الخام في المشاهد وتُسجَّل في HISTORY. وفي وحدة بكسل تحمل لوحة الجسم قنوات الجسم وتحمل لوحة الخلية قنوات تلك الخلية.</p>
+<h2 id="fixture-settings--6">تغيير التسجيل أو الوضع</h2>
+<p>حرّر من RE-PATCH في قسم Patch. ويمكنك رؤية الكون والعنوان وFixture number والطراز والوضع وتغييرها. وينقلها Next free إلى الفراغ التالي.</p>
+<p>يعرض Change mode المدى قبل وبعد وأي وحدات ستتداخل معها، قبل أن تؤكّد. ويمكنك تطبيقه على كل وحدات ذلك الطراز. ولا تتحرك الوحدات التالية من تلقاء نفسها.</p>
+<p>يزيل Delete this fixture الوحدة بعد تأكيد، مع قيمها وإعداداتها، ويخرجها من كل المشاهد.</p>
+<div class="next"><b>التالي</b><ul><li>الموضع والشعاع ← الفصل 07</li><li>ماذا يحمي كل قفل ← الفصل 10</li></ul></div><a class="top" href="#top">↑ المحتويات</a></section>
+<section class="chapter" id="s-position"><h1 id="position">07 الموضع والشعاع</h1>
+<p class="lead">‏pan وtilt وzoom وiris وfrost وgobo في الوحدات المتحركة.</p>
+<h2 id="position--1">Pan وTilt</h2>
+<p>اضغط مطوّلاً على أيقونة وحدة وافتح Channels ← POSITION. لا تحتوي هذه النسخة على شاشة منفصلة للموضع.</p>
+<p>يُقرأ Pan وTilt بالدرجات حيث تحمل بيانات الوحدة زوايا، وبالنسبة المئوية حيث لا تحملها. وفي وحدة ذات 16 بت تقع القناة الخشنة والدقيقة في صف واحد.</p>
+<ul><li>اسحب قرب المقبض فيتحرك بمقدار المسافة التي يقطعها إصبعك. وأي موضع آخر يمرّر اللوحة.</li><li>اكتب زاوية في الحقل. وتُرفض القيم خارج مدى الوحدة.</li><li>تدرّج بـ ±0.1° و±1° و±10° وما شابه. وتأتي الدرجات من الوحدة القياسية ومن الدقة.</li><li>يبطّئه FINE وFINE+ إلى 1/10 و1/100.</li><li>اضغط مطوّلاً على Home لإرساله إلى موضع البداية الخاص بالوحدة. والإفلات مبكراً يلغي.</li></ul>
+<p>يعكس Invert اتجاه السحب. ولا يتحرك شيء ما دامت الوحدة مقفولة.</p>
+<p>المناطق الميتة، حيث لا تفعل قيمة DMX شيئاً، يتخطّاها المنزلق والتدرّج معاً. وفي وحدة تقع قيمتها الافتراضية داخل منطقة ميتة لن يتحرك التدرّج: استعمل المنزلق أو اكتب قيمة للدخول أولاً إلى المدى الحي.</p>
+<p>يُحفظ الموضع في المشاهد ويُسجَّل في HISTORY.</p>
+<div class="box important"><b>IMPORTANT</b><p><strong dir="auto">تلاشي المشهد لا يستوفي Pan ولا Tilt.</strong> بل يقفزان إلى القيمة المحفوظة لحظة الاستدعاء. وضبط زمن تلاشٍ لن يجعل الرأس يتحرك ببطء.</p></div>
+<h2 id="position--2">Zoom وiris وfrost وfocus وgobo</h2>
+<p>افتح BEAM أو GOBO أو FOCUS تحت Channels. القيم المتصلة تأخذ منزلقاً؛ وتأخذ الـ gobo والموشور خيارات مسمّاة. وتعمل تماماً مثل بقية الصفوف في الفصل 06.</p>
+<p>ولتحريك أي منها استعمل MOVE وBEAM في لوحة EFFECT. يعمل MOVE حول الموضع الذي يشير إليه الرأس الآن، ويُركَّب فوق مؤثّرات الشدة.</p>
+<div class="next"><b>التالي</b><ul><li>تحريك الحركة ← الفصل 09</li><li>حفظ الحالات ← الفصل 08</li></ul></div><a class="top" href="#top">↑ المحتويات</a></section>
+<section class="chapter" id="s-scenes"><h1 id="scenes">08 حفظ الحالات واستدعاؤها — Scenes</h1>
+<p class="lead">المشهد حالة محفوظة. افتح Scenes، والمس ＋ للحفظ، والمس صفاً لإعادتها.</p>
+<figure class="shot"><div class="wrap" dir="ltr"><img src="img/5-scenes.png" alt="قائمة المشاهد. المشهد الحالي بخلفية كهرمانية." width="294" height="640" loading="lazy"></div><figcaption>قائمة المشاهد. المشهد الحالي بخلفية كهرمانية.</figcaption></figure>
+<h2 id="scenes--1">حفظ مشهد</h2>
+<ol><li>اضبط الشدة واللون وأي مؤثّرات في Home.</li><li>المس Scenes ← ＋. يُحفظ فوراً.</li><li>لإعادة تسميته المس <strong dir="auto">Settings في صف ذلك المشهد</strong> واكتب اسماً. وسحب الصف إلى الجانب يفتح اللوحة نفسها.</li><li>ولحماية ما فيه شغّل Lock this scene في اللوحة نفسها.</li></ol>
+<p>‏Settings المقصود هنا هو الموجود <strong dir="auto">داخل صف المشهد</strong>. وليس تبويب Settings في أسفل الشاشة.</p>
+<h2 id="scenes--2">الاستدعاء والترتيب</h2>
+<table>
+<tr><th>الإجراء أو العلامة</th><th>ما يفعله</th></tr>
+<tr><td>لمس صف</td><td>يستدعي عند رفع إصبعك</td></tr>
+<tr><td>NEXT / BACK</td><td>المشهد التالي أو السابق. ويلتفّ من الطرف. ولا يتاح مع مشهد واحد فقط</td></tr>
+<tr><td>● وخلفية كهرمانية</td><td>المشهد الحالي</td></tr>
+<tr><td>▸</td><td>المشهد الذي سيجلبه NEXT</td></tr>
+<tr><td>نقطة بعد التحرير</td><td>مشهد تغيّر منذ استدعائه</td></tr>
+<tr><td>🔒 وحافة خضراء</td><td>محميّ من الكتابة فوقه</td></tr>
+<tr><td>Settings، أو السحب إلى الجانب</td><td>الاسم وزمن التلاشي والقفل والحذف</td></tr>
+<tr><td>Edit</td><td>إعادة الترتيب والحذف وحذف عدة مشاهد</td></tr>
+</table>
+<p>الأرقام هي ترتيب العرض. والوقت تحت الاسم هو آخر مرة تغيّر فيها محتواه.</p>
+<h2 id="scenes--3">ما تغيّره بعد الاستدعاء يُحفظ</h2>
+<p><strong dir="auto">ما إن تستدعي مشهداً حتى يُكتب كل ما تفعله بعدها بالإضاءة داخله.</strong> ولا يوجد زر SAVE؛ بل يُكتب عند رفع إصبعك.</p>
+<p>شغّل Lock this scene للمشاهد التي تريد إبقاءها كما هي. ويظل بإمكانك استدعاؤها وتشغيل الإضاءة، لكن لا يُحفظ شيء.</p>
+<p>هذا ليس مثل Fixture Lock. فـ Scene Lock يحمي المحفوظ؛ و‏Fixture Lock يثبّت الخرج.</p>
+<p>ينتقل الحفظ إلى مشهد آخر حين تستدعي غيره، وحين تحذف الذي أنت فيه، وحين تعيد فتح العرض. وتغييرات محتوى المشهد ليست جزءاً من HISTORY.</p>
+<h2 id="scenes--4">ما يُحفظ وما لا يُحفظ</h2>
+<table>
+<tr><th>يُحفظ</th><th>لا يُحفظ</th></tr>
+<tr><td>الشدة وCCT وG/M وcrossfade وRGB والبواعث</td><td>‏GM وB.O. وBATTERY SAVE</td></tr>
+<tr><td>القنوات الخام مثل الموضع وgobo</td><td>الحدود وFixture Lock وحالة ⏻ وSwitch function</td></tr>
+<tr><td>لون الخلايا وشدتها والمؤثّرات</td><td>مجموعات اللون بعد الأولى</td></tr>
+</table>
+<p>الوحدة التي عليها Lock لا يغيّرها الاستدعاء.</p>
+<h2 id="scenes--5">التلاشي</h2>
+<p>يُضبط لكل مشهد في Settings ← Fade. والافتراضي 3 ثوانٍ. وهناك قيم جاهزة SNAP و1 و2 و3 و5 و10، و‏±0.1 و±1 للضبط الدقيق.</p>
+<p>تتحرك الـ fader أثناء التلاشي، ويمكنك تسلّمها باليد في منتصف الطريق. أما الموضع وgobo وبقية القيم الخام فلا تُستوفى؛ بل تقفز عند الاستدعاء.</p>
+<p>المشهد الذي فيه مؤثّرات يعيد تشغيلها عند الاستدعاء. واستدعاء مشهد بلا مؤثّرات يحرّر ما كان يعمل.</p>
+<p>الاستدعاء نفسه يُسجَّل في HISTORY كخطوة واحدة. والمشاهد جزء من ملف العرض.</p>
+<div class="next"><b>التالي</b><ul><li>الرجوع خطوة ← الفصل 10</li><li>حفظ العرض ← الفصل 11</li><li>مشهد يتغيّر من تلقاء نفسه ← الفصل 14</li></ul></div><a class="top" href="#top">↑ المحتويات</a></section>
+<section class="chapter" id="s-effects"><h1 id="effects">09 المؤثّرات — Effects</h1>
+<p class="lead">وميض ونار وبرق وسواها، تُطبَّق على وحدات إضاءتك.</p>
+<p>يطبّق EFFECT في Home مؤثّراً على ما حدّدته. ويدير تبويب Effects في الأسفل كل ما يعمل.</p>
+<h2 id="effects--1">تطبيق مؤثّر</h2>
+<ol><li>في Home المس الأيقونة الدائرية لوحدة أو خلية لتحديدها.</li><li>افتح EFFECT.</li><li>المس اسم مؤثّر. يبدأ فوراً.</li></ol>
+<p>يظل الـ fader يضبط الشدة. وأثناء عمل المؤثّر يحمل زر EFFECT اسمه، وتتحرك أيقونة الوحدة والـ fader معه.</p>
+<h2 id="effects--2">الإيقاف المؤقت والتحرير وإعادة البدء</h2>
+<table>
+<tr><th>الإجراء</th><th>ما يفعله</th></tr>
+<tr><td>PAUSE</td><td>يجمّد الحركة عند الشدة والموضع الحاليين</td></tr>
+<tr><td>RESUME</td><td>يتابع من حيث تجمّد</td></tr>
+<tr><td>RELEASE</td><td>يوقفه ويعيد التحكم إلى القيم العادية. وتبقى الإعدادات في القائمة</td></tr>
+<tr><td>START</td><td>يعيد تشغيل مؤثّر محرَّر من البداية</td></tr>
+<tr><td>CLEAR</td><td>يزيله من القائمة. ويسأل أولاً</td></tr>
+</table>
+<h2 id="effects--3">ADJUST</h2>
+<table>
+<tr><th>البند</th><th>ما هو</th></tr>
+<tr><td>Speed</td><td>بالهرتز. والكسور العشرية مسموحة</td></tr>
+<tr><td>Depth</td><td>كم يسحب الشدة إلى أسفل. فـ 100 يبلغ الصفر؛ و35 لا يكاد يتحرك</td></tr>
+<tr><td>How often / Cycle</td><td>كم مرة يحدث. ولا يظهر إلا في الأنواع التي تستعمله</td></tr>
+<tr><td>Roughness</td><td>كم هي خشنة اللهب</td></tr>
+<tr><td>Width</td><td>كم من الطقم يضيء دفعة واحدة، مثل 50% 2 / 4</td></tr>
+<tr><td>Tail</td><td>طول ذيل COMET</td></tr>
+</table>
+<p>أي البنود يظهر يتوقّف على المؤثّر. و‏SIGNAL بلا Speed.</p>
+<h2 id="effects--4">ARRANGE</h2>
+<p>يباعد SPREAD بين الوحدات؛ ويبقيها TOGETHER على خطوة واحدة. ولا يوفّر RUNNER وFADE RUN وBOUNCE وCOMET وSIGNAL هذا الخيار.</p>
+<table>
+<tr><th>الترتيب</th><th>ما يفعله</th></tr>
+<tr><td>IN ORDER</td><td>مباعدة منتظمة بالرقم</td></tr>
+<tr><td>ALTERNATE</td><td>الفردي والزوجي، بفارق نصف دورة</td></tr>
+<tr><td>WINGS</td><td>متناظر من المركز إلى الخارج</td></tr>
+<tr><td>RANDOM</td><td>بترتيب عشوائي</td></tr>
+<tr><td>BOUNCE</td><td>يستدير عند كل طرف</td></tr>
+<tr><td>BUILD</td><td>يضيء واحدة تلو الأخرى ثم يطفئها كلها معاً</td></tr>
+</table>
+<p>‏RUNS تحت IN ORDER هو عدد الأنماط العاملة معاً؛ والخيارات تتوقّف على عدد الوحدات. و‏DIRECTION إما FORWARD أو REVERSE. وفي النار تتيح الوحدات القادرة على الأمرين الاختيار بين خرج CCT وRGB.</p>
+<h2 id="effects--5">تغيير الهدف وحفظ الإعدادات</h2>
+<p>يختار Applies to ← SELECT ▾ الوحدات والمجموعات. والتحديد مشترك مع Home، وتبقى القائمة مفتوحة أثناء اختيارك.</p>
+<p>يخزّن SAVE تحت SAVED الإعدادات التي ضبطتها، باسم. المس زراً مخزّناً لتطبيقه، والمسه مرة أخرى لإيقافه. واضغط مطوّلاً لإعادة التسمية أو الحذف. والوحدات ليست جزءاً من الإعداد المخزّن.</p>
+<p>حدّد الوحدات العاملة أصلاً مع الجديدة، واختر المؤثّر نفسه، فتنتقل السرعة والعمق والطور. وحيث تختلف الإعدادات يعود إلى القيم الافتراضية. ولتحرير وحدة واحدة فقط، حدّدها وحدها ثم RELEASE.</p>
+<h2 id="effects--6">العثور على مؤثّر بحسب ما تريد</h2>
+<table>
+<tr><th>ما تريده</th><th>جرّب</th></tr>
+<tr><td>ضوء طبيعي</td><td>‏FIRE 1 و2 وLIGHTNING وWATER وWIND وTV</td></tr>
+<tr><td>ضوء يجري على امتداد الطقم</td><td>‏RUNNER وFADE RUN وBOUNCE وCOMET</td></tr>
+<tr><td>ضوء المدينة</td><td>‏NEON وSIGNAL وTOKYO وOSAKA وKYOTO وNARA وPACHINKO</td></tr>
+<tr><td>منارات</td><td>‏BEACON R/B وBLUE وRED وAMBER</td></tr>
+<tr><td>وميض بسيط</td><td>‏BLINK وSTROBE وPULSE وDOUBLE وRANDOM 1–3</td></tr>
+<tr><td>مصباح فلورسنت يتعطّل</td><td>‏FLUO 1–3</td></tr>
+<tr><td>تحريك الرأس</td><td>مجموعة MOVE</td></tr>
+<tr><td>تحريك الـ zoom أو الـ gobo</td><td>مجموعة BEAM</td></tr>
+</table>
+<h2 id="effects--7">القائمة الكاملة</h2>
+<table>
+<tr><th>المجموعة</th><th>المؤثّرات</th></tr>
+<tr><td>BASIC</td><td>‏BLINK وSTROBE وPULSE وDOUBLE وRANDOM 1–3 وRUNNER وFADE RUN وBOUNCE وCOMET</td></tr>
+<tr><td>LIGHTS</td><td>‏FLUO 1–3 وFIRE 1 (شمعة) وFIRE 2 (نار مخيّم) وLIGHTNING وTV وNEON وSIGNAL</td></tr>
+<tr><td>SCENES</td><td>‏BEACON R/B وBLUE وRED وAMBER وTOKYO وOSAKA وKYOTO وNARA وPACHINKO وWATER وFIREWORKS وLANTERNS</td></tr>
+<tr><td>MOVE</td><td>‏DRIFT وPASS وORBIT وEIGHT وBOX وSPIRAL وSEARCH وBREATHE وHANDHELD وWIND وJUMP وBALLYHOO</td></tr>
+<tr><td>BEAM</td><td>‏ZOOM PULSE وZOOM BREATHE وIRIS PULSE وFROST BREATHE وGOBO SHAKE</td></tr>
+</table>
+<p>يحتاج RUNNER وFADE RUN وBOUNCE وCOMET إلى عدة وحدات أو إلى بكسلات. ويظهر MOVE وBEAM حين تدعمهما الوحدات المحدّدة.</p>
+<p>نقطة كهرمانية في أعلى يمين الاسم تعني أن المؤثّر يغيّر اللون أيضاً. ومن دونها يستعمل اللون الذي ضبطته يدوياً.</p>
+<h2 id="effects--8">SIGNAL — إشارات المرور</h2>
+<p>اختر البلد، و‏CAR أو WALK، و‏START GREEN أو START RED، و‏REPEAT أو ONCE. وينقل NEXT إلى الحالة التالية. ويعمل CAR وWALK على التوقيت نفسه. استعمل ONCE لتقديمه يدوياً بما يناسب الأداء.</p>
+<h2 id="effects--9">تركيب LIGHT وMOVE وBEAM</h2>
+<p>يمكن لوحدة واحدة أن تحمل معاً مؤثّر LIGHT للشدة واللون، ومؤثّر MOVE للرأس، ومؤثّر BEAM. واختيار مؤثّر آخر في المسار نفسه يستبدله. ولا تقبل الخلايا إلا LIGHT.</p>
+<p>فتح اللوحة يعرض أول مسار عامل، بترتيب LIGHT ثم MOVE ثم BEAM.</p>
+<h2 id="effects--10">إدارتها من تبويب Effects</h2>
+<p>يفتح EDIT إعدادات مؤثّر. و‏RELEASE / START وPAUSE / RESUME وCLEAR موجودة هناك. ويبقى المؤثّر المحرَّر في القائمة مؤشّراً بـ RELEASED.</p>
+<p>علامة × بجوار اسم وحدة تُخرج تلك الوحدة من المؤثّر؛ ويضيف ＋ التحديد الحالي أو مجموعة أو All. ويسري RELEASE ALL وSTART ALL على كل شيء.</p>
+<p>تواصل المؤثّرات العدّ خلال الإظلام. وتُظلم الوحدات غير المقفولة وتلتقط الحركة من حيث هي حين ترفع الإظلام. و‏Fixture Lock مشروح في الفصل 10.</p>
+<div class="next"><b>التالي</b><ul><li>حفظ الحالات ← الفصل 08</li><li>تحريك الرأس ← الفصل 07</li></ul></div><a class="top" href="#top">↑ المحتويات</a></section>
+<section class="chapter" id="s-safety"><h1 id="safety">10 الأقفال والسلامة والرجوع خطوة</h1>
+<p class="lead">ما يمنعك من الخطأ في منتصف التصوير، وما يتيح لك التراجع عنه.</p>
+<h2 id="safety--1">هناك ثلاثة أنواع من الأقفال</h2>
+<p>تظهر الكلمة في ثلاثة مواضع، ويحمي كل منها شيئاً مختلفاً.</p>
+<table>
+<tr><th>الاسم</th><th>ما يحميه</th><th>أين</th></tr>
+<tr><td>Fixture Lock</td><td>الضوء الخارج الآن. لا يمكن أن تتغيّر القيمة</td><td>لوحة وحدة الإضاءة</td></tr>
+<tr><td>Scene Lock</td><td>ما هو محفوظ في مشهد</td><td>‏Settings في صف المشهد</td></tr>
+<tr><td>SCREEN LOCK</td><td>الشاشة. اللمسات لا تفعل شيئاً</td><td>أعلى الشاشة</td></tr>
+</table>
+<h2 id="safety--2">SCREEN LOCK</h2>
+<p>اضغط مطوّلاً على SCREEN LOCK في أعلى الشاشة 0.5 ثانية. واللمسة القصيرة لا تقفلها.</p>
+<p>أثناء القفل يغطّي الشاشةَ حجابٌ بنفسجي وتظليل مخطّط. وتبقى القيم مقروءة، ويستمر الإرسال والتلاشي. ولفك القفل اسحب المنزلق البنفسجي في الوسط نحو 80% من الطريق. والإفلات مبكراً يُبقيها مقفولة.</p>
+<p>لا يمكنك قفل الشاشة ما دامت لوحة مثل Patch مفتوحة.</p>
+<h2 id="safety--3">Fixture Lock</h2>
+<div class="box warning"><b>WARNING</b><p>‏Fixture Lock يتفوّق على <strong dir="auto">الماستر العام والإظلام وBATTERY SAVE واستدعاء المشاهد وMIDI والجلسة</strong>. اضغط الإظلام فتبقى الوحدة المقفولة مضاءة. ويظهر العدد الذي يبقى مضاءً أثناء الإظلام بجوار 🔒 الخضراء في أعلى الشاشة.</p></div>
+<p>اضغط مطوّلاً على أيقونة وحدة وشغّل Lock. استعمله حين يجب ألّا يتغيّر ضوء.</p>
+<p>أثناء القفل تحمل أيقونة الوحدة والـ fader وزر الرقم و⏻ اللون الأخضر. وأزِله من لوحة الوحدة.</p>
+<h2 id="safety--4">BATTERY SAVE</h2>
+<p>يخفض إضاءة الوحدات التي تؤشّرها وحدها، لفترات الانتظار بين اللقطات.</p>
+<ol><li>أشّرها في إعدادات الوحدة تحت Battery save، أو في Patch ← Select many ← Battery. ويمكنك تأشيرها أثناء التسجيل أيضاً.</li><li>المس BATTERY SAVE في أعلى الشاشة. تخفت الوحدات المؤشّرة.</li><li>المسه مرة أخرى لإعادتها.</li></ol>
+<p>اضغط مطوّلاً لضبط مقدار الخفض ومدة التلاشي. ويعرض Save to القيم −25% و−50% و−65% و−75%، والافتراضي −50%. ويبدأ التلاشي من 1.5 ثانية.</p>
+<p>يصير الزر وحافة الشاشة أخضرين أثناء التشغيل. ويتضاعف مع الماستر العام. وتُترك الوحدات المقفولة وشأنها. ومن دون تأشير أي شيء يخبرك كيف تؤشّر.</p>
+<p>هذا يخفض إضاءة وحداتك. وليس إعداد بطارية في الـ iPhone.</p>
+<h2 id="safety--5">HISTORY</h2>
+<p>المس HISTORY في Home أو اضغط عليه مطوّلاً لترى الحالات التي مررت بها. اختر صفاً للعودة إليه. وتشير HERE إلى موضعك.</p>
+<ul><li>يحتفظ بآخر 50. والرجوع ثم العمل يُبقي الحالات القديمة في مكانها ويضيف الجديدة في النهاية.</li><li>يغطّي الشدة واللون وتشغيل الخرج وإطفاءه والحدود والقيم الخام والمؤثّرات وGM وB.O. والتسجيل.</li><li>‏Fixture Lock خارجه. والوحدة المقفولة لا تتحرك عند الرجوع خطوة.</li><li>تُسجَّل استدعاءات المشاهد، لكن الكتابة فوق محتوى مشهد لا يمكن التراجع عنها.</li><li>لا يمكنك سحب تغيير واحد بمفرده. بل ترجع إلى الحالة كاملة في تلك اللحظة.</li><li>لا يُحفظ. وإنهاء التطبيق أو إعادة فتح العرض يمسحه.</li></ul>
+<p>يُضبط تلاشي الرجوع في Recall fade time. ولا يتاح HISTORY حين لا يوجد ما تعود إليه.</p>
+<h2 id="safety--6">ZEN</h2>
+<p>المس ZEN في لوحة وحدة واحدة لتحصل على شاشة سوداء عليها fader كبير واحد وقيمته. وهو موجود للوحدات التي يمكن ضبط شدتها.</p>
+<p>اسحب في أي موضع من الشاشة لتشغيله، بشكل نسبي كالعادة. و‏FINE يعمل. ويمكن تغيير الحدود من الإعدادات في أعلى اليمين. والمس الشاشة للخروج؛ أما تحريك الـ fader ثم الإفلات فلا يخرج.</p>
+<div class="next"><b>التالي</b><ul><li>حفظ العرض ← الفصل 11</li><li>شيء لا ينطفئ عند الإظلام ← الفصل 14</li></ul></div><a class="top" href="#top">↑ المحتويات</a></section>
+<section class="chapter" id="s-shows"><h1 id="shows">11 حفظ العروض وتبادلها</h1>
+<p class="lead">العرض يحمل عملاً واحداً: التسجيل والمجموعات والمشاهد والحالة الراهنة.</p>
+<p>لا شيء تضغطه. فهو يحفظ نفسه.</p>
+<h2 id="shows--1">متى يحفظ</h2>
+<table>
+<tr><th>ماذا</th><th>متى</th></tr>
+<tr><td>التسجيل والمجموعات والمشاهد</td><td>أثناء تغييرها</td></tr>
+<tr><td>الحالة الراهنة وإعدادات الوحدات</td><td>بعد نحو 2 ثانية من توقّفك، وعند انتقال التطبيق إلى الخلفية</td></tr>
+</table>
+<p>يستعيد التشغيل التالي آخر عرض كما حُفظ. وآخر تغيير قبل الإنهاء غير مضمون، فاستعمل Export show file حين تحتاج إلى ملف تحتفظ به أو تسلّمه.</p>
+<h2 id="shows--2">Settings ← SHOWS</h2>
+<table>
+<tr><th>البند</th><th>ما يفعله</th></tr>
+<tr><td>CURRENT SHOW</td><td>يعيد تسمية العرض الذي أنت فيه</td></tr>
+<tr><td>Save As</td><td>يخزّن الحالة الراهنة كعرض آخر ويتابع في النسخة</td></tr>
+<tr><td>Export show file</td><td>يحفظ أولاً ثم يكتب ملف .kanau. اختر الوجهة من ورقة المشاركة</td></tr>
+<tr><td>Import show file</td><td>يجلب ملف .kanau كعرض جديد. ولا يُمَس عرضك الحالي</td></tr>
+<tr><td>NEW SHOW</td><td>سمِّه ثم Create. تحصل على عرض فارغ، ويفتح Patch</td></tr>
+<tr><td>OTHER SHOWS</td><td>يفتح عرضاً محفوظاً. و‏⧉ ينسخ، و‏✕ يحذف بعد تأكيد</td></tr>
+</table>
+<p>ملف .kanau الوارد عبر الملفات أو AirDrop يمكن فتحه بـ Kanau ويدخل كعرض جديد. ويُعامَل ملف .kanaumidi على أنه ملف ربط MIDI.</p>
+<h2 id="shows--3">الفتح والاستعادة</h2>
+<p>من دون أي شيء محفوظ يفتح العرض التجريبي. والعرض القديم الذي لا حالة محفوظة له يفتح والشدة منخفضة.</p>
+<p>إن تعذّرت قراءة الملف تحصل على Saved patch could not be read. Showing an empty rig; the file is left as it is.، ويبدأ فارغاً. <strong dir="auto">ويُحفظ الملف الأصلي ولا يُكتب فوقه.</strong></p>
+<p>الحفظ الفاشل يعرض Patch was not saved. بالأحمر. ويغطي الفصل 14 ما تفعله.</p>
+<h2 id="shows--4">ما ليس في العرض</h2>
+<table>
+<tr><th>ماذا</th><th>أين يقيم</th></tr>
+<tr><td>إعدادات المؤثّرات في <code>SAVED</code></td><td>على الجهاز، ومتاحة لكل العروض</td></tr>
+<tr><td>Custom fixtures</td><td>على الجهاز. وتُحفظ تعريفات الوحدات المسجّلة في العرض أيضاً</td></tr>
+<tr><td>الألوان ودرجات الحرارة المخزّنة في ★</td><td>على الجهاز. الألوان لكل طراز، ودرجات الحرارة مشتركة</td></tr>
+<tr><td>ربط MIDI</td><td>على الجهاز. ويمكن تصديره وحده كملف .kanaumidi</td></tr>
+<tr><td>OUTPUT وإعدادات العرض واللغة</td><td>على الجهاز</td></tr>
+<tr><td>HISTORY</td><td>لا يُحفظ</td></tr>
+</table>
+<h2 id="shows--5">Settings ← SETTINGS</h2>
+<p>اللغة وأزمنة التلاشي المختلفة ومقدار BATTERY SAVE وأي رقم يُعرض والترتيب داخل All وصف All في Patch و‏Net / Sub / Uni وظهور الجيلاتين من عدمه. ويسري تغيير اللغة عند التشغيل التالي. ويتبع حجم النص إعداد iOS.</p>
+<div class="next"><b>التالي</b><ul><li>فشل الحفظ ← الفصل 14</li><li>العمل من جهازين ← الفصل 13</li></ul></div><a class="top" href="#top">↑ المحتويات</a></section>
+<section class="chapter" id="s-midi"><h1 id="midi">12 وحدات تحكم MIDI ‏(Advanced)</h1>
+<p class="lead">ربط مفاتيح وحدة تحكم MIDI وأزرارها بوحدات الإضاءة وأدوات التحكم.</p>
+<p>يغطّي هذا الفصل الشاشة التي تعمل بأسلوب Learn.</p>
+<h2 id="midi--1">الوصل والربط</h2>
+<ol><li>شغّل MIDI controller في Settings ← MIDI. وهو مطفأ افتراضياً.</li><li>تأكد من ظهور معداتك تحت Inputs ومن تغيّر Last CC حين تحرّك شيئاً.</li><li>ابدأ بـ MIDI channel على OMNI، ثم ضيّقه إلى 1–16 إن لزم.</li><li>اختر Mode، ثم اربط عبر Learn تحت Knobs أو Buttons.</li><li>أدر مفتاحاً أثناء ظهور Turn…، أو اضغط الزر الذي تريد ربطه.</li></ol>
+<p>المعدات التي بُني هذا عليها هي Behringer X-Touch Mini وCompact، في وضع Standard مع إرسال قيم مطلقة. ووضع MC غير مستعمل.</p>
+<h2 id="midi--2">الوضعان</h2>
+<table>
+<tr><th>الوضع</th><th>ما يتبعه عنصر التحكم</th></tr>
+<tr><td>GLOBAL 10</td><td>موضع على الشاشة. غيّر الصفحة أو المجموعة فيتغيّر الهدف معها. ويمكن ربط GM أيضاً</td></tr>
+<tr><td>FIXED</td><td>وحدة إضاءة واحدة. وتغيير الصفحة أو المجموعة لا يغيّر شيئاً</td></tr>
+</table>
+<p>يُربط FIXED وحدةً وحدةً عبر Learn؛ ولا يوجد ترقيم تلقائي. وتحت GLOBAL 10 يوجد Learn في كل صف من Fader 1 إلى Fader 10 وعلى Grand master.</p>
+<h2 id="midi--3">حين لا يفعل مفتاح شيئاً في البداية</h2>
+<p>إن اختلف المفتاح عن القيمة المعروضة على الشاشة، <strong dir="auto">فلا يتحرك شيء حتى يتجاوز المفتاح تلك القيمة</strong>. وهذا مقصود: يمنع قفز المستوى. والأمر نفسه بعد تغيير الصفحة أو المجموعة أو الوضع.</p>
+<p>شغّل Send values back فيعيد Kanau القيم الحالية إلى حلقات LED في المعدات التي تدعم ذلك. وتعود المواضع الفارغة على أنها 0.</p>
+<h2 id="midi--4">الأزرار وملف الربط</h2>
+<p>يمكنك ربط FINE وPIANO والصفحة إلى الخلف وإلى الأمام واستدعاء مشاهد بعينها. ولا يمكن ربط B.O.. ويحمل الزر الواحد إجراءً واحداً. ويسري Fixture Lock على MIDI أيضاً.</p>
+<p>يكتب Export وImport تحت MIDI map file الربط ويقرآنه كملف .kanaumidi، منفصلاً عن العرض.</p>
+<div class="next"><b>التالي</b><ul><li>العمل من جهازين ← الفصل 13</li></ul></div><a class="top" href="#top">↑ المحتويات</a></section>
+<section class="chapter" id="s-session"><h1 id="session">13 العمل من جهازين — SESSION</h1>
+<p class="lead">جهازا iPhone أو iPad على عرض واحد. <strong dir="auto">المضيف وحده يرسل DMX</strong>؛ والآخر يشغّل وحدة التحكم نفسها من خلاله.</p>
+<p>الجلسة تتيح لجهازين على الشبكة نفسها قيادة عرض واحد. ويرسل الضيف ما تفعله إلى المضيف. وإن توقّف المضيف فلا يتولّى أحد مكانه تلقائياً.</p>
+<h2 id="session--1">من يملك ماذا</h2>
+<table>
+<tr><th></th><th>المضيف</th><th>الضيف</th></tr>
+<tr><td>إرسال DMX</td><td>نعم</td><td>لا</td></tr>
+<tr><td>صاحب العرض</td><td>نعم</td><td>يستعيره</td></tr>
+<tr><td>تغيير التسجيل</td><td>نعم</td><td>لا</td></tr>
+<tr><td>أين يُحفظ المشهد</td><td>عرض المضيف</td><td>يُرسل إلى المضيف</td></tr>
+<tr><td>تشغيل الإضاءة</td><td>نعم</td><td>نعم</td></tr>
+</table>
+<p><strong dir="auto">حين يلمس الاثنان الوحدة نفسها يفوز المضيف.</strong> ويرى الضيف <code>TAKEN</code>.</p>
+<h2 id="session--2">بدء جلسة</h2>
+<ol><li>على الجهاز الذي سيرسل اختر Settings ← SESSION ← Host.</li><li>أعطِ الرقم المكوّن من 4 خانات للشخص الآخر.</li><li>على الجهاز الآخر اختر Settings ← SESSION ← Join واكتب الرقم.</li><li>تحقق من ظهور Joined ومن حالة الاتصال.</li></ol>
+<p>‏Looking for 1234… تعني أنه ما زال يبحث. ويتغيّر الرقم في كل مرة تستضيف فيها. و2 جهازان فقط في المرة الواحدة؛ ولا يمكن لثالث الانضمام.</p>
+<h2 id="session--3">ما يستطيع الضيف فعله</h2>
+<table>
+<tr><th>يستطيع الضيف</th><th>يفعل المضيف</th><th>يحتفظ كل جهاز بما يخصّه</th></tr>
+<tr><td>الـ fader واللون والجيلاتين، على الوحدات والخلايا</td><td>إضافة التسجيل وإزالته وتغييره، والأسماء والتسميات</td><td>أي مجموعة وصفحة معروضة، وأي تبويب</td></tr>
+<tr><td>استدعاء المشاهد، و＋ للحفظ</td><td>إعادة الترتيب والحذف وإعادة التسمية والتلاشي والقفل</td><td>‏FINE و10 / 5 وPIXELS ووضع PIANO</td></tr>
+<tr><td>⏻ وGM وB.O. وBATTERY SAVE</td><td>‏OUTPUT وSHOWS</td><td>إعدادات العرض واللغة والجيلاتين</td></tr>
+<tr><td>الحدود وFixture Lock وإلغاء التحديد</td><td>أزمنة التلاشي وSave to وSwitch function</td><td>ربط MIDI والألوان المخزّنة في ★</td></tr>
+</table>
+<p>المشهد المحفوظ من الضيف يكتبه المضيف. ولا يُمَس ملف عرض الضيف نفسه، ويعيده Leave session.</p>
+<h3 id="session--4">المؤثّرات والضيف</h3>
+<p>بعض إجراءات المؤثّرات تبلغ المضيف وبعضها لا يبلغه.</p>
+<table>
+<tr><th>الإجراء</th><th>من الضيف</th></tr>
+<tr><td>تطبيق مؤثّر</td><td>يعمل</td></tr>
+<tr><td>RELEASE ALL</td><td>يعمل</td></tr>
+<tr><td>مسح مؤثّرات خلية</td><td>يعمل</td></tr>
+<tr><td>SIGNAL NEXT</td><td>يعمل</td></tr>
+</table>
+<div class="box important"><b>IMPORTANT</b><p><strong dir="auto">‏PAUSE وRESUME وتحرير مؤثّر واحد وSTART لا تبلغ المضيف من الضيف.</strong> وقد تبدو شاشة الضيف وكأن شيئاً قد حدث، لكن الإضاءة لا تتغيّر. افعل هذه على المضيف.</p></div>
+<h2 id="session--5">العمل في الوقت نفسه وفقدان الوصلة</h2>
+<p>ما يغيّره الضيف يظهر على شاشته فوراً. وإن لمس المضيف الوحدة نفسها فاز المضيف ورأى الضيف <code>TAKEN</code>. والوحدة التي يشغّلها الجهاز الآخر تظهر بحافة سماوية مع اسم.</p>
+<table>
+<tr><th>الاتصال</th><th>الحالة</th></tr>
+<tr><td>أخضر</td><td>موصول بالمضيف</td></tr>
+<tr><td>كهرماني</td><td>لا شيء من المضيف منذ نحو 3 ثوانٍ</td></tr>
+<tr><td>أحمر</td><td>لا شيء منذ نحو 15 ثانية. وتظهر The host is no longer available.</td></tr>
+</table>
+<p>إن سقطت الوصلة يظل الضيف يعرض آخر حالة. ولا يخرج من تلقاء نفسه، فاستعمل Leave session. وبعد إعادة الاتصال تبقى الـ fader نسبية.</p>
+<p>لا حاجة إلى إنترنت. بل يجب أن يبلغ الجهازان أحدهما الآخر على الشبكة نفسها. وقد تمنع عزلة العملاء والجدار الناري وما شابههما الجلسةَ حتى حيث يمرّ DMX.</p>
+<div class="next"><b>التالي</b><ul><li>حفظ العرض ← الفصل 11</li><li>لا يتصل ← الفصل 14</li></ul></div><a class="top" href="#top">↑ المحتويات</a></section>
+<section class="chapter" id="s-troubleshooting"><h1 id="troubleshooting">14 حل المشكلات</h1>
+<p class="lead">مرتّب بحسب ما تراه. انزل في القائمة.</p>
+<h2 id="troubleshooting--1">لا شيء يضيء</h2>
+<table>
+<tr><th>ما تراه</th><th>ما تفعله</th></tr>
+<tr><td>idle</td><td>تأكد من تشغيل شبكة في Settings ← OUTPUT</td></tr>
+<tr><td>Blocked</td><td>تحقق من إذن الشبكة المحلية في iOS. وإن كان البث المتعدّد لـ sACN محجوباً فانتقل إلى Unicast</td></tr>
+<tr><td>WAITING + IP</td><td>هناك وحدة تحكم أخرى على الخط. أوقفها، أو Send anyway? ← Send</td></tr>
+<tr><td>No node</td><td>تحقق من تغذية العقدة وشبكتها وعنوانها وإعدادات البروتوكول فيها</td></tr>
+<tr><td>B.O.</td><td>المسه لرفع الإظلام</td></tr>
+<tr><td>GM 0</td><td>افتح GM واستعمل →100</td></tr>
+<tr><td>🔌 n</td><td>أعد تشغيل الكون في OUTPUT ← Universes</td></tr>
+<tr><td>⏻ أو أيقونة وحدة بنفسجية</td><td>أعد تشغيل خرج الوحدة</td></tr>
+<tr><td>BATTERY SAVE أخضر</td><td>ارفعه إن كنت تحتاج إلى الخرج الكامل</td></tr>
+<tr><td>Upper limit منخفض</td><td>تحقق من حدود الوحدة</td></tr>
+<tr><td>⚠ في Patch</td><td>أصلح العنوان المتداخل أو السلسلة التي تتجاوز 512</td></tr>
+<tr><td>وضع غير مطابق</td><td>اضبط وضع DMX نفسه الموجود في الوحدة</td></tr>
+</table>
+<h2 id="troubleshooting--2">لا يُعثر على أي عقدة</h2>
+<p>إن أظهر Network قيمة no reply فتأكد أن الـ iPhone والعقدة على الشبكة نفسها. وإن لم يبلغها AUTO فاستعمل Unicast وأدخل عنوان العقدة. وشغّل RESCAN بعد تغيير أي شيء في الاتصال.</p>
+<p>تحقق من مفاتيح Art-Net وsACN في العقدة نفسها، ومن عنوانها وكونها. فمثلاً يخرج LumenRadio CRMX Stardust من المصنع و‏Art-Net وsACN مطفآن.</p>
+<p>وإن كنت تنضم إلى شبكة Wi-Fi الخاصة بـ Stardust أو Aputure Sidus Four فتحقق من النطاق الذي تدعمه المعدات. وعلى نقطة وصول خارجية كثيراً ما يبلغ عملاء 2.4 GHz و5 GHz بعضهم بعضاً؛ واختلاف النطاق لا يعني دائماً اختلاف الشبكة.</p>
+<p>في Stardust يعني الحرف الصغير على شاشة الخرج أنه لا تصل بيانات، ويعني الحرف الكبير أنها تصل. وراجع دليل المصنّع لما يخصّ كل طراز. والمعدات التي لا تردّ على الاستطلاع تُظهر 0 في Nodes answering حتى وهي تستقبل.</p>
+<h2 id="troubleshooting--3">يومض</h2>
+<p>تأكد أن الوحدة نفسها لا تُغذّى من الشبكة ومن Bluetooth معاً، ولا من أكثر من وحدة تحكم أو مصدر DMX. انظر إلى تحذير CRMX في OUTPUT وإلى أي رسالة SHARED أو WAITING، واختصر الأمر إلى مسار واحد.</p>
+<p>وقد يسبّبه أيضاً تطبيق تحكم آخر، أو إعداد في الوحدة نفسها.</p>
+<h2 id="troubleshooting--4">يتقطّع أو يستجيب ببطء</h2>
+<p>افتح Settings ← OUTPUT واقرأه <strong dir="auto">من الأعلى</strong>. وإن توقّف عند أحد هذه فلا حاجة إلى النظر إلى ما دونه.</p>
+<pre>Sending       هل ترسل وحدة التحكم أصلاً
+   ↓
+Clock         هل الأمر عالق داخل الهاتف
+   ↓
+Touch → wire  هل الرحلة من الإصبع إلى الحزمة بطيئة
+   ↓
+الذهاب والإياب   هل الشبكة أو المعدات بطيئة
+   ↓
+وحدة الإضاءة    هل الضوء نفسه بطيء</pre>
+<table>
+<tr><th>ما تراه</th><th>إلى أين تنظر</th></tr>
+<tr><td>Sending يساوي nothing</td><td>Destination والشبكة وأذونات iOS</td></tr>
+<tr><td>Clock فوق 100 ms</td><td>الهاتف. أغلق اللوحات، وأعد تشغيل التطبيق إن لزم</td></tr>
+<tr><td>العقد تردّ لكن الوحدات تتحدّث مرة في الثانية تقريباً</td><td>العنوان الذي يرسل إليه AUTO. وإن بلّغت العقدة عن نفسها خطأً فجرّب Broadcast</td></tr>
+<tr><td>Clock سليم لكن زمن الذهاب والإياب طويل</td><td>ازدحام Wi-Fi ونقطة الوصول والمعدات والمسار</td></tr>
+<tr><td>الأرقام سليمة لكن الضوء متأخّر</td><td>التنعيم في الوحدة، ومسار دخلها، وتطبيق آخر يقودها</td></tr>
+</table>
+<p>يفيد Broadcast حين تكون وجهة AUTO هي المشكلة. أما الأسباب الأخرى فلن يساعد فيها، وقد يزيد الحمل.</p>
+<h2 id="troubleshooting--5">بعض الـ fader لا تفعل شيئاً</h2>
+<p>تحقق من حدود الوحدة ومن Lock فيها ومما إذا كان خرجها مشغّلاً. منحنى الـ fader في Kanau خطي؛ ومنحنى التعتيم داخل الوحدة قد يجعل النصف السفلي يبدو مسطّحاً. تحقق من الوحدة نفسها، أو من Dim curve تحت Channels.</p>
+<p>في وحدة مستوردة من GDTF غالباً ما تعني الشدة أو اللون الخاطئان أن الأدوار خاطئة. صحّحها في Channel roles. ولحمل التصحيح إلى الوحدات التي تسجّلها لاحقاً، حرّر التعريف تحت Custom fixtures.</p>
+<h2 id="troubleshooting--6">زر لا يفعل شيئاً</h2>
+<table>
+<tr><th>ما تراه</th><th>لماذا وما تفعله</th></tr>
+<tr><td>حجاب بنفسجي فوق الشاشة</td><td>‏SCREEN LOCK. اسحب المنزلق في الوسط إلى الجانب الآخر</td></tr>
+<tr><td>🔒 خضراء</td><td>ارفع Fixture Lock</td></tr>
+<tr><td>COLOR أو EFFECT رمادي</td><td>حدّد وحدة. ويحتاج COLOR أيضاً إلى أن يكون للوحدة لون</td></tr>
+<tr><td>PIXELS رمادي</td><td>لا توجد وحدة بكسل في الصفحة</td></tr>
+<tr><td>HISTORY غير فعّال</td><td>لا يوجد ما تعود إليه</td></tr>
+<tr><td>أزرار الأرقام لا تغيّر الشدة</td><td>وضع البيانو على LOCK. استعمل ＋ −</td></tr>
+<tr><td>Home تحت Channels غير فعّال</td><td>هو أصلاً على القيمة الافتراضية</td></tr>
+<tr><td>Home لـ Pan أو Tilt لا يفعل شيئاً</td><td>يحتاج إلى ضغط مطوّل لا إلى لمسة</td></tr>
+<tr><td>مشهد لا يتحدّث</td><td>تحقق من Lock this scene</td></tr>
+<tr><td>ضيف لا يستطيع تحرير التسجيل</td><td>افعل ذلك على المضيف</td></tr>
+</table>
+<h2 id="troubleshooting--7">اللون خاطئ</h2>
+<table>
+<tr><th>ما تراه</th><th>ما تتحقق منه</th></tr>
+<tr><td>لون غير الذي ضبطته</td><td>هل يطابق وضع Patch وضع DMX في الوحدة نفسها</td></tr>
+<tr><td>لا توجد أدوات لون إطلاقاً</td><td>هل للوحدة لون. ومع خلط الطرازات لا تظهر إلا البنود المشتركة (الفصل 05)</td></tr>
+<tr><td>درجة حرارة اللون تتوقّف قبل الغاية</td><td>أنت عند حافة مدى الوحدة. ويظهر MIN أو MAX</td></tr>
+<tr><td>وحدة مستوردة منحرفة</td><td>تحقق من Channel roles ‏(الفصل 06)</td></tr>
+<tr><td>الأبيض يميل إلى الأخضر أو الأرجواني</td><td>قد لا يكون Green / Magenta على 0. ويعيده Back to neutral</td></tr>
+</table>
+<h2 id="troubleshooting--8">وحدة لا تتصرف كما ينبغي</h2>
+<p>تحقق أولاً من أن وضع Patch يطابق وضع الوحدة نفسها. فحين يكون ذلك خاطئاً تصل الشدة على أنها لون ويصل اللون على أنه موضع.</p>
+<p>التعريف المستورد من GDTF قد تكون أدواره مسنَدة على نحو يخالف الوحدة الحقيقية. صحّحها في Channel roles ‏(الفصل 06). ولحمل ذلك إلى التسجيلات المقبلة، حرّر تعريف Custom fixtures.</p>
+<p>تحقق أمام الوحدة الحقيقية من كل ما هو مؤشّر بـ <code>Imported data is not verified.</code>.</p>
+<h2 id="troubleshooting--9">مشهد يتغيّر من تلقاء نفسه</h2>
+<p><strong dir="auto">كل ما تفعله بعد استدعاء مشهد يُحفظ داخله</strong> (الفصل 08).</p>
+<p>شغّل Lock this scene تحت Settings الخاص بذلك المشهد للمشاهد التي تريد إبقاءها كما هي. ويظل بإمكانك استدعاؤها وتشغيل الإضاءة؛ ولا يُحفظ شيء.</p>
+<h2 id="troubleshooting--10">مشهد لا يُحفظ</h2>
+<table>
+<tr><th>ما تتحقق منه</th><th></th></tr>
+<tr><td>Lock this scene</td><td>لا يُحفظ شيء ما دام مشغّلاً</td></tr>
+<tr><td>أنت على ضيف</td><td>إعادة الترتيب والحذف وإعادة التسمية للمضيف (الفصل 13)</td></tr>
+<tr><td>ما لا يُحفظ أبداً</td><td>‏GM وB.O. وBATTERY SAVE والحدود وFixture Lock وحالة ⏻ ومجموعات اللون التالية (الفصل 08)</td></tr>
+</table>
+<h2 id="troubleshooting--11">الجلسة لا تتصل</h2>
+<p>إن لم تزُل Looking for فتحقق من هذه.</p>
+<ul><li>الجهازان على <strong dir="auto">الشبكة نفسها</strong>. ولا حاجة إلى إنترنت</li><li>خانات الرقم الـ 4 صحيحة. ويتغيّر الرقم في كل مرة تستضيف فيها</li><li>ليس هناك 2 جهازان متصلان أصلاً. ولا يمكن لثالث الانضمام</li><li>عزلة العملاء أو الجدار الناري لا يمنعان المرور بين الأجهزة</li></ul>
+<p>قد يمرّ DMX على شبكة يُمنع فيها المرور بين الأجهزة.</p>
+<h2 id="troubleshooting--12">شيء يبقى مضاءً عند الإظلام</h2>
+<p>تحقق من Fixture Lock. و🔒 n الخضراء في الأعلى تعدّ الوحدات التي تبقى مضاءة. ارفع القفل عن تلك الوحدات.</p>
+<h2 id="troubleshooting--13">أُغلق التطبيق، أو سقطت الوصلة</h2>
+<p>إعادة التشغيل تستعيد آخر عرض وحالة محفوظين. وقد لا تكون آخر التغييرات قبل الإغلاق موجودة.</p>
+<p>ما تفعله وحدات إضاءتك بعد توقّف التطبيق أو الوصلة يتوقّف على إعدادات الاحتفاظ بآخر قيمة في العقدة وفي الوحدة نفسها. تحقق من المعدات إن كنت تحتاج إلى أن تحتفظ بها.</p>
+<h2 id="troubleshooting--14">فشل الحفظ</h2>
+<p>‏Patch was not saved. تعني أن الحفظ فشل. تحقق من المساحة الخالية على الجهاز، وإن أمكن فاكتب الحالة الراهنة إلى الخارج بـ Export show file. وتأكد من اكتمال التصدير قبل المتابعة. وإزالة التحذير بـ × لا تعني أنه حُفظ.</p>
+<p>وإن تعذّرت قراءة ملف، فافتح عرضاً آخر من OTHER SHOWS، أو استورد بـ Import ملف .kanau صدّرته سابقاً. ويُحفظ الملف الذي تعذّرت قراءته.</p>
+<h2 id="troubleshooting--15">التحقق من قيم DMX</h2>
+<p>يعرض Settings ← DMX MONITOR قنوات كل كون الـ 512 كلها. ولا يؤثّر في ما يُرسل.</p>
+<div class="next"><b>التالي</b><ul><li>قراءة شاشة الخرج كاملة ← الفصل 02</li><li>معنى كلمة ← المسرد</li></ul></div><a class="top" href="#top">↑ المحتويات</a></section>
+<section class="chapter" id="s-glossary"><h1 id="glossary">المسرد</h1>
+<table>
+<tr><th>على الشاشة</th><th>ما يعنيه</th></tr>
+<tr><td>Fixture</td><td>وحدة إضاءة. الوحدة التي تسجّلها وتتحكم فيها</td></tr>
+<tr><td>Patch</td><td>تسجيل طراز وحدة إضاءة ووضعها وعنوان DMX الخاص بها</td></tr>
+<tr><td>Universe / Address</td><td>كون، وموضع القناة داخله</td></tr>
+<tr><td>Mode</td><td>وضع DMX في الوحدة. يجب أن يطابق الوحدة نفسها</td></tr>
+<tr><td>Unit no. / Fixture number</td><td>الرقم التلقائي داخل الطراز / الرقم الذي تعطيه أنت</td></tr>
+<tr><td>Offset / Gap</td><td>التباعد بين الوحدات / قنوات حرة إضافية بينها</td></tr>
+<tr><td>Group / All</td><td>طقم من الوحدات / كل الوحدات</td></tr>
+<tr><td>Pixel / Cell</td><td>جزء من وحدة واحدة يُتحكم فيه على حدة</td></tr>
+<tr><td>Intensity</td><td>السطوع</td></tr>
+<tr><td>CCT</td><td>درجة حرارة اللون، بالكلفن</td></tr>
+<tr><td>G/M</td><td>تصحيح الأخضر والأرجواني</td></tr>
+<tr><td>Crossfade</td><td>التوازن بين جانب الأبيض وجانب اللون</td></tr>
+<tr><td>Emitter</td><td>‏LED أو مصدر ضوء آخر داخل الوحدة</td></tr>
+<tr><td>Channels / Raw channels</td><td>العمل على قناة DMX واحدة في كل مرة</td></tr>
+<tr><td>Channel roles</td><td>الوظيفة التي تُعامَل بها القناة</td></tr>
+<tr><td>GM / B.O.</td><td>الماستر العام / الإظلام</td></tr>
+<tr><td>Lock / SCREEN LOCK</td><td>تثبيت خرج وحدة / منع اللمسات العارضة</td></tr>
+<tr><td>FINE / FINE+</td><td>‏1/10 و1/100 من الحساسية المعتادة</td></tr>
+<tr><td>PIANO</td><td>استعمال أزرار الأرقام لتغيير الشدة أثناء الضغط</td></tr>
+<tr><td>Scene / Show</td><td>حالة محفوظة / كل ما يخص عملاً واحداً</td></tr>
+<tr><td>SNAP / Fade</td><td>فوري / على مدى زمن مضبوط</td></tr>
+<tr><td>HISTORY / HERE</td><td>قائمة الحالات السابقة / موضعك فيها</td></tr>
+<tr><td>PAUSE / RESUME</td><td>تجميد مؤثّر / المتابعة من هناك</td></tr>
+<tr><td>RELEASE / START</td><td>إيقاف مؤثّر / تشغيله من البداية</td></tr>
+<tr><td>CLEAR</td><td>إلغاء تحديد، أو إزالة مؤثّر. يتوقّف على موضع ظهوره</td></tr>
+<tr><td>SAVED</td><td>إعدادات مؤثّرات مخزّنة</td></tr>
+<tr><td>Host / Join / Leave session</td><td>أن تكون الجهاز المرسِل / الانضمام إلى جهاز / المغادرة</td></tr>
+<tr><td>PROVISIONAL</td><td>وضع وحدة إضاءة مؤقت</td></tr>
+<tr><td>GDTF</td><td>صيغة ملف لتعريفات وحدات الإضاءة</td></tr>
+</table><a class="top" href="#top">↑ المحتويات</a></section>
+<script>
+(function(){
+  var IDX = [{"id":"quick-start","title":"QUICK START","h":[{"id":"quick-start--1","t":"1. غيّر شدة الإضاءة"},{"id":"quick-start--2","t":"2. غيّر اللون"},{"id":"quick-start--3","t":"3. استدعِ مشهداً"},{"id":"quick-start--4","t":"شاهد القيم الخارجة"},{"id":"quick-start--5","t":"ماذا يوجد في طقم التدريب"},{"id":"quick-start--6","t":"توصيل وحدات إضاءة حقيقية"},{"id":"quick-start--7","t":"خمسة أمور يحسن معرفتها أولاً"}],"text":"QUICK START — جرّب Kanau في 3 دقائق لا تحتاج إلى أي وحدة إضاءة للوصول إلى هنا. أسماء الأزرار مكتوبة تماماً كما تظهر على الشاشة. يفتح التطبيق ومعه طقم تدريب فيه 24 وحدة إضاءة مسجّلة مسبقاً. ثلاث دقائق هنا تكفي لترى معظم طريقة عمل Kanau. 1. غيّر شدة الإضاءة في أعلى الشاشة يومض GM 20 بالأحمر. المسه. في اللوحة التي تفتح المس →100 . يزداد كل شيء سطوعاً. أغلق اللوحة واسحب أحد الـ fader إلى أعلى وإلى أسفل. يتغيّر الرقم فوقه ولون الأيقونة الدائرية معه. الـ fader يستجيب لـ المسافة التي يقطعها إصبعك، لا للموضع الذي لمسته . نقطة البداية لا تغيّر النتيجة. 2. غيّر اللون اضغط مطوّلاً على الأيقونة الدائرية فوق أحد الـ fader. تفتح لوحة اللون. يضبط Intensity السطوع، و Color temperature الأبيض، و RGB اللون. ينقلك الرمزان ‹ › في الأعلى إلى الوحدة التالية. كل وحدة إضاءة لها إمكانات مختلفة، لذلك تتغيّر البنود التي تراها معها. 3. استدعِ مشهداً افتح تبويب Scenes في الأسفل. في انتظارك خمسة مشاهد: DIM و COLOR و CCT و PIXELS و FX . المس أحدها. بالعودة إلى Home تكون الـ fader والألوان قد أخذت تلك الحالة. كل ما تغيّره بعد الاستدعاء يُكتب مرة أخرى داخل ذلك المشهد. اقفل المشهد لحمايته (الفصل 08). شاهد القيم الخارجة حتى بدون أي وحدة إضاءة موصولة، يعرض Settings ← DMX MONITOR الأرقام التي يرسلها Kanau فعلاً. حرّك أحد الـ fader فتتحرك الأرقام معه. ماذا يوجد في طقم التدريب يضم العرض التجريبي 24 وحدة من Generic: ‏DIMMER و‏CCT و‏RGB و‏RGBW و‏BAR (‏4 بكسلات). وهي موزّعة على ثلاث مجموعات من ثماني وحدات، اسمها KEY وBACK وFLOOR. يبدأ الماستر العام من 20، وست وحدات مؤشّرة لـ Battery save وتحمل بطاقة خضراء، وعلى FLOOR مؤثّر نار يعمل، وهناك خمسة مشاهد محفوظة. لا شيء من هذا يدّعي أنه منتج حقيقي. توصيل وحدات إضاءة حقيقية بعد أن يتضح العرض التجريبي، انتقل إلى معداتك أنت. الوصل : ضع الـ iPhone على الشبكة نفسها التي عليها عقدة DMX. في Settings ← OUTPUT تأكد أن Nodes answering يساوي 1 أو أكثر وأن Sending باللون الأخضر (الفصل 02). التسجيل : Patch ← ＋ new patch ← add new fixture ، ثم اضبط الطراز ووضع DMX والكون والعنوان. يجب أن تطابق إعدادات الوحدة نفسها (الفصل 03). بناء الحالة : اضبط الشدة واللون في Home (الفصل 04 و05). الحفظ : المس ＋ في Scenes لتخزين الحالة (الفصل 08). طقم التدريب عرض عادي. احذفه عندما تسجّل وحداتك، أو أنشئ عرضاً جديداً عبر Settings ← SHOWS ← NEW SHOW . خمسة أمور يحسن معرفتها أولاً Fixture Lock يتفوّق على الإظلام. تبقى الوحدة المقفولة مضاءة أثناء B.O. ‏(الفصل 10). المشهد المستدعى يحدّث نفسه أثناء عملك. اقفل ما تريد إبقاءه كما هو (الفصل 08). هناك ثلاثة أنواع من القفل. يثبّت Fixture Lock الخرج، ويحمي Scene Lock المشهد المحفوظ، ويمنع Screen Lock اللمسات العارضة (الفصل 10). عندما ينزل الماستر العام تحت 100 تنبض حافة الشاشة بالأحمر. إن بدا كل شيء معتماً فانظر هناك أولاً. إن كانت هناك وحدة تحكم أخرى ترسل إلى وحدات الإضاءة نفسها فسترى WAITING أو SHARED . كلاهما مشروح في الفصل 02. WARNING الوحدة التي عليها Lock لا تنطفئ عند ضغط الإظلام، ولا تنطفئ عند إنزال الماستر العام إلى الصفر. تأكد من أن الأقفال محلولة قبل التصوير. يظهر عدد الوحدات التي تبقى مضاءة أثناء الإظلام بجوار 🔒 الخضراء في أعلى الشاشة. التالي أين يقع كل شيء على الشاشة ← الفصل 01 توصيل وحدات إضاءة حقيقية ← الفصل 02 حفظ الحالات ← الفصل 08"},{"id":"screen","title":"01 قراءة الشاشة","h":[{"id":"screen--1","t":"تعلّم هذه السبعة أولاً"},{"id":"screen--2","t":"التبويبات الخمسة"},{"id":"screen--3","t":"سطر الحالة"},{"id":"screen--4","t":"أجزاء Home"},{"id":"screen--5","t":"الألوان والعلامات"}],"text":"01 قراءة الشاشة ما الذي يوجد على شاشة Home من الأعلى إلى الأسفل، وكيف تقرأها حين يبدو شيء غير سليم. 1 2 3 4 5 6 7 8 شاشة Home عند أول تشغيل. الأرقام الحمراء تقابل القائمة أدناه. 1 البروتوكول وحالة الاتصال 2 الماستر العام (GM) 3 اختيار وحدات الإضاءة والمجموعات المعروضة 4 التنقل بين الصفحات 5 أيقونة وحدة الإضاءة الدائرية 6 الـ fader 7 زر الرقم 8 التبويبات الخمسة تعلّم هذه السبعة أولاً قبل الجداول التفصيلية، هذه هي المواضع الوحيدة التي تحتاج إلى معرفتها. الموضع ما يفعله GM السطوع العام، في أعلى الشاشة Fixtures / Groups يختار وحدات الإضاءة الظاهرة Fader يضبط الشدة Scenes يحفظ الحالات ويعيدها Patch يسجّل وحدات الإضاءة Effects يسرد المؤثّرات العاملة ويوقفها Settings الخرج والعروض وMIDI والجلسة كل ما دون ذلك تفصيل. التبويبات الخمسة Home هو مكان العمل. لمس تبويب آخر يفتح لوحة فوقه. اسحب المقبض في الأعلى إلى أسفل، أو المس Done، للعودة إلى Home. التبويب فيمَ يُستعمل انظر Scenes حفظ الحالات واستدعاؤها الفصل 08 Patch وحدات الإضاءة والعناوين والأوضاع والمجموعات الفصل 03 Home ضبط الشدة عبر الـ fader الفصل 04 Effects سرد المؤثّرات وتعديلها وإيقافها الفصل 09 Settings خرج DMX والعروض وMIDI والجلسة والتفضيلات الفصل 02 والفصول 11–13 سطر الحالة على اليسار البروتوكول وحالة الاتصال. ‏ARTNET يعني Art-Net، وSACN يعني sACN، وBLUETOOTH يعني أن الإرسال عبر Bluetooth وحده. المعروض المعنى نقطة خضراء يرسل نقطة كهرمانية تباطؤ، أو إعادة اتصال (Reconnecting…) نقطة حمراء، No node لا شيء يردّ نقطة حمراء، Blocked ‏iOS يوقف المرور نقطة رمادية، idle متوقّف WAITING مع عنوان IP عُثر على وحدة تحكم أخرى، فتراجعت هذه SHARED مع عنوان IP وحدة تحكم أخرى ترسل إلى الكون نفسه. وهذه ما زالت ترسل أيضاً JOINED مع اسم داخل جلسة. يخرج DMX من المضيف النقطة الخضراء لا تثبت أن وحدة الإضاءة استقبلت شيئاً. يشرح الفصل 02 كيف تتحقق، ويغطي الفصل 14 ما تفعله حين يتعطّل الأمر. يحمل وسط السطر ويمينه ما يلي. البند عند اللمس عند الضغط المطوّل، أو ملاحظة GM 100 يفتح لوحة الماستر العام اضغط مطوّلاً لإعداداته. ينبض بالأحمر تحت 100 B.O. يرفع الإظلام يحل محل GM أثناء الإظلام 🔌 n (أحمر) لا شيء أكوان مطفأة. أعد تشغيلها من Settings ← OUTPUT 🔒 n (أخضر) لا شيء وحدات مقفولة ما زالت مضاءة أثناء الإظلام BATTERY SAVE يشغّله ويطفئه اضغط مطوّلاً لضبط المقدار والتلاشي SCREEN LOCK لا يقفل اضغط مطوّلاً 0.5 ثانية لقفل الشاشة أجزاء Home البند كيف يُستعمل Fixtures / Groups يبدّل بين العرض حسب الطراز والعرض حسب المجموعة 10 / 5 عدد الـ fader في الصفحة. خمسة تجعل كلاً منها أعرض HISTORY يفتح قائمة الحالات السابقة أزرار الطراز والمجموعة المس لعرض تلك الوحدات. اضغط مطوّلاً لضبط اللون والشدة لها جميعاً CLEAR n يلغي التحديد. لا تتغيّر وحدة الإضاءة ‹ / › ينقل بين الصفحات الرقم الشدة من 0 إلى 100. يظهر كبيراً في الأعلى أثناء السحب أيقونة الوحدة الدائرية (…) المس للتحديد. اضغط مطوّلاً لفتح لوحة تلك الوحدة Fader اسحب إلى أعلى وأسفل لضبط الشدة اسم الطراز يحدّد سلسلة من الطراز والوضع نفسيهما زر الرقم رقم وحدة الإضاءة. في وضع البيانو يغيّر الشدة أثناء الضغط ⏻ يطفئ الخرج ويشغّله مع الحفاظ على القيمة COLOR يضبط اللون والشدة للوحدات المحدّدة EFFECT يطبّق مؤثّراً على الوحدات المحدّدة PIXELS يفتح خلايا وحدات البكسل ويغلقها ＋ − يدوّر وضع البيانو: LOCK ← ＋ ← − FINE يدوّر الحساسية: عادي ← FINE ‏(1/10) ← FINE+ ‏(1/100) لا يتاح COLOR بلا تحديد، ولا مع وحدات بلا لون. يحتاج EFFECT إلى تحديد. ويحتاج PIXELS إلى وحدة بكسل في الصفحة. الألوان والعلامات اللون أو العلامة المعنى كهرماني محدّد، أو فعّال أحمر إظلام، أو ماستر عام منخفض، أو مشكلة شبكة، أو وضع البيانو. شيء يستحق النظر أخضر يرسل. ‏Fixture Lock. ‏BATTERY SAVE مشغّل بنفسجي الخرج مطفأ، أو الشاشة مقفولة سماوي يعمل عليه الجهاز الآخر في جلسة برتقالي عند حد ضبطته أنت رمادي غير متاح، أو متوقّف تحمل الأيقونة الدائرية لون وحدة الإضاءة وخرجها الحقيقي. يظهر التحديد بإطار كهرماني، والخرج المطفأ بحلقة بنفسجية و⏻، والقفل بحلقة خارجية خضراء و🔒. والمؤثّر العامل يجعلها تتحرك. نبض أحمر حول حافة الشاشة يعني أن الماستر العام تحت 100. والحافة الخضراء تعني أن BATTERY SAVE مشغّل. ومع وجودهما معاً يكون الأحمر في الخارج والأخضر في الداخل. وأثناء الإظلام تُستبدل الحافة الحمراء بـ B.O. في سطر الحالة. التالي كيف تستجيب الـ fader ← الفصل 04 ضبط اللون ← الفصل 05 لا شيء يضيء ← الفصل 14"},{"id":"output","title":"02 إرسال DMX","h":[{"id":"output--1","t":"أول اتصال"},{"id":"output--2","t":"عقدة Art-Net واحدة"},{"id":"output--3","t":"الإعدادات بالتفصيل"},{"id":"output--4","t":"البروتوكول والشبكات"},{"id":"output--5","t":"اختيار الوجهة"},{"id":"output--6","t":"RESCAN"},{"id":"output--7","t":"أذونات iOS"},{"id":"output--8","t":"الأكوان وترقيم Art-Net"},{"id":"output--9","t":"CRMX عبر Bluetooth"},{"id":"output--10","t":"حين يُعثر على وحدة تحكم أخرى"},{"id":"output--11","t":"DMX Diagnostics — قراءة ما يجري"},{"id":"output--12","t":"DMX MONITOR"}],"text":"02 إرسال DMX — OUTPUT إعداد الوصلة إلى معدات الإضاءة، والتأكد من وصولها. 1 2 3 4 5 ‏Settings ← OUTPUT. الأرقام الحمراء تقابل القائمة أدناه. 1 البروتوكول. ‏Art-Net أو sACN، واحد منهما 2 الشبكات. يرسل عبر المؤشّر عليها 3 كم عقدة ردّت. ‏no reply تعني أنه لم يُعثر على أي عقدة 4 الوجهة. ‏AUTO مناسب لمعظم الأطقم 5 ابحث عن العقد من جديد أول اتصال عقدة Art-Net واحدة ضع الـ iPhone على شبكة Wi-Fi أو الشبكة السلكية نفسها التي عليها العقدة. افتح Settings ← OUTPUT. اختر Art-Net وAUTO. كلاهما القيمة الافتراضية. تأكد أن Nodes answering يساوي 1 أو أكثر وأن Sending أخضر. حرّك أحد الـ fader في Home وراقب استجابة وحدة الإضاءة. يرسل Kanau كل كون مسجّل باستمرار، عادة بمعدل 44 Hz. لا يوجد زر بدء. قد يتوقّف الإرسال أو يتعطّل مؤقتاً عند اكتشاف وحدة تحكم أخرى، أو عند تغيّر إعدادات الشبكة، أو عند حجب iOS للإذن. الإعدادات بالتفصيل البروتوكول والشبكات ‏Art-Net وsACN متعارضان: اختر واحداً. ويعمل CRMX عبر Bluetooth إلى جانب أي منهما. يسرد Network اتصالات Wi-Fi وEthernet وHotspot مع عناوينها وعدد العقد التي ردّت على كل منها. يستعمل افتراضياً كل شبكة متاحة. من حالة تحديد الكل، لمس واحدة يُبقي تلك وحدها. وبعدها كل لمسة تشغّل واحدة أو تطفئها. أطفئها كلها فلا يخرج شيء عبر الشبكة. ويبقى Bluetooth يرسل. الاتصال المؤشّر عليه no address لا يمكن تحديده. إن كنت تستعمل السلك وWi-Fi معاً فتأكد من ظهورهما كليهما في القائمة. اختيار الوجهة الإعداد إلى أين يرسل متى تستعمله AUTO (Art-Net) إرسال أحادي إلى العقد التي ردّت، مع بث واحد في الثانية على كل شبكة. بث فقط إن لم يردّ شيء الخيار المعتاد Broadcast (Art-Net) كل إطار إلى الشبكة الفرعية لكل شبكة حين تبلّغ عقدة عن عنوان خاطئ ويتأخر تحديث AUTO Unicast مباشرة إلى العناوين التي تدخلها حين لا يصل البث، أو حين تريد تسمية الهدف 255.255.255.255 (Art-Net) بث على المقطع. لا يعبر الموجّه حين لا تتوافق العنونة ويفشل البث العادي. قد يحجبه iOS Multicast (sACN) عنوان البث المتعدّد لكل كون الافتراضي في sACN مع Unicast اكتب عنوان العقدة والمس Add. ومن دون إدخال أي عنوان تظهر No node IPs entered. ولا يُرسل شيء. ويذهب كل كون إلى كل عنوان تدخله. إن كان Nodes answering يساوي 1 أو أكثر مع AUTO لكن وحدات الإضاءة تتحدّث مرة في الثانية تقريباً، فتحقق مما إذا كانت العقدة تبلّغ عن عنوان خاطئ لنفسها. انظر إلى Destination وجرّب Broadcast. ويغطي الفصل 14 أسباب التأخر الأخرى. RESCAN لمس RESCAN تحت Art-Net يحدّث قائمة العقد. استعمله بعد إضافة معدات أو إزالتها أو تغيير عنوان. ومن دون ذلك تظهر العقدة الجديدة خلال 3 ثوانٍ تقريباً، وتختفي العقدة المرفوعة بعد نحو 10. يستمر الإرسال أثناء البحث. ولا يتاح RESCAN من دون شبكة صالحة. أذونات iOS شريط أحمر مكتوب عليه iOS is blocking this. يعني أحد أمرين. الشبكة المحلية : شغّل إعدادات iPhone ← Kanau ← الشبكة المحلية. البث المتعدّد في sACN : إن رأيت iOS blocked multicast. فانتقل إلى Unicast وأدخل عناوين العقد. صلاحية البث المتعدّد تُمنح لنسختي TestFlight وApp Store فقط، لا لنسخة التطوير. الأكوان وترقيم Art-Net يسرد Universes كل كون مسجّل مع عدد وحداته وكم منها مضاء ومفتاح ON/OFF. IMPORTANT ‏OFF لا يوقف الإرسال. بل يواصل إرسال أصفار إلى ذلك الكون، حتى لا يبقى المستقبِل ممسكاً بآخر قيمه ويظل مضاءً. ويظهر عدد الأكوان المطفأة بجوار 🔌 في أعلى الشاشة. إن كانت عقدتك تريد Net / Sub-Net / Universe بدل رقم واحد، فشغّل Settings ← SETTINGS ← Art-Net ← Net / Sub / Uni. والعلاقة هي Net × 256 + Sub × 16 + Uni . أولوية sACN يمكن أن تكون 0 أو 100 أو 200. والافتراضي 100. وحين ترسل عدة مصادر إلى الكون نفسه يتبع المستقبِل الأولوية الأعلى. CRMX عبر Bluetooth شغّل Bluetooth في Settings ← OUTPUT ← CRMX (Bluetooth). اسمح بـ Bluetooth حين يطلبه iOS أول مرة. اختر مرسِلاً من القائمة. ولمسه مرة أخرى يقطع الاتصال. يحمل المرسِل الذي تختاره الكون 1 ‏(U1). وفي المرة التالية يعيد تشغيل Bluetooth الوصل بالمرسِل نفسه. إرسال الكون نفسه إلى وحدة الإضاءة نفسها عبر الشبكة وBluetooth معاً قد يسبّب وميضاً. انظر إلى التحذير في قسم CRMX وأطفئ أحد المسارين. ولن يختار Kanau عنك. إن رفض مرسِل استقبال Art-Net بعد إطفائك Bluetooth، فتحقق من إعداد Bluetooth فيه وأعد تشغيله. وفي Aputure Sidus Four تحقق أيضاً من إعداد Sidus BT على الجهاز. حين يُعثر على وحدة تحكم أخرى المعروض ما يعنيه وما تفعله WAITING + IP كانت وحدة تحكم أخرى ترسل قبل بدء هذه، فتراجعت هذه. أوقف الأخرى، أو المس الرسالة واختر Send anyway? ← Send. وإن كانت الأخرى مضيف Kanau فيمكنك الانضمام إلى جلستها SHARED + IP ظهرت وحدة تحكم أخرى بعد بدء هذه. يستمر الإرسال، فأوقف إحداهما إن لزم إن بدأ جهازان معاً وتراجع كلاهما، يعود صاحب العنوان الأصغر إلى الإرسال. DMX Diagnostics — قراءة ما يجري النصف السفلي من OUTPUT موجود ليريك أين توقّفت الأمور . وليس مجموعة إعدادات. وحين يكون الخرج بطيئاً أو غائباً فاقرأه من الأعلى (الفصل 14). البند كيف تقرأه Destination إلى أين يذهب فعلاً. ‏↦ بعد عنوان تعني إرسالاً أحادياً إلى عقدة ردّت Medium الاتصالات المستعملة، مثل wi-fi + ethernet Sending الحزم في الثانية الأخيرة. نحو 44 هو الطبيعي. و‏nothing تعني أنه لم يخرج شيء Clock أسوأ فجوة بين إرسالين. نحو 23 ms هو الطبيعي. وفوق 100 ms يشير إلى الهاتف Touch → wire من إصبعك إلى الحزمة. نحو 25 ms هو الطبيعي Nodes answering كم عقدة ردّت، مع الاسم والعنوان والاتصال وزمن الذهاب والإياب. والرقم بين قوسين هو الأسوأ خلال 10 ثانية الأخيرة Type these into the node قيم Net / Sub / Uni التي تُدخلها في العقدة، حين يكون ذلك العرض مشغّلاً هذه تضيّق دائرة المشكلة، ولا تثبت النجاح. فقد يكون Sending أخضر بينما يبقي خطأ في المطابقة أو عطل في الطرف الآخر وحدات الإضاءة مطفأة. والمعدات التي لا تردّ على الاستطلاع تُظهر 0 في Nodes answering حتى وهي تستقبل. DMX MONITOR يعرض Settings ← DMX MONITOR قنوات كل كون الـ 512 كما تخرج. ويتحدّث 10 مرات في الثانية ولا يؤثّر في الإرسال. التالي تسجيل وحدات الإضاءة ← الفصل 03 لا يصل شيء، أو الأمر بطيء ← الفصل 14"},{"id":"patch","title":"03 تسجيل وحدات الإضاءة","h":[{"id":"patch--1","t":"إضافة وحدات"},{"id":"patch--2","t":"نوعان من الأرقام"},{"id":"patch--3","t":"الطرازات والأوضاع"},{"id":"patch--4","t":"تعديل الوحدات المسجّلة"},{"id":"patch--5","t":"تعديل عدة وحدات دفعة واحدة"},{"id":"patch--6","t":"Re-patch — النقل إلى فراغ"},{"id":"patch--7","t":"بناء المجموعات"},{"id":"patch--8","t":"وحدات ليست في المكتبة (Advanced)"},{"id":"patch--9","t":"من GDTF Share"},{"id":"patch--10","t":"من ملف GDTF"},{"id":"patch--11","t":"يدوياً من جدول DMX"},{"id":"patch--12","t":"بنسخ تعريف موجود"}],"text":"03 تسجيل وحدات الإضاءة — Patch سجّل وحدات الإضاءة التي تستعملها، واضبط الطراز ووضع DMX والكون والعنوان والرقم والمجموعات. تُضبط الشدة واللون في Home ‏(الفصل 04 و05). شاشة Patch. تُجمَّع الوحدات المسجّلة حسب الطراز والوضع. إضافة وحدات افتح Patch ← ＋ new patch والمس add new fixture لإظهار الحقول. اختر Manufacturer ← Fixture ← Mode. يجب أن يطابق الوضع ما هو مضبوط في الوحدة نفسها. اضبط العدد والكون وعنوان البداية. تحقق من المدى والتحذيرات ثم المس Add. تُحفظ عند إضافتها. الحقل ما هو Favourites ضع نجمة على طراز لتصل إليه مباشرة في المرة القادمة Name الاسم المعروض. افتراضياً اسم الطراز، ويشترك فيه كل وحدات ذلك الطراز Fixture number الرقم الذي تناديه به في الموقع. يمكن تركه فارغاً. يبدأ من أعلى رقم مستعمل زائد واحد Label علامة قصيرة للعرض. يستعمل قيمة افتراضية إن تُرك فارغاً العدد حتى 4,096 Universe / Address افتراضياً U1 / 1. تغيير الكون يعيد العنوان إلى 1. و‏U0 مسموح Offset التباعد بين الوحدات. يُملأ من عدد قنوات الوضع Gap قنوات إضافية تُترك بين الوحدات Battery save يؤشّر الوحدات الجديدة لـ BATTERY SAVE Label color خلفية الرقم. سبعة ألوان، أو بلا لون Map توزيع القنوات الـ 512. اسحب وأفلت لضبط عنوان البداية تبدأ كل وحدة بعد الأولى من عنوان بداية سابقتها زائد Offset وGap. وما يتجاوز 512 ينتقل إلى الكون التالي. و‏Offset أصغر من عدد قنوات الوضع يرفع تحذيراً، لكن يمكنك المتابعة. بعدها تحصل على نتيجة مثل Added 3 × Titan Tube — U1 1–15. ويتيح Already patched إضافة المزيد من طراز عندك أصلاً. ويعرض Patched التوزيع الحالي. نوعان من الأرقام الرقم ما هو Unit no. رقم متسلسل داخل الطراز. يُسنَد تلقائياً Fixture number الرقم الذي تستعمله في الموقع. تضبطه أنت أيّهما يعرض Home يُضبط في Settings ← SETTINGS ← Fixture numbers ← Show the fixture number. والافتراضي Unit no.. وتكرار Fixture number يرفع تحذيراً لكنه مسموح. الطرازات والأوضاع تأتي هذه النسخة بـ 45 مصنّعاً و578 وحدة إضاءة و11,347 وضعاً . ولما ليس في المكتبة استعمل تعريفات Generic أو Custom fixtures. يضم Generic أنواع Dimmer وDimmer 16-bit وBi-color وCCT وRGB وRGBW وDimmer + RGB وDimmer + RGBW وBulb وDesk lamp. PROVISIONAL ‏(Advanced): وضع مؤقت يُستعمل حيث لم يُستكمل جدول DMX. يرسل الشدة على القناة 1 ولا شيء غير ذلك. الأوضاع بلا قناة تعتيم : يقود الـ fader قنوات اللون معاً، فيعمل كمعتّم افتراضي. تعديل الوحدات المسجّلة يسرد Patched الوحدات حسب الطراز والوضع. المس عنواناً لطيّه. والمس صف وحدة لفتح إعدادات تسجيلها. تشير ⚠ إلى تداخل في العنونة أو سلسلة تتجاوز القناة 512. ويستمر الإرسال أثناء ظهورها، فتحقق من الإعدادات. و‏n fixture data problems تشير إلى أعطال وُجدت أثناء تحميل بيانات وحدات الإضاءة؛ المسها للتفصيل. العمل في هذه القائمة لا يغيّر الوحدات التي يعرضها Home. تعديل عدة وحدات دفعة واحدة المس Select many واختر الوحدات. وعلامة ✓ في صف طراز تأخذ كل وحداته. الإجراء ما يفعله Select all / Select none يأخذ كل شيء أو يفرغه، بما في ذلك الصفوف المطويّة Name يرقّم نهاية الاسم بترتيب تحديدك Number يضبط Fixture number بترتيب تحديدك Address يعيد توزيعها من كون وعنوان بداية وفجوة Battery يؤشّرها لـ BATTERY SAVE أو يزيل التأشير New group يبني مجموعة من التحديد Delete يزيلها. تحقق من العدد قبل التأكيد حذف وحدة يزيل أيضاً شدتها ولونها وحدودها، ويخرجها من كل المشاهد. والحذف من داخل مجموعة يخرجها من تلك المجموعة فقط؛ وتبقى الوحدة نفسها. Re-patch — النقل إلى فراغ افتح Patch ← Re-patch. في القائمة المرتّبة بالعنوان، اختر الوحدة المراد نقلها. المس مدى فارغاً. تنتقل إلى بدايته. لا تُعرض إلا المديات الواسعة بما يكفي. وتظهر الوحدات المتداخلة بالأحمر. بناء المجموعات المس ＋ new group وأعطها اسماً. اختر الوحدات بالترتيب الذي تريده في Home. المس CREATE. يمكن أن تكون الوحدة في عدة مجموعات. ولا تُنسخ: تعديلها من أي مجموعة يعدّل الوحدة نفسها. وإضافتها إلى مجموعة تُبقيها في All. لمس اسم مجموعة يتيح ضبط الاسم ورؤية العدد ومدى العناوين والتوزيع، وإعادة الترتيب أو الحذف. ويضيف Edit group — add &amp; reorder وحدات ويعيد ترتيبها؛ ويضع Add to an existing group التحديد الحالي في مجموعة عندك أصلاً. ظهور صف All في Patch من عدمه يُضبط في Settings ← SETTINGS ← Groups ← Show the All row. وحدات ليست في المكتبة (Advanced) يحفظ Custom fixtures التعريفات التي تضيفها بنفسك. وهي متاحة لكل العروض. وحذف تعريف لا يؤثّر في الوحدات المسجّلة منه سابقاً. من GDTF Share افتح ＋ Browse GDTF Share وسجّل الدخول عبر SIGN IN بحساب GDTF Share. حدّث القائمة بـ REFRESH ثم اختر المصنّع والوحدة والمراجعة والوضع. ويشمل البحث كل المصنّعين. اقرأ تقرير الاستيراد واختر SAVE أو SAVE &amp; EDIT أو SAVE &amp; PATCH. يفتح SAVE &amp; PATCH شاشة التسجيل مع ذلك التعريف محدّداً. ويحفظ Remember on this device تسجيل دخولك؛ ويزيله FORGET. وتبقى التعريفات التي جلبتها. ويذهب تسجيل دخولك إلى GDTF Share. من ملف GDTF ‏＋ Import a GDTF file ← ＋ Open a GDTF file، اختر ملف .gdtf، وتحقق من الوضع ومن تقرير الاستيراد، ثم احفظ. ولا حاجة إلى شبكة. يسرد التقرير ما لم يمكن نقله. فالقيمة ذات 16 بت الموزّعة على عنوانين متباعدين تحتفظ ببايتها الخشن وحده، والعناوين غير المستعملة تُحفظ كفراغات، والقنوات على DMX break آخر تُسقَط. وحيث تتداخل العناوين تفوز القناة الأسبق. وتحتفظ الوظائف المجهولة بأسمائها الأصلية. التعريف المؤشّر بـ Imported data is not verified. ينبغي التحقق منه أمام الوحدة الحقيقية. صحّح الأدوار الخاطئة عبر SAVE &amp; EDIT؛ ويسري التصحيح على الوحدات التي تسجّلها بعد ذلك. و This mode has no channels. تعني أنه ينبغي اختيار وضع آخر. يدوياً من جدول DMX افتح ＋ Build by hand وابدأ من تعريف فارغ أو من قالب: ‏Dimmer أو CCT أو Bi-color أو RGB أو HSI أو x y أو CCT + HSI أو Dimmer + RGBW أو Full color أو Full color + white أو Multi-emitter. أعطِ كل قناة تسمية، واضبط الدور و8 أو 16 بت والقيمة الافتراضية والوحدة الواقعية حسب الحاجة. وتُحسب أرقام القنوات ومجموعها تلقائياً. واترك خانة بلا استعمال إن كنت تجهل دورها، وسيظل بإمكانك قيادتها من Channels. ويرفض CREATE الحفظ ما دام هناك ERROR. بنسخ تعريف موجود يتيح Duplicate and edit تغيير الاسم ومدى درجة حرارة اللون وأدوار القنوات وأسماءها والتسميات والقيم الافتراضية. ولا يمكن تغيير عدد القنوات ولا توزيع الـ 16 بت ولا المديات ولا بنية التبديل. التالي ضبط الشدة ← الفصل 04 إعدادات كل وحدة ← الفصل 06 وحدة مسجّلة لا تتصرف كما ينبغي ← الفصل 14"},{"id":"intensity","title":"04 ضبط الشدة","h":[{"id":"intensity--1","t":"تحريك الـ fader"},{"id":"intensity--2","t":"FINE"},{"id":"intensity--3","t":"تحريك عدة وحدات معاً"},{"id":"intensity--4","t":"أزرار الأرقام كبيانو"},{"id":"intensity--5","t":"⏻ — الخرج وحده"},{"id":"intensity--6","t":"GM وB.O."},{"id":"intensity--7","t":"اختيار ما يظهر في الصفحة"},{"id":"intensity--8","t":"الأزرار في الأسفل"},{"id":"intensity--9","t":"تشغيل البكسلات وحدها"}],"text":"04 ضبط الشدة — Home الـ fader في Home. هذا هو قلب Kanau. تحريك الـ fader يستجيب الـ fader لـ المسافة التي يقطعها إصبعك ، لا للموضع الذي لمسته. ويمكنك قيادته من الرقم أو من الأيقونة الدائرية أو من الفراغ أسفل الـ fader. وقد صُنع هكذا لتعمل وأنت تنظر إلى الموقع لا إلى يدك. من الأعلى: الشدة الحالية، وأيقونة وحدة الإضاءة الدائرية، والـ fader. المس الأيقونة للتحديد، واضغط مطوّلاً لفتح لوحة تلك الوحدة. يكبر المقبض قليلاً عند لمسه، و لا يتحرك شيء قبل أن تسحب مسافة قصيرة ، فإراحة إصبعك عليه آمنة. وأثناء السحب يظهر الرقم والاسم والقيمة بحجم كبير في أعلى الشاشة. وإن كنت قد ضبطت حدوداً فإنه يتحرك داخلها. FINE الإجراء ما يحدث لمسة قصيرة يدوّر عادي ← FINE ‏(1/10) ← FINE+ ‏(1/100) ← عادي ضغط مطوّل الدرجة التالية أثناء الضغط. ويعود إلى العادي عند الإفلات التبديل في منتصف السحب لا يجعل القيمة تقفز. و‏FINE يسري أيضاً على القنوات الخام وعلى Pan وTilt. تحريك عدة وحدات معاً حدّد أيقونتين دائريتين أو أكثر ثم اسحب أحد الـ fader. تتحرك كلها بالمقدار نفسه، محتفظة بالفروق بينها. وحين يبلغ أحدها حداً تتابع البقية. وتُستثنى الوحدات المقفولة. هذا يختلف عن العمل على عدة وحدات في لوحة COLOR، حيث تصل كلها إلى القيمة نفسها. أزرار الأرقام كبيانو يضبط زر ＋ − في أسفل اليمين الوضع. الوضع أثناء الضغط على زر رقم LOCK (الافتراضي) لا يتغيّر شيء ＋ يذهب إلى الحد الأعلى، وهو 100 افتراضياً − يذهب إلى الحد الأدنى، وهو 0 افتراضياً عند الإفلات يعود إلى ما كان عليه. ويمكنك الضغط على عدة أزرار معاً، أو التمرير جانبياً لعزفها بالتناوب. ولا تستجيب الوحدات المقفولة. تصير الأزرار حمراء ما دام ＋ أو − مسلّحاً. وعند التشغيل يكون الوضع LOCK دائماً. ⏻ — الخرج وحده لمس ⏻ يطفئ خرج وحدة ويشغّله مع الحفاظ على القيمة. وتصير بنفسجية أثناء الإطفاء، ويبقى الرقم. وتحريك الـ fader والخرج مطفأ لا يضيء شيئاً. ‏ON/OFF هو الافتراضي. وفي Switch function الخاص بالوحدة يمكنك تغييره إلى FLASH ON أو FLASH OFF، وهما لا يدومان إلا أثناء الضغط. ولا تستجيب الوحدات المقفولة. GM وB.O. لمس GM في الأعلى يفتح fader الماستر العام وB.O. و→100. fader الـ GM يضبط السطوع العام. وهو نسبي، و‏FINE يعمل عليه. B.O. يشغّل الإظلام ويرفعه. وتُحفظ قيمة GM. →100 يظهر حين ينزل GM تحت 100، ويعيده. الضغط المطوّل على GM يعرض 100 و75 و50 و25 و12.5 و0. والصفر هناك يشغّل الإظلام؛ ولا يضع GM على الصفر. يُضبط تلاشي هذه الأزرار في Settings ← SETTINGS ← Master fade. والافتراضي SNAP. وسحب الـ fader بالإصبع فوري دائماً. WARNING الوحدة التي عليها Lock لا تستجيب لـ GM ولا لـ B.O. وتبقى مضاءة. ويظهر عدد الوحدات المقفولة التي تبقى مضاءة أثناء الإظلام بجوار 🔒 الخضراء في أعلى الشاشة. اختيار ما يظهر في الصفحة يعرض Fixtures حسب الطراز والوضع؛ ويعرض Groups صف All والمجموعات التي بنيتها. المس اسماً للتبديل. ويظل كل fader لوحدة واحدة، حتى داخل مجموعة. يُضبط الترتيب داخل All في Settings ← SETTINGS ← Order on All، إما بالطراز والرقم المتسلسل أو بـ Fixture number. وداخل المجموعة يكون بالترتيب الذي بنيتها به. ينقل ‹ و› بين الصفحات. والتبديل بين 10 و5 يبقي الوحدة التي تعمل عليها في المشهد. الأزرار في الأسفل من اليسار: ‏COLOR وEFFECT وPIXELS و＋ − وFINE. والرمادية منها لا يمكن استعمالها في الحالة الراهنة. يحتاج COLOR وEFFECT إلى تحديد. ويصير PIXELS رمادياً حين لا توجد وحدة بكسل في الصفحة. تشغيل البكسلات وحدها لمس PIXELS يفتح خلايا وحدات البكسل في الصفحة على هيئة fader مستقلة. وتظهر باسم P1 وP2 وهكذا، ولكل منها شدتها ولونها. والمسه مرة أخرى لطيّها. ‏CLEAR n يلغي التحديد فقط. ولا تُمَس القيم ولا المخارج. التالي ضبط اللون ← الفصل 05 حفظ الحالات ← الفصل 08 بعض الـ fader لا تفعل شيئاً ← الفصل 14"},{"id":"color","title":"05 ضبط اللون","h":[{"id":"color--1","t":"فتح اللوحة"},{"id":"color--2","t":"الشدة واللون"},{"id":"color--3","t":"الجيلاتين"},{"id":"color--4","t":"حفظ الألوان التي تكثر من استعمالها"},{"id":"color--5","t":"ADVANCED COLOR"},{"id":"color--6","t":"عدة وحدات وعدة طرازات"},{"id":"color--7","t":"البكسلات ومجموعات اللون المتكرّرة"}],"text":"05 ضبط اللون — COLOR اللون والشدة لوحدة واحدة أو لعدة وحدات. NOTE ما تراه يتوقّف على ما تملكه وحدة الإضاءة فعلاً. فمعتّم بقناة واحدة لا يعرض إلا Intensity. و‏Kanau لا يعرض أدوات تحكم لا تملكها الوحدة. لوحة اللون. لا تظهر إلا الإمكانات التي تحملها الوحدة. فتح اللوحة الطريقة ما تعمل عليه ضغط مطوّل على أيقونة وحدة تلك الوحدة ضغط مطوّل على أيقونة خلية تلك الخلية تحديد وحدات ثم COLOR كل ما هو محدّد ضغط مطوّل على زر طراز أو مجموعة كل الوحدات فيه. و‏All تعني كل الوحدات مع فتح وحدة واحدة ينقلك ‹ و› إلى التالية. الشدة واللون البند كيف يعمل Intensity من 0 إلى 100، بالمنزلق أو بالكتابة أو بزرّي ± أو بالقيم الجاهزة درجة حرارة اللون (CCT) بالكلفن، داخل مدى الوحدة Green / Magenta تصحيح الأخضر والأرجواني. ويعيده Back to neutral إلى 0 Crossfade التوازن بين جانب الأبيض وجانب اللون. وأي الجانبين أيّهما يتوقّف على الوحدة RGB والبواعث ‏R وG وB وW وAmber وLime وCyan وما تحمله الوحدة غير ذلك Hue / Saturation / CIE x / CIE y تظهر في الوحدات التي تملكها يلتزم ±5 و±10 في Intensity بمضاعفات 5 أو 10: فمن 47 يعطي 10+ القيمة 50. والقيم الجاهزة هي 12.5% و25% و35% و50% و75%. القيم الجاهزة لـ CCT هي 2700 و3000 و3200 و4300 و5000 و5600 و6500 و10000 K. وخارج مدى الوحدة تستقر عند حدّها، مؤشّراً بـ MIN أو MAX. والوحدة التي لها درجتا حرارة لون فقط تعرض زرّين بدل منزلق. يمكن تحرير درجات Green / Magenta بالضغط المطوّل عليها. وحيث تملك وحدة أكثر من crossfade تظهر التالية منها فوق أدوات التحكم التي تغذّيها مباشرة. الجيلاتين البند ما هو Gel presets قيم LEE وRosco الجاهزة للوحدات التي فيها RGB. وجدولان منفصلان لـ 3200 K و5600 K Preset / Gel الجيلاتين أو قيم اللون المدمجة في الوحدة نفسها، تُختار بالرقم Gels → x/y إحداثيات لون LEE وRosco للوحدات التي فيها x وy قيم RGB تحت Gel presets مأخوذة من بيانات اللون التي تنشرها Astera. وهي لا تحمل سطوعاً، فاضبطه بالـ fader. ومع القيم الجاهزة المدمجة في وحدة لا يستطيع التطبيق دائماً إظهار أيّها المحدّد. تبقى القائمة مفتوحة بعد الاختيار، فتستطيع تجربة واحدة بعد أخرى. أغلقها بـ ✕. وظهورها من عدمه يُضبط في Settings ← SETTINGS ← Gels ← Gel presets. حفظ الألوان التي تكثر من استعمالها Save this color يخزّن لوناً تحت ★. ويُحفظ لكل طراز على حدة. ولا يشمل CCT ولا G/M. Save this temperature يخزّن درجة حرارة لون. وهذه مشتركة بين الطرازات. المس زراً مخزّناً لتطبيقه. واضغط مطوّلاً لإعادة التسمية أو التحرير أو الحذف. ADVANCED COLOR المنتقي تحت ADVANCED COLOR. تجري درجة اللون أفقياً، والتشبّع رأسياً. يجمع ADVANCED COLOR أدوات التحكم التي يحسبها التطبيق بنفسه، لا قنوات وحدة الإضاءة. في المنتقي تجري درجة اللون أفقياً والتشبّع رأسياً. والسطوع من عمل الـ fader. اسحب قرب المقبض الدائري لتحريك اللون؛ وأي موضع آخر يمرّر اللوحة. يظهر RGB، وقيمتا Hue وSaturation المحسوبتان منه، وCMY ‏(255 − RGB) في الوحدات التي تقبلها. وفي وحدة لا تستقبل إلا Hue وSaturation، أو x وy فقط، استعمل أدوات التحكم الأعلى. عدة وحدات وعدة طرازات في هذه اللوحة يصل كل ما تلمسه إلى القيمة نفسها لكل ما هو محدّد. وهذا يصدق على المنزلقات وأزرار ± والقيم الجاهزة والكتابة والألوان المخزّنة على حد سواء. ولتحريكها مع الحفاظ على فروقها، حدّد الـ fader في Home بدل ذلك. مع تحديد طرازات مختلفة لا يظهر إلا Intensity وCCT وG/M وCrossfade و★. افتح طرازاً بمفرده لضبط RGB والبواعث. ويبقى CCT داخل مدى كل وحدة. البكسلات ومجموعات اللون المتكرّرة اضغط مطوّلاً على أيقونة خلية لضبط لون تلك الخلية وشدتها. وتغيير لون الجسم يضبط كل الخلايا؛ أما الخلية التي غيّرتها يدوياً فتحتفظ بلونها. وتسري Intensity الجسم على كل الخلايا. وحيث يحمل وضع الدور اللوني نفسه أكثر من مرة، مثل Gel 1 وGel 2، تظهر المجموعات التالية أسفل اللوحة. ومجموعات اللون بعد الأولى لا تُحفظ في المشاهد. التالي إعدادات كل وحدة ← الفصل 06 حفظ الحالات ← الفصل 08"},{"id":"fixture-settings","title":"06 إعدادات كل وحدة","h":[{"id":"fixture-settings--1","t":"الاسم والعرض"},{"id":"fixture-settings--2","t":"الحدود"},{"id":"fixture-settings--3","t":"Lock"},{"id":"fixture-settings--4","t":"بقية الإعدادات"},{"id":"fixture-settings--5","t":"Channels — الـ DMX الخام (Advanced)"},{"id":"fixture-settings--6","t":"تغيير التسجيل أو الوضع"}],"text":"06 إعدادات كل وحدة الحدود وLock والقنوات الخام لوحدة إضاءة واحدة. مرّر إلى أسفل في اللوحة التي تحصل عليها بالضغط المطوّل على أيقونة وحدة، أو من COLOR، أو بالضغط المطوّل على زر طراز أو مجموعة. يمكن ضبط Limits وLock وSwitch function وBattery save لعدة وحدات دفعة واحدة. وتظهر القيم المختلطة على هيئة — أو n of m، وتغيير واحدة يطبّقها عليها جميعاً. ولا يظهر Channels وMode وChannel roles وPatch إلا مع فتح وحدة واحدة. الاسم والعرض حرّر الاسم في أعلى اللوحة. وينقل ‹ و› إلى الوحدة التالية. و‏Label هو الاسم المعروض المشترك بين وحدات الطراز؛ و‏Label color خلفية الرقم. ويمسحه No label color. الحدود يضبط Lower limit وUpper limit المدى الذي يمكنك العمل فيه. غيّرهما بـ ±1 و±5، أو امسحهما. وخارج الحد يعرض Home تظليلاً برتقالياً مخطّطاً. تسري حدود الخلية داخل حدود الجسم. فإن كان الجسم محدوداً عند 50، فالخلية المحدودة عند 80 تبقى عاجزة عن تجاوز 50. Lock WARNING ‏Fixture Lock يتفوّق على كل شيء : الماستر العام والإظلام وBATTERY SAVE واستدعاء المشاهد وMIDI والجلسة. والوحدة المقفولة لن تنطفئ عند ضغط الإظلام. تحقق من أقفالك قبل التصوير. مع تشغيل Lock يُثبَّت خرج الوحدة. فلا تمسّها الـ fader ولا وضع البيانو ولا ⏻ ولا اللون ولا القنوات الخام ولا GM ولا B.O. ولا BATTERY SAVE ولا المشاهد ولا MIDI ولا الجلسة. ومع تحديد عدة وحدات وبعضها مقفول، يزيل اللمس كل الأقفال. ومع عدم قفل أي منها، يقفلها اللمس جميعاً. القفل أثناء ضغطة بيانو أو FLASH يعيد القيمة المؤقتة أولاً ثم يثبّت. وتغيير الحدود أثناء القفل لا يحرّك القيمة الحالية؛ بل تُجلب إلى المدى الجديد عند فك القفل. بقية الإعدادات البند ما هو Switch function ما يفعله ⏻: ‏None أو ON/OFF أو FLASH ON أو FLASH OFF. والافتراضي ON/OFF Battery save يؤشّر هذه الوحدة لـ BATTERY SAVE Invert يعكس اتجاه السحب لـ Pan وTilt. ولا تتغيّر الزاوية المعروضة Mode يعرض وضع DMX الحالي. غيّره من RE-PATCH Channel roles يصحّح دور كل قناة واسمها. ولا تتحرك العناوين استعمل Channel roles حين تكون قنوات وحدة مسجّلة معامَلة على أنها وظيفة خاطئة. ولحمل التصحيح إلى الوحدات التي تسجّلها لاحقاً، حرّر التعريف تحت Custom fixtures. Channels — الـ DMX الخام (Advanced) استعمل أولاً أدوات التحكم المخصّصة للّون والموضع وسواهما. و‏Channels للوصول إلى وظائف لا تغطيها تلك الأدوات، قناة DMX واحدة في كل مرة. يسرد Channels كل شيء بترتيب DMX، تحت DIMMER وCOLOR وPOSITION وGOBO وBEAM وFOCUS وSHAPERS وCONTROL. وتُخفى المجموعات الفارغة. نوع الصف كيف تشغّله قيمة متصلة منزلق أو كتابة أو − و+ قيم ومديات مسمّاة قائمة حتى 12 مدخلاً، ولائحة قابلة للبحث فوق ذلك أوامر مثل Reset أو Lamp Off اضغط مطوّلاً المدة المذكورة. والإفلات مبكراً يلغي. والأوامر بلا مدة لمسة واحدة صف رمادي مؤشّر بـ FADER أو COLOR تقوده أداة مخصّصة، فلا يمكن تحريره هنا صف يعتمد على قناة أخرى يعرض المتاح في الحالة الراهنة، مع ملاحظة حين لا يكون متاحاً يبدّل DMX في أعلى اليمين بين القيم الخام والنسب المئوية. و‏Home في صف يعيده إلى قيمته الافتراضية؛ وفي Pan وTilt يحتاج ذلك إلى ضغط مطوّل. ولا يتاح حين لا يكون شيء قد تغيّر. تُحفظ تغييرات القنوات الخام في المشاهد وتُسجَّل في HISTORY. وفي وحدة بكسل تحمل لوحة الجسم قنوات الجسم وتحمل لوحة الخلية قنوات تلك الخلية. تغيير التسجيل أو الوضع حرّر من RE-PATCH في قسم Patch. ويمكنك رؤية الكون والعنوان وFixture number والطراز والوضع وتغييرها. وينقلها Next free إلى الفراغ التالي. يعرض Change mode المدى قبل وبعد وأي وحدات ستتداخل معها، قبل أن تؤكّد. ويمكنك تطبيقه على كل وحدات ذلك الطراز. ولا تتحرك الوحدات التالية من تلقاء نفسها. يزيل Delete this fixture الوحدة بعد تأكيد، مع قيمها وإعداداتها، ويخرجها من كل المشاهد. التالي الموضع والشعاع ← الفصل 07 ماذا يحمي كل قفل ← الفصل 10"},{"id":"position","title":"07 الموضع والشعاع","h":[{"id":"position--1","t":"Pan وTilt"},{"id":"position--2","t":"Zoom وiris وfrost وfocus وgobo"}],"text":"07 الموضع والشعاع ‏pan وtilt وzoom وiris وfrost وgobo في الوحدات المتحركة. Pan وTilt اضغط مطوّلاً على أيقونة وحدة وافتح Channels ← POSITION. لا تحتوي هذه النسخة على شاشة منفصلة للموضع. يُقرأ Pan وTilt بالدرجات حيث تحمل بيانات الوحدة زوايا، وبالنسبة المئوية حيث لا تحملها. وفي وحدة ذات 16 بت تقع القناة الخشنة والدقيقة في صف واحد. اسحب قرب المقبض فيتحرك بمقدار المسافة التي يقطعها إصبعك. وأي موضع آخر يمرّر اللوحة. اكتب زاوية في الحقل. وتُرفض القيم خارج مدى الوحدة. تدرّج بـ ±0.1° و±1° و±10° وما شابه. وتأتي الدرجات من الوحدة القياسية ومن الدقة. يبطّئه FINE وFINE+ إلى 1/10 و1/100. اضغط مطوّلاً على Home لإرساله إلى موضع البداية الخاص بالوحدة. والإفلات مبكراً يلغي. يعكس Invert اتجاه السحب. ولا يتحرك شيء ما دامت الوحدة مقفولة. المناطق الميتة، حيث لا تفعل قيمة DMX شيئاً، يتخطّاها المنزلق والتدرّج معاً. وفي وحدة تقع قيمتها الافتراضية داخل منطقة ميتة لن يتحرك التدرّج: استعمل المنزلق أو اكتب قيمة للدخول أولاً إلى المدى الحي. يُحفظ الموضع في المشاهد ويُسجَّل في HISTORY. IMPORTANT تلاشي المشهد لا يستوفي Pan ولا Tilt. بل يقفزان إلى القيمة المحفوظة لحظة الاستدعاء. وضبط زمن تلاشٍ لن يجعل الرأس يتحرك ببطء. Zoom وiris وfrost وfocus وgobo افتح BEAM أو GOBO أو FOCUS تحت Channels. القيم المتصلة تأخذ منزلقاً؛ وتأخذ الـ gobo والموشور خيارات مسمّاة. وتعمل تماماً مثل بقية الصفوف في الفصل 06. ولتحريك أي منها استعمل MOVE وBEAM في لوحة EFFECT. يعمل MOVE حول الموضع الذي يشير إليه الرأس الآن، ويُركَّب فوق مؤثّرات الشدة. التالي تحريك الحركة ← الفصل 09 حفظ الحالات ← الفصل 08"},{"id":"scenes","title":"08 حفظ الحالات واستدعاؤها","h":[{"id":"scenes--1","t":"حفظ مشهد"},{"id":"scenes--2","t":"الاستدعاء والترتيب"},{"id":"scenes--3","t":"ما تغيّره بعد الاستدعاء يُحفظ"},{"id":"scenes--4","t":"ما يُحفظ وما لا يُحفظ"},{"id":"scenes--5","t":"التلاشي"}],"text":"08 حفظ الحالات واستدعاؤها — Scenes المشهد حالة محفوظة. افتح Scenes، والمس ＋ للحفظ، والمس صفاً لإعادتها. قائمة المشاهد. المشهد الحالي بخلفية كهرمانية. حفظ مشهد اضبط الشدة واللون وأي مؤثّرات في Home. المس Scenes ← ＋. يُحفظ فوراً. لإعادة تسميته المس Settings في صف ذلك المشهد واكتب اسماً. وسحب الصف إلى الجانب يفتح اللوحة نفسها. ولحماية ما فيه شغّل Lock this scene في اللوحة نفسها. ‏Settings المقصود هنا هو الموجود داخل صف المشهد . وليس تبويب Settings في أسفل الشاشة. الاستدعاء والترتيب الإجراء أو العلامة ما يفعله لمس صف يستدعي عند رفع إصبعك NEXT / BACK المشهد التالي أو السابق. ويلتفّ من الطرف. ولا يتاح مع مشهد واحد فقط ● وخلفية كهرمانية المشهد الحالي ▸ المشهد الذي سيجلبه NEXT نقطة بعد التحرير مشهد تغيّر منذ استدعائه 🔒 وحافة خضراء محميّ من الكتابة فوقه Settings، أو السحب إلى الجانب الاسم وزمن التلاشي والقفل والحذف Edit إعادة الترتيب والحذف وحذف عدة مشاهد الأرقام هي ترتيب العرض. والوقت تحت الاسم هو آخر مرة تغيّر فيها محتواه. ما تغيّره بعد الاستدعاء يُحفظ ما إن تستدعي مشهداً حتى يُكتب كل ما تفعله بعدها بالإضاءة داخله. ولا يوجد زر SAVE؛ بل يُكتب عند رفع إصبعك. شغّل Lock this scene للمشاهد التي تريد إبقاءها كما هي. ويظل بإمكانك استدعاؤها وتشغيل الإضاءة، لكن لا يُحفظ شيء. هذا ليس مثل Fixture Lock. فـ Scene Lock يحمي المحفوظ؛ و‏Fixture Lock يثبّت الخرج. ينتقل الحفظ إلى مشهد آخر حين تستدعي غيره، وحين تحذف الذي أنت فيه، وحين تعيد فتح العرض. وتغييرات محتوى المشهد ليست جزءاً من HISTORY. ما يُحفظ وما لا يُحفظ يُحفظ لا يُحفظ الشدة وCCT وG/M وcrossfade وRGB والبواعث ‏GM وB.O. وBATTERY SAVE القنوات الخام مثل الموضع وgobo الحدود وFixture Lock وحالة ⏻ وSwitch function لون الخلايا وشدتها والمؤثّرات مجموعات اللون بعد الأولى الوحدة التي عليها Lock لا يغيّرها الاستدعاء. التلاشي يُضبط لكل مشهد في Settings ← Fade. والافتراضي 3 ثوانٍ. وهناك قيم جاهزة SNAP و1 و2 و3 و5 و10، و‏±0.1 و±1 للضبط الدقيق. تتحرك الـ fader أثناء التلاشي، ويمكنك تسلّمها باليد في منتصف الطريق. أما الموضع وgobo وبقية القيم الخام فلا تُستوفى؛ بل تقفز عند الاستدعاء. المشهد الذي فيه مؤثّرات يعيد تشغيلها عند الاستدعاء. واستدعاء مشهد بلا مؤثّرات يحرّر ما كان يعمل. الاستدعاء نفسه يُسجَّل في HISTORY كخطوة واحدة. والمشاهد جزء من ملف العرض. التالي الرجوع خطوة ← الفصل 10 حفظ العرض ← الفصل 11 مشهد يتغيّر من تلقاء نفسه ← الفصل 14"},{"id":"effects","title":"09 المؤثّرات","h":[{"id":"effects--1","t":"تطبيق مؤثّر"},{"id":"effects--2","t":"الإيقاف المؤقت والتحرير وإعادة البدء"},{"id":"effects--3","t":"ADJUST"},{"id":"effects--4","t":"ARRANGE"},{"id":"effects--5","t":"تغيير الهدف وحفظ الإعدادات"},{"id":"effects--6","t":"العثور على مؤثّر بحسب ما تريد"},{"id":"effects--7","t":"القائمة الكاملة"},{"id":"effects--8","t":"SIGNAL — إشارات المرور"},{"id":"effects--9","t":"تركيب LIGHT وMOVE وBEAM"},{"id":"effects--10","t":"إدارتها من تبويب Effects"}],"text":"09 المؤثّرات — Effects وميض ونار وبرق وسواها، تُطبَّق على وحدات إضاءتك. يطبّق EFFECT في Home مؤثّراً على ما حدّدته. ويدير تبويب Effects في الأسفل كل ما يعمل. تطبيق مؤثّر في Home المس الأيقونة الدائرية لوحدة أو خلية لتحديدها. افتح EFFECT. المس اسم مؤثّر. يبدأ فوراً. يظل الـ fader يضبط الشدة. وأثناء عمل المؤثّر يحمل زر EFFECT اسمه، وتتحرك أيقونة الوحدة والـ fader معه. الإيقاف المؤقت والتحرير وإعادة البدء الإجراء ما يفعله PAUSE يجمّد الحركة عند الشدة والموضع الحاليين RESUME يتابع من حيث تجمّد RELEASE يوقفه ويعيد التحكم إلى القيم العادية. وتبقى الإعدادات في القائمة START يعيد تشغيل مؤثّر محرَّر من البداية CLEAR يزيله من القائمة. ويسأل أولاً ADJUST البند ما هو Speed بالهرتز. والكسور العشرية مسموحة Depth كم يسحب الشدة إلى أسفل. فـ 100 يبلغ الصفر؛ و35 لا يكاد يتحرك How often / Cycle كم مرة يحدث. ولا يظهر إلا في الأنواع التي تستعمله Roughness كم هي خشنة اللهب Width كم من الطقم يضيء دفعة واحدة، مثل 50% 2 / 4 Tail طول ذيل COMET أي البنود يظهر يتوقّف على المؤثّر. و‏SIGNAL بلا Speed. ARRANGE يباعد SPREAD بين الوحدات؛ ويبقيها TOGETHER على خطوة واحدة. ولا يوفّر RUNNER وFADE RUN وBOUNCE وCOMET وSIGNAL هذا الخيار. الترتيب ما يفعله IN ORDER مباعدة منتظمة بالرقم ALTERNATE الفردي والزوجي، بفارق نصف دورة WINGS متناظر من المركز إلى الخارج RANDOM بترتيب عشوائي BOUNCE يستدير عند كل طرف BUILD يضيء واحدة تلو الأخرى ثم يطفئها كلها معاً ‏RUNS تحت IN ORDER هو عدد الأنماط العاملة معاً؛ والخيارات تتوقّف على عدد الوحدات. و‏DIRECTION إما FORWARD أو REVERSE. وفي النار تتيح الوحدات القادرة على الأمرين الاختيار بين خرج CCT وRGB. تغيير الهدف وحفظ الإعدادات يختار Applies to ← SELECT ▾ الوحدات والمجموعات. والتحديد مشترك مع Home، وتبقى القائمة مفتوحة أثناء اختيارك. يخزّن SAVE تحت SAVED الإعدادات التي ضبطتها، باسم. المس زراً مخزّناً لتطبيقه، والمسه مرة أخرى لإيقافه. واضغط مطوّلاً لإعادة التسمية أو الحذف. والوحدات ليست جزءاً من الإعداد المخزّن. حدّد الوحدات العاملة أصلاً مع الجديدة، واختر المؤثّر نفسه، فتنتقل السرعة والعمق والطور. وحيث تختلف الإعدادات يعود إلى القيم الافتراضية. ولتحرير وحدة واحدة فقط، حدّدها وحدها ثم RELEASE. العثور على مؤثّر بحسب ما تريد ما تريده جرّب ضوء طبيعي ‏FIRE 1 و2 وLIGHTNING وWATER وWIND وTV ضوء يجري على امتداد الطقم ‏RUNNER وFADE RUN وBOUNCE وCOMET ضوء المدينة ‏NEON وSIGNAL وTOKYO وOSAKA وKYOTO وNARA وPACHINKO منارات ‏BEACON R/B وBLUE وRED وAMBER وميض بسيط ‏BLINK وSTROBE وPULSE وDOUBLE وRANDOM 1–3 مصباح فلورسنت يتعطّل ‏FLUO 1–3 تحريك الرأس مجموعة MOVE تحريك الـ zoom أو الـ gobo مجموعة BEAM القائمة الكاملة المجموعة المؤثّرات BASIC ‏BLINK وSTROBE وPULSE وDOUBLE وRANDOM 1–3 وRUNNER وFADE RUN وBOUNCE وCOMET LIGHTS ‏FLUO 1–3 وFIRE 1 (شمعة) وFIRE 2 (نار مخيّم) وLIGHTNING وTV وNEON وSIGNAL SCENES ‏BEACON R/B وBLUE وRED وAMBER وTOKYO وOSAKA وKYOTO وNARA وPACHINKO وWATER وFIREWORKS وLANTERNS MOVE ‏DRIFT وPASS وORBIT وEIGHT وBOX وSPIRAL وSEARCH وBREATHE وHANDHELD وWIND وJUMP وBALLYHOO BEAM ‏ZOOM PULSE وZOOM BREATHE وIRIS PULSE وFROST BREATHE وGOBO SHAKE يحتاج RUNNER وFADE RUN وBOUNCE وCOMET إلى عدة وحدات أو إلى بكسلات. ويظهر MOVE وBEAM حين تدعمهما الوحدات المحدّدة. نقطة كهرمانية في أعلى يمين الاسم تعني أن المؤثّر يغيّر اللون أيضاً. ومن دونها يستعمل اللون الذي ضبطته يدوياً. SIGNAL — إشارات المرور اختر البلد، و‏CAR أو WALK، و‏START GREEN أو START RED، و‏REPEAT أو ONCE. وينقل NEXT إلى الحالة التالية. ويعمل CAR وWALK على التوقيت نفسه. استعمل ONCE لتقديمه يدوياً بما يناسب الأداء. تركيب LIGHT وMOVE وBEAM يمكن لوحدة واحدة أن تحمل معاً مؤثّر LIGHT للشدة واللون، ومؤثّر MOVE للرأس، ومؤثّر BEAM. واختيار مؤثّر آخر في المسار نفسه يستبدله. ولا تقبل الخلايا إلا LIGHT. فتح اللوحة يعرض أول مسار عامل، بترتيب LIGHT ثم MOVE ثم BEAM. إدارتها من تبويب Effects يفتح EDIT إعدادات مؤثّر. و‏RELEASE / START وPAUSE / RESUME وCLEAR موجودة هناك. ويبقى المؤثّر المحرَّر في القائمة مؤشّراً بـ RELEASED. علامة × بجوار اسم وحدة تُخرج تلك الوحدة من المؤثّر؛ ويضيف ＋ التحديد الحالي أو مجموعة أو All. ويسري RELEASE ALL وSTART ALL على كل شيء. تواصل المؤثّرات العدّ خلال الإظلام. وتُظلم الوحدات غير المقفولة وتلتقط الحركة من حيث هي حين ترفع الإظلام. و‏Fixture Lock مشروح في الفصل 10. التالي حفظ الحالات ← الفصل 08 تحريك الرأس ← الفصل 07"},{"id":"safety","title":"10 الأقفال والسلامة والرجوع خطوة","h":[{"id":"safety--1","t":"هناك ثلاثة أنواع من الأقفال"},{"id":"safety--2","t":"SCREEN LOCK"},{"id":"safety--3","t":"Fixture Lock"},{"id":"safety--4","t":"BATTERY SAVE"},{"id":"safety--5","t":"HISTORY"},{"id":"safety--6","t":"ZEN"}],"text":"10 الأقفال والسلامة والرجوع خطوة ما يمنعك من الخطأ في منتصف التصوير، وما يتيح لك التراجع عنه. هناك ثلاثة أنواع من الأقفال تظهر الكلمة في ثلاثة مواضع، ويحمي كل منها شيئاً مختلفاً. الاسم ما يحميه أين Fixture Lock الضوء الخارج الآن. لا يمكن أن تتغيّر القيمة لوحة وحدة الإضاءة Scene Lock ما هو محفوظ في مشهد ‏Settings في صف المشهد SCREEN LOCK الشاشة. اللمسات لا تفعل شيئاً أعلى الشاشة SCREEN LOCK اضغط مطوّلاً على SCREEN LOCK في أعلى الشاشة 0.5 ثانية. واللمسة القصيرة لا تقفلها. أثناء القفل يغطّي الشاشةَ حجابٌ بنفسجي وتظليل مخطّط. وتبقى القيم مقروءة، ويستمر الإرسال والتلاشي. ولفك القفل اسحب المنزلق البنفسجي في الوسط نحو 80% من الطريق. والإفلات مبكراً يُبقيها مقفولة. لا يمكنك قفل الشاشة ما دامت لوحة مثل Patch مفتوحة. Fixture Lock WARNING ‏Fixture Lock يتفوّق على الماستر العام والإظلام وBATTERY SAVE واستدعاء المشاهد وMIDI والجلسة . اضغط الإظلام فتبقى الوحدة المقفولة مضاءة. ويظهر العدد الذي يبقى مضاءً أثناء الإظلام بجوار 🔒 الخضراء في أعلى الشاشة. اضغط مطوّلاً على أيقونة وحدة وشغّل Lock. استعمله حين يجب ألّا يتغيّر ضوء. أثناء القفل تحمل أيقونة الوحدة والـ fader وزر الرقم و⏻ اللون الأخضر. وأزِله من لوحة الوحدة. BATTERY SAVE يخفض إضاءة الوحدات التي تؤشّرها وحدها، لفترات الانتظار بين اللقطات. أشّرها في إعدادات الوحدة تحت Battery save، أو في Patch ← Select many ← Battery. ويمكنك تأشيرها أثناء التسجيل أيضاً. المس BATTERY SAVE في أعلى الشاشة. تخفت الوحدات المؤشّرة. المسه مرة أخرى لإعادتها. اضغط مطوّلاً لضبط مقدار الخفض ومدة التلاشي. ويعرض Save to القيم −25% و−50% و−65% و−75%، والافتراضي −50%. ويبدأ التلاشي من 1.5 ثانية. يصير الزر وحافة الشاشة أخضرين أثناء التشغيل. ويتضاعف مع الماستر العام. وتُترك الوحدات المقفولة وشأنها. ومن دون تأشير أي شيء يخبرك كيف تؤشّر. هذا يخفض إضاءة وحداتك. وليس إعداد بطارية في الـ iPhone. HISTORY المس HISTORY في Home أو اضغط عليه مطوّلاً لترى الحالات التي مررت بها. اختر صفاً للعودة إليه. وتشير HERE إلى موضعك. يحتفظ بآخر 50. والرجوع ثم العمل يُبقي الحالات القديمة في مكانها ويضيف الجديدة في النهاية. يغطّي الشدة واللون وتشغيل الخرج وإطفاءه والحدود والقيم الخام والمؤثّرات وGM وB.O. والتسجيل. ‏Fixture Lock خارجه. والوحدة المقفولة لا تتحرك عند الرجوع خطوة. تُسجَّل استدعاءات المشاهد، لكن الكتابة فوق محتوى مشهد لا يمكن التراجع عنها. لا يمكنك سحب تغيير واحد بمفرده. بل ترجع إلى الحالة كاملة في تلك اللحظة. لا يُحفظ. وإنهاء التطبيق أو إعادة فتح العرض يمسحه. يُضبط تلاشي الرجوع في Recall fade time. ولا يتاح HISTORY حين لا يوجد ما تعود إليه. ZEN المس ZEN في لوحة وحدة واحدة لتحصل على شاشة سوداء عليها fader كبير واحد وقيمته. وهو موجود للوحدات التي يمكن ضبط شدتها. اسحب في أي موضع من الشاشة لتشغيله، بشكل نسبي كالعادة. و‏FINE يعمل. ويمكن تغيير الحدود من الإعدادات في أعلى اليمين. والمس الشاشة للخروج؛ أما تحريك الـ fader ثم الإفلات فلا يخرج. التالي حفظ العرض ← الفصل 11 شيء لا ينطفئ عند الإظلام ← الفصل 14"},{"id":"shows","title":"11 حفظ العروض وتبادلها","h":[{"id":"shows--1","t":"متى يحفظ"},{"id":"shows--2","t":"Settings ← SHOWS"},{"id":"shows--3","t":"الفتح والاستعادة"},{"id":"shows--4","t":"ما ليس في العرض"},{"id":"shows--5","t":"Settings ← SETTINGS"}],"text":"11 حفظ العروض وتبادلها العرض يحمل عملاً واحداً: التسجيل والمجموعات والمشاهد والحالة الراهنة. لا شيء تضغطه. فهو يحفظ نفسه. متى يحفظ ماذا متى التسجيل والمجموعات والمشاهد أثناء تغييرها الحالة الراهنة وإعدادات الوحدات بعد نحو 2 ثانية من توقّفك، وعند انتقال التطبيق إلى الخلفية يستعيد التشغيل التالي آخر عرض كما حُفظ. وآخر تغيير قبل الإنهاء غير مضمون، فاستعمل Export show file حين تحتاج إلى ملف تحتفظ به أو تسلّمه. Settings ← SHOWS البند ما يفعله CURRENT SHOW يعيد تسمية العرض الذي أنت فيه Save As يخزّن الحالة الراهنة كعرض آخر ويتابع في النسخة Export show file يحفظ أولاً ثم يكتب ملف .kanau. اختر الوجهة من ورقة المشاركة Import show file يجلب ملف .kanau كعرض جديد. ولا يُمَس عرضك الحالي NEW SHOW سمِّه ثم Create. تحصل على عرض فارغ، ويفتح Patch OTHER SHOWS يفتح عرضاً محفوظاً. و‏⧉ ينسخ، و‏✕ يحذف بعد تأكيد ملف .kanau الوارد عبر الملفات أو AirDrop يمكن فتحه بـ Kanau ويدخل كعرض جديد. ويُعامَل ملف .kanaumidi على أنه ملف ربط MIDI. الفتح والاستعادة من دون أي شيء محفوظ يفتح العرض التجريبي. والعرض القديم الذي لا حالة محفوظة له يفتح والشدة منخفضة. إن تعذّرت قراءة الملف تحصل على Saved patch could not be read. Showing an empty rig; the file is left as it is.، ويبدأ فارغاً. ويُحفظ الملف الأصلي ولا يُكتب فوقه. الحفظ الفاشل يعرض Patch was not saved. بالأحمر. ويغطي الفصل 14 ما تفعله. ما ليس في العرض ماذا أين يقيم إعدادات المؤثّرات في SAVED على الجهاز، ومتاحة لكل العروض Custom fixtures على الجهاز. وتُحفظ تعريفات الوحدات المسجّلة في العرض أيضاً الألوان ودرجات الحرارة المخزّنة في ★ على الجهاز. الألوان لكل طراز، ودرجات الحرارة مشتركة ربط MIDI على الجهاز. ويمكن تصديره وحده كملف .kanaumidi OUTPUT وإعدادات العرض واللغة على الجهاز HISTORY لا يُحفظ Settings ← SETTINGS اللغة وأزمنة التلاشي المختلفة ومقدار BATTERY SAVE وأي رقم يُعرض والترتيب داخل All وصف All في Patch و‏Net / Sub / Uni وظهور الجيلاتين من عدمه. ويسري تغيير اللغة عند التشغيل التالي. ويتبع حجم النص إعداد iOS. التالي فشل الحفظ ← الفصل 14 العمل من جهازين ← الفصل 13"},{"id":"midi","title":"12 وحدات تحكم MIDI ‏(Advanced)","h":[{"id":"midi--1","t":"الوصل والربط"},{"id":"midi--2","t":"الوضعان"},{"id":"midi--3","t":"حين لا يفعل مفتاح شيئاً في البداية"},{"id":"midi--4","t":"الأزرار وملف الربط"}],"text":"12 وحدات تحكم MIDI ‏(Advanced) ربط مفاتيح وحدة تحكم MIDI وأزرارها بوحدات الإضاءة وأدوات التحكم. يغطّي هذا الفصل الشاشة التي تعمل بأسلوب Learn. الوصل والربط شغّل MIDI controller في Settings ← MIDI. وهو مطفأ افتراضياً. تأكد من ظهور معداتك تحت Inputs ومن تغيّر Last CC حين تحرّك شيئاً. ابدأ بـ MIDI channel على OMNI، ثم ضيّقه إلى 1–16 إن لزم. اختر Mode، ثم اربط عبر Learn تحت Knobs أو Buttons. أدر مفتاحاً أثناء ظهور Turn…، أو اضغط الزر الذي تريد ربطه. المعدات التي بُني هذا عليها هي Behringer X-Touch Mini وCompact، في وضع Standard مع إرسال قيم مطلقة. ووضع MC غير مستعمل. الوضعان الوضع ما يتبعه عنصر التحكم GLOBAL 10 موضع على الشاشة. غيّر الصفحة أو المجموعة فيتغيّر الهدف معها. ويمكن ربط GM أيضاً FIXED وحدة إضاءة واحدة. وتغيير الصفحة أو المجموعة لا يغيّر شيئاً يُربط FIXED وحدةً وحدةً عبر Learn؛ ولا يوجد ترقيم تلقائي. وتحت GLOBAL 10 يوجد Learn في كل صف من Fader 1 إلى Fader 10 وعلى Grand master. حين لا يفعل مفتاح شيئاً في البداية إن اختلف المفتاح عن القيمة المعروضة على الشاشة، فلا يتحرك شيء حتى يتجاوز المفتاح تلك القيمة . وهذا مقصود: يمنع قفز المستوى. والأمر نفسه بعد تغيير الصفحة أو المجموعة أو الوضع. شغّل Send values back فيعيد Kanau القيم الحالية إلى حلقات LED في المعدات التي تدعم ذلك. وتعود المواضع الفارغة على أنها 0. الأزرار وملف الربط يمكنك ربط FINE وPIANO والصفحة إلى الخلف وإلى الأمام واستدعاء مشاهد بعينها. ولا يمكن ربط B.O.. ويحمل الزر الواحد إجراءً واحداً. ويسري Fixture Lock على MIDI أيضاً. يكتب Export وImport تحت MIDI map file الربط ويقرآنه كملف .kanaumidi، منفصلاً عن العرض. التالي العمل من جهازين ← الفصل 13"},{"id":"session","title":"13 العمل من جهازين","h":[{"id":"session--1","t":"من يملك ماذا"},{"id":"session--2","t":"بدء جلسة"},{"id":"session--3","t":"ما يستطيع الضيف فعله"},{"id":"session--4","t":"المؤثّرات والضيف"},{"id":"session--5","t":"العمل في الوقت نفسه وفقدان الوصلة"}],"text":"13 العمل من جهازين — SESSION جهازا iPhone أو iPad على عرض واحد. المضيف وحده يرسل DMX ؛ والآخر يشغّل وحدة التحكم نفسها من خلاله. الجلسة تتيح لجهازين على الشبكة نفسها قيادة عرض واحد. ويرسل الضيف ما تفعله إلى المضيف. وإن توقّف المضيف فلا يتولّى أحد مكانه تلقائياً. من يملك ماذا المضيف الضيف إرسال DMX نعم لا صاحب العرض نعم يستعيره تغيير التسجيل نعم لا أين يُحفظ المشهد عرض المضيف يُرسل إلى المضيف تشغيل الإضاءة نعم نعم حين يلمس الاثنان الوحدة نفسها يفوز المضيف. ويرى الضيف TAKEN . بدء جلسة على الجهاز الذي سيرسل اختر Settings ← SESSION ← Host. أعطِ الرقم المكوّن من 4 خانات للشخص الآخر. على الجهاز الآخر اختر Settings ← SESSION ← Join واكتب الرقم. تحقق من ظهور Joined ومن حالة الاتصال. ‏Looking for 1234… تعني أنه ما زال يبحث. ويتغيّر الرقم في كل مرة تستضيف فيها. و2 جهازان فقط في المرة الواحدة؛ ولا يمكن لثالث الانضمام. ما يستطيع الضيف فعله يستطيع الضيف يفعل المضيف يحتفظ كل جهاز بما يخصّه الـ fader واللون والجيلاتين، على الوحدات والخلايا إضافة التسجيل وإزالته وتغييره، والأسماء والتسميات أي مجموعة وصفحة معروضة، وأي تبويب استدعاء المشاهد، و＋ للحفظ إعادة الترتيب والحذف وإعادة التسمية والتلاشي والقفل ‏FINE و10 / 5 وPIXELS ووضع PIANO ⏻ وGM وB.O. وBATTERY SAVE ‏OUTPUT وSHOWS إعدادات العرض واللغة والجيلاتين الحدود وFixture Lock وإلغاء التحديد أزمنة التلاشي وSave to وSwitch function ربط MIDI والألوان المخزّنة في ★ المشهد المحفوظ من الضيف يكتبه المضيف. ولا يُمَس ملف عرض الضيف نفسه، ويعيده Leave session. المؤثّرات والضيف بعض إجراءات المؤثّرات تبلغ المضيف وبعضها لا يبلغه. الإجراء من الضيف تطبيق مؤثّر يعمل RELEASE ALL يعمل مسح مؤثّرات خلية يعمل SIGNAL NEXT يعمل IMPORTANT ‏PAUSE وRESUME وتحرير مؤثّر واحد وSTART لا تبلغ المضيف من الضيف. وقد تبدو شاشة الضيف وكأن شيئاً قد حدث، لكن الإضاءة لا تتغيّر. افعل هذه على المضيف. العمل في الوقت نفسه وفقدان الوصلة ما يغيّره الضيف يظهر على شاشته فوراً. وإن لمس المضيف الوحدة نفسها فاز المضيف ورأى الضيف TAKEN . والوحدة التي يشغّلها الجهاز الآخر تظهر بحافة سماوية مع اسم. الاتصال الحالة أخضر موصول بالمضيف كهرماني لا شيء من المضيف منذ نحو 3 ثوانٍ أحمر لا شيء منذ نحو 15 ثانية. وتظهر The host is no longer available. إن سقطت الوصلة يظل الضيف يعرض آخر حالة. ولا يخرج من تلقاء نفسه، فاستعمل Leave session. وبعد إعادة الاتصال تبقى الـ fader نسبية. لا حاجة إلى إنترنت. بل يجب أن يبلغ الجهازان أحدهما الآخر على الشبكة نفسها. وقد تمنع عزلة العملاء والجدار الناري وما شابههما الجلسةَ حتى حيث يمرّ DMX. التالي حفظ العرض ← الفصل 11 لا يتصل ← الفصل 14"},{"id":"troubleshooting","title":"14 حل المشكلات","h":[{"id":"troubleshooting--1","t":"لا شيء يضيء"},{"id":"troubleshooting--2","t":"لا يُعثر على أي عقدة"},{"id":"troubleshooting--3","t":"يومض"},{"id":"troubleshooting--4","t":"يتقطّع أو يستجيب ببطء"},{"id":"troubleshooting--5","t":"بعض الـ fader لا تفعل شيئاً"},{"id":"troubleshooting--6","t":"زر لا يفعل شيئاً"},{"id":"troubleshooting--7","t":"اللون خاطئ"},{"id":"troubleshooting--8","t":"وحدة لا تتصرف كما ينبغي"},{"id":"troubleshooting--9","t":"مشهد يتغيّر من تلقاء نفسه"},{"id":"troubleshooting--10","t":"مشهد لا يُحفظ"},{"id":"troubleshooting--11","t":"الجلسة لا تتصل"},{"id":"troubleshooting--12","t":"شيء يبقى مضاءً عند الإظلام"},{"id":"troubleshooting--13","t":"أُغلق التطبيق، أو سقطت الوصلة"},{"id":"troubleshooting--14","t":"فشل الحفظ"},{"id":"troubleshooting--15","t":"التحقق من قيم DMX"}],"text":"14 حل المشكلات مرتّب بحسب ما تراه. انزل في القائمة. لا شيء يضيء ما تراه ما تفعله idle تأكد من تشغيل شبكة في Settings ← OUTPUT Blocked تحقق من إذن الشبكة المحلية في iOS. وإن كان البث المتعدّد لـ sACN محجوباً فانتقل إلى Unicast WAITING + IP هناك وحدة تحكم أخرى على الخط. أوقفها، أو Send anyway? ← Send No node تحقق من تغذية العقدة وشبكتها وعنوانها وإعدادات البروتوكول فيها B.O. المسه لرفع الإظلام GM 0 افتح GM واستعمل →100 🔌 n أعد تشغيل الكون في OUTPUT ← Universes ⏻ أو أيقونة وحدة بنفسجية أعد تشغيل خرج الوحدة BATTERY SAVE أخضر ارفعه إن كنت تحتاج إلى الخرج الكامل Upper limit منخفض تحقق من حدود الوحدة ⚠ في Patch أصلح العنوان المتداخل أو السلسلة التي تتجاوز 512 وضع غير مطابق اضبط وضع DMX نفسه الموجود في الوحدة لا يُعثر على أي عقدة إن أظهر Network قيمة no reply فتأكد أن الـ iPhone والعقدة على الشبكة نفسها. وإن لم يبلغها AUTO فاستعمل Unicast وأدخل عنوان العقدة. وشغّل RESCAN بعد تغيير أي شيء في الاتصال. تحقق من مفاتيح Art-Net وsACN في العقدة نفسها، ومن عنوانها وكونها. فمثلاً يخرج LumenRadio CRMX Stardust من المصنع و‏Art-Net وsACN مطفآن. وإن كنت تنضم إلى شبكة Wi-Fi الخاصة بـ Stardust أو Aputure Sidus Four فتحقق من النطاق الذي تدعمه المعدات. وعلى نقطة وصول خارجية كثيراً ما يبلغ عملاء 2.4 GHz و5 GHz بعضهم بعضاً؛ واختلاف النطاق لا يعني دائماً اختلاف الشبكة. في Stardust يعني الحرف الصغير على شاشة الخرج أنه لا تصل بيانات، ويعني الحرف الكبير أنها تصل. وراجع دليل المصنّع لما يخصّ كل طراز. والمعدات التي لا تردّ على الاستطلاع تُظهر 0 في Nodes answering حتى وهي تستقبل. يومض تأكد أن الوحدة نفسها لا تُغذّى من الشبكة ومن Bluetooth معاً، ولا من أكثر من وحدة تحكم أو مصدر DMX. انظر إلى تحذير CRMX في OUTPUT وإلى أي رسالة SHARED أو WAITING، واختصر الأمر إلى مسار واحد. وقد يسبّبه أيضاً تطبيق تحكم آخر، أو إعداد في الوحدة نفسها. يتقطّع أو يستجيب ببطء افتح Settings ← OUTPUT واقرأه من الأعلى . وإن توقّف عند أحد هذه فلا حاجة إلى النظر إلى ما دونه. Sending هل ترسل وحدة التحكم أصلاً ↓ Clock هل الأمر عالق داخل الهاتف ↓ Touch → wire هل الرحلة من الإصبع إلى الحزمة بطيئة ↓ الذهاب والإياب هل الشبكة أو المعدات بطيئة ↓ وحدة الإضاءة هل الضوء نفسه بطيء ما تراه إلى أين تنظر Sending يساوي nothing Destination والشبكة وأذونات iOS Clock فوق 100 ms الهاتف. أغلق اللوحات، وأعد تشغيل التطبيق إن لزم العقد تردّ لكن الوحدات تتحدّث مرة في الثانية تقريباً العنوان الذي يرسل إليه AUTO. وإن بلّغت العقدة عن نفسها خطأً فجرّب Broadcast Clock سليم لكن زمن الذهاب والإياب طويل ازدحام Wi-Fi ونقطة الوصول والمعدات والمسار الأرقام سليمة لكن الضوء متأخّر التنعيم في الوحدة، ومسار دخلها، وتطبيق آخر يقودها يفيد Broadcast حين تكون وجهة AUTO هي المشكلة. أما الأسباب الأخرى فلن يساعد فيها، وقد يزيد الحمل. بعض الـ fader لا تفعل شيئاً تحقق من حدود الوحدة ومن Lock فيها ومما إذا كان خرجها مشغّلاً. منحنى الـ fader في Kanau خطي؛ ومنحنى التعتيم داخل الوحدة قد يجعل النصف السفلي يبدو مسطّحاً. تحقق من الوحدة نفسها، أو من Dim curve تحت Channels. في وحدة مستوردة من GDTF غالباً ما تعني الشدة أو اللون الخاطئان أن الأدوار خاطئة. صحّحها في Channel roles. ولحمل التصحيح إلى الوحدات التي تسجّلها لاحقاً، حرّر التعريف تحت Custom fixtures. زر لا يفعل شيئاً ما تراه لماذا وما تفعله حجاب بنفسجي فوق الشاشة ‏SCREEN LOCK. اسحب المنزلق في الوسط إلى الجانب الآخر 🔒 خضراء ارفع Fixture Lock COLOR أو EFFECT رمادي حدّد وحدة. ويحتاج COLOR أيضاً إلى أن يكون للوحدة لون PIXELS رمادي لا توجد وحدة بكسل في الصفحة HISTORY غير فعّال لا يوجد ما تعود إليه أزرار الأرقام لا تغيّر الشدة وضع البيانو على LOCK. استعمل ＋ − Home تحت Channels غير فعّال هو أصلاً على القيمة الافتراضية Home لـ Pan أو Tilt لا يفعل شيئاً يحتاج إلى ضغط مطوّل لا إلى لمسة مشهد لا يتحدّث تحقق من Lock this scene ضيف لا يستطيع تحرير التسجيل افعل ذلك على المضيف اللون خاطئ ما تراه ما تتحقق منه لون غير الذي ضبطته هل يطابق وضع Patch وضع DMX في الوحدة نفسها لا توجد أدوات لون إطلاقاً هل للوحدة لون. ومع خلط الطرازات لا تظهر إلا البنود المشتركة (الفصل 05) درجة حرارة اللون تتوقّف قبل الغاية أنت عند حافة مدى الوحدة. ويظهر MIN أو MAX وحدة مستوردة منحرفة تحقق من Channel roles ‏(الفصل 06) الأبيض يميل إلى الأخضر أو الأرجواني قد لا يكون Green / Magenta على 0. ويعيده Back to neutral وحدة لا تتصرف كما ينبغي تحقق أولاً من أن وضع Patch يطابق وضع الوحدة نفسها. فحين يكون ذلك خاطئاً تصل الشدة على أنها لون ويصل اللون على أنه موضع. التعريف المستورد من GDTF قد تكون أدواره مسنَدة على نحو يخالف الوحدة الحقيقية. صحّحها في Channel roles ‏(الفصل 06). ولحمل ذلك إلى التسجيلات المقبلة، حرّر تعريف Custom fixtures. تحقق أمام الوحدة الحقيقية من كل ما هو مؤشّر بـ Imported data is not verified. . مشهد يتغيّر من تلقاء نفسه كل ما تفعله بعد استدعاء مشهد يُحفظ داخله (الفصل 08). شغّل Lock this scene تحت Settings الخاص بذلك المشهد للمشاهد التي تريد إبقاءها كما هي. ويظل بإمكانك استدعاؤها وتشغيل الإضاءة؛ ولا يُحفظ شيء. مشهد لا يُحفظ ما تتحقق منه Lock this scene لا يُحفظ شيء ما دام مشغّلاً أنت على ضيف إعادة الترتيب والحذف وإعادة التسمية للمضيف (الفصل 13) ما لا يُحفظ أبداً ‏GM وB.O. وBATTERY SAVE والحدود وFixture Lock وحالة ⏻ ومجموعات اللون التالية (الفصل 08) الجلسة لا تتصل إن لم تزُل Looking for فتحقق من هذه. الجهازان على الشبكة نفسها . ولا حاجة إلى إنترنت خانات الرقم الـ 4 صحيحة. ويتغيّر الرقم في كل مرة تستضيف فيها ليس هناك 2 جهازان متصلان أصلاً. ولا يمكن لثالث الانضمام عزلة العملاء أو الجدار الناري لا يمنعان المرور بين الأجهزة قد يمرّ DMX على شبكة يُمنع فيها المرور بين الأجهزة. شيء يبقى مضاءً عند الإظلام تحقق من Fixture Lock. و🔒 n الخضراء في الأعلى تعدّ الوحدات التي تبقى مضاءة. ارفع القفل عن تلك الوحدات. أُغلق التطبيق، أو سقطت الوصلة إعادة التشغيل تستعيد آخر عرض وحالة محفوظين. وقد لا تكون آخر التغييرات قبل الإغلاق موجودة. ما تفعله وحدات إضاءتك بعد توقّف التطبيق أو الوصلة يتوقّف على إعدادات الاحتفاظ بآخر قيمة في العقدة وفي الوحدة نفسها. تحقق من المعدات إن كنت تحتاج إلى أن تحتفظ بها. فشل الحفظ ‏Patch was not saved. تعني أن الحفظ فشل. تحقق من المساحة الخالية على الجهاز، وإن أمكن فاكتب الحالة الراهنة إلى الخارج بـ Export show file. وتأكد من اكتمال التصدير قبل المتابعة. وإزالة التحذير بـ × لا تعني أنه حُفظ. وإن تعذّرت قراءة ملف، فافتح عرضاً آخر من OTHER SHOWS، أو استورد بـ Import ملف .kanau صدّرته سابقاً. ويُحفظ الملف الذي تعذّرت قراءته. التحقق من قيم DMX يعرض Settings ← DMX MONITOR قنوات كل كون الـ"},{"id":"glossary","title":"المسرد","h":[],"text":"المسرد على الشاشة ما يعنيه Fixture وحدة إضاءة. الوحدة التي تسجّلها وتتحكم فيها Patch تسجيل طراز وحدة إضاءة ووضعها وعنوان DMX الخاص بها Universe / Address كون، وموضع القناة داخله Mode وضع DMX في الوحدة. يجب أن يطابق الوحدة نفسها Unit no. / Fixture number الرقم التلقائي داخل الطراز / الرقم الذي تعطيه أنت Offset / Gap التباعد بين الوحدات / قنوات حرة إضافية بينها Group / All طقم من الوحدات / كل الوحدات Pixel / Cell جزء من وحدة واحدة يُتحكم فيه على حدة Intensity السطوع CCT درجة حرارة اللون، بالكلفن G/M تصحيح الأخضر والأرجواني Crossfade التوازن بين جانب الأبيض وجانب اللون Emitter ‏LED أو مصدر ضوء آخر داخل الوحدة Channels / Raw channels العمل على قناة DMX واحدة في كل مرة Channel roles الوظيفة التي تُعامَل بها القناة GM / B.O. الماستر العام / الإظلام Lock / SCREEN LOCK تثبيت خرج وحدة / منع اللمسات العارضة FINE / FINE+ ‏1/10 و1/100 من الحساسية المعتادة PIANO استعمال أزرار الأرقام لتغيير الشدة أثناء الضغط Scene / Show حالة محفوظة / كل ما يخص عملاً واحداً SNAP / Fade فوري / على مدى زمن مضبوط HISTORY / HERE قائمة الحالات السابقة / موضعك فيها PAUSE / RESUME تجميد مؤثّر / المتابعة من هناك RELEASE / START إيقاف مؤثّر / تشغيله من البداية CLEAR إلغاء تحديد، أو إزالة مؤثّر. يتوقّف على موضع ظهوره SAVED إعدادات مؤثّرات مخزّنة Host / Join / Leave session أن تكون الجهاز المرسِل / الانضمام إلى جهاز / المغادرة PROVISIONAL وضع وحدة إضاءة مؤقت GDTF صيغة ملف لتعريفات وحدات الإضاءة"}];
+  var NONE = "لا نتائج";
+  var LEGACY = {"c-QUICK-START":"quick-start","c-01-Reading-the-screen":"screen","c-02-Sending-DMX":"output","c-03-Patching-fixtures":"patch","c-04-Setting-intensity":"intensity","c-05-Setting-colour":"color","c-06-Per-fixture-settings":"fixture-settings","c-07-Position-and-beam":"position","c-08-Storing-and-recalling-looks":"scenes","c-09-Effects":"effects","c-10-Locks-safety-and-stepping-back":"safety","c-11-Saving-and-sharing-shows":"shows","c-12-MIDI-controllers-Advanced":"midi","c-13-Working-from-two-devices":"session","c-14-Troubleshooting":"troubleshooting","c-Glossary":"glossary","c-QUICK-START--1-Change-the-intensity":"quick-start--1","c-QUICK-START--2-Change-the-colour":"quick-start--2","c-QUICK-START--3-Recall-a-scene":"quick-start--3","c-QUICK-START--See-the-values-going-out":"quick-start--4","c-QUICK-START--What-is-in-the-practice-rig":"quick-start--5","c-QUICK-START--Connecting-real-lights":"quick-start--6","c-QUICK-START--Five-things-worth-knowing-first":"quick-start--7","c-01-Reading-the-screen--Learn-these-seven-first":"screen--1","c-01-Reading-the-screen--The-five-tabs":"screen--2","c-01-Reading-the-screen--The-status-line":"screen--3","c-01-Reading-the-screen--The-parts-of-Home":"screen--4","c-01-Reading-the-screen--Colours-and-marks":"screen--5","c-02-Sending-DMX--First-connection":"output--1","c-02-Sending-DMX--One-Art-Net-node":"output--2","c-02-Sending-DMX--Settings-in-detail":"output--3","c-02-Sending-DMX--Protocol-and-networks":"output--4","c-02-Sending-DMX--Choosing-the-destination":"output--5","c-02-Sending-DMX--RESCAN":"output--6","c-02-Sending-DMX--iOS-permissions":"output--7","c-02-Sending-DMX--Universes-and-Art-Net-numbering":"output--8","c-02-Sending-DMX--CRMX-over-Bluetooth":"output--9","c-02-Sending-DMX--When-another-console-is-found":"output--10","c-02-Sending-DMX--DMX-Diagnostics-reading-what-is-happening":"output--11","c-02-Sending-DMX--DMX-MONITOR":"output--12","c-03-Patching-fixtures--Adding-fixtures":"patch--1","c-03-Patching-fixtures--Two-kinds-of-number":"patch--2","c-03-Patching-fixtures--Models-and-modes":"patch--3","c-03-Patching-fixtures--Changing-patched-fixtures":"patch--4","c-03-Patching-fixtures--Changing-many-at-once":"patch--5","c-03-Patching-fixtures--Re-patch-moving-into-free-space":"patch--6","c-03-Patching-fixtures--Building-groups":"patch--7","c-03-Patching-fixtures--Fixtures-not-in-the-library-Advanced":"patch--8","c-03-Patching-fixtures--From-GDTF-Share":"patch--9","c-03-Patching-fixtures--From-a-GDTF-file":"patch--10","c-03-Patching-fixtures--By-hand-from-a-DMX-chart":"patch--11","c-03-Patching-fixtures--By-copying-an-existing-one":"patch--12","c-04-Setting-intensity--Moving-a-fader":"intensity--1","c-04-Setting-intensity--FINE":"intensity--2","c-04-Setting-intensity--Moving-several-at-once":"intensity--3","c-04-Setting-intensity--The-number-buttons-as-a-piano":"intensity--4","c-04-Setting-intensity--output-only":"intensity--5","c-04-Setting-intensity--GM-and-B-O":"intensity--6","c-04-Setting-intensity--Choosing-what-is-on-the-page":"intensity--7","c-04-Setting-intensity--The-buttons-along-the-bottom":"intensity--8","c-04-Setting-intensity--Working-pixels-on-their-own":"intensity--9","c-05-Setting-colour--Opening-the-panel":"color--1","c-05-Setting-colour--Intensity-and-colour":"color--2","c-05-Setting-colour--Gels":"color--3","c-05-Setting-colour--Saving-colours-you-use-often":"color--4","c-05-Setting-colour--ADVANCED-COLOR":"color--5","c-05-Setting-colour--Several-fixtures-and-several-models":"color--6","c-05-Setting-colour--Pixels-and-repeated-colour-groups":"color--7","c-06-Per-fixture-settings--Name-and-display":"fixture-settings--1","c-06-Per-fixture-settings--Limits":"fixture-settings--2","c-06-Per-fixture-settings--Lock":"fixture-settings--3","c-06-Per-fixture-settings--The-other-settings":"fixture-settings--4","c-06-Per-fixture-settings--Channels-the-raw-DMX-Advanced":"fixture-settings--5","c-06-Per-fixture-settings--Changing-the-patch-or-the-mode":"fixture-settings--6","c-07-Position-and-beam--Pan-and-Tilt":"position--1","c-07-Position-and-beam--Zoom-iris-frost-focus-and-gobo":"position--2","c-08-Storing-and-recalling-looks--Storing-a-scene":"scenes--1","c-08-Storing-and-recalling-looks--Recalling-and-tidying":"scenes--2","c-08-Storing-and-recalling-looks--What-you-change-after-a-recall-is-saved":"scenes--3","c-08-Storing-and-recalling-looks--What-is-stored-and-what-is-not":"scenes--4","c-08-Storing-and-recalling-looks--Fade":"scenes--5","c-09-Effects--Applying-one":"effects--1","c-09-Effects--Pause-release-restart":"effects--2","c-09-Effects--ADJUST":"effects--3","c-09-Effects--ARRANGE":"effects--4","c-09-Effects--Changing-the-target-and-saving-settings":"effects--5","c-09-Effects--Finding-one-by-what-you-want":"effects--6","c-09-Effects--The-full-list":"effects--7","c-09-Effects--SIGNAL-traffic-lights":"effects--8","c-09-Effects--Layering-LIGHT-MOVE-and-BEAM":"effects--9","c-09-Effects--Managing-them-from-the-Effects-tab":"effects--10","c-10-Locks-safety-and-stepping-back--There-are-three-kinds-of-lock":"safety--1","c-10-Locks-safety-and-stepping-back--SCREEN-LOCK":"safety--2","c-10-Locks-safety-and-stepping-back--Fixture-Lock":"safety--3","c-10-Locks-safety-and-stepping-back--BATTERY-SAVE":"safety--4","c-10-Locks-safety-and-stepping-back--HISTORY":"safety--5","c-10-Locks-safety-and-stepping-back--ZEN":"safety--6","c-11-Saving-and-sharing-shows--When-it-saves":"shows--1","c-11-Saving-and-sharing-shows--Settings-SHOWS":"shows--2","c-11-Saving-and-sharing-shows--Opening-and-recovery":"shows--3","c-11-Saving-and-sharing-shows--What-is-not-in-the-show":"shows--4","c-11-Saving-and-sharing-shows--Settings-SETTINGS":"shows--5","c-12-MIDI-controllers-Advanced--Connecting-and-mapping":"midi--1","c-12-MIDI-controllers-Advanced--The-two-modes":"midi--2","c-12-MIDI-controllers-Advanced--When-a-knob-does-nothing-at-first":"midi--3","c-12-MIDI-controllers-Advanced--Buttons-and-the-mapping-file":"midi--4","c-13-Working-from-two-devices--Who-holds-what":"session--1","c-13-Working-from-two-devices--Starting-a-session":"session--2","c-13-Working-from-two-devices--What-a-guest-can-do":"session--3","c-13-Working-from-two-devices--Effects-and-the-guest":"session--4","c-13-Working-from-two-devices--Working-at-the-same-time-and-losing-the-link":"session--5","c-14-Troubleshooting--Nothing-lights-up":"troubleshooting--1","c-14-Troubleshooting--No-node-is-found":"troubleshooting--2","c-14-Troubleshooting--It-flickers":"troubleshooting--3","c-14-Troubleshooting--It-stutters-or-reacts-slowly":"troubleshooting--4","c-14-Troubleshooting--Some-faders-do-nothing":"troubleshooting--5","c-14-Troubleshooting--A-button-does-nothing":"troubleshooting--6","c-14-Troubleshooting--The-colour-is-wrong":"troubleshooting--7","c-14-Troubleshooting--A-fixture-does-not-behave":"troubleshooting--8","c-14-Troubleshooting--A-scene-keeps-changing-on-its-own":"troubleshooting--9","c-14-Troubleshooting--A-scene-will-not-save":"troubleshooting--10","c-14-Troubleshooting--The-session-will-not-connect":"troubleshooting--11","c-14-Troubleshooting--Something-stays-lit-on-blackout":"troubleshooting--12","c-14-Troubleshooting--The-app-quit-or-the-link-dropped":"troubleshooting--13","c-14-Troubleshooting--A-save-failed":"troubleshooting--14","c-14-Troubleshooting--Checking-the-DMX-values":"troubleshooting--15","c-01-画面の見方":"screen","c-02-DMX-を送信する":"output","c-03-灯体を登録する":"patch","c-04-明るさを操作する":"intensity","c-05-色を調整する":"color","c-06-灯体ごとの設定":"fixture-settings","c-07-向き-ビームを調整する":"position","c-08-明かりを保存-呼び出しする":"scenes","c-09-エフェクトを使う":"effects","c-10-誤操作を防ぐ-操作を戻す":"safety","c-11-ショーを保存-共有する":"shows","c-12-MIDI-コントローラーを使う-Advanced":"midi","c-13-2-台の端末で操作する":"session","c-14-困ったとき":"troubleshooting","c-用語集":"glossary","c-QUICK-START--1-明るさを変える":"quick-start--1","c-QUICK-START--2-色を変える":"quick-start--2","c-QUICK-START--3-シーンを呼ぶ":"quick-start--3","c-QUICK-START--送っている値を見る":"quick-start--4","c-QUICK-START--実際の灯体につなぐ":"quick-start--5","c-QUICK-START--練習用のデモに入っているもの":"quick-start--6","c-QUICK-START--現場で最初に知っておきたいこと":"quick-start--7","c-01-画面の見方--まず覚える場所":"screen--1","c-01-画面の見方--5-つのタブ":"screen--2","c-01-画面の見方--画面上部のステータス表示":"screen--3","c-01-画面の見方--Home-の各部":"screen--4","c-01-画面の見方--色とアイコンの意味":"screen--5","c-02-DMX-を送信する--最初の接続":"output--1","c-02-DMX-を送信する--Art-Net-ノード-1-台につなぐ":"output--2","c-02-DMX-を送信する--詳細設定":"output--3","c-02-DMX-を送信する--送信方式とネットワーク":"output--4","c-02-DMX-を送信する--宛先を選ぶ":"output--5","c-02-DMX-を送信する--RESCAN-でノードを再検索する":"output--6","c-02-DMX-を送信する--iOS-の許可を確認する":"output--7","c-02-DMX-を送信する--ユニバースと-Art-Net-の番号":"output--8","c-02-DMX-を送信する--Bluetooth-経由の-CRMX":"output--9","c-02-DMX-を送信する--別の卓を検出した場合":"output--10","c-02-DMX-を送信する--DMX-Diagnostics-届いているかを読む":"output--11","c-02-DMX-を送信する--DMX-MONITOR":"output--12","c-03-灯体を登録する--灯体を追加する":"patch--1","c-03-灯体を登録する--2-種類の灯体番号":"patch--2","c-03-灯体を登録する--機種とモードについて":"patch--3","c-03-灯体を登録する--登録済み灯体を変更する":"patch--4","c-03-灯体を登録する--複数台をまとめて変更する":"patch--5","c-03-灯体を登録する--Re-patch-で空きアドレスへ移動する":"patch--6","c-03-灯体を登録する--グループを作成する":"patch--7","c-03-灯体を登録する--ライブラリにない灯体を追加する-Advanced":"patch--8","c-03-灯体を登録する--GDTF-Share-から取得する":"patch--9","c-03-灯体を登録する--手元の-GDTF-ファイルを読み込む":"patch--10","c-03-灯体を登録する--DMX-チャートから手動で作成する":"patch--11","c-03-灯体を登録する--既存定義を複製して編集する":"patch--12","c-04-明るさを操作する--フェーダーを動かす":"intensity--1","c-04-明るさを操作する--FINE-で細かく調整する":"intensity--2","c-04-明るさを操作する--複数のフェーダーをまとめて動かす":"intensity--3","c-04-明るさを操作する--番号ボタンをピアノのように使う":"intensity--4","c-04-明るさを操作する--で出力だけを切り替える":"intensity--5","c-04-明るさを操作する--GM-と-B-O-を操作する":"intensity--6","c-04-明るさを操作する--表示する灯体を切り替える":"intensity--7","c-04-明るさを操作する--画面の一番下のボタン":"intensity--8","c-04-明るさを操作する--ピクセルを個別に操作する":"intensity--9","c-05-色を調整する--色の操作パネルを開く":"color--1","c-05-色を調整する--明るさと色の項目":"color--2","c-05-色を調整する--ジェルを選ぶ":"color--3","c-05-色を調整する--よく使う色を保存する":"color--4","c-05-色を調整する--ADVANCED-COLOR":"color--5","c-05-色を調整する--複数台-複数機種を操作する場合":"color--6","c-05-色を調整する--ピクセルと複数の色グループ":"color--7","c-06-灯体ごとの設定--名前と表示":"fixture-settings--1","c-06-灯体ごとの設定--上限-下限":"fixture-settings--2","c-06-灯体ごとの設定--Lock":"fixture-settings--3","c-06-灯体ごとの設定--その他の設定":"fixture-settings--4","c-06-灯体ごとの設定--Channels-で各チャンネルを操作する-Advanced":"fixture-settings--5","c-06-灯体ごとの設定--パッチ-モードを変更する":"fixture-settings--6","c-07-向き-ビームを調整する--Pan-Tilt":"position--1","c-07-向き-ビームを調整する--Zoom-Iris-Frost-Focus-Gobo":"position--2","c-08-明かりを保存-呼び出しする--シーンを保存する":"scenes--1","c-08-明かりを保存-呼び出しする--シーンを呼び出す-整理する":"scenes--2","c-08-明かりを保存-呼び出しする--呼び出し後の変更は自動保存される":"scenes--3","c-08-明かりを保存-呼び出しする--保存されるもの-されないもの":"scenes--4","c-08-明かりを保存-呼び出しする--フェード時間":"scenes--5","c-09-エフェクトを使う--エフェクトを適用する":"effects--1","c-09-エフェクトを使う--一時停止-解除-再開の違い":"effects--2","c-09-エフェクトを使う--ADJUST-で調整する":"effects--3","c-09-エフェクトを使う--ARRANGE-で並び方を設定する":"effects--4","c-09-エフェクトを使う--対象を変更-設定を保存する":"effects--5","c-09-エフェクトを使う--目的から探す":"effects--6","c-09-エフェクトを使う--エフェクト一覧":"effects--7","c-09-エフェクトを使う--SIGNAL-信号機":"effects--8","c-09-エフェクトを使う--LIGHT-MOVE-BEAM-を重ねる":"effects--9","c-09-エフェクトを使う--Effects-タブでまとめて管理する":"effects--10","c-10-誤操作を防ぐ-操作を戻す--SCREEN-LOCK":"safety--1","c-10-誤操作を防ぐ-操作を戻す--Lock-は-3-種類あります":"safety--2","c-10-誤操作を防ぐ-操作を戻す--灯体の-Lock":"safety--3","c-10-誤操作を防ぐ-操作を戻す--BATTERY-SAVE":"safety--4","c-10-誤操作を防ぐ-操作を戻す--HISTORY":"safety--5","c-10-誤操作を防ぐ-操作を戻す--ZEN":"safety--6","c-11-ショーを保存-共有する--保存のタイミング":"shows--1","c-11-ショーを保存-共有する--Settings-SHOWS":"shows--2","c-11-ショーを保存-共有する--起動-読み込み時の動作":"shows--3","c-11-ショーを保存-共有する--ショーに含まれないもの":"shows--4","c-11-ショーを保存-共有する--Settings-SETTINGS":"shows--5","c-12-MIDI-コントローラーを使う-Advanced--接続して割り当てる":"midi--1","c-12-MIDI-コントローラーを使う-Advanced--割り当てモード":"midi--2","c-12-MIDI-コントローラーを使う-Advanced--ノブがすぐに反応しない場合":"midi--3","c-12-MIDI-コントローラーを使う-Advanced--ボタンと設定ファイル":"midi--4","c-13-2-台の端末で操作する--どちらが何を持つか":"session--1","c-13-2-台の端末で操作する--セッションを開始する":"session--2","c-13-2-台の端末で操作する--参加端末でできること":"session--3","c-13-2-台の端末で操作する--参加端末とエフェクト":"session--4","c-13-2-台の端末で操作する--同時操作と接続切れ":"session--5","c-14-困ったとき--灯体が点灯しない":"troubleshooting--1","c-14-困ったとき--ノードが見つからない":"troubleshooting--2","c-14-困ったとき--ちらつく":"troubleshooting--3","c-14-困ったとき--動きがカクつく-反応が遅い":"troubleshooting--4","c-14-困ったとき--フェーダーの一部が効かない":"troubleshooting--5","c-14-困ったとき--ボタンが反応しない":"troubleshooting--6","c-14-困ったとき--色がおかしい":"troubleshooting--7","c-14-困ったとき--灯体が思ったとおりに動かない":"troubleshooting--8","c-14-困ったとき--シーンが勝手に変わる":"troubleshooting--9","c-14-困ったとき--シーンが保存されない":"troubleshooting--10","c-14-困ったとき--セッションがつながらない":"troubleshooting--11","c-14-困ったとき--B-O-でも消えない":"troubleshooting--12","c-14-困ったとき--アプリが終了した-接続が切れた":"troubleshooting--13","c-14-困ったとき--保存に失敗した":"troubleshooting--14","c-14-困ったとき--DMX-値を確認したい":"troubleshooting--15"};
+  var MATCH = {"en":"en","en-US":"en","ja":"ja","de":"de","de-DE":"de","fr":"fr","fr-FR":"fr","ko":"ko","zh-Hans":"zh-Hans","zh":"zh-Hans","zh-Hant":"zh-Hant","es":"es","es-ES":"es","pt-BR":"pt-BR","pt":"pt-BR","it":"it","nl":"nl","nl-NL":"nl","pl":"pl","cs":"cs","sv":"sv","da":"da","no":"no","fi":"fi","tr":"tr","id":"id","th":"th","ar":"ar","ar-SA":"ar","hi":"hi","vi":"vi","zh-CN":"zh-Hans","zh-TW":"zh-Hant"};
+  var HREF = {"en":"manual.html","ja":"manual-ja.html","de":"manual-de.html","fr":"manual-fr.html","ko":"manual-ko.html","zh-Hans":"manual-zh-Hans.html","zh-Hant":"manual-zh-Hant.html","es":"manual-es.html","pt-BR":"manual-pt-BR.html","it":"manual-it.html","nl":"manual-nl.html","pl":"manual-pl.html","cs":"manual-cs.html","sv":"manual-sv.html","da":"manual-da.html","no":"manual-no.html","fi":"manual-fi.html","tr":"manual-tr.html","id":"manual-id.html","th":"manual-th.html","ar":"manual-ar.html","hi":"manual-hi.html","vi":"manual-vi.html"};
+  var HERE = "ar";
+
+  var q = document.getElementById('q'), box = document.getElementById('results');
+  function esc(s){return s.replace(/[&<>]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c];});}
+  function run(){
+    var v = q.value.trim();
+    if (v.length < 1){ box.hidden = true; box.innerHTML=''; return; }
+    var needle = v.toLowerCase(), hits = [];
+    IDX.forEach(function(ch){
+      if (ch.title.toLowerCase().indexOf(needle) >= 0)
+        hits.push({id: ch.id, label: ch.title, sub: ''});
+      ch.h.forEach(function(h){
+        if (h.t.toLowerCase().indexOf(needle) >= 0)
+          hits.push({id: h.id, label: h.t, sub: ch.title});
+      });
+      var p = ch.text.toLowerCase().indexOf(needle);
+      if (p >= 0 && hits.filter(function(x){return x.sub===ch.title||x.id===ch.id;}).length===0)
+        hits.push({id: ch.id, label: '\u2026' + ch.text.substr(Math.max(0,p-18), 56).trim() + '\u2026', sub: ch.title});
+    });
+    if (!hits.length){ box.innerHTML = '<p class="none">'+esc(NONE)+'</p>'; box.hidden = false; return; }
+    box.innerHTML = hits.slice(0,25).map(function(h){
+      return '<a href="#'+h.id+'">'+esc(h.label)+(h.sub?'<span>'+esc(h.sub)+'</span>':'')+'</a>';
+    }).join('');
+    box.hidden = false;
+  }
+  var t; q.addEventListener('input', function(){ clearTimeout(t); t = setTimeout(run, 90); });
+  q.addEventListener('keydown', function(e){ if (e.key === 'Escape'){ q.value=''; run(); q.blur(); } });
+  box.addEventListener('click', function(e){ if (e.target.closest('a')){ box.hidden = true; } });
+  document.addEventListener('keydown', function(e){
+    if (e.key === '/' && document.activeElement !== q){ e.preventDefault(); q.focus(); }
+  });
+  var jump = document.getElementById('qjump');
+  if (jump) jump.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'}); setTimeout(function(){ q.focus(); }, 350);
+  });
+
+  function jumpLegacy(){
+    var h = decodeURIComponent(location.hash.replace(/^#/, ''));
+    if (!h || document.getElementById(h)) return;
+    var to = LEGACY[h];
+    if (!to) return;
+    var el = document.getElementById(to);
+    if (el){ history.replaceState(null, '', '#' + to); el.scrollIntoView(); }
+  }
+  window.addEventListener('hashchange', jumpLegacy);
+  jumpLegacy();
+
+  var sels = document.querySelectorAll('.lang select');
+  Array.prototype.forEach.call(sels, function(sel){
+    sel.addEventListener('change', function(){
+      var opt = sel.options[sel.selectedIndex];
+      try { localStorage.setItem('kanau.manual.locale', opt.dataset.locale); } catch (e) {}
+      location.href = opt.value + location.hash;
+    });
+  });
+  // 初回だけブラウザの言語を見ます。明示の選択があればそちらを優先し、
+  // 強制の転送は繰り返しません。
+  try {
+    if (!localStorage.getItem('kanau.manual.locale') && !location.hash) {
+      var want = (navigator.languages || [navigator.language || '']).map(String);
+      for (var i = 0; i < want.length; i++) {
+        var hit = MATCH[want[i]] || MATCH[want[i].split('-')[0]];
+        if (hit && hit !== HERE) {
+          localStorage.setItem('kanau.manual.locale', hit);
+          location.replace(HREF[hit]);
+          break;
+        }
+        if (hit === HERE) break;
+      }
+    }
+  } catch (e) {}
+
+})();
+</script>
+</body>
+</html>
