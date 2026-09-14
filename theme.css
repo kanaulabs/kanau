@@ -363,6 +363,18 @@ p.lead { color: var(--subtext); font-size: 1.02rem; margin: 0.5rem 0 1.5rem; }
 .next ul { list-style: none; padding: 0; margin: 0; }
 .next li { margin: 0.25rem 0; font-size: 0.93rem; }
 
+/* **章の相互参照**(2026-09-14)。本文の中では折り返さない ——
+   「05 章」が行またぎで切れると、指で狙う的が 2 つに割れます。 */
+a.xref { white-space: nowrap; }
+
+/* 「次に読む」は行ぜんぶが押せます(的は約 44px。iOS の目安)。**字は本文の色のまま**にして、
+   行き先(章)だけを琥珀にします —— 行を丸ごと琥珀にすると、
+   箱の中が全部リンクの色になって、どこを読めばいいのか分からなくなる。 */
+.next li a.nextline { display: block; color: var(--text);
+                      padding: 0.55rem 0; text-decoration: none; }
+.next li a.nextline .xref { color: var(--amber); white-space: nowrap; }
+.next li a.nextline:hover .xref { text-decoration: underline; }
+
 /* ---- NOTE / IMPORTANT / WARNING ---- */
 
 .box { margin: 1.25rem 0; padding: 0.85rem 1.1rem;
