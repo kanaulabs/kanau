@@ -162,6 +162,11 @@ code {
   border: 1px solid var(--divider);
   white-space: nowrap;
 }
+/* 画面の**文**を丸ごと引いたものは折り返します。札(`FINE` / `＋ new patch`)は
+   上の nowrap のまま —— 割れると画面で探せなくなるからです。印は生成側が付けます
+   (2026-09-21。`U1: network and Bluetooth output are both on.` が 45 字あり、
+   375px の画面でページごと 43px 横にはみ出していました)。 */
+code.q { white-space: normal; overflow-wrap: break-word; }
 
 pre {
   background: var(--slot);
