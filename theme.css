@@ -332,7 +332,20 @@ figure.shot ul.pins b {
     padding: 0.3rem 0.6rem; border-radius: 999px;
     background: var(--surface2); border: 1px solid var(--divider);
     color: var(--subtext); font-size: 0.85rem; font-family: inherit; cursor: pointer; }
-  .stickybar .toc { font-size: 1.05rem; line-height: 1; padding: 0.35rem 0.6rem; }
+  /* **ホームは帯の主役**(2026-09-21、三浦さん「ここを、大きくしてホームにしたい」)。
+     前は矢印 1 文字だったので、何に戻るのかが読めませんでした。
+     アイコンと語を並べ、ほかの札より一回り大きく、琥珀の縁で立たせます。 */
+  .stickybar .home { display: inline-flex; align-items: center; gap: 0.35rem;
+                     padding: 0.35rem 0.65rem; font-size: 0.92rem;
+                     color: var(--text); border-color: var(--amber);
+                     flex: none; text-decoration: none; }
+  .stickybar .home img { width: 19px; height: 19px; border-radius: 5px; flex: none; }
+  /* ホームが太ったぶん、右の 3 つを締めます —— **横スクロールも省略も出さない** */
+  .stickybar button, .stickybar .trouble { padding: 0.3rem 0.5rem; }
+  .stickybar .lang select { max-width: 5.6rem; }
+  /* 狭いときに語が溢れるくらいなら、語を畳んでアイコンだけにします
+     (Ana sayfa / หน้าแรก のような長い語でも横スクロールさせない) */
+  @media (max-width: 360px) { .stickybar .home span { display: none; } }
   /* 困ったときと言語を右端に寄せ、2 つを並べます。
      **どんな幅でも横スクロールさせません** —— 言語が増えると選択肢の
      いちばん長い名前で幅が決まるので、狭いときは困ったときの側が縮みます。 */
@@ -400,6 +413,20 @@ a.xref { white-space: nowrap; }
   color: var(--subtext); font-size: 0.82rem; white-space: nowrap;
 }
 .brand .lang:hover { border-color: var(--amber); color: var(--text); text-decoration: none; }
+
+/* ---- 頭の Instagram(2026-09-21、三浦さん「頭にインスタのアカウントへのリンクを置きたい」) ----
+   言語の切り替えの左に並べます。狭い画面では名乗りの行が 2 段に折れるので、
+   **語は畳まず**そのまま置きます(リンク先が読めないと押す気にならないため)。 */
+.social { margin: 0.1rem 0 0.9rem; }
+.social .ig {
+  display: inline-flex; align-items: center; gap: 0.35rem;
+  padding: 0.25rem 0.7rem; border-radius: 999px;
+  background: var(--surface2); border: 1px solid var(--divider);
+  color: var(--subtext); font-size: 0.85rem; white-space: nowrap;
+  text-decoration: none;
+}
+.social .ig:hover { border-color: var(--amber); color: var(--text); }
+.social .ig svg { flex: none; }
 
 
 /* ---- RTL の土台（2026-09-13、Arabic を正式対応にするため） ----
