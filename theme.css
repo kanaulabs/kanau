@@ -49,7 +49,7 @@ body {
 
 /* ---- 見出し ---- */
 
-/* **見出しは大きさで段を作る**(2026-09-21、三浦さん「デザインをきれいに」)。
+/* **見出しは大きさで段を作る**(2026-09-21、依頼「デザインをきれいに」)。
    前は h1 24.8px / h2 17.6px / h3 16px / 本文 16px —— **小節が本文と同じ大きさ**で、
    節も本文より 10% 大きいだけだった。色(琥珀)と太字だけで見出しを名乗っていたので、
    ひと目で階層が読めない。1.25 倍の段にそろえる: 27 / 21 / 18 / 16。 */
@@ -363,7 +363,7 @@ figure.shot ul.pins b {
     padding: 0.3rem 0.6rem; border-radius: 999px;
     background: var(--surface2); border: 1px solid var(--divider);
     color: var(--subtext); font-size: 0.85rem; font-family: inherit; cursor: pointer; }
-  /* **ホームは帯の主役**(2026-09-21、三浦さん「ここを、大きくしてホームにしたい」)。
+  /* **ホームは帯の主役**(2026-09-21、依頼「ここを、大きくしてホームにしたい」)。
      前は矢印 1 文字だったので、何に戻るのかが読めませんでした。
      アイコンと語を並べ、ほかの札より一回り大きく、琥珀の縁で立たせます。 */
   .stickybar .home { display: inline-flex; align-items: center; gap: 0.35rem;
@@ -445,7 +445,7 @@ a.xref { white-space: nowrap; }
 }
 .brand .lang:hover { border-color: var(--amber); color: var(--text); text-decoration: none; }
 
-/* ---- 頭の Instagram(2026-09-21、三浦さん「頭にインスタのアカウントへのリンクを置きたい」) ----
+/* ---- 頭の Instagram(2026-09-21、依頼「頭にインスタのアカウントへのリンクを置きたい」) ----
    言語の切り替えの左に並べます。狭い画面では名乗りの行が 2 段に折れるので、
    **語は畳まず**そのまま置きます(リンク先が読めないと押す気にならないため)。 */
 .social { margin: 0.1rem 0 0.9rem; }
