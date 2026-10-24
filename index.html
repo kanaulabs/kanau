@@ -49,9 +49,14 @@
   .s2 { left: 50%; transform: translateX(4%); top: 50px; }
 
   .lines { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; padding: 96px 0 0; text-align: center; }
-  .lines h3 { margin: 0 0 10px; font-weight: 500; font-size: 21px; letter-spacing: -.01em; }
+  .lines h3 { margin: 0 0 10px; font-weight: 500; font-size: 19px; letter-spacing: -.015em; text-wrap: balance; }
   .lines p { margin: 0 auto; color: var(--mute); line-height: 1.7; font-size: 15px; max-width: 17em; text-wrap: balance; }
 
+  .made { text-align: center; padding: 120px 0 0; }
+  .made small { display: block; color: var(--mute); font-size: 13px; letter-spacing: .08em; margin-bottom: 16px; }
+  .made h2 { margin: 0 auto 18px; font-weight: 300; font-size: 36px; line-height: 1.2; letter-spacing: -.025em; max-width: 18em; }
+  .made p { margin: 0 auto; color: #55555c; font-size: 16px; line-height: 1.75; max-width: 34em; }
+  @media (max-width: 760px) { .made { padding-top: 90px; } .made h2 { font-size: 28px; } }
   .name { text-align: center; padding: 120px 0 110px; }
   .name small { display: block; color: var(--mute); font-size: 13px; letter-spacing: .08em; margin-bottom: 16px; }
   .name p { margin: 0 auto; font-weight: 300; font-size: 30px; line-height: 1.4; letter-spacing: -.015em; max-width: 22em; }
@@ -121,9 +126,9 @@
   </section>
 
   <section class="lines">
-    <div><h3>Ready in moments</h3><p>Choose your fixtures, and the desk is set.</p></div>
-    <div><h3>Eyes on the stage</h3><p>Faders made to work without looking down.</p></div>
-    <div><h3>Shared with ease</h3><p>Another iPhone or iPad joins in one scan.</p></div>
+    <div><h3>Your light. At your fingertips.</h3><p>Adjust brightness and color from your iPhone or iPad, with the light right in front of you.</p></div>
+    <div><h3>Give your light a new expression.</h3><p>From pixel gradients to effects that move, one palette becomes a look.</p></div>
+    <div><h3>One setup. More hands.</h3><p>Another iPhone or iPad joins with one scan, and works the same lights once the host allows it.</p></div>
   </section>
 
   <section class="pricing" id="pricing">
@@ -151,6 +156,12 @@
       </div>
     </div>
     <p class="fine">Prices in US dollars; local prices are set by the App Store in your country. The free month is for first-time subscribers who qualify, once only.<br>Subscriptions renew automatically at the plan you chose until cancelled in your App Store account settings.</p>
+  </section>
+
+  <section class="made">
+    <small>MADE ON SET</small>
+    <h2>A tool from the set, for the set.</h2>
+    <p>Made by Frank, for himself and the crews he works with. BATTERY SAVE for the waits between takes, Strap Lock for a phone that hangs at your side, TILT to bring a light up by tipping the phone, and LAMP MODE to turn an iPhone or iPad into a light.</p>
   </section>
 
   <section class="name">
