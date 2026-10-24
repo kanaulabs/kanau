@@ -98,3 +98,19 @@
   [dir="rtl"] .plan .tag { right: auto; left: 28px; }
   [dir="rtl"] .shot, [dir="rtl"] .stage { direction: ltr; }
   :lang(th) .lines p, :lang(hi) .lines p, :lang(th) .made p, :lang(hi) .made p { line-height: 1.9; }
+
+  /* ---- 組版(2026-10-24「文字の段落の改行など、デザインには、とことんこだわって」) ----
+     見出しは行の長さを揃え、段落は最後の行に 1 語だけ落とさない。
+     日本語・中国語は禁則を厳しく、日本語は語の切れ目で折る。韓国語は語の中で折らない。 */
+  p, li, .per { text-wrap: pretty; }
+  /* 中央に寄せた文は、行の長さを揃える方がきれいに見える(最後の行に 1 語だけ、を避けるより強い) */
+  h1, h2, h3, .lead, .sub, .name p, .made h2, .made p, .lines p, .fine, .soft span { text-wrap: balance; }
+  :lang(ja), :lang(zh-Hans), :lang(zh-Hant) { line-break: strict; }
+  :lang(ja) h1, :lang(ja) h2, :lang(ja) h3, :lang(ja) .lead, :lang(ja) .name p, :lang(ja) b { font-feature-settings: "palt"; letter-spacing: .03em; }
+  :lang(ja) p, :lang(ja) h1, :lang(ja) h2, :lang(ja) h3, :lang(ja) li, :lang(ja) span { word-break: auto-phrase; }
+  :lang(ko) { word-break: keep-all; overflow-wrap: break-word; }
+  /* 箱の中の小さな文は行内のままだと折り返しの指定が効かないので、塊にする */
+  .soft span { display: block; }
+  /* 揃える指定はブラウザが 6 行までしか効かせない。スマホで長くなる段落は「最後に 1 語だけ」を避ける方へ */
+  @media (max-width: 760px) { .made p, .fine { text-wrap: pretty; } }
+  .ln { display: block; text-wrap: balance; }

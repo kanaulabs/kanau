@@ -42,48 +42,41 @@
 <link rel="apple-touch-icon" href="img/icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap">
-<link rel="stylesheet" href="theme.css?v=20261024c">
+<link rel="stylesheet" href="theme.css?v=20261024j">
 </head>
 <body>
 
 <div class="hero">
+  <div class="pagelang"><label class="langsel"><span class="vh">語言</span><select onchange="location.href=this.value"><option value="support.html" lang="en">English</option><option value="support-ja.html" lang="ja">日本語</option><option value="support-de.html" lang="de">Deutsch</option><option value="support-fr.html" lang="fr">Français</option><option value="support-ko.html" lang="ko">한국어</option><option value="support-zh-Hans.html" lang="zh-Hans">简体中文</option><option value="support-zh-Hant.html" lang="zh-Hant" selected>繁體中文</option><option value="support-es.html" lang="es">Español</option><option value="support-pt-BR.html" lang="pt-BR">Português (Brasil)</option><option value="support-it.html" lang="it">Italiano</option><option value="support-nl.html" lang="nl">Nederlands</option><option value="support-pl.html" lang="pl">Polski</option><option value="support-cs.html" lang="cs">Čeština</option><option value="support-sv.html" lang="sv">Svenska</option><option value="support-da.html" lang="da">Dansk</option><option value="support-no.html" lang="no">Norsk</option><option value="support-fi.html" lang="fi">Suomi</option><option value="support-tr.html" lang="tr">Türkçe</option><option value="support-id.html" lang="id">Bahasa Indonesia</option><option value="support-th.html" lang="th">ไทย</option><option value="support-ar.html" lang="ar">العربية</option><option value="support-hi.html" lang="hi">हिन्दी</option><option value="support-vi.html" lang="vi">Tiếng Việt</option></select></label></div>
   <div class="brand"><img src="img/icon.png" alt="" width="180" height="180">
-    <div><h1>支援</h1><p class="kicker">Kanau</p></div>
-    <div class="pagelang"><label class="langsel"><span class="vh">語言</span><select onchange="location.href=this.value"><option value="support.html" lang="en">English</option><option value="support-ja.html" lang="ja">日本語</option><option value="support-de.html" lang="de">Deutsch</option><option value="support-fr.html" lang="fr">Français</option><option value="support-ko.html" lang="ko">한국어</option><option value="support-zh-Hans.html" lang="zh-Hans">简体中文</option><option value="support-zh-Hant.html" lang="zh-Hant" selected>繁體中文</option><option value="support-es.html" lang="es">Español</option><option value="support-pt-BR.html" lang="pt-BR">Português (Brasil)</option><option value="support-it.html" lang="it">Italiano</option><option value="support-nl.html" lang="nl">Nederlands</option><option value="support-pl.html" lang="pl">Polski</option><option value="support-cs.html" lang="cs">Čeština</option><option value="support-sv.html" lang="sv">Svenska</option><option value="support-da.html" lang="da">Dansk</option><option value="support-no.html" lang="no">Norsk</option><option value="support-fi.html" lang="fi">Suomi</option><option value="support-tr.html" lang="tr">Türkçe</option><option value="support-id.html" lang="id">Bahasa Indonesia</option><option value="support-th.html" lang="th">ไทย</option><option value="support-ar.html" lang="ar">العربية</option><option value="support-hi.html" lang="hi">हिन्दी</option><option value="support-vi.html" lang="vi">Tiếng Việt</option></select></label></div></div>
+    <div><h1>支援</h1><p class="kicker">Kanau</p></div></div>
   
 </div>
 
 <h2>聯絡方式</h2>
 <p><a href="mailto:info@kanaulabs.app">info@kanaulabs.app</a></p>
 <p><strong>用什麼語言寫都可以。</strong></p>
-<p>回報問題時，請附上<strong>所用燈具的型號和模式</strong>、
-<strong>輸出方式</strong>(Art-Net / sACN / CRMX)，以及
-<strong>App 版本</strong>(顯示在 Settings 的最下方)。</p>
+<p>回報問題時，請附上<strong>所用燈具的型號和模式</strong>、<strong>輸出方式</strong>(Art-Net / sACN / CRMX)，以及
+<strong>App 版本</strong>(顯示在 Setting<span class="nw">s 的最下方)。</span></p>
 
 <h2>使用需求</h2>
 <ul>
-  <li>iOS 17 或更新版本。iPhone 為直式，iPad 為橫式。</li>
+  <li>iOS 17 或更新版本。iPhone 為直式，i<span class="nw">Pad 為橫式。</span></li>
   <li><strong>透過網路(Art-Net / sACN)</strong> —— iPhone 和
       燈光節點必須在同一個網路上。第一次使用時，App 會請求 Local Network
-      權限。</li>
+ <span class="nw">     權限。</span></li>
   <li><strong>透過 Bluetooth(CRMX)</strong> —— 第一次使用時，App 會請求 Bluetooth
-      權限。</li>
+ <span class="nw">     權限。</span></li>
 </ul>
 
 <h2>遇到問題時</h2>
-<p>說明書的<a href="manual-zh-Hant.html#troubleshooting">「出問題時」一章</a>是依症狀排列的。
-以下是我們被問得最多的三個問題。</p>
+<p>說明書的<a href="manual-zh-Hant.html#troubleshooting">「出問題時」一章</a>是依症狀排列的。以下是我們被問得<span class="nw">最多的三個問題。</span></p>
 <h3>燈不亮</h3>
-<p>Kanau 每次打開時輸出都是關閉的：點左上角的 <code>OUTPUT OFF</code>，再滑動來開始傳送。
-Settings 的 Output 裡會顯示 <code>Destination</code>、<code>Medium</code>、
-<code>Clock</code> 和 <code>Touch → DMX</code>。這些在動，就表示 App 正在傳送，
-問題出在後面的線路上。</p>
+<p>Kanau 每次打開時輸出都是關閉的：點左上角的 <code>OUTPUT OFF</code>，再滑動來開始傳送。Settings 的 Output 裡會顯示 <code>Destination</code>、<wbr><code>Medium</code>、<wbr><code>Clock</code> 和 <code>Touch → DMX</code>。這些在動，就表示 App 正在傳送，問題出<span class="nw">在後面的線路上。</span></p>
 <h3>sACN 群播被拒絕</h3>
-<p>iOS 有時會拒絕傳送群播。螢幕上出現提示時，請改用單播，
-並輸入節點的位址。</p>
+<p>iOS 有時會拒絕傳送群播。螢幕上出現提示時，請改用單播，並<span class="nw">輸入節點的位址。</span></p>
 <h3>燈具庫裡沒有某台燈</h3>
-<p>請把廠商和型號名稱寄給我們。你也可以在 App 裡自己建立定義，
-或者匯入 GDTF 檔案。</p>
+<p>請把廠商和型號名稱寄給我們。你也可以在 App 裡自己建立定義，或者匯入 <span class="nw">GDTF 檔案。</span></p>
 <p class="adv"><a href="index-zh-Hant.html">← 首頁</a></p>
 <p class="adv owner">© 2026 Kanau Labs LLC</p>
 

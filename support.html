@@ -42,14 +42,14 @@
 <link rel="apple-touch-icon" href="img/icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap">
-<link rel="stylesheet" href="theme.css?v=20261024c">
+<link rel="stylesheet" href="theme.css?v=20261024j">
 </head>
 <body>
 
 <div class="hero">
+  <div class="pagelang"><label class="langsel"><span class="vh">Language</span><select onchange="location.href=this.value"><option value="support.html" lang="en" selected>English</option><option value="support-ja.html" lang="ja">日本語</option><option value="support-de.html" lang="de">Deutsch</option><option value="support-fr.html" lang="fr">Français</option><option value="support-ko.html" lang="ko">한국어</option><option value="support-zh-Hans.html" lang="zh-Hans">简体中文</option><option value="support-zh-Hant.html" lang="zh-Hant">繁體中文</option><option value="support-es.html" lang="es">Español</option><option value="support-pt-BR.html" lang="pt-BR">Português (Brasil)</option><option value="support-it.html" lang="it">Italiano</option><option value="support-nl.html" lang="nl">Nederlands</option><option value="support-pl.html" lang="pl">Polski</option><option value="support-cs.html" lang="cs">Čeština</option><option value="support-sv.html" lang="sv">Svenska</option><option value="support-da.html" lang="da">Dansk</option><option value="support-no.html" lang="no">Norsk</option><option value="support-fi.html" lang="fi">Suomi</option><option value="support-tr.html" lang="tr">Türkçe</option><option value="support-id.html" lang="id">Bahasa Indonesia</option><option value="support-th.html" lang="th">ไทย</option><option value="support-ar.html" lang="ar">العربية</option><option value="support-hi.html" lang="hi">हिन्दी</option><option value="support-vi.html" lang="vi">Tiếng Việt</option></select></label></div>
   <div class="brand"><img src="img/icon.png" alt="" width="180" height="180">
-    <div><h1>Support</h1><p class="kicker">Kanau</p></div>
-    <div class="pagelang"><label class="langsel"><span class="vh">Language</span><select onchange="location.href=this.value"><option value="support.html" lang="en" selected>English</option><option value="support-ja.html" lang="ja">日本語</option><option value="support-de.html" lang="de">Deutsch</option><option value="support-fr.html" lang="fr">Français</option><option value="support-ko.html" lang="ko">한국어</option><option value="support-zh-Hans.html" lang="zh-Hans">简体中文</option><option value="support-zh-Hant.html" lang="zh-Hant">繁體中文</option><option value="support-es.html" lang="es">Español</option><option value="support-pt-BR.html" lang="pt-BR">Português (Brasil)</option><option value="support-it.html" lang="it">Italiano</option><option value="support-nl.html" lang="nl">Nederlands</option><option value="support-pl.html" lang="pl">Polski</option><option value="support-cs.html" lang="cs">Čeština</option><option value="support-sv.html" lang="sv">Svenska</option><option value="support-da.html" lang="da">Dansk</option><option value="support-no.html" lang="no">Norsk</option><option value="support-fi.html" lang="fi">Suomi</option><option value="support-tr.html" lang="tr">Türkçe</option><option value="support-id.html" lang="id">Bahasa Indonesia</option><option value="support-th.html" lang="th">ไทย</option><option value="support-ar.html" lang="ar">العربية</option><option value="support-hi.html" lang="hi">हिन्दी</option><option value="support-vi.html" lang="vi">Tiếng Việt</option></select></label></div></div>
+    <div><h1>Support</h1><p class="kicker">Kanau</p></div></div>
   
 </div>
 
@@ -58,32 +58,25 @@
 <p><strong>Write in any language.</strong></p>
 <p>For a bug report, please include the <strong>fixture model and mode</strong>,
 the <strong>output route</strong> (Art-Net / sACN / CRMX), and the
-<strong>app version</strong>, which is shown at the bottom of Settings.</p>
+<strong>app version</strong>, which is shown at the bottom of&nbsp;Settings.</p>
 
 <h2>Requirements</h2>
 <ul>
   <li>iOS 17 or later. iPhone is portrait; iPad is landscape.</li>
-  <li><strong>Over the network (Art-Net / sACN)</strong> — the iPhone and the
-      lighting nodes must be on the same network. The app asks for Local Network
-      permission the first time.</li>
-  <li><strong>Over Bluetooth (CRMX)</strong> — the app asks for Bluetooth
-      permission the first time.</li>
+  <li><strong>Over the network (Art-Net / sACN)</strong> — the iPhone and the       lighting nodes must be on the same network. The app asks for Local Network       permission the first&nbsp;time.</li>
+  <li><strong>Over Bluetooth (CRMX)</strong> — the app asks for Bluetooth       permission the first&nbsp;time.</li>
 </ul>
 
 <h2>If something is not working</h2>
-<p>The <a href="manual.html#troubleshooting">troubleshooting chapter</a> of the
-manual is arranged by symptom. These are the three we are asked about most.</p>
+<p>The <a href="manual.html#troubleshooting">troubleshooting chapter</a> of the manual is arranged by symptom. These are the three we are asked about&nbsp;most.</p>
 <h3>No light</h3>
 <p>Kanau starts with output off each time it opens: tap <code>OUTPUT OFF</code> at the top left and slide to send.
 The output section in Settings shows <code>Destination</code>, <code>Medium</code>,
-<code>Clock</code> and <code>Touch → DMX</code>. If those are moving, the app is
-sending, and the problem is further down the line.</p>
+<code>Clock</code> and <code>Touch → DMX</code>. If those are moving, the app is sending, and the problem is further down&nbsp;the&nbsp;line.</p>
 <h3>sACN multicast is refused</h3>
-<p>iOS can refuse multicast sending. When the screen says so, switch to unicast and
-enter the node's address.</p>
+<p>iOS can refuse multicast sending. When the screen says so, switch to unicast and enter the node's&nbsp;address.</p>
 <h3>A fixture is missing from the library</h3>
-<p>Send us the manufacturer and model name. You can also build the definition
-yourself in the app, or import a GDTF file.</p>
+<p>Send us the manufacturer and model name. You can also build the definition yourself in the app, or import a GDTF&nbsp;file.</p>
 <p class="adv"><a href="index.html">← Home</a></p>
 <p class="adv owner">© 2026 Kanau Labs LLC</p>
 

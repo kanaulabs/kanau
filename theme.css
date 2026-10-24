@@ -436,10 +436,24 @@ figure.shot .wrap { direction: ltr; }
       clip-path: inset(50%); white-space: nowrap; }
 
 /* サポート・プライバシーの頁の言語の選び(23 言語)。説明書の .lang と違い、スマホでも畳まない */
-.pagelang { margin-inline-start: auto; align-self: flex-start; }
+.pagelang { display: flex; justify-content: flex-end; margin-bottom: 0.75rem; }   /* 題の上、行の終わりに置く(題の長さに押されない) */
+.hero .brand > div { min-width: 0; }
+.hero .brand h1 { hyphens: auto; overflow-wrap: break-word; }   /* 1 語の長い題(Datenschutzerklärung)も枠の中で折る */
 .pagelang select {
   background: var(--soft); color: var(--sub);
   border: 0; border-radius: 999px;
   padding: 0.3rem 0.65rem; font: inherit; font-size: 0.85rem; cursor: pointer; max-width: 9rem;
 }
 .pagelang select:hover { background: var(--soft2); color: var(--ink); }
+
+/* ---- 組版(2026-10-24) ----
+   見出しは行の長さを揃え、段落は最後の行に 1 語だけ落とさない。日本語・中国語は禁則を厳しく、
+   日本語は語の切れ目で折る(対応するブラウザだけ)。韓国語は語の中で折らない。 */
+h1, h2, h3, .hero .sub, p.lead, figcaption { text-wrap: balance; }
+p, li, td, .box p { text-wrap: pretty; }
+:lang(ja), :lang(zh-Hans), :lang(zh-Hant) { line-break: strict; }
+:lang(ja) h1, :lang(ja) h2, :lang(ja) h3 { font-feature-settings: "palt"; letter-spacing: .02em; }
+/* 文節で折るのは見出しと短い添え書きだけ。本文は字の境目で折る(右端が揃い、長い英語の札の並びでもはみ出さない) */
+:lang(ja) h1, :lang(ja) h2, :lang(ja) h3, :lang(ja) figcaption { word-break: auto-phrase; }
+:lang(ko) p, :lang(ko) li, :lang(ko) td, :lang(ko) h1, :lang(ko) h2, :lang(ko) h3 { word-break: keep-all; overflow-wrap: break-word; }
+.nw { white-space: nowrap; }

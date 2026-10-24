@@ -42,14 +42,14 @@
 <link rel="apple-touch-icon" href="img/icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap">
-<link rel="stylesheet" href="theme.css?v=20261024c">
+<link rel="stylesheet" href="theme.css?v=20261024j">
 </head>
 <body>
 
 <div class="hero">
+  <div class="pagelang"><label class="langsel"><span class="vh">Sprog</span><select onchange="location.href=this.value"><option value="support.html" lang="en">English</option><option value="support-ja.html" lang="ja">日本語</option><option value="support-de.html" lang="de">Deutsch</option><option value="support-fr.html" lang="fr">Français</option><option value="support-ko.html" lang="ko">한국어</option><option value="support-zh-Hans.html" lang="zh-Hans">简体中文</option><option value="support-zh-Hant.html" lang="zh-Hant">繁體中文</option><option value="support-es.html" lang="es">Español</option><option value="support-pt-BR.html" lang="pt-BR">Português (Brasil)</option><option value="support-it.html" lang="it">Italiano</option><option value="support-nl.html" lang="nl">Nederlands</option><option value="support-pl.html" lang="pl">Polski</option><option value="support-cs.html" lang="cs">Čeština</option><option value="support-sv.html" lang="sv">Svenska</option><option value="support-da.html" lang="da" selected>Dansk</option><option value="support-no.html" lang="no">Norsk</option><option value="support-fi.html" lang="fi">Suomi</option><option value="support-tr.html" lang="tr">Türkçe</option><option value="support-id.html" lang="id">Bahasa Indonesia</option><option value="support-th.html" lang="th">ไทย</option><option value="support-ar.html" lang="ar">العربية</option><option value="support-hi.html" lang="hi">हिन्दी</option><option value="support-vi.html" lang="vi">Tiếng Việt</option></select></label></div>
   <div class="brand"><img src="img/icon.png" alt="" width="180" height="180">
-    <div><h1>Support</h1><p class="kicker">Kanau</p></div>
-    <div class="pagelang"><label class="langsel"><span class="vh">Sprog</span><select onchange="location.href=this.value"><option value="support.html" lang="en">English</option><option value="support-ja.html" lang="ja">日本語</option><option value="support-de.html" lang="de">Deutsch</option><option value="support-fr.html" lang="fr">Français</option><option value="support-ko.html" lang="ko">한국어</option><option value="support-zh-Hans.html" lang="zh-Hans">简体中文</option><option value="support-zh-Hant.html" lang="zh-Hant">繁體中文</option><option value="support-es.html" lang="es">Español</option><option value="support-pt-BR.html" lang="pt-BR">Português (Brasil)</option><option value="support-it.html" lang="it">Italiano</option><option value="support-nl.html" lang="nl">Nederlands</option><option value="support-pl.html" lang="pl">Polski</option><option value="support-cs.html" lang="cs">Čeština</option><option value="support-sv.html" lang="sv">Svenska</option><option value="support-da.html" lang="da" selected>Dansk</option><option value="support-no.html" lang="no">Norsk</option><option value="support-fi.html" lang="fi">Suomi</option><option value="support-tr.html" lang="tr">Türkçe</option><option value="support-id.html" lang="id">Bahasa Indonesia</option><option value="support-th.html" lang="th">ไทย</option><option value="support-ar.html" lang="ar">العربية</option><option value="support-hi.html" lang="hi">हिन्दी</option><option value="support-vi.html" lang="vi">Tiếng Việt</option></select></label></div></div>
+    <div><h1>Support</h1><p class="kicker">Kanau</p></div></div>
   
 </div>
 
@@ -58,32 +58,26 @@
 <p><strong>Skriv på et hvilket som helst sprog.</strong></p>
 <p>Skriv gerne <strong>armaturets model og tilstand</strong>,
 <strong>udgangsvejen</strong> (Art-Net / sACN / CRMX) og
-<strong>appversionen</strong> med i en fejlrapport. Den står nederst i Settings.</p>
+<strong>appversionen</strong> med i en fejlrapport. Den står nederst i&nbsp;Settings.</p>
 
 <h2>Krav</h2>
 <ul>
-  <li>iOS 17 eller nyere. iPhone står på højkant; iPad ligger på tværs.</li>
-  <li><strong>Over netværket (Art-Net / sACN)</strong> — iPhonen og
-      lysnodes skal være på samme netværk. Første gang beder appen om
-      tilladelse til det lokale netværk.</li>
+  <li>iOS 17 eller nyere. iPhone står på højkant; iPad ligger&nbsp;på&nbsp;tværs.</li>
+  <li><strong>Over netværket (Art-Net / sACN)</strong> — iPhonen og       lysnodes skal være på samme netværk. Første gang beder appen om       tilladelse til det lokale&nbsp;netværk.</li>
   <li><strong>Over Bluetooth (CRMX)</strong> — første gang beder appen om
       tilladelse til Bluetooth.</li>
 </ul>
 
 <h2>Hvis noget ikke virker</h2>
-<p>Kapitlet <a href="manual-da.html#troubleshooting">Når noget driller</a> i
-manualen er ordnet efter symptom. Her er de tre spørgsmål, vi får oftest.</p>
+<p>Kapitlet <a href="manual-da.html#troubleshooting">Når noget driller</a> i manualen er ordnet efter symptom. Her er de tre spørgsmål, vi får&nbsp;oftest.</p>
 <h3>Intet lys</h3>
 <p>Kanau starter med udgangen slukket hver gang, den åbner: tryk på <code>OUTPUT OFF</code> øverst til venstre og skub for at sende.
 Afsnittet Output i Settings viser <code>Destination</code>, <code>Medium</code>,
-<code>Clock</code> og <code>Touch → DMX</code>. Hvis de bevæger sig, sender appen,
-og problemet ligger længere nede ad linjen.</p>
+<code>Clock</code> og <code>Touch → DMX</code>. Hvis de bevæger sig, sender appen, og problemet ligger længere nede ad&nbsp;linjen.</p>
 <h3>sACN-multicast bliver afvist</h3>
-<p>iOS kan afvise at sende med multicast. Når skærmen siger det, skift til unicast og
-skriv nodens adresse.</p>
+<p>iOS kan afvise at sende med multicast. Når skærmen siger det, skift til unicast og skriv nodens&nbsp;adresse.</p>
 <h3>Et armatur mangler i biblioteket</h3>
-<p>Send os producenten og modelnavnet. Du kan også lave definitionen
-selv i appen eller importere en GDTF-fil.</p>
+<p>Send os producenten og modelnavnet. Du kan også lave definitionen selv i appen eller importere en&nbsp;GDTF-fil.</p>
 <p class="adv"><a href="index-da.html">← Hjem</a></p>
 <p class="adv owner">© 2026 Kanau Labs LLC</p>
 

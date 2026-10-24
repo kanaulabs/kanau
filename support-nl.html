@@ -42,14 +42,14 @@
 <link rel="apple-touch-icon" href="img/icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap">
-<link rel="stylesheet" href="theme.css?v=20261024c">
+<link rel="stylesheet" href="theme.css?v=20261024j">
 </head>
 <body>
 
 <div class="hero">
+  <div class="pagelang"><label class="langsel"><span class="vh">Taal</span><select onchange="location.href=this.value"><option value="support.html" lang="en">English</option><option value="support-ja.html" lang="ja">日本語</option><option value="support-de.html" lang="de">Deutsch</option><option value="support-fr.html" lang="fr">Français</option><option value="support-ko.html" lang="ko">한국어</option><option value="support-zh-Hans.html" lang="zh-Hans">简体中文</option><option value="support-zh-Hant.html" lang="zh-Hant">繁體中文</option><option value="support-es.html" lang="es">Español</option><option value="support-pt-BR.html" lang="pt-BR">Português (Brasil)</option><option value="support-it.html" lang="it">Italiano</option><option value="support-nl.html" lang="nl" selected>Nederlands</option><option value="support-pl.html" lang="pl">Polski</option><option value="support-cs.html" lang="cs">Čeština</option><option value="support-sv.html" lang="sv">Svenska</option><option value="support-da.html" lang="da">Dansk</option><option value="support-no.html" lang="no">Norsk</option><option value="support-fi.html" lang="fi">Suomi</option><option value="support-tr.html" lang="tr">Türkçe</option><option value="support-id.html" lang="id">Bahasa Indonesia</option><option value="support-th.html" lang="th">ไทย</option><option value="support-ar.html" lang="ar">العربية</option><option value="support-hi.html" lang="hi">हिन्दी</option><option value="support-vi.html" lang="vi">Tiếng Việt</option></select></label></div>
   <div class="brand"><img src="img/icon.png" alt="" width="180" height="180">
-    <div><h1>Support</h1><p class="kicker">Kanau</p></div>
-    <div class="pagelang"><label class="langsel"><span class="vh">Taal</span><select onchange="location.href=this.value"><option value="support.html" lang="en">English</option><option value="support-ja.html" lang="ja">日本語</option><option value="support-de.html" lang="de">Deutsch</option><option value="support-fr.html" lang="fr">Français</option><option value="support-ko.html" lang="ko">한국어</option><option value="support-zh-Hans.html" lang="zh-Hans">简体中文</option><option value="support-zh-Hant.html" lang="zh-Hant">繁體中文</option><option value="support-es.html" lang="es">Español</option><option value="support-pt-BR.html" lang="pt-BR">Português (Brasil)</option><option value="support-it.html" lang="it">Italiano</option><option value="support-nl.html" lang="nl" selected>Nederlands</option><option value="support-pl.html" lang="pl">Polski</option><option value="support-cs.html" lang="cs">Čeština</option><option value="support-sv.html" lang="sv">Svenska</option><option value="support-da.html" lang="da">Dansk</option><option value="support-no.html" lang="no">Norsk</option><option value="support-fi.html" lang="fi">Suomi</option><option value="support-tr.html" lang="tr">Türkçe</option><option value="support-id.html" lang="id">Bahasa Indonesia</option><option value="support-th.html" lang="th">ไทย</option><option value="support-ar.html" lang="ar">العربية</option><option value="support-hi.html" lang="hi">हिन्दी</option><option value="support-vi.html" lang="vi">Tiếng Việt</option></select></label></div></div>
+    <div><h1>Support</h1><p class="kicker">Kanau</p></div></div>
   
 </div>
 
@@ -58,29 +58,24 @@
 <p><strong>Schrijf in elke taal.</strong></p>
 <p>Vermeld bij een foutmelding graag het <strong>lampmodel en de modus</strong>,
 de <strong>uitvoerroute</strong> (Art-Net / sACN / CRMX) en de
-<strong>appversie</strong>, die onderaan Settings staat.</p>
+<strong>appversie</strong>, die onderaan Settings&nbsp;staat.</p>
 
 <h2>Vereisten</h2>
 <ul>
-  <li>iOS 17 of nieuwer. De iPhone staat rechtop; de iPad ligt breed.</li>
-  <li><strong>Via het netwerk (Art-Net / sACN)</strong> — de iPhone en de
-      lichtnodes moeten op hetzelfde netwerk zitten. De eerste keer vraagt de app
-      om toestemming voor het lokale netwerk.</li>
+  <li>iOS 17 of nieuwer. De iPhone staat rechtop; de iPad ligt&nbsp;breed.</li>
+  <li><strong>Via het netwerk (Art-Net / sACN)</strong> — de iPhone en de       lichtnodes moeten op hetzelfde netwerk zitten. De eerste keer vraagt de app       om toestemming voor het lokale&nbsp;netwerk.</li>
   <li><strong>Via Bluetooth (CRMX)</strong> — de eerste keer vraagt de app
       om toestemming voor Bluetooth.</li>
 </ul>
 
 <h2>Als iets niet werkt</h2>
-<p>Het <a href="manual-nl.html#troubleshooting">hoofdstuk over problemen oplossen</a> in de
-handleiding is geordend op symptoom. Dit zijn de drie vragen die we het vaakst krijgen.</p>
+<p>Het <a href="manual-nl.html#troubleshooting">hoofdstuk over problemen oplossen</a> in de handleiding is geordend op symptoom. Dit zijn de drie vragen die we het vaakst&nbsp;krijgen.</p>
 <h3>Geen licht</h3>
 <p>Kanau start elke keer dat het opent met de uitvoer uit: tik linksboven op <code>OUTPUT OFF</code> en schuif om te versturen.
 Het onderdeel Output in Settings toont <code>Destination</code>, <code>Medium</code>,
-<code>Clock</code> en <code>Touch → DMX</code>. Als die bewegen, verstuurt de app,
-en zit het probleem verderop in de keten.</p>
+<code>Clock</code> en <code>Touch → DMX</code>. Als die bewegen, verstuurt de app, en zit het probleem verderop in&nbsp;de&nbsp;keten.</p>
 <h3>sACN-multicast wordt geweigerd</h3>
-<p>iOS kan het versturen via multicast weigeren. Zegt het scherm dat, schakel dan over op unicast en
-vul het adres van de node in.</p>
+<p>iOS kan het versturen via multicast weigeren. Zegt het scherm dat, schakel dan over op unicast en vul het adres van de&nbsp;node&nbsp;in.</p>
 <h3>Een lamp ontbreekt in de bibliotheek</h3>
 <p>Stuur ons de fabrikant en de modelnaam. Je kunt de definitie ook
 zelf in de app maken, of een GDTF-bestand importeren.</p>
