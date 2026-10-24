@@ -1,4 +1,4 @@
-  :root { --paper: #ffffff; --ink: #1b1b1f; --mute: #7a7a82; --soft: #f6f5f3; --rule: #ececee; --amber: #e9962f; }
+  :root { --paper: #ffffff; --ink: #1b1b1f; --mute: #6a6a72; --soft: #f6f5f3; --rule: #ececee; --amber: #e9962f; }
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--paper); color: var(--ink);
     font-family: "Manrope", -apple-system, "Hiragino Sans", "Helvetica Neue", Arial, sans-serif; -webkit-font-smoothing: antialiased; }
@@ -77,10 +77,10 @@
   .price small { font-size: 15px; color: var(--mute); letter-spacing: 0; margin-left: 4px; font-weight: 400; }
   .per { color: var(--mute); font-size: 13px; margin: 12px 0 22px; padding-bottom: 22px; border-bottom: 1px solid var(--rule); }
   .plan ul { list-style: none; margin: 0; padding: 0; color: #4a4a50; font-size: 14.5px; line-height: 1.9; }
-  .plan li { display: flex; gap: 10px; align-items: baseline; }
-  .plan li::before { content: ""; flex: none; width: 5px; height: 5px; border-radius: 50%; background: var(--amber); transform: translateY(-2px); }
+  .plan li { position: relative; padding-inline-start: 15px; }
+  .plan li::before { content: ""; position: absolute; inset-inline-start: 0; top: .82em; width: 5px; height: 5px; border-radius: 50%; background: var(--amber); }
   .plan.pick .per { border-color: #e6e3de; }
-  .fine { color: var(--mute); font-size: 12px; line-height: 1.8; margin: 24px auto 0; max-width: 52em; }
+  .fine { color: var(--mute); font-size: 13.5px; line-height: 1.8; margin: 24px auto 0; max-width: 52em; }
   @media (max-width: 760px) { .plans { grid-template-columns: 1fr; } .pricing h2 { font-size: 34px; } .pricing { padding-top: 90px; } }
   @media (max-width: 460px) {
     .shot { width: 44vw; border-radius: 28px; border-width: 5px; }
@@ -142,3 +142,32 @@
   :lang(ja) .plan li { word-break: normal; }
   .nw { white-space: nowrap; }
   .ph { display: inline-block; }
+
+  /* ---- 仕上げ(2026-10-24 夜、外からの最終チェック) ----
+     灰は白地で 5.36:1・薄い地で 4.92:1(4.5:1 を越える)。料金の箱の項目は横並びにしない(文の途中が別の列になっていた) */
+  /* 冒頭の料金の 1 行。押すと料金の段へ */
+  .ctaprice { margin: 18px 0 0; font-size: 14px; color: var(--mute); }
+  .ctaprice a:hover { color: var(--ink); }
+  .ctaprice .nw:last-child::after { content: " →"; }
+  [dir="rtl"] .ctaprice .nw:last-child::after { content: " ←"; }
+  /* 押せるものには矢印。kanau light は案内なので付けない */
+  .soft a b::after { content: " →"; color: var(--mute); font-weight: 400; }
+  [dir="rtl"] .soft a b::after { content: " ←"; }
+  .soft a:hover b { color: var(--amber); }
+  @media (max-width: 760px) {
+    /* スマホでもナビを残す。題字の下に 1 行 */
+    nav { flex-wrap: wrap; row-gap: 6px; }
+    .navr { display: contents; }
+    .langsel { order: 2; margin-inline-start: auto; }
+    .links { display: flex; order: 3; width: 100%; flex-wrap: wrap; gap: 4px 20px; font-size: 14px; padding: 4px 0 0; white-space: nowrap; }
+    /* 何行にもなる本文は行頭で揃える。見出しは中央のまま */
+    .lines { text-align: start; }
+    .lines p { max-width: none; margin: 0; text-wrap: pretty; }
+    .made p, .fine { text-align: start; text-wrap: pretty; }
+    /* 行頭揃えの日本語は字の境目で折る(文節で折ると右端が崩れる) */
+    :lang(ja) .lines p, :lang(ja) .made p, :lang(ja) .fine, :lang(ja) .fine span { word-break: normal; }
+    .fine .ln { text-wrap: pretty; }
+  }
+  .ctaprice .sep { margin: 0 .6em; color: #c9c9ce; }
+  /* 狭い画面では、月額と年額を 1 行ずつに(「/ 年」だけが次の行に落ちていた) */
+  @media (max-width: 460px) { .ctaprice .nw { display: block; } .ctaprice .sep { display: none; } .ctaprice { line-height: 1.7; } }
