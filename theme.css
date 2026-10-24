@@ -434,3 +434,12 @@ figure.shot .wrap { direction: ltr; }
 .lang select:hover { background: var(--soft2); color: var(--ink); }
 .vh { position: absolute; width: 1px; height: 1px; overflow: hidden;
       clip-path: inset(50%); white-space: nowrap; }
+
+/* サポート・プライバシーの頁の言語の選び(23 言語)。説明書の .lang と違い、スマホでも畳まない */
+.pagelang { margin-inline-start: auto; align-self: flex-start; }
+.pagelang select {
+  background: var(--soft); color: var(--sub);
+  border: 0; border-radius: 999px;
+  padding: 0.3rem 0.65rem; font: inherit; font-size: 0.85rem; cursor: pointer; max-width: 9rem;
+}
+.pagelang select:hover { background: var(--soft2); color: var(--ink); }

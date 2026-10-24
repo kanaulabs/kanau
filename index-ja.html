@@ -10,114 +10,45 @@
 <meta property="og:title" content="Kanau — 思い描いた光を。">
 <meta property="og:description" content="Kanau は iPhone と iPad の照明卓です。現場で、すぐに光をつくれます —— Art-Net、sACN、CRMX。">
 <meta property="og:url" content="https://kanaulabs.app/index-ja.html">
+<meta property="og:locale" content="ja">
 <meta property="og:image" content="https://kanaulabs.app/img/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="alternate" hreflang="en" href="https://kanaulabs.app/">
 <link rel="alternate" hreflang="ja" href="https://kanaulabs.app/index-ja.html">
+<link rel="alternate" hreflang="de" href="https://kanaulabs.app/index-de.html">
+<link rel="alternate" hreflang="fr" href="https://kanaulabs.app/index-fr.html">
+<link rel="alternate" hreflang="ko" href="https://kanaulabs.app/index-ko.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://kanaulabs.app/index-zh-Hans.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://kanaulabs.app/index-zh-Hant.html">
+<link rel="alternate" hreflang="es" href="https://kanaulabs.app/index-es.html">
+<link rel="alternate" hreflang="pt-BR" href="https://kanaulabs.app/index-pt-BR.html">
+<link rel="alternate" hreflang="it" href="https://kanaulabs.app/index-it.html">
+<link rel="alternate" hreflang="nl" href="https://kanaulabs.app/index-nl.html">
+<link rel="alternate" hreflang="pl" href="https://kanaulabs.app/index-pl.html">
+<link rel="alternate" hreflang="cs" href="https://kanaulabs.app/index-cs.html">
+<link rel="alternate" hreflang="sv" href="https://kanaulabs.app/index-sv.html">
+<link rel="alternate" hreflang="da" href="https://kanaulabs.app/index-da.html">
+<link rel="alternate" hreflang="no" href="https://kanaulabs.app/index-no.html">
+<link rel="alternate" hreflang="fi" href="https://kanaulabs.app/index-fi.html">
+<link rel="alternate" hreflang="tr" href="https://kanaulabs.app/index-tr.html">
+<link rel="alternate" hreflang="id" href="https://kanaulabs.app/index-id.html">
+<link rel="alternate" hreflang="th" href="https://kanaulabs.app/index-th.html">
+<link rel="alternate" hreflang="ar" href="https://kanaulabs.app/index-ar.html">
+<link rel="alternate" hreflang="hi" href="https://kanaulabs.app/index-hi.html">
+<link rel="alternate" hreflang="vi" href="https://kanaulabs.app/index-vi.html">
 <link rel="icon" href="img/favicon.png">
 <link rel="apple-touch-icon" href="img/icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&display=swap">
-<style>
-  :root { --paper: #ffffff; --ink: #1b1b1f; --mute: #7a7a82; --soft: #f6f5f3; --rule: #ececee; --amber: #e9962f; }
-  * { box-sizing: border-box; }
-  body { margin: 0; background: var(--paper); color: var(--ink);
-    font-family: "Manrope", -apple-system, "Hiragino Sans", "Helvetica Neue", Arial, sans-serif; -webkit-font-smoothing: antialiased; }
-  a { color: inherit; text-decoration: none; }
-  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 32px; }
-
-  nav { display: flex; align-items: center; justify-content: space-between; padding: 24px 0; }
-  .brand { display: flex; align-items: center; gap: 10px; font-weight: 500; font-size: 18px; }
-  .brand img { width: 28px; height: 28px; border-radius: 7px; }
-  .links { display: flex; gap: 28px; font-size: 14px; color: var(--mute); }
-  .links a:hover, footer a:hover { color: var(--ink); }
-  .navr { display: flex; align-items: center; gap: 28px; }
-  .langlink { font-size: 14px; color: var(--mute); }
-  .langlink:hover { color: var(--ink); }
-  :lang(ja) h1 { font-size: 64px; letter-spacing: -.02em; line-height: 1.2; }
-  :lang(ja) .lines p { max-width: 19em; }
-  :lang(ja) p, :lang(ja) h2, :lang(ja) h3 { word-break: auto-phrase; }
-  @media (max-width: 760px) { :lang(ja) h1 { font-size: 36px; } }
-
-  .hero { text-align: center; padding: 96px 0 0; }
-  h1 { font-weight: 300; font-size: 76px; line-height: 1.05; letter-spacing: -.035em; margin: 0 auto 26px; max-width: 12em; }
-  h1 .dot { color: var(--amber); }
-  .lead { font-size: 19px; line-height: 1.65; color: #55555c; margin: 0 auto; max-width: 30em; font-weight: 400; }
-  .cta { display: flex; gap: 26px; justify-content: center; align-items: center; margin: 40px 0 0; flex-wrap: wrap; }
-  .btn { background: var(--ink); color: #fff; padding: 14px 26px; border-radius: 999px; font-weight: 500; font-size: 15px; }
-
-  .stage { position: relative; height: 600px; margin-top: 76px; }
-  .glow { position: absolute; left: 50%; top: 50%; width: 700px; height: 380px; transform: translate(-50%, -50%);
-    background: radial-gradient(closest-side, rgba(233,150,47,.11), rgba(233,150,47,0)); filter: blur(12px); }
-  .shot { position: absolute; top: 0; width: 280px; border-radius: 46px; overflow: hidden; border: 8px solid #141417;
-    box-shadow: 0 40px 80px -20px rgba(27,27,31,.28), 0 10px 30px -10px rgba(27,27,31,.12); }
-  .shot img { display: block; width: 100%; }
-  .s1 { left: 50%; transform: translateX(-104%); }
-  .s2 { left: 50%; transform: translateX(4%); top: 50px; }
-
-  .lines { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; padding: 96px 0 0; text-align: center; }
-  .lines h3 { margin: 0 0 10px; font-weight: 500; font-size: 19px; letter-spacing: -.015em; text-wrap: balance; }
-  .lines p { margin: 0 auto; color: var(--mute); line-height: 1.7; font-size: 15px; max-width: 17em; text-wrap: balance; }
-
-  .made { text-align: center; padding: 120px 0 0; }
-  .made small { display: block; color: var(--mute); font-size: 13px; letter-spacing: .08em; margin-bottom: 16px; }
-  .made h2 { margin: 0 auto 18px; font-weight: 300; font-size: 36px; line-height: 1.2; letter-spacing: -.025em; max-width: 18em; }
-  .made p { margin: 0 auto; color: #55555c; font-size: 16px; line-height: 1.75; max-width: 34em; }
-  @media (max-width: 760px) { .made { padding-top: 90px; } .made h2 { font-size: 28px; } }
-  .name { text-align: center; padding: 120px 0 110px; }
-  .name small { display: block; color: var(--mute); font-size: 13px; letter-spacing: .08em; margin-bottom: 16px; }
-  .name p { margin: 0 auto; font-weight: 300; font-size: 30px; line-height: 1.4; letter-spacing: -.015em; max-width: 22em; }
-
-  .soft { background: var(--soft); border-radius: 24px; display: grid; grid-template-columns: repeat(3, 1fr); padding: 34px 10px; text-align: center; }
-  .soft > * { padding: 6px 20px; }
-  .soft b { display: block; font-weight: 500; font-size: 16px; margin-bottom: 6px; }
-  .soft span { color: var(--mute); font-size: 14px; line-height: 1.6; }
-
-  footer { display: flex; justify-content: space-between; padding: 40px 0 48px; font-size: 13px; color: var(--mute); flex-wrap: wrap; gap: 12px; }
-  footer .fl { display: flex; gap: 22px; flex-wrap: wrap; }
-
-  @media (max-width: 760px) {
-    .wrap { padding: 0 22px; } .links { display: none; }
-    .hero { padding-top: 56px; } h1 { font-size: 48px; }
-    .stage { height: 470px; margin-top: 46px; }
-    .shot { width: 200px; border-radius: 34px; border-width: 6px; }
-    .glow { width: 420px; height: 300px; }
-    .lines { grid-template-columns: 1fr; gap: 36px; padding-top: 70px; }
-    .name p { font-size: 24px; }
-    .soft { grid-template-columns: 1fr; gap: 22px; }
-  }
-  .pricing { text-align: center; padding: 120px 0 0; scroll-margin-top: 24px; }
-  .pricing h2 { font-weight: 300; font-size: 44px; letter-spacing: -.03em; margin: 0 0 12px; }
-  .pricing .sub { color: var(--mute); font-size: 16px; margin: 0 0 46px; }
-  .plans { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; text-align: left; }
-  .plan { border: 1px solid var(--rule); border-radius: 24px; padding: 30px 28px; background: #fff; display: flex; flex-direction: column; }
-  .plan.pick { background: var(--soft); border-color: transparent; position: relative; }
-  .plan .tag { position: absolute; top: 31px; right: 28px; font-size: 12px; color: #a65f0c; font-weight: 500; letter-spacing: .02em; }
-  .plan h3 { margin: 0 0 22px; font-weight: 500; font-size: 16px; line-height: 1.2; }
-  .price { font-weight: 300; font-size: 46px; letter-spacing: -.03em; line-height: 1; }
-  .price small { font-size: 15px; color: var(--mute); letter-spacing: 0; margin-left: 4px; font-weight: 400; }
-  .per { color: var(--mute); font-size: 13px; margin: 12px 0 22px; padding-bottom: 22px; border-bottom: 1px solid var(--rule); }
-  .plan ul { list-style: none; margin: 0; padding: 0; color: #4a4a50; font-size: 14.5px; line-height: 1.9; }
-  .plan li { display: flex; gap: 10px; align-items: baseline; }
-  .plan li::before { content: ""; flex: none; width: 5px; height: 5px; border-radius: 50%; background: var(--amber); transform: translateY(-2px); }
-  .plan.pick .per { border-color: #e6e3de; }
-  .fine { color: var(--mute); font-size: 12px; line-height: 1.8; margin: 24px auto 0; max-width: 52em; }
-  @media (max-width: 760px) { .plans { grid-template-columns: 1fr; } .pricing h2 { font-size: 34px; } .pricing { padding-top: 90px; } }
-  @media (max-width: 460px) {
-    .shot { width: 44vw; border-radius: 28px; border-width: 5px; }
-    .s2 { top: 36px; }
-    .stage { height: calc(44vw * 2.18 + 60px); }
-    .glow { width: 90vw; }
-  }
-</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="home.css?v=20261024c">
 </head>
 <body>
 <div class="wrap">
   <nav>
     <div class="brand"><img src="img/icon.png" alt="">Kanau</div>
-    <div class="navr"><div class="links"><a href="#pricing">料金</a><a href="manual-ja.html">説明書</a><a href="support-ja.html">サポート</a></div><a class="langlink" href="index.html" lang="en" hreflang="en">English</a></div>
+    <div class="navr"><div class="links"><a href="#pricing">料金</a><a href="manual-ja.html">説明書</a><a href="support-ja.html">サポート</a></div><label class="langsel"><span class="vh">言語</span><select onchange="location.href=this.value"><option value="index.html" lang="en">English</option><option value="index-ja.html" lang="ja" selected>日本語</option><option value="index-de.html" lang="de">Deutsch</option><option value="index-fr.html" lang="fr">Français</option><option value="index-ko.html" lang="ko">한국어</option><option value="index-zh-Hans.html" lang="zh-Hans">简体中文</option><option value="index-zh-Hant.html" lang="zh-Hant">繁體中文</option><option value="index-es.html" lang="es">Español</option><option value="index-pt-BR.html" lang="pt-BR">Português (Brasil)</option><option value="index-it.html" lang="it">Italiano</option><option value="index-nl.html" lang="nl">Nederlands</option><option value="index-pl.html" lang="pl">Polski</option><option value="index-cs.html" lang="cs">Čeština</option><option value="index-sv.html" lang="sv">Svenska</option><option value="index-da.html" lang="da">Dansk</option><option value="index-no.html" lang="no">Norsk</option><option value="index-fi.html" lang="fi">Suomi</option><option value="index-tr.html" lang="tr">Türkçe</option><option value="index-id.html" lang="id">Bahasa Indonesia</option><option value="index-th.html" lang="th">ไทย</option><option value="index-ar.html" lang="ar">العربية</option><option value="index-hi.html" lang="hi">हिन्दी</option><option value="index-vi.html" lang="vi">Tiếng Việt</option></select></label></div>
   </nav>
 
   <section class="hero">
@@ -135,7 +66,7 @@
   </section>
 
   <section class="lines">
-    <div><h3>手元から、光を整える。</h3><p>明るさも色も、手の中の iPhone や iPad で。目の前の光を見ながら、その場で整えられます。</p></div>
+    <div><h3>手元から、光を整える。</h3><p>明るさも色も、手元の iPhone や iPad で。目の前の光を見ながら、その場で整えられます。</p></div>
     <div><h3>光に、表情を。</h3><p>ピクセルのグラデーションも、動きのあるエフェクトも。ひとつの配色から、演出が広がります。</p></div>
     <div><h3>ひとつの現場を、一緒に。</h3><p>QR コードを読み取るだけで、もう 1 台の iPhone や iPad が参加。ホストが許可すれば、同じ照明を一緒に操作できます。</p></div>
   </section>
@@ -151,14 +82,14 @@
         <ul><li>1 つのショーで灯体 4 台まで</li><li>DMX 128 チャンネルまで</li><li>すべての機能が使えます</li></ul>
       </div>
       <div class="plan">
-        <h3>Pro Monthly</h3>
+        <h3>Pro 月額</h3>
         <div class="price">$7.99<small>/ 月</small></div>
         <div class="per">最初の 1 か月は無料</div>
         <ul><li>Free より多くの灯体とチャンネル</li><li>ユニバースが増えても追加料金なし</li><li>いつでも解約できます</li></ul>
       </div>
       <div class="plan pick">
         <span class="tag">約 33% お得</span>
-        <h3>Pro Yearly</h3>
+        <h3>Pro 年額</h3>
         <div class="price">$63.99<small>/ 年</small></div>
         <div class="per">最初の 1 か月は無料</div>
         <ul><li>Free より多くの灯体とチャンネル</li><li>ユニバースが増えても追加料金なし</li><li>お支払いは年に 1 回</li></ul>
@@ -170,7 +101,7 @@
   <section class="made">
     <small>MADE ON SET</small>
     <h2>現場から生まれた、現場のための道具。</h2>
-    <p>Frank が、自分と、一緒に働く仲間のために作りました。テイクの合間の待ちには BATTERY SAVE。首から下げた iPhone には Strap Lock。傾けるだけで明るさを上げる TILT。iPhone や iPad を灯りに変える LAMP MODE。</p>
+    <p>Frank が、自分と、一緒に働く仲間のために作りました。撮影の待ち時間には、選んだ灯体だけを暗くする BATTERY SAVE。首から下げて使うときは、誤操作を防ぐ Strap Lock。iPhone を傾けて明るさを上げる TILT。iPhone や iPad を灯りに変える LAMP MODE。</p>
   </section>
 
   <section class="name">
@@ -179,14 +110,14 @@
   </section>
 
   <section class="soft">
-    <a href="manual-ja.html"><b>説明書 — 23 言語</b><span>すべての画面を、23 の言語で。</span></a>
+    <a href="manual-ja.html"><b>説明書 — 23 言語</b><span>操作方法を、23 言語でご案内。</span></a>
     <a href="support-ja.html"><b>サポート</b><span>info@kanaulabs.app<br>何語でも、どうぞ。</span></a>
-    <div><b>kanau light</b><span>iPhone を、灯りに。まもなく公開します。</span></div>
+    <div><b>kanau light</b><span>iPhone を灯りにする、別のアプリ。まもなく公開します。</span></div>
   </section>
 
   <footer>
     <div>© 2026 Kanau Labs LLC</div>
-    <div class="fl"><a href="privacy-ja.html">プライバシーポリシー</a><a href="mailto:info@kanaulabs.app">info@kanaulabs.app</a></div>
+    <div class="fl"><a href="privacy-ja.html">プライバシーポリシー</a><a href="https://www.instagram.com/kanaulabs/" rel="noopener" aria-label="Kanau on Instagram (@kanaulabs)">Instagram</a><a href="mailto:info@kanaulabs.app">info@kanaulabs.app</a></div>
   </footer>
 </div>
 </body>
