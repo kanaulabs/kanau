@@ -114,3 +114,31 @@
   /* 揃える指定はブラウザが 6 行までしか効かせない。スマホで長くなる段落は「最後に 1 語だけ」を避ける方へ */
   @media (max-width: 760px) { .made p, .fine { text-wrap: pretty; } }
   .ln { display: block; text-wrap: balance; }
+
+  /* ---- 2026-10-24 夜: 提供状況・接続・料金の札(外からの批評を受けて) ---- */
+  /* 冒頭の 1 行。まだ買えないことを、題より先に小さく言う。押すと料金へ */
+  .status { margin: 0 0 26px; font-size: 13px; letter-spacing: .02em; }
+  .status a { display: inline-flex; align-items: center; gap: 9px; color: var(--mute); background: var(--soft);
+    padding: 7px 15px 7px 13px; border-radius: 999px; }
+  .status a::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--amber); flex: none; }
+  .status a:hover { color: var(--ink); }
+  /* 自分の機材で使えるか。3 つの特徴の後に、短く */
+  .conn { text-align: center; padding: 110px 0 0; }
+  .conn h2 { margin: 0 0 16px; font-weight: 300; font-size: 36px; line-height: 1.2; letter-spacing: -.025em; }
+  .conn p { margin: 0 auto; color: #55555c; font-size: 16px; line-height: 1.75; max-width: 30em; }
+  .connl { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin: 26px 0 0; }
+  .connl a { font-size: 14px; padding: 10px 18px; border-radius: 999px; border: 1px solid var(--rule); color: var(--ink); }
+  .connl a:hover { background: var(--soft); border-color: transparent; }
+  .connl a::after { content: " →"; color: var(--mute); }
+  [dir="rtl"] .connl a::after { content: " ←"; }
+  .pricing .label { display: block; color: var(--mute); font-size: 13px; letter-spacing: .08em; margin-bottom: 16px; }
+  .made p + p { margin-top: 14px; }
+  @media (max-width: 760px) { .conn { padding-top: 80px; } .conn h2 { font-size: 30px; } .status { margin-bottom: 20px; } }
+  .conn h2, .conn p { text-wrap: balance; }
+  :lang(ja) .conn h2 { font-feature-settings: "palt"; letter-spacing: .03em; }
+  /* 料金の箱は中身に押し広げられない(日本語の長い 1 句で 800px の画面からはみ出した)。箱の中の項目は字で折る */
+  .plans { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  @media (max-width: 760px) { .plans { grid-template-columns: minmax(0, 1fr); } }
+  :lang(ja) .plan li { word-break: normal; }
+  .nw { white-space: nowrap; }
+  .ph { display: inline-block; }
