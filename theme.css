@@ -327,6 +327,7 @@ figure.shot ul.pins b {
 
 .adv { font-size: 0.88rem; color: var(--faint); margin: 0.4rem 0 0; }
 .adv a { margin-inline-end: 0.9rem; white-space: nowrap; }
+.owner { margin-top: 3rem; }
 
 /* ---- 検索 ---- */
 

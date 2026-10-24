@@ -3,20 +3,127 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kanau</title>
+<title>Kanau — Light, as you imagined it.</title>
+<meta name="description" content="Kanau is a lighting console for iPhone and iPad. Shape your light, right on set — Art-Net, sACN and CRMX.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kanau">
+<meta property="og:title" content="Kanau — Light, as you imagined it.">
+<meta property="og:description" content="Kanau is a lighting console for iPhone and iPad. Shape your light, right on set — Art-Net, sACN and CRMX.">
+<meta property="og:url" content="https://kanaulabs.app/">
+<meta property="og:image" content="https://kanaulabs.app/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="img/favicon.png">
 <link rel="apple-touch-icon" href="img/icon.png">
-<link rel="stylesheet" href="theme.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&display=swap">
+<style>
+  :root { --paper: #ffffff; --ink: #1b1b1f; --mute: #7a7a82; --soft: #f6f5f3; --rule: #ececee; --amber: #e9962f; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink);
+    font-family: "Manrope", -apple-system, "Helvetica Neue", Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; text-decoration: none; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 32px; }
+
+  nav { display: flex; align-items: center; justify-content: space-between; padding: 24px 0; }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 500; font-size: 18px; }
+  .brand img { width: 28px; height: 28px; border-radius: 7px; }
+  .links { display: flex; gap: 28px; font-size: 14px; color: var(--mute); }
+  .links a:hover, footer a:hover { color: var(--ink); }
+
+  .hero { text-align: center; padding: 96px 0 0; }
+  h1 { font-weight: 300; font-size: 76px; line-height: 1.05; letter-spacing: -.035em; margin: 0 auto 26px; max-width: 12em; }
+  h1 .dot { color: var(--amber); }
+  .lead { font-size: 19px; line-height: 1.65; color: #55555c; margin: 0 auto; max-width: 30em; font-weight: 400; }
+  .cta { display: flex; gap: 26px; justify-content: center; align-items: center; margin: 40px 0 0; flex-wrap: wrap; }
+  .btn { background: var(--ink); color: #fff; padding: 14px 26px; border-radius: 999px; font-weight: 500; font-size: 15px; }
+
+  .stage { position: relative; height: 600px; margin-top: 76px; }
+  .glow { position: absolute; left: 50%; top: 50%; width: 700px; height: 380px; transform: translate(-50%, -50%);
+    background: radial-gradient(closest-side, rgba(233,150,47,.11), rgba(233,150,47,0)); filter: blur(12px); }
+  .shot { position: absolute; top: 0; width: 280px; border-radius: 46px; overflow: hidden; border: 8px solid #141417;
+    box-shadow: 0 40px 80px -20px rgba(27,27,31,.28), 0 10px 30px -10px rgba(27,27,31,.12); }
+  .shot img { display: block; width: 100%; }
+  .s1 { left: 50%; transform: translateX(-104%); }
+  .s2 { left: 50%; transform: translateX(4%); top: 50px; }
+
+  .lines { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; padding: 96px 0 0; text-align: center; }
+  .lines h3 { margin: 0 0 10px; font-weight: 500; font-size: 21px; letter-spacing: -.01em; }
+  .lines p { margin: 0 auto; color: var(--mute); line-height: 1.7; font-size: 15px; max-width: 17em; text-wrap: balance; }
+
+  .name { text-align: center; padding: 120px 0 110px; }
+  .name small { display: block; color: var(--mute); font-size: 13px; letter-spacing: .08em; margin-bottom: 16px; }
+  .name p { margin: 0 auto; font-weight: 300; font-size: 30px; line-height: 1.4; letter-spacing: -.015em; max-width: 22em; }
+
+  .soft { background: var(--soft); border-radius: 24px; display: grid; grid-template-columns: repeat(3, 1fr); padding: 34px 10px; text-align: center; }
+  .soft > * { padding: 6px 20px; }
+  .soft b { display: block; font-weight: 500; font-size: 16px; margin-bottom: 6px; }
+  .soft span { color: var(--mute); font-size: 14px; line-height: 1.6; }
+
+  footer { display: flex; justify-content: space-between; padding: 40px 0 48px; font-size: 13px; color: var(--mute); flex-wrap: wrap; gap: 12px; }
+  footer .fl { display: flex; gap: 22px; flex-wrap: wrap; }
+
+  @media (max-width: 760px) {
+    .wrap { padding: 0 22px; } .links { display: none; }
+    .hero { padding-top: 56px; } h1 { font-size: 48px; }
+    .stage { height: 470px; margin-top: 46px; }
+    .shot { width: 200px; border-radius: 34px; border-width: 6px; }
+    .glow { width: 420px; height: 300px; }
+    .lines { grid-template-columns: 1fr; gap: 36px; padding-top: 70px; }
+    .name p { font-size: 24px; }
+    .soft { grid-template-columns: 1fr; gap: 22px; }
+  }
+  @media (max-width: 460px) {
+    .shot { width: 44vw; border-radius: 28px; border-width: 5px; }
+    .s2 { top: 36px; }
+    .stage { height: calc(44vw * 2.18 + 60px); }
+    .glow { width: 90vw; }
+  }
+</style>
 </head>
 <body>
+<div class="wrap">
+  <nav>
+    <div class="brand"><img src="img/icon.png" alt="">Kanau</div>
+    <div class="links"><a href="manual.html">Manual</a><a href="support.html">Support</a></div>
+  </nav>
 
-<div class="hero">
-  <div class="brand"><img src="img/icon.png" alt="" width="180" height="180">
-    <div><h1>Kanau</h1><p class="kicker">iPhone Lighting Console</p></div>
-    <a class="lang" href="index-ja.html">日本語</a></div>
-  <p class="sub">A lighting control app for film and TV, on iPhone. Art-Net, sACN and CRMX.</p>
+  <section class="hero">
+    <h1>Light, as you imagined it<span class="dot">.</span></h1>
+    <p class="lead">A lighting console for iPhone and iPad.<br>Shape your light, right on set.</p>
+    <div class="cta">
+      <a class="btn" href="manual.html">Read the manual</a>
+    </div>
+  </section>
+
+  <section class="stage">
+    <div class="glow"></div>
+    <div class="shot s1"><img src="img/home/home-colour.png" alt="Kanau home screen"></div>
+    <div class="shot s2"><img src="img/home/colour.png" alt="Kanau color screen"></div>
+  </section>
+
+  <section class="lines">
+    <div><h3>Ready in moments</h3><p>Choose your fixtures, and the desk is set.</p></div>
+    <div><h3>Eyes on the stage</h3><p>Faders made to work without looking down.</p></div>
+    <div><h3>Shared with ease</h3><p>Another iPhone or iPad joins in one scan.</p></div>
+  </section>
+
+  <section class="name">
+    <small>About the name</small>
+    <p>Kanau — 叶う — means “to come true.”<br>A desk for the light you already see.</p>
+  </section>
+
+  <section class="soft">
+    <a href="manual.html"><b>Manual — 23 languages</b><span>Every screen, in 23 languages.</span></a>
+    <a href="support.html"><b>Support</b><span>info@kanaulabs.app<br>Write in any language.</span></a>
+    <div><b>kanau light</b><span>Turn an iPhone into a light. Coming soon.</span></div>
+  </section>
+
+  <footer>
+    <div>© 2026 Kanau Labs LLC</div>
+    <div class="fl"><a href="privacy.html">Privacy Policy</a><a href="mailto:info@kanaulabs.app">info@kanaulabs.app</a></div>
+  </footer>
 </div>
-
-<ul class="links"><li><a href="manual.html">Manual</a></li><li><a href="support.html">Support</a></li><li><a href="privacy.html">Privacy Policy</a></li></ul>
 </body>
 </html>
