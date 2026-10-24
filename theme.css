@@ -481,3 +481,4 @@ p, li, td, .box p { text-wrap: pretty; }
 .fxalso { display: block; font-size: 0.8rem; color: var(--mute); }
 .fxnote { margin-top: 2.5rem; color: var(--mute); font-size: 0.85rem; }
 .fxnone { color: var(--mute); }
+.fxgeneric { margin: 0 0 0.6rem; color: var(--sub); font-size: 0.9rem; }

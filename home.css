@@ -169,3 +169,5 @@
   @media (max-width: 460px) { .ctaprice .nw { display: block; } .ctaprice .sep { display: none; } .ctaprice { line-height: 1.7; } }
   /* 文ごとの塊の間は詰める(1 つの段落として読ませる) */
   .lines p .ln, .made p .ln, .fine .ln { text-wrap: balance; }
+  /* 日本語の文節の塊(生成で割る。Safari は auto-phrase を知らない)。塊の中では折らない */
+  .w { display: inline-block; }
