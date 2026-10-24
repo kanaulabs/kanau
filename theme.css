@@ -1,101 +1,80 @@
-/* Kanau の公開ページ共通のスタイル。
-   色はアプリの TactColors.swift から取っています（2026-09-12）。
-   アプリが暗い画面だけなので、このページも暗い画面だけにしています。 */
+/* Kanau の公開ページ共通のスタイル(説明書・サポート・プライバシー)。
+   **白を基調に、トップ(index.html)と同じ字と色**(2026-10-24、三浦さん「マニュアルも、白を基調にしたい。
+   そして、トップページのように洗練させたい」)。それまではアプリの暗い色(TactColors)をそのまま使っていた。 */
 
 :root {
-  color-scheme: dark;
+  color-scheme: light;
 
-  --bg:       #0B0B0F;   /* 地 */
-  --slot:     #07070A;   /* いちばん暗い面 */
-  --surface1: #16161C;
-  --surface2: #1F1F27;
-  --surface3: #2A2A34;
-  --divider:  #33333F;
-  --edge:     #5F5F70;
+  --paper:    #ffffff;
+  --ink:      #1b1b1f;
+  --sub:      #55555c;
+  --mute:     #7a7a82;
+  --soft:     #f6f5f3;
+  --soft2:    #efeeea;
+  --rule:     #ececee;
+  --edge:     #d9d8dc;
 
-  --text:     #EAE8E2;
-  --subtext:  #B8B8C2;
-  --dim:      #9A9AA6;
-  --faint:    #8A8A96;
+  /* 琥珀は飾り(点・線・印)にだけ。白地の上の字にすると薄すぎるので、字は濃い琥珀 */
+  --amber:    #e9962f;
+  --amberInk: #a65f0c;
+  --red:      #d93a2b;
+  --live:     #1f9d5c;
+  --remote:   #1a8fb5;
+  --off:      #7b5cc4;
 
-  --amber:    #FFB454;   /* 選んでいる・効いている */
-  --amberHi:  #FFD9A0;
-  --red:      #FF4D3D;   /* 人が動くもの */
-  --limit:    #FF9B6B;
-  --live:     #4CD98A;   /* 出ている・守られている */
-  --remote:   #5FC8EA;   /* 別の端末 */
-  --off:      #9D7CD8;   /* 止めてある */
-
-  --radius:   14px;
+  --radius:   16px;
+  --font: "Manrope", -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Helvetica Neue", Arial, sans-serif;
 }
 
 * { box-sizing: border-box; }
 
 body {
   margin: 0 auto;
-  padding: 2.5rem 1.25rem 5rem;
-  /* **1 行は 65〜70 字**(2026-09-21)。46rem では広い画面で 85 字あり、
-     行を目で戻すのがつらかった。読みやすいのは 60〜75 字。 */
-  max-width: 40rem;
-  background: var(--bg);
-  color: var(--text);
-  /* 行間 1.8 → 1.7。1 ページが 93,000px あるので、ここが効く。
-     **タイ語とヒンディー語は下で 1.8 に戻す** —— 字の上下に積む印が
-     潰れるため(下の :lang)。 */
-  font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Hiragino Sans",
-        "Helvetica Neue", Arial, sans-serif;
+  padding: 3rem 1.5rem 6rem;
+  max-width: 42rem;
+  background: var(--paper);
+  color: var(--ink);
+  font: 16px/1.75 var(--font);
   -webkit-font-smoothing: antialiased;
 }
 
-/* ---- 見出し ---- */
+/* ---- 見出し —— 軽い字で大きさの段を作る(トップの h1 と同じ考え) ---- */
 
-/* **見出しは大きさで段を作る**(2026-09-21、依頼「デザインをきれいに」)。
-   前は h1 24.8px / h2 17.6px / h3 16px / 本文 16px —— **小節が本文と同じ大きさ**で、
-   節も本文より 10% 大きいだけだった。色(琥珀)と太字だけで見出しを名乗っていたので、
-   ひと目で階層が読めない。1.25 倍の段にそろえる: 27 / 21 / 18 / 16。 */
 h1 {
-  font-size: 1.7rem;
-  line-height: 1.3;
-  letter-spacing: -0.015em;
-  margin: 4.5rem 0 0.75rem;
+  font-size: 2.1rem;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  margin: 5rem 0 0.75rem;
   padding-top: 0.25rem;
 }
 h1:first-of-type { margin-top: 0; }
 
 h2 {
-  font-size: 1.3rem;
+  font-size: 1.35rem;
+  font-weight: 500;
   line-height: 1.35;
-  margin: 3rem 0 0.6rem;
-  color: var(--amber);
-  letter-spacing: 0;
+  letter-spacing: -0.01em;
+  margin: 3.25rem 0 0.6rem;
 }
 
 h3 {
-  font-size: 1.125rem;
+  font-size: 1.08rem;
+  font-weight: 600;
   line-height: 1.4;
-  margin: 2rem 0 0.4rem;
-  color: var(--amberHi);
+  margin: 2.1rem 0 0.4rem;
+  color: var(--sub);
 }
 
 p { margin: 0.9rem 0; }
 
-/* **字の上下に印を積む言語は、行間を詰めない**(2026-09-21)。
-   タイ語は声調記号と母音記号を上下に重ね、デーヴァナーガリーは
-   マートラー(横線)の上下に伸びる。1.7 にすると行どうしが触る。
-   `<html lang>` は言語ごとに出ているので、ここだけ戻す。 */
-:lang(th), :lang(hi) { line-height: 1.85; }
+/* 字の上下に印を積む言語は、行間を詰めない */
+:lang(th), :lang(hi) { line-height: 1.9; }
 
-/* 表は行と行の境目で読む。**スマートフォンでは窮屈だった** ——
-   1 列目が「Fixture number」で 2 行に折れ、2 列目も細い。
-   上下の余白を足して、境目の線を頼りに読めるようにする。 */
-@media (max-width: 620px) {
-  th, td { padding: 0.6rem 0.6rem; }
-  table { font-size: 0.92rem; }
-}
-strong { color: #fff; font-weight: 650; }
+strong { color: var(--ink); font-weight: 650; }
 
 .sub {
-  color: var(--faint);
+  color: var(--mute);
   font-size: 0.92rem;
   margin-top: 0.15rem;
 }
@@ -105,131 +84,134 @@ strong { color: #fff; font-weight: 650; }
 .brand {
   display: flex;
   align-items: center;
-  gap: 0.85rem;
+  gap: 0.9rem;
   margin-bottom: 0.25rem;
 }
 .brand img {
-  width: 52px; height: 52px;
+  width: 48px; height: 48px;
   border-radius: 12px;
   flex: none;
-  box-shadow: 0 0 0 1px var(--divider);
 }
 .brand h1 { margin: 0; }
 
 /* ---- 行き先 ---- */
 
-a { color: var(--amber); text-decoration: none; }
-a:hover { text-decoration: underline; }
+a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: rgba(233,150,47,0.55);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 0.18em;
+}
+a:hover { text-decoration-color: var(--amber); }
 
 nav {
   display: flex; flex-wrap: wrap;
-  gap: 0.45rem;
-  margin: 1.5rem 0 2.5rem;
-  font-size: 0.9rem;
+  gap: 0.4rem;
+  margin: 1.75rem 0 2.75rem;
+  font-size: 0.88rem;
 }
 nav a {
   white-space: nowrap;
-  padding: 0.3rem 0.7rem;
+  padding: 0.3rem 0.8rem;
   border-radius: 999px;
-  background: var(--surface2);
-  border: 1px solid var(--divider);
-  color: var(--subtext);
-}
-nav a:hover {
-  background: var(--surface3);
-  border-color: var(--edge);
-  color: var(--text);
+  background: var(--soft);
+  color: var(--sub);
   text-decoration: none;
 }
+nav a:hover { background: var(--soft2); color: var(--ink); }
 
 .top {
   display: block; text-align: end;
-  font-size: 0.85rem; margin-top: 2rem;
-  color: var(--faint);
+  font-size: 0.82rem; margin-top: 2.25rem;
+  color: var(--mute);
+  text-decoration: none;
 }
-.top:hover { color: var(--amber); }
+.top:hover { color: var(--ink); }
 
 /* ---- 表 ---- */
 
 table {
   border-collapse: collapse;
   width: 100%;
-  margin: 1rem 0 1.25rem;
-  font-size: 0.94rem;
+  margin: 1.1rem 0 1.4rem;
+  font-size: 0.93rem;
   display: block;
   overflow-x: auto;
-  border-radius: var(--radius);
 }
 th, td {
-  border-bottom: 1px solid var(--divider);
-  padding: 0.5rem 0.7rem;
+  border-bottom: 1px solid var(--rule);
+  padding: 0.6rem 0.75rem;
   text-align: start;
   vertical-align: top;
 }
 th {
-  background: var(--surface1);
-  color: var(--subtext);
-  font-weight: 600;
+  color: var(--mute);
+  font-weight: 500;
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
   white-space: nowrap;
+  border-bottom-color: var(--edge);
 }
 tr:last-child td { border-bottom: 0; }
-td { background: rgba(255,255,255,0.012); }
+th:first-child, td:first-child { padding-inline-start: 0; }
+
+@media (max-width: 620px) {
+  th, td { padding: 0.6rem 0.55rem; }
+  table { font-size: 0.9rem; }
+}
 
 /* ---- 画面の言葉 ---- */
 
 code {
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-  font-size: 0.9em;
-  background: var(--surface2);
-  color: var(--amberHi);
-  padding: 0.1em 0.35em;
-  border-radius: 5px;
-  border: 1px solid var(--divider);
+  font-size: 0.86em;
+  background: var(--soft);
+  color: var(--ink);
+  padding: 0.12em 0.4em;
+  border-radius: 6px;
   white-space: nowrap;
 }
-/* 画面の**文**を丸ごと引いたものは折り返します。札(`FINE` / `＋ new patch`)は
-   上の nowrap のまま —— 割れると画面で探せなくなるからです。印は生成側が付けます
-   (2026-09-21。`U1: network and Bluetooth output are both on.` が 45 字あり、
-   375px の画面でページごと 43px 横にはみ出していました)。 */
+/* 画面の文を丸ごと引いたものは折り返す。札は nowrap のまま(割れると画面で探せない) */
 code.q { white-space: normal; overflow-wrap: break-word; }
 
 pre {
-  background: var(--slot);
-  border: 1px solid var(--divider);
+  background: var(--soft);
   border-radius: var(--radius);
-  padding: 0.9rem 1.1rem;
+  padding: 1rem 1.2rem;
   overflow-x: auto;
-  font-size: 0.85rem;
+  font-size: 0.84rem;
   line-height: 1.6;
-  color: var(--subtext);
+  color: var(--sub);
 }
-pre code { background: none; border: 0; padding: 0; color: inherit; }
+pre code { background: none; padding: 0; color: inherit; }
 
 blockquote {
   margin: 1rem 0;
   padding-block: 0.1rem;
   padding-inline-start: 1rem;
-  border-inline-start: 3px solid var(--amber);
-  color: var(--subtext);
+  border-inline-start: 2px solid var(--amber);
+  color: var(--sub);
 }
 
-hr { border: 0; border-top: 1px solid var(--divider); margin: 3.5rem 0; }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 3.5rem 0; }
 
 ul, ol { padding-inline-start: 1.3rem; }
 li { margin: 0.4rem 0; }
-li::marker { color: var(--faint); }
+li::marker { color: var(--amber); }
 
 /* ---- 画面写真 ---- */
 
-figure.shot { margin: 1.75rem 0 2.25rem; }
+figure.shot { margin: 2rem 0 2.5rem; }
 
 figure.shot .wrap {
   position: relative;
   display: inline-block;
   max-width: 300px;
-  border-radius: var(--radius);
+  border-radius: 22px;
   overflow: hidden;
-  box-shadow: 0 0 0 1px var(--divider), 0 8px 24px rgba(0,0,0,0.55);
+  border: 6px solid #141417;
+  box-shadow: 0 28px 56px -18px rgba(27,27,31,0.28), 0 8px 20px -8px rgba(27,27,31,0.12);
 }
 figure.shot img { display: block; width: 100%; height: auto; }
 
@@ -243,26 +225,26 @@ figure.shot .pin {
   color: #fff;
   font: 700 0.85rem/1.5rem -apple-system, sans-serif;
   text-align: center;
-  box-shadow: 0 0 0 2px var(--bg), 0 2px 6px rgba(0,0,0,0.7);
+  box-shadow: 0 0 0 2px #fff, 0 2px 6px rgba(0,0,0,0.45);
 }
 
 figure.shot figcaption {
-  font-size: 0.88rem;
-  color: var(--faint);
-  margin: 0.7rem 0 0;
+  font-size: 0.86rem;
+  color: var(--mute);
+  margin: 0.8rem 0 0;
   max-width: 34rem;
 }
 
 figure.shot ul.pins {
   list-style: none; padding: 0;
-  margin: 0.9rem 0 0;
-  font-size: 0.94rem;
+  margin: 1rem 0 0;
+  font-size: 0.93rem;
 }
 figure.shot ul.pins li {
-  margin: 0.4rem 0;
+  margin: 0.45rem 0;
   padding-inline-start: 2.1rem;
   text-indent: -2.1rem;
-  color: var(--subtext);
+  color: var(--sub);
 }
 figure.shot ul.pins b {
   display: inline-block;
@@ -276,79 +258,72 @@ figure.shot ul.pins b {
   font-weight: 700;
 }
 
-/* ---- 入口のページ ---- */
+/* ---- 入口の一覧(サポート・プライバシーの頁) ---- */
 
 .links { list-style: none; padding: 0; margin: 2.5rem 0 0; }
 .links li { margin: 0.6rem 0; }
 .links a {
   display: block;
-  padding: 0.85rem 1.1rem;
-  background: var(--surface1);
-  border: 1px solid var(--divider);
+  padding: 0.9rem 1.2rem;
+  background: var(--soft);
   border-radius: var(--radius);
-  color: var(--text);
-}
-.links a:hover {
-  background: var(--surface2);
-  border-color: var(--amber);
+  color: var(--ink);
   text-decoration: none;
 }
+.links a:hover { background: var(--soft2); }
 
 @media (max-width: 480px) {
-  body { padding: 1.75rem 1rem 4rem; }
-  h1 { font-size: 1.45rem; }
-  h2 { font-size: 1.2rem; }
-  .brand img { width: 44px; height: 44px; }
+  body { padding: 2rem 1.1rem 4.5rem; }
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.22rem; }
+  .brand img { width: 42px; height: 42px; }
 }
 
-/* ================= 2026-09-12 の情報設計の改修で足したもの ================= */
+/* ---- 頭 ---- */
 
-/* ---- 入口(トップ) ---- */
+.hero { margin-bottom: 2.75rem; scroll-margin-top: 3.5rem; }
+.hero h1 { font-size: 2.6rem; font-weight: 300; margin: 0; letter-spacing: -0.03em; }
+.kicker { margin: 0.15rem 0 0; color: var(--mute);
+          font-size: 0.9rem; letter-spacing: 0.04em; }
+.hero .sub { margin: 1.1rem 0 0; color: var(--sub); font-size: 1rem; line-height: 1.65; }
+.appnote { margin: 0.7rem 0 0; color: var(--mute); font-size: 0.85rem;
+           border-inline-start: 2px solid var(--rule); padding-inline-start: 0.7rem; }
+.ver { color: var(--mute); font-size: 0.8rem; margin: 1.25rem 0 0; }
 
-/* ☰ は #top へ飛ぶので、固定バーの下に潜らないよう逃がす */
-.hero { margin-bottom: 2.5rem; scroll-margin-top: 3.5rem; }
-.hero h1 { font-size: 2rem; margin: 0; letter-spacing: 0.02em; }
-.kicker { margin: 0.1rem 0 0; color: var(--amber);
-          font-size: 0.95rem; letter-spacing: 0.04em; }
-.hero .sub { margin: 1rem 0 0; color: var(--subtext); font-size: 0.95rem; }
-/* アプリが英語で開く言語に出る一行 */
-.appnote { margin: 0.6rem 0 0; color: var(--faint); font-size: 0.85rem;
-           border-inline-start: 2px solid var(--divider); padding-inline-start: 0.7rem; }
-.ver { color: var(--faint); font-size: 0.82rem; margin: 1.25rem 0 0; }
-
-.doors { display: grid; gap: 0.6rem; margin: 1.75rem 0 0.9rem;
+.doors { display: grid; gap: 0.6rem; margin: 1.9rem 0 1rem;
          grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); }
-.door { display: block; padding: 0.95rem 1.1rem;
-        background: var(--surface1); border: 1px solid var(--divider);
-        border-radius: var(--radius); color: var(--text); }
-.door b { display: block; font-size: 1.02rem; }
-.door span { display: block; color: var(--faint); font-size: 0.85rem; margin-top: 0.15rem; }
-.door:hover { background: var(--surface2); border-color: var(--amber); text-decoration: none; }
+.door { display: block; padding: 1rem 1.2rem;
+        background: var(--soft); border-radius: var(--radius); color: var(--ink);
+        text-decoration: none; }
+.door b { display: block; font-size: 1rem; font-weight: 500; }
+.door span { display: block; color: var(--mute); font-size: 0.85rem; margin-top: 0.15rem; }
+.door:hover { background: var(--soft2); }
 
-.adv { font-size: 0.88rem; color: var(--faint); margin: 0.4rem 0 0; }
-.adv a { margin-inline-end: 0.9rem; white-space: nowrap; }
-.owner { margin-top: 3rem; }
+.adv { font-size: 0.86rem; color: var(--mute); margin: 0.4rem 0 0; }
+.adv a { margin-inline-end: 0.9rem; white-space: nowrap; color: var(--mute); }
+.adv a:hover { color: var(--ink); }
+.owner { margin-top: 3.5rem; }
 
 /* ---- 検索 ---- */
 
-.findbar { position: relative; margin: 0 0 1.5rem; }
-#q { width: 100%; padding: 0.7rem 0.95rem;
-     background: var(--surface1); color: var(--text);
-     border: 1px solid var(--divider); border-radius: 999px;
-     font: 16px/1.4 -apple-system, "Hiragino Sans", sans-serif; }
-#q:focus { outline: none; border-color: var(--amber); background: var(--surface2); }
-#q::placeholder { color: var(--faint); }
+.findbar { position: relative; margin: 0 0 1.75rem; }
+#q { width: 100%; padding: 0.75rem 1.1rem;
+     background: var(--soft); color: var(--ink);
+     border: 1px solid transparent; border-radius: 999px;
+     font: 16px/1.4 var(--font); }
+#q:focus { outline: none; border-color: var(--edge); background: #fff; }
+#q::placeholder { color: var(--mute); }
 
-#results { position: absolute; z-index: 40; inset-inline: 0; top: calc(100% + 0.4rem);
+#results { position: absolute; z-index: 40; inset-inline: 0; top: calc(100% + 0.5rem);
            max-height: 60vh; overflow-y: auto;
-           background: var(--surface1); border: 1px solid var(--edge);
-           border-radius: var(--radius); box-shadow: 0 12px 32px rgba(0,0,0,0.6); }
-#results a { display: block; padding: 0.55rem 0.95rem; color: var(--text);
-             border-bottom: 1px solid var(--divider); font-size: 0.93rem; }
+           background: #fff; border: 1px solid var(--rule);
+           border-radius: var(--radius); box-shadow: 0 20px 40px -12px rgba(27,27,31,0.18); }
+#results a { display: block; padding: 0.6rem 1.1rem; color: var(--ink); text-decoration: none;
+             border-bottom: 1px solid var(--rule); font-size: 0.93rem; }
 #results a:last-child { border-bottom: 0; }
-#results a:hover { background: var(--surface3); text-decoration: none; }
-#results a span { display: block; color: var(--faint); font-size: 0.8rem; }
-#results .none { padding: 0.8rem 0.95rem; color: var(--faint); margin: 0; font-size: 0.9rem; }
+#results a:hover { background: var(--soft); }
+#results a span { display: block; color: var(--mute); font-size: 0.8rem; }
+#results .none { padding: 0.8rem 1.1rem; color: var(--mute); margin: 0; font-size: 0.9rem; }
 
 /* ---- 上に貼りつく帯(スマートフォン) ---- */
 
@@ -356,84 +331,68 @@ figure.shot ul.pins b {
 @media (max-width: 620px) {
   .stickybar { display: flex; gap: 0.4rem; align-items: center;
                position: sticky; top: 0; z-index: 50;
-               margin: -1.75rem -1rem 1.25rem; padding: 0.5rem 1rem;
-               background: rgba(11,11,15,0.92);
-               -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
-               border-bottom: 1px solid var(--divider); }
+               margin: -2rem -1.1rem 1.4rem; padding: 0.55rem 1.1rem;
+               background: rgba(255,255,255,0.88);
+               -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px);
+               border-bottom: 1px solid var(--rule); }
   .stickybar a, .stickybar button {
-    padding: 0.3rem 0.6rem; border-radius: 999px;
-    background: var(--surface2); border: 1px solid var(--divider);
-    color: var(--subtext); font-size: 0.85rem; font-family: inherit; cursor: pointer; }
-  /* **ホームは帯の主役**(2026-09-21、依頼「ここを、大きくしてホームにしたい」)。
-     前は矢印 1 文字だったので、何に戻るのかが読めませんでした。
-     アイコンと語を並べ、ほかの札より一回り大きく、琥珀の縁で立たせます。 */
-  .stickybar .home { display: inline-flex; align-items: center; gap: 0.35rem;
-                     padding: 0.35rem 0.65rem; font-size: 0.92rem;
-                     color: var(--text); border-color: var(--amber);
-                     flex: none; text-decoration: none; }
+    padding: 0.3rem 0.65rem; border-radius: 999px;
+    background: var(--soft); border: 0;
+    color: var(--sub); font-size: 0.85rem; font-family: inherit; cursor: pointer;
+    text-decoration: none; white-space: nowrap; }
+  .stickybar button { flex: none; }
+  .stickybar .home { display: inline-flex; align-items: center; gap: 0.4rem;
+                     padding: 0.35rem 0.7rem; font-size: 0.92rem; font-weight: 500;
+                     color: var(--ink); flex: none; }
   .stickybar .home img { width: 19px; height: 19px; border-radius: 5px; flex: none; }
-  /* ホームが太ったぶん、右の 3 つを締めます —— **横スクロールも省略も出さない** */
-  .stickybar button, .stickybar .trouble { padding: 0.3rem 0.5rem; }
-  .stickybar .lang select { max-width: 5.6rem; }
-  /* 狭いときに語が溢れるくらいなら、語を畳んでアイコンだけにします
-     (Ana sayfa / หน้าแรก のような長い語でも横スクロールさせない) */
+  .stickybar button, .stickybar .trouble { padding: 0.3rem 0.55rem; }
   @media (max-width: 360px) { .stickybar .home span { display: none; } }
-  /* 困ったときと言語を右端に寄せ、2 つを並べます。
-     **どんな幅でも横スクロールさせません** —— 言語が増えると選択肢の
-     いちばん長い名前で幅が決まるので、狭いときは困ったときの側が縮みます。 */
-  .stickybar .trouble { margin-inline-start: auto; color: var(--limit);
+  .stickybar .trouble { margin-inline-start: auto; color: var(--ink);
                         min-width: 0; overflow: hidden;
                         text-overflow: ellipsis; white-space: nowrap; }
   .stickybar .lang { min-width: 0; }
-  /* 固定バーに出るので、題字の横の切り替えは細い画面では畳みます
-     (同じものが 2 つ見えるのを避け、狭い幅でのはみ出しも消える) */
   .brand .lang { display: none; }
-  .stickybar .lang select { padding: 0.3rem 0.4rem; font-size: 0.8rem;
+  .stickybar .lang select { padding: 0.3rem 0.45rem; font-size: 0.8rem;
                             max-width: 6.4rem; }
 }
 
 /* ---- 章 ---- */
 
 .chapter { scroll-margin-top: 3.5rem; }
-.chapter + .chapter { border-top: 1px solid var(--divider); margin-top: 3.5rem; padding-top: 0.5rem; }
+.chapter + .chapter { border-top: 1px solid var(--rule); margin-top: 4rem; padding-top: 1rem; }
 h1, h2, h3 { scroll-margin-top: 3.5rem; }
 
-p.lead { color: var(--subtext); font-size: 1.02rem; margin: 0.5rem 0 1.5rem; }
+p.lead { color: var(--sub); font-size: 1.05rem; margin: 0.5rem 0 1.75rem; }
 
-.next { margin: 2.5rem 0 0; padding: 0.9rem 1.1rem;
-        background: var(--surface1); border: 1px solid var(--divider);
-        border-radius: var(--radius); }
-.next b { display: block; color: var(--faint); font-size: 0.8rem;
-          letter-spacing: 0.06em; margin-bottom: 0.35rem; }
+.next { margin: 2.75rem 0 0; padding: 1rem 1.2rem;
+        background: var(--soft); border-radius: var(--radius); }
+.next b { display: block; color: var(--mute); font-size: 0.76rem; font-weight: 500;
+          letter-spacing: 0.08em; margin-bottom: 0.35rem; }
 .next ul { list-style: none; padding: 0; margin: 0; }
 .next li { margin: 0.25rem 0; font-size: 0.93rem; }
 
-/* **章の相互参照**(2026-09-14)。本文の中では折り返さない ——
-   「05 章」が行またぎで切れると、指で狙う的が 2 つに割れます。 */
 a.xref { white-space: nowrap; }
 
-/* 「次に読む」は行ぜんぶが押せます(的は約 44px。iOS の目安)。**字は本文の色のまま**にして、
-   行き先(章)だけを琥珀にします —— 行を丸ごと琥珀にすると、
-   箱の中が全部リンクの色になって、どこを読めばいいのか分からなくなる。 */
-.next li a.nextline { display: block; color: var(--text);
+/* 「次に読む」は行ぜんぶが押せる。字は本文の色、行き先(章)だけを濃い琥珀に */
+.next li a.nextline { display: block; color: var(--ink);
                       padding: 0.55rem 0; text-decoration: none; }
-.next li a.nextline .xref { color: var(--amber); white-space: nowrap; }
+.next li a.nextline .xref { color: var(--amberInk); white-space: nowrap; }
 .next li a.nextline:hover .xref { text-decoration: underline; }
 
 /* ---- NOTE / IMPORTANT / WARNING ---- */
 
-.box { margin: 1.25rem 0; padding: 0.85rem 1.1rem;
-       border-radius: var(--radius); border: 1px solid var(--divider);
-       border-inline-start-width: 3px; background: var(--surface1); }
-.box b { display: block; font-size: 0.75rem; letter-spacing: 0.1em; margin-bottom: 0.3rem; }
-.box p { margin: 0; font-size: 0.95rem; color: var(--subtext); }
+.box { margin: 1.4rem 0; padding: 0.95rem 1.2rem;
+       border-radius: var(--radius); background: var(--soft);
+       border-inline-start: 3px solid var(--edge); }
+.box b { display: block; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em; margin-bottom: 0.3rem; }
+.box p { margin: 0; font-size: 0.95rem; color: var(--sub); }
 .box.note      { border-inline-start-color: var(--remote); }
 .box.note b    { color: var(--remote); }
 .box.important { border-inline-start-color: var(--amber); }
-.box.important b { color: var(--amber); }
-.box.warning   { border-inline-start-color: var(--red); background: rgba(255,77,61,0.06); }
+.box.important b { color: var(--amberInk); }
+.box.warning   { border-inline-start-color: var(--red); background: #fdf2f0; }
 .box.warning b { color: var(--red); }
-.box.warning p { color: var(--text); }
+.box.warning p { color: var(--ink); }
 
 /* ---- 言語の切り替え ---- */
 
@@ -441,46 +400,38 @@ a.xref { white-space: nowrap; }
 .brand .lang {
   margin-inline-start: auto; align-self: flex-start;
   padding: 0.25rem 0.7rem; border-radius: 999px;
-  background: var(--surface2); border: 1px solid var(--divider);
-  color: var(--subtext); font-size: 0.82rem; white-space: nowrap;
+  background: var(--soft); color: var(--sub); font-size: 0.82rem; white-space: nowrap;
+  text-decoration: none;
 }
-.brand .lang:hover { border-color: var(--amber); color: var(--text); text-decoration: none; }
+.brand .lang:hover { background: var(--soft2); color: var(--ink); }
 
-/* ---- 頭の Instagram(2026-09-21、依頼「頭にインスタのアカウントへのリンクを置きたい」) ----
-   言語の切り替えの左に並べます。狭い画面では名乗りの行が 2 段に折れるので、
-   **語は畳まず**そのまま置きます(リンク先が読めないと押す気にならないため)。 */
+/* ---- 頭の Instagram ---- */
 .social { margin: 0.1rem 0 0.9rem; }
 .social .ig {
   display: inline-flex; align-items: center; gap: 0.35rem;
-  padding: 0.25rem 0.7rem; border-radius: 999px;
-  background: var(--surface2); border: 1px solid var(--divider);
-  color: var(--subtext); font-size: 0.85rem; white-space: nowrap;
+  padding: 0.25rem 0.75rem; border-radius: 999px;
+  background: var(--soft); color: var(--sub); font-size: 0.85rem; white-space: nowrap;
   text-decoration: none;
 }
-.social .ig:hover { border-color: var(--amber); color: var(--text); }
+.social .ig:hover { background: var(--soft2); color: var(--ink); }
 .social .ig svg { flex: none; }
 
 
-/* ---- RTL の土台（2026-09-13、Arabic を正式対応にするため） ----
-   意味のある方向は論理プロパティで書きます。
-   **物理方向に意味があるものは反転させません** —— 画面写真の中の番号の位置、
-   Pan Left / Pan Right のような灯体の向きがこれにあたります。 */
+/* ---- RTL の土台 —— 意味のある方向は論理プロパティで書く。
+   物理方向に意味があるもの(画面写真の中の番号の位置、Pan Left / Right)は反転させない ---- */
 
 .box { border-inline-start-style: solid; }
 
-/* 技術値は読む向きに関係なく左から右。Arabic の中でも壊れないように囲う */
 code, pre, .ver { unicode-bidi: isolate; }
 [dir="rtl"] code, [dir="rtl"] pre { direction: ltr; text-align: start; }
 
-/* 画面写真は中身が LTR。番号の位置は写真の中の座標なので反転させない */
 figure.shot .wrap { direction: ltr; }
 
-/* 言語の切り替え */
 .lang select {
-  background: var(--surface2); color: var(--subtext);
-  border: 1px solid var(--divider); border-radius: 999px;
-  padding: 0.3rem 0.6rem; font: inherit; font-size: 0.85rem; cursor: pointer;
+  background: var(--soft); color: var(--sub);
+  border: 0; border-radius: 999px;
+  padding: 0.3rem 0.65rem; font: inherit; font-size: 0.85rem; cursor: pointer;
 }
-.lang select:hover { border-color: var(--amber); color: var(--text); }
+.lang select:hover { background: var(--soft2); color: var(--ink); }
 .vh { position: absolute; width: 1px; height: 1px; overflow: hidden;
       clip-path: inset(50%); white-space: nowrap; }

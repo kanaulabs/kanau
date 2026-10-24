@@ -74,6 +74,23 @@
     .name p { font-size: 24px; }
     .soft { grid-template-columns: 1fr; gap: 22px; }
   }
+  .pricing { text-align: center; padding: 120px 0 0; scroll-margin-top: 24px; }
+  .pricing h2 { font-weight: 300; font-size: 44px; letter-spacing: -.03em; margin: 0 0 12px; }
+  .pricing .sub { color: var(--mute); font-size: 16px; margin: 0 0 46px; }
+  .plans { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; text-align: left; }
+  .plan { border: 1px solid var(--rule); border-radius: 24px; padding: 30px 28px; background: #fff; display: flex; flex-direction: column; }
+  .plan.pick { background: var(--soft); border-color: transparent; position: relative; }
+  .plan .tag { position: absolute; top: 31px; right: 28px; font-size: 12px; color: #a65f0c; font-weight: 500; letter-spacing: .02em; }
+  .plan h3 { margin: 0 0 22px; font-weight: 500; font-size: 16px; line-height: 1.2; }
+  .price { font-weight: 300; font-size: 46px; letter-spacing: -.03em; line-height: 1; }
+  .price small { font-size: 15px; color: var(--mute); letter-spacing: 0; margin-left: 4px; font-weight: 400; }
+  .per { color: var(--mute); font-size: 13px; margin: 12px 0 22px; padding-bottom: 22px; border-bottom: 1px solid var(--rule); }
+  .plan ul { list-style: none; margin: 0; padding: 0; color: #4a4a50; font-size: 14.5px; line-height: 1.9; }
+  .plan li { display: flex; gap: 10px; align-items: baseline; }
+  .plan li::before { content: ""; flex: none; width: 5px; height: 5px; border-radius: 50%; background: var(--amber); transform: translateY(-2px); }
+  .plan.pick .per { border-color: #e6e3de; }
+  .fine { color: var(--mute); font-size: 12px; line-height: 1.8; margin: 24px auto 0; max-width: 52em; }
+  @media (max-width: 760px) { .plans { grid-template-columns: 1fr; } .pricing h2 { font-size: 34px; } .pricing { padding-top: 90px; } }
   @media (max-width: 460px) {
     .shot { width: 44vw; border-radius: 28px; border-width: 5px; }
     .s2 { top: 36px; }
@@ -86,7 +103,7 @@
 <div class="wrap">
   <nav>
     <div class="brand"><img src="img/icon.png" alt="">Kanau</div>
-    <div class="links"><a href="manual.html">Manual</a><a href="support.html">Support</a></div>
+    <div class="links"><a href="#pricing">Pricing</a><a href="manual.html">Manual</a><a href="support.html">Support</a></div>
   </nav>
 
   <section class="hero">
@@ -107,6 +124,33 @@
     <div><h3>Ready in moments</h3><p>Choose your fixtures, and the desk is set.</p></div>
     <div><h3>Eyes on the stage</h3><p>Faders made to work without looking down.</p></div>
     <div><h3>Shared with ease</h3><p>Another iPhone or iPad joins in one scan.</p></div>
+  </section>
+
+  <section class="pricing" id="pricing">
+    <h2>Simple pricing.</h2>
+    <p class="sub">Every feature in every plan. Try Pro free for one month.</p>
+    <div class="plans">
+      <div class="plan">
+        <h3>Free</h3>
+        <div class="price">$0</div>
+        <div class="per">Forever</div>
+        <ul><li>Up to 4 fixtures in a show</li><li>Up to 128 DMX channels</li><li>All features included</li></ul>
+      </div>
+      <div class="plan">
+        <h3>Pro Monthly</h3>
+        <div class="price">$7.99<small>/ month</small></div>
+        <div class="per">1 month free, then billed monthly</div>
+        <ul><li>More fixtures and channels than Free</li><li>No extra charge for more universes</li><li>Cancel anytime</li></ul>
+      </div>
+      <div class="plan pick">
+        <span class="tag">Best value</span>
+        <h3>Pro Yearly</h3>
+        <div class="price">$63.99<small>/ year</small></div>
+        <div class="per">1 month free, then about 33% less than Monthly</div>
+        <ul><li>More fixtures and channels than Free</li><li>No extra charge for more universes</li><li>One payment a year</li></ul>
+      </div>
+    </div>
+    <p class="fine">Prices in US dollars; local prices are set by the App Store in your country. The free month is for first-time subscribers who qualify, once only.<br>Subscriptions renew automatically at the plan you chose until cancelled in your App Store account settings.</p>
   </section>
 
   <section class="name">
