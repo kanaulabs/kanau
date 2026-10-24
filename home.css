@@ -112,7 +112,7 @@
   /* 箱の中の小さな文は行内のままだと折り返しの指定が効かないので、塊にする */
   .soft span { display: block; }
   /* 揃える指定はブラウザが 6 行までしか効かせない。スマホで長くなる段落は「最後に 1 語だけ」を避ける方へ */
-  @media (max-width: 760px) { .made p, .fine { text-wrap: pretty; } }
+  /* 文ごとの塊は短いので、スマホでも揃える指定(6 行まで)が効く */
   .ln { display: block; text-wrap: balance; }
 
   /* ---- 2026-10-24 夜: 提供状況・接続・料金の札(外からの批評を受けて) ---- */
@@ -160,14 +160,12 @@
     .navr { display: contents; }
     .langsel { order: 2; margin-inline-start: auto; }
     .links { display: flex; order: 3; width: 100%; flex-wrap: wrap; gap: 4px 20px; font-size: 14px; padding: 4px 0 0; white-space: nowrap; }
-    /* 何行にもなる本文は行頭で揃える。見出しは中央のまま */
-    .lines { text-align: start; }
-    .lines p { max-width: none; margin: 0; text-wrap: pretty; }
-    .made p, .fine { text-align: start; text-wrap: pretty; }
-    /* 行頭揃えの日本語は字の境目で折る(文節で折ると右端が崩れる) */
-    :lang(ja) .lines p, :lang(ja) .made p, :lang(ja) .fine, :lang(ja) .fine span { word-break: normal; }
+    /* 本文も中央のまま。段落は文ごとの塊(.ln)に割ってあり、塊ごとに行の長さを揃えるので崩れない(2026-10-25) */
+    .lines p { max-width: 21em; }
     .fine .ln { text-wrap: pretty; }
   }
   .ctaprice .sep { margin: 0 .6em; color: #c9c9ce; }
   /* 狭い画面では、月額と年額を 1 行ずつに(「/ 年」だけが次の行に落ちていた) */
   @media (max-width: 460px) { .ctaprice .nw { display: block; } .ctaprice .sep { display: none; } .ctaprice { line-height: 1.7; } }
+  /* 文ごとの塊の間は詰める(1 つの段落として読ませる) */
+  .lines p .ln, .made p .ln, .fine .ln { text-wrap: balance; }
