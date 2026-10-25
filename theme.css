@@ -482,3 +482,51 @@ p, li, td, .box p { text-wrap: pretty; }
 .fxnote { margin-top: 2.5rem; color: var(--mute); font-size: 0.85rem; }
 .fxnone { color: var(--mute); }
 .fxgeneric { margin: 0 0 0.6rem; color: var(--sub); font-size: 0.9rem; }
+
+/* ---- サイトの頭と足(2026-10-25「説明書とホームページのシームレスなつながり」) ----
+   トップ(home.css の nav / footer)と同じ並び・同じ大きさ。chrome.py が書く */
+.sitenav { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem 1.25rem;
+           flex-wrap: wrap; margin: -1.5rem 0 2.5rem; }
+.sitebrand { display: inline-flex; align-items: center; gap: 10px; font-weight: 500; font-size: 18px;
+             color: var(--ink); text-decoration: none; }
+.sitebrand img { width: 28px; height: 28px; border-radius: 7px; }
+.sitenavr { display: flex; align-items: center; gap: 0.5rem 1.4rem; flex-wrap: wrap; }
+.sitelinks { display: flex; gap: 0.35rem 1.4rem; flex-wrap: wrap; font-size: 14px; }
+.sitelinks a { color: var(--mute); text-decoration: none; white-space: nowrap; }
+.sitelinks a:hover, .sitelinks a[aria-current="page"] { color: var(--ink); }
+.sitelinks a[aria-current="page"] { box-shadow: inset 0 -1.5px 0 var(--amber); }
+.sitenav select { background: transparent; border: 0; padding: 4px 2px; font: inherit; font-size: 14px;
+                  color: var(--mute); cursor: pointer; max-width: 9.5em; }
+.sitenav select:hover { color: var(--ink); }
+.sitenav .lang, .sitenav .langsel { display: inline-block; }
+.sitefoot { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px;
+            margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--rule);
+            font-size: 13px; color: var(--mute); }
+.sitefootl { display: flex; gap: 22px; flex-wrap: wrap; }
+.sitefoot a { color: var(--mute); text-decoration: none; }
+.sitefoot a:hover { color: var(--ink); }
+@media (max-width: 620px) {
+  /* スマホ: 印と言語を 1 行目に、行き先を 2 行目に(トップと同じ形) */
+  .sitenav { margin: -1.5rem 0 1.25rem; }
+  .sitenavr { display: contents; }
+  .sitenav .lang, .sitenav .langsel { order: 2; margin-inline-start: auto; }
+  .sitelinks { order: 3; width: 100%; gap: 4px 20px; }
+  /* 説明書では、言語の選びは貼りつく帯に任せる(上で 2 つ並ばないように) */
+  body:has(.stickybar) .sitenav .lang { display: none; }
+  .sitenav + .stickybar { margin-top: 0; }
+}
+/* 広い画面では、頭と足をトップと同じ幅(1080px − 両側 32px)に広げる。本文の細い列の外へ出す —— 頁を移っても印の位置が動かない */
+@media (min-width: 621px) {
+  /* 両側の余白を同じだけ負にする —— 右から左の頁(アラビア語)でもずれない(left + transform は RTL で 72px ずれた) */
+  .sitenav, .sitefoot { --w: min(1016px, calc(100vw - 64px));
+                        width: var(--w); margin-inline: calc((100% - var(--w)) / 2); }
+}
+/* 題の長い 1 語(Datenschutzerklärung など)も枠の中で折る。頭を共通にしたとき、題が .brand の外へ出て前の指定が外れた */
+.hero h1 { hyphens: auto; overflow-wrap: break-word; }
+/* 目次の札は、長い章名(10 Vergrendelingen, veiligheid)なら札の中で折る。1 行のままだと 320px の画面を越えた */
+nav a { max-width: 100%; }
+@media (max-width: 380px) { nav a { white-space: normal; } }
+/* 長い字の札(code)も、狭い画面では札の中で折る(中国語の説明書で 320px を 21px 越えた) */
+@media (max-width: 380px) { p code, li code { overflow-wrap: anywhere; } }
+/* 中国語の「DIM、COLOR、PIXELS、FX」のような英字と読点の並びは禁則で折れず、320px を越えた。収まらないときだけ字の途中で折る */
+:lang(zh-Hans) p, :lang(zh-Hans) li, :lang(zh-Hant) p, :lang(zh-Hant) li { overflow-wrap: anywhere; }
