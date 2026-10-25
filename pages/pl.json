@@ -71,5 +71,6 @@
  "fixtures_as_of": "Stan na Kanau {v}.",
  "fixtures_search": "Szukaj po producencie lub urządzeniu",
  "fixtures_none": "Nie znaleziono urządzenia.",
- "fixtures_note": "Układy kanałów pochodzą z tabel DMX i plików GDTF producentów. Jeśli któryś nie zgadza się z Twoim urządzeniem, napisz na <a href=\"mailto:info@kanaulabs.app\">info@kanaulabs.app</a>."
+ "fixtures_note": "Układy kanałów pochodzą z tabel DMX i plików GDTF producentów. Jeśli któryś nie zgadza się z Twoim urządzeniem, napisz na <a href=\"mailto:info@kanaulabs.app\">info@kanaulabs.app</a>.",
+ "fixtures_generic": "Nie ma go na liście? Spatchuj go tutaj, według kanałów."
 }

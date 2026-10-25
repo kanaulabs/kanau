@@ -71,5 +71,6 @@
  "fixtures_as_of": "Conforme o Kanau {v}.",
  "fixtures_search": "Buscar por fabricante ou refletor",
  "fixtures_none": "Nenhum refletor encontrado.",
- "fixtures_note": "A distribuição dos canais vem das tabelas DMX e dos arquivos GDTF de cada fabricante. Se alguma não bater com o seu refletor, escreva para <a href=\"mailto:info@kanaulabs.app\">info@kanaulabs.app</a>."
+ "fixtures_note": "A distribuição dos canais vem das tabelas DMX e dos arquivos GDTF de cada fabricante. Se alguma não bater com o seu refletor, escreva para <a href=\"mailto:info@kanaulabs.app\">info@kanaulabs.app</a>.",
+ "fixtures_generic": "Não está na lista? Faça o patch aqui, pelos canais."
 }

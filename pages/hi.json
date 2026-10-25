@@ -71,5 +71,6 @@
  "fixtures_as_of": "Kanau {v} के अनुसार।",
  "fixtures_search": "निर्माता या फ़िक्स्चर से खोजें",
  "fixtures_none": "कोई फ़िक्स्चर मेल नहीं खाता।",
- "fixtures_note": "चैनल का क्रम हर निर्माता के DMX चार्ट और GDTF फ़ाइलों से लिया गया है। अगर वह आपके फ़िक्स्चर से मेल न खाए, तो <a href=\"mailto:info@kanaulabs.app\">info@kanaulabs.app</a> पर लिखें।"
+ "fixtures_note": "चैनल का क्रम हर निर्माता के DMX चार्ट और GDTF फ़ाइलों से लिया गया है। अगर वह आपके फ़िक्स्चर से मेल न खाए, तो <a href=\"mailto:info@kanaulabs.app\">info@kanaulabs.app</a> पर लिखें।",
+ "fixtures_generic": "सूची में नहीं है? यहाँ से चैनल के हिसाब से पैच करें।"
 }

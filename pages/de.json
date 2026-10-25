@@ -71,5 +71,6 @@
  "fixtures_as_of": "Stand: Kanau {v}.",
  "fixtures_search": "Nach Hersteller oder Scheinwerfer suchen",
  "fixtures_none": "Kein Scheinwerfer gefunden.",
- "fixtures_note": "Die Kanalbelegungen stammen aus den DMX-Charts und GDTF-Dateien der Hersteller. Weicht eine von Ihrem Scheinwerfer ab, schreiben Sie an <a href=\"mailto:info@kanaulabs.app\">info@kanaulabs.app</a>."
+ "fixtures_note": "Die Kanalbelegungen stammen aus den DMX-Charts und GDTF-Dateien der Hersteller. Weicht eine von Ihrem Scheinwerfer ab, schreiben Sie an <a href=\"mailto:info@kanaulabs.app\">info@kanaulabs.app</a>.",
+ "fixtures_generic": "Ihr Scheinwerfer fehlt? Patchen Sie ihn hier, nach seinen Kanälen."
 }

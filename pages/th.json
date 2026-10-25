@@ -71,5 +71,6 @@
  "fixtures_as_of": "ข้อมูล ณ Kanau {v}",
  "fixtures_search": "ค้นหาตามผู้ผลิตหรือรุ่น",
  "fixtures_none": "ไม่พบดวงไฟที่ตรงกัน",
- "fixtures_note": "ลำดับแชนเนลอ้างอิงจากตาราง DMX และไฟล์ GDTF ของแต่ละผู้ผลิต หากไม่ตรงกับดวงไฟของคุณ แจ้งได้ที่ <a href=\"mailto:info@kanaulabs.app\">info@kanaulabs.app</a>"
+ "fixtures_note": "ลำดับแชนเนลอ้างอิงจากตาราง DMX และไฟล์ GDTF ของแต่ละผู้ผลิต หากไม่ตรงกับดวงไฟของคุณ แจ้งได้ที่ <a href=\"mailto:info@kanaulabs.app\">info@kanaulabs.app</a>",
+ "fixtures_generic": "ไม่มีในรายการ? Patch ที่นี่ตามแชนเนลได้เลย"
 }

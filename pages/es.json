@@ -71,5 +71,6 @@
  "fixtures_as_of": "Según Kanau {v}.",
  "fixtures_search": "Buscar por fabricante o luminaria",
  "fixtures_none": "Ninguna luminaria coincide.",
- "fixtures_note": "La asignación de canales procede de las tablas DMX y los archivos GDTF de cada fabricante. Si alguna no coincide con su luminaria, escriba a <a href=\"mailto:info@kanaulabs.app\">info@kanaulabs.app</a>."
+ "fixtures_note": "La asignación de canales procede de las tablas DMX y los archivos GDTF de cada fabricante. Si alguna no coincide con su luminaria, escriba a <a href=\"mailto:info@kanaulabs.app\">info@kanaulabs.app</a>.",
+ "fixtures_generic": "¿Tu luminaria no está? Haz el patch aquí, según sus canales."
 }

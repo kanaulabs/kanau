@@ -71,5 +71,6 @@
  "fixtures_as_of": "截至 Kanau {v}。",
  "fixtures_search": "依廠商或型號搜尋",
  "fixtures_none": "沒有符合的燈。",
- "fixtures_note": "通道排列依據各廠商的 DMX 圖表和 GDTF 檔案。如果與你的燈不一致，請來信至 <a href=\"mailto:info@kanaulabs.app\">info@kanaulabs.app</a>。"
+ "fixtures_note": "通道排列依據各廠商的 DMX 圖表和 GDTF 檔案。如果與你的燈不一致，請來信至 <a href=\"mailto:info@kanaulabs.app\">info@kanaulabs.app</a>。",
+ "fixtures_generic": "清單裡沒有？在這裡依通道排列來 Patch。"
 }

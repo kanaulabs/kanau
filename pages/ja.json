@@ -71,5 +71,6 @@
  "fixtures_as_of": "Kanau {v} の時点。",
  "fixtures_search": "メーカーや機種で探す",
  "fixtures_none": "当てはまる灯体がありません。",
- "fixtures_note": "チャンネルの並びは、各メーカーの DMX チャートと GDTF ファイルによります。お手元の灯体と違っていたら、<a href=\"mailto:info@kanaulabs.app\">info@kanaulabs.app</a> へお知らせください。"
+ "fixtures_note": "チャンネルの並びは、各メーカーの DMX チャートと GDTF ファイルによります。お手元の灯体と違っていたら、<a href=\"mailto:info@kanaulabs.app\">info@kanaulabs.app</a> へお知らせください。",
+ "fixtures_generic": "一覧に無い灯体は、ここから ch の並びで選べます。"
 }

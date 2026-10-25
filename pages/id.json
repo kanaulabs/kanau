@@ -71,5 +71,6 @@
  "fixtures_search": "Cari berdasarkan produsen atau lampu",
  "fixtures_none": "Tidak ada lampu yang cocok.",
  "fixtures_note": "Tata letak kanal diambil dari bagan DMX dan berkas GDTF tiap produsen. Jika ada yang tidak cocok dengan lampu Anda, tulis ke <a href=\"mailto:info@kanaulabs.app\">info@kanaulabs.app</a>.",
+ "fixtures_generic": "Tidak ada di daftar? Patch di sini, sesuai kanalnya.",
  "made_p2": "Miringkan ponsel untuk menaikkan lampu dengan TILT. Jadikan iPhone atau iPad sebagai lampu dengan LAMP MODE."
 }

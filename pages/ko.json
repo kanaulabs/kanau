@@ -71,5 +71,6 @@
  "fixtures_as_of": "Kanau {v} 기준.",
  "fixtures_search": "제조사나 기종으로 찾기",
  "fixtures_none": "해당하는 조명이 없습니다.",
- "fixtures_note": "채널 구성은 각 제조사의 DMX 차트와 GDTF 파일을 따릅니다. 가지고 계신 조명과 다르면 <a href=\"mailto:info@kanaulabs.app\">info@kanaulabs.app</a>로 알려 주세요."
+ "fixtures_note": "채널 구성은 각 제조사의 DMX 차트와 GDTF 파일을 따릅니다. 가지고 계신 조명과 다르면 <a href=\"mailto:info@kanaulabs.app\">info@kanaulabs.app</a>로 알려 주세요.",
+ "fixtures_generic": "목록에 없나요? 여기서 채널 구성에 맞춰 패치하세요."
 }

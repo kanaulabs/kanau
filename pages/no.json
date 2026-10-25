@@ -71,5 +71,6 @@
  "fixtures_search": "Søk etter produsent eller armatur",
  "fixtures_none": "Ingen armatur passer.",
  "fixtures_note": "Kanaloppsettene er hentet fra hver produsents DMX-tabeller og GDTF-filer. Hvis ett ikke stemmer med armaturen din, skriv til <a href=\"mailto:info@kanaulabs.app\">info@kanaulabs.app</a>.",
+ "fixtures_generic": "Finnes den ikke i listen? Patch den her, etter kanalene.",
  "made_p2": "Vipp telefonen for å løfte et lys med TILT. Gjør en iPhone eller iPad til et lys med LAMP MODE."
 }

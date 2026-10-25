@@ -71,5 +71,6 @@
  "fixtures_as_of": "Stand van Kanau {v}.",
  "fixtures_search": "Zoek op fabrikant of lamp",
  "fixtures_none": "Geen lamp gevonden.",
- "fixtures_note": "De kanaalindelingen komen uit de DMX-charts en GDTF-bestanden van de fabrikanten. Klopt er een niet met jouw lamp, schrijf dan naar <a href=\"mailto:info@kanaulabs.app\">info@kanaulabs.app</a>."
+ "fixtures_note": "De kanaalindelingen komen uit de DMX-charts en GDTF-bestanden van de fabrikanten. Klopt er een niet met jouw lamp, schrijf dan naar <a href=\"mailto:info@kanaulabs.app\">info@kanaulabs.app</a>.",
+ "fixtures_generic": "Staat je lamp er niet bij? Patch hem hier, op zijn kanalen."
 }

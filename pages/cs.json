@@ -71,5 +71,6 @@
  "fixtures_search": "Hledat podle výrobce nebo svítidla",
  "fixtures_none": "Žádné svítidlo neodpovídá.",
  "fixtures_note": "Rozložení kanálů vychází z DMX tabulek a souborů GDTF jednotlivých výrobců. Pokud některé neodpovídá vašemu svítidlu, napište na <a href=\"mailto:info@kanaulabs.app\">info@kanaulabs.app</a>.",
+ "fixtures_generic": "Není v seznamu? Patchujte ho tady podle kanálů.",
  "made_p2": "Nakloňte telefon a světlo zvedne TILT. Z iPhonu nebo iPadu udělejte světlo pomocí LAMP MODE."
 }

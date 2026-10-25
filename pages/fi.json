@@ -71,5 +71,6 @@
  "fixtures_search": "Hae valmistajan tai valaisimen mukaan",
  "fixtures_none": "Yksikään valaisin ei täsmää.",
  "fixtures_note": "Kanavarakenteet on otettu kunkin valmistajan DMX-taulukoista ja GDTF-tiedostoista. Jos jokin ei vastaa valaisintasi, kirjoita osoitteeseen <a href=\"mailto:info@kanaulabs.app\">info@kanaulabs.app</a>.",
+ "fixtures_generic": "Valaisinta ei löydy? Patchaa se tästä kanavien mukaan.",
  "made_p2": "Kallista puhelinta, niin TILT nostaa valon. Muuta iPhone tai iPad valaisimeksi LAMP MODE -toiminnolla."
 }

@@ -71,5 +71,6 @@
  "fixtures_search": "Søg efter producent eller armatur",
  "fixtures_none": "Intet armatur matcher.",
  "fixtures_note": "Kanallayoutene er hentet fra hver producents DMX-skemaer og GDTF-filer. Hvis et ikke passer til dit armatur, så skriv til <a href=\"mailto:info@kanaulabs.app\">info@kanaulabs.app</a>.",
+ "fixtures_generic": "Er armaturet ikke på listen? Patch det her, efter kanalerne.",
  "made_p2": "Vip telefonen for at løfte et lys med TILT. Gør en iPhone eller iPad til et lys med LAMP MODE."
 }

@@ -71,5 +71,6 @@
  "fixtures_as_of": "État de Kanau {v}.",
  "fixtures_search": "Chercher un fabricant ou un projecteur",
  "fixtures_none": "Aucun projecteur ne correspond.",
- "fixtures_note": "Les assignations de canaux proviennent des tableaux DMX et des fichiers GDTF des fabricants. Si l’une ne correspond pas à votre projecteur, écrivez à <a href=\"mailto:info@kanaulabs.app\">info@kanaulabs.app</a>."
+ "fixtures_note": "Les assignations de canaux proviennent des tableaux DMX et des fichiers GDTF des fabricants. Si l’une ne correspond pas à votre projecteur, écrivez à <a href=\"mailto:info@kanaulabs.app\">info@kanaulabs.app</a>.",
+ "fixtures_generic": "Pas dans la liste ? Patchez-le ici, selon ses canaux."
 }

@@ -71,5 +71,6 @@
  "fixtures_as_of": "Aggiornato a Kanau {v}.",
  "fixtures_search": "Cerca per produttore o proiettore",
  "fixtures_none": "Nessun proiettore corrisponde.",
- "fixtures_note": "La disposizione dei canali deriva dalle tabelle DMX e dai file GDTF di ciascun produttore. Se una non corrisponde al suo proiettore, scriva a <a href=\"mailto:info@kanaulabs.app\">info@kanaulabs.app</a>."
+ "fixtures_note": "La disposizione dei canali deriva dalle tabelle DMX e dai file GDTF di ciascun produttore. Se una non corrisponde al suo proiettore, scriva a <a href=\"mailto:info@kanaulabs.app\">info@kanaulabs.app</a>.",
+ "fixtures_generic": "Non è in elenco? Faccia il patch da qui, in base ai canali."
 }

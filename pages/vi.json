@@ -71,5 +71,6 @@
  "fixtures_as_of": "Tính đến Kanau {v}.",
  "fixtures_search": "Tìm theo hãng hoặc đèn",
  "fixtures_none": "Không có đèn nào khớp.",
- "fixtures_note": "Cách sắp xếp kênh lấy từ bảng DMX và tệp GDTF của từng hãng. Nếu không khớp với đèn của bạn, hãy viết tới <a href=\"mailto:info@kanaulabs.app\">info@kanaulabs.app</a>."
+ "fixtures_note": "Cách sắp xếp kênh lấy từ bảng DMX và tệp GDTF của từng hãng. Nếu không khớp với đèn của bạn, hãy viết tới <a href=\"mailto:info@kanaulabs.app\">info@kanaulabs.app</a>.",
+ "fixtures_generic": "Không có trong danh sách? Hãy khai báo (Patch) tại đây, theo kênh."
 }

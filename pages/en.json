@@ -71,5 +71,6 @@
  "fixtures_as_of": "As of Kanau {v}.",
  "fixtures_search": "Search by maker or fixture",
  "fixtures_none": "No fixture matches.",
- "fixtures_note": "Channel layouts are taken from each maker’s DMX charts and GDTF files. If one does not match your fixture, write to <a href=\"mailto:info@kanaulabs.app\">info@kanaulabs.app</a>."
+ "fixtures_note": "Channel layouts are taken from each maker’s DMX charts and GDTF files. If one does not match your fixture, write to <a href=\"mailto:info@kanaulabs.app\">info@kanaulabs.app</a>.",
+ "fixtures_generic": "Not in the list? Patch it here, by its channels."
 }
