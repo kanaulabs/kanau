@@ -42,7 +42,7 @@
 <link rel="alternate" hreflang="vi" href="manual-vi.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap">
-<link rel="stylesheet" href="theme.css?v=20261031a">
+<link rel="stylesheet" href="theme.css?v=20261031c">
 </head>
 <body>
 
@@ -131,15 +131,15 @@
 </table>
 <h2 id="screen--3">De statusregel</h2>
 <p>Links staat de verzendstatus. Tik erop om de rij te openen waarmee je het versturen start en stopt (<a class="xref" href="#output">hoofdstuk 02</a>). Elke keer dat Kanau opent, staat daar OUTPUT OFF, en er gaat niets uit totdat je schuift.</p>
-<p>Tijdens het versturen staat er SENDING en de universes, zoals SENDING U1 U2. Waar geen ruimte is, wordt het de route, één letter: A voor Art-Net, S voor sACN. De stip ernaast pulseert tijdens het versturen, tijdens het wachten op de schuif en tijdens LISTENING. Bluetooth heeft een eigen stip en naam.</p>
+<p>Tijdens het versturen staat er SENDING en de universes, zoals SENDING U1 U2. Waar geen ruimte is, wordt het de route, één letter: A voor Art-Net, S voor sACN. De stip ernaast pulseert tijdens het versturen, tijdens het wachten op de schuif en tijdens LISTENING. Bluetooth heeft een eigen stip en naam.</p>
 <p>Daarnaast staat de naam van de show waarin je zit; op een smalle telefoon, waar de rij geen ruimte overheeft, blijft hij weg. Zolang BLIND aanstaat, wordt dit hele linkerdeel een oranje BLIND; tik erop om BLIND te verlaten (<a class="xref" href="#scenes">hoofdstuk 08</a>).</p>
 <table>
 <tr><th>Weergave</th><th>Betekenis</th></tr>
 <tr><td>OUTPUT OFF</td><td>Niet aan het versturen sinds Kanau openging. Eronder staat Slide to send. Tik erop en schuif</td></tr>
 <tr><td>SENDING, aangetikt</td><td>Opent <code>Slide to stop</code>. Schuif naar rechts om het versturen te stoppen; de regel gaat terug naar OUTPUT OFF. <code>Done</code> sluit de rij</td></tr>
 <tr><td>LISTENING</td><td>Controleert ongeveer een seconde of er een andere zender is, voordat er wordt verstuurd</td></tr>
-<tr><td>SENDING U1 U2</td><td>Die universes gaan uit. Een grijze U3 OFF hier betekent een gepatchte universe die nog niet is opengeschoven. Het is niet de rode U1 OFF verderop in de regel</td></tr>
-<tr><td>Blocked U1</td><td>Er zit al een andere zender op die universe, dus Kanau verstuurt er niet. Tik erop voor de keuzes (<a class="xref" href="#output">hoofdstuk 02</a>)</td></tr>
+<tr><td>SENDING U1 U2</td><td>Die universes gaan uit. Een grijze U3 OFF hier betekent een gepatchte universe die nog niet is opengeschoven. Het is niet de rode U1 OFF verderop in de regel</td></tr>
+<tr><td>Blocked U1</td><td>Er zit al een andere zender op die universe, dus Kanau verstuurt er niet. Tik erop voor de keuzes (<a class="xref" href="#output">hoofdstuk 02</a>)</td></tr>
 <tr><td>Groene stip</td><td>Er wordt verstuurd</td></tr>
 <tr><td>Oranje stip</td><td>Afgeremd, of bezig opnieuw te verbinden (Reconnecting…)</td></tr>
 <tr><td>Rode stip, ART-NET No node of SACN No node</td><td>Er antwoordt niets. De statusregel noemt de route, op een smal scherm ingekort. Tik erop om Settings → Output te openen. Zolang de Play-rij zichtbaar is, opent het niet; tik eerst op <code>EXIT</code></td></tr>
@@ -214,13 +214,13 @@
 <figure class="shot"><div class="wrap" dir="ltr"><img src="img/6-output.png" alt="Settings → Output. De rode cijfers horen bij de lijst hieronder." width="640" height="1168" loading="lazy"><span class="pin" style="left:27%;top:21.5%">1</span><span class="pin" style="left:15%;top:31.7%">2</span><span class="pin" style="left:87%;top:31.7%">3</span><span class="pin" style="left:27%;top:79.2%">4</span><span class="pin" style="left:50%;top:97.1%">5</span></div><figcaption>Settings → Output. De rode cijfers horen bij de lijst hieronder.</figcaption><ul class="pins"><li><b>1</b> Protocol. Art-Net of sACN, het een of het ander</li><li><b>2</b> Netwerken. Er wordt verstuurd op de aangevinkte netwerken</li><li><b>3</b> Hoeveel nodes antwoordden. No reply betekent dat er geen zijn gevonden</li><li><b>4</b> Bestemming. AUTO klopt voor de meeste rigs</li><li><b>5</b> Opnieuw naar nodes zoeken</li></ul></figure>
 <h2 id="output--1">Eerste verbinding</h2>
 <h3 id="output--2">Eén Art-Net-node</h3>
-<ol><li>Zet de iPhone op hetzelfde Wi-Fi- of bekabelde netwerk als de node.</li><li>Open Settings → Output.</li><li>Kies Art-Net en AUTO. Allebei zijn de standaardinstelling.</li><li>Controleer dat Nodes Answering 1 of meer aangeeft. Sommige apparatuur antwoordt nooit op polling en blijft op 0 staan terwijl ze gewoon ontvangt. Blijf hier dus niet steken als het getal niet beweegt.</li><li>Tik op Home linksboven op OUTPUT OFF. Onder de statusregel gaat een rij open; schuif het ronde handvat van Slide to send helemaal naar rechts.</li><li>De statusregel toont ongeveer een seconde LISTENING en daarna SENDING U1, en Network Output toont een getal in pakketten/s. Beweeg een fader en kijk of de lamp reageert.</li></ol>
+<ol><li>Zet de iPhone op hetzelfde Wi-Fi- of bekabelde netwerk als de node.</li><li>Open Settings → Output.</li><li>Kies Art-Net en AUTO. Allebei zijn de standaardinstelling.</li><li>Controleer dat Nodes Answering 1 of meer aangeeft. Sommige apparatuur antwoordt nooit op polling en blijft op 0 staan terwijl ze gewoon ontvangt. Blijf hier dus niet steken als het getal niet beweegt.</li><li>Tik op Home linksboven op OUTPUT OFF. Onder de statusregel gaat een rij open; schuif het ronde handvat van Slide to send helemaal naar rechts.</li><li>De statusregel toont ongeveer een seconde LISTENING en daarna SENDING U1, en Network Output toont een getal in pakketten/s. Beweeg een fader en kijk of de lamp reageert.</li></ol>
 <p><strong dir="auto">Kanau begint nooit uit zichzelf te versturen.</strong> Elke keer dat het opent, staat de uitvoer uit en toont de statusregel OUTPUT OFF; de patch, de bestemming en de uitgeschakelde universes blijven bewaard. Een fader bewegen of een Scene oproepen start de uitvoer nooit.</p>
 <p>Als je schuift, luistert Kanau eerst ongeveer een seconde. Zit er op een universe geen andere zender, dan verstuurt het daarna elke gepatchte universe die aanstaat onafgebroken, normaal met 44 Hz. Bluetooth verbindt wanneer je schuift, niet bij het opstarten.</p>
 <p><strong dir="auto">Om te stoppen met versturen</strong> tik je op de statusregel en schuif je <code>Slide to stop</code> naar rechts. Het gaat terug naar OUTPUT OFF.</p>
 <p>De uitvoer gaat ook weer uit, en je schuift opnieuw, wanneer:</p>
 <ul><li>je wisselt tussen Art-Net en sACN</li><li>er een netwerk verschijnt dat er niet was toen je schoof</li><li>je een sessie als gast verlaat</li><li>je LAMP MODE verlaat</li></ul>
-<p>Een universe die later aan de patch wordt toegevoegd, blijft uit totdat je schuift, en de statusregel toont hem als U3 OFF. De uitvoer stopt zolang Kanau niet in beeld is en begint weer als je terugkomt; SCREEN LOCK stopt hem niet.</p>
+<p>Een universe die later aan de patch wordt toegevoegd, blijft uit totdat je schuift, en de statusregel toont hem als U3 OFF. De uitvoer stopt zolang Kanau niet in beeld is en begint weer als je terugkomt; SCREEN LOCK stopt hem niet.</p>
 <h2 id="output--3">Wordt er verstuurd?</h2>
 <p>Lees deze in volgorde. Elk vertelt je iets anders, en geen ervan kan zeggen dat de lamp zelf de data heeft ontvangen.</p>
 <table>
@@ -255,26 +255,26 @@
 <p>Een rode regel in Settings → Output zegt wat de uitgang stopte en wat je eraan doet: zet de toestemming voor het lokale netwerk aan, schakel over naar UNICAST en typ het adres van de node, controleer het adres dat je typte, controleer de wifi, geef de node stroom. CRMX heeft een eigen regel. De eigen bewoording van de tafel blijft achteraan tussen haakjes staan, zodat je die letterlijk kunt overnemen.</p>
 <h3 id="output--9">Universes en de nummering van Art-Net</h3>
 <p>Universes toont elke gepatchte universe met het aantal lampen, hoeveel er branden, en een schakelaar ON/OFF. Een universe die OFF is, toont Not sending, en dat geldt ook voor een die nog niet is opengeschoven.</p>
-<div class="box important"><b>IMPORTANT</b><p>OFF stopt het versturen van die universe. Er gaat niets voor uit over Art-Net of sACN, en over Bluetooth blijft de verbinding bestaan maar wordt er niets geschreven. Een ontvanger kan zijn laatste waarden houden, zodat een lamp aan kan blijven. Welke universes uit staan, staat boven in het scherm, als U1 OFF.</p></div>
-<p>Gebruik Net / Sub / Uni alleen als je node Net / Sub-Net / Universe vraagt in plaats van 1 getal. Zet het aan bij Settings → Output → Art-Net → Net / Sub / Uni. De verhouding is <strong dir="auto">Net × 256 + Sub × 16 + Uni</strong>. Staat dit aan en is de route Art-Net, dan neemt ook het patchen het universe zo: Add, Re-address en Re-patch tonen Net (0–127), Sub (0–15) en Uni (0–15) om te typen, met ernaast het universe dat ze samen vormen, zoals U500. Een getal buiten het bereik wordt op het uiteinde van het bereik gezet.</p>
+<div class="box important"><b>IMPORTANT</b><p>OFF stopt het versturen van die universe. Er gaat niets voor uit over Art-Net of sACN, en over Bluetooth blijft de verbinding bestaan maar wordt er niets geschreven. Een ontvanger kan zijn laatste waarden houden, zodat een lamp aan kan blijven. Welke universes uit staan, staat boven in het scherm, als U1 OFF.</p></div>
+<p>Gebruik Net / Sub / Uni alleen als je node Net / Sub-Net / Universe vraagt in plaats van 1 getal. Zet het aan bij Settings → Output → Art-Net → Net / Sub / Uni. De verhouding is <strong dir="auto">Net × 256 + Sub × 16 + Uni</strong>. Staat dit aan en is de route Art-Net, dan neemt ook het patchen het universe zo: Add, Re-address en Re-patch tonen Net (0–127), Sub (0–15) en Uni (0–15) om te typen, met ernaast het universe dat ze samen vormen, zoals U500. Een getal buiten het bereik wordt op het uiteinde van het bereik gezet.</p>
 <p>De prioriteit van sACN kan 0, 100 of 200 zijn. Standaard is het 100, en het is de prioriteit die Kanau meestuurt met de sACN-uitvoer.</p>
 <h3 id="output--10">CRMX over Bluetooth</h3>
 <ol><li>Zet Bluetooth aan bij Settings → Output → CRMX (Bluetooth).</li><li>Geef Bluetooth toestemming zodra iOS erom vraagt.</li><li>Kies een zender uit de lijst. Nog een tik verbreekt de verbinding.</li></ol>
 <p>De zender die je kiest draagt de universe die je patch gebruikt (U1 als de patch in universe 1 zit). De volgende keer verbindt Bluetooth aanzetten opnieuw met dezelfde zender, zodra je hebt geschoven om te versturen. Kan een zender geen verbinding maken of valt hij weg, dan zegt Settings → Output wat je moet controleren, met de eigen melding van het systeem tussen haakjes.</p>
 <ul><li><strong dir="auto">De lijst</strong>: die zegt <code>connected</code> bij een gekoppelde zender en <code>sending</code> bij een waar data naartoe gaat.</li><li><strong dir="auto">Als de patch over meer dan één universe loopt</strong>: kies met − en + op de regel Universe onder de zender welke hij draagt. Heb je eenmaal met de hand gekozen, dan kiest Kanau niet meer voor je totdat je de zender loskoppelt en opnieuw kiest.</li><li><strong dir="auto">Een tweede zender</strong>: het zoeken stopt zodra wat je koos verbonden is, dus met RESCAN zoek je naar nog een.</li></ul>
-<p>Gaat dezelfde universe zowel over het netwerk als over Bluetooth naar buiten, dan zegt Settings → Output dat: <code class="q">U1: network and Bluetooth output are both on.</code> Dat is <strong dir="auto">een vaststelling, geen waarschuwing</strong>. Een CRMX-ontvanger neemt de uitgang van de zender waaraan hij gekoppeld is, dus dezelfde U1 in Kanau voedt op zichzelf niet één lamp twee keer. Flikkeren gebeurt alleen daar waar een lamp echt van beide wegen ontvangt; zet daar een van de twee uit.</p>
+<p>Gaat dezelfde universe zowel over het netwerk als over Bluetooth naar buiten, dan zegt Settings → Output dat: <code class="q">U1: network and Bluetooth output are both on.</code> Dat is <strong dir="auto">een vaststelling, geen waarschuwing</strong>. Een CRMX-ontvanger neemt de uitgang van de zender waaraan hij gekoppeld is, dus dezelfde U1 in Kanau voedt op zichzelf niet één lamp twee keer. Flikkeren gebeurt alleen daar waar een lamp echt van beide wegen ontvangt; zet daar een van de twee uit.</p>
 <p>Weigert een zender Art-Net nog steeds nadat je Bluetooth hebt uitgezet, controleer dan de eigen instellingen van de zender.</p>
 <h3 id="output--11">Wanneer er een andere lichttafel wordt gevonden</h3>
 <table>
 <tr><th>Weergave</th><th>Wat het betekent, en wat je doet</th></tr>
-<tr><td>Blocked U1</td><td>Toen je schoof, zat er op U1 al een andere zender, dus Kanau verstuurt er niet. Tik erop voor de keuzes hieronder. Er is geen manier om eroverheen te versturen</td></tr>
+<tr><td>Blocked U1</td><td>Toen je schoof, zat er op U1 al een andere zender, dus Kanau verstuurt er niet. Tik erop voor de keuzes hieronder. Er is geen manier om eroverheen te versturen</td></tr>
 <tr><td>SHARED + IP of apparaatnaam</td><td>Er verscheen een andere lichttafel nadat deze was gestart. Het versturen gaat door, dus stop er een als dat nodig is</td></tr>
 </table>
-<p>Een tik op Blocked U1 opent een rij die de zender noemt, zoals U1 In Use, met deze keuzes:</p>
+<p>Een tik op Blocked U1 opent een rij die de zender noemt, zoals U1 In Use, met deze keuzes:</p>
 <table>
 <tr><th>Keuze</th><th>Wat het doet</th></tr>
 <tr><td>Join</td><td>Zichtbaar als de zender een host van Kanau is. Opent Session om erbij te komen</td></tr>
-<tr><td>Send U2 Only</td><td>Zichtbaar als andere universes vrij zijn. Verstuurt alleen die</td></tr>
+<tr><td>Send U2 Only</td><td>Zichtbaar als andere universes vrij zijn. Verstuurt alleen die</td></tr>
 <tr><td>Cancel</td><td>Sluit de rij zonder te versturen</td></tr>
 </table>
 <p>Kanau-apparaten vertellen elkaar welke universes ze versturen, dus twee die tegelijk schuiven versturen niet allebei. Een sACN-zender staat in rood in de verzendrij, met naam of IP-adres; dat meldt het alleen, en Kanau blijft versturen. Unicastzenders en Bluetooth in andere apps zijn vanaf hier misschien niet zichtbaar.</p>
@@ -292,7 +292,7 @@
 <tr><td>Network Output</td><td>Pakketten die in de laatste seconde via het netwerk zijn verzonden. Rond 44 is normaal voor één universe naar één bestemming; het vermenigvuldigt zich met elke extra universe of bestemming. Nothing betekent dat er niets uitging, zoals voordat je schuift. Bluetooth wordt hier niet meegeteld</td></tr>
 <tr><td>Clock</td><td>Het grootste gat tussen 2 zendingen. Ongeveer 23 ms is normaal. Boven 100 ms wijst naar de telefoon</td></tr>
 <tr><td>Touch → DMX</td><td>Van je vinger tot het pakket. Ongeveer 25 ms is normaal</td></tr>
-<tr><td>Nodes Answering</td><td>Hoeveel er antwoordden, met naam, adres, verbinding en retourtijd. De retourtijd blijft leeg tot RESCAN hem meet; het getal tussen haakjes is de slechtste uit de laatste 10 seconden. Op AUTO staan in de regel onder elke node de universes die ernaartoe gaan, zoals U1 of U0–U3</td></tr>
+<tr><td>Nodes Answering</td><td>Hoeveel er antwoordden, met naam, adres, verbinding en retourtijd. De retourtijd blijft leeg tot RESCAN hem meet; het getal tussen haakjes is de slechtste uit de laatste 10 seconden. Op AUTO staan in de regel onder elke node de universes die ernaartoe gaan, zoals U1 of U0–U3</td></tr>
 <tr><td>Type these into the node</td><td>De Net / Sub / Uni die je op de node invoert, als die weergave aanstaat</td></tr>
 </table>
 <p>Deze gegevens bakenen het probleem af; ze bewijzen geen succes. Ze tonen wat Kanau heeft verzonden; of het licht het heeft ontvangen, is van hieruit niet te zien. Network Output kan een getal tonen terwijl een verkeerde instelling of een storing aan de andere kant de lampen donker houdt. Materiaal dat niet op polling antwoordt, toont 0 bij Nodes Answering, ook al ontvangt het gewoon.</p>
@@ -315,7 +315,7 @@
 <tr><td>Name</td><td>De eigen naam van deze lamp. Hij verschijnt in Patch en in de Patch List; Home toont in plaats daarvan het Label. Standaard de volledige modelnaam plus een doorlopend nummer, zoals Titan Tube 1</td></tr>
 <tr><td>Number / How Many</td><td>Het nummer waarmee je de lamp op de vloer aanspreekt, en hoeveel je er toevoegt, maximaal 4,096. Het nummer mag leeg blijven; het begint bij het hoogste nummer in gebruik plus 1</td></tr>
 <tr><td>Label</td><td>De weergavenaam die elke lamp van dat model in dezelfde modus deelt. Hij loopt onder de faders. Standaard de officiële modelnaam; verander hier Mode en een Label dat je niet hebt getypt volgt de nieuwe modus. Hij kan ook getypt worden in het venster van de lamp (<a class="xref" href="#fixture-settings">hoofdstuk 06</a>)</td></tr>
-<tr><td>Universe / Address</td><td>Standaard U1 en het eerstvolgende vrije adres. Verander je de universe, dan springt het adres terug naar 1. U0 is toegestaan</td></tr>
+<tr><td>Universe / Address</td><td>Standaard U1 en het eerstvolgende vrije adres. Verander je de universe, dan springt het adres terug naar 1. U0 is toegestaan</td></tr>
 <tr><td>Offset</td><td>De afstand tussen lampen. Ingevuld vanuit het kanaalaantal van de modus</td></tr>
 <tr><td>Gap</td><td>Extra kanalen die je tussen lampen vrijlaat</td></tr>
 <tr><td>BATTERY SAVE</td><td>Markeert de nieuwe lampen voor BATTERY SAVE</td></tr>
@@ -1124,7 +1124,7 @@
 <tr><th>Wat je ziet</th><th>Wat je doet</th></tr>
 <tr><td>Idle</td><td>Controleer of er een netwerk aanstaat bij Settings → Output</td></tr>
 <tr><td>Blocked</td><td>Tik erop om Settings → Output te openen; daar staat een rode regel die zegt wat het stopte en wat je moet doen. Volg die regel</td></tr>
-<tr><td>Blocked U1, met een universenummer</td><td>Er zit al een andere zender op die universe. Tik erop voor Join, Send … Only of Cancel</td></tr>
+<tr><td>Blocked U1, met een universenummer</td><td>Er zit al een andere zender op die universe. Tik erop voor Join, Send … Only of Cancel</td></tr>
 <tr><td>No node</td><td>Tik erop om Settings → Output te openen. Controleer de voeding, het netwerk, het adres en de protocolinstellingen van de node</td></tr>
 <tr><td>U1 OFF</td><td>Zet de universe weer aan bij Output → Universes</td></tr>
 <tr><td>Een paarse ⏻ of een paars lamppictogram</td><td>Zet de uitgang van de lamp weer aan</td></tr>
@@ -1347,5 +1347,6 @@ Fixture          is de lamp zelf traag</pre>
 
 })();
 </script>
+<script src="jbreak.js?v=20261031c"></script>
 </body>
 </html>

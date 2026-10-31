@@ -42,7 +42,7 @@
 <link rel="alternate" hreflang="vi" href="manual-vi.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap">
-<link rel="stylesheet" href="theme.css?v=20261031a">
+<link rel="stylesheet" href="theme.css?v=20261031c">
 </head>
 <body>
 
@@ -131,15 +131,15 @@
 </table>
 <h2 id="screen--3">상태 줄</h2>
 <p>왼쪽은 전송 상태입니다. 누르면 보내기를 시작하고 멈추는 줄이 열립니다(<a class="xref" href="#output">02장</a>). Kanau를 열 때마다 OUTPUT OFF 라고 나오고, 밀 때까지 아무것도 나가지 않습니다.</p>
-<p>보내는 동안에는 SENDING 과 유니버스가 나옵니다. 예를 들어 SENDING U1 U2 입니다. 자리가 없으면 경로가 되며, 머리글자 한 자로 Art-Net 은 A, sACN 은 S 입니다. 그 옆의 점은 보내는 동안, 밀기를 기다리는 동안, 그리고 LISTENING 동안 숨을 쉽니다. Bluetooth 는 자기 점과 이름을 따로 가집니다.</p>
+<p>보내는 동안에는 SENDING 과 유니버스가 나옵니다. 예를 들어 SENDING U1 U2 입니다. 자리가 없으면 경로가 되며, 머리글자 한 자로 Art-Net 은 A, sACN 은 S 입니다. 그 옆의 점은 보내는 동안, 밀기를 기다리는 동안, 그리고 LISTENING 동안 숨을 쉽니다. Bluetooth 는 자기 점과 이름을 따로 가집니다.</p>
 <p>그 옆에는 지금 열려 있는 쇼의 이름이 나옵니다. 줄에 여유가 없는 좁은 기기에서는 나오지 않습니다. BLIND 가 켜져 있는 동안에는 이 왼쪽 부분 전체가 호박색 BLIND 가 됩니다. 누르면 BLIND 에서 나옵니다(<a class="xref" href="#scenes">08장</a>).</p>
 <table>
 <tr><th>표시</th><th>뜻</th></tr>
 <tr><td>OUTPUT OFF</td><td>Kanau를 연 뒤로 아무것도 보내지 않음. 그 아래에 Slide to send가 쓰여 있습니다. 누르고 미세요</td></tr>
 <tr><td>SENDING, 누른 뒤</td><td><code>Slide to stop</code>이 열립니다. 오른쪽으로 밀면 보내기가 멈추고 줄이 OUTPUT OFF로 돌아갑니다. <code>Done</code>은 줄을 닫습니다</td></tr>
 <tr><td>LISTENING</td><td>보내기 전에 다른 송신원이 있는지 확인하는 중. 1초 남짓</td></tr>
-<tr><td>SENDING U1 U2</td><td>그 유니버스들이 나가는 중. 여기의 회색 U3 OFF는 패치되어 있지만 아직 밀어서 열지 않은 유니버스입니다. 줄 뒤쪽의 빨간 U1 OFF와는 다릅니다</td></tr>
-<tr><td>Blocked U1</td><td>그 유니버스에는 이미 다른 송신원이 있어서 Kanau는 거기로 보내지 않음. 누르면 선택지가 나옵니다(<a class="xref" href="#output">02장</a>)</td></tr>
+<tr><td>SENDING U1 U2</td><td>그 유니버스들이 나가는 중. 여기의 회색 U3 OFF는 패치되어 있지만 아직 밀어서 열지 않은 유니버스입니다. 줄 뒤쪽의 빨간 U1 OFF와는 다릅니다</td></tr>
+<tr><td>Blocked U1</td><td>그 유니버스에는 이미 다른 송신원이 있어서 Kanau는 거기로 보내지 않음. 누르면 선택지가 나옵니다(<a class="xref" href="#output">02장</a>)</td></tr>
 <tr><td>녹색 점</td><td>보내는 중</td></tr>
 <tr><td>호박색 점</td><td>느려졌거나 다시 연결 중(Reconnecting…)</td></tr>
 <tr><td>빨간 점, ART-NET No node 또는 SACN No node</td><td>응답하는 상대가 없음. 상태 줄은 경로의 이름을 대며, 좁은 화면에서는 줄여서 나옵니다. 누르면 Settings → Output이 열립니다. Play 줄이 나와 있는 동안에는 열리지 않으니, 먼저 <code>EXIT</code>를 누르세요</td></tr>
@@ -267,14 +267,14 @@
 <h3 id="output--11">다른 콘솔을 발견했을 때</h3>
 <table>
 <tr><th>표시</th><th>상태와 대처</th></tr>
-<tr><td>Blocked U1</td><td>밀었을 때 이미 다른 송신원이 U1에 있어서 Kanau는 거기로 보내지 않음. 누르면 아래의 선택지가 나옵니다. 그 위에 덮어 보내는 방법은 없습니다</td></tr>
+<tr><td>Blocked U1</td><td>밀었을 때 이미 다른 송신원이 U1에 있어서 Kanau는 거기로 보내지 않음. 누르면 아래의 선택지가 나옵니다. 그 위에 덮어 보내는 방법은 없습니다</td></tr>
 <tr><td>SHARED + IP 또는 기기 이름</td><td>전송을 시작한 뒤 다른 콘솔을 발견. 전송은 계속되므로 필요하면 한쪽을 멈추세요</td></tr>
 </table>
 <p>Blocked U1을 누르면 송신원의 이름을 대는 줄이 열리며(예: U1 In Use), 선택지는 다음과 같습니다.</p>
 <table>
 <tr><th>선택</th><th>하는 일</th></tr>
 <tr><td>Join</td><td>송신원이 Kanau 호스트일 때 나옵니다. Session을 열어 참가합니다</td></tr>
-<tr><td>Send U2 Only</td><td>다른 유니버스가 비어 있을 때 나옵니다. 그것들만 보냅니다</td></tr>
+<tr><td>Send U2 Only</td><td>다른 유니버스가 비어 있을 때 나옵니다. 그것들만 보냅니다</td></tr>
 <tr><td>Cancel</td><td>보내지 않고 줄을 닫습니다</td></tr>
 </table>
 <p>Kanau 기기끼리는 어느 유니버스를 보내는지 서로 알리므로, 동시에 민 두 대가 함께 보내는 일은 없습니다. sACN 송신원은 전송 줄에 이름이나 IP와 함께 빨갛게 나옵니다. 이것은 알려 줄 뿐이며 Kanau는 계속 보냅니다. 유니캐스트 송신원과 다른 앱의 Bluetooth는 여기서 보이지 않을 수 있습니다.</p>
@@ -1347,5 +1347,6 @@ Nodes Answering  네트워크나 장비가 느린가(왕복)
 
 })();
 </script>
+<script src="jbreak.js?v=20261031c"></script>
 </body>
 </html>

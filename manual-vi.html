@@ -42,7 +42,7 @@
 <link rel="alternate" hreflang="vi" href="manual-vi.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap">
-<link rel="stylesheet" href="theme.css?v=20261031a">
+<link rel="stylesheet" href="theme.css?v=20261031c">
 </head>
 <body>
 
@@ -131,15 +131,15 @@
 </table>
 <h2 id="screen--3">Dòng trạng thái</h2>
 <p>Bên trái là trạng thái gửi. Chạm vào đó để mở hàng bắt đầu và dừng gửi (<a class="xref" href="#output">chương 02</a>). Mỗi lần Kanau mở lên, nó ghi OUTPUT OFF, và không có gì đi ra cho đến khi bạn trượt.</p>
-<p>Khi đang gửi, nó ghi SENDING và các universe, chẳng hạn SENDING U1 U2. Nơi không còn chỗ, nó trở thành tuyến, chỉ một chữ cái: A là Art-Net, S là sACN. Chấm bên cạnh nhấp nháy trong lúc đang gửi, lúc chờ bạn trượt, và lúc LISTENING. Bluetooth có chấm và tên riêng.</p>
+<p>Khi đang gửi, nó ghi SENDING và các universe, chẳng hạn SENDING U1 U2. Nơi không còn chỗ, nó trở thành tuyến, chỉ một chữ cái: A là Art-Net, S là sACN. Chấm bên cạnh nhấp nháy trong lúc đang gửi, lúc chờ bạn trượt, và lúc LISTENING. Bluetooth có chấm và tên riêng.</p>
 <p>Bên cạnh là tên của show bạn đang mở; trên máy hẹp, khi hàng không còn chỗ dư, tên sẽ không hiện. Trong lúc BLIND bật, toàn bộ phần bên trái này trở thành chữ BLIND màu hổ phách; chạm vào đó để thoát BLIND (<a class="xref" href="#scenes">chương 08</a>).</p>
 <table>
 <tr><th>Hiện ra</th><th>Ý nghĩa</th></tr>
 <tr><td>OUTPUT OFF</td><td>Chưa gửi gì kể từ khi Kanau mở lên. Bên dưới có ghi Slide to send. Chạm vào đó rồi trượt</td></tr>
 <tr><td>SENDING, được chạm</td><td>Mở <code>Slide to stop</code>. Trượt sang phải để dừng gửi; dòng trở về OUTPUT OFF. <code>Done</code> đóng hàng này</td></tr>
 <tr><td>LISTENING</td><td>Đang kiểm tra xem có bên gửi nào khác không trước khi gửi, khoảng một giây</td></tr>
-<tr><td>SENDING U1 U2</td><td>Những universe đó đang đi ra. U3 OFF màu xám ở đây nghĩa là một universe đã khai báo nhưng chưa được trượt mở. Nó không phải U1 OFF màu đỏ nằm xa hơn trên dòng</td></tr>
-<tr><td>Blocked U1</td><td>Đã có một bên gửi khác trên universe đó, nên Kanau không gửi trên đó. Chạm vào để xem các lựa chọn (<a class="xref" href="#output">chương 02</a>)</td></tr>
+<tr><td>SENDING U1 U2</td><td>Những universe đó đang đi ra. U3 OFF màu xám ở đây nghĩa là một universe đã khai báo nhưng chưa được trượt mở. Nó không phải U1 OFF màu đỏ nằm xa hơn trên dòng</td></tr>
+<tr><td>Blocked U1</td><td>Đã có một bên gửi khác trên universe đó, nên Kanau không gửi trên đó. Chạm vào để xem các lựa chọn (<a class="xref" href="#output">chương 02</a>)</td></tr>
 <tr><td>Chấm xanh lá</td><td>Đang gửi</td></tr>
 <tr><td>Chấm hổ phách</td><td>Đã chậm lại, hoặc đang nối lại (Reconnecting…)</td></tr>
 <tr><td>Chấm đỏ, ART-NET No node hoặc SACN No node</td><td>Không có gì trả lời. Dòng trạng thái nêu tên tuyến, được rút gọn trên màn hình hẹp. Chạm vào đó để mở Settings → Output. Khi hàng Play đang hiện thì nó không mở; hãy chạm <code>EXIT</code> trước</td></tr>
@@ -214,7 +214,7 @@
 <figure class="shot"><div class="wrap" dir="ltr"><img src="img/6-output.png" alt="Settings → Output. Các số màu đỏ ứng với danh sách bên dưới." width="640" height="1168" loading="lazy"><span class="pin" style="left:27%;top:21.5%">1</span><span class="pin" style="left:15%;top:31.7%">2</span><span class="pin" style="left:87%;top:31.7%">3</span><span class="pin" style="left:27%;top:79.2%">4</span><span class="pin" style="left:50%;top:97.1%">5</span></div><figcaption>Settings → Output. Các số màu đỏ ứng với danh sách bên dưới.</figcaption><ul class="pins"><li><b>1</b> Giao thức. Art-Net hoặc sACN, chỉ được 1 trong 2</li><li><b>2</b> Mạng. Ứng dụng gửi trên những mạng được đánh dấu</li><li><b>3</b> Số node đã trả lời. No reply nghĩa là không tìm thấy node nào</li><li><b>4</b> Đích đến. AUTO hợp với hầu hết các dàn đèn</li><li><b>5</b> Tìm lại node</li></ul></figure>
 <h2 id="output--1">Kết nối lần đầu</h2>
 <h3 id="output--2">1 node Art-Net</h3>
-<ol><li>Đưa iPhone vào cùng mạng Wi-Fi hoặc mạng dây với node.</li><li>Mở Settings → Output.</li><li>Chọn Art-Net và AUTO. Cả hai đều là mặc định.</li><li>Kiểm tra Nodes Answering là 1 trở lên. Có thiết bị không bao giờ trả lời thăm dò và đứng nguyên ở 0 dù vẫn nhận bình thường. Vậy nên đừng dừng ở đây nếu con số không nhúc nhích.</li><li>Trên Home, chạm OUTPUT OFF ở góc trên bên trái. Một hàng mở ra dưới dòng trạng thái; trượt tay nắm tròn của Slide to send hết sang phải.</li><li>Dòng trạng thái ghi LISTENING khoảng một giây, rồi SENDING U1, và Network Output hiện một con số tính bằng packets/s. Kéo một cần gạt và xem đèn phản ứng.</li></ol>
+<ol><li>Đưa iPhone vào cùng mạng Wi-Fi hoặc mạng dây với node.</li><li>Mở Settings → Output.</li><li>Chọn Art-Net và AUTO. Cả hai đều là mặc định.</li><li>Kiểm tra Nodes Answering là 1 trở lên. Có thiết bị không bao giờ trả lời thăm dò và đứng nguyên ở 0 dù vẫn nhận bình thường. Vậy nên đừng dừng ở đây nếu con số không nhúc nhích.</li><li>Trên Home, chạm OUTPUT OFF ở góc trên bên trái. Một hàng mở ra dưới dòng trạng thái; trượt tay nắm tròn của Slide to send hết sang phải.</li><li>Dòng trạng thái ghi LISTENING khoảng một giây, rồi SENDING U1, và Network Output hiện một con số tính bằng packets/s. Kéo một cần gạt và xem đèn phản ứng.</li></ol>
 <p><strong dir="auto">Kanau không bao giờ tự bắt đầu gửi.</strong> Mỗi lần mở lên, đầu ra tắt và dòng trạng thái ghi OUTPUT OFF; patch, đích đến và các universe đã tắt vẫn được giữ. Kéo cần gạt hay gọi một Scene không bao giờ bật đầu ra.</p>
 <p>Khi bạn trượt, Kanau trước hết lắng nghe khoảng một giây. Nếu không có bên gửi nào khác trên một universe, thì sau đó nó gửi liên tục mọi universe đã khai báo và đang bật, bình thường ở 44 Hz. Bluetooth kết nối khi bạn trượt, không phải lúc khởi động.</p>
 <p><strong dir="auto">Để dừng gửi</strong>, chạm dòng trạng thái rồi trượt <code>Slide to stop</code> sang phải. Nó trở về OUTPUT OFF.</p>
@@ -255,26 +255,26 @@
 <p>Một dòng đỏ trong Settings → Output nói cái gì đã chặn tín hiệu ra và phải làm gì: bật quyền mạng nội bộ, chuyển sang UNICAST rồi nhập địa chỉ của node, kiểm lại địa chỉ đã nhập, kiểm Wi-Fi, cấp nguồn cho node. CRMX có dòng riêng của nó. Chữ của chính bàn điều khiển vẫn nằm trong ngoặc ở cuối, để trích lại cho đúng.</p>
 <h3 id="output--9">Universe và cách đánh số của Art-Net</h3>
 <p>Universes liệt kê từng universe đã khai báo, kèm số đèn trong đó, số đèn đang sáng, và một công tắc ON/OFF. Universe nào đang OFF thì ghi Not sending, universe chưa được trượt mở cũng vậy.</p>
-<div class="box important"><b>IMPORTANT</b><p>OFF làm ngừng gửi universe đó. Không có gì đi ra cho nó trên Art-Net hay sACN, và qua Bluetooth thì kết nối vẫn giữ nhưng không ghi gì. Đầu thu có thể giữ nguyên giá trị cuối cùng, nên đèn có thể vẫn sáng. Universe nào đang tắt được nêu ở đầu màn hình, dạng U1 OFF.</p></div>
+<div class="box important"><b>IMPORTANT</b><p>OFF làm ngừng gửi universe đó. Không có gì đi ra cho nó trên Art-Net hay sACN, và qua Bluetooth thì kết nối vẫn giữ nhưng không ghi gì. Đầu thu có thể giữ nguyên giá trị cuối cùng, nên đèn có thể vẫn sáng. Universe nào đang tắt được nêu ở đầu màn hình, dạng U1 OFF.</p></div>
 <p>Chỉ dùng Net / Sub / Uni khi node của bạn cần Net / Sub-Net / Universe thay vì một con số duy nhất. Hãy bật nó ở Settings → Output → Art-Net → Net / Sub / Uni. Quan hệ giữa chúng là <strong dir="auto">Net × 256 + Sub × 16 + Uni</strong>. Khi nó bật và tuyến là Art-Net, việc patch cũng nhận universe theo cách đó: Add, Re-address và Re-patch hiện Net (0–127), Sub (0–15) và Uni (0–15) để gõ vào, cùng universe mà chúng tạo nên, ví dụ U500, ở bên cạnh. Một số nằm ngoài dải sẽ được đặt về đầu mút của dải.</p>
 <p>Mức ưu tiên của sACN có thể là 0, 100 hoặc 200. Mặc định là 100, và đó là mức ưu tiên Kanau gửi kèm theo đầu ra sACN của nó.</p>
 <h3 id="output--10">CRMX qua Bluetooth</h3>
 <ol><li>Bật Bluetooth trong Settings → Output → CRMX (Bluetooth).</li><li>Cho phép Bluetooth ở lần iOS hỏi đầu tiên.</li><li>Chọn một bộ phát trong danh sách. Chạm lần nữa là ngắt kết nối.</li></ol>
 <p>Bộ phát bạn chọn mang universe mà patch của bạn dùng (U1 khi patch nằm trong universe 1). Lần sau, chỉ cần bật Bluetooth, sau khi bạn đã trượt để gửi, là nó nối lại đúng bộ phát đó. Khi một bộ phát không nối được hoặc bị rớt, Settings → Output nói cần kiểm tra gì, kèm thông báo của chính hệ thống trong ngoặc.</p>
 <ul><li><strong dir="auto">Danh sách</strong>: ghi <code>connected</code> cho bộ phát đã liên kết và <code>sending</code> cho bộ phát đang có dữ liệu đi tới.</li><li><strong dir="auto">Khi patch trải qua nhiều universe</strong>: hãy chọn nó mang universe nào bằng − và + ở dòng Universe bên dưới bộ phát. Một khi bạn đã chọn bằng tay, Kanau thôi chọn hộ cho đến khi bạn ngắt kết nối bộ phát rồi chọn lại nó.</li><li><strong dir="auto">Bộ phát thứ hai</strong>: việc quét dừng lại khi những cái bạn chọn đã nối xong, nên muốn tìm cái khác thì bấm RESCAN.</li></ul>
-<p>Khi cùng một universe đi ra cả qua mạng lẫn qua Bluetooth, Settings → Output nói rõ: <code class="q">U1: network and Bluetooth output are both on.</code> Đó là <strong dir="auto">một ghi nhận sự việc, không phải cảnh báo</strong>. Bộ thu CRMX nhận tín hiệu ra của bộ phát mà nó đã liên kết, nên chọn cùng U1 trên Kanau tự nó không khiến một cái đèn nhận hai đường. Đèn chỉ chớp ở chỗ nào thật sự nhận từ cả hai đường; chỗ đó hãy tắt bớt một.</p>
+<p>Khi cùng một universe đi ra cả qua mạng lẫn qua Bluetooth, Settings → Output nói rõ: <code class="q">U1: network and Bluetooth output are both on.</code> Đó là <strong dir="auto">một ghi nhận sự việc, không phải cảnh báo</strong>. Bộ thu CRMX nhận tín hiệu ra của bộ phát mà nó đã liên kết, nên chọn cùng U1 trên Kanau tự nó không khiến một cái đèn nhận hai đường. Đèn chỉ chớp ở chỗ nào thật sự nhận từ cả hai đường; chỗ đó hãy tắt bớt một.</p>
 <p>Nếu một bộ phát vẫn từ chối Art-Net sau khi bạn tắt Bluetooth, hãy kiểm tra thiết lập của chính bộ phát.</p>
 <h3 id="output--11">Khi tìm thấy một bàn điều khiển khác</h3>
 <table>
 <tr><th>Hiện ra</th><th>Nghĩa là gì, và phải làm gì</th></tr>
-<tr><td>Blocked U1</td><td>Lúc bạn trượt, đã có một bên gửi khác trên U1, nên Kanau không gửi trên đó. Chạm vào để xem các lựa chọn bên dưới. Không có cách nào gửi đè lên nó</td></tr>
+<tr><td>Blocked U1</td><td>Lúc bạn trượt, đã có một bên gửi khác trên U1, nên Kanau không gửi trên đó. Chạm vào để xem các lựa chọn bên dưới. Không có cách nào gửi đè lên nó</td></tr>
 <tr><td>SHARED + IP hoặc tên thiết bị</td><td>Một bàn điều khiển khác xuất hiện sau khi máy này đã gửi. Việc gửi vẫn tiếp tục, nên hãy dừng 1 trong 2 nếu cần</td></tr>
 </table>
-<p>Chạm Blocked U1 sẽ mở một hàng nêu tên bên gửi, chẳng hạn U1 In Use, với những lựa chọn sau:</p>
+<p>Chạm Blocked U1 sẽ mở một hàng nêu tên bên gửi, chẳng hạn U1 In Use, với những lựa chọn sau:</p>
 <table>
 <tr><th>Lựa chọn</th><th>Nó làm gì</th></tr>
 <tr><td>Join</td><td>Hiện khi bên gửi là máy chủ Kanau. Mở Session để tham gia</td></tr>
-<tr><td>Send U2 Only</td><td>Hiện khi còn universe khác trống. Chỉ gửi những universe đó</td></tr>
+<tr><td>Send U2 Only</td><td>Hiện khi còn universe khác trống. Chỉ gửi những universe đó</td></tr>
 <tr><td>Cancel</td><td>Đóng hàng này mà không gửi</td></tr>
 </table>
 <p>Các thiết bị Kanau báo cho nhau biết chúng gửi universe nào, nên 2 thiết bị trượt cùng lúc sẽ không cùng gửi. Một bên gửi sACN được hiện màu đỏ trong hàng gửi, theo tên hoặc IP; điều này chỉ để báo cho bạn, và Kanau vẫn tiếp tục gửi. Bên gửi unicast và Bluetooth trong ứng dụng khác có thể không thấy được từ đây.</p>
@@ -292,7 +292,7 @@
 <tr><td>Network Output</td><td>Số gói gửi qua mạng trong giây vừa rồi. Quanh 44 là bình thường với một universe tới một đích; con số nhân lên theo mỗi universe hoặc đích thêm vào. Nothing nghĩa là không có gói nào đi ra, như trước khi bạn trượt. Bluetooth không được tính ở đây</td></tr>
 <tr><td>Clock</td><td>Khoảng trống lớn nhất giữa 2 lần gửi. Khoảng 23 ms là bình thường. Trên 100 ms là điện thoại có vấn đề</td></tr>
 <tr><td>Touch → DMX</td><td>Từ ngón tay bạn tới gói tin. Khoảng 25 ms là bình thường</td></tr>
-<tr><td>Nodes Answering</td><td>Bao nhiêu node đã trả lời, kèm tên, địa chỉ, kết nối và thời gian đi về. Thời gian đi về để trống cho đến khi RESCAN đo xong; số trong ngoặc là giá trị tệ nhất của 10 giây vừa qua. Ở AUTO, dòng dưới mỗi node liệt kê các universe được gửi tới nó, như U1 hay U0–U3</td></tr>
+<tr><td>Nodes Answering</td><td>Bao nhiêu node đã trả lời, kèm tên, địa chỉ, kết nối và thời gian đi về. Thời gian đi về để trống cho đến khi RESCAN đo xong; số trong ngoặc là giá trị tệ nhất của 10 giây vừa qua. Ở AUTO, dòng dưới mỗi node liệt kê các universe được gửi tới nó, như U1 hay U0–U3</td></tr>
 <tr><td>Type these into the node</td><td>Net / Sub / Uni cần nhập vào node, khi cách hiển thị đó đang bật</td></tr>
 </table>
 <p>Những mục này thu hẹp phạm vi sự cố; chúng không chứng minh là mọi thứ đã thành công. Đó là những gì Kanau đã gửi, còn đèn có nhận được hay không thì từ đây không thấy được. Network Output có thể hiện một con số trong khi một chỗ khớp sai hoặc một hỏng hóc ở đầu kia vẫn giữ cho đèn tối. Thiết bị không trả lời thăm dò sẽ hiện 0 ở Nodes Answering ngay cả khi nó đang nhận.</p>
@@ -1124,7 +1124,7 @@
 <tr><th>Bạn thấy gì</th><th>Phải làm gì</th></tr>
 <tr><td>Idle</td><td>Kiểm tra xem đã bật một mạng nào chưa, ở Settings → Output</td></tr>
 <tr><td>Blocked</td><td>Chạm vào đó để mở Settings → Output, nơi hiện một dòng đỏ nói cái gì đã chặn và phải làm gì. Cứ theo dòng đó</td></tr>
-<tr><td>Blocked U1, kèm số universe</td><td>Đã có một bên gửi khác trên universe đó. Chạm vào để chọn Join, Send … Only hoặc Cancel</td></tr>
+<tr><td>Blocked U1, kèm số universe</td><td>Đã có một bên gửi khác trên universe đó. Chạm vào để chọn Join, Send … Only hoặc Cancel</td></tr>
 <tr><td>No node</td><td>Chạm vào đó để mở Settings → Output. Kiểm tra nguồn điện, mạng, địa chỉ và thiết lập giao thức của node</td></tr>
 <tr><td>U1 OFF</td><td>Bật universe trở lại ở Output → Universes</td></tr>
 <tr><td>Dấu ⏻ hoặc biểu tượng đèn màu tím</td><td>Bật lại tín hiệu ra của đèn</td></tr>
@@ -1347,5 +1347,6 @@ Fixture          bản thân cái đèn có chậm không</pre>
 
 })();
 </script>
+<script src="jbreak.js?v=20261031c"></script>
 </body>
 </html>

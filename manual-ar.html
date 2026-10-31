@@ -42,7 +42,7 @@
 <link rel="alternate" hreflang="vi" href="manual-vi.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap">
-<link rel="stylesheet" href="theme.css?v=20261031a">
+<link rel="stylesheet" href="theme.css?v=20261031c">
 </head>
 <body>
 
@@ -131,15 +131,15 @@
 </table>
 <h2 id="screen--3">سطر الحالة</h2>
 <p>على يسار سطر الحالة حالة الإرسال. المسها لتفتح الصف الذي يبدأ الإرسال ويوقفه (<a class="xref" href="#output">الفصل 02</a>). في كل مرة يُفتح فيها Kanau يقرأ OUTPUT OFF ولا يخرج شيء حتى تسحب.</p>
-<p>وأثناء الإرسال يقرأ SENDING مع الأكوان، مثل SENDING U1 U2. وحيث لا يتّسع المكان يصير المسار، حرفاً واحداً: A لـ Art-Net و S لـ sACN. والنقطة بجانبه تنبض أثناء الإرسال، وأثناء انتظار السحب، وأثناء LISTENING. أما Bluetooth فله نقطته واسمه.</p>
+<p>وأثناء الإرسال يقرأ SENDING مع الأكوان، مثل SENDING U1 U2. وحيث لا يتّسع المكان يصير المسار، حرفاً واحداً: A لـ Art-Net و S لـ sACN. والنقطة بجانبه تنبض أثناء الإرسال، وأثناء انتظار السحب، وأثناء LISTENING. أما Bluetooth فله نقطته واسمه.</p>
 <p>وإلى جانبها اسم العرض الذي أنت فيه؛ وعلى هاتف ضيّق لا يبقى فيه فراغ في السطر، لا يظهر. وما دام BLIND مشغّلاً يتحوّل هذا الجزء كلّه إلى BLIND كهرماني؛ المسه لتخرج من BLIND (<a class="xref" href="#scenes">الفصل 08</a>).</p>
 <table>
 <tr><th>المعروض</th><th>المعنى</th></tr>
 <tr><td>OUTPUT OFF</td><td>لا إرسال منذ فُتح Kanau. مكتوب تحته Slide to send. المسه واسحب</td></tr>
 <tr><td>SENDING، بعد اللمس</td><td>يفتح <code>Slide to stop</code>. اسحب إلى اليمين لإيقاف الإرسال؛ فيعود السطر إلى OUTPUT OFF. ويغلق <code>Done</code> الصف</td></tr>
 <tr><td>LISTENING</td><td>يتحقّق من وجود جهة إرسال أخرى قبل أن يرسل، لنحو ثانية</td></tr>
-<tr><td>SENDING U1 U2</td><td>هذه الأكوان تخرج. وU3 OFF الرمادي هنا يعني كوناً مسجّلاً لم يُفتح بالسحب بعد. وهو ليس U1 OFF الأحمر الذي يأتي لاحقاً في السطر</td></tr>
-<tr><td>Blocked U1</td><td>توجد جهة إرسال أخرى على ذلك الكون أصلاً، فلا يرسل Kanau عليه. المسه لترى الخيارات (<a class="xref" href="#output">الفصل 02</a>)</td></tr>
+<tr><td>SENDING U1 U2</td><td>هذه الأكوان تخرج. وU3 OFF الرمادي هنا يعني كوناً مسجّلاً لم يُفتح بالسحب بعد. وهو ليس U1 OFF الأحمر الذي يأتي لاحقاً في السطر</td></tr>
+<tr><td>Blocked U1</td><td>توجد جهة إرسال أخرى على ذلك الكون أصلاً، فلا يرسل Kanau عليه. المسه لترى الخيارات (<a class="xref" href="#output">الفصل 02</a>)</td></tr>
 <tr><td>نقطة خضراء</td><td>يرسل</td></tr>
 <tr><td>نقطة كهرمانية</td><td>تباطؤ، أو إعادة اتصال (Reconnecting…)</td></tr>
 <tr><td>نقطة حمراء، ART-NET No node أو SACN No node</td><td>لا شيء يردّ. ويسمّي سطر الحالة المسار، مختصراً على الشاشة الضيّقة. المسه ليفتح Settings ← Output. وما دام صف Play ظاهراً فلا يفتح؛ المس <code>EXIT</code> أولاً</td></tr>
@@ -214,7 +214,7 @@
 <figure class="shot"><div class="wrap" dir="ltr"><img src="img/6-output.png" alt="‏Settings ← Output. الأرقام الحمراء تقابل القائمة أدناه." width="640" height="1168" loading="lazy"><span class="pin" style="left:27%;top:21.5%">1</span><span class="pin" style="left:15%;top:31.7%">2</span><span class="pin" style="left:87%;top:31.7%">3</span><span class="pin" style="left:27%;top:79.2%">4</span><span class="pin" style="left:50%;top:97.1%">5</span></div><figcaption>‏Settings ← Output. الأرقام الحمراء تقابل القائمة أدناه.</figcaption><ul class="pins"><li><b>1</b> البروتوكول. ‏Art-Net أو sACN، واحد منهما</li><li><b>2</b> الشبكات. يرسل عبر المؤشّر عليها</li><li><b>3</b> كم عقدة ردّت. ‏No reply تعني أنه لم يُعثر على أي عقدة</li><li><b>4</b> الوجهة. ‏AUTO مناسب لمعظم الأطقم</li><li><b>5</b> ابحث عن العقد من جديد</li></ul></figure>
 <h2 id="output--1">أول اتصال</h2>
 <h3 id="output--2">عقدة Art-Net واحدة</h3>
-<ol><li>ضع الـ iPhone على شبكة Wi-Fi أو الشبكة السلكية نفسها التي عليها العقدة.</li><li>افتح Settings ← Output.</li><li>اختر Art-Net وAUTO. كلاهما القيمة الافتراضية.</li><li>تأكد أن Nodes Answering يساوي 1 أو أكثر. وبعض المعدات لا تردّ على الاستطلاع أبداً وتبقى على 0 وهي تستقبل بشكل طبيعي، فلا تتوقف هنا إن لم يتحرّك الرقم.</li><li>في Home، المس OUTPUT OFF في أعلى يسار الشاشة. يُفتح صف تحت سطر الحالة؛ اسحب المقبض الدائري لـ Slide to send إلى أقصى اليمين.</li><li>يقرأ سطر الحالة LISTENING لنحو ثانية، ثم SENDING U1، ويعرض Network Output رقماً بالحزم في الثانية. حرّك أحد الـ fader وراقب استجابة وحدة الإضاءة.</li></ol>
+<ol><li>ضع الـ iPhone على شبكة Wi-Fi أو الشبكة السلكية نفسها التي عليها العقدة.</li><li>افتح Settings ← Output.</li><li>اختر Art-Net وAUTO. كلاهما القيمة الافتراضية.</li><li>تأكد أن Nodes Answering يساوي 1 أو أكثر. وبعض المعدات لا تردّ على الاستطلاع أبداً وتبقى على 0 وهي تستقبل بشكل طبيعي، فلا تتوقف هنا إن لم يتحرّك الرقم.</li><li>في Home، المس OUTPUT OFF في أعلى يسار الشاشة. يُفتح صف تحت سطر الحالة؛ اسحب المقبض الدائري لـ Slide to send إلى أقصى اليمين.</li><li>يقرأ سطر الحالة LISTENING لنحو ثانية، ثم SENDING U1، ويعرض Network Output رقماً بالحزم في الثانية. حرّك أحد الـ fader وراقب استجابة وحدة الإضاءة.</li></ol>
 <p><strong dir="auto">لا يبدأ Kanau الإرسال من تلقاء نفسه أبداً.</strong> في كل مرة يُفتح فيها يكون الخرج مطفأً ويقرأ سطر الحالة OUTPUT OFF؛ ويبقى الـ patch والوجهة والأكوان المطفأة كما هي. وتحريك fader أو استدعاء Scene لا يبدأ الخرج أبداً.</p>
 <p>حين تسحب، يصغي Kanau أولاً لنحو ثانية. وإن لم توجد جهة إرسال أخرى على كون ما، فإنه يرسل بعدها كل كون مسجّل ومشغّل باستمرار، عادة بمعدل 44 Hz. ويتّصل Bluetooth حين تسحب، لا عند التشغيل.</p>
 <p><strong dir="auto">لإيقاف الإرسال</strong>، المس سطر الحالة واسحب <code>Slide to stop</code> إلى اليمين. فيعود إلى OUTPUT OFF.</p>
@@ -267,14 +267,14 @@
 <h3 id="output--11">حين يُعثر على وحدة تحكم أخرى</h3>
 <table>
 <tr><th>المعروض</th><th>ما يعنيه وما تفعله</th></tr>
-<tr><td>Blocked U1</td><td>حين سحبت كانت جهة إرسال أخرى على U1 أصلاً، فلا يرسل Kanau عليه. المسه لترى الخيارات أدناه. ولا سبيل إلى الإرسال فوقه</td></tr>
+<tr><td>Blocked U1</td><td>حين سحبت كانت جهة إرسال أخرى على U1 أصلاً، فلا يرسل Kanau عليه. المسه لترى الخيارات أدناه. ولا سبيل إلى الإرسال فوقه</td></tr>
 <tr><td>SHARED + IP أو اسم جهاز</td><td>ظهرت وحدة تحكم أخرى بعد بدء هذه. يستمر الإرسال، فأوقف إحداهما إن لزم</td></tr>
 </table>
-<p>لمس Blocked U1 يفتح صفاً يسمّي جهة الإرسال، مثل U1 In Use، مع هذه الخيارات:</p>
+<p>لمس Blocked U1 يفتح صفاً يسمّي جهة الإرسال، مثل U1 In Use، مع هذه الخيارات:</p>
 <table>
 <tr><th>الخيار</th><th>ما يفعله</th></tr>
 <tr><td>Join</td><td>يظهر حين تكون جهة الإرسال مضيف Kanau. يفتح Session لتنضم إليه</td></tr>
-<tr><td>Send U2 Only</td><td>يظهر حين تكون هناك أكوان أخرى حرة. يرسل عليها وحدها</td></tr>
+<tr><td>Send U2 Only</td><td>يظهر حين تكون هناك أكوان أخرى حرة. يرسل عليها وحدها</td></tr>
 <tr><td>Cancel</td><td>يغلق الصف دون إرسال</td></tr>
 </table>
 <p>تُخبر أجهزة Kanau بعضها بعضاً بالأكوان التي ترسلها، فلا يرسل جهازان يسحبان معاً كلاهما. وتظهر جهة إرسال sACN بالأحمر في صف الإرسال، باسمها أو بعنوان IP؛ وهذا يخبرك فقط، ويواصل Kanau الإرسال. وقد لا تُرى من هنا جهات الإرسال unicast وBluetooth في تطبيقات أخرى.</p>
@@ -1124,7 +1124,7 @@
 <tr><th>ما تراه</th><th>ما تفعله</th></tr>
 <tr><td>Idle</td><td>تأكد من تشغيل شبكة في Settings ← Output</td></tr>
 <tr><td>Blocked</td><td>المسه ليفتح Settings ← Output، الذي يطبع سطراً أحمر يسمّي ما أوقفه وما ينبغي فعله. اتبع ذلك السطر</td></tr>
-<tr><td>Blocked U1، مع رقم كون</td><td>توجد جهة إرسال أخرى على ذلك الكون أصلاً. المسه لتختار Join أو Send … Only أو Cancel</td></tr>
+<tr><td>Blocked U1، مع رقم كون</td><td>توجد جهة إرسال أخرى على ذلك الكون أصلاً. المسه لتختار Join أو Send … Only أو Cancel</td></tr>
 <tr><td>No node</td><td>المسه ليفتح Settings ← Output. تحقق من تغذية العقدة وشبكتها وعنوانها وإعدادات البروتوكول فيها</td></tr>
 <tr><td>U1 OFF</td><td>أعد تشغيل الكون في Output ← Universes</td></tr>
 <tr><td>⏻ أو أيقونة وحدة بنفسجية</td><td>أعد تشغيل خرج الوحدة</td></tr>
@@ -1347,5 +1347,6 @@ Nodes Answering  هل الشبكة أو المعدات بطيئة (زمن الذ
 
 })();
 </script>
+<script src="jbreak.js?v=20261031c"></script>
 </body>
 </html>

@@ -42,7 +42,7 @@
 <link rel="alternate" hreflang="vi" href="manual-vi.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap">
-<link rel="stylesheet" href="theme.css?v=20261031a">
+<link rel="stylesheet" href="theme.css?v=20261031c">
 </head>
 <body>
 
@@ -131,15 +131,15 @@
 </table>
 <h2 id="screen--3">狀態列</h2>
 <p>左邊是傳送狀態。點它會打開開始和停止傳送的那一列（第 <a class="xref" href="#output">02 章</a>）。每次打開 Kanau 都顯示 OUTPUT OFF，在你滑開之前什麼都不會送出。</p>
-<p>傳送時顯示 SENDING 和宇宙，例如 SENDING U1 U2。沒有地方放時它變成路徑，只用一個字母：Art-Net 是 A，sACN 是 S。旁邊的圓點在傳送中、等待滑動時和 LISTENING 時都會呼吸。Bluetooth 有自己的圓點和名字。</p>
+<p>傳送時顯示 SENDING 和宇宙，例如 SENDING U1 U2。沒有地方放時它變成路徑，只用一個字母：Art-Net 是 A，sACN 是 S。旁邊的圓點在傳送中、等待滑動時和 LISTENING 時都會呼吸。Bluetooth 有自己的圓點和名字。</p>
 <p>旁邊寫著你正開著的那個 show 的名稱；螢幕窄、這一列沒有餘地的機器上不顯示。BLIND 開著時，左邊這一整塊會變成琥珀色的 BLIND；點它就退出 BLIND（第 <a class="xref" href="#scenes">08 章</a>）。</p>
 <table>
 <tr><th>顯示</th><th>含義</th></tr>
 <tr><td>OUTPUT OFF</td><td>自從 Kanau 打開後什麼都沒送。下面寫著 Slide to send。點它並滑開</td></tr>
 <tr><td>SENDING，點一下</td><td>打開 <code>Slide to stop</code>。往右滑就停止傳送；這一行回到 OUTPUT OFF。<code>Done</code> 關閉這一列</td></tr>
 <tr><td>LISTENING</td><td>傳送之前正在檢查有沒有別的傳送端，大約一秒</td></tr>
-<tr><td>SENDING U1 U2</td><td>這些宇宙正在送出。這裡灰色的 U3 OFF 表示已登錄但還沒有滑開的宇宙。它不是這一行更後面紅色的 U1 OFF</td></tr>
-<tr><td>Blocked U1</td><td>那個宇宙上已經有別的傳送端，所以 Kanau 不在上面傳送。點它查看選項（第 <a class="xref" href="#output">02 章</a>）</td></tr>
+<tr><td>SENDING U1 U2</td><td>這些宇宙正在送出。這裡灰色的 U3 OFF 表示已登錄但還沒有滑開的宇宙。它不是這一行更後面紅色的 U1 OFF</td></tr>
+<tr><td>Blocked U1</td><td>那個宇宙上已經有別的傳送端，所以 Kanau 不在上面傳送。點它查看選項（第 <a class="xref" href="#output">02 章</a>）</td></tr>
 <tr><td>綠點</td><td>正在送</td></tr>
 <tr><td>琥珀色點</td><td>變慢了，或正在重新連接（Reconnecting…）</td></tr>
 <tr><td>紅點、ART-NET No node 或 SACN No node</td><td>沒有任何節點回應。狀態列寫出路徑名，螢幕窄時會縮短。點它會打開 Settings → Output。Play 列顯示時它不會打開；請先點 <code>EXIT</code></td></tr>
@@ -214,7 +214,7 @@
 <figure class="shot"><div class="wrap" dir="ltr"><img src="img/6-output.png" alt="Settings → Output。紅色數字與下面的列表對應。" width="640" height="1168" loading="lazy"><span class="pin" style="left:27%;top:21.5%">1</span><span class="pin" style="left:15%;top:31.7%">2</span><span class="pin" style="left:87%;top:31.7%">3</span><span class="pin" style="left:27%;top:79.2%">4</span><span class="pin" style="left:50%;top:97.1%">5</span></div><figcaption>Settings → Output。紅色數字與下面的列表對應。</figcaption><ul class="pins"><li><b>1</b> 通訊協定。Art-Net 或 sACN，二選一</li><li><b>2</b> 網路。打勾的會用來送</li><li><b>3</b> 有多少節點回應。No reply 表示一個都沒找到</li><li><b>4</b> 送到哪裡。多數情況下 AUTO 就對</li><li><b>5</b> 重新尋找節點</li></ul></figure>
 <h2 id="output--1">第一次連接</h2>
 <h3 id="output--2">一台 Art-Net 節點</h3>
-<ol><li>把 iPhone 接到和節點相同的 Wi-Fi 或有線網路上。</li><li>打開 Settings → Output。</li><li>選 Art-Net 和 AUTO。兩個都是預設值。</li><li>確認 Nodes Answering 是 1 以上。有的器材根本不回應輪詢，即使正常接收也一直是 0。數字不動也不要停在這一步。</li><li>在 Home 上點左上角的 OUTPUT OFF。狀態列下面會展開一列；把 Slide to send 的圓形把手一路滑到最右邊。</li><li>狀態列顯示 LISTENING 大約一秒，然後是 SENDING U1，Network Output 顯示一個以 packets/s 為單位的數字。動一下推桿，看燈有沒有反應。</li></ol>
+<ol><li>把 iPhone 接到和節點相同的 Wi-Fi 或有線網路上。</li><li>打開 Settings → Output。</li><li>選 Art-Net 和 AUTO。兩個都是預設值。</li><li>確認 Nodes Answering 是 1 以上。有的器材根本不回應輪詢，即使正常接收也一直是 0。數字不動也不要停在這一步。</li><li>在 Home 上點左上角的 OUTPUT OFF。狀態列下面會展開一列；把 Slide to send 的圓形把手一路滑到最右邊。</li><li>狀態列顯示 LISTENING 大約一秒，然後是 SENDING U1，Network Output 顯示一個以 packets/s 為單位的數字。動一下推桿，看燈有沒有反應。</li></ol>
 <p><strong dir="auto">Kanau 從不自己開始傳送。</strong> 每次打開時輸出都是關的，狀態列顯示 OUTPUT OFF；patch、目的地和關掉的宇宙都保留著。動推桿或叫出 Scene 都不會開始輸出。</p>
 <p>你滑開時，Kanau 先聽大約一秒。如果某個宇宙上沒有別的傳送端，就會持續送出所有已登錄且已打開的宇宙，通常是 44 Hz。Bluetooth 在你滑開時連接，而不是啟動時。</p>
 <p><strong dir="auto">要停止傳送</strong>，點狀態列，把 <code>Slide to stop</code> 向右滑。它會回到 OUTPUT OFF。</p>
@@ -267,14 +267,14 @@
 <h3 id="output--11">發現別的控台時</h3>
 <table>
 <tr><th>顯示</th><th>含義和處理</th></tr>
-<tr><td>Blocked U1</td><td>你滑開時，U1 上已經有別的傳送端，所以 Kanau 不在上面傳送。點它會看到下面的選項。沒有辦法壓在它上面傳送</td></tr>
+<tr><td>Blocked U1</td><td>你滑開時，U1 上已經有別的傳送端，所以 Kanau 不在上面傳送。點它會看到下面的選項。沒有辦法壓在它上面傳送</td></tr>
 <tr><td>SHARED + IP 或裝置名稱</td><td>這台開始送之後才出現別的控台。傳送會繼續，需要的話停掉其中一台</td></tr>
 </table>
-<p>點 Blocked U1 會展開一列，寫出傳送端的名字，例如 U1 In Use，並帶有這些選項：</p>
+<p>點 Blocked U1 會展開一列，寫出傳送端的名字，例如 U1 In Use，並帶有這些選項：</p>
 <table>
 <tr><th>選項</th><th>作用</th></tr>
 <tr><td>Join</td><td>對方是 Kanau 主機時顯示。打開 Session 加入它</td></tr>
-<tr><td>Send U2 Only</td><td>還有別的宇宙空著時顯示。只送那些</td></tr>
+<tr><td>Send U2 Only</td><td>還有別的宇宙空著時顯示。只送那些</td></tr>
 <tr><td>Cancel</td><td>關閉這一列，不傳送</td></tr>
 </table>
 <p>Kanau 裝置會互相告知各自送出哪些宇宙，所以同時滑開的兩台不會都傳送。sACN 傳送端會在傳送列裡用紅字顯示，寫名字或 IP；這只是告知，Kanau 會繼續傳送。單播傳送端和其他 App 裡的 Bluetooth，這裡可能看不到。</p>
@@ -1124,7 +1124,7 @@
 <tr><th>你看到的</th><th>該做什麼</th></tr>
 <tr><td>Idle</td><td>在 Settings → Output 裡確認有網路是開著的</td></tr>
 <tr><td>Blocked</td><td>點它會打開 Settings → Output，那裡會出一行紅字，說明是什麼擋住了、該怎麼做。照那行做</td></tr>
-<tr><td>Blocked U1，帶宇宙號</td><td>那個宇宙上已經有別的傳送端。點它選 Join、Send … Only 或 Cancel</td></tr>
+<tr><td>Blocked U1，帶宇宙號</td><td>那個宇宙上已經有別的傳送端。點它選 Join、Send … Only 或 Cancel</td></tr>
 <tr><td>No node</td><td>點它會打開 Settings → Output。檢查節點的電源、網路、位址和通訊協定設定</td></tr>
 <tr><td>U1 OFF</td><td>在 Output → Universes 裡把那個宇宙打開</td></tr>
 <tr><td>紫色的 ⏻ 或燈具圖示</td><td>把那台燈的輸出重新打開</td></tr>
@@ -1347,5 +1347,6 @@ Nodes Answering  網路或器材是不是慢（往返）
 
 })();
 </script>
+<script src="jbreak.js?v=20261031c"></script>
 </body>
 </html>

@@ -42,7 +42,7 @@
 <link rel="alternate" hreflang="vi" href="manual-vi.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap">
-<link rel="stylesheet" href="theme.css?v=20261031a">
+<link rel="stylesheet" href="theme.css?v=20261031c">
 </head>
 <body>
 
@@ -131,15 +131,15 @@
 </table>
 <h2 id="screen--3">Baris status</h2>
 <p>Di kiri ada status pengiriman. Ketuk untuk membuka baris yang memulai dan menghentikan pengiriman (<a class="xref" href="#output">bab 02</a>). Setiap kali Kanau dibuka, tertulis OUTPUT OFF, dan tidak ada yang keluar sampai Anda menggeser.</p>
-<p>Selama mengirim, tertulis SENDING dan universe-nya, misalnya SENDING U1 U2. Bila tidak ada tempat, ia menjadi rute, satu huruf: A untuk Art-Net, S untuk sACN. Titik di sebelahnya berdenyut selama mengirim, selama menunggu geseran, dan selama LISTENING. Bluetooth punya titik dan nama sendiri.</p>
+<p>Selama mengirim, tertulis SENDING dan universe-nya, misalnya SENDING U1 U2. Bila tidak ada tempat, ia menjadi rute, satu huruf: A untuk Art-Net, S untuk sACN. Titik di sebelahnya berdenyut selama mengirim, selama menunggu geseran, dan selama LISTENING. Bluetooth punya titik dan nama sendiri.</p>
 <p>Di sebelahnya ada nama show yang sedang Anda buka; pada ponsel yang sempit, ketika barisnya tak bersisa tempat, nama itu tidak ditampilkan. Selama BLIND menyala, seluruh bagian kiri ini menjadi BLIND berwarna amber; ketuk untuk keluar dari BLIND (<a class="xref" href="#scenes">bab 08</a>).</p>
 <table>
 <tr><th>Yang tampil</th><th>Artinya</th></tr>
 <tr><td>OUTPUT OFF</td><td>Belum ada yang dikirim sejak Kanau dibuka. Di bawahnya tertulis Slide to send. Ketuk lalu geser</td></tr>
 <tr><td>SENDING, diketuk</td><td>Membuka <code>Slide to stop</code>. Geser ke kanan untuk berhenti mengirim; barisnya kembali menjadi OUTPUT OFF. <code>Done</code> menutup baris itu</td></tr>
 <tr><td>LISTENING</td><td>Memeriksa apakah ada pengirim lain sebelum mengirim, sekitar satu detik</td></tr>
-<tr><td>SENDING U1 U2</td><td>Universe itu sedang keluar. U3 OFF yang abu-abu di sini berarti universe yang sudah di-patch tetapi belum digeser terbuka. Itu bukan U1 OFF yang merah lebih jauh di sepanjang baris</td></tr>
-<tr><td>Blocked U1</td><td>Sudah ada pengirim lain di universe itu, jadi Kanau tidak mengirim di sana. Ketuk untuk melihat pilihannya (<a class="xref" href="#output">bab 02</a>)</td></tr>
+<tr><td>SENDING U1 U2</td><td>Universe itu sedang keluar. U3 OFF yang abu-abu di sini berarti universe yang sudah di-patch tetapi belum digeser terbuka. Itu bukan U1 OFF yang merah lebih jauh di sepanjang baris</td></tr>
+<tr><td>Blocked U1</td><td>Sudah ada pengirim lain di universe itu, jadi Kanau tidak mengirim di sana. Ketuk untuk melihat pilihannya (<a class="xref" href="#output">bab 02</a>)</td></tr>
 <tr><td>Titik hijau</td><td>Sedang mengirim</td></tr>
 <tr><td>Titik amber</td><td>Melambat, atau sedang menyambung ulang (Reconnecting…)</td></tr>
 <tr><td>Titik merah, ART-NET No node atau SACN No node</td><td>Tidak ada yang menjawab. Baris status menyebut rutenya, dipersingkat pada layar sempit. Ketuk untuk membuka Settings → Output. Selama baris Play tampil, ini tidak membuka apa pun; ketuk <code>EXIT</code> dulu</td></tr>
@@ -214,13 +214,13 @@
 <figure class="shot"><div class="wrap" dir="ltr"><img src="img/6-output.png" alt="Settings → Output. Angka merahnya cocok dengan daftar di bawah." width="640" height="1168" loading="lazy"><span class="pin" style="left:27%;top:21.5%">1</span><span class="pin" style="left:15%;top:31.7%">2</span><span class="pin" style="left:87%;top:31.7%">3</span><span class="pin" style="left:27%;top:79.2%">4</span><span class="pin" style="left:50%;top:97.1%">5</span></div><figcaption>Settings → Output. Angka merahnya cocok dengan daftar di bawah.</figcaption><ul class="pins"><li><b>1</b> Protokol. Art-Net atau sACN, salah satu saja</li><li><b>2</b> Jaringan. Pengiriman dilakukan lewat yang dicentang</li><li><b>3</b> Berapa node yang menjawab. No reply berarti tidak ada yang ditemukan</li><li><b>4</b> Tujuan pengiriman. AUTO cocok untuk hampir semua rig</li><li><b>5</b> Mencari node sekali lagi</li></ul></figure>
 <h2 id="output--1">Sambungan pertama</h2>
 <h3 id="output--2">Satu node Art-Net</h3>
-<ol><li>Tempatkan iPhone pada jaringan Wi-Fi atau jaringan kabel yang sama dengan nodenya.</li><li>Buka Settings → Output.</li><li>Pilih Art-Net dan AUTO. Keduanya adalah pengaturan bawaan.</li><li>Pastikan Nodes Answering bernilai 1 atau lebih. Ada perangkat yang tidak pernah menjawab polling dan tetap 0 padahal sedang menerima dengan normal. Jadi jangan berhenti di sini kalau angkanya tidak bergerak.</li><li>Di Home, ketuk OUTPUT OFF di kiri atas. Sebuah baris terbuka di bawah baris status; geser pegangan bulat Slide to send sampai ujung kanan.</li><li>Baris status bertuliskan LISTENING sekitar satu detik, lalu SENDING U1, dan Network Output menampilkan sebuah angka dalam paket/detik. Gerakkan sebuah fader dan perhatikan lampunya menanggapi.</li></ol>
+<ol><li>Tempatkan iPhone pada jaringan Wi-Fi atau jaringan kabel yang sama dengan nodenya.</li><li>Buka Settings → Output.</li><li>Pilih Art-Net dan AUTO. Keduanya adalah pengaturan bawaan.</li><li>Pastikan Nodes Answering bernilai 1 atau lebih. Ada perangkat yang tidak pernah menjawab polling dan tetap 0 padahal sedang menerima dengan normal. Jadi jangan berhenti di sini kalau angkanya tidak bergerak.</li><li>Di Home, ketuk OUTPUT OFF di kiri atas. Sebuah baris terbuka di bawah baris status; geser pegangan bulat Slide to send sampai ujung kanan.</li><li>Baris status bertuliskan LISTENING sekitar satu detik, lalu SENDING U1, dan Network Output menampilkan sebuah angka dalam paket/detik. Gerakkan sebuah fader dan perhatikan lampunya menanggapi.</li></ol>
 <p><strong dir="auto">Kanau tidak pernah mulai mengirim sendiri.</strong> Setiap kali dibuka, keluaran mati dan baris status bertuliskan OUTPUT OFF; patch, tujuan, dan universe yang dimatikan tetap tersimpan. Menggerakkan fader atau memanggil Scene tidak pernah memulai keluaran.</p>
 <p>Ketika Anda menggeser, Kanau lebih dulu mendengarkan sekitar satu detik. Bila tidak ada pengirim lain di sebuah universe, barulah ia mengirim setiap universe yang sudah di-patch dan dinyalakan secara terus-menerus, biasanya pada 44 Hz. Bluetooth tersambung ketika Anda menggeser, bukan saat peluncuran.</p>
 <p><strong dir="auto">Untuk berhenti mengirim</strong>, ketuk baris status lalu geser <code>Slide to stop</code> ke kanan. Baris status kembali ke OUTPUT OFF.</p>
 <p>Keluaran juga kembali ke mati, dan Anda menggeser lagi, ketika:</p>
 <ul><li>Anda berganti antara Art-Net dan sACN</li><li>muncul jaringan yang belum ada saat Anda menggeser</li><li>Anda meninggalkan sesi sebagai tamu</li><li>Anda keluar dari LAMP MODE</li></ul>
-<p>Universe yang ditambahkan ke patch belakangan tetap mati sampai Anda menggeser, dan baris status menampilkannya sebagai U3 OFF. Keluaran berhenti selama Kanau tidak ada di layar dan mulai lagi saat Anda kembali; SCREEN LOCK tidak menghentikannya.</p>
+<p>Universe yang ditambahkan ke patch belakangan tetap mati sampai Anda menggeser, dan baris status menampilkannya sebagai U3 OFF. Keluaran berhenti selama Kanau tidak ada di layar dan mulai lagi saat Anda kembali; SCREEN LOCK tidak menghentikannya.</p>
 <h2 id="output--3">Apakah sedang mengirim?</h2>
 <p>Bacalah ini berurutan. Masing-masing memberi tahu hal yang berbeda, dan tidak satu pun bisa memastikan bahwa lampunya sendiri menerima datanya.</p>
 <table>
@@ -255,26 +255,26 @@
 <p>Sebuah baris merah di Settings → Output menyebut apa yang menghentikan keluaran dan apa yang harus dilakukan: nyalakan izin jaringan lokal, beralih ke UNICAST dan ketik alamat node, periksa alamat yang Anda ketik, periksa Wi-Fi, beri daya pada node. CRMX punya barisnya sendiri. Kata-kata konsol itu sendiri tetap ada dalam kurung di akhir, supaya bisa dikutip persis.</p>
 <h3 id="output--9">Universe dan penomoran Art-Net</h3>
 <p>Universes mencantumkan setiap universe yang sudah di-patch beserta jumlah lampunya, berapa yang menyala, dan sebuah sakelar ON/OFF. Universe yang OFF tertulis Not sending, begitu pula yang belum digeser terbuka.</p>
-<div class="box important"><b>IMPORTANT</b><p>OFF menghentikan pengiriman universe itu. Tidak ada yang keluar untuknya lewat Art-Net atau sACN, dan lewat Bluetooth sambungannya tetap hidup tetapi tidak ada yang ditulis. Penerima mungkin menahan nilai terakhirnya, jadi sebuah lampu bisa tetap menyala. Universe mana yang dimatikan disebutkan di bagian atas layar, sebagai U1 OFF.</p></div>
-<p>Gunakan Net / Sub / Uni hanya bila node Anda meminta Net / Sub-Net / Universe dan bukan satu angka tunggal. Nyalakan di Settings → Output → Art-Net → Net / Sub / Uni. Hubungannya adalah <strong dir="auto">Net × 256 + Sub × 16 + Uni</strong>. Dengan itu menyala dan rutenya Art-Net, patching juga mengambil universe dengan cara yang sama: Add, Re-address dan Re-patch menampilkan Net (0–127), Sub (0–15) dan Uni (0–15) untuk diketik, dengan universe yang dibentuknya, misalnya U500, di sampingnya. Angka di luar rentangnya diatur ke ujung rentang.</p>
+<div class="box important"><b>IMPORTANT</b><p>OFF menghentikan pengiriman universe itu. Tidak ada yang keluar untuknya lewat Art-Net atau sACN, dan lewat Bluetooth sambungannya tetap hidup tetapi tidak ada yang ditulis. Penerima mungkin menahan nilai terakhirnya, jadi sebuah lampu bisa tetap menyala. Universe mana yang dimatikan disebutkan di bagian atas layar, sebagai U1 OFF.</p></div>
+<p>Gunakan Net / Sub / Uni hanya bila node Anda meminta Net / Sub-Net / Universe dan bukan satu angka tunggal. Nyalakan di Settings → Output → Art-Net → Net / Sub / Uni. Hubungannya adalah <strong dir="auto">Net × 256 + Sub × 16 + Uni</strong>. Dengan itu menyala dan rutenya Art-Net, patching juga mengambil universe dengan cara yang sama: Add, Re-address dan Re-patch menampilkan Net (0–127), Sub (0–15) dan Uni (0–15) untuk diketik, dengan universe yang dibentuknya, misalnya U500, di sampingnya. Angka di luar rentangnya diatur ke ujung rentang.</p>
 <p>Prioritas sACN bisa 0, 100 atau 200. Bawaannya 100, dan itulah prioritas yang dikirim Kanau bersama keluaran sACN-nya.</p>
 <h3 id="output--10">CRMX lewat Bluetooth</h3>
 <ol><li>Nyalakan Bluetooth di Settings → Output → CRMX (Bluetooth).</li><li>Izinkan Bluetooth ketika iOS memintanya untuk pertama kali.</li><li>Pilih sebuah transmitter dari daftarnya. Mengetuknya lagi akan memutus sambungan.</li></ol>
 <p>Transmitter yang Anda pilih membawa universe yang dipakai patch Anda (U1 bila patch berada di universe 1). Lain kali, menyalakan Bluetooth, setelah Anda menggeser untuk mengirim, akan menyambung ulang ke transmitter yang sama. Ketika sebuah transmitter tidak bisa tersambung atau terputus, Settings → Output menyebutkan apa yang perlu diperiksa, dengan pesan sistem itu sendiri dalam kurung.</p>
 <ul><li><strong dir="auto">Daftarnya</strong>: menulis <code>connected</code> untuk transmitter yang tertaut dan <code>sending</code> untuk yang sedang dikirimi data.</li><li><strong dir="auto">Bila patch membentang di lebih dari satu universe</strong>: pilih universe yang dibawanya dengan − dan + pada baris Universe di bawah transmitter. Begitu Anda memilih dengan tangan, Kanau berhenti memilihkan sampai Anda memutus transmitter dan memilihnya lagi.</li><li><strong dir="auto">Transmitter kedua</strong>: pemindaian berhenti begitu yang Anda pilih tersambung, jadi RESCAN-lah jalan untuk mencari yang lain.</li></ul>
-<p>Kalau universe yang sama keluar lewat jaringan dan Bluetooth sekaligus, Settings → Output menyebutkannya: <code class="q">U1: network and Bluetooth output are both on.</code> Itu <strong dir="auto">pernyataan fakta, bukan peringatan</strong>. Penerima CRMX mengambil keluaran transmitter yang tertaut dengannya, jadi U1 yang sama di Kanau tidak dengan sendirinya menyuapi satu lampu dua kali. Kedipan hanya terjadi di tempat sebuah lampu benar-benar menerima dari kedua jalur; di situ matikan salah satunya.</p>
+<p>Kalau universe yang sama keluar lewat jaringan dan Bluetooth sekaligus, Settings → Output menyebutkannya: <code class="q">U1: network and Bluetooth output are both on.</code> Itu <strong dir="auto">pernyataan fakta, bukan peringatan</strong>. Penerima CRMX mengambil keluaran transmitter yang tertaut dengannya, jadi U1 yang sama di Kanau tidak dengan sendirinya menyuapi satu lampu dua kali. Kedipan hanya terjadi di tempat sebuah lampu benar-benar menerima dari kedua jalur; di situ matikan salah satunya.</p>
 <p>Kalau sebuah transmitter masih menolak Art-Net setelah Anda mematikan Bluetooth, periksa pengaturan transmitter itu sendiri.</p>
 <h3 id="output--11">Ketika konsol lain ditemukan</h3>
 <table>
 <tr><th>Yang tampil</th><th>Artinya, dan apa yang harus dilakukan</th></tr>
-<tr><td>Blocked U1</td><td>Saat Anda menggeser, sudah ada pengirim lain di U1, jadi Kanau tidak mengirim di sana. Ketuk untuk melihat pilihan di bawah. Tidak ada cara mengirim menimpanya</td></tr>
+<tr><td>Blocked U1</td><td>Saat Anda menggeser, sudah ada pengirim lain di U1, jadi Kanau tidak mengirim di sana. Ketuk untuk melihat pilihan di bawah. Tidak ada cara mengirim menimpanya</td></tr>
 <tr><td>SHARED + IP atau nama perangkat</td><td>Konsol lain muncul setelah yang ini dinyalakan. Pengiriman tetap berjalan, jadi hentikan salah satunya bila perlu</td></tr>
 </table>
-<p>Mengetuk Blocked U1 membuka sebuah baris yang menyebut pengirimnya, misalnya U1 In Use, dengan pilihan berikut:</p>
+<p>Mengetuk Blocked U1 membuka sebuah baris yang menyebut pengirimnya, misalnya U1 In Use, dengan pilihan berikut:</p>
 <table>
 <tr><th>Pilihan</th><th>Fungsinya</th></tr>
 <tr><td>Join</td><td>Tampil bila pengirimnya host Kanau. Membuka Session untuk bergabung</td></tr>
-<tr><td>Send U2 Only</td><td>Tampil bila universe lain masih kosong. Hanya mengirim universe itu</td></tr>
+<tr><td>Send U2 Only</td><td>Tampil bila universe lain masih kosong. Hanya mengirim universe itu</td></tr>
 <tr><td>Cancel</td><td>Menutup baris tanpa mengirim</td></tr>
 </table>
 <p>Perangkat Kanau saling memberi tahu universe mana yang mereka kirim, jadi dua perangkat yang menggeser bersamaan tidak sama-sama mengirim. Pengirim sACN ditampilkan dengan warna merah di baris pengiriman, dengan nama atau IP; ini hanya memberi tahu Anda, dan Kanau tetap mengirim. Pengirim unicast dan Bluetooth di aplikasi lain mungkin tidak terlihat dari sini.</p>
@@ -292,7 +292,7 @@
 <tr><td>Network Output</td><td>Paket yang dikirim lewat jaringan dalam satu detik terakhir. Sekitar 44 adalah normal untuk satu universe ke satu tujuan; angkanya berlipat dengan setiap universe atau tujuan tambahan. Nothing berarti tidak ada yang keluar, seperti sebelum Anda menggeser. Bluetooth tidak dihitung di sini</td></tr>
 <tr><td>Clock</td><td>Jeda terburuk antar pengiriman. Sekitar 23 ms adalah normal. Di atas 100 ms menunjuk ke ponselnya</td></tr>
 <tr><td>Touch → DMX</td><td>Dari jari Anda sampai ke paket datanya. Sekitar 25 ms adalah normal</td></tr>
-<tr><td>Nodes Answering</td><td>Berapa yang menjawab, beserta nama, alamat, sambungan dan waktu bolak-baliknya. Waktu bolak-balik kosong sampai RESCAN mengukurnya; angka dalam kurung adalah yang terburuk selama 10 detik terakhir. Pada AUTO, baris di bawah tiap node mencantumkan universe yang dikirim kepadanya, misalnya U1 atau U0–U3</td></tr>
+<tr><td>Nodes Answering</td><td>Berapa yang menjawab, beserta nama, alamat, sambungan dan waktu bolak-baliknya. Waktu bolak-balik kosong sampai RESCAN mengukurnya; angka dalam kurung adalah yang terburuk selama 10 detik terakhir. Pada AUTO, baris di bawah tiap node mencantumkan universe yang dikirim kepadanya, misalnya U1 atau U0–U3</td></tr>
 <tr><td>Type these into the node</td><td>Net / Sub / Uni yang harus dimasukkan ke nodenya, ketika tampilan itu dinyalakan</td></tr>
 </table>
 <p>Semua ini mempersempit masalahnya; semua ini tidak membuktikan bahwa pengirimannya berhasil. Semua ini adalah apa yang dikirim Kanau, dan apakah lampunya menerimanya tidak bisa dilihat dari sini. Network Output bisa menampilkan sebuah angka sementara sebuah ketidakcocokan atau kerusakan di ujung sana membuat lampunya tetap gelap. Perangkat yang tidak menjawab polling menampilkan 0 pada Nodes Answering meski sedang menerima data.</p>
@@ -315,7 +315,7 @@
 <tr><td>Name</td><td>Nama lampu yang satu ini. Nama ini tampil di Patch dan Patch List; Home menampilkan Label sebagai gantinya. Bawaannya nama lengkap modelnya ditambah nomor urut, misalnya Titan Tube 1</td></tr>
 <tr><td>Number / How Many</td><td>Nomor yang Anda pakai memanggilnya di lokasi, dan berapa yang ditambahkan, sampai 4,096. Nomornya boleh dikosongkan; dimulai dari nomor tertinggi yang terpakai ditambah satu</td></tr>
 <tr><td>Label</td><td>Nama tampilan yang dipakai bersama oleh semua lampu model itu dalam mode yang sama. Tampil di bawah fader. Bawaannya nama resmi modelnya; ubah Mode di sini dan Label yang belum Anda ketik mengikuti mode barunya. Bisa juga diketik di panel lampunya (<a class="xref" href="#fixture-settings">bab 06</a>)</td></tr>
-<tr><td>Universe / Address</td><td>Bawaannya U1 dan alamat kosong berikutnya. Mengubah universe mengembalikan alamatnya ke 1. U0 diperbolehkan</td></tr>
+<tr><td>Universe / Address</td><td>Bawaannya U1 dan alamat kosong berikutnya. Mengubah universe mengembalikan alamatnya ke 1. U0 diperbolehkan</td></tr>
 <tr><td>Offset</td><td>Jarak antar lampu. Terisi dari jumlah kanal mode tersebut</td></tr>
 <tr><td>Gap</td><td>Kanal tambahan yang disisakan di antara lampu</td></tr>
 <tr><td>BATTERY SAVE</td><td>Menandai lampu baru itu untuk BATTERY SAVE</td></tr>
@@ -1124,7 +1124,7 @@
 <tr><th>Yang Anda lihat</th><th>Yang harus dilakukan</th></tr>
 <tr><td>Idle</td><td>Pastikan ada jaringan yang dinyalakan di Settings → Output</td></tr>
 <tr><td>Blocked</td><td>Ketuk untuk membuka Settings → Output, yang mencetak baris merah yang menyebut apa yang menghentikannya dan apa yang harus dilakukan. Ikuti baris itu</td></tr>
-<tr><td>Blocked U1, dengan nomor universe</td><td>Sudah ada pengirim lain di universe itu. Ketuk untuk memilih Join, Send … Only atau Cancel</td></tr>
+<tr><td>Blocked U1, dengan nomor universe</td><td>Sudah ada pengirim lain di universe itu. Ketuk untuk memilih Join, Send … Only atau Cancel</td></tr>
 <tr><td>No node</td><td>Ketuk untuk membuka Settings → Output. Periksa daya, jaringan, alamat dan pengaturan protokol node tersebut</td></tr>
 <tr><td>U1 OFF</td><td>Nyalakan kembali universe-nya di Output → Universes</td></tr>
 <tr><td>⏻ atau ikon lampu berwarna ungu</td><td>Nyalakan kembali keluaran lampu tersebut</td></tr>
@@ -1347,5 +1347,6 @@ Fixture          apakah lampunya sendiri yang lambat</pre>
 
 })();
 </script>
+<script src="jbreak.js?v=20261031c"></script>
 </body>
 </html>

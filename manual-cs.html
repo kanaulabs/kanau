@@ -42,7 +42,7 @@
 <link rel="alternate" hreflang="vi" href="manual-vi.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap">
-<link rel="stylesheet" href="theme.css?v=20261031a">
+<link rel="stylesheet" href="theme.css?v=20261031c">
 </head>
 <body>
 
@@ -131,15 +131,15 @@
 </table>
 <h2 id="screen--3">Stavový řádek</h2>
 <p>Vlevo je stav vysílání. Klepnutím na něj otevřete řádek, který vysílání spouští a zastavuje (<a class="xref" href="#output">kapitola 02</a>). Při každém otevření Kanau tam stojí OUTPUT OFF a nic neodchází, dokud neposunete.</p>
-<p>Při vysílání tam stojí SENDING a universa, třeba SENDING U1 U2. Kde není místo, změní se to na trasu, jediné písmeno: A pro Art-Net, S pro sACN. Tečka vedle něj pulzuje při vysílání, při čekání na posunutí a při LISTENING. Bluetooth má vlastní tečku i jméno.</p>
+<p>Při vysílání tam stojí SENDING a universa, třeba SENDING U1 U2. Kde není místo, změní se to na trasu, jediné písmeno: A pro Art-Net, S pro sACN. Tečka vedle něj pulzuje při vysílání, při čekání na posunutí a při LISTENING. Bluetooth má vlastní tečku i jméno.</p>
 <p>Vedle nich je jméno show, ve které jste; na úzkém telefonu, kde v řádku nezbývá místo, se nezobrazí. Dokud je zapnutý BLIND, celá tahle levá část se změní v jantarové BLIND; klepnutím na něj BLIND opustíte (<a class="xref" href="#scenes">kapitola 08</a>).</p>
 <table>
 <tr><th>Zobrazení</th><th>Význam</th></tr>
 <tr><td>OUTPUT OFF</td><td>Od otevření Kanau se nevysílá. Pod tím je napsáno Slide to send. Klepněte na to a posuňte</td></tr>
 <tr><td>SENDING, po klepnutí</td><td>Otevře <code>Slide to stop</code>. Posunutím doprava vysílání zastavíte; řádek se vrátí na OUTPUT OFF. <code>Done</code> řádek zavře</td></tr>
 <tr><td>LISTENING</td><td>Zjišťuje, jestli není jiný odesílatel, než začne vysílat, asi vteřinu</td></tr>
-<tr><td>SENDING U1 U2</td><td>Tato universa odcházejí. Šedé U3 OFF tady označuje napatchované universe, které ještě nebylo otevřeno posunutím. Není to červené U1 OFF dál v řádku</td></tr>
-<tr><td>Blocked U1</td><td>Na tomto universe už je jiný odesílatel, takže na ně Kanau nevysílá. Klepnutím zobrazíte možnosti (<a class="xref" href="#output">kapitola 02</a>)</td></tr>
+<tr><td>SENDING U1 U2</td><td>Tato universa odcházejí. Šedé U3 OFF tady označuje napatchované universe, které ještě nebylo otevřeno posunutím. Není to červené U1 OFF dál v řádku</td></tr>
+<tr><td>Blocked U1</td><td>Na tomto universe už je jiný odesílatel, takže na ně Kanau nevysílá. Klepnutím zobrazíte možnosti (<a class="xref" href="#output">kapitola 02</a>)</td></tr>
 <tr><td>Zelená tečka</td><td>Vysílá se</td></tr>
 <tr><td>Jantarová tečka</td><td>Zpomaleno, nebo se obnovuje spojení (Reconnecting…)</td></tr>
 <tr><td>Červená tečka, ART-NET No node nebo SACN No node</td><td>Nikdo neodpovídá. Stavový řádek pojmenuje trasu, na úzké obrazovce zkráceně. Klepnutím na něj otevřete Settings → Output. Dokud je vidět řada Play, neotevře se; nejdřív klepněte na <code>EXIT</code></td></tr>
@@ -214,13 +214,13 @@
 <figure class="shot"><div class="wrap" dir="ltr"><img src="img/6-output.png" alt="Settings → Output. Červená čísla odpovídají seznamu níže." width="640" height="1168" loading="lazy"><span class="pin" style="left:27%;top:21.5%">1</span><span class="pin" style="left:15%;top:31.7%">2</span><span class="pin" style="left:87%;top:31.7%">3</span><span class="pin" style="left:27%;top:79.2%">4</span><span class="pin" style="left:50%;top:97.1%">5</span></div><figcaption>Settings → Output. Červená čísla odpovídají seznamu níže.</figcaption><ul class="pins"><li><b>1</b> Protokol. Art-Net, nebo sACN, vždy jen jeden</li><li><b>2</b> Sítě. Vysílá se do těch, které jsou zaškrtnuté</li><li><b>3</b> Kolik nodů odpovědělo. No reply znamená, že se žádný nenašel</li><li><b>4</b> Destination. AUTO je správná volba pro většinu rigů</li><li><b>5</b> Vyhledat nody znovu</li></ul></figure>
 <h2 id="output--1">První připojení</h2>
 <h3 id="output--2">Jeden Art-Net node</h3>
-<ol><li>Dejte iPhone do stejné sítě, drátové nebo Wi-Fi, ve které je node.</li><li>Otevřete Settings → Output.</li><li>Zvolte Art-Net a AUTO. Obojí je výchozí.</li><li>Zkontrolujte, že Nodes Answering ukazuje 1 nebo víc. Některá zařízení na dotazování nikdy neodpovídají a zůstávají na 0, i když normálně přijímají. Když se číslo nehne, nezastavujte se tady.</li><li>Na Home klepněte vlevo nahoře na OUTPUT OFF. Pod stavovým řádkem se otevře řádek; posuňte kulatou rukojeť Slide to send úplně doprava.</li><li>Stavový řádek ukazuje asi vteřinu LISTENING, potom SENDING U1 a Network Output ukáže číslo v paketech/s. Pohněte faderem a sledujte, jak světlo reaguje.</li></ol>
+<ol><li>Dejte iPhone do stejné sítě, drátové nebo Wi-Fi, ve které je node.</li><li>Otevřete Settings → Output.</li><li>Zvolte Art-Net a AUTO. Obojí je výchozí.</li><li>Zkontrolujte, že Nodes Answering ukazuje 1 nebo víc. Některá zařízení na dotazování nikdy neodpovídají a zůstávají na 0, i když normálně přijímají. Když se číslo nehne, nezastavujte se tady.</li><li>Na Home klepněte vlevo nahoře na OUTPUT OFF. Pod stavovým řádkem se otevře řádek; posuňte kulatou rukojeť Slide to send úplně doprava.</li><li>Stavový řádek ukazuje asi vteřinu LISTENING, potom SENDING U1 a Network Output ukáže číslo v paketech/s. Pohněte faderem a sledujte, jak světlo reaguje.</li></ol>
 <p><strong dir="auto">Kanau nikdy nezačne vysílat samo.</strong> Při každém otevření je výstup vypnutý a stavový řádek ukazuje OUTPUT OFF; patch, cíl i vypnutá universa se zachovají. Pohnutí faderem ani vyvolání Scene výstup nikdy nezapne.</p>
 <p>Když posunete, Kanau nejdřív asi vteřinu poslouchá. Pokud na universe není jiný odesílatel, začne pak nepřetržitě vysílat všechna napatchovaná universa, která jsou zapnutá, běžně rychlostí 44 Hz. Bluetooth se spojí při posunutí, ne při spuštění.</p>
 <p><strong dir="auto">Vysílání zastavíte</strong> klepnutím na stavový řádek a posunutím <code>Slide to stop</code> doprava. Vrátí se na OUTPUT OFF.</p>
 <p>Výstup se také vrátí na vypnuto a vy posunete znovu, když:</p>
 <ul><li>přepnete mezi Art-Net a sACN</li><li>objeví se síť, která při posunutí nebyla</li><li>opustíte session jako host</li><li>opustíte LAMP MODE</li></ul>
-<p>Universe přidané do patche později zůstane vypnuté, dokud neposunete, a stavový řádek ho ukazuje jako U3 OFF. Výstup se zastaví, dokud Kanau není na obrazovce, a znovu se rozběhne, když se vrátíte; SCREEN LOCK ho nezastaví.</p>
+<p>Universe přidané do patche později zůstane vypnuté, dokud neposunete, a stavový řádek ho ukazuje jako U3 OFF. Výstup se zastaví, dokud Kanau není na obrazovce, a znovu se rozběhne, když se vrátíte; SCREEN LOCK ho nezastaví.</p>
 <h2 id="output--3">Vysílá se?</h2>
 <p>Čtěte je v tomto pořadí. Každý říká něco jiného a žádný z nich nemůže říct, že data dostalo samo světlo.</p>
 <table>
@@ -255,8 +255,8 @@
 <p>Červený řádek v Settings → Output říká, co výstup zastavilo a co s tím dělat: zapnout oprávnění k místní síti, přepnout na UNICAST a napsat adresu uzlu, zkontrolovat adresu, kterou jste napsali, zkontrolovat Wi-Fi, dát uzlu napájení. CRMX má svůj vlastní řádek. Vlastní formulace pultu zůstává na konci v závorce, takže ji lze citovat přesně.</p>
 <h3 id="output--9">Universe a číslování Art-Net</h3>
 <p>Universes vypisuje každé napatchované universe i s počtem svítidel, kolik jich svítí, a s přepínačem ON/OFF. Universe, které je OFF, ukazuje Not sending, stejně jako to, které ještě nebylo otevřeno posunutím.</p>
-<div class="box important"><b>IMPORTANT</b><p>OFF vysílání toho universe zastaví. Nejde z něj nic přes Art-Net ani sACN a přes Bluetooth spojení zůstane, ale nic se nezapisuje. Přijímač si může podržet poslední hodnoty, takže světlo může dál svítit. Která universe jsou vypnutá, je vidět nahoře na obrazovce jako U1 OFF.</p></div>
-<p>Net / Sub / Uni použijte jen tehdy, když váš node chce místo jednoho čísla Net / Sub-Net / Universe. Zapněte ho v Settings → Output → Art-Net → Net / Sub / Uni. Vztah je <strong dir="auto">Net × 256 + Sub × 16 + Uni</strong>. Když je to zapnuté a trasa je Art-Net, patchování bere universe stejným způsobem: Add, Re-address a Re-patch ukážou Net (0–127), Sub (0–15) a Uni (0–15) k napsání a vedle nich universe, které dávají dohromady, například U500. Číslo mimo svůj rozsah se nastaví na konec rozsahu.</p>
+<div class="box important"><b>IMPORTANT</b><p>OFF vysílání toho universe zastaví. Nejde z něj nic přes Art-Net ani sACN a přes Bluetooth spojení zůstane, ale nic se nezapisuje. Přijímač si může podržet poslední hodnoty, takže světlo může dál svítit. Která universe jsou vypnutá, je vidět nahoře na obrazovce jako U1 OFF.</p></div>
+<p>Net / Sub / Uni použijte jen tehdy, když váš node chce místo jednoho čísla Net / Sub-Net / Universe. Zapněte ho v Settings → Output → Art-Net → Net / Sub / Uni. Vztah je <strong dir="auto">Net × 256 + Sub × 16 + Uni</strong>. Když je to zapnuté a trasa je Art-Net, patchování bere universe stejným způsobem: Add, Re-address a Re-patch ukážou Net (0–127), Sub (0–15) a Uni (0–15) k napsání a vedle nich universe, které dávají dohromady, například U500. Číslo mimo svůj rozsah se nastaví na konec rozsahu.</p>
 <p>Priorita sACN může být 0, 100 nebo 200. Výchozí je 100 a je to priorita, s jakou Kanau vysílá svůj výstup sACN.</p>
 <h3 id="output--10">CRMX přes Bluetooth</h3>
 <ol><li>Zapněte Bluetooth v Settings → Output → CRMX (Bluetooth).</li><li>Až se iOS poprvé zeptá, Bluetooth povolte.</li><li>Vyberte ze seznamu vysílač. Dalším klepnutím se odpojíte.</li></ol>
@@ -267,14 +267,14 @@
 <h3 id="output--11">Když se objeví jiný pult</h3>
 <table>
 <tr><th>Zobrazení</th><th>Co to znamená a co dělat</th></tr>
-<tr><td>Blocked U1</td><td>Když jste posunuli, na U1 už byl jiný odesílatel, takže na něj Kanau nevysílá. Klepnutím zobrazíte možnosti níže. Nelze vysílat přes něj</td></tr>
+<tr><td>Blocked U1</td><td>Když jste posunuli, na U1 už byl jiný odesílatel, takže na něj Kanau nevysílá. Klepnutím zobrazíte možnosti níže. Nelze vysílat přes něj</td></tr>
 <tr><td>SHARED + IP nebo jméno zařízení</td><td>Jiný pult se objevil až potom, co tenhle začal. Vysílá se dál, takže pokud je to potřeba, jeden z nich zastavte</td></tr>
 </table>
-<p>Klepnutím na Blocked U1 se otevře řádek, který odesílatele pojmenuje, třeba U1 In Use, s těmito možnostmi:</p>
+<p>Klepnutím na Blocked U1 se otevře řádek, který odesílatele pojmenuje, třeba U1 In Use, s těmito možnostmi:</p>
 <table>
 <tr><th>Možnost</th><th>Co dělá</th></tr>
 <tr><td>Join</td><td>Ukáže se, když je odesílatelem hostitel Kanau. Otevře Session, abyste se k němu připojili</td></tr>
-<tr><td>Send U2 Only</td><td>Ukáže se, když jsou volná jiná universa. Vysílá jen na ně</td></tr>
+<tr><td>Send U2 Only</td><td>Ukáže se, když jsou volná jiná universa. Vysílá jen na ně</td></tr>
 <tr><td>Cancel</td><td>Zavře řádek bez vysílání</td></tr>
 </table>
 <p>Zařízení Kanau si navzájem říkají, která universa vysílají, takže dvě, která posunou naráz, nevysílají obě. Odesílatel sACN je v řádku vysílání ukázán červeně, jménem nebo IP; jen to říká a Kanau vysílá dál. Unicastoví odesílatelé a Bluetooth v jiných aplikacích odsud možná vidět nejsou.</p>
@@ -292,7 +292,7 @@
 <tr><td>Network Output</td><td>Pakety odeslané po síti za poslední sekundu. Kolem 44 je normál pro jedno universe na jeden cíl; s každým dalším universe nebo cílem se násobí. Nothing znamená, že neodešel žádný, jako před posunutím. Bluetooth se sem nepočítá</td></tr>
 <tr><td>Clock</td><td>Nejhorší mezera mezi odesláními. Kolem 23 ms je normál. Přes 100 ms ukazuje na telefon</td></tr>
 <tr><td>Touch → DMX</td><td>Od prstu k paketu. Kolem 25 ms je normál</td></tr>
-<tr><td>Nodes Answering</td><td>Kolik jich odpovědělo, se jménem, adresou, připojením a dobou odezvy. Doba odezvy zůstává prázdná, dokud ji RESCAN nezměří; číslo v závorce je nejhorší hodnota za posledních 10 sekund. Na AUTO uvádí řádek pod každým nodem universe, která se mu posílají, třeba U1 nebo U0–U3</td></tr>
+<tr><td>Nodes Answering</td><td>Kolik jich odpovědělo, se jménem, adresou, připojením a dobou odezvy. Doba odezvy zůstává prázdná, dokud ji RESCAN nezměří; číslo v závorce je nejhorší hodnota za posledních 10 sekund. Na AUTO uvádí řádek pod každým nodem universe, která se mu posílají, třeba U1 nebo U0–U3</td></tr>
 <tr><td>Type these into the node</td><td>Net / Sub / Uni k zadání do nodu, když je tohle zobrazení zapnuté</td></tr>
 </table>
 <p>Tohle potíž zúží, ale úspěch nedokazuje. Je to to, co Kanau odesílá, a jestli to světlo přijalo, odsud vidět nejde. Network Output může ukazovat číslo, a přitom světla zůstanou tmavá kvůli nesouhlasícímu nastavení nebo závadě na druhém konci. Technika, která neodpovídá na dotazy, ukazuje pod Nodes Answering 0, i když přijímá.</p>
@@ -315,7 +315,7 @@
 <tr><td>Name</td><td>Vlastní název tohoto jednoho svítidla. Objevuje se v Patch a v Patch List; Home místo něj ukazuje Label. Výchozí je celý název modelu a průběžné číslo, třeba Titan Tube 1</td></tr>
 <tr><td>Number / How Many</td><td>Číslo, kterým světlo voláte na place, a kolik jich přidat, až 4,096. Číslo může zůstat prázdné; začíná na nejvyšším použitém plus jedna</td></tr>
 <tr><td>Label</td><td>Zobrazovaný název společný všem svítidlům toho modelu ve stejném režimu. Běží pod fadery. Výchozí je oficiální název modelu; když tady změníte Mode, Label, který jste nezapsali, následuje nový režim. Dá se zapsat i v panelu svítidla (<a class="xref" href="#fixture-settings">kapitola 06</a>)</td></tr>
-<tr><td>Universe / Address</td><td>Výchozí je U1 a další volná adresa. Změna universe vrátí adresu na 1. U0 je povolené</td></tr>
+<tr><td>Universe / Address</td><td>Výchozí je U1 a další volná adresa. Změna universe vrátí adresu na 1. U0 je povolené</td></tr>
 <tr><td>Offset</td><td>Rozestup mezi svítidly. Doplní se z počtu kanálů daného režimu</td></tr>
 <tr><td>Gap</td><td>Kanály navíc, které se mají mezi svítidly nechat volné</td></tr>
 <tr><td>BATTERY SAVE</td><td>Označí nová svítidla pro BATTERY SAVE</td></tr>
@@ -1124,7 +1124,7 @@
 <tr><th>Co vidíte</th><th>Co udělat</th></tr>
 <tr><td>Idle</td><td>Zkontrolujte, že je v Settings → Output povolená nějaká síť</td></tr>
 <tr><td>Blocked</td><td>Klepnutím na něj otevřete Settings → Output, který vypíše červený řádek, jenž pojmenuje, co to zastavilo a co dělat. Řiďte se jím</td></tr>
-<tr><td>Blocked U1, s číslem universe</td><td>Na tom universe už je jiný odesílatel. Klepněte na Join, Send … Only nebo Cancel</td></tr>
+<tr><td>Blocked U1, s číslem universe</td><td>Na tom universe už je jiný odesílatel. Klepněte na Join, Send … Only nebo Cancel</td></tr>
 <tr><td>No node</td><td>Klepnutím na něj otevřete Settings → Output. Zkontrolujte na nodu napájení, síť, adresu a nastavení protokolu</td></tr>
 <tr><td>U1 OFF</td><td>Zapněte universe zpátky v Output → Universes</td></tr>
 <tr><td>Fialové ⏻ nebo kolečko svítidla</td><td>Zapněte výstup svítidla zpátky</td></tr>
@@ -1347,5 +1347,6 @@ Fixture          není pomalé samotné světlo</pre>
 
 })();
 </script>
+<script src="jbreak.js?v=20261031c"></script>
 </body>
 </html>

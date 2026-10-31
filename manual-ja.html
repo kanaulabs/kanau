@@ -42,7 +42,7 @@
 <link rel="alternate" hreflang="vi" href="manual-vi.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap">
-<link rel="stylesheet" href="theme.css?v=20261031a">
+<link rel="stylesheet" href="theme.css?v=20261031c">
 </head>
 <body>
 
@@ -131,15 +131,15 @@
 </table>
 <h2 id="screen--3">画面上部のステータス表示</h2>
 <p>左は送信の状態です。押すと、送信を始める・止める行が開きます(<a class="xref" href="#output">02 章</a>)。Kanau を開くたびに OUTPUT OFF と出ていて、スライドするまで何も出ません。</p>
-<p>送信中は SENDING とユニバースが出ます(SENDING U1 U2 など)。余白がないときは経路の頭文字 1 字になり、Art-Net は A、sACN は S です。隣の丸は、送信中と、スライドを待っている間、LISTENING の間に明滅します。Bluetooth は自分の丸と名前を持ちます。</p>
+<p>送信中は SENDING とユニバースが出ます(SENDING U1 U2 など)。余白がないときは経路の頭文字 1 字になり、Art-Net は A、sACN は S です。隣の丸は、送信中と、スライドを待っている間、LISTENING の間に明滅します。Bluetooth は自分の丸と名前を持ちます。</p>
 <p>その隣に、いま開いているショーの名前が出ます。行に余りが無い幅の狭い端末では出ません。BLIND の間は、この左側がまるごと琥珀の BLIND になります。押すと BLIND を抜けます(<a class="xref" href="#scenes">08 章</a>)。</p>
 <table>
 <tr><th>表示</th><th>意味</th></tr>
 <tr><td>OUTPUT OFF</td><td>Kanau を開いてから送信していない。下に Slide to send と出ている。押してスライドする</td></tr>
 <tr><td>SENDING を押す</td><td><code>Slide to stop</code> の行が開く。右へスライドすると送信が止まり、OUTPUT OFF に戻る。<code>Done</code> で閉じる</td></tr>
 <tr><td>LISTENING</td><td>送信する前に、ほかの送信元がいないか約 1 秒確認している</td></tr>
-<tr><td>SENDING U1 U2</td><td>そのユニバースを送信している。ここに灰色で出る U3 OFF は、登録済みでまだスライドして開いていないユニバース。右の方に出る赤い U1 OFF とは別</td></tr>
-<tr><td>Blocked U1</td><td>そのユニバースにはすでに別の送信元がいるので、Kanau は送らない。押すと選択肢が出る(<a class="xref" href="#output">02 章</a>)</td></tr>
+<tr><td>SENDING U1 U2</td><td>そのユニバースを送信している。ここに灰色で出る U3 OFF は、登録済みでまだスライドして開いていないユニバース。右の方に出る赤い U1 OFF とは別</td></tr>
+<tr><td>Blocked U1</td><td>そのユニバースにはすでに別の送信元がいるので、Kanau は送らない。押すと選択肢が出る(<a class="xref" href="#output">02 章</a>)</td></tr>
 <tr><td>緑の丸</td><td>送信中</td></tr>
 <tr><td>琥珀色の丸</td><td>送信頻度が低下している、または再接続中(Reconnecting…)</td></tr>
 <tr><td>赤い丸・ART-NET No node／SACN No node</td><td>応答するノードが見つからない。状況行は経路の名前を言い、幅の狭い画面では短くなる。押すと Settings → Output が開く。Play の行が出ている間は開かないので、先に <code>EXIT</code> を押す</td></tr>
@@ -214,7 +214,7 @@
 <figure class="shot"><div class="wrap" dir="ltr"><img src="img/6-output.png" alt="Settings → Output の画面です。赤い数字は、下の説明と同じ番号です。" width="640" height="1168" loading="lazy"><span class="pin" style="left:27%;top:21.5%">1</span><span class="pin" style="left:15%;top:31.7%">2</span><span class="pin" style="left:87%;top:31.7%">3</span><span class="pin" style="left:27%;top:79.2%">4</span><span class="pin" style="left:50%;top:97.1%">5</span></div><figcaption>Settings → Output の画面です。赤い数字は、下の説明と同じ番号です。</figcaption><ul class="pins"><li><b>1</b> 送信方式。Art-Net か sACN のどちらかを選びます</li><li><b>2</b> 使うネットワーク。✓ が付いているものから送ります</li><li><b>3</b> 応答したノードの数。No reply は見つかっていない状態です</li><li><b>4</b> 宛先。通常は AUTO のままで使えます</li><li><b>5</b> ノードを探し直します</li></ul></figure>
 <h2 id="output--1">最初の接続</h2>
 <h3 id="output--2">Art-Net ノード 1 台につなぐ</h3>
-<ol><li>iPhone をノードと同じ Wi-Fi、または有線ネットワークに接続します。</li><li>Settings → Output を開きます。</li><li>Art-Net と AUTO を選択します。どちらも初期設定です。</li><li>Nodes Answering が 1 以上であることを確認します。ポーリングに応答しない機材は、正常に受信していても 0 のままです。数字が動かないときも、ここで止めないでください。</li><li>Home で、左上の OUTPUT OFF を押します。ステータス表示の下に行が開くので、Slide to send の丸を右端までスライドします。</li><li>ステータス表示が約 1 秒 LISTENING になり、そのあと SENDING U1 になって、Network Output に毎秒のパケット数が出ます。フェーダーを動かし、灯体が反応することを確認します。</li></ol>
+<ol><li>iPhone をノードと同じ Wi-Fi、または有線ネットワークに接続します。</li><li>Settings → Output を開きます。</li><li>Art-Net と AUTO を選択します。どちらも初期設定です。</li><li>Nodes Answering が 1 以上であることを確認します。ポーリングに応答しない機材は、正常に受信していても 0 のままです。数字が動かないときも、ここで止めないでください。</li><li>Home で、左上の OUTPUT OFF を押します。ステータス表示の下に行が開くので、Slide to send の丸を右端までスライドします。</li><li>ステータス表示が約 1 秒 LISTENING になり、そのあと SENDING U1 になって、Network Output に毎秒のパケット数が出ます。フェーダーを動かし、灯体が反応することを確認します。</li></ol>
 <p><strong dir="auto">Kanau が、自分から送信を始めることはありません。</strong> 開くたびに出力は止まっていて、ステータス表示は OUTPUT OFF です。パッチ、宛先、切ってあるユニバースは残っています。フェーダーを動かしても、Scene を呼び出しても、出力は始まりません。</p>
 <p>スライドすると、Kanau はまず約 1 秒聞きます。どのユニバースにも別の送信元がいなければ、オンにしてある登録済みユニバースを、通常 44Hz(毎秒 44 回)で継続送信します。Bluetooth は、起動時ではなく、スライドしたときに接続します。</p>
 <p><strong dir="auto">止めるとき</strong>は、ステータス表示を押し、<code>Slide to stop</code> を右へスライドします。OUTPUT OFF に戻ります。</p>
@@ -267,14 +267,14 @@
 <h3 id="output--11">別の卓を検出した場合</h3>
 <table>
 <tr><th>表示</th><th>状態と対応</th></tr>
-<tr><td>Blocked U1</td><td>スライドしたとき、U1 にはすでに別の送信元がいたので、Kanau はそこへ送らない。押すと下の選択肢が出る。重ねて送る方法はない</td></tr>
+<tr><td>Blocked U1</td><td>スライドしたとき、U1 にはすでに別の送信元がいたので、Kanau はそこへ送らない。押すと下の選択肢が出る。重ねて送る方法はない</td></tr>
 <tr><td>SHARED + IP または機器名</td><td>送信開始後に別の卓を検出。送信は続くため、必要に応じてどちらかを停止する</td></tr>
 </table>
-<p>Blocked U1 を押すと、U1 In Use のように送信元を示す行が開き、次の選択肢が出ます。</p>
+<p>Blocked U1 を押すと、U1 In Use のように送信元を示す行が開き、次の選択肢が出ます。</p>
 <table>
 <tr><th>選択肢</th><th>動作</th></tr>
 <tr><td>Join</td><td>送信元が Kanau のホストのときに出る。Session を開いて参加する</td></tr>
-<tr><td>Send U2 Only</td><td>ほかのユニバースが空いているときに出る。そのユニバースだけを送る</td></tr>
+<tr><td>Send U2 Only</td><td>ほかのユニバースが空いているときに出る。そのユニバースだけを送る</td></tr>
 <tr><td>Cancel</td><td>送らずに行を閉じる</td></tr>
 </table>
 <p>Kanau の端末どうしは、送っているユニバースを互いに知らせ合うので、同時にスライドした 2 台が両方とも送ることはありません。sACN の送信元は、送信の行に赤で名前か IP が出ます。表示するだけで、Kanau の送信は止めません。ユニキャストの送信元と、ほかのアプリの Bluetooth は、ここから見えないことがあります。</p>
@@ -1124,7 +1124,7 @@
 <tr><th>確認箇所・表示</th><th>対処</th></tr>
 <tr><td>Idle</td><td>Settings → Output でネットワークが有効か確認</td></tr>
 <tr><td>Blocked</td><td>押すと Settings → Output が開き、赤い行が出て、止まった理由と直し方を言う。その行に従う</td></tr>
-<tr><td>Blocked U1(ユニバース番号つき)</td><td>そのユニバースにはすでに別の送信元がいる。押すと Join、Send … Only、Cancel が出る</td></tr>
+<tr><td>Blocked U1(ユニバース番号つき)</td><td>そのユニバースにはすでに別の送信元がいる。押すと Join、Send … Only、Cancel が出る</td></tr>
 <tr><td>No node</td><td>押すと Settings → Output が開く。ノードの電源、ネットワーク、IP、プロトコル設定を確認</td></tr>
 <tr><td>U1 OFF</td><td>Output → Universes で対象を ON にする</td></tr>
 <tr><td>紫の ⏻ か灯体アイコン</td><td>灯体の出力をオンにする</td></tr>
@@ -1347,5 +1347,6 @@ Nodes Answering  ネットワークと機材の間が遅くないか(往復時�
 
 })();
 </script>
+<script src="jbreak.js?v=20261031c"></script>
 </body>
 </html>

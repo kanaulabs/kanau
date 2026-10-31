@@ -188,3 +188,8 @@
   /* 大見出しの長い 1 語(チェコ語の představili)も、280px の画面では語の中で折る。
      300px より広い画面(iPhone はすべて)では効かせない —— ハイフンで語を割る形が、ほかの大見出しにも出てしまう */
   @media (max-width: 300px) { h1 { hyphens: auto; overflow-wrap: break-word; } }
+
+/* 日本語は jbreak.js が文節の間に <wbr> を置き、html に .jb を付ける。付いたら字の間では折らない ——
+   Chrome の auto-phrase と Safari の字の間の折り返しを揃える(2026-10-31)。入らない長さの文節だけは枠の端で折る */
+html.jb.jb.jb.jb body, html.jb.jb.jb.jb body * { word-break: keep-all; overflow-wrap: break-word; }   /* :lang(ja) .chap .d の auto-phrase(0,3,0)より強く —— 混ざると Chrome だけ「割り|当て」と割れた */
+html.jb.jb.jb.jb code, html.jb.jb.jb.jb pre { word-break: normal; }

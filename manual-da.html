@@ -42,7 +42,7 @@
 <link rel="alternate" hreflang="vi" href="manual-vi.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap">
-<link rel="stylesheet" href="theme.css?v=20261031a">
+<link rel="stylesheet" href="theme.css?v=20261031c">
 </head>
 <body>
 
@@ -131,15 +131,15 @@
 </table>
 <h2 id="screen--3">Statuslinjen</h2>
 <p>Til venstre står sendestatus. Tryk på den for at åbne rækken, der starter og stopper sendingen (<a class="xref" href="#output">kapitel 02</a>). Hver gang Kanau åbner, står der OUTPUT OFF, og intet går ud, før du skubber.</p>
-<p>Mens der sendes, står der SENDING og universerne, som SENDING U1 U2. Hvor der ikke er plads, bliver det til ruten, ét bogstav: A for Art-Net, S for sACN. Prikken ved siden af ånder, mens der sendes, mens der ventes på skubbet, og mens der er LISTENING. Bluetooth har sin egen prik og sit eget navn.</p>
+<p>Mens der sendes, står der SENDING og universerne, som SENDING U1 U2. Hvor der ikke er plads, bliver det til ruten, ét bogstav: A for Art-Net, S for sACN. Prikken ved siden af ånder, mens der sendes, mens der ventes på skubbet, og mens der er LISTENING. Bluetooth har sin egen prik og sit eget navn.</p>
 <p>Ved siden af dem står navnet på den show, du er i; på en smal telefon, hvor rækken ikke har plads til overs, vises det ikke. Mens BLIND er slået til, bliver hele denne venstre del til et ravgult BLIND; tryk på det for at forlade BLIND (<a class="xref" href="#scenes">kapitel 08</a>).</p>
 <table>
 <tr><th>Vist</th><th>Betydning</th></tr>
 <tr><td>OUTPUT OFF</td><td>Der sendes ikke, siden Kanau blev åbnet. Under det står Slide to send. Tryk på det, og skub</td></tr>
 <tr><td>SENDING, trykket</td><td>Åbner <code>Slide to stop</code>. Skub mod højre for at stoppe sendingen; linjen går tilbage til OUTPUT OFF. <code>Done</code> lukker rækken</td></tr>
 <tr><td>LISTENING</td><td>Tjekker i omkring et sekund, om en anden sender er til stede, før der sendes</td></tr>
-<tr><td>SENDING U1 U2</td><td>De universer går ud. Et gråt U3 OFF her betyder et patchet universe, der endnu ikke er skubbet åbent. Det er ikke det røde U1 OFF længere henne i linjen</td></tr>
-<tr><td>Blocked U1</td><td>En anden sender er allerede på det universe, så Kanau sender ikke på det. Tryk på det for valgmulighederne (<a class="xref" href="#output">kapitel 02</a>)</td></tr>
+<tr><td>SENDING U1 U2</td><td>De universer går ud. Et gråt U3 OFF her betyder et patchet universe, der endnu ikke er skubbet åbent. Det er ikke det røde U1 OFF længere henne i linjen</td></tr>
+<tr><td>Blocked U1</td><td>En anden sender er allerede på det universe, så Kanau sender ikke på det. Tryk på det for valgmulighederne (<a class="xref" href="#output">kapitel 02</a>)</td></tr>
 <tr><td>Grøn prik</td><td>Sender</td></tr>
 <tr><td>Ravgul prik</td><td>Sat ned i tempo, eller forbinder igen (Reconnecting…)</td></tr>
 <tr><td>Rød prik, ART-NET No node eller SACN No node</td><td>Ingen svarer. Statuslinjen nævner ruten, forkortet på en smal skærm. Tryk på den for at åbne Settings → Output. Mens Play-rækken vises, åbner den ikke; tryk først på <code>EXIT</code></td></tr>
@@ -214,13 +214,13 @@
 <figure class="shot"><div class="wrap" dir="ltr"><img src="img/6-output.png" alt="Settings → Output. De røde tal svarer til listen herunder." width="640" height="1168" loading="lazy"><span class="pin" style="left:27%;top:21.5%">1</span><span class="pin" style="left:15%;top:31.7%">2</span><span class="pin" style="left:87%;top:31.7%">3</span><span class="pin" style="left:27%;top:79.2%">4</span><span class="pin" style="left:50%;top:97.1%">5</span></div><figcaption>Settings → Output. De røde tal svarer til listen herunder.</figcaption><ul class="pins"><li><b>1</b> Protokol. Art-Net eller sACN, det ene eller det andet</li><li><b>2</b> Netværk. Der sendes på dem, der er markeret</li><li><b>3</b> Hvor mange noder der svarede. No reply betyder, at ingen blev fundet</li><li><b>4</b> Destination. AUTO passer til de fleste rigge</li><li><b>5</b> Søg efter noder igen</li></ul></figure>
 <h2 id="output--1">Første forbindelse</h2>
 <h3 id="output--2">En enkelt Art-Net-node</h3>
-<ol><li>Sæt din iPhone på samme Wi-Fi eller kablede netværk som noden.</li><li>Åbn Settings → Output.</li><li>Vælg Art-Net og AUTO. Begge dele er standard.</li><li>Kontrollér, at Nodes Answering står på 1 eller mere. Noget udstyr svarer aldrig på polling og bliver stående på 0, selv om det modtager helt normalt. Stop derfor ikke her, hvis tallet ikke rører sig.</li><li>Tryk på OUTPUT OFF øverst til venstre på Home. En række åbner under statuslinjen; skub det runde håndtag på Slide to send helt mod højre.</li><li>Statuslinjen viser LISTENING i omkring et sekund, så SENDING U1, og Network Output viser et tal i packets/s. Flyt en fader, og se armaturet svare.</li></ol>
+<ol><li>Sæt din iPhone på samme Wi-Fi eller kablede netværk som noden.</li><li>Åbn Settings → Output.</li><li>Vælg Art-Net og AUTO. Begge dele er standard.</li><li>Kontrollér, at Nodes Answering står på 1 eller mere. Noget udstyr svarer aldrig på polling og bliver stående på 0, selv om det modtager helt normalt. Stop derfor ikke her, hvis tallet ikke rører sig.</li><li>Tryk på OUTPUT OFF øverst til venstre på Home. En række åbner under statuslinjen; skub det runde håndtag på Slide to send helt mod højre.</li><li>Statuslinjen viser LISTENING i omkring et sekund, så SENDING U1, og Network Output viser et tal i packets/s. Flyt en fader, og se armaturet svare.</li></ol>
 <p><strong dir="auto">Kanau begynder aldrig at sende af sig selv.</strong> Hver gang det åbner, er udgangen slukket, og statuslinjen viser OUTPUT OFF; patchen, destinationen og de frakoblede universer bevares. At flytte en fader eller kalde en Scene starter aldrig udgangen.</p>
 <p>Når du skubber, lytter Kanau først i omkring et sekund. Hvis ingen anden sender er på et universe, sender det derefter hvert patchet universe, der er slået til, uafbrudt, normalt med 44 Hz. Bluetooth forbinder, når du skubber, ikke ved start.</p>
 <p><strong dir="auto">For at stoppe sendingen</strong> trykker du på statuslinjen og skubber <code>Slide to stop</code> mod højre. Den går tilbage til OUTPUT OFF.</p>
 <p>Udgangen sættes også tilbage på slukket, og du skubber igen, når:</p>
 <ul><li>du skifter mellem Art-Net og sACN</li><li>et net dukker op, som ikke var der, da du skubbede</li><li>du forlader en session som gæst</li><li>du forlader LAMP MODE</li></ul>
-<p>Et universe, der senere føjes til patchen, forbliver slukket, til du skubber, og statuslinjen viser det som U3 OFF. Udgangen standser, mens Kanau ikke er på skærmen, og starter igen, når du kommer tilbage; SCREEN LOCK standser den ikke.</p>
+<p>Et universe, der senere føjes til patchen, forbliver slukket, til du skubber, og statuslinjen viser det som U3 OFF. Udgangen standser, mens Kanau ikke er på skærmen, og starter igen, når du kommer tilbage; SCREEN LOCK standser den ikke.</p>
 <h2 id="output--3">Sender det?</h2>
 <p>Læs dem i rækkefølge. Hver af dem fortæller noget forskelligt, og ingen af dem kan fortælle, at selve lyset har modtaget dataene.</p>
 <table>
@@ -255,26 +255,26 @@
 <p>En rød linje i Settings → Output siger, hvad der stoppede udgangen, og hvad man gør ved det: slå tilladelsen til lokalnetværket til, skift til UNICAST og skriv nodens adresse, tjek den adresse du skrev, tjek Wi-Fi, giv noden strøm. CRMX har sin egen linje. Bordets egen formulering bliver stående i parentes til sidst, så den kan citeres præcist.</p>
 <h3 id="output--9">Universer og Art-Net-nummerering</h3>
 <p>Universes viser hvert patchet universe med sit antal armaturer, hvor mange der lyser, og en ON/OFF-kontakt. Et universe, der er OFF, viser Not sending, og det gør et, der endnu ikke er skubbet åbent, også.</p>
-<div class="box important"><b>IMPORTANT</b><p>OFF stopper udsendelsen af det universe. Der går intet ud for det over Art-Net eller sACN, og over Bluetooth består forbindelsen, men der skrives intet. En modtager kan beholde sine sidste værdier, så et lys kan blive tændt. Hvilke universer der er slået fra, står øverst på skærmen som U1 OFF.</p></div>
-<p>Brug Net / Sub / Uni kun, når din node vil have Net / Sub-Net / Universe i stedet for ét enkelt tal. Slå det til under Settings → Output → Art-Net → Net / Sub / Uni. Sammenhængen er <strong dir="auto">Net × 256 + Sub × 16 + Uni</strong>. Når det er slået til, og ruten er Art-Net, tager patchningen universet på samme måde: Add, Re-address og Re-patch viser Net (0–127), Sub (0–15) og Uni (0–15) til at skrive, med det univers, de danner, for eksempel U500, ved siden af. Et tal uden for sit område sættes til områdets ende.</p>
+<div class="box important"><b>IMPORTANT</b><p>OFF stopper udsendelsen af det universe. Der går intet ud for det over Art-Net eller sACN, og over Bluetooth består forbindelsen, men der skrives intet. En modtager kan beholde sine sidste værdier, så et lys kan blive tændt. Hvilke universer der er slået fra, står øverst på skærmen som U1 OFF.</p></div>
+<p>Brug Net / Sub / Uni kun, når din node vil have Net / Sub-Net / Universe i stedet for ét enkelt tal. Slå det til under Settings → Output → Art-Net → Net / Sub / Uni. Sammenhængen er <strong dir="auto">Net × 256 + Sub × 16 + Uni</strong>. Når det er slået til, og ruten er Art-Net, tager patchningen universet på samme måde: Add, Re-address og Re-patch viser Net (0–127), Sub (0–15) og Uni (0–15) til at skrive, med det univers, de danner, for eksempel U500, ved siden af. Et tal uden for sit område sættes til områdets ende.</p>
 <p>sACN-prioritet kan være 0, 100 eller 200. Den er 100 som standard, og det er den prioritet, Kanau sender med sin sACN-udgang.</p>
 <h3 id="output--10">CRMX over Bluetooth</h3>
 <ol><li>Slå Bluetooth til under Settings → Output → CRMX (Bluetooth).</li><li>Giv Bluetooth lov, første gang iOS spørger.</li><li>Vælg en sender på listen. Trykker du på den igen, afbrydes forbindelsen.</li></ol>
 <p>Den sender, du vælger, bærer det universe, dit patch bruger (U1, når patchen ligger i universe 1). Næste gang forbinder den til den samme, når du slår Bluetooth til, så snart du har skubbet for at sende. Kan en sender ikke forbinde, eller falder den ud, siger Settings → Output, hvad du skal tjekke, med systemets egen meddelelse i parentes.</p>
 <ul><li><strong dir="auto">Listen</strong>: den siger <code>connected</code> om en sender, der er linket, og <code>sending</code> om en, der får data.</li><li><strong dir="auto">Når patchen spænder over mere end ét universe</strong>: vælg med − og + på rækken Universe under senderen, hvilket den bærer. Har du én gang valgt i hånden, holder Kanau op med at vælge for dig, indtil du afbryder senderen og vælger den igen.</li><li><strong dir="auto">En sender mere</strong>: skanningen stopper, når det, du har valgt, er forbundet, så RESCAN er vejen til at lede efter en til.</li></ul>
-<p>Når samme universe går ud både over netværket og over Bluetooth, siger Settings → Output det: <code class="q">U1: network and Bluetooth output are both on.</code> Det er <strong dir="auto">en konstatering, ikke en advarsel</strong>. En CRMX-modtager tager udgangen fra den sender, den er linket til, så samme U1 i Kanau betyder ikke i sig selv, at ét armatur fodres to gange. Det flimrer kun der, hvor et armatur virkelig modtager fra begge veje; sluk den ene dér.</p>
+<p>Når samme universe går ud både over netværket og over Bluetooth, siger Settings → Output det: <code class="q">U1: network and Bluetooth output are both on.</code> Det er <strong dir="auto">en konstatering, ikke en advarsel</strong>. En CRMX-modtager tager udgangen fra den sender, den er linket til, så samme U1 i Kanau betyder ikke i sig selv, at ét armatur fodres to gange. Det flimrer kun der, hvor et armatur virkelig modtager fra begge veje; sluk den ene dér.</p>
 <p>Nægter en sender stadig at tage Art-Net, efter at du har slået Bluetooth fra, så kontrollér senderens egne indstillinger.</p>
 <h3 id="output--11">Når der findes et andet lysbord</h3>
 <table>
 <tr><th>Vist</th><th>Hvad det betyder, og hvad du gør</th></tr>
-<tr><td>Blocked U1</td><td>Da du skubbede, var en anden sender allerede på U1, så Kanau sender ikke på det. Tryk på det for valgene nedenfor. Der er ingen måde at sende ovenpå det</td></tr>
+<tr><td>Blocked U1</td><td>Da du skubbede, var en anden sender allerede på U1, så Kanau sender ikke på det. Tryk på det for valgene nedenfor. Der er ingen måde at sende ovenpå det</td></tr>
 <tr><td>SHARED + IP eller enhedsnavn</td><td>Et andet lysbord dukkede op, efter at dette var startet. Udsendelsen fortsætter, så stop en af dem, hvis du har brug for det</td></tr>
 </table>
-<p>Et tryk på Blocked U1 åbner en række, der nævner senderen, som U1 In Use, med disse valg:</p>
+<p>Et tryk på Blocked U1 åbner en række, der nævner senderen, som U1 In Use, med disse valg:</p>
 <table>
 <tr><th>Valg</th><th>Hvad det gør</th></tr>
 <tr><td>Join</td><td>Vises, når senderen er en Kanau-vært. Åbner Session for at gå med</td></tr>
-<tr><td>Send U2 Only</td><td>Vises, når andre universer er frie. Sender kun dem</td></tr>
+<tr><td>Send U2 Only</td><td>Vises, når andre universer er frie. Sender kun dem</td></tr>
 <tr><td>Cancel</td><td>Lukker rækken uden at sende</td></tr>
 </table>
 <p>Kanau-enheder fortæller hinanden, hvilke universer de sender, så to, der skubber samtidig, ikke begge sender. En sACN-sender vises med rødt i sende-rækken, med navn eller IP; det fortæller dig det kun, og Kanau bliver ved med at sende. Unicast-afsendere og Bluetooth i andre apps er måske ikke synlige herfra.</p>
@@ -292,7 +292,7 @@
 <tr><td>Network Output</td><td>Pakker sendt over netværket i det sidste sekund. Omkring 44 er normalt for ét universe til én destination; det ganges op med hvert ekstra universe eller hver ekstra destination. Nothing betyder, at der ikke gik nogen ud, som før du skubber. Bluetooth tælles ikke med her</td></tr>
 <tr><td>Clock</td><td>Det værste hul mellem to udsendelser. Omkring 23 ms er normalt. Over 100 ms peger på telefonen</td></tr>
 <tr><td>Touch → DMX</td><td>Fra din finger til pakken. Omkring 25 ms er normalt</td></tr>
-<tr><td>Nodes Answering</td><td>Hvor mange der svarede, med navn, adresse, forbindelse og rundtur. Rundturen er tom, til RESCAN måler den; tallet i parentes er det værste i de sidste 10 sekunder. Med AUTO viser linjen under hver node de universer, der sendes til den, som U1 eller U0–U3</td></tr>
+<tr><td>Nodes Answering</td><td>Hvor mange der svarede, med navn, adresse, forbindelse og rundtur. Rundturen er tom, til RESCAN måler den; tallet i parentes er det værste i de sidste 10 sekunder. Med AUTO viser linjen under hver node de universer, der sendes til den, som U1 eller U0–U3</td></tr>
 <tr><td>Type these into the node</td><td>De Net / Sub / Uni, du skal indtaste på noden, når den visning er slået til</td></tr>
 </table>
 <p>De indsnævrer problemet; de er ikke bevis for, at det lykkedes. De viser, hvad Kanau har sendt, og om lyset har modtaget det, kan ikke ses herfra. Network Output kan vise et tal, mens en uoverensstemmelse eller en fejl i den anden ende holder armaturerne mørke. Grej, der ikke svarer på polling, står med 0 under Nodes Answering, selv mens det modtager.</p>
@@ -315,7 +315,7 @@
 <tr><td>Name</td><td>Armaturets eget navn. Det vises i Patch og i Patch List; Home viser Label i stedet. Står som det fulde modelnavn plus et løbenummer, som Titan Tube 1</td></tr>
 <tr><td>Number / How Many</td><td>Det nummer, du kalder den ved på gulvet, og hvor mange der skal tilføjes, op til 4,096. Nummeret må stå tomt; det begynder ved det højeste i brug plus 1</td></tr>
 <tr><td>Label</td><td>Det viste navn, som alle armaturer af den model i samme tilstand deles om. Det løber under faderne. Står som modellens officielle navn; skifter du Mode her, følger et Label, du ikke selv har skrevet, den nye tilstand. Det kan også skrives i armaturets panel (<a class="xref" href="#fixture-settings">kapitel 06</a>)</td></tr>
-<tr><td>Universe / Address</td><td>Står som U1 og den næste ledige adresse. Skifter du universe, stilles adressen tilbage til 1. U0 er tilladt</td></tr>
+<tr><td>Universe / Address</td><td>Står som U1 og den næste ledige adresse. Skifter du universe, stilles adressen tilbage til 1. U0 er tilladt</td></tr>
 <tr><td>Offset</td><td>Afstanden mellem armaturerne. Udfyldes fra tilstandens antal kanaler</td></tr>
 <tr><td>Gap</td><td>Ekstra kanaler, der skal stå frie mellem armaturerne</td></tr>
 <tr><td>BATTERY SAVE</td><td>Markerer de nye armaturer til BATTERY SAVE</td></tr>
@@ -1124,7 +1124,7 @@
 <tr><th>Det, du ser</th><th>Hvad du gør</th></tr>
 <tr><td>Idle</td><td>Kontrollér, at et netværk er slået til under Settings → Output</td></tr>
 <tr><td>Blocked</td><td>Tryk på den for at åbne Settings → Output; dér står en rød linje, der siger, hvad der stoppede det, og hvad man gør. Følg den linje</td></tr>
-<tr><td>Blocked U1, med et universe-nummer</td><td>En anden sender er allerede på det universe. Tryk på det for Join, Send … Only eller Cancel</td></tr>
+<tr><td>Blocked U1, med et universe-nummer</td><td>En anden sender er allerede på det universe. Tryk på det for Join, Send … Only eller Cancel</td></tr>
 <tr><td>No node</td><td>Tryk på den for at åbne Settings → Output. Kontrollér nodens strøm, netværk, adresse og protokolindstillinger</td></tr>
 <tr><td>U1 OFF</td><td>Slå det universe til igen under Output → Universes</td></tr>
 <tr><td>Et lilla ⏻ eller armaturikon</td><td>Slå armaturets udgang til igen</td></tr>
@@ -1347,5 +1347,6 @@ Fixture          er selve armaturet langsomt</pre>
 
 })();
 </script>
+<script src="jbreak.js?v=20261031c"></script>
 </body>
 </html>

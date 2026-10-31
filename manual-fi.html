@@ -42,7 +42,7 @@
 <link rel="alternate" hreflang="vi" href="manual-vi.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap">
-<link rel="stylesheet" href="theme.css?v=20261031a">
+<link rel="stylesheet" href="theme.css?v=20261031c">
 </head>
 <body>
 
@@ -131,15 +131,15 @@
 </table>
 <h2 id="screen--3">Tilarivi</h2>
 <p>Vasemmalla on lähetyksen tila. Napauta sitä avataksesi rivin, joka käynnistää ja pysäyttää lähetyksen (<a class="xref" href="#output">luku 02</a>). Aina kun Kanau avautuu, siinä lukee OUTPUT OFF, eikä mitään lähde ulos, ennen kuin liu&#x27;utat.</p>
-<p>Lähetyksen aikana siinä lukee SENDING ja universumit, esimerkiksi SENDING U1 U2. Jos tilaa ei ole, siitä tulee reitti, yksi kirjain: A on Art-Net, S on sACN. Sen vieressä oleva piste hengittää lähetyksen aikana, liu&#x27;utusta odotettaessa ja tilassa LISTENING. Bluetoothilla on oma piste ja oma nimi.</p>
+<p>Lähetyksen aikana siinä lukee SENDING ja universumit, esimerkiksi SENDING U1 U2. Jos tilaa ei ole, siitä tulee reitti, yksi kirjain: A on Art-Net, S on sACN. Sen vieressä oleva piste hengittää lähetyksen aikana, liu&#x27;utusta odotettaessa ja tilassa LISTENING. Bluetoothilla on oma piste ja oma nimi.</p>
 <p>Niiden vieressä on sen shown nimi, jossa olet; kapealla puhelimella, jossa riville ei jää tilaa, se jätetään pois. Kun BLIND on päällä, koko tämä vasen osa muuttuu keltaiseksi BLIND-merkinnäksi; napauta sitä, niin poistut BLIND-tilasta (<a class="xref" href="#scenes">luku 08</a>).</p>
 <table>
 <tr><th>Näkyy</th><th>Merkitys</th></tr>
 <tr><td>OUTPUT OFF</td><td>Ei lähetetä sen jälkeen, kun Kanau avattiin. Sen alla lukee Slide to send. Napauta sitä ja liu&#x27;uta</td></tr>
 <tr><td>SENDING, napautettu</td><td>Avaa <code>Slide to stop</code>. Liu&#x27;uta oikealle lopettaaksesi lähetyksen; rivi palaa tilaan OUTPUT OFF. <code>Done</code> sulkee rivin</td></tr>
 <tr><td>LISTENING</td><td>Tarkistaa noin sekunnin ajan, onko toista lähettäjää, ennen kuin lähetetään</td></tr>
-<tr><td>SENDING U1 U2</td><td>Nämä universumit lähtevät ulos. Harmaa U3 OFF tässä tarkoittaa patchattua universumia, jota ei ole vielä liu&#x27;utettu auki. Se ei ole rivillä myöhemmin oleva punainen U1 OFF</td></tr>
-<tr><td>Blocked U1</td><td>Toinen lähettäjä on jo kyseisellä universumilla, joten Kanau ei lähetä sille. Napauta sitä nähdäksesi vaihtoehdot (<a class="xref" href="#output">luku 02</a>)</td></tr>
+<tr><td>SENDING U1 U2</td><td>Nämä universumit lähtevät ulos. Harmaa U3 OFF tässä tarkoittaa patchattua universumia, jota ei ole vielä liu&#x27;utettu auki. Se ei ole rivillä myöhemmin oleva punainen U1 OFF</td></tr>
+<tr><td>Blocked U1</td><td>Toinen lähettäjä on jo kyseisellä universumilla, joten Kanau ei lähetä sille. Napauta sitä nähdäksesi vaihtoehdot (<a class="xref" href="#output">luku 02</a>)</td></tr>
 <tr><td>Vihreä piste</td><td>Lähettää</td></tr>
 <tr><td>Keltainen piste</td><td>Hidastettu tai yhteyttä muodostetaan uudelleen (Reconnecting…)</td></tr>
 <tr><td>Punainen piste, ART-NET No node tai SACN No node</td><td>Mikään ei vastaa. Tilarivi nimeää reitin, lyhennettynä kapealla näytöllä. Napauta sitä avataksesi Settings → Output. Kun Play-rivi on näkyvissä, se ei avaudu; napauta ensin <code>EXIT</code></td></tr>
@@ -214,13 +214,13 @@
 <figure class="shot"><div class="wrap" dir="ltr"><img src="img/6-output.png" alt="Settings → Output. Punaiset numerot vastaavat alla olevaa luetteloa." width="640" height="1168" loading="lazy"><span class="pin" style="left:27%;top:21.5%">1</span><span class="pin" style="left:15%;top:31.7%">2</span><span class="pin" style="left:87%;top:31.7%">3</span><span class="pin" style="left:27%;top:79.2%">4</span><span class="pin" style="left:50%;top:97.1%">5</span></div><figcaption>Settings → Output. Punaiset numerot vastaavat alla olevaa luetteloa.</figcaption><ul class="pins"><li><b>1</b> Protokolla. Art-Net tai sACN, jompikumpi</li><li><b>2</b> Verkot. Lähetys kulkee niihin, jotka on rastitettu</li><li><b>3</b> Kuinka moni solmu vastasi. No reply tarkoittaa ettei yhtään löytynyt</li><li><b>4</b> Kohde. AUTO sopii useimpiin rigeihin</li><li><b>5</b> Etsi solmut uudelleen</li></ul></figure>
 <h2 id="output--1">Ensimmäinen yhteys</h2>
 <h3 id="output--2">Yksi Art-Net-solmu</h3>
-<ol><li>Tuo iPhone samaan langattomaan tai langalliseen verkkoon kuin solmu.</li><li>Avaa Settings → Output.</li><li>Valitse Art-Net ja AUTO. Molemmat ovat oletuksia.</li><li>Tarkista, että Nodes Answering näyttää 1 tai enemmän. Osa kalustosta ei vastaa kyselyyn lainkaan ja jää nollaan, vaikka se vastaanottaa aivan normaalisti. Älä siis jää tähän, jos luku ei liiku.</li><li>Napauta Home-näkymän vasemmassa yläkulmassa OUTPUT OFF. Tilarivin alle avautuu rivi; liu&#x27;uta Slide to send -rivin pyöreä kahva aivan oikealle.</li><li>Tilarivillä lukee noin sekunnin ajan LISTENING, sitten SENDING U1, ja Network Output näyttää lukuarvon yksikössä packets/s. Liikuta faderia ja katso, miten valaisin vastaa.</li></ol>
+<ol><li>Tuo iPhone samaan langattomaan tai langalliseen verkkoon kuin solmu.</li><li>Avaa Settings → Output.</li><li>Valitse Art-Net ja AUTO. Molemmat ovat oletuksia.</li><li>Tarkista, että Nodes Answering näyttää 1 tai enemmän. Osa kalustosta ei vastaa kyselyyn lainkaan ja jää nollaan, vaikka se vastaanottaa aivan normaalisti. Älä siis jää tähän, jos luku ei liiku.</li><li>Napauta Home-näkymän vasemmassa yläkulmassa OUTPUT OFF. Tilarivin alle avautuu rivi; liu&#x27;uta Slide to send -rivin pyöreä kahva aivan oikealle.</li><li>Tilarivillä lukee noin sekunnin ajan LISTENING, sitten SENDING U1, ja Network Output näyttää lukuarvon yksikössä packets/s. Liikuta faderia ja katso, miten valaisin vastaa.</li></ol>
 <p><strong dir="auto">Kanau ei koskaan aloita lähetystä itsestään.</strong> Aina avautuessaan lähtö on pois päältä ja tilarivillä lukee OUTPUT OFF; patch, kohde ja pois kytketyt universumit säilyvät. Faderin liikuttaminen tai Scenen hakeminen ei koskaan käynnistä lähtöä.</p>
 <p>Kun liu&#x27;utat, Kanau kuuntelee ensin noin sekunnin. Jos millään universumilla ei ole toista lähettäjää, se lähettää sen jälkeen jokaista patchattua universumia, joka on kytketty päälle, jatkuvasti, tavallisesti nopeudella 44 Hz. Bluetooth yhdistyy, kun liu&#x27;utat, ei käynnistyksessä.</p>
 <p><strong dir="auto">Lopeta lähetys</strong> napauttamalla tilariviä ja liu&#x27;uttamalla <code>Slide to stop</code> oikealle. Tila palaa arvoon OUTPUT OFF.</p>
 <p>Lähtö palaa myös pois päältä, ja liu&#x27;utat uudelleen, kun:</p>
 <ul><li>vaihdat Art-Netin ja sACN:n välillä</li><li>ilmestyy verkko, jota ei ollut, kun liu&#x27;utit</li><li>poistut sessiosta vieraana</li><li>poistut LAMP MODE -tilasta</li></ul>
-<p>Universumi, joka lisätään patchiin myöhemmin, pysyy pois päältä, kunnes liu&#x27;utat, ja tilarivi näyttää sen muodossa U3 OFF. Lähtö pysähtyy, kun Kanau ei ole ruudulla, ja alkaa uudelleen, kun palaat; SCREEN LOCK ei pysäytä sitä.</p>
+<p>Universumi, joka lisätään patchiin myöhemmin, pysyy pois päältä, kunnes liu&#x27;utat, ja tilarivi näyttää sen muodossa U3 OFF. Lähtö pysähtyy, kun Kanau ei ole ruudulla, ja alkaa uudelleen, kun palaat; SCREEN LOCK ei pysäytä sitä.</p>
 <h2 id="output--3">Lähteekö se?</h2>
 <p>Lue nämä järjestyksessä. Jokainen kertoo jotain eri asiaa, eikä mikään niistä voi kertoa, että itse valaisin sai datan.</p>
 <table>
@@ -255,26 +255,26 @@
 <p>Punainen rivi Settings → Output -näkymässä kertoo, mikä lähdön pysäytti ja mitä tehdä: kytke lähiverkon käyttöoikeus päälle, vaihda asetukseen UNICAST ja kirjoita solmun osoite, tarkista kirjoittamasi osoite, tarkista Wi-Fi, kytke solmuun virta. CRMXllä on oma rivinsä. Pöydän oma sanamuoto jää loppuun sulkeisiin, joten sen voi lainata sellaisenaan.</p>
 <h3 id="output--9">Universumit ja Art-Netin numerointi</h3>
 <p>Universes luettelee jokaisen patchatun universumin, sen valaisinmäärän, montako niistä palaa, ja ON/OFF-kytkimen. Universumi, joka on OFF, näyttää tekstin Not sending, samoin universumi, jota ei ole vielä liu&#x27;utettu auki.</p>
-<div class="box important"><b>IMPORTANT</b><p>OFF lopettaa kyseisen universumin lähettämisen. Mitään ei lähde sille Art-Netillä eikä sACN:llä, ja Bluetoothilla yhteys pysyy, mutta mitään ei kirjoiteta. Vastaanotin voi pitää viimeiset arvonsa, joten valo voi jäädä palamaan. Se, mitkä universumit on kytketty pois, näkyy ruudun yläreunassa muodossa U1 OFF.</p></div>
-<p>Käytä Net / Sub / Uni -asetusta vain, kun solmusi haluaa yhden numeron sijaan arvot Net / Sub-Net / Universe. Kytke se päälle: Settings → Output → Art-Net → Net / Sub / Uni. Suhde on <strong dir="auto">Net × 256 + Sub × 16 + Uni</strong>. Kun se on päällä ja reittinä on Art-Net, patchaus ottaa universumin samalla tavalla: Add, Re-address ja Re-patch näyttävät kirjoitettavat Net (0–127), Sub (0–15) ja Uni (0–15) sekä niiden muodostaman universumin, kuten U500, vieressään. Alueen ulkopuolella oleva luku asetetaan alueen päähän.</p>
+<div class="box important"><b>IMPORTANT</b><p>OFF lopettaa kyseisen universumin lähettämisen. Mitään ei lähde sille Art-Netillä eikä sACN:llä, ja Bluetoothilla yhteys pysyy, mutta mitään ei kirjoiteta. Vastaanotin voi pitää viimeiset arvonsa, joten valo voi jäädä palamaan. Se, mitkä universumit on kytketty pois, näkyy ruudun yläreunassa muodossa U1 OFF.</p></div>
+<p>Käytä Net / Sub / Uni -asetusta vain, kun solmusi haluaa yhden numeron sijaan arvot Net / Sub-Net / Universe. Kytke se päälle: Settings → Output → Art-Net → Net / Sub / Uni. Suhde on <strong dir="auto">Net × 256 + Sub × 16 + Uni</strong>. Kun se on päällä ja reittinä on Art-Net, patchaus ottaa universumin samalla tavalla: Add, Re-address ja Re-patch näyttävät kirjoitettavat Net (0–127), Sub (0–15) ja Uni (0–15) sekä niiden muodostaman universumin, kuten U500, vieressään. Alueen ulkopuolella oleva luku asetetaan alueen päähän.</p>
 <p>sACN:n prioriteetti voi olla 0, 100 tai 200. Oletus on 100, ja se on se prioriteetti, jonka Kanau lähettää sACN-ulostulonsa mukana.</p>
 <h3 id="output--10">CRMX Bluetoothin yli</h3>
 <ol><li>Kytke Bluetooth päälle: Settings → Output → CRMX (Bluetooth).</li><li>Anna iOS:lle lupa Bluetoothin käyttöön, kun se ensimmäisen kerran kysyy.</li><li>Valitse lähetin luettelosta. Uusi napautus katkaisee yhteyden.</li></ol>
 <p>Valitsemasi lähetin kantaa sitä universumia, jota patchisi käyttää (U1, kun patch on universumissa 1). Seuraavalla kerralla Bluetoothin kytkeminen päälle yhdistää samaan lähettimeen, kun olet liu&#x27;uttanut lähettääksesi. Kun lähetin ei saa yhteyttä tai yhteys katkeaa, Settings → Output kertoo, mitä tarkistaa, ja järjestelmän oma viesti on sulkeissa.</p>
 <ul><li><strong dir="auto">Luettelo</strong>: se sanoo <code>connected</code> linkitetystä lähettimestä ja <code>sending</code> siitä, jolle dataa menee.</li><li><strong dir="auto">Kun patch ulottuu useampaan kuin yhteen universumiin</strong>: valitse − ja + -painikkeilla lähettimen alla olevalla Universe-rivillä, minkä se kantaa. Kun olet kerran valinnut käsin, Kanau lakkaa valitsemasta puolestasi, kunnes irrotat lähettimen ja valitset sen uudelleen.</li><li><strong dir="auto">Toinen lähetin</strong>: haku pysähtyy, kun valitsemasi ovat yhteydessä, joten RESCAN on tie etsiä toinen.</li></ul>
-<p>Kun sama universumi menee ulos sekä verkon että Bluetoothin kautta, Settings → Output sanoo sen: <code class="q">U1: network and Bluetooth output are both on.</code> Se on <strong dir="auto">toteamus, ei varoitus</strong>. CRMX-vastaanotin ottaa sen lähettimen lähdön, johon se on linkitetty, joten sama U1 Kanaussa ei sinänsä syötä yhtä valaisinta kahdesti. Välkkymistä syntyy vain siellä, missä valaisin todella ottaa vastaan molemmilta reiteiltä; siellä katkaise toinen.</p>
+<p>Kun sama universumi menee ulos sekä verkon että Bluetoothin kautta, Settings → Output sanoo sen: <code class="q">U1: network and Bluetooth output are both on.</code> Se on <strong dir="auto">toteamus, ei varoitus</strong>. CRMX-vastaanotin ottaa sen lähettimen lähdön, johon se on linkitetty, joten sama U1 Kanaussa ei sinänsä syötä yhtä valaisinta kahdesti. Välkkymistä syntyy vain siellä, missä valaisin todella ottaa vastaan molemmilta reiteiltä; siellä katkaise toinen.</p>
 <p>Jos lähetin ei edelleenkään suostu ottamaan Art-Netiä vastaan sen jälkeen kun olet kytkenyt Bluetoothin pois, tarkista lähettimen omat asetukset.</p>
 <h3 id="output--11">Kun toinen valopöytä löytyy</h3>
 <table>
 <tr><th>Näkyy</th><th>Mitä se tarkoittaa ja mitä tehdä</th></tr>
-<tr><td>Blocked U1</td><td>Kun liu&#x27;utit, toinen lähettäjä oli jo universumilla U1, joten Kanau ei lähetä sille. Napauta sitä nähdäksesi alla olevat vaihtoehdot. Sen päälle ei voi lähettää</td></tr>
+<tr><td>Blocked U1</td><td>Kun liu&#x27;utit, toinen lähettäjä oli jo universumilla U1, joten Kanau ei lähetä sille. Napauta sitä nähdäksesi alla olevat vaihtoehdot. Sen päälle ei voi lähettää</td></tr>
 <tr><td>SHARED + IP-osoite tai laitteen nimi</td><td>Toinen valopöytä ilmestyi tämän käynnistyttyä. Lähetys jatkuu, joten pysäytä toinen niistä jos on tarpeen</td></tr>
 </table>
-<p>Napautus Blocked U1 avaa rivin, joka nimeää lähettäjän, esimerkiksi U1 In Use, ja tarjoaa nämä vaihtoehdot:</p>
+<p>Napautus Blocked U1 avaa rivin, joka nimeää lähettäjän, esimerkiksi U1 In Use, ja tarjoaa nämä vaihtoehdot:</p>
 <table>
 <tr><th>Vaihtoehto</th><th>Mitä se tekee</th></tr>
 <tr><td>Join</td><td>Näkyy, kun lähettäjä on Kanau-isäntä. Avaa Sessionin liittyäksesi siihen</td></tr>
-<tr><td>Send U2 Only</td><td>Näkyy, kun muut universumit ovat vapaita. Lähettää vain niille</td></tr>
+<tr><td>Send U2 Only</td><td>Näkyy, kun muut universumit ovat vapaita. Lähettää vain niille</td></tr>
 <tr><td>Cancel</td><td>Sulkee rivin lähettämättä</td></tr>
 </table>
 <p>Kanau-laitteet kertovat toisilleen, mitä universumeja ne lähettävät, joten kaksi, jotka liu&#x27;uttavat yhtä aikaa, eivät lähetä molemmat. sACN-lähettäjä näkyy lähetysrivillä punaisella, nimellä tai IP-osoitteella; se vain kertoo sinulle, ja Kanau jatkaa lähettämistä. Unicast-lähettäjät ja Bluetooth muissa sovelluksissa eivät välttämättä näy täältä.</p>
@@ -292,7 +292,7 @@
 <tr><td>Network Output</td><td>Verkon kautta viimeisen sekunnin aikana lähetetyt paketit. Noin 44 on normaali yhdelle universumille yhteen kohteeseen; se kertautuu jokaisella lisäuniversumilla tai -kohteella. Nothing tarkoittaa ettei yhtään lähtenyt, kuten ennen liu&#x27;uttamista. Bluetoothia ei lasketa tähän</td></tr>
 <tr><td>Clock</td><td>Pisin väli lähetysten välillä. Noin 23 ms on normaali. Yli 100 ms viittaa puhelimeen</td></tr>
 <tr><td>Touch → DMX</td><td>Sormesta pakettiin. Noin 25 ms on normaali</td></tr>
-<tr><td>Nodes Answering</td><td>Montako vastasi, nimineen, osoitteineen, yhteyksineen ja kiertoaikoineen. Kiertoaika on tyhjä, kunnes RESCAN mittaa sen; suluissa oleva luku on pisin viimeisten 10 sekunnin aikana. AUTO-tilassa kunkin solmun alla oleva rivi luettelee sille lähetettävät universumit, esimerkiksi U1 tai U0–U3</td></tr>
+<tr><td>Nodes Answering</td><td>Montako vastasi, nimineen, osoitteineen, yhteyksineen ja kiertoaikoineen. Kiertoaika on tyhjä, kunnes RESCAN mittaa sen; suluissa oleva luku on pisin viimeisten 10 sekunnin aikana. AUTO-tilassa kunkin solmun alla oleva rivi luettelee sille lähetettävät universumit, esimerkiksi U1 tai U0–U3</td></tr>
 <tr><td>Type these into the node</td><td>Solmuun syötettävät Net / Sub / Uni, kun se näyttö on päällä</td></tr>
 </table>
 <p>Nämä rajaavat ongelmaa; ne eivät todista onnistumista. Ne kertovat, mitä Kanau lähetti, eikä sitä, vastaanottiko valaisin sen, voi nähdä täältä. Network Output voi näyttää lukuarvon, vaikka epäsopiva asetus tai vika toisessa päässä pitää valaisimet pimeinä. Kalusto, joka ei vastaa kyselyyn, näkyy nollana kohdassa Nodes Answering vaikka se vastaanottaisikin.</p>
@@ -315,7 +315,7 @@
 <tr><td>Name</td><td>Tämän yhden valaisimen oma nimi. Se näkyy Patch-näkymässä ja Patch Listissä; Home näyttää sen sijaan Labelin. Oletuksena mallin koko nimi plus juokseva numero, kuten Titan Tube 1</td></tr>
 <tr><td>Number / How Many</td><td>Numero, jolla kutsut sitä lattialla, ja montako lisätään, enintään 4,096. Numeron voi jättää tyhjäksi; se alkaa käytössä olevasta suurimmasta plus yksi</td></tr>
 <tr><td>Label</td><td>Näyttönimi, joka on yhteinen kaikille saman mallin valaisimille samassa tilassa. Se kulkee faderien alla. Oletuksena mallin virallinen nimi; jos vaihdat Mode-kentän tässä, Label, jota et ole kirjoittanut itse, seuraa uutta tilaa. Sen voi kirjoittaa myös valaisimen paneeliin (<a class="xref" href="#fixture-settings">luku 06</a>)</td></tr>
-<tr><td>Universe / Address</td><td>Oletuksena U1 ja seuraava vapaa osoite. Universumin vaihtaminen palauttaa osoitteeksi 1. U0 on sallittu</td></tr>
+<tr><td>Universe / Address</td><td>Oletuksena U1 ja seuraava vapaa osoite. Universumin vaihtaminen palauttaa osoitteeksi 1. U0 on sallittu</td></tr>
 <tr><td>Offset</td><td>Valaisimien välinen jako. Täytetään tilan kanavamäärästä</td></tr>
 <tr><td>Gap</td><td>Valaisimien väliin jätettävät ylimääräiset kanavat</td></tr>
 <tr><td>BATTERY SAVE</td><td>Merkitsee uudet valaisimet BATTERY SAVE -toimintoon</td></tr>
@@ -1124,7 +1124,7 @@
 <tr><th>Mitä näet</th><th>Mitä tehdä</th></tr>
 <tr><td>Idle</td><td>Tarkista, että jokin verkko on käytössä kohdassa Settings → Output</td></tr>
 <tr><td>Blocked</td><td>Napauta sitä avataksesi Settings → Output; siellä on punainen rivi, joka kertoo mikä sen pysäytti ja mitä tehdä. Toimi sen mukaan</td></tr>
-<tr><td>Blocked U1, universumin numeron kanssa</td><td>Toinen lähettäjä on jo kyseisellä universumilla. Napauta sitä nähdäksesi Join, Send … Only tai Cancel</td></tr>
+<tr><td>Blocked U1, universumin numeron kanssa</td><td>Toinen lähettäjä on jo kyseisellä universumilla. Napauta sitä nähdäksesi Join, Send … Only tai Cancel</td></tr>
 <tr><td>No node</td><td>Napauta sitä avataksesi Settings → Output. Tarkista solmun virta, verkko, osoite ja protokolla-asetukset</td></tr>
 <tr><td>U1 OFF</td><td>Kytke universumi takaisin päälle kohdassa Output → Universes</td></tr>
 <tr><td>Violetti ⏻ tai valaisimen kuvake</td><td>Kytke valaisimen lähtö takaisin päälle</td></tr>
@@ -1347,5 +1347,6 @@ Fixture          onko itse valaisin hidas</pre>
 
 })();
 </script>
+<script src="jbreak.js?v=20261031c"></script>
 </body>
 </html>

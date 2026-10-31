@@ -42,7 +42,7 @@
 <link rel="alternate" hreflang="vi" href="manual-vi.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap">
-<link rel="stylesheet" href="theme.css?v=20261031a">
+<link rel="stylesheet" href="theme.css?v=20261031c">
 </head>
 <body>
 
@@ -131,15 +131,15 @@
 </table>
 <h2 id="screen--3">Die Statuszeile</h2>
 <p>Links steht der Sendezustand. Tippen Sie darauf, um die Zeile zu öffnen, die das Senden startet und stoppt (<a class="xref" href="#output">Kapitel 02</a>). Bei jedem Öffnen von Kanau steht dort OUTPUT OFF, und nichts geht hinaus, bis Sie schieben.</p>
-<p>Beim Senden steht dort SENDING und die Universes, etwa SENDING U1 U2. Wo kein Platz ist, wird daraus die Route, ein einzelner Buchstabe: A für Art-Net, S für sACN. Der Punkt daneben atmet beim Senden, beim Warten auf das Schieben und bei LISTENING. Bluetooth hat einen eigenen Punkt und Namen.</p>
+<p>Beim Senden steht dort SENDING und die Universes, etwa SENDING U1 U2. Wo kein Platz ist, wird daraus die Route, ein einzelner Buchstabe: A für Art-Net, S für sACN. Der Punkt daneben atmet beim Senden, beim Warten auf das Schieben und bei LISTENING. Bluetooth hat einen eigenen Punkt und Namen.</p>
 <p>Daneben steht der Name der Show, in der Sie sind; auf einem schmalen Telefon, wo die Zeile keinen Platz übrig hat, bleibt er weg. Solange BLIND an ist, wird dieser ganze linke Teil zu einem bernsteinfarbenen BLIND; tippen Sie darauf, um BLIND zu verlassen (<a class="xref" href="#scenes">Kapitel 08</a>).</p>
 <table>
 <tr><th>Angezeigt</th><th>Bedeutung</th></tr>
 <tr><td>OUTPUT OFF</td><td>Seit dem Öffnen von Kanau wird nicht gesendet. Darunter steht Slide to send. Tippen Sie darauf und schieben Sie</td></tr>
 <tr><td>SENDING, angetippt</td><td>Öffnet <code>Slide to stop</code>. Nach rechts schieben stoppt das Senden; die Zeile geht zurück auf OUTPUT OFF. <code>Done</code> schließt die Zeile</td></tr>
 <tr><td>LISTENING</td><td>Prüft etwa eine Sekunde lang, ob ein anderer Sender da ist, bevor gesendet wird</td></tr>
-<tr><td>SENDING U1 U2</td><td>Diese Universes gehen hinaus. Ein graues U3 OFF an dieser Stelle meint ein gepatchtes Universe, das noch nicht freigeschoben wurde. Es ist nicht das rote U1 OFF weiter hinten in der Zeile</td></tr>
-<tr><td>Blocked U1</td><td>Auf diesem Universe sendet bereits ein anderer Sender, daher sendet Kanau dort nicht. Tippen Sie darauf für die Auswahl (<a class="xref" href="#output">Kapitel 02</a>)</td></tr>
+<tr><td>SENDING U1 U2</td><td>Diese Universes gehen hinaus. Ein graues U3 OFF an dieser Stelle meint ein gepatchtes Universe, das noch nicht freigeschoben wurde. Es ist nicht das rote U1 OFF weiter hinten in der Zeile</td></tr>
+<tr><td>Blocked U1</td><td>Auf diesem Universe sendet bereits ein anderer Sender, daher sendet Kanau dort nicht. Tippen Sie darauf für die Auswahl (<a class="xref" href="#output">Kapitel 02</a>)</td></tr>
 <tr><td>Grüner Punkt</td><td>Sendet</td></tr>
 <tr><td>Bernsteinfarbener Punkt</td><td>Verlangsamt oder verbindet neu (Reconnecting…)</td></tr>
 <tr><td>Roter Punkt, ART-NET No node oder SACN No node</td><td>Niemand antwortet. Die Statuszeile nennt die Route, auf einem schmalen Bildschirm gekürzt. Tippen Sie darauf, um Settings → Output zu öffnen. Solange die Play-Zeile zu sehen ist, öffnet es nichts; tippen Sie zuerst auf <code>EXIT</code></td></tr>
@@ -214,13 +214,13 @@
 <figure class="shot"><div class="wrap" dir="ltr"><img src="img/6-output.png" alt="Settings → Output. Die roten Zahlen entsprechen der Liste darunter." width="640" height="1168" loading="lazy"><span class="pin" style="left:27%;top:21.5%">1</span><span class="pin" style="left:15%;top:31.7%">2</span><span class="pin" style="left:87%;top:31.7%">3</span><span class="pin" style="left:27%;top:79.2%">4</span><span class="pin" style="left:50%;top:97.1%">5</span></div><figcaption>Settings → Output. Die roten Zahlen entsprechen der Liste darunter.</figcaption><ul class="pins"><li><b>1</b> Protokoll. Art-Net oder sACN, eines von beiden</li><li><b>2</b> Netzwerke. Gesendet wird über die angehakten</li><li><b>3</b> Wie viele Nodes geantwortet haben. No reply heißt, keiner wurde gefunden</li><li><b>4</b> Ziel. AUTO passt für die meisten Rigs</li><li><b>5</b> Erneut nach Nodes suchen</li></ul></figure>
 <h2 id="output--1">Erste Verbindung</h2>
 <h3 id="output--2">Ein Art-Net-Node</h3>
-<ol><li>Bringen Sie das iPhone in dasselbe WLAN oder Kabelnetz wie den Node.</li><li>Öffnen Sie Settings → Output.</li><li>Wählen Sie Art-Net und AUTO. Beides ist Voreinstellung.</li><li>Prüfen Sie, dass Nodes Answering 1 oder mehr zeigt. Manche Scheinwerfer antworten nie auf Polling und bleiben auf 0, obwohl sie ganz normal empfangen. Bleiben Sie also nicht hier stehen, wenn sich die Zahl nicht rührt.</li><li>Tippen Sie auf Home oben links auf OUTPUT OFF. Unter der Statuszeile öffnet sich eine Zeile; schieben Sie den runden Griff von Slide to send ganz nach rechts.</li><li>Die Statuszeile zeigt etwa eine Sekunde lang LISTENING, dann SENDING U1, und Network Output zeigt eine Zahl in packets/s. Bewegen Sie einen Fader und beobachten Sie, wie das Licht reagiert.</li></ol>
+<ol><li>Bringen Sie das iPhone in dasselbe WLAN oder Kabelnetz wie den Node.</li><li>Öffnen Sie Settings → Output.</li><li>Wählen Sie Art-Net und AUTO. Beides ist Voreinstellung.</li><li>Prüfen Sie, dass Nodes Answering 1 oder mehr zeigt. Manche Scheinwerfer antworten nie auf Polling und bleiben auf 0, obwohl sie ganz normal empfangen. Bleiben Sie also nicht hier stehen, wenn sich die Zahl nicht rührt.</li><li>Tippen Sie auf Home oben links auf OUTPUT OFF. Unter der Statuszeile öffnet sich eine Zeile; schieben Sie den runden Griff von Slide to send ganz nach rechts.</li><li>Die Statuszeile zeigt etwa eine Sekunde lang LISTENING, dann SENDING U1, und Network Output zeigt eine Zahl in packets/s. Bewegen Sie einen Fader und beobachten Sie, wie das Licht reagiert.</li></ol>
 <p><strong dir="auto">Kanau beginnt nie von selbst zu senden.</strong> Bei jedem Öffnen ist die Ausgabe aus, und die Statuszeile zeigt OUTPUT OFF; der Patch, das Ziel und die abgeschalteten Universes bleiben erhalten. Das Bewegen eines Faders oder der Aufruf einer Scene startet nie die Ausgabe.</p>
 <p>Wenn Sie schieben, hört Kanau zuerst etwa eine Sekunde lang zu. Ist auf einem Universe kein anderer Sender, sendet es danach jedes gepatchte Universe, das eingeschaltet ist, fortlaufend, normalerweise mit 44 Hz. Bluetooth verbindet sich beim Schieben, nicht beim Start.</p>
 <p><strong dir="auto">Um das Senden zu stoppen</strong>, tippen Sie auf die Statuszeile und schieben <code>Slide to stop</code> nach rechts. Es geht zurück auf OUTPUT OFF.</p>
 <p>Die Ausgabe geht außerdem wieder auf aus, und Sie schieben erneut, wenn:</p>
 <ul><li>Sie zwischen Art-Net und sACN wechseln</li><li>ein Netzwerk erscheint, das beim Schieben nicht da war</li><li>Sie eine Session als Gast verlassen</li><li>Sie LAMP MODE verlassen</li></ul>
-<p>Ein Universe, das später zum Patch hinzukommt, bleibt aus, bis Sie schieben, und die Statuszeile zeigt es als U3 OFF. Die Ausgabe stoppt, solange Kanau nicht auf dem Bildschirm ist, und beginnt wieder, wenn Sie zurückkommen; SCREEN LOCK stoppt sie nicht.</p>
+<p>Ein Universe, das später zum Patch hinzukommt, bleibt aus, bis Sie schieben, und die Statuszeile zeigt es als U3 OFF. Die Ausgabe stoppt, solange Kanau nicht auf dem Bildschirm ist, und beginnt wieder, wenn Sie zurückkommen; SCREEN LOCK stoppt sie nicht.</p>
 <h2 id="output--3">Sendet es?</h2>
 <p>Lesen Sie diese der Reihe nach. Jedes sagt Ihnen etwas anderes, und keines kann Ihnen sagen, dass das Licht selbst die Daten empfangen hat.</p>
 <table>
@@ -255,26 +255,26 @@
 <p>Eine rote Zeile in Settings → Output sagt, was die Ausgabe angehalten hat und was zu tun ist: die Berechtigung für das lokale Netzwerk einschalten, auf UNICAST wechseln und die Adresse des Nodes eintragen, die eingetippte Adresse prüfen, das WLAN prüfen, den Node mit Strom versorgen. CRMX hat eine eigene Zeile. Die Formulierung des Pults selbst bleibt am Ende in Klammern stehen, sodass sie genau zitiert werden kann.</p>
 <h3 id="output--9">Universes und Art-Net-Nummern</h3>
 <p>Universes listet jedes gepatchte Universe mit Scheinwerferzahl, Anzahl leuchtender Scheinwerfer und einem ON/OFF-Schalter. Ein Universe, das OFF ist, zeigt Not sending, und ebenso eines, das noch nicht freigeschoben wurde.</p>
-<div class="box important"><b>IMPORTANT</b><p>OFF stoppt das Senden dieses Universes. Weder über Art-Net noch über sACN geht dafür etwas hinaus, und über Bluetooth bleibt die Verbindung bestehen, aber es wird nichts geschrieben. Ein Empfänger kann seine letzten Werte behalten, sodass ein Licht an bleiben kann. Welche Universes abgeschaltet sind, steht oben am Bildschirm, als U1 OFF.</p></div>
-<p>Nutzen Sie Net / Sub / Uni nur, wenn Ihr Node Net / Sub-Net / Universe statt einer einzelnen Zahl verlangt. Schalten Sie es unter Settings → Output → Art-Net → Net / Sub / Uni ein. Der Zusammenhang lautet <strong dir="auto">Net × 256 + Sub × 16 + Uni</strong>. Ist es an und die Route auf Art-Net, nimmt auch das Patchen das Universe auf diese Weise: Add, Re-address und Re-patch zeigen Net (0–127), Sub (0–15) und Uni (0–15) zum Eintippen, daneben das Universe, das sie ergeben, etwa U500. Eine Zahl außerhalb ihres Bereichs wird auf das Ende des Bereichs gesetzt.</p>
+<div class="box important"><b>IMPORTANT</b><p>OFF stoppt das Senden dieses Universes. Weder über Art-Net noch über sACN geht dafür etwas hinaus, und über Bluetooth bleibt die Verbindung bestehen, aber es wird nichts geschrieben. Ein Empfänger kann seine letzten Werte behalten, sodass ein Licht an bleiben kann. Welche Universes abgeschaltet sind, steht oben am Bildschirm, als U1 OFF.</p></div>
+<p>Nutzen Sie Net / Sub / Uni nur, wenn Ihr Node Net / Sub-Net / Universe statt einer einzelnen Zahl verlangt. Schalten Sie es unter Settings → Output → Art-Net → Net / Sub / Uni ein. Der Zusammenhang lautet <strong dir="auto">Net × 256 + Sub × 16 + Uni</strong>. Ist es an und die Route auf Art-Net, nimmt auch das Patchen das Universe auf diese Weise: Add, Re-address und Re-patch zeigen Net (0–127), Sub (0–15) und Uni (0–15) zum Eintippen, daneben das Universe, das sie ergeben, etwa U500. Eine Zahl außerhalb ihres Bereichs wird auf das Ende des Bereichs gesetzt.</p>
 <p>Die sACN-priority kann 0, 100 oder 200 sein. Voreingestellt ist 100, und es ist die priority, die Kanau mit seiner sACN-Ausgabe sendet.</p>
 <h3 id="output--10">CRMX über Bluetooth</h3>
 <ol><li>Schalten Sie Bluetooth unter Settings → Output → CRMX (Bluetooth) ein.</li><li>Erlauben Sie Bluetooth, wenn iOS beim ersten Mal fragt.</li><li>Wählen Sie einen Sender aus der Liste. Erneutes Tippen trennt.</li></ol>
 <p>Der gewählte Sender trägt das Universe, das Ihr Patch nutzt (U1, wenn der Patch in Universe 1 liegt). Beim nächsten Mal verbindet sich Bluetooth wieder mit demselben, sobald Sie zum Senden geschoben haben. Kann ein Sender keine Verbindung aufbauen oder fällt er aus, sagt Settings → Output, was zu prüfen ist, mit der Meldung des Systems in Klammern.</p>
 <ul><li><strong dir="auto">Die Liste</strong>: Sie sagt <code>connected</code> für einen verbundenen Sender und <code>sending</code> für einen, an den Daten gehen.</li><li><strong dir="auto">Wenn der Patch über mehr als ein Universe reicht</strong>: Wählen Sie mit − und + in der Zeile Universe unter dem Sender, welches er trägt. Haben Sie einmal von Hand gewählt, wählt Kanau nicht mehr für Sie, bis Sie den Sender trennen und erneut wählen.</li><li><strong dir="auto">Ein zweiter Sender</strong>: Die Suche endet, sobald das Gewählte verbunden ist; RESCAN ist der Weg, einen weiteren zu suchen.</li></ul>
-<p>Geht dasselbe Universe über Netzwerk und Bluetooth hinaus, sagt Settings → Output das: <code class="q">U1: network and Bluetooth output are both on.</code> Das ist <strong dir="auto">eine Feststellung, keine Warnung</strong>. Ein CRMX-Empfänger nimmt die Ausgabe des Senders, mit dem er verbunden ist; dasselbe U1 in Kanau speist also nicht schon deshalb einen Scheinwerfer zweimal. Flackern entsteht nur dort, wo ein Scheinwerfer wirklich von beiden Wegen empfängt — dort schalten Sie einen ab.</p>
+<p>Geht dasselbe Universe über Netzwerk und Bluetooth hinaus, sagt Settings → Output das: <code class="q">U1: network and Bluetooth output are both on.</code> Das ist <strong dir="auto">eine Feststellung, keine Warnung</strong>. Ein CRMX-Empfänger nimmt die Ausgabe des Senders, mit dem er verbunden ist; dasselbe U1 in Kanau speist also nicht schon deshalb einen Scheinwerfer zweimal. Flackern entsteht nur dort, wo ein Scheinwerfer wirklich von beiden Wegen empfängt — dort schalten Sie einen ab.</p>
 <p>Verweigert ein Sender nach dem Abschalten von Bluetooth weiterhin Art-Net, prüfen Sie die eigenen Einstellungen des Senders.</p>
 <h3 id="output--11">Wenn ein anderes Pult gefunden wird</h3>
 <table>
 <tr><th>Angezeigt</th><th>Was es heißt und was zu tun ist</th></tr>
-<tr><td>Blocked U1</td><td>Als Sie schoben, war auf U1 bereits ein anderer Sender, daher sendet Kanau dort nicht. Tippen Sie darauf für die Auswahl unten. Darüber zu senden ist nicht möglich</td></tr>
+<tr><td>Blocked U1</td><td>Als Sie schoben, war auf U1 bereits ein anderer Sender, daher sendet Kanau dort nicht. Tippen Sie darauf für die Auswahl unten. Darüber zu senden ist nicht möglich</td></tr>
 <tr><td>SHARED + IP oder Gerätename</td><td>Ein anderes Pult erschien nach dem Start dieses hier. Es wird weiter gesendet, stoppen Sie also bei Bedarf eines von beiden</td></tr>
 </table>
-<p>Ein Tippen auf Blocked U1 öffnet eine Zeile, die den Sender nennt, etwa U1 In Use, mit diesen Möglichkeiten:</p>
+<p>Ein Tippen auf Blocked U1 öffnet eine Zeile, die den Sender nennt, etwa U1 In Use, mit diesen Möglichkeiten:</p>
 <table>
 <tr><th>Auswahl</th><th>Was sie tut</th></tr>
 <tr><td>Join</td><td>Erscheint, wenn der Sender ein Kanau-Host ist. Öffnet Session, um beizutreten</td></tr>
-<tr><td>Send U2 Only</td><td>Erscheint, wenn andere Universes frei sind. Sendet nur diese</td></tr>
+<tr><td>Send U2 Only</td><td>Erscheint, wenn andere Universes frei sind. Sendet nur diese</td></tr>
 <tr><td>Cancel</td><td>Schließt die Zeile, ohne zu senden</td></tr>
 </table>
 <p>Kanau-Geräte sagen einander, welche Universes sie senden, sodass zwei, die gleichzeitig schieben, nicht beide senden. Ein sACN-Sender erscheint rot in der Sendezeile, mit Name oder IP; das sagt es Ihnen nur, und Kanau sendet weiter. Unicast-Sender und Bluetooth in anderen Apps sind von hier aus womöglich nicht sichtbar.</p>
@@ -292,7 +292,7 @@
 <tr><td>Network Output</td><td>Pakete, die in der letzten Sekunde über das Netzwerk gesendet wurden. Etwa 44 ist normal für ein Universe an ein Ziel; es vervielfacht sich mit jedem weiteren Universe oder Ziel. Nothing heißt, es ging keines hinaus, etwa vor dem Schieben. Bluetooth wird hier nicht mitgezählt</td></tr>
 <tr><td>Clock</td><td>Der größte Abstand zwischen zwei Sendungen. Etwa 23 ms ist normal. Über 100 ms deutet auf das Telefon</td></tr>
 <tr><td>Touch → DMX</td><td>Von Ihrem Finger bis zum Paket. Etwa 25 ms ist normal</td></tr>
-<tr><td>Nodes Answering</td><td>Wie viele geantwortet haben, mit Name, Adresse, Verbindung und Umlaufzeit. Die Umlaufzeit bleibt leer, bis RESCAN sie misst; die Zahl in Klammern ist der schlechteste Wert der letzten 10 Sekunden. Bei AUTO listet die Zeile unter jedem Node die Universes, die an ihn gehen, etwa U1 oder U0–U3</td></tr>
+<tr><td>Nodes Answering</td><td>Wie viele geantwortet haben, mit Name, Adresse, Verbindung und Umlaufzeit. Die Umlaufzeit bleibt leer, bis RESCAN sie misst; die Zahl in Klammern ist der schlechteste Wert der letzten 10 Sekunden. Bei AUTO listet die Zeile unter jedem Node die Universes, die an ihn gehen, etwa U1 oder U0–U3</td></tr>
 <tr><td>Type these into the node</td><td>Net / Sub / Uni zum Eintragen am Node, wenn diese Anzeige aktiv ist</td></tr>
 </table>
 <p>Das grenzt das Problem ein; es beweist keinen Erfolg. Sie zeigen, was Kanau gesendet hat; ob das Licht es empfangen hat, lässt sich von hier aus nicht sehen. Network Output kann eine Zahl zeigen, während eine falsche Einstellung oder ein Fehler am anderen Ende die Scheinwerfer dunkel lässt. Material, das nicht auf Polling antwortet, zeigt 0 unter Nodes Answering, auch während es empfängt.</p>
@@ -315,7 +315,7 @@
 <tr><td>Name</td><td>Der eigene Name dieses Scheinwerfers. Er erscheint in Patch und in der Patch List; Home zeigt stattdessen das Label. Voreingestellt der vollständige Modellname plus eine laufende Nummer, etwa Titan Tube 1</td></tr>
 <tr><td>Number / How Many</td><td>Die Nummer, unter der Sie es vor Ort rufen, und wie viele hinzukommen, bis zu 4,096. Die Nummer darf leer bleiben; sie beginnt bei der höchsten vergebenen plus eins</td></tr>
 <tr><td>Label</td><td>Der Anzeigename, den alle Scheinwerfer dieses Modells im selben Modus teilen. Er läuft unter den Fadern. Voreingestellt der offizielle Modellname; ändern Sie hier Mode, folgt ein Label, das Sie nicht getippt haben, dem neuen Modus. Es lässt sich auch im Scheinwerferfenster eintippen (<a class="xref" href="#fixture-settings">Kapitel 06</a>)</td></tr>
-<tr><td>Universe / Address</td><td>Voreingestellt U1 und die nächste freie Adresse. Ein Wechsel des Universe setzt die Adresse auf 1 zurück. U0 ist erlaubt</td></tr>
+<tr><td>Universe / Address</td><td>Voreingestellt U1 und die nächste freie Adresse. Ein Wechsel des Universe setzt die Adresse auf 1 zurück. U0 ist erlaubt</td></tr>
 <tr><td>Offset</td><td>Der Abstand zwischen Scheinwerfern. Aus der Kanalzahl des Modus eingetragen</td></tr>
 <tr><td>Gap</td><td>Zusätzliche freie Kanäle zwischen Scheinwerfern</td></tr>
 <tr><td>BATTERY SAVE</td><td>Markiert die neuen Scheinwerfer für BATTERY SAVE</td></tr>
@@ -1124,7 +1124,7 @@
 <tr><th>Was Sie sehen</th><th>Was zu tun ist</th></tr>
 <tr><td>Idle</td><td>Prüfen Sie unter Settings → Output, dass ein Netzwerk aktiv ist</td></tr>
 <tr><td>Blocked</td><td>Tippen Sie darauf, um Settings → Output zu öffnen; dort steht eine rote Zeile, die nennt, was es angehalten hat und was zu tun ist. Folgen Sie dieser Zeile</td></tr>
-<tr><td>Blocked U1, mit einer Universe-Nummer</td><td>Auf diesem Universe ist bereits ein anderer Sender. Tippen Sie darauf für Join, Send … Only oder Cancel</td></tr>
+<tr><td>Blocked U1, mit einer Universe-Nummer</td><td>Auf diesem Universe ist bereits ein anderer Sender. Tippen Sie darauf für Join, Send … Only oder Cancel</td></tr>
 <tr><td>No node</td><td>Tippen Sie darauf, um Settings → Output zu öffnen. Prüfen Sie Strom, Netzwerk, Adresse und Protokolleinstellungen des Nodes</td></tr>
 <tr><td>U1 OFF</td><td>Das Universe unter Output → Universes wieder einschalten</td></tr>
 <tr><td>Ein violettes ⏻ oder Scheinwerfersymbol</td><td>Den Ausgang des Scheinwerfers wieder einschalten</td></tr>
@@ -1347,5 +1347,6 @@ Fixture          ist der Scheinwerfer selbst langsam</pre>
 
 })();
 </script>
+<script src="jbreak.js?v=20261031c"></script>
 </body>
 </html>

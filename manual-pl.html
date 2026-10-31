@@ -42,7 +42,7 @@
 <link rel="alternate" hreflang="vi" href="manual-vi.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap">
-<link rel="stylesheet" href="theme.css?v=20261031a">
+<link rel="stylesheet" href="theme.css?v=20261031c">
 </head>
 <body>
 
@@ -131,15 +131,15 @@
 </table>
 <h2 id="screen--3">Pasek stanu</h2>
 <p>Po lewej jest stan wysyłania. Stuknij go, żeby otworzyć wiersz, który zaczyna i kończy wysyłanie (<a class="xref" href="#output">rozdział 02</a>). Za każdym razem, gdy Kanau się otwiera, widać OUTPUT OFF i nic nie wychodzi, dopóki nie przesuniesz.</p>
-<p>Podczas wysyłania widać SENDING i uniwersa, na przykład SENDING U1 U2. Gdy brakuje miejsca, zamienia się w trasę, jedną literę: A dla Art-Net, S dla sACN. Kropka obok pulsuje podczas wysyłania, podczas oczekiwania na przesunięcie i podczas LISTENING. Bluetooth ma własną kropkę i nazwę.</p>
+<p>Podczas wysyłania widać SENDING i uniwersa, na przykład SENDING U1 U2. Gdy brakuje miejsca, zamienia się w trasę, jedną literę: A dla Art-Net, S dla sACN. Kropka obok pulsuje podczas wysyłania, podczas oczekiwania na przesunięcie i podczas LISTENING. Bluetooth ma własną kropkę i nazwę.</p>
 <p>Obok jest nazwa show, w którym jesteś; na wąskim telefonie, gdzie w wierszu nie zostaje miejsca, nie pojawia się. Gdy BLIND jest włączony, cała ta lewa część zmienia się w bursztynowy napis BLIND; stuknij go, żeby wyjść z BLIND (<a class="xref" href="#scenes">rozdział 08</a>).</p>
 <table>
 <tr><th>Wyświetlane</th><th>Znaczenie</th></tr>
 <tr><td>OUTPUT OFF</td><td>Nic nie jest wysyłane od otwarcia Kanau. Pod spodem jest napisane Slide to send. Stuknij i przesuń</td></tr>
 <tr><td>SENDING, stuknięte</td><td>Otwiera <code>Slide to stop</code>. Przesuń w prawo, żeby przestać wysyłać; wiersz wraca do OUTPUT OFF. <code>Done</code> zamyka wiersz</td></tr>
 <tr><td>LISTENING</td><td>Sprawdza, czy jest inny nadawca, zanim zacznie wysyłać, przez około sekundę</td></tr>
-<tr><td>SENDING U1 U2</td><td>Te uniwersa wychodzą. Szare U3 OFF w tym miejscu oznacza spatchowane uniwersum, którego jeszcze nie otworzono przesunięciem. To nie jest czerwone U1 OFF dalej w wierszu</td></tr>
-<tr><td>Blocked U1</td><td>Inny nadawca jest już w tym uniwersum, więc Kanau do niego nie wysyła. Stuknij, żeby zobaczyć możliwości (<a class="xref" href="#output">rozdział 02</a>)</td></tr>
+<tr><td>SENDING U1 U2</td><td>Te uniwersa wychodzą. Szare U3 OFF w tym miejscu oznacza spatchowane uniwersum, którego jeszcze nie otworzono przesunięciem. To nie jest czerwone U1 OFF dalej w wierszu</td></tr>
+<tr><td>Blocked U1</td><td>Inny nadawca jest już w tym uniwersum, więc Kanau do niego nie wysyła. Stuknij, żeby zobaczyć możliwości (<a class="xref" href="#output">rozdział 02</a>)</td></tr>
 <tr><td>Zielona kropka</td><td>Trwa wysyłanie</td></tr>
 <tr><td>Bursztynowa kropka</td><td>Spowolnione wysyłanie albo ponowne łączenie (Reconnecting…)</td></tr>
 <tr><td>Czerwona kropka, ART-NET No node lub SACN No node</td><td>Nikt nie odpowiada. Wiersz stanu podaje trasę, w skróconej postaci na wąskim ekranie. Stuknij go, żeby otworzyć Settings → Output. Gdy widać rząd Play, nie otwiera się; najpierw stuknij <code>EXIT</code></td></tr>
@@ -214,13 +214,13 @@
 <figure class="shot"><div class="wrap" dir="ltr"><img src="img/6-output.png" alt="Settings → Output. Czerwone numery odpowiadają liście poniżej." width="640" height="1168" loading="lazy"><span class="pin" style="left:27%;top:21.5%">1</span><span class="pin" style="left:15%;top:31.7%">2</span><span class="pin" style="left:87%;top:31.7%">3</span><span class="pin" style="left:27%;top:79.2%">4</span><span class="pin" style="left:50%;top:97.1%">5</span></div><figcaption>Settings → Output. Czerwone numery odpowiadają liście poniżej.</figcaption><ul class="pins"><li><b>1</b> Protokół. Art-Net albo sACN, jedno z dwóch</li><li><b>2</b> Sieci. Wysyłanie idzie przez te zaznaczone</li><li><b>3</b> Ile node&#x27;ów odpowiedziało. No reply znaczy, że nie znaleziono żadnego</li><li><b>4</b> Cel. AUTO pasuje do większości rigów</li><li><b>5</b> Ponowne szukanie node&#x27;ów</li></ul></figure>
 <h2 id="output--1">Pierwsze połączenie</h2>
 <h3 id="output--2">Jeden node Art-Net</h3>
-<ol><li>Podłącz iPhone&#x27;a do tej samej sieci Wi-Fi lub przewodowej co node.</li><li>Otwórz Settings → Output.</li><li>Wybierz Art-Net i AUTO. Oba są ustawieniami domyślnymi.</li><li>Sprawdź, czy Nodes Answering pokazuje 1 lub więcej. Część sprzętu nigdy nie odpowiada na odpytywanie i zostaje na 0, choć normalnie odbiera. Nie zatrzymuj się więc tutaj, jeśli liczba nie drgnie.</li><li>Na Home stuknij OUTPUT OFF u góry po lewej. Pod wierszem stanu otworzy się wiersz; przesuń okrągły uchwyt Slide to send do samego końca w prawo.</li><li>Wiersz stanu pokazuje LISTENING przez około sekundę, potem SENDING U1, a Network Output pokazuje liczbę w pakietach/s. Porusz faderem i patrz, jak urządzenie reaguje.</li></ol>
+<ol><li>Podłącz iPhone&#x27;a do tej samej sieci Wi-Fi lub przewodowej co node.</li><li>Otwórz Settings → Output.</li><li>Wybierz Art-Net i AUTO. Oba są ustawieniami domyślnymi.</li><li>Sprawdź, czy Nodes Answering pokazuje 1 lub więcej. Część sprzętu nigdy nie odpowiada na odpytywanie i zostaje na 0, choć normalnie odbiera. Nie zatrzymuj się więc tutaj, jeśli liczba nie drgnie.</li><li>Na Home stuknij OUTPUT OFF u góry po lewej. Pod wierszem stanu otworzy się wiersz; przesuń okrągły uchwyt Slide to send do samego końca w prawo.</li><li>Wiersz stanu pokazuje LISTENING przez około sekundę, potem SENDING U1, a Network Output pokazuje liczbę w pakietach/s. Porusz faderem i patrz, jak urządzenie reaguje.</li></ol>
 <p><strong dir="auto">Kanau nigdy nie zaczyna wysyłać sam.</strong> Za każdym razem, gdy się otwiera, wyjście jest wyłączone, a wiersz stanu pokazuje OUTPUT OFF; patch, miejsce docelowe i wyłączone uniwersa zostają zapamiętane. Poruszenie faderem ani przywołanie Scene nigdy nie włącza wyjścia.</p>
 <p>Gdy przesuniesz, Kanau najpierw nasłuchuje przez około sekundę. Jeśli w uniwersum nie ma innego nadawcy, wysyła potem każde spatchowane uniwersum, które jest włączone, w sposób ciągły, normalnie z częstotliwością 44 Hz. Bluetooth łączy się w chwili przesunięcia, nie przy starcie.</p>
 <p><strong dir="auto">Żeby przestać wysyłać</strong>, stuknij wiersz stanu i przesuń <code>Slide to stop</code> w prawo. Wiersz wraca do OUTPUT OFF.</p>
 <p>Wyjście wraca też do wyłączonego i trzeba przesunąć jeszcze raz, gdy:</p>
 <ul><li>przełączasz między Art-Net a sACN</li><li>pojawia się sieć, której nie było w chwili przesunięcia</li><li>opuszczasz sesję jako gość</li><li>wychodzisz z LAMP MODE</li></ul>
-<p>Uniwersum dodane do patcha później zostaje wyłączone, dopóki nie przesuniesz, a wiersz stanu pokazuje je jako U3 OFF. Wyjście zatrzymuje się, gdy Kanau nie jest na ekranie, i rusza znowu, gdy wrócisz; SCREEN LOCK go nie zatrzymuje.</p>
+<p>Uniwersum dodane do patcha później zostaje wyłączone, dopóki nie przesuniesz, a wiersz stanu pokazuje je jako U3 OFF. Wyjście zatrzymuje się, gdy Kanau nie jest na ekranie, i rusza znowu, gdy wrócisz; SCREEN LOCK go nie zatrzymuje.</p>
 <h2 id="output--3">Czy wysyła?</h2>
 <p>Czytaj je po kolei. Każde mówi Ci co innego i żadne nie powie, że samo urządzenie otrzymało dane.</p>
 <table>
@@ -255,26 +255,26 @@
 <p>Czerwony wiersz w Settings → Output mówi, co zatrzymało wyjście i co zrobić: włączyć uprawnienie do sieci lokalnej, przełączyć na UNICAST i wpisać adres węzła, sprawdzić wpisany adres, sprawdzić Wi-Fi, podać węzłowi zasilanie. CRMX ma własny wiersz. Własne sformułowanie konsolety zostaje na końcu w nawiasie, żeby dało się je zacytować dokładnie.</p>
 <h3 id="output--9">Uniwersa i numeracja Art-Net</h3>
 <p>Universes wypisuje każde spatchowane uniwersum wraz z liczbą urządzeń, liczbą świecących oraz przełącznikiem ON/OFF. Uniwersum, które jest OFF, pokazuje Not sending, tak samo jak takie, którego jeszcze nie otworzono przesunięciem.</p>
-<div class="box important"><b>IMPORTANT</b><p>OFF zatrzymuje wysyłanie tego uniwersum. Nic do niego nie wychodzi przez Art-Net ani sACN, a przez Bluetooth połączenie zostaje, ale nic nie jest zapisywane. Odbiornik może zachować ostatnie wartości, więc urządzenie może dalej świecić. To, które uniwersa są wyłączone, widać u góry ekranu jako U1 OFF.</p></div>
-<p>Net / Sub / Uni jest potrzebne tylko wtedy, gdy Twój node oczekuje Net / Sub-Net / Universe zamiast jednej liczby. Włącz je w Settings → Output → Art-Net → Net / Sub / Uni. Zależność brzmi <strong dir="auto">Net × 256 + Sub × 16 + Uni</strong>. Gdy jest włączone, a trasą jest Art-Net, patchowanie bierze uniwersum tak samo: Add, Re-address i Re-patch pokazują Net (0–127), Sub (0–15) i Uni (0–15) do wpisania, a obok uniwersum, które tworzą, na przykład U500. Liczba poza zakresem jest ustawiana na koniec zakresu.</p>
+<div class="box important"><b>IMPORTANT</b><p>OFF zatrzymuje wysyłanie tego uniwersum. Nic do niego nie wychodzi przez Art-Net ani sACN, a przez Bluetooth połączenie zostaje, ale nic nie jest zapisywane. Odbiornik może zachować ostatnie wartości, więc urządzenie może dalej świecić. To, które uniwersa są wyłączone, widać u góry ekranu jako U1 OFF.</p></div>
+<p>Net / Sub / Uni jest potrzebne tylko wtedy, gdy Twój node oczekuje Net / Sub-Net / Universe zamiast jednej liczby. Włącz je w Settings → Output → Art-Net → Net / Sub / Uni. Zależność brzmi <strong dir="auto">Net × 256 + Sub × 16 + Uni</strong>. Gdy jest włączone, a trasą jest Art-Net, patchowanie bierze uniwersum tak samo: Add, Re-address i Re-patch pokazują Net (0–127), Sub (0–15) i Uni (0–15) do wpisania, a obok uniwersum, które tworzą, na przykład U500. Liczba poza zakresem jest ustawiana na koniec zakresu.</p>
 <p>Priorytet sACN może wynosić 0, 100 albo 200. Domyślnie jest to 100 i jest to priorytet, z jakim Kanau wysyła swoje wyjście sACN.</p>
 <h3 id="output--10">CRMX przez Bluetooth</h3>
 <ol><li>Włącz Bluetooth w Settings → Output → CRMX (Bluetooth).</li><li>Za pierwszym razem zezwól na Bluetooth, kiedy iOS o to zapyta.</li><li>Wybierz nadajnik z listy. Kolejne stuknięcie rozłącza.</li></ol>
 <p>Wybrany nadajnik niesie uniwersum, którego używa Twój patch (U1, gdy patch leży w uniwersum 1). Następnym razem włączenie Bluetootha łączy z tym samym nadajnikiem, gdy przesuniesz, żeby wysyłać. Kiedy nadajnik nie może się połączyć albo się rozłącza, Settings → Output mówi, co sprawdzić, z komunikatem samego systemu w nawiasie.</p>
 <ul><li><strong dir="auto">Lista</strong>: mówi <code>connected</code> o nadajniku, który jest sparowany, i <code>sending</code> o tym, do którego idą dane.</li><li><strong dir="auto">Gdy patch obejmuje więcej niż jedno uniwersum</strong>: wybierz, które niesie, przyciskami − i + w wierszu Universe pod nadajnikiem. Gdy wybierzesz ręcznie, Kanau przestaje wybierać za Ciebie, dopóki nie rozłączysz nadajnika i nie wybierzesz go ponownie.</li><li><strong dir="auto">Drugi nadajnik</strong>: skanowanie ustaje, gdy to, co wybrałeś, się połączy, więc drugiego nadajnika szuka się przez RESCAN.</li></ul>
-<p>Kiedy to samo uniwersum wychodzi i po sieci, i przez Bluetooth, Settings → Output to mówi: <code class="q">U1: network and Bluetooth output are both on.</code> To <strong dir="auto">stwierdzenie faktu, nie ostrzeżenie</strong>. Odbiornik CRMX bierze wyjście nadajnika, z którym jest sparowany, więc to samo U1 w Kanau samo z siebie nie karmi jednego urządzenia dwa razy. Miga tylko tam, gdzie urządzenie naprawdę odbiera z obu dróg; tam jedną z nich wyłącz.</p>
+<p>Kiedy to samo uniwersum wychodzi i po sieci, i przez Bluetooth, Settings → Output to mówi: <code class="q">U1: network and Bluetooth output are both on.</code> To <strong dir="auto">stwierdzenie faktu, nie ostrzeżenie</strong>. Odbiornik CRMX bierze wyjście nadajnika, z którym jest sparowany, więc to samo U1 w Kanau samo z siebie nie karmi jednego urządzenia dwa razy. Miga tylko tam, gdzie urządzenie naprawdę odbiera z obu dróg; tam jedną z nich wyłącz.</p>
 <p>Jeśli nadajnik nadal odmawia przyjmowania Art-Net po wyłączeniu Bluetootha, sprawdź ustawienia samego nadajnika.</p>
 <h3 id="output--11">Kiedy znajdzie się inna konsoleta</h3>
 <table>
 <tr><th>Wyświetlane</th><th>Co znaczy i co zrobić</th></tr>
-<tr><td>Blocked U1</td><td>Gdy przesunąłeś, inny nadawca był już w U1, więc Kanau do niego nie wysyła. Stuknij, żeby zobaczyć możliwości poniżej. Nie ma sposobu, żeby wysłać na wierzch</td></tr>
+<tr><td>Blocked U1</td><td>Gdy przesunąłeś, inny nadawca był już w U1, więc Kanau do niego nie wysyła. Stuknij, żeby zobaczyć możliwości poniżej. Nie ma sposobu, żeby wysłać na wierzch</td></tr>
 <tr><td>SHARED + adres IP albo nazwa urządzenia</td><td>Inna konsoleta pojawiła się już po starcie tej. Wysyłanie trwa dalej, więc jeśli trzeba, zatrzymaj jedną z nich</td></tr>
 </table>
-<p>Stuknięcie Blocked U1 otwiera wiersz, który nazywa nadawcę, na przykład U1 In Use, z takimi możliwościami:</p>
+<p>Stuknięcie Blocked U1 otwiera wiersz, który nazywa nadawcę, na przykład U1 In Use, z takimi możliwościami:</p>
 <table>
 <tr><th>Wybór</th><th>Co robi</th></tr>
 <tr><td>Join</td><td>Widoczny, gdy nadawca jest hostem Kanau. Otwiera Session, żeby do niego dołączyć</td></tr>
-<tr><td>Send U2 Only</td><td>Widoczny, gdy są wolne inne uniwersa. Wysyła tylko na nie</td></tr>
+<tr><td>Send U2 Only</td><td>Widoczny, gdy są wolne inne uniwersa. Wysyła tylko na nie</td></tr>
 <tr><td>Cancel</td><td>Zamyka wiersz bez wysyłania</td></tr>
 </table>
 <p>Urządzenia Kanau mówią sobie nawzajem, jakie uniwersa wysyłają, więc dwa, które przesuwają jednocześnie, nie wysyłają oba. Nadawca sACN jest pokazany na czerwono w wierszu wysyłania, z nazwą albo adresem IP; to tylko informuje, a Kanau wysyła dalej. Nadawcy unicast i Bluetooth w innych aplikacjach mogą stąd nie być widoczne.</p>
@@ -292,7 +292,7 @@
 <tr><td>Network Output</td><td>Pakiety wysłane przez sieć w ostatniej sekundzie. Około 44 to wartość normalna dla jednego uniwersum do jednego celu; rośnie z każdym dodatkowym uniwersum lub celem. Nothing znaczy, że nie wyszedł żaden, tak jak przed przesunięciem. Bluetooth nie jest tu liczony</td></tr>
 <tr><td>Clock</td><td>Najgorsza przerwa między wysyłkami. Około 23 ms to norma. Powyżej 100 ms wskazuje na telefon</td></tr>
 <tr><td>Touch → DMX</td><td>Od Twojego palca do pakietu. Około 25 ms to norma</td></tr>
-<tr><td>Nodes Answering</td><td>Ile odpowiedziało, z nazwą, adresem, połączeniem i czasem obiegu. Czas obiegu jest pusty, dopóki RESCAN go nie zmierzy; liczba w nawiasie to najgorszy wynik z ostatnich 10 sekund. Przy AUTO wiersz pod każdym node&#x27;em wymienia wysyłane do niego uniwersa, np. U1 albo U0–U3</td></tr>
+<tr><td>Nodes Answering</td><td>Ile odpowiedziało, z nazwą, adresem, połączeniem i czasem obiegu. Czas obiegu jest pusty, dopóki RESCAN go nie zmierzy; liczba w nawiasie to najgorszy wynik z ostatnich 10 sekund. Przy AUTO wiersz pod każdym node&#x27;em wymienia wysyłane do niego uniwersa, np. U1 albo U0–U3</td></tr>
 <tr><td>Type these into the node</td><td>Net / Sub / Uni do wpisania w node, kiedy ten sposób wyświetlania jest włączony</td></tr>
 </table>
 <p>Te pozycje zawężają problem, ale nie dowodzą sukcesu. Pokazują to, co wysyła Kanau, a tego, czy urządzenie to odebrało, stąd nie widać. Network Output może pokazywać liczbę, a urządzenia mimo to pozostaną ciemne przez niezgodność ustawień albo usterkę po drugiej stronie. Sprzęt, który nie odpowiada na odpytywanie, pokazuje 0 w Nodes Answering nawet wtedy, gdy odbiera.</p>
@@ -315,7 +315,7 @@
 <tr><td>Name</td><td>Własna nazwa tego jednego urządzenia. Widać ją w Patch i w Patch List; Home pokazuje zamiast niej Label. Domyślnie pełna nazwa modelu plus numer bieżący, na przykład Titan Tube 1</td></tr>
 <tr><td>Number / How Many</td><td>Numer, którym wołasz urządzenie na planie, i ile sztuk dodać, do 4,096. Numer można zostawić pusty; zaczyna się od najwyższego w użyciu plus jeden</td></tr>
 <tr><td>Label</td><td>Nazwa wyświetlana wspólna dla wszystkich urządzeń tego modelu w tym samym trybie. Biegnie pod faderami. Domyślnie oficjalna nazwa modelu; jeśli zmienisz tu Mode, Label, którego nie wpisałeś, podąża za nowym trybem. Można ją też wpisać w panelu urządzenia (<a class="xref" href="#fixture-settings">rozdział 06</a>)</td></tr>
-<tr><td>Universe / Address</td><td>Domyślnie U1 i następny wolny adres. Zmiana uniwersum cofa adres do 1. U0 jest dozwolone</td></tr>
+<tr><td>Universe / Address</td><td>Domyślnie U1 i następny wolny adres. Zmiana uniwersum cofa adres do 1. U0 jest dozwolone</td></tr>
 <tr><td>Offset</td><td>Odstęp między urządzeniami. Wypełniany z liczby kanałów danego trybu</td></tr>
 <tr><td>Gap</td><td>Dodatkowe kanały pozostawiane między urządzeniami</td></tr>
 <tr><td>BATTERY SAVE</td><td>Oznacza nowe urządzenia dla BATTERY SAVE</td></tr>
@@ -1124,7 +1124,7 @@
 <tr><th>Co widzisz</th><th>Co zrobić</th></tr>
 <tr><td>Idle</td><td>Sprawdź w Settings → Output, czy któraś sieć jest włączona</td></tr>
 <tr><td>Blocked</td><td>Stuknij go, żeby otworzyć Settings → Output, który wypisuje czerwony wiersz mówiący, co to zatrzymało i co zrobić. Trzymaj się tego wiersza</td></tr>
-<tr><td>Blocked U1, z numerem uniwersum</td><td>Inny nadawca jest już w tym uniwersum. Stuknij, żeby wybrać Join, Send … Only albo Cancel</td></tr>
+<tr><td>Blocked U1, z numerem uniwersum</td><td>Inny nadawca jest już w tym uniwersum. Stuknij, żeby wybrać Join, Send … Only albo Cancel</td></tr>
 <tr><td>No node</td><td>Stuknij go, żeby otworzyć Settings → Output. Sprawdź zasilanie node&#x27;a, jego sieć, adres i ustawienia protokołu</td></tr>
 <tr><td>U1 OFF</td><td>Włącz uniwersum z powrotem w Output → Universes</td></tr>
 <tr><td>Fioletowe ⏻ albo fioletowa ikona urządzenia</td><td>Włącz wyjście urządzenia z powrotem</td></tr>
@@ -1347,5 +1347,6 @@ Fixture          czy wolne jest samo urządzenie</pre>
 
 })();
 </script>
+<script src="jbreak.js?v=20261031c"></script>
 </body>
 </html>

@@ -42,7 +42,7 @@
 <link rel="alternate" hreflang="vi" href="manual-vi.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap">
-<link rel="stylesheet" href="theme.css?v=20261031a">
+<link rel="stylesheet" href="theme.css?v=20261031c">
 </head>
 <body>
 
@@ -131,15 +131,15 @@
 </table>
 <h2 id="screen--3">The status line</h2>
 <p>On the left is the send state. Tap it to open the row that starts and stops sending (<a class="xref" href="#output">chapter 02</a>). Each time Kanau opens it reads OUTPUT OFF, and nothing goes out until you slide.</p>
-<p>While sending it reads SENDING and the universes, such as SENDING U1 U2. Where there is no room it becomes the route, a single letter: A for Art-Net, S for sACN. The dot next to it pulses while sending, while waiting for the slide, and while LISTENING. Bluetooth carries its own dot and name.</p>
+<p>While sending it reads SENDING and the universes, such as SENDING U1 U2. Where there is no room it becomes the route, a single letter: A for Art-Net, S for sACN. The dot next to it pulses while sending, while waiting for the slide, and while LISTENING. Bluetooth carries its own dot and name.</p>
 <p>Next to them is the name of the show you are in; on a narrow phone, where the row has no room to spare, it is left out. While BLIND is on, this whole left part becomes an amber BLIND; tap it to leave BLIND (<a class="xref" href="#scenes">chapter 08</a>).</p>
 <table>
 <tr><th>Shown</th><th>Meaning</th></tr>
 <tr><td>OUTPUT OFF</td><td>Not sending since Kanau opened. Slide to send is written under it. Tap it and slide</td></tr>
 <tr><td>SENDING, tapped</td><td>Opens <code>Slide to stop</code>. Slide right to stop sending; the line goes back to OUTPUT OFF. <code>Done</code> closes the row</td></tr>
 <tr><td>LISTENING</td><td>Checking for another sender before sending, for about a second</td></tr>
-<tr><td>SENDING U1 U2</td><td>Those universes are going out. A grey U3 OFF here means a patched universe that has not been slid open yet. It is not the red U1 OFF further along the line</td></tr>
-<tr><td>Blocked U1</td><td>Another sender is already on that universe, so Kanau does not send on it. Tap it for the choices (<a class="xref" href="#output">chapter 02</a>)</td></tr>
+<tr><td>SENDING U1 U2</td><td>Those universes are going out. A grey U3 OFF here means a patched universe that has not been slid open yet. It is not the red U1 OFF further along the line</td></tr>
+<tr><td>Blocked U1</td><td>Another sender is already on that universe, so Kanau does not send on it. Tap it for the choices (<a class="xref" href="#output">chapter 02</a>)</td></tr>
 <tr><td>Green dot</td><td>Sending</td></tr>
 <tr><td>Amber dot</td><td>Slowed down, or reconnecting (Reconnecting…)</td></tr>
 <tr><td>Red dot, ART-NET No node or SACN No node</td><td>Nothing is answering. The status line names the route, shortened on a narrow screen. Tap it to open Settings → Output. While the Play row is showing it does not open; tap <code>EXIT</code> first</td></tr>
@@ -214,13 +214,13 @@
 <figure class="shot"><div class="wrap" dir="ltr"><img src="img/6-output.png" alt="Settings → Output. The red numbers match the list below." width="640" height="1168" loading="lazy"><span class="pin" style="left:27%;top:21.5%">1</span><span class="pin" style="left:15%;top:31.7%">2</span><span class="pin" style="left:87%;top:31.7%">3</span><span class="pin" style="left:27%;top:79.2%">4</span><span class="pin" style="left:50%;top:97.1%">5</span></div><figcaption>Settings → Output. The red numbers match the list below.</figcaption><ul class="pins"><li><b>1</b> Protocol. Art-Net or sACN, one or the other</li><li><b>2</b> Networks. It sends on the ones that are ticked</li><li><b>3</b> How many nodes answered. No reply means none were found</li><li><b>4</b> Destination. AUTO is right for most rigs</li><li><b>5</b> Look for nodes again</li></ul></figure>
 <h2 id="output--1">First connection</h2>
 <h3 id="output--2">One Art-Net node</h3>
-<ol><li>Put the iPhone on the same Wi-Fi or wired network as the node.</li><li>Open Settings → Output.</li><li>Choose Art-Net and AUTO. Both are the defaults.</li><li>Check that Nodes Answering is 1 or more. Some gear never answers polling and stays at 0 while it is receiving normally, so do not stop here if the figure will not move.</li><li>On Home, tap OUTPUT OFF at the top left. A row opens under the status line; slide the round handle of Slide to send all the way to the right.</li><li>The status line reads LISTENING for about a second, then SENDING U1, and Network Output shows a figure in packets/s. Move a fader and watch the light respond.</li></ol>
+<ol><li>Put the iPhone on the same Wi-Fi or wired network as the node.</li><li>Open Settings → Output.</li><li>Choose Art-Net and AUTO. Both are the defaults.</li><li>Check that Nodes Answering is 1 or more. Some gear never answers polling and stays at 0 while it is receiving normally, so do not stop here if the figure will not move.</li><li>On Home, tap OUTPUT OFF at the top left. A row opens under the status line; slide the round handle of Slide to send all the way to the right.</li><li>The status line reads LISTENING for about a second, then SENDING U1, and Network Output shows a figure in packets/s. Move a fader and watch the light respond.</li></ol>
 <p><strong dir="auto">Kanau never starts sending by itself.</strong> Each time it opens, output is off and the status line reads OUTPUT OFF; the patch, the destination and the switched-off universes are kept. Moving a fader or recalling a Scene never starts output.</p>
 <p>When you slide, Kanau first listens for about a second. If no other sender is on a universe, it then sends every patched universe that is switched on, continuously, normally at 44 Hz. Bluetooth connects when you slide, not at launch.</p>
 <p><strong dir="auto">To stop sending</strong>, tap the status line and slide <code>Slide to stop</code> to the right. It goes back to OUTPUT OFF.</p>
 <p>Output also goes back to off, and you slide again, when:</p>
 <ul><li>you change between Art-Net and sACN</li><li>a network appears that was not there when you slid</li><li>you leave a session as a guest</li><li>you leave LAMP MODE</li></ul>
-<p>A universe added to the patch later stays off until you slide, and the status line shows it as U3 OFF. Output stops while Kanau is not on screen and starts again when you come back; SCREEN LOCK does not stop it.</p>
+<p>A universe added to the patch later stays off until you slide, and the status line shows it as U3 OFF. Output stops while Kanau is not on screen and starts again when you come back; SCREEN LOCK does not stop it.</p>
 <h2 id="output--3">Is it sending?</h2>
 <p>Read these in order. Each one tells you something different, and none of them can tell you that the light itself received the data.</p>
 <table>
@@ -255,26 +255,26 @@
 <p>In Settings → Output, a red line says what stopped the output and what to do about it: turn on the local network permission, switch to UNICAST and type the node&#x27;s address, check the address you typed, check the Wi-Fi, give the node power. CRMX carries a line of its own. The console&#x27;s own wording stays in brackets at the end, so it can be quoted exactly.</p>
 <h3 id="output--9">Universes and Art-Net numbering</h3>
 <p>Universes lists each patched universe with its fixture count, how many are lit, and an ON/OFF switch. A universe that is OFF reads Not sending, and so does one that has not been slid open yet.</p>
-<div class="box important"><b>IMPORTANT</b><p>OFF stops sending that universe. Nothing goes out for it on Art-Net or sACN, and over Bluetooth the link stays up but nothing is written. A receiver may keep its last values, so a light can stay lit. Which universes are switched off is named at the top of the screen, as U1 OFF.</p></div>
-<p>Use Net / Sub / Uni only when your node asks for Net / Sub-Net / Universe instead of a single number. Turn it on in Settings → Output → Art-Net → Net / Sub / Uni. The relationship is <strong dir="auto">Net × 256 + Sub × 16 + Uni</strong>. With it on and the route on Art-Net, patching takes the universe the same way: Add, Re-address and Re-patch show Net (0–127), Sub (0–15) and Uni (0–15) to type, with the universe they make, such as U500, beside them. A number beyond its range is set to the end of the range.</p>
+<div class="box important"><b>IMPORTANT</b><p>OFF stops sending that universe. Nothing goes out for it on Art-Net or sACN, and over Bluetooth the link stays up but nothing is written. A receiver may keep its last values, so a light can stay lit. Which universes are switched off is named at the top of the screen, as U1 OFF.</p></div>
+<p>Use Net / Sub / Uni only when your node asks for Net / Sub-Net / Universe instead of a single number. Turn it on in Settings → Output → Art-Net → Net / Sub / Uni. The relationship is <strong dir="auto">Net × 256 + Sub × 16 + Uni</strong>. With it on and the route on Art-Net, patching takes the universe the same way: Add, Re-address and Re-patch show Net (0–127), Sub (0–15) and Uni (0–15) to type, with the universe they make, such as U500, beside them. A number beyond its range is set to the end of the range.</p>
 <p>sACN priority can be 0, 100 or 200. It is 100 by default, and it is the priority Kanau sends with its sACN output.</p>
 <h3 id="output--10">CRMX over Bluetooth</h3>
 <ol><li>Turn on Bluetooth in Settings → Output → CRMX (Bluetooth).</li><li>Allow Bluetooth the first time iOS asks.</li><li>Pick a transmitter from the list. Tapping it again disconnects.</li></ol>
 <p>The transmitter you pick carries the universe your patch uses (U1 when the patch sits in universe 1). Next time, turning Bluetooth on reconnects to the same one, once you have slid to send. When a transmitter cannot connect or drops out, Settings → Output says what to check, with the system&#x27;s own message in brackets.</p>
 <ul><li><strong dir="auto">The list</strong>: it says <code>connected</code> for a transmitter that is linked and <code>sending</code> for one that data is going to.</li><li><strong dir="auto">When the patch spans more than one universe</strong>: choose which one it carries with − and + on the Universe row under the transmitter. Once you choose by hand, Kanau stops choosing for you until you disconnect the transmitter and pick it again.</li><li><strong dir="auto">A second transmitter</strong>: scanning stops once the ones you picked are connected, so RESCAN is how you look for another one.</li></ul>
-<p>With the same universe going out over both the network and Bluetooth, Settings → Output says so: <code class="q">U1: network and Bluetooth output are both on.</code> That is a statement of fact, not a warning. A CRMX receiver takes the output of the transmitter it is linked to, so the same U1 on Kanau does not by itself feed one fixture twice. Flicker only happens where a fixture really is receiving from both paths; stop one of them there.</p>
+<p>With the same universe going out over both the network and Bluetooth, Settings → Output says so: <code class="q">U1: network and Bluetooth output are both on.</code> That is a statement of fact, not a warning. A CRMX receiver takes the output of the transmitter it is linked to, so the same U1 on Kanau does not by itself feed one fixture twice. Flicker only happens where a fixture really is receiving from both paths; stop one of them there.</p>
 <p>If a transmitter still refuses Art-Net after you turn Bluetooth off, check the transmitter&#x27;s own settings.</p>
 <h3 id="output--11">When another console is found</h3>
 <table>
 <tr><th>Shown</th><th>What it means, and what to do</th></tr>
-<tr><td>Blocked U1</td><td>When you slid, another sender was already on U1, so Kanau does not send on it. Tap it for the choices below. There is no way to send over it</td></tr>
+<tr><td>Blocked U1</td><td>When you slid, another sender was already on U1, so Kanau does not send on it. Tap it for the choices below. There is no way to send over it</td></tr>
 <tr><td>SHARED + IP or a device name</td><td>Another console appeared after this one started. Sending continues, so stop one of them if you need to</td></tr>
 </table>
-<p>Tapping Blocked U1 opens a row that names the sender, such as U1 In Use, with these choices:</p>
+<p>Tapping Blocked U1 opens a row that names the sender, such as U1 In Use, with these choices:</p>
 <table>
 <tr><th>Choice</th><th>What it does</th></tr>
 <tr><td>Join</td><td>Shown when the sender is a Kanau host. Opens Session to join it</td></tr>
-<tr><td>Send U2 Only</td><td>Shown when other universes are free. Sends only those</td></tr>
+<tr><td>Send U2 Only</td><td>Shown when other universes are free. Sends only those</td></tr>
 <tr><td>Cancel</td><td>Closes the row without sending</td></tr>
 </table>
 <p>Kanau devices tell each other which universes they send, so two that slide at once do not both send. An sACN sender is shown in red in the send row, by name or IP; this only tells you, and Kanau keeps sending. Unicast senders and Bluetooth in other apps may not be visible from here.</p>
@@ -292,7 +292,7 @@
 <tr><td>Network Output</td><td>Packets sent over the network in the last second. Around 44 is normal for one universe to one destination; it multiplies with each extra universe or destination. Nothing means none went out, as before you slide. Bluetooth is not counted here</td></tr>
 <tr><td>Clock</td><td>The worst gap between sends. About 23 ms is normal. Over 100 ms points at the phone</td></tr>
 <tr><td>Touch → DMX</td><td>From your finger to the packet. About 25 ms is normal</td></tr>
-<tr><td>Nodes Answering</td><td>How many answered, with name, address, connection and round trip. The round trip is blank until RESCAN measures it; the figure in brackets is the worst of the last 10 seconds. On AUTO, the line under each node lists the universes sent to it, such as U1 or U0–U3</td></tr>
+<tr><td>Nodes Answering</td><td>How many answered, with name, address, connection and round trip. The round trip is blank until RESCAN measures it; the figure in brackets is the worst of the last 10 seconds. On AUTO, the line under each node lists the universes sent to it, such as U1 or U0–U3</td></tr>
 <tr><td>Type these into the node</td><td>The Net / Sub / Uni to enter on the node, when that display is on</td></tr>
 </table>
 <p>These narrow the problem down; they do not prove success. They are what Kanau sent, and whether the light received it cannot be seen from here. Network Output can show a figure while a mismatch or a fault at the other end keeps the lights dark. Gear that does not answer polling shows 0 under Nodes Answering even while it is receiving.</p>
@@ -315,7 +315,7 @@
 <tr><td>Name</td><td>This fixture&#x27;s own name. It appears in Patch and the Patch List; Home shows the Label instead. Defaults to the full model name plus a running number, such as Titan Tube 1</td></tr>
 <tr><td>Number / How Many</td><td>The number you call it on the floor, and how many to add, up to 4,096. The number may be left empty; it starts at the highest in use plus one</td></tr>
 <tr><td>Label</td><td>The display name shared by every fixture of that model in the same mode. It runs under the faders. Defaults to the official model name; change Mode here and a Label you have not typed follows the new mode. It can also be typed in the fixture&#x27;s panel (<a class="xref" href="#fixture-settings">chapter 06</a>)</td></tr>
-<tr><td>Universe / Address</td><td>Defaults to U1 and the next free address. Changing the universe resets the address to 1. U0 is allowed</td></tr>
+<tr><td>Universe / Address</td><td>Defaults to U1 and the next free address. Changing the universe resets the address to 1. U0 is allowed</td></tr>
 <tr><td>Offset</td><td>The spacing between fixtures. Filled in from the mode&#x27;s channel count</td></tr>
 <tr><td>Gap</td><td>Extra channels to leave between fixtures</td></tr>
 <tr><td>BATTERY SAVE</td><td>Marks the new fixtures for BATTERY SAVE</td></tr>
@@ -1124,7 +1124,7 @@
 <tr><th>What you see</th><th>What to do</th></tr>
 <tr><td>Idle</td><td>Check that a network is enabled in Settings → Output</td></tr>
 <tr><td>Blocked</td><td>Tap it to open Settings → Output, which prints a red line that names what stopped it and what to do. Follow that line</td></tr>
-<tr><td>Blocked U1, with a universe number</td><td>Another sender is already on that universe. Tap it for Join, Send … Only or Cancel</td></tr>
+<tr><td>Blocked U1, with a universe number</td><td>Another sender is already on that universe. Tap it for Join, Send … Only or Cancel</td></tr>
 <tr><td>No node</td><td>Tap it to open Settings → Output. Check the node&#x27;s power, network, address and protocol settings</td></tr>
 <tr><td>U1 OFF</td><td>Turn the universe back on in Output → Universes</td></tr>
 <tr><td>A purple ⏻ or fixture icon</td><td>Turn the fixture&#x27;s output back on</td></tr>
@@ -1347,5 +1347,6 @@ Fixture          is the light itself slow</pre>
 
 })();
 </script>
+<script src="jbreak.js?v=20261031c"></script>
 </body>
 </html>

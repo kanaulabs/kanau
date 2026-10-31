@@ -42,7 +42,7 @@
 <link rel="alternate" hreflang="vi" href="manual-vi.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap">
-<link rel="stylesheet" href="theme.css?v=20261031a">
+<link rel="stylesheet" href="theme.css?v=20261031c">
 </head>
 <body>
 
@@ -131,15 +131,15 @@
 </table>
 <h2 id="screen--3">Durum satırı</h2>
 <p>Solda gönderim durumu bulunur. Göndermeyi başlatan ve durduran satırı açmak için ona dokunun (<a class="xref" href="#output">bölüm 02</a>). Kanau her açıldığında OUTPUT OFF yazar ve siz kaydırana kadar hiçbir şey çıkmaz.</p>
-<p>Gönderirken SENDING ve universe&#x27;leri yazar, örneğin SENDING U1 U2. Yer olmayan yerde rotaya, tek bir harfe dönüşür: Art-Net için A, sACN için S. Yanındaki nokta gönderirken, kaydırmayı beklerken ve LISTENING sırasında nefes alır. Bluetooth&#x27;un kendi noktası ve kendi adı vardır.</p>
+<p>Gönderirken SENDING ve universe&#x27;leri yazar, örneğin SENDING U1 U2. Yer olmayan yerde rotaya, tek bir harfe dönüşür: Art-Net için A, sACN için S. Yanındaki nokta gönderirken, kaydırmayı beklerken ve LISTENING sırasında nefes alır. Bluetooth&#x27;un kendi noktası ve kendi adı vardır.</p>
 <p>Yanlarında, içinde bulunduğunuz show&#x27;un adı durur; satırda yer kalmayan dar bir telefonda gösterilmez. BLIND açıkken bu sol kısmın tamamı kehribar bir BLIND&#x27;a dönüşür; BLIND&#x27;dan çıkmak için ona dokunun (<a class="xref" href="#scenes">bölüm 08</a>).</p>
 <table>
 <tr><th>Görünen</th><th>Anlamı</th></tr>
 <tr><td>OUTPUT OFF</td><td>Kanau açıldığından beri gönderim yok. Altında Slide to send yazar. Ona dokunup kaydırın</td></tr>
 <tr><td>SENDING, dokunulduğunda</td><td><code>Slide to stop</code> öğesini açar. Göndermeyi durdurmak için sağa kaydırın; satır OUTPUT OFF&#x27;a döner. <code>Done</code> satırı kapatır</td></tr>
 <tr><td>LISTENING</td><td>Göndermeden önce başka bir gönderen olup olmadığına bakıyor, yaklaşık bir saniye</td></tr>
-<tr><td>SENDING U1 U2</td><td>Bu universe&#x27;ler çıkıyor. Buradaki gri bir U3 OFF, henüz kaydırılarak açılmamış, yamalanmış bir universe&#x27;i gösterir. Satırın ilerisindeki kırmızı U1 OFF değildir</td></tr>
-<tr><td>Blocked U1</td><td>O universe&#x27;te başka bir gönderen zaten var, bu yüzden Kanau onun üzerinden göndermez. Seçenekler için ona dokunun (<a class="xref" href="#output">bölüm 02</a>)</td></tr>
+<tr><td>SENDING U1 U2</td><td>Bu universe&#x27;ler çıkıyor. Buradaki gri bir U3 OFF, henüz kaydırılarak açılmamış, yamalanmış bir universe&#x27;i gösterir. Satırın ilerisindeki kırmızı U1 OFF değildir</td></tr>
+<tr><td>Blocked U1</td><td>O universe&#x27;te başka bir gönderen zaten var, bu yüzden Kanau onun üzerinden göndermez. Seçenekler için ona dokunun (<a class="xref" href="#output">bölüm 02</a>)</td></tr>
 <tr><td>Yeşil nokta</td><td>Gönderim sürüyor</td></tr>
 <tr><td>Kehribar nokta</td><td>Yavaşlamış ya da yeniden bağlanıyor (Reconnecting…)</td></tr>
 <tr><td>Kırmızı nokta, ART-NET No node veya SACN No node</td><td>Hiçbir cihaz yanıt vermiyor. Durum satırı rotayı adlandırır; dar bir ekranda kısaltılır. Ona dokunursanız Settings → Output açılır. Play satırı görünürken açılmaz; önce <code>EXIT</code> öğesine dokunun</td></tr>
@@ -214,13 +214,13 @@
 <figure class="shot"><div class="wrap" dir="ltr"><img src="img/6-output.png" alt="Settings → Output. Kırmızı sayılar aşağıdaki listeyle eşleşir." width="640" height="1168" loading="lazy"><span class="pin" style="left:27%;top:21.5%">1</span><span class="pin" style="left:15%;top:31.7%">2</span><span class="pin" style="left:87%;top:31.7%">3</span><span class="pin" style="left:27%;top:79.2%">4</span><span class="pin" style="left:50%;top:97.1%">5</span></div><figcaption>Settings → Output. Kırmızı sayılar aşağıdaki listeyle eşleşir.</figcaption><ul class="pins"><li><b>1</b> Protokol. Art-Net ya da sACN, ikisinden biri</li><li><b>2</b> Ağlar. Gönderim, işaretli olanlar üzerinden yapılır</li><li><b>3</b> Kaç cihazın yanıt verdiği. No reply hiçbiri bulunamadı demektir</li><li><b>4</b> Hedef. Çoğu rig için doğru seçenek AUTO</li><li><b>5</b> Cihazları yeniden ara</li></ul></figure>
 <h2 id="output--1">İlk bağlantı</h2>
 <h3 id="output--2">Tek bir Art-Net cihazı</h3>
-<ol><li>iPhone&#x27;u, cihazla aynı Wi-Fi ya da kablolu ağa alın.</li><li>Settings → Output ekranını açın.</li><li>Art-Net ve AUTO seçeneklerini işaretleyin. İkisi de varsayılandır.</li><li>Nodes Answering değerinin 1 veya daha fazla olduğunu doğrulayın. Bazı cihazlar yoklamaya hiç yanıt vermez ve gayet normal alıyorken bile 0&#x27;da kalır. Sayı kıpırdamıyorsa burada durmayın.</li><li>Home ekranında sol üstteki OUTPUT OFF öğesine dokunun. Durum satırının altında bir satır açılır; Slide to send öğesinin yuvarlak tutamağını tamamen sağa kaydırın.</li><li>Durum satırı yaklaşık bir saniye LISTENING, sonra SENDING U1 yazar ve Network Output paket/sn cinsinden bir değer gösterir. Bir fader&#x27;ı hareket ettirin ve armatürün tepki verdiğini görün.</li></ol>
+<ol><li>iPhone&#x27;u, cihazla aynı Wi-Fi ya da kablolu ağa alın.</li><li>Settings → Output ekranını açın.</li><li>Art-Net ve AUTO seçeneklerini işaretleyin. İkisi de varsayılandır.</li><li>Nodes Answering değerinin 1 veya daha fazla olduğunu doğrulayın. Bazı cihazlar yoklamaya hiç yanıt vermez ve gayet normal alıyorken bile 0&#x27;da kalır. Sayı kıpırdamıyorsa burada durmayın.</li><li>Home ekranında sol üstteki OUTPUT OFF öğesine dokunun. Durum satırının altında bir satır açılır; Slide to send öğesinin yuvarlak tutamağını tamamen sağa kaydırın.</li><li>Durum satırı yaklaşık bir saniye LISTENING, sonra SENDING U1 yazar ve Network Output paket/sn cinsinden bir değer gösterir. Bir fader&#x27;ı hareket ettirin ve armatürün tepki verdiğini görün.</li></ol>
 <p><strong dir="auto">Kanau kendiliğinden asla göndermeye başlamaz.</strong> Her açıldığında çıkış kapalıdır ve durum satırında OUTPUT OFF yazar; patch, hedef ve kapatılmış universe&#x27;ler korunur. Bir fader&#x27;ı hareket ettirmek ya da bir Scene çağırmak çıkışı asla başlatmaz.</p>
 <p>Kaydırdığınızda Kanau önce yaklaşık bir saniye dinler. Bir universe&#x27;te başka bir gönderen yoksa, açık olan, yamalanmış her universe&#x27;ü sürekli olarak, normalde 44 Hz hızında gönderir. Bluetooth açılışta değil, siz kaydırdığınızda bağlanır.</p>
 <p><strong dir="auto">Göndermeyi durdurmak için</strong> durum satırına dokunun ve <code>Slide to stop</code> öğesini sağa kaydırın. Satır OUTPUT OFF&#x27;a döner.</p>
 <p>Çıkış şu durumlarda da yeniden kapalıya döner ve yeniden kaydırırsınız:</p>
 <ul><li>Art-Net ile sACN arasında geçtiğinizde</li><li>kaydırdığınızda orada olmayan bir ağ ortaya çıktığında</li><li>guest olarak bir oturumdan ayrıldığınızda</li><li>LAMP MODE&#x27;dan çıktığınızda</li></ul>
-<p>Patch&#x27;e sonradan eklenen bir universe, siz kaydırana kadar kapalı kalır ve durum satırı onu U3 OFF olarak gösterir. Kanau ekranda değilken çıkış durur ve geri döndüğünüzde yeniden başlar; SCREEN LOCK onu durdurmaz.</p>
+<p>Patch&#x27;e sonradan eklenen bir universe, siz kaydırana kadar kapalı kalır ve durum satırı onu U3 OFF olarak gösterir. Kanau ekranda değilken çıkış durur ve geri döndüğünüzde yeniden başlar; SCREEN LOCK onu durdurmaz.</p>
 <h2 id="output--3">Gönderiyor mu?</h2>
 <p>Bunları sırayla okuyun. Her biri size farklı bir şey söyler ve hiçbiri armatürün veriyi gerçekten aldığını söyleyemez.</p>
 <table>
@@ -255,26 +255,26 @@
 <p>Settings → Output&#x27;taki kırmızı satır, çıkışı neyin durdurduğunu ve ne yapılacağını söyler: yerel ağ iznini açın, UNICAST&#x27;e geçip düğümün adresini yazın, yazdığınız adresi kontrol edin, Wi-Fi&#x27;yi kontrol edin, düğüme güç verin. CRMX&#x27;in kendi satırı vardır. Konsolun kendi ifadesi sonda parantez içinde kalır, böylece olduğu gibi aktarılabilir.</p>
 <h3 id="output--9">Universe&#x27;ler ve Art-Net numaralandırması</h3>
 <p>Universes bölümü, yamalanmış her universe&#x27;ü armatür sayısı, kaçının yanık olduğu ve bir ON/OFF anahtarıyla birlikte listeler. OFF olan bir universe Not sending yazar; henüz kaydırılarak açılmamış olan da öyle.</p>
-<div class="box important"><b>IMPORTANT</b><p>OFF, o universe&#x27;ün gönderimini durdurur. Art-Net ya da sACN üzerinden onun için hiçbir şey çıkmaz; Bluetooth üzerinde bağlantı ayakta kalır ama hiçbir şey yazılmaz. Bir alıcı son değerlerini tutabilir, yani bir armatür yanık kalabilir. Hangi universe&#x27;lerin kapalı olduğu ekranın üst kısmında U1 OFF biçiminde yazar.</p></div>
-<p>Net / Sub / Uni&#x27;yi yalnızca cihazınız tek bir sayı yerine Net / Sub-Net / Universe istiyorsa kullanın. Settings → Output → Art-Net → Net / Sub / Uni ayarını açın. İlişki şöyledir: <strong dir="auto">Net × 256 + Sub × 16 + Uni</strong>. Bu açıkken ve yol Art-Net ise patch&#x27;leme de universe&#x27;ü aynı biçimde alır: Add, Re-address ve Re-patch yazmanız için Net (0–127), Sub (0–15) ve Uni (0–15) alanlarını, yanlarında bunların oluşturduğu universe&#x27;ü, örneğin U500, gösterir. Aralığın dışındaki bir sayı aralığın ucuna ayarlanır.</p>
+<div class="box important"><b>IMPORTANT</b><p>OFF, o universe&#x27;ün gönderimini durdurur. Art-Net ya da sACN üzerinden onun için hiçbir şey çıkmaz; Bluetooth üzerinde bağlantı ayakta kalır ama hiçbir şey yazılmaz. Bir alıcı son değerlerini tutabilir, yani bir armatür yanık kalabilir. Hangi universe&#x27;lerin kapalı olduğu ekranın üst kısmında U1 OFF biçiminde yazar.</p></div>
+<p>Net / Sub / Uni&#x27;yi yalnızca cihazınız tek bir sayı yerine Net / Sub-Net / Universe istiyorsa kullanın. Settings → Output → Art-Net → Net / Sub / Uni ayarını açın. İlişki şöyledir: <strong dir="auto">Net × 256 + Sub × 16 + Uni</strong>. Bu açıkken ve yol Art-Net ise patch&#x27;leme de universe&#x27;ü aynı biçimde alır: Add, Re-address ve Re-patch yazmanız için Net (0–127), Sub (0–15) ve Uni (0–15) alanlarını, yanlarında bunların oluşturduğu universe&#x27;ü, örneğin U500, gösterir. Aralığın dışındaki bir sayı aralığın ucuna ayarlanır.</p>
 <p>sACN önceliği 0, 100 ya da 200 olabilir. Varsayılan değer 100&#x27;dür ve Kanau&#x27;nun sACN çıkışıyla gönderdiği önceliktir.</p>
 <h3 id="output--10">Bluetooth üzerinden CRMX</h3>
 <ol><li>Settings → Output → CRMX (Bluetooth) altında Bluetooth&#x27;u açın.</li><li>iOS ilk kez sorduğunda Bluetooth&#x27;a izin verin.</li><li>Listeden bir verici seçin. Aynı öğeye yeniden dokunmak bağlantıyı keser.</li></ol>
-<p>Seçtiğiniz verici, patch&#x27;inizin kullandığı universe&#x27;ü taşır (patch universe 1&#x27;deyse U1). Bir sonraki sefer Bluetooth&#x27;u açtığınızda, göndermek için kaydırdıktan sonra aynı vericiye yeniden bağlanılır. Bir verici bağlanamadığında ya da bağlantısı koptuğunda Settings → Output neyi kontrol etmeniz gerektiğini söyler; sistemin kendi iletisi parantez içinde durur.</p>
+<p>Seçtiğiniz verici, patch&#x27;inizin kullandığı universe&#x27;ü taşır (patch universe 1&#x27;deyse U1). Bir sonraki sefer Bluetooth&#x27;u açtığınızda, göndermek için kaydırdıktan sonra aynı vericiye yeniden bağlanılır. Bir verici bağlanamadığında ya da bağlantısı koptuğunda Settings → Output neyi kontrol etmeniz gerektiğini söyler; sistemin kendi iletisi parantez içinde durur.</p>
 <ul><li><strong dir="auto">Liste</strong>: bağlı olan verici için <code>connected</code>, veri giden için <code>sending</code> der.</li><li><strong dir="auto">Patch birden fazla universe&#x27;e yayıldığında</strong>: hangisini taşıyacağını vericinin altındaki Universe satırında − ve + ile seçin. Elle seçtiğinizde Kanau, vericiyi bağlantıdan çıkarıp yeniden seçene kadar sizin yerinize seçmeyi bırakır.</li><li><strong dir="auto">İkinci bir verici</strong>: seçtikleriniz bağlanınca tarama durur; başka bir vericiyi aramanın yolu RESCAN&#x27;dir.</li></ul>
 <p>Aynı universe hem ağ hem Bluetooth üzerinden çıkıyorsa, Settings → Output bunu söyler: <code class="q">U1: network and Bluetooth output are both on.</code> Bu <strong dir="auto">bir tespittir, uyarı değil</strong>. CRMX alıcısı, bağlı olduğu vericinin çıkışını alır; dolayısıyla Kanau&#x27;da aynı U1&#x27;i seçmiş olmak tek başına bir armatürü iki kez beslemez. Titreme yalnızca bir armatürün gerçekten iki yoldan da aldığı yerde olur; orada yollardan birini kapatın.</p>
 <p>Bluetooth&#x27;u kapattıktan sonra bir verici hâlâ Art-Net&#x27;i kabul etmiyorsa, vericinin kendi ayarlarını kontrol edin.</p>
 <h3 id="output--11">Başka bir konsol bulunduğunda</h3>
 <table>
 <tr><th>Görünen</th><th>Anlamı ve ne yapmalı</th></tr>
-<tr><td>Blocked U1</td><td>Kaydırdığınızda U1&#x27;de başka bir gönderen zaten vardı, bu yüzden Kanau onun üzerinden göndermez. Seçenekler için aşağıya bakın. Üzerinden göndermenin yolu yok</td></tr>
+<tr><td>Blocked U1</td><td>Kaydırdığınızda U1&#x27;de başka bir gönderen zaten vardı, bu yüzden Kanau onun üzerinden göndermez. Seçenekler için aşağıya bakın. Üzerinden göndermenin yolu yok</td></tr>
 <tr><td>SHARED + IP ya da cihaz adı</td><td>Bu cihaz başladıktan sonra başka bir konsol ortaya çıktı. Gönderim sürer; gerekiyorsa birini durdurun</td></tr>
 </table>
-<p>Blocked U1 öğesine dokunmak, göndereni adlandıran bir satır açar, örneğin U1 In Use, şu seçeneklerle:</p>
+<p>Blocked U1 öğesine dokunmak, göndereni adlandıran bir satır açar, örneğin U1 In Use, şu seçeneklerle:</p>
 <table>
 <tr><th>Seçenek</th><th>Ne yapar</th></tr>
 <tr><td>Join</td><td>Gönderen bir Kanau host&#x27;uysa gösterilir. Ona katılmak için Session&#x27;ı açar</td></tr>
-<tr><td>Send U2 Only</td><td>Başka universe&#x27;ler boşsa gösterilir. Yalnızca onları gönderir</td></tr>
+<tr><td>Send U2 Only</td><td>Başka universe&#x27;ler boşsa gösterilir. Yalnızca onları gönderir</td></tr>
 <tr><td>Cancel</td><td>Satırı göndermeden kapatır</td></tr>
 </table>
 <p>Kanau cihazları hangi universe&#x27;leri gönderdiklerini birbirine söyler; bu yüzden aynı anda kaydıran ikisi birlikte göndermez. Bir sACN göndereni gönderim satırında kırmızıyla, adıyla ya da IP&#x27;siyle gösterilir; bu yalnızca sizi bilgilendirir ve Kanau göndermeyi sürdürür. Unicast gönderenler ve diğer uygulamalardaki Bluetooth buradan görünmeyebilir.</p>
@@ -292,7 +292,7 @@
 <tr><td>Network Output</td><td>Son saniyede ağ üzerinden gönderilen paket sayısı. 44 civarı, bir universe&#x27;ten tek bir hedefe normaldir; her ek universe ya da hedefle çarpılır. Nothing hiçbirinin çıkmadığı anlamına gelir; kaydırmadan önce olduğu gibi. Bluetooth burada sayılmaz</td></tr>
 <tr><td>Clock</td><td>Gönderimler arasındaki en kötü boşluk. Yaklaşık 23 ms normaldir. 100 ms üzeri telefonu işaret eder</td></tr>
 <tr><td>Touch → DMX</td><td>Parmağınızdan pakete kadar geçen süre. Yaklaşık 25 ms normaldir</td></tr>
-<tr><td>Nodes Answering</td><td>Kaç cihazın yanıt verdiği; ad, adres, bağlantı ve gidiş dönüş süresiyle birlikte. Gidiş dönüş süresi, RESCAN onu ölçene kadar boştur; parantez içindeki değer, son 10 saniyenin en kötüsüdür. AUTO seçiliyken her cihazın altındaki satır, ona gönderilen universe&#x27;leri listeler; örneğin U1 ya da U0–U3</td></tr>
+<tr><td>Nodes Answering</td><td>Kaç cihazın yanıt verdiği; ad, adres, bağlantı ve gidiş dönüş süresiyle birlikte. Gidiş dönüş süresi, RESCAN onu ölçene kadar boştur; parantez içindeki değer, son 10 saniyenin en kötüsüdür. AUTO seçiliyken her cihazın altındaki satır, ona gönderilen universe&#x27;leri listeler; örneğin U1 ya da U0–U3</td></tr>
 <tr><td>Type these into the node</td><td>O gösterim açıkken cihaza girilecek Net / Sub / Uni değerleri</td></tr>
 </table>
 <p>Bunlar sorunu daraltır; başarıyı kanıtlamaz. Bunlar Kanau&#x27;nun gönderdikleridir; armatürün onları alıp almadığı buradan görülemez. Bir uyumsuzluk ya da karşı taraftaki bir arıza armatürleri karanlıkta tutarken Network Output bir değer gösterebilir. Yoklamaya yanıt vermeyen ekipman, veriyi alırken bile Nodes Answering altında 0 gösterir.</p>
@@ -315,7 +315,7 @@
 <tr><td>Name</td><td>Bu armatürün kendi adı. Patch ve Patch List&#x27;te görünür; Home ise onun yerine Label&#x27;ı gösterir. Varsayılan olarak modelin tam adı ve ilerleyen bir numara, örneğin Titan Tube 1</td></tr>
 <tr><td>Number / How Many</td><td>Sette o armatüre seslenirken kullandığınız numara ve kaç tane ekleneceği, en fazla 4,096. Numara boş bırakılabilir; kullanımdaki en yüksek numaranın bir fazlasından başlar</td></tr>
 <tr><td>Label</td><td>Aynı moddaki o modelin bütün armatürlerince paylaşılan görünen ad. Faderların altında yer alır. Varsayılan olarak modelin resmî adı; burada Mode&#x27;u değiştirirseniz yazmadığınız bir Label yeni moda uyar. Armatür panelinde de yazılabilir (<a class="xref" href="#fixture-settings">bölüm 06</a>)</td></tr>
-<tr><td>Universe / Address</td><td>Varsayılan U1 ve sıradaki boş adres. Universe&#x27;ü değiştirmek adresi 1 değerine döndürür. U0 kullanılabilir</td></tr>
+<tr><td>Universe / Address</td><td>Varsayılan U1 ve sıradaki boş adres. Universe&#x27;ü değiştirmek adresi 1 değerine döndürür. U0 kullanılabilir</td></tr>
 <tr><td>Offset</td><td>Armatürler arasındaki aralık. Modun kanal sayısından doldurulur</td></tr>
 <tr><td>Gap</td><td>Armatürler arasında bırakılacak ek kanallar</td></tr>
 <tr><td>BATTERY SAVE</td><td>Yeni armatürleri BATTERY SAVE için işaretler</td></tr>
@@ -1124,7 +1124,7 @@
 <tr><th>Gördüğünüz</th><th>Ne yapmalı</th></tr>
 <tr><td>Idle</td><td>Settings → Output altında bir ağın etkin olduğunu kontrol edin</td></tr>
 <tr><td>Blocked</td><td>Dokunursanız Settings → Output açılır; orada neyin durdurduğunu ve ne yapılacağını söyleyen kırmızı bir satır yazar. O satırı izleyin</td></tr>
-<tr><td>Blocked U1, bir universe numarasıyla</td><td>O universe&#x27;te başka bir gönderen zaten var. Join, Send … Only ya da Cancel için ona dokunun</td></tr>
+<tr><td>Blocked U1, bir universe numarasıyla</td><td>O universe&#x27;te başka bir gönderen zaten var. Join, Send … Only ya da Cancel için ona dokunun</td></tr>
 <tr><td>No node</td><td>Settings → Output&#x27;u açmak için ona dokunun. Cihazın gücünü, ağını, adresini ve protokol ayarlarını kontrol edin</td></tr>
 <tr><td>U1 OFF</td><td>Universe&#x27;ü Output → Universes altından yeniden açın</td></tr>
 <tr><td>Mor bir ⏻ ya da armatür simgesi</td><td>Armatürün çıkışını yeniden açın</td></tr>
@@ -1347,5 +1347,6 @@ Fixture          armatürün kendisi mi yavaş</pre>
 
 })();
 </script>
+<script src="jbreak.js?v=20261031c"></script>
 </body>
 </html>
