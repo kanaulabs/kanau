@@ -366,7 +366,7 @@ nav.chapters + .ver a { color: var(--mute); }
                      color: var(--ink); flex: none; }
   .stickybar .home img { width: 19px; height: 19px; border-radius: 5px; flex: none; }
   .stickybar button, .stickybar .trouble { padding: 0.3rem 0.55rem; }
-  @media (max-width: 360px) { .stickybar .home span { display: none; } }
+  @media (max-width: 360px) { .stickybar .home .lbl { display: none; } }   /* 狭い画面は「↑」だけ */
   .stickybar .trouble { margin-inline-start: auto; color: var(--ink);
                         min-width: 0; overflow: hidden;
                         text-overflow: ellipsis; white-space: nowrap; }
@@ -570,8 +570,10 @@ html.jb.jb.jb.jb body, html.jb.jb.jb.jb body * { word-break: keep-all; overflow-
 html.jb.jb.jb.jb code, html.jb.jb.jb.jb pre { word-break: normal; }
 th, .chap b, .door b { text-wrap: balance; }
 /* 長い語(フィンランド語・ドイツ語)は表の升の中で音節で折る。折れないと 3 列の表が画面の 1.3 倍に広がった */
-td { hyphens: auto; -webkit-hyphens: auto; }
-:lang(ja) td, :lang(zh-Hans) td, :lang(zh-Hant) td, :lang(ko) td { hyphens: manual; -webkit-hyphens: manual; }
+/* 英語では「show-ing」「Moni-tor」と短い語まで割れたので、長い複合語の言語だけ、10 字以上の語だけを割る */
+:lang(de) td, :lang(fi) td, :lang(nl) td, :lang(sv) td, :lang(da) td, :lang(no) td, :lang(pl) td, :lang(cs) td, :lang(tr) td,
+:lang(id) td, :lang(it) td, :lang(es) td, :lang(pt-BR) td, :lang(fr) td {
+  hyphens: auto; -webkit-hyphens: auto; hyphenate-limit-chars: 10 4 4; }
 /* 1 語の長い題(Datenschutzerklärung)を、スマホでは字を小さくして 1 行に収める */
 @media (max-width: 480px) { .hero h1 { font-size: clamp(1.75rem, 8.4vw, 2.6rem); } }
 th { white-space: normal; }   /* 1 行に縛ると、スマホで表が画面より広くなる(英語でも)。日本語・中国語は jbreak.js が語で折る */
