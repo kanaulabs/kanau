@@ -42,7 +42,7 @@
 <link rel="apple-touch-icon" href="img/icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap">
-<link rel="stylesheet" href="theme.css?v=20261025f">
+<link rel="stylesheet" href="theme.css?v=20261031a">
 </head>
 <body>
 
@@ -57,7 +57,7 @@
 <p><strong>Écrivez dans la langue de votre choix.</strong></p>
 <p>Pour un rapport de bogue, indiquez le <strong>modèle et le mode du projecteur</strong>,
 la <strong>voie de sortie</strong> (Art-Net / sACN / CRMX) et la
-<strong>version de l'app</strong>, affichée en bas de&nbsp;Settings.</p>
+<strong>version de l'app</strong>, affichée à la fin de Settings →&nbsp;Settings.</p>
 
 <h2>Prérequis</h2>
 <ul>
@@ -71,8 +71,7 @@ la <strong>voie de sortie</strong> (Art-Net / sACN / CRMX) et la
 <p>Le <a href="manual-fr.html#troubleshooting">chapitre Dépannage</a> du manuel est classé par symptôme. Voici les trois questions qu'on nous pose&nbsp;le&nbsp;plus.</p>
 <h3>Pas de lumière</h3>
 <p>Kanau démarre avec la sortie coupée à chaque ouverture : touchez <code>OUTPUT&nbsp;OFF</code> en haut à gauche et faites glisser pour envoyer.
-La section Output de Settings montre <code>Destination</code>, <code>Medium</code>,
-<code>Clock</code> et <code>Touch → DMX</code>. Si ceux-ci bougent, l'app envoie, et le problème se trouve plus loin sur&nbsp;la&nbsp;ligne.</p>
+Si <code>Network Output</code> dans Settings → Output affiche un chiffre en paquets/s, l'app envoie, et le problème se trouve plus loin sur la ligne. <code>Nothing</code> signifie qu'elle n'envoie&nbsp;pas.</p>
 <h3>Le multicast sACN est refusé</h3>
 <p>iOS peut refuser l'envoi en multicast. Quand l'écran l'indique, passez en unicast et saisissez l'adresse&nbsp;du&nbsp;node.</p>
 <h3>Un projecteur manque dans la bibliothèque</h3>

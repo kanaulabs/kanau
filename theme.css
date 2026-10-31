@@ -303,6 +303,27 @@ figure.shot ul.pins b {
 .adv a:hover { color: var(--ink); }
 .owner { margin-top: 3.5rem; }
 
+/* 説明書の目次 —— 番号・章の名前・一行(2026-10-31、「もう少しわかりやすいホームが欲しい」) */
+.hero .findbar { margin: 1.9rem 0 0; }
+.hero .doors { margin: 0.8rem 0 0; }
+nav.chapters { display: block; margin: 0 0 1rem; font-size: 1rem;
+               border-top: 1px solid var(--rule); }
+nav.chapters a.chap { display: grid; grid-template-columns: 2.2rem 1fr; align-content: start;
+                      padding: 0.75rem 0.6rem; background: none;
+                      border-bottom: 1px solid var(--rule); border-radius: 0;
+                      color: var(--ink); white-space: normal; text-decoration: none; }
+nav.chapters a.chap:hover { background: var(--soft); border-radius: 12px; }
+.chap .n { grid-row: 1 / span 2; color: var(--mute); font-size: 0.85rem;
+           font-variant-numeric: tabular-nums; padding-top: 0.15rem; }
+.chap b { font-weight: 500; }
+.chap .d { color: var(--mute); font-size: 0.85rem; line-height: 1.5; margin-top: 0.15rem; }
+.chap .d { text-wrap: pretty; display: -webkit-box; -webkit-box-orient: vertical;
+           -webkit-line-clamp: 2; overflow: hidden; }
+:lang(ja) .chap b, :lang(ja) .chap .d { word-break: auto-phrase; }
+:lang(ko) .chap b, :lang(ko) .chap .d { word-break: keep-all; }
+nav.chapters + .ver { margin: 0 0 3rem; }
+nav.chapters + .ver a { color: var(--mute); }
+
 /* ---- 検索 ---- */
 
 .findbar { position: relative; margin: 0 0 1.75rem; }
@@ -530,3 +551,14 @@ nav a { max-width: 100%; }
 @media (max-width: 380px) { p code, li code { overflow-wrap: anywhere; } }
 /* 中国語の「DIM、COLOR、PIXELS、FX」のような英字と読点の並びは禁則で折れず、320px を越えた。収まらないときだけ字の途中で折る */
 :lang(zh-Hans) p, :lang(zh-Hans) li, :lang(zh-Hant) p, :lang(zh-Hant) li { overflow-wrap: anywhere; }
+
+/* ---- 字(2026-10-25「マック以外の人にも、iPhone 以外のスマートフォンの人にもみやすいサイトに」) ----
+   日本語・韓国語・中国語に、Android の Noto と Windows のメイリオ・Malgun Gothic・Microsoft YaHei / JhengHei を足す
+   (ヒラギノだけだと、Windows と Android では字がブラウザ任せになっていた)。
+   足した字はすべてヒラギノの後ろ —— Mac・iPhone は今までと同じ順で同じ字を選ぶ(「Mac や iPhone での見え方は変えてない?」) */
+body:lang(ja) { font-family: "Manrope", -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", "Noto Sans CJK JP", "Meiryo", "Helvetica Neue", Arial, sans-serif; }
+body:lang(ko) { font-family: "Manrope", -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Apple SD Gothic Neo", "Noto Sans KR", "Noto Sans CJK KR", "Malgun Gothic", "Helvetica Neue", Arial, sans-serif; }
+body:lang(zh-Hans) { font-family: "Manrope", -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans SC", "Noto Sans CJK SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif; }
+body:lang(zh-Hant) { font-family: "Manrope", -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans TC", "Noto Sans CJK TC", "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif; }
+/* 折りたたみスマホの閉じた画面(280px)で、説明書の帯の言語の選びが 4〜20px はみ出した(スペイン語・フランス語など) */
+@media (max-width: 300px) { .stickybar .lang select { max-width: 4.6rem; } .stickybar { gap: 0.25rem; } }

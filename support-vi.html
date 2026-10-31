@@ -42,7 +42,7 @@
 <link rel="apple-touch-icon" href="img/icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap">
-<link rel="stylesheet" href="theme.css?v=20261025f">
+<link rel="stylesheet" href="theme.css?v=20261031a">
 </head>
 <body>
 
@@ -57,7 +57,7 @@
 <p><strong>Viết bằng ngôn ngữ nào cũng được.</strong></p>
 <p>Khi báo lỗi, vui lòng cho biết <strong>model và chế độ của đèn</strong>,
 <strong>đường xuất tín hiệu</strong> (Art-Net / sACN / CRMX) và
-<strong>phiên bản ứng dụng</strong>, hiển thị ở cuối trang&nbsp;Settings.</p>
+<strong>phiên bản ứng dụng</strong>, hiển thị ở cuối Settings →&nbsp;Settings.</p>
 
 <h2>Yêu cầu</h2>
 <ul>
@@ -71,8 +71,7 @@
 <p><a href="manual-vi.html#troubleshooting">Chương xử lý sự cố</a> trong hướng dẫn được sắp xếp theo triệu chứng. Đây là ba câu chúng tôi được hỏi nhiều&nbsp;nhất.</p>
 <h3>Không có ánh sáng</h3>
 <p>Mỗi lần mở, Kanau khởi động với tín hiệu ra đang tắt: chạm <code>OUTPUT&nbsp;OFF</code> ở góc trên bên trái rồi trượt để gửi.
-Phần output trong Settings hiển thị <code>Destination</code>, <code>Medium</code>,
-<code>Clock</code> và <code>Touch → DMX</code>. Nếu các mục đó đang chuyển động thì ứng dụng đang gửi, và vấn đề nằm ở đoạn&nbsp;phía&nbsp;sau.</p>
+Nếu <code>Network Output</code> trong Settings → Output hiển thị một con số theo packet/s thì ứng dụng đang gửi, và vấn đề nằm ở đoạn phía sau. <code>Nothing</code> nghĩa là không&nbsp;gửi.</p>
 <h3>sACN multicast bị từ chối</h3>
 <p>iOS có thể từ chối gửi multicast. Khi màn hình báo như vậy, hãy chuyển sang unicast và nhập địa chỉ&nbsp;của&nbsp;node.</p>
 <h3>Một đèn không có trong thư viện</h3>

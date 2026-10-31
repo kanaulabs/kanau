@@ -42,7 +42,7 @@
 <link rel="apple-touch-icon" href="img/icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap">
-<link rel="stylesheet" href="theme.css?v=20261025f">
+<link rel="stylesheet" href="theme.css?v=20261031a">
 </head>
 <body>
 
@@ -57,7 +57,7 @@
 <p><strong>Write in any language.</strong></p>
 <p>For a bug report, please include the <strong>fixture model and mode</strong>,
 the <strong>output route</strong> (Art-Net / sACN / CRMX), and the
-<strong>app version</strong>, which is shown at the bottom of&nbsp;Settings.</p>
+<strong>app version</strong>, which is shown at the end of Settings →&nbsp;Settings.</p>
 
 <h2>Requirements</h2>
 <ul>
@@ -70,8 +70,8 @@ the <strong>output route</strong> (Art-Net / sACN / CRMX), and the
 <p>The <a href="manual.html#troubleshooting">troubleshooting chapter</a> of the manual is arranged by symptom. These are the three we are asked about&nbsp;most.</p>
 <h3>No light</h3>
 <p>Kanau starts with output off each time it opens: tap <code>OUTPUT&nbsp;OFF</code> at the top left and slide to send.
-The output section in Settings shows <code>Destination</code>, <code>Medium</code>,
-<code>Clock</code> and <code>Touch → DMX</code>. If those are moving, the app is sending, and the problem is further down&nbsp;the&nbsp;line.</p>
+If <code>Network Output</code> in Settings → Output shows a figure in packets/s, the app is
+sending, and the problem is further down the line. <code>Nothing</code> means it is not&nbsp;sending.</p>
 <h3>sACN multicast is refused</h3>
 <p>iOS can refuse multicast sending. When the screen says so, switch to unicast and enter the node's&nbsp;address.</p>
 <h3>A fixture is missing from the library</h3>

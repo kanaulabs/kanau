@@ -42,7 +42,7 @@
 <link rel="apple-touch-icon" href="img/icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap">
-<link rel="stylesheet" href="theme.css?v=20261025f">
+<link rel="stylesheet" href="theme.css?v=20261031a">
 </head>
 <body>
 
@@ -57,7 +57,7 @@
 <p><strong>Skriv på vilket språk du vill.</strong></p>
 <p>Ta gärna med <strong>armaturens modell och läge</strong>,
 <strong>utgångsvägen</strong> (Art-Net / sACN / CRMX) och
-<strong>appversionen</strong> i en felrapport. Den står längst ner i&nbsp;Settings.</p>
+<strong>appversionen</strong> i en felrapport. Den står i slutet av Settings →&nbsp;Settings.</p>
 
 <h2>Krav</h2>
 <ul>
@@ -73,8 +73,8 @@
 <p>Kapitlet <a href="manual-sv.html#troubleshooting">Felsökning</a> i manualen är ordnat efter symptom. Här är de tre frågor vi får&nbsp;oftast.</p>
 <h3>Inget ljus</h3>
 <p>Kanau startar med utgången av varje gång det öppnas: tryck på <code>OUTPUT&nbsp;OFF</code> uppe till vänster och dra för att skicka.
-Avsnittet Output i Settings visar <code>Destination</code>, <code>Medium</code>,
-<code>Clock</code> och <code>Touch → DMX</code>. Rör de sig skickar appen, och problemet ligger längre ner&nbsp;på&nbsp;vägen.</p>
+Om <code>Network Output</code> i Settings → Output visar ett värde i packets/s skickar appen,
+och problemet ligger längre ner på vägen. <code>Nothing</code> betyder att den inte&nbsp;skickar.</p>
 <h3>sACN-multicast nekas</h3>
 <p>iOS kan neka sändning med multicast. När skärmen säger det, byt till unicast och skriv in nodens&nbsp;adress.</p>
 <h3>En armatur saknas i biblioteket</h3>

@@ -49,11 +49,11 @@
 
   .soft { background: var(--soft); border-radius: 24px; display: grid; grid-template-columns: repeat(3, 1fr); padding: 34px 10px; text-align: center; }
   .soft > * { padding: 6px 20px; }
-  .soft b { display: block; font-weight: 500; font-size: 16px; margin-bottom: 6px; }
+  .soft b { display: block; font-weight: 500; font-size: 16px; line-height: 1.4; margin-bottom: 6px; }
   .soft span { color: var(--mute); font-size: 14px; line-height: 1.6; }
 
   footer { display: flex; justify-content: space-between; padding: 40px 0 48px; font-size: 13px; color: var(--mute); flex-wrap: wrap; gap: 12px; }
-  footer .fl { display: flex; gap: 22px; flex-wrap: wrap; }
+  footer .fl { display: flex; gap: 8px 22px; flex-wrap: wrap; }
 
   @media (max-width: 760px) {
     .wrap { padding: 0 22px; } .links { display: none; }
@@ -76,9 +76,11 @@
   .price { font-weight: 300; font-size: 46px; letter-spacing: -.03em; line-height: 1; }
   .price small { font-size: 15px; color: var(--mute); letter-spacing: 0; margin-left: 4px; font-weight: 400; }
   .per { color: var(--mute); font-size: 13px; margin: 12px 0 22px; padding-bottom: 22px; border-bottom: 1px solid var(--rule); }
-  .plan ul { list-style: none; margin: 0; padding: 0; color: #4a4a50; font-size: 14.5px; line-height: 1.9; }
+  .plan ul { list-style: none; margin: 0; padding: 0; color: #4a4a50; font-size: 14.5px; line-height: 1.55; }
   .plan li { position: relative; padding-inline-start: 15px; }
-  .plan li::before { content: ""; position: absolute; inset-inline-start: 0; top: .82em; width: 5px; height: 5px; border-radius: 50%; background: var(--amber); }
+  /* 項目の間は行の間より広く —— 2 行に折れた項目が、2 つの項目に見えないように(2026-10-25) */
+  .plan li + li { margin-top: .5em; }
+  .plan li::before { content: ""; position: absolute; inset-inline-start: 0; top: calc(.775em - 2.5px); width: 5px; height: 5px; border-radius: 50%; background: var(--amber); }
   .plan.pick .per { border-color: #e6e3de; }
   .fine { color: var(--mute); font-size: 13.5px; line-height: 1.8; margin: 24px auto 0; max-width: 52em; }
   @media (max-width: 760px) { .plans { grid-template-columns: 1fr; } .pricing h2 { font-size: 34px; } .pricing { padding-top: 90px; } }
@@ -109,8 +111,9 @@
   :lang(ja) h1, :lang(ja) h2, :lang(ja) h3, :lang(ja) .lead, :lang(ja) .name p, :lang(ja) b { font-feature-settings: "palt"; letter-spacing: .03em; }
   :lang(ja) p, :lang(ja) h1, :lang(ja) h2, :lang(ja) h3, :lang(ja) li, :lang(ja) span { word-break: auto-phrase; }
   :lang(ko) { word-break: keep-all; overflow-wrap: break-word; }
-  /* 箱の中の小さな文は行内のままだと折り返しの指定が効かないので、塊にする */
-  .soft span { display: block; }
+  /* 箱の中の小さな文は行内のままだと折り返しの指定が効かないので、塊にする。
+     直下の 1 段だけ —— 中の文節の塊(.w)まで塊にすると、日本語が 1 語ずつ縦に並んだ(2026-10-25) */
+  .soft > * > span { display: block; }
   /* 揃える指定はブラウザが 6 行までしか効かせない。スマホで長くなる段落は「最後に 1 語だけ」を避ける方へ */
   /* 文ごとの塊は短いので、スマホでも揃える指定(6 行まで)が効く */
   .ln { display: block; text-wrap: balance; }
@@ -169,5 +172,19 @@
   @media (max-width: 460px) { .ctaprice .nw { display: block; } .ctaprice .sep { display: none; } .ctaprice { line-height: 1.7; } }
   /* 文ごとの塊の間は詰める(1 つの段落として読ませる) */
   .lines p .ln, .made p .ln, .fine .ln { text-wrap: balance; }
-  /* 日本語の文節の塊(生成で割る。Safari は auto-phrase を知らない)。塊の中では折らない */
+  /* 日本語の文節の塊(生成で割る。Safari は auto-phrase を知らない)。塊の中では折らない。
+     塊が 1 行に入らないときだけ中で折れる —— そのときも行の長さを揃える(「…が / 参加。」と 1 語だけ落とさない) */
   .w { display: inline-block; }
+  .w, .ph { text-wrap: balance; }
+
+  /* ---- 字(2026-10-25「マック以外の人にも、iPhone 以外のスマートフォンの人にもみやすいサイトに」) ----
+     日本語・韓国語・中国語に、Android の Noto と Windows のメイリオ・Malgun Gothic・Microsoft YaHei / JhengHei を足す
+     (ヒラギノだけだと、Windows と Android では字がブラウザ任せになっていた)。
+     足した字はすべてヒラギノの後ろ —— Mac・iPhone は今までと同じ順で同じ字を選ぶ(「Mac や iPhone での見え方は変えてない?」) */
+  body:lang(ja) { font-family: "Manrope", -apple-system, "Hiragino Sans", "Noto Sans JP", "Noto Sans CJK JP", "Meiryo", "Helvetica Neue", Arial, sans-serif; }
+  body:lang(ko) { font-family: "Manrope", -apple-system, "Hiragino Sans", "Apple SD Gothic Neo", "Noto Sans KR", "Noto Sans CJK KR", "Malgun Gothic", "Helvetica Neue", Arial, sans-serif; }
+  body:lang(zh-Hans) { font-family: "Manrope", -apple-system, "Hiragino Sans", "Noto Sans SC", "Noto Sans CJK SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif; }
+  body:lang(zh-Hant) { font-family: "Manrope", -apple-system, "Hiragino Sans", "Noto Sans TC", "Noto Sans CJK TC", "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif; }
+  /* 大見出しの長い 1 語(チェコ語の představili)も、280px の画面では語の中で折る。
+     300px より広い画面(iPhone はすべて)では効かせない —— ハイフンで語を割る形が、ほかの大見出しにも出てしまう */
+  @media (max-width: 300px) { h1 { hyphens: auto; overflow-wrap: break-word; } }
