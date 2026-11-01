@@ -19,17 +19,17 @@
  "f3_h": "Satu setelan. Lebih banyak tangan.",
  "f3_p": "Pindai kode QR untuk bergabung dari iPhone atau iPad lain. Kendalikan lampu yang sama dengan izin host.",
  "price_h": "Harga yang sederhana.",
- "price_sub": "Mulai gratis. Untuk lebih banyak lampu dan kanal, pilih Pro.<br>Bulan pertama Pro gratis.",
+ "price_sub": "Mulai gratis. Untuk lebih banyak kanal, pilih Pro.<br>Bulan pertama Pro gratis.",
  "free_per": "Selamanya",
  "free_li": [
-  "Per show: hingga 4 lampu dan 128 kanal DMX secara total",
+  "Hingga 128 kanal DMX di universe 1",
   "Semua fitur disertakan"
  ],
  "per_month": "/ bulan",
  "per_year": "/ tahun",
  "pro_first": "Bulan pertama gratis",
  "pro_li": [
-  "Lebih banyak lampu dan kanal daripada Free",
+  "Semua universe dan kanal",
   "Tanpa biaya tambahan untuk universe yang lebih banyak"
  ],
  "monthly_last": "Berhenti kapan saja",

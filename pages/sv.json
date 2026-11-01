@@ -19,17 +19,17 @@
  "f3_h": "En uppsättning. Fler händer.",
  "f3_p": "Skanna en QR-kod för att gå med från en annan iPhone eller iPad. Styr samma ljus med värdens tillstånd.",
  "price_h": "Enkla priser.",
- "price_sub": "Börja gratis. För fler armaturer och kanaler, gå över till Pro.<br>Den första månaden av Pro är gratis.",
+ "price_sub": "Börja gratis. För fler kanaler, gå över till Pro.<br>Den första månaden av Pro är gratis.",
  "free_per": "För alltid",
  "free_li": [
-  "Per show: upp till 4 armaturer och 128 DMX-kanaler sammanlagt",
+  "Upp till 128 DMX-kanaler i universum 1",
   "Alla funktioner ingår"
  ],
  "per_month": "/ månad",
  "per_year": "/ år",
  "pro_first": "Första månaden gratis",
  "pro_li": [
-  "Fler armaturer och kanaler än Free",
+  "Alla universum och kanaler",
   "Ingen extra kostnad för fler universum"
  ],
  "monthly_last": "Avsluta när du vill",

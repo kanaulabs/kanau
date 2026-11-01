@@ -19,17 +19,17 @@
  "f3_h": "Yksi kokoonpano. Useampi käsi.",
  "f3_p": "Skannaa QR-koodi ja liity toisesta iPhonesta tai iPadista. Ohjaa samoja valoja isännän luvalla.",
  "price_h": "Yksinkertaiset hinnat.",
- "price_sub": "Aloita ilmaiseksi. Lisää valaisimia ja kanavia varten siirry Pro-versioon.<br>Pro-version ensimmäinen kuukausi on ilmainen.",
+ "price_sub": "Aloita ilmaiseksi. Lisää kanavia varten siirry Pro-versioon.<br>Pro-version ensimmäinen kuukausi on ilmainen.",
  "free_per": "Ikuisesti",
  "free_li": [
-  "Showta kohden enintään 4 valaisinta ja 128 DMX-kanavaa yhteensä",
+  "Enintään 128 DMX-kanavaa universumissa 1",
   "Kaikki ominaisuudet mukana"
  ],
  "per_month": "/ kuukausi",
  "per_year": "/ vuosi",
  "pro_first": "Ensimmäinen kuukausi ilmaiseksi",
  "pro_li": [
-  "Enemmän valaisimia ja kanavia kuin Free-versiossa",
+  "Kaikki universumit ja kanavat",
   "Ei lisämaksua useammasta universumista"
  ],
  "monthly_last": "Peruutettavissa milloin tahansa",

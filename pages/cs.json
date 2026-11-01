@@ -19,17 +19,17 @@
  "f3_h": "Jedno nastavení. Více rukou.",
  "f3_p": "Naskenujte QR kód a připojte se z dalšího iPhonu nebo iPadu. Ovládejte stejná světla se svolením hostitele.",
  "price_h": "Jednoduchý ceník.",
- "price_sub": "Začněte zdarma. Chcete víc svítidel a kanálů? Přejděte na Pro.<br>První měsíc Pro je zdarma.",
+ "price_sub": "Začněte zdarma. Chcete víc kanálů? Přejděte na Pro.<br>První měsíc Pro je zdarma.",
  "free_per": "Navždy",
  "free_li": [
-  "V jedné show až 4 svítidla a 128 kanálů DMX dohromady",
+  "Až 128 kanálů DMX v universu 1",
   "Všechny funkce v ceně"
  ],
  "per_month": "/ měsíc",
  "per_year": "/ rok",
  "pro_first": "První měsíc zdarma",
  "pro_li": [
-  "Více svítidel a kanálů než ve Free",
+  "Všechna universa a kanály",
   "Žádný příplatek za další universa"
  ],
  "monthly_last": "Zrušit můžete kdykoli",

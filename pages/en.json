@@ -19,17 +19,17 @@
  "f3_h": "One setup. More hands.",
  "f3_p": "Scan a QR code to join from another iPhone or iPad. Control the same lights with the host’s permission.",
  "price_h": "Simple pricing.",
- "price_sub": "Start free. For more fixtures and channels, go Pro.<br>The first month of Pro is free.",
+ "price_sub": "Start free. For more channels, go Pro.<br>The first month of Pro is free.",
  "free_per": "Forever",
  "free_li": [
-  "Per show: up to 4 fixtures, 128 DMX channels in total",
+  "Up to 128 DMX channels in Universe 1",
   "All features included"
  ],
  "per_month": "/ month",
  "per_year": "/ year",
  "pro_first": "First month free",
  "pro_li": [
-  "More fixtures and channels than Free",
+  "Every universe and channel",
   "No extra charge for more universes"
  ],
  "monthly_last": "Cancel anytime",

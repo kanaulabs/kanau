@@ -19,17 +19,17 @@
  "f3_h": "Ett oppsett. Flere hender.",
  "f3_p": "Skann en QR-kode for å bli med fra en annen iPhone eller iPad. Styr de samme lysene med vertens tillatelse.",
  "price_h": "Enkle priser.",
- "price_sub": "Start gratis. For flere armaturer og kanaler, gå over til Pro.<br>Den første måneden av Pro er gratis.",
+ "price_sub": "Start gratis. For flere kanaler, gå over til Pro.<br>Den første måneden av Pro er gratis.",
  "free_per": "For alltid",
  "free_li": [
-  "Per show: opptil 4 armaturer og 128 DMX-kanaler til sammen",
+  "Opptil 128 DMX-kanaler i univers 1",
   "Alle funksjoner er med"
  ],
  "per_month": "/ måned",
  "per_year": "/ år",
  "pro_first": "Første måned gratis",
  "pro_li": [
-  "Flere armaturer og kanaler enn Free",
+  "Alle universer og kanaler",
   "Ingen ekstra kostnad for flere universer"
  ],
  "monthly_last": "Kan sies opp når som helst",

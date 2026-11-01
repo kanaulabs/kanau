@@ -19,17 +19,17 @@
  "f3_h": "Tek kurulum. Daha çok el.",
  "f3_p": "Başka bir iPhone veya iPad'den katılmak için bir QR kodu tarayın. Aynı ışıkları host'un izniyle denetleyin.",
  "price_h": "Sade fiyatlandırma.",
- "price_sub": "Ücretsiz başlayın. Daha fazla armatür ve kanal için Pro'ya geçin.<br>Pro'nun ilk ayı ücretsiz.",
+ "price_sub": "Ücretsiz başlayın. Daha fazla kanal için Pro'ya geçin.<br>Pro'nun ilk ayı ücretsiz.",
  "free_per": "Süresiz",
  "free_li": [
-  "Show başına en çok 4 armatür ve toplamda 128 DMX kanalı",
+  "Universe 1'de en çok 128 DMX kanalı",
   "Tüm özellikler dahil"
  ],
  "per_month": "/ ay",
  "per_year": "/ yıl",
  "pro_first": "İlk ay ücretsiz",
  "pro_li": [
-  "Free'den daha fazla armatür ve kanal",
+  "Tüm universe'ler ve kanallar",
   "Daha fazla universe için ek ücret yok"
  ],
  "monthly_last": "İstediğiniz zaman iptal edin",

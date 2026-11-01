@@ -19,17 +19,17 @@
  "f3_h": "Ein Aufbau. Mehr Hände.",
  "f3_p": "Mit einem Scan tritt ein weiteres iPhone oder iPad bei. Mit Erlaubnis des Hosts bedienen Sie dieselben Lichter.",
  "price_h": "Einfache Preise.",
- "price_sub": "Starten Sie kostenlos. Für mehr Scheinwerfer und Kanäle gibt es Pro.<br>Der erste Monat Pro ist kostenlos.",
+ "price_sub": "Starten Sie kostenlos. Für mehr Kanäle gibt es Pro.<br>Der erste Monat Pro ist kostenlos.",
  "free_per": "Für immer",
  "free_li": [
-  "Pro Show: bis zu 4 Scheinwerfer und 128 DMX-Kanäle insgesamt",
+  "Bis zu 128 DMX-Kanäle in Universe 1",
   "Alle Funktionen inklusive"
  ],
  "per_month": "/ Monat",
  "per_year": "/ Jahr",
  "pro_first": "Erster Monat gratis",
  "pro_li": [
-  "Mehr Scheinwerfer und Kanäle als Free",
+  "Alle Universes und Kanäle",
   "Keine Zusatzkosten für weitere Universes"
  ],
  "monthly_last": "Jederzeit kündbar",

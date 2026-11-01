@@ -19,17 +19,17 @@
  "f3_h": "Một thiết lập. Nhiều đôi tay.",
  "f3_p": "Quét mã QR để một iPhone hoặc iPad khác tham gia. Điều khiển cùng những chiếc đèn ấy khi máy chủ cho phép.",
  "price_h": "Giá đơn giản.",
- "price_sub": "Bắt đầu miễn phí. Cần thêm đèn và kênh thì lên Pro.<br>Tháng đầu tiên của Pro miễn phí.",
+ "price_sub": "Bắt đầu miễn phí. Cần thêm kênh thì lên Pro.<br>Tháng đầu tiên của Pro miễn phí.",
  "free_per": "Mãi mãi",
  "free_li": [
-  "Mỗi show tối đa 4 đèn và tổng cộng tối đa 128 kênh DMX",
+  "Tối đa 128 kênh DMX trong universe 1",
   "Có đủ mọi tính năng"
  ],
  "per_month": "/ tháng",
  "per_year": "/ năm",
  "pro_first": "Tháng đầu miễn phí",
  "pro_li": [
-  "Nhiều đèn và kênh hơn Free",
+  "Mọi universe và kênh",
   "Thêm universe không tốn thêm phí"
  ],
  "monthly_last": "Hủy bất cứ lúc nào",

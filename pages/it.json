@@ -19,17 +19,17 @@
  "f3_h": "Un solo setup. Più mani.",
  "f3_p": "Con una scansione si unisce un altro iPhone o iPad. Con il permesso dell’host, lavorate le stesse luci.",
  "price_h": "Prezzi semplici.",
- "price_sub": "Si parte gratis. Per più proiettori e canali, c’è Pro.<br>Il primo mese di Pro è gratuito.",
+ "price_sub": "Si parte gratis. Per più canali, c’è Pro.<br>Il primo mese di Pro è gratuito.",
  "free_per": "Per sempre",
  "free_li": [
-  "Per show: fino a 4 proiettori e 128 canali DMX in totale",
+  "Fino a 128 canali DMX nell’universo 1",
   "Tutte le funzioni incluse"
  ],
  "per_month": "/ mese",
  "per_year": "/ anno",
  "pro_first": "Primo mese gratis",
  "pro_li": [
-  "Più proiettori e canali rispetto a Free",
+  "Tutti gli universi e i canali",
   "Nessun costo extra per più universi"
  ],
  "monthly_last": "Disdica quando vuole",

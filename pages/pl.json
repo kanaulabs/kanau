@@ -19,17 +19,17 @@
  "f3_h": "Jedno ustawienie. Więcej rąk.",
  "f3_p": "Jeden skan i kolejny iPhone lub iPad dołącza. Za zgodą hosta prowadzicie te same światła.",
  "price_h": "Prosty cennik.",
- "price_sub": "Zacznij za darmo. Na więcej urządzeń i kanałów jest Pro.<br>Pierwszy miesiąc Pro jest darmowy.",
+ "price_sub": "Zacznij za darmo. Na więcej kanałów jest Pro.<br>Pierwszy miesiąc Pro jest darmowy.",
  "free_per": "Na zawsze",
  "free_li": [
-  "W jednym show: do 4 urządzeń i 128 kanałów DMX łącznie",
+  "Do 128 kanałów DMX w uniwersum 1",
   "Wszystkie funkcje w komplecie"
  ],
  "per_month": "/ mies.",
  "per_year": "/ rok",
  "pro_first": "Pierwszy miesiąc za darmo",
  "pro_li": [
-  "Więcej urządzeń i kanałów niż w Free",
+  "Wszystkie uniwersa i kanały",
   "Bez dopłaty za kolejne uniwersa"
  ],
  "monthly_last": "Zrezygnujesz w każdej chwili",
