@@ -138,6 +138,17 @@
   .made p + p { margin-top: 14px; }
   @media (max-width: 760px) { .conn { padding-top: 80px; } .conn h2 { font-size: 30px; } .status { margin-bottom: 20px; } }
   .conn h2, .conn p { text-wrap: balance; }
+  /* iPad の欄(2026-11-08)。見出しと文は「お手持ちの照明で。」と同じ組み、写真は横向きの iPad の縁 */
+  .tab { text-align: center; padding: 110px 0 0; }
+  .tab h2 { margin: 0 0 16px; font-weight: 300; font-size: 36px; line-height: 1.2; letter-spacing: -.025em; }
+  .tab p { margin: 0 auto 48px; color: #55555c; font-size: 16px; line-height: 1.75; max-width: 30em; }
+  .tab h2, .tab p { text-wrap: balance; }
+  .tablet { max-width: 860px; margin: 0 auto; border-radius: 30px; overflow: hidden; border: 12px solid #141417;
+    box-shadow: 0 40px 80px -20px rgba(27,27,31,.28), 0 10px 30px -10px rgba(27,27,31,.12); }
+  .tablet img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; }
+  [dir="rtl"] .tablet { direction: ltr; }
+  @media (max-width: 760px) { .tab { padding-top: 80px; } .tab h2 { font-size: 30px; } .tab p { margin-bottom: 36px; }
+    .tablet { border-radius: 16px; border-width: 6px; } }
   :lang(ja) .conn h2 { font-feature-settings: "palt"; letter-spacing: .03em; }
   /* 料金の箱は中身に押し広げられない(日本語の長い 1 句で 800px の画面からはみ出した)。箱の中の項目は字で折る */
   .plans { grid-template-columns: repeat(3, minmax(0, 1fr)); }
