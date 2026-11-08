@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kanau — Kanau Lite</title>
+<meta name="description" content="Bezplatná aplikace, která z iPhonu nebo iPadu udělá jedno světlo ovládané přes Art-Net nebo sACN. Jak začít, režimy a kanály, patchování na pultu.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kanau">
+<meta property="og:title" content="Kanau — Kanau Lite">
+<meta property="og:description" content="Bezplatná aplikace, která z iPhonu nebo iPadu udělá jedno světlo ovládané přes Art-Net nebo sACN. Jak začít, režimy a kanály, patchování na pultu.">
+<meta property="og:url" content="https://kanaulabs.app/lite-cs.html">
+<meta property="og:locale" content="cs">
+<meta property="og:image" content="https://kanaulabs.app/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="alternate" hreflang="en" href="https://kanaulabs.app/lite.html">
+<link rel="alternate" hreflang="ja" href="https://kanaulabs.app/lite-ja.html">
+<link rel="alternate" hreflang="de" href="https://kanaulabs.app/lite-de.html">
+<link rel="alternate" hreflang="fr" href="https://kanaulabs.app/lite-fr.html">
+<link rel="alternate" hreflang="ko" href="https://kanaulabs.app/lite-ko.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://kanaulabs.app/lite-zh-Hans.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://kanaulabs.app/lite-zh-Hant.html">
+<link rel="alternate" hreflang="es" href="https://kanaulabs.app/lite-es.html">
+<link rel="alternate" hreflang="pt-BR" href="https://kanaulabs.app/lite-pt-BR.html">
+<link rel="alternate" hreflang="it" href="https://kanaulabs.app/lite-it.html">
+<link rel="alternate" hreflang="nl" href="https://kanaulabs.app/lite-nl.html">
+<link rel="alternate" hreflang="pl" href="https://kanaulabs.app/lite-pl.html">
+<link rel="alternate" hreflang="cs" href="https://kanaulabs.app/lite-cs.html">
+<link rel="alternate" hreflang="sv" href="https://kanaulabs.app/lite-sv.html">
+<link rel="alternate" hreflang="da" href="https://kanaulabs.app/lite-da.html">
+<link rel="alternate" hreflang="no" href="https://kanaulabs.app/lite-no.html">
+<link rel="alternate" hreflang="fi" href="https://kanaulabs.app/lite-fi.html">
+<link rel="alternate" hreflang="tr" href="https://kanaulabs.app/lite-tr.html">
+<link rel="alternate" hreflang="id" href="https://kanaulabs.app/lite-id.html">
+<link rel="alternate" hreflang="th" href="https://kanaulabs.app/lite-th.html">
+<link rel="alternate" hreflang="ar" href="https://kanaulabs.app/lite-ar.html">
+<link rel="alternate" hreflang="hi" href="https://kanaulabs.app/lite-hi.html">
+<link rel="alternate" hreflang="vi" href="https://kanaulabs.app/lite-vi.html">
+<link rel="icon" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="theme.css?v=20261031f">
+</head>
+<body>
+
+<header class="sitenav"><a class="sitebrand" href="index-cs.html"><img src="img/icon.png" alt="" width="28" height="28">Kanau</a><div class="sitenavr"><div class="sitelinks"><a href="index-cs.html#pricing">Ceník</a><a href="fixtures-cs.html">Svítidla</a><a href="manual-cs.html">Příručka</a><a href="support-cs.html">Podpora</a></div><label class="langsel"><span class="vh">Jazyk</span><select onchange="location.href=this.value"><option value="lite.html" lang="en">English</option><option value="lite-ja.html" lang="ja">日本語</option><option value="lite-de.html" lang="de">Deutsch</option><option value="lite-fr.html" lang="fr">Français</option><option value="lite-ko.html" lang="ko">한국어</option><option value="lite-zh-Hans.html" lang="zh-Hans">简体中文</option><option value="lite-zh-Hant.html" lang="zh-Hant">繁體中文</option><option value="lite-es.html" lang="es">Español</option><option value="lite-pt-BR.html" lang="pt-BR">Português (Brasil)</option><option value="lite-it.html" lang="it">Italiano</option><option value="lite-nl.html" lang="nl">Nederlands</option><option value="lite-pl.html" lang="pl">Polski</option><option value="lite-cs.html" lang="cs" selected>Čeština</option><option value="lite-sv.html" lang="sv">Svenska</option><option value="lite-da.html" lang="da">Dansk</option><option value="lite-no.html" lang="no">Norsk</option><option value="lite-fi.html" lang="fi">Suomi</option><option value="lite-tr.html" lang="tr">Türkçe</option><option value="lite-id.html" lang="id">Bahasa Indonesia</option><option value="lite-th.html" lang="th">ไทย</option><option value="lite-ar.html" lang="ar">العربية</option><option value="lite-hi.html" lang="hi">हिन्दी</option><option value="lite-vi.html" lang="vi">Tiếng Việt</option></select></label></div></header>
+<div class="hero">
+  <h1>Kanau&nbsp;Lite</h1>
+  <p class="sub">K verzi Kanau&nbsp;Lite 1.0 (3)</p>
+</div>
+
+<p>Kanau&nbsp;Lite je bezplatná aplikace, která z iPhonu nebo iPadu udělá jedno světlo. Přijímá DMX, které posílá pult přes <span style="white-space:nowrap">Art-Net</span> nebo sACN, a ovládá barvu a jas obrazovky, světlo na zadní straně a vibrace. Je to LITE&nbsp;MODE z Kanau jako samostatná aplikace. Není třeba zakládat účet a nejsou tu žádné&nbsp;reklamy.</p>
+
+<h2>Co potřebujete</h2>
+<ul>
+  <li>iPhone nebo iPad s iOS 17 nebo&nbsp;novějším.</li>
+  <li>Pult, který posílá <span style="white-space:nowrap">Art-Net</span> nebo sACN. Kanau nebo jakýkoli jiný&nbsp;pult.</li>
+  <li>Stejnou síť jako pult, přes Wi-Fi nebo kabelem. Při prvním otevření aplikace požádá o přístup k místní síti. Povolte&nbsp;ho.</li>
+</ul>
+
+<h2>Jak začít</h2>
+<ol>
+  <li>Otevřete Kanau&nbsp;Lite. Ikona a název se na chvíli zobrazí. Klepnutím je přeskočíte. Zmizí také, jakmile dorazí&nbsp;DMX.</li>
+  <li>Černá obrazovka velkým písmem ukazuje čísla, na kterých toto zařízení poslouchá. To je obrazovka adresy. Klepněte kamkoli na ni a otevře se&nbsp;Settings.</li>
+  <li>Zvolte <span style="white-space:nowrap">Art-Net</span> nebo sACN. Potom nastavte Mode, Universe a&nbsp;Address.</li>
+  <li>Klepnutím na × vlevo nahoře zavřete&nbsp;Settings.</li>
+  <li>Z pultu pošlete DMX na toto universe a na tuto adresu. Jakmile dorazí, obrazovka se stane&nbsp;světlem.</li>
+</ol>
+
+<h2>Obrazovka adresy</h2>
+<p>Dokud nepřichází žádné DMX, černá obrazovka ukazuje tři řádky. Když je vedle sebe mnoho zařízení, každé číslo je čitelné&nbsp;zdálky.</p>
+<ul>
+  <li>Universe a adresa jantarově, například <code>U1 · 001</code>.</li>
+  <li>Režim, například <code>SCREEN RGB 10ch</code>.</li>
+  <li>Síť, tedy IP adresa tohoto zařízení a protokol, na kterém poslouchá, například <code class="q">Wi-Fi 192.168.1.24 · <span style="white-space:nowrap">Art-Net</span></code>. Bez sítě ukazuje <code>No network</code>.</li>
+</ul>
+<p>Pokud při zapnutém světle 6 sekund nedorazí žádné DMX, obrazovka adresy se vrátí. Zastaví se také světlo na zadní straně a&nbsp;vibrace.</p>
+
+<h2>Settings</h2>
+<table>
+  <thead><tr><th>Položka</th><th>Co nastavuje</th></tr></thead>
+  <tbody>
+    <tr><td><span style="white-space:nowrap">Art-Net</span> / sACN</td><td>Klepněte na jedno z obou. Zvolené se zbarví jantarově.</td></tr>
+    <tr><td>Mode</td><td>Ukazuje aktuální režim, například SCREEN RGB 10ch. Klepnutím na něj vyberete některý z režimů níže (viz Režimy a kanály). Na zařízení bez světla na zadní straně není BACK LIGHT ONLY v seznamu.</td></tr>
+    <tr><td>Universe</td><td>0–32767 pro <span style="white-space:nowrap">Art-Net</span>, 1–63999 pro sACN.</td></tr>
+    <tr><td>Address</td><td>Od 1 po nejvyšší adresu, na které se kanály režimu ještě vejdou do 512.</td></tr>
+  </tbody>
+</table>
+<p>Pro Universe a Address napište číslo nebo použijte − a +. Jantarový řádek pod nimi ukazuje adresy, které zabírá obrazovka, světlo na zadní straně a vibrace, například <code class="q">Screen 001–008 · Back Light 009 · Vibration 010</code>.</p>
+<p>Pod tím je Channels. Při každém otevření Settings je sbalené a ukazuje jen počet kanálů, například <code>10ch</code>. Klepnutím na nadpis otevřete seznam kanálů aktuálního režimu s jejich adresou, názvem a významem hodnot. Dva řádky o patchování v Kanau a na jiných pultech se ukazují i při sbalení. Řádek funkce, kterou toto zařízení nemá (světlo na zadní straně nebo vibrace), je ztlumený a začíná <code>Not on this device</code>. Tento řádek přesto zabírá svou adresu, počítejte ho proto i&nbsp;na&nbsp;pultu.</p>
+<p>Na konci Settings jsou verze Kanau&nbsp;Lite, Made by Kanau Labs a odkaz na kanaulabs.app. Nastavení se ukládá a při příštím otevření aplikace tam&nbsp;stále&nbsp;je.</p>
+
+<h2>Když světlo svítí</h2>
+<p>Obrazovka ukazuje barvu, kterou přijímá. Dokud je Kanau&nbsp;Lite otevřená, obrazovka svítí naplno a sama se&nbsp;nezamyká.</p>
+<p>Chcete-li otevřít Settings, když světlo svítí, posuňte nenápadný přepínač vpravo nahoře úplně doprava a klepněte na ×, které se objeví. × po 3 sekundách&nbsp;zmizí.</p>
+<p>Kanau&nbsp;Lite přijímá DMX, jen dokud je aplikace otevřená. Když přejdete na plochu nebo zařízení zamknete, přestane přijímat, zastaví světlo na zadní straně a vibrace a vrátí jas obrazovky na původní hodnotu. Znovu aplikaci otevřete a bude zase&nbsp;přijímat.</p>
+
+<h2>Režimy a kanály</h2>
+<p>Je 9 režimů. Výchozí je SCREEN&nbsp;RGB&nbsp;10ch.</p>
+<table>
+  <thead><tr><th>Mode</th><th>Obrazovka</th></tr></thead>
+  <tbody>
+    <tr><td>BACK LIGHT ONLY 1ch</td><td>Používá jen světlo na zadní straně. Obrazovka zůstává tmavá.</td></tr>
+    <tr><td>SCREEN RGB 10ch<br>SCREEN HUE SAT 9ch</td><td>Celá obrazovka má jednu barvu.</td></tr>
+    <tr><td>SCREEN 2 CELLS RGB 18ch<br>SCREEN 2 CELLS HUE SAT 16ch</td><td>Obrazovka je rozdělená na 2 části.</td></tr>
+    <tr><td>SCREEN 4 CELLS RGB 32ch<br>SCREEN 4 CELLS HUE SAT 28ch</td><td>Obrazovka je rozdělená na 4 části.</td></tr>
+    <tr><td>SCREEN 8 CELLS RGB 60ch<br>SCREEN 8 CELLS HUE SAT 52ch</td><td>Obrazovka je rozdělená na 8 částí.</td></tr>
+  </tbody>
+</table>
+<p>Kromě BACK LIGHT ONLY začíná každý režim Screen Dimmer a končí Function, Back Light a Vibration. SCREEN RGB 10ch má tyto kanály v tomto pořadí. Hodnoty jsou napsané tak, jak se zobrazují v Channels v&nbsp;Settings.</p>
+<table>
+  <thead><tr><th>#</th><th>Název</th><th>Hodnoty</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td>Screen Dimmer</td><td>0–100%</td></tr>
+    <tr><td>2</td><td>CCT</td><td>1,750–9,910 K · Home 117 = 5,494 K</td></tr>
+    <tr><td>3</td><td>G/M</td><td>0–4 No effect · 5 Magenta → 255 Green · Home 128</td></tr>
+    <tr><td>4</td><td>Crossfade</td><td>0 White → 255 Color · Home 0</td></tr>
+    <tr><td>5</td><td>Red</td><td>0–100%</td></tr>
+    <tr><td>6</td><td>Green</td><td>0–100%</td></tr>
+    <tr><td>7</td><td>Blue</td><td>0–100%</td></tr>
+    <tr><td>8</td><td>Function</td><td>0–127 Off · 128–255 Proximity · Home 0</td></tr>
+    <tr><td>9</td><td>Back Light</td><td>0–100%</td></tr>
+    <tr><td>10</td><td>Vibration</td><td>0–100%</td></tr>
+  </tbody>
+</table>
+<p>Režimy HUE SAT mají místo Red, Green a Blue kanály Hue (0–360°) a Saturation. V režimech CELLS následují po Screen Dimmer pro každou část obrazovky Dimmer, CCT, G/M, Crossfade a barva. Části jsou číslované od levého horního rohu. Při 8 částech má obrazovka na výšku 2 sloupce a 4 řádky a obrazovka na šířku 4 sloupce a&nbsp;2&nbsp;řádky.</p>
+<p>Crossfade nastavuje poměr bílé a barvy: 0 je bílá a 255 je barva. Bílá pochází z CCT a G/M. Dokud je Crossfade na 0, zvyšování Red, Green nebo Blue nechává obrazovku bílou. Screen Dimmer ztlumí jen obrazovku a neovlivní světlo na zadní straně. Nastavení Function na 128 nebo víc zvolí Proximity, které používá senzor přiblížení zařízení.</p>
+
+<h2>Patchování na pultu</h2>
+<p>V Kanau napatchujte toto zařízení jako Kanau Screen se stejným režimem (<a href="manual-cs.html#patch">kapitola 03 příručky</a>).</p>
+<p>Na jiných pultech vytvořte svítidlo s kanály ve stejném pořadí jako Channels v Settings a napatchujte ho na stejnou adresu. Každý kanál je&nbsp;8bitový.</p>
+<p>Přes <span style="white-space:nowrap">Art-Net</span> aplikace odpovídá na vyhledávání nodů (ArtPoll) jménem, například <code class="q">Kanau Screen · U1 · 001</code>. Na pultu, který umí nody vypsat, hledejte toto jméno s jeho universe a&nbsp;adresou.</p>
+
+<h2>Rozdíly oproti LITE&nbsp;MODE v Kanau</h2>
+<p>Kanau&nbsp;Lite přijímá stejným způsobem a má stejné režimy jako LITE&nbsp;MODE v Kanau (<a href="manual-cs.html#output--12">kapitola 02 příručky</a>). Tři věci jsou&nbsp;jiné.</p>
+<ul>
+  <li>Než dorazí DMX, LITE&nbsp;MODE ukazuje <code>WAITING</code>. Kanau&nbsp;Lite ukazuje obrazovku&nbsp;adresy.</li>
+  <li>Když DMX přestane, LITE&nbsp;MODE drží poslední barvu. Kanau&nbsp;Lite se po 6 sekundách vrátí na obrazovku&nbsp;adresy.</li>
+  <li>× z přepínače vpravo nahoře v Kanau opouští LITE&nbsp;MODE. V Kanau&nbsp;Lite otevře&nbsp;Settings.</li>
+</ul>
+
+<h2>Kontakt</h2>
+<p>Pište na <a href="mailto:info@kanaulabs.app">info@kanaulabs.app</a> v libovolném jazyce. Při hlášení chyby uveďte verzi Kanau&nbsp;Lite, která je na konci Settings, použitý režim a svůj pult a&nbsp;protokol.</p>
+
+<footer class="sitefoot"><div>© 2026 Kanau Labs LLC</div><div class="sitefootl"><a href="privacy-cs.html">Zásady ochrany osobních údajů</a><a href="https://www.instagram.com/kanaulabs/" rel="noopener" aria-label="Kanau on Instagram (@kanaulabs)">Instagram</a><a href="mailto:info@kanaulabs.app">info@kanaulabs.app</a></div></footer>
+<script src="jbreak.js?v=20261031f"></script>
+</body>
+</html>
