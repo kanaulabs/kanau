@@ -49,7 +49,7 @@
 <header class="sitenav"><a class="sitebrand" href="index-hi.html"><img src="img/icon.png" alt="" width="28" height="28">Kanau</a><div class="sitenavr"><div class="sitelinks"><a href="index-hi.html#pricing">कीमत</a><a href="fixtures-hi.html">फ़िक्स्चर</a><a href="manual-hi.html">मैनुअल</a><a href="support-hi.html">सहायता</a></div><label class="langsel"><span class="vh">भाषा</span><select onchange="location.href=this.value"><option value="lite.html" lang="en">English</option><option value="lite-ja.html" lang="ja">日本語</option><option value="lite-de.html" lang="de">Deutsch</option><option value="lite-fr.html" lang="fr">Français</option><option value="lite-ko.html" lang="ko">한국어</option><option value="lite-zh-Hans.html" lang="zh-Hans">简体中文</option><option value="lite-zh-Hant.html" lang="zh-Hant">繁體中文</option><option value="lite-es.html" lang="es">Español</option><option value="lite-pt-BR.html" lang="pt-BR">Português (Brasil)</option><option value="lite-it.html" lang="it">Italiano</option><option value="lite-nl.html" lang="nl">Nederlands</option><option value="lite-pl.html" lang="pl">Polski</option><option value="lite-cs.html" lang="cs">Čeština</option><option value="lite-sv.html" lang="sv">Svenska</option><option value="lite-da.html" lang="da">Dansk</option><option value="lite-no.html" lang="no">Norsk</option><option value="lite-fi.html" lang="fi">Suomi</option><option value="lite-tr.html" lang="tr">Türkçe</option><option value="lite-id.html" lang="id">Bahasa Indonesia</option><option value="lite-th.html" lang="th">ไทย</option><option value="lite-ar.html" lang="ar">العربية</option><option value="lite-hi.html" lang="hi" selected>हिन्दी</option><option value="lite-vi.html" lang="vi">Tiếng Việt</option></select></label></div></header>
 <div class="hero">
   <h1>Kanau&nbsp;Lite</h1>
-  <p class="sub">Kanau&nbsp;Lite 1.0 (5) के अनुसार</p>
+  <p class="sub">Kanau&nbsp;Lite 1.0 (6) के अनुसार</p>
 </div>
 
 <p>Kanau&nbsp;Lite एक मुफ़्त ऐप है, जो iPhone या iPad को एक लाइट बना देता है। यह कंसोल से <span style="white-space:nowrap">Art-Net</span> या sACN पर भेजा गया DMX लेता है और स्क्रीन, पीछे की लाइट और कंपन का रंग और चमक चलाता है। FX &amp; MEDIA और ULTIMATE मोड में स्क्रीन पर चलते हुए पैटर्न और आपकी अपनी तस्वीरें और वीडियो भी दिखाए जा सकते हैं। खाता बनाने की ज़रूरत नहीं है और कोई विज्ञापन&nbsp;नहीं&nbsp;है।</p>
@@ -65,7 +65,7 @@
 <ol>
   <li>Kanau&nbsp;Lite खोलें। आइकन और नाम थोड़ी देर दिखते हैं। छोड़ने के लिए&nbsp;टैप&nbsp;करें।</li>
   <li>Settings खुलता है। Kanau&nbsp;Lite हर बार खुलने पर सबसे पहले यही&nbsp;आता&nbsp;है।</li>
-  <li><span style="white-space:nowrap">Art-Net</span> या sACN चुनें। फिर Mode, Universe और Address&nbsp;तय&nbsp;करें।</li>
+  <li>पहले Mode चुनें, फिर <span style="white-space:nowrap">Art-Net</span> या sACN चुनें, और Universe तथा Address&nbsp;तय&nbsp;करें।</li>
   <li>नीचे START&nbsp;दबाएँ।</li>
   <li>कंसोल से उसी यूनिवर्स और पते पर DMX भेजें। जब वह पहुँचता है, स्क्रीन लाइट बन&nbsp;जाती&nbsp;है।</li>
 </ol>
@@ -75,7 +75,7 @@
 <p>START के बाद, जब तक DMX नहीं आ रहा, काली स्क्रीन बड़े अक्षरों में तीन पंक्तियाँ दिखाती है। यही पता स्क्रीन है। कई उपकरण साथ-साथ हों तो हर नंबर दूर से पढ़ा जा&nbsp;सकता&nbsp;है।</p>
 <ul>
   <li>एम्बर रंग में यूनिवर्स और पता, जैसे <code>U1 · 001</code>।</li>
-  <li>मोड, जैसे <code>SCREEN RGB 10ch</code>।</li>
+  <li>मोड, जैसे <code>2: SCREEN RGB 9ch</code>।</li>
   <li>नेटवर्क, यानी इस उपकरण का IP पता और वह प्रोटोकॉल जो यह सुनता है, जैसे <code class="q">Wi-Fi 192.168.1.24 · <span style="white-space:nowrap">Art-Net</span></code>। नेटवर्क न हो तो <code>No network</code> दिखता&nbsp;है।</li>
 </ul>
 <p>Settings खोलने के लिए पता स्क्रीन पर टैप करें। लाइट जलते समय अगर 6 सेकंड तक DMX न आए, तो पता स्क्रीन लौट आती है। पीछे की लाइट और कंपन भी रुक&nbsp;जाते&nbsp;हैं।</p>
@@ -85,17 +85,19 @@
 <table>
   <thead><tr><th>मद</th><th>क्या करती है</th></tr></thead>
   <tbody>
-    <tr><td>Language</td><td>System, या 15 भाषाओं में से एक। चुनते ही व्याख्याएँ बदल जाती हैं। मदों और बटनों के नाम अंग्रेज़ी में ही रहते हैं। जब तक आप नहीं चुनते, Kanau&nbsp;Lite अंग्रेज़ी में रहता है।</td></tr>
-    <tr><td>Guide</td><td>8 चरणों की एक छोटी गाइड खोलती है। वह ऐप के अंदर ही है, इसलिए इंटरनेट के बिना भी चलती है।</td></tr>
+    <tr><td>Mode</td><td>मौजूदा मोड दिखाता है, जैसे 2: SCREEN RGB 9ch। उस पर टैप करके नीचे दिए मोड में से चुनें (मोड और चैनल देखें)। शुरू का अंक मोड का नंबर है। जिस उपकरण में पीछे की लाइट नहीं है, उस पर 1: BACK LIGHT ONLY सूची में नहीं दिखता, पर बाकी मोड अपने नंबर रखते हैं।</td></tr>
     <tr><td><span style="white-space:nowrap">Art-Net</span> / sACN</td><td>दोनों में से एक पर टैप करें। जिसे आप चुनते हैं वह एम्बर हो जाता है।</td></tr>
-    <tr><td>Mode</td><td>मौजूदा मोड दिखाता है, जैसे SCREEN RGB 10ch। उस पर टैप करके नीचे दिए मोड में से चुनें (मोड और चैनल देखें)। जिस उपकरण में पीछे की लाइट नहीं है, उस पर BACK LIGHT ONLY सूची में नहीं दिखता।</td></tr>
     <tr><td>Universe</td><td><span style="white-space:nowrap">Art-Net</span> के लिए 0–32767, sACN के लिए 1–63999।</td></tr>
     <tr><td>Address</td><td>1 से लेकर उस सबसे ऊँचे पते तक, जहाँ मोड के चैनल अब भी 512 के भीतर आते हैं।</td></tr>
+    <tr><td>Channels</td><td>मौजूदा मोड के चैनल (नीचे देखें)।</td></tr>
+    <tr><td>PROXIMITY</td><td>चालू करने पर, जब तक आप इस उपकरण को कान से लगाए रखते हैं, स्क्रीन बुझी रहती है। पीछे की लाइट और कंपन चलते रहते हैं। यह शुरू में बंद रहता है। जिस उपकरण में निकटता सेंसर नहीं है, जैसे iPad, उस पर यह नहीं दिखता।</td></tr>
     <tr><td>Media</td><td>दिखाती है कि 51 नंबरों में से कितनों में तस्वीर या वीडियो है, जैसे <code>3 / 51</code>। शेल्फ़ खोलने के लिए इस पर टैप करें (Media देखें)।</td></tr>
+    <tr><td>Language</td><td>System, या 15 भाषाओं में से एक। चुनते ही व्याख्याएँ बदल जाती हैं। मदों और बटनों के नाम अंग्रेज़ी में ही रहते हैं। जब तक आप नहीं चुनते, Kanau&nbsp;Lite अंग्रेज़ी में रहता है।</td></tr>
+    <tr><td>Guide</td><td>8 चरणों की एक छोटी गाइड खोलती है। वह ऐप के अंदर ही है, इसलिए इंटरनेट के बिना भी चलती है।</td></tr>
   </tbody>
 </table>
-<p>Universe और Address के लिए नंबर टाइप करें, या − और + का इस्तेमाल करें। नीचे की एम्बर पंक्ति स्क्रीन, पीछे की लाइट और कंपन के पते दिखाती है, जैसे <code class="q">Screen 001–008 · Back Light 009 · Vibration 010</code>।</p>
-<p>इसके बाद Channels है। Settings खोलने पर वह हर बार बंद रहता है और सिर्फ़ चैनलों की संख्या दिखाता है, जैसे <code>10ch</code>। शीर्षक पर टैप करने से मौजूदा मोड के चैनल उनके पते, नाम और मानों के मतलब के साथ खुल जाते हैं। Kanau और दूसरे कंसोल पर पैच करने की दो पंक्तियाँ बंद रहने पर भी दिखती हैं। जो सुविधा इस उपकरण में नहीं है (पीछे की लाइट या कंपन), उसकी पंक्ति धुँधली दिखती है और <code>Not on this device</code> से शुरू होती है। वह पंक्ति फिर भी अपना पता लेती है, इसलिए कंसोल पर भी उसे&nbsp;गिनें।</p>
+<p>Universe और Address के लिए नंबर टाइप करें, या − और + का इस्तेमाल करें। नीचे की एम्बर पंक्ति स्क्रीन, पीछे की लाइट और कंपन के पते दिखाती है, जैसे <code class="q">Screen 001–007 · Back Light 008 · Vibration 009</code>।</p>
+<p>आगे Channels आता है। Settings खोलने पर वह हर बार बंद रहता है और सिर्फ़ चैनलों की संख्या दिखाता है, जैसे <code>9ch</code>। शीर्षक पर टैप करने से मौजूदा मोड के चैनल उनके पते, नाम और मानों के मतलब के साथ खुल जाते हैं। Kanau और दूसरे कंसोल पर पैच करने की दो पंक्तियाँ बंद रहने पर भी दिखती हैं। जो सुविधा इस उपकरण में नहीं है (पीछे की लाइट या कंपन), उसकी पंक्ति धुँधली दिखती है और <code>Not on this device</code> से शुरू होती है। वह पंक्ति फिर भी अपना पता लेती है, इसलिए कंसोल पर भी उसे&nbsp;गिनें।</p>
 <p>Settings के अंत में Kanau&nbsp;Lite का वर्शन, Made by Kanau Labs, kanaulabs.app का लिंक, Privacy Policy, Contact Support, <span style="white-space:nowrap">Art-Net</span> का श्रेय और कॉपीराइट हैं। सेटिंग सहेजी जाती हैं और ऐप अगली बार खोलने पर भी वहीं&nbsp;रहती&nbsp;हैं।</p>
 
 <h2>जब लाइट जल रही हो</h2>
@@ -104,23 +106,23 @@
 <p>Kanau&nbsp;Lite DMX तभी लेता है जब ऐप खुला हो। अगर आप Home पर चले जाएँ या उपकरण लॉक कर दें, तो यह लेना बंद कर देता है, पीछे की लाइट और कंपन रोक देता है, और स्क्रीन की चमक पहले जैसी कर देता है। फिर से लेने के लिए इसे दोबारा&nbsp;खोलें।</p>
 
 <h2>मोड और चैनल</h2>
-<p>कुल 19 मोड हैं। शुरुआती मोड SCREEN RGB&nbsp;10ch&nbsp;है।</p>
+<p>कुल 19 मोड हैं। शुरुआती मोड 2: SCREEN RGB 9ch है। हर नाम की शुरुआत का अंक मोड का नंबर है और आख़िर का अंक चैनलों की&nbsp;संख्या।</p>
 <table>
   <thead><tr><th>मोड</th><th>स्क्रीन</th></tr></thead>
   <tbody>
-    <tr><td>BACK LIGHT ONLY 1ch</td><td>सिर्फ़ पीछे की लाइट इस्तेमाल करता है। स्क्रीन अँधेरी रहती है।</td></tr>
-    <tr><td>SCREEN RGB 10ch<br>SCREEN HUE SAT 9ch</td><td>पूरी स्क्रीन एक रंग की होती है।</td></tr>
-    <tr><td>SCREEN 2 CELLS RGB 18ch<br>SCREEN 2 CELLS HUE SAT 16ch</td><td>स्क्रीन 2 हिस्सों में बँटी होती है।</td></tr>
-    <tr><td>SCREEN 4 CELLS RGB 32ch<br>SCREEN 4 CELLS HUE SAT 28ch</td><td>स्क्रीन 4 हिस्सों में बँटी होती है।</td></tr>
-    <tr><td>SCREEN 8 CELLS RGB 60ch<br>SCREEN 8 CELLS HUE SAT 52ch</td><td>स्क्रीन 8 हिस्सों में बँटी होती है।</td></tr>
-    <tr><td>SCREEN 4 STRIPS RGB 32ch<br>SCREEN 4 STRIPS HUE SAT 28ch</td><td>स्क्रीन अपने लंबे किनारे के साथ 4 पट्टियों में बँटी होती है।</td></tr>
-    <tr><td>SCREEN 8 STRIPS RGB 60ch<br>SCREEN 8 STRIPS HUE SAT 52ch</td><td>स्क्रीन अपने लंबे किनारे के साथ 8 पट्टियों में बँटी होती है।</td></tr>
-    <tr><td>SCREEN FX &amp; MEDIA RGB 19ch<br>SCREEN FX &amp; MEDIA HUE SAT 18ch</td><td>पूरी स्क्रीन, पैटर्न, तस्वीरों और वीडियो के साथ (FX &amp; MEDIA देखें)।</td></tr>
-    <tr><td>SCREEN COOKIE RGB 63ch<br>SCREEN COOKIE HUE SAT 55ch</td><td>स्क्रीन 8 रंगों वाले अनियमित, चितकबरे हिस्सों में बँटी होती है (COOKIE और ULTIMATE देखें)।</td></tr>
-    <tr><td>ULTIMATE RGB 73ch<br>ULTIMATE HUE SAT 65ch</td><td>चुनता है कि स्क्रीन कैसे बँटे, और पैटर्न, तस्वीरें और वीडियो दिखाता है (COOKIE और ULTIMATE देखें)।</td></tr>
+    <tr><td>1: BACK LIGHT ONLY 1ch</td><td>सिर्फ़ पीछे की लाइट इस्तेमाल करता है। स्क्रीन अँधेरी रहती है।</td></tr>
+    <tr><td>2: SCREEN RGB 9ch<br>3: SCREEN HUE SAT 8ch</td><td>पूरी स्क्रीन एक रंग की होती है।</td></tr>
+    <tr><td>4: SCREEN 2 CELLS RGB 17ch<br>5: SCREEN 2 CELLS HUE SAT 15ch</td><td>स्क्रीन 2 हिस्सों में बँटी होती है।</td></tr>
+    <tr><td>6: SCREEN 4 CELLS RGB 31ch<br>7: SCREEN 4 CELLS HUE SAT 27ch</td><td>स्क्रीन 4 हिस्सों में बँटी होती है।</td></tr>
+    <tr><td>8: SCREEN 8 CELLS RGB 59ch<br>9: SCREEN 8 CELLS HUE SAT 51ch</td><td>स्क्रीन 8 हिस्सों में बँटी होती है।</td></tr>
+    <tr><td>10: SCREEN 4 STRIPS RGB 31ch<br>11: SCREEN 4 STRIPS HUE SAT 27ch</td><td>स्क्रीन अपने लंबे किनारे के साथ 4 पट्टियों में बँटी होती है।</td></tr>
+    <tr><td>12: SCREEN 8 STRIPS RGB 59ch<br>13: SCREEN 8 STRIPS HUE SAT 51ch</td><td>स्क्रीन अपने लंबे किनारे के साथ 8 पट्टियों में बँटी होती है।</td></tr>
+    <tr><td>14: SCREEN FX &amp; MEDIA RGB 18ch<br>15: SCREEN FX &amp; MEDIA HUE SAT 17ch</td><td>पूरी स्क्रीन, पैटर्न, तस्वीरों और वीडियो के साथ (FX &amp; MEDIA देखें)।</td></tr>
+    <tr><td>16: SCREEN COOKIE RGB 62ch<br>17: SCREEN COOKIE HUE SAT 54ch</td><td>स्क्रीन 8 रंगों वाले अनियमित, चितकबरे हिस्सों में बँटी होती है (COOKIE और ULTIMATE देखें)।</td></tr>
+    <tr><td>18: ULTIMATE RGB 72ch<br>19: ULTIMATE HUE SAT 64ch</td><td>चुनता है कि स्क्रीन कैसे बँटे, और पैटर्न, तस्वीरें और वीडियो दिखाता है (COOKIE और ULTIMATE देखें)।</td></tr>
   </tbody>
 </table>
-<p>BACK LIGHT ONLY को छोड़कर हर मोड Screen Dimmer से शुरू होता है और Function, Back Light तथा Vibration पर ख़त्म होता है। SCREEN RGB 10ch में ये चैनल इसी क्रम में हैं। मान वैसे ही लिखे हैं जैसे वे Settings के Channels में दिखते&nbsp;हैं।</p>
+<p>BACK LIGHT ONLY को छोड़कर हर मोड Screen Dimmer से शुरू होता है और Back Light तथा Vibration पर ख़त्म होता है। 2: SCREEN RGB 9ch में ये चैनल इसी क्रम में हैं। मान वैसे ही लिखे हैं जैसे वे Settings के Channels में दिखते&nbsp;हैं।</p>
 <table>
   <thead><tr><th>#</th><th>नाम</th><th>मान</th></tr></thead>
   <tbody>
@@ -131,16 +133,15 @@
     <tr><td>5</td><td>Red</td><td>0–100%</td></tr>
     <tr><td>6</td><td>Green</td><td>0–100%</td></tr>
     <tr><td>7</td><td>Blue</td><td>0–100%</td></tr>
-    <tr><td>8</td><td>Function</td><td>0–127 Off · 128–255 Proximity · Home 0</td></tr>
-    <tr><td>9</td><td>Back Light</td><td>0–100%</td></tr>
-    <tr><td>10</td><td>Vibration</td><td>0–100%</td></tr>
+    <tr><td>8</td><td>Back Light</td><td>0–100%</td></tr>
+    <tr><td>9</td><td>Vibration</td><td>0–100%</td></tr>
   </tbody>
 </table>
 <p>HUE SAT मोड में Red, Green और Blue की जगह Hue (0–360°) और Saturation हैं। CELLS और STRIPS मोड में Screen Dimmer के बाद स्क्रीन के हर हिस्से के लिए Dimmer, CCT, G/M, Crossfade और रंग आते हैं। CELLS ऊपर बाईं ओर से गिने जाते हैं। 8 सेल में सीधी खड़ी स्क्रीन पर 2 कॉलम और 4 पंक्तियाँ होती हैं, और आड़ी स्क्रीन पर 4 कॉलम और 2 पंक्तियाँ। STRIPS बराबर चौड़ाई की पट्टियाँ हैं, जो स्क्रीन के लंबे किनारे के साथ रखी जाती हैं। खड़ी स्क्रीन पर पट्टियाँ आड़ी होती हैं और ऊपर से नीचे गिनी जाती हैं, और आड़ी स्क्रीन पर पट्टियाँ खड़ी होती हैं और बाएँ से दाएँ गिनी जाती हैं। चौकोर स्क्रीन ऊपर से नीचे&nbsp;बँटती&nbsp;है।</p>
-<p>Crossfade सफ़ेद और रंग का मेल तय करता है: 0 सफ़ेद है और 255 रंग। सफ़ेद CCT और G/M से आता है। जब तक Crossfade 0 पर है, Red, Green या Blue बढ़ाने पर भी स्क्रीन सफ़ेद रहती है। Screen Dimmer सिर्फ़ स्क्रीन को मंद करता है और पीछे की लाइट पर असर नहीं डालता। Function को 128 या उससे ऊपर करने पर Proximity चुना जाता है, जो उपकरण के निकटता सेंसर का इस्तेमाल&nbsp;करता&nbsp;है।</p>
+<p>Crossfade सफ़ेद और रंग का मेल तय करता है: 0 सफ़ेद है और 255 रंग। सफ़ेद CCT और G/M से आता है। जब तक Crossfade 0 पर है, Red, Green या Blue बढ़ाने पर भी स्क्रीन सफ़ेद रहती है। Screen Dimmer सिर्फ़ स्क्रीन को मंद करता है और पीछे की लाइट पर असर नहीं&nbsp;डालता।</p>
 
 <h2>FX &amp; MEDIA</h2>
-<p>SCREEN FX &amp; MEDIA RGB 19ch में ये चैनल इसी क्रम में हैं। SCREEN FX &amp; MEDIA HUE SAT 18ch में Red, Green और Blue की जगह Hue और Saturation&nbsp;हैं।</p>
+<p>14: SCREEN FX &amp; MEDIA RGB 18ch में ये चैनल इसी क्रम में हैं। 15: SCREEN FX &amp; MEDIA HUE SAT 17ch में Red, Green और Blue की जगह Hue और Saturation&nbsp;हैं।</p>
 <table>
   <thead><tr><th>#</th><th>नाम</th><th>मान</th></tr></thead>
   <tbody>
@@ -152,7 +153,7 @@
     <tr><td>6</td><td>Green</td><td>0–100%</td></tr>
     <tr><td>7</td><td>Blue</td><td>0–100%</td></tr>
     <tr><td>8</td><td>Color Macro</td><td>0–15 Off · 16–255 15 colors, 16 each · Home 0</td></tr>
-    <tr><td>9</td><td>Content</td><td>0 SOLID · 32 GLINT · 64 SWEEP · 96 KALEIDO · 128 WATER · 160 FIRE · 192 VIDEO GLOW · 224 CATCHLIGHT · Home 0</td></tr>
+    <tr><td>9</td><td>Content</td><td>0 SOLID · 32 GLINT · 64 SWEEP · 96 KALEIDO · 128 WATER · 160 FIRE · 192 VIDEO GLOW · 224 AURORA · Home 0</td></tr>
     <tr><td>10</td><td>Speed</td><td>0 Slow · 128 Normal · 255 Fast · Home 128</td></tr>
     <tr><td>11</td><td>Amount</td><td>0–255 · Home 128</td></tr>
     <tr><td>12</td><td>Size</td><td>0–255 · Home 128</td></tr>
@@ -160,18 +161,17 @@
     <tr><td>14</td><td>Media</td><td>0 Off · 1–5 = 1 · 6–10 = 2 … 251–255 = 51 · Home 0</td></tr>
     <tr><td>15</td><td>Playback</td><td>0–85 Play · 86–170 Pause · 171–255 Restart · Home 0</td></tr>
     <tr><td>16</td><td>Color Temp</td><td>0 Warm · 128 As is · 255 Cool · Home 128</td></tr>
-    <tr><td>17</td><td>Function</td><td>0–127 Off · 128–255 Proximity · Home 0</td></tr>
-    <tr><td>18</td><td>Back Light</td><td>0–100%</td></tr>
-    <tr><td>19</td><td>Vibration</td><td>0–100%</td></tr>
+    <tr><td>17</td><td>Back Light</td><td>0–100%</td></tr>
+    <tr><td>18</td><td>Vibration</td><td>0–100%</td></tr>
   </tbody>
 </table>
 <p>स्क्रीन काले से शुरू होकर बनती है: पहले Media का चुना हुआ चित्र या वीडियो, फिर उसके ऊपर Content का चुना हुआ पैटर्न। Mix तय करता है कि हर एक कितना दिखे: 0 पर सिर्फ़ चित्र या वीडियो दिखता है, और 255 पर सिर्फ़ पैटर्न। जब Media 0 हो, या उस नंबर में कुछ न हो, तो सिर्फ़ पैटर्न&nbsp;दिखता&nbsp;है।</p>
-<p>SOLID, यानी पहला Content, स्क्रीन को रंग से भर देता है। Home मानों पर FX &amp; MEDIA वही रोशनी देता है जो SCREEN RGB देता है। बाकी सात चलते हुए पैटर्न हैं। Speed तय करता है कि वे कितनी तेज़ चलें, और Amount और Size हर पैटर्न का रूप बदलते हैं। पैटर्न अपना रंग स्क्रीन के रंग से लेता है। जब Color Macro 0 न हो, तो उसकी जगह मैक्रो का रंग इस्तेमाल होता है। 16 से आगे हर 16 मान अगला रंग चुनते हैं: 3200 K, 4300 K, 5600 K, Red, Orange, Amber, Yellow, Green, Cyan, Sky Blue, Blue, Deep Blue, Lavender, Magenta&nbsp;और&nbsp;Pink।</p>
+<p>SOLID, यानी पहला Content, स्क्रीन को रंग से भर देता है। Home मानों पर FX &amp; MEDIA वही रोशनी देता है जो SCREEN RGB देता है। बाकी सात चलते हुए पैटर्न हैं। Speed तय करता है कि वे कितनी तेज़ चलें, और Amount और Size हर पैटर्न का रूप बदलते हैं। हर पैटर्न के अपने रंग होते हैं, इसलिए रंग तय न करने पर भी वह पूरा दिखता है। Crossfade पैटर्न को 0 पर उसके अपने रंगों से 255 पर Red, Green और Blue के रंग की ओर ले जाता है। जब Color Macro 0 न हो, तो उसकी जगह मैक्रो का रंग इस्तेमाल होता है। 16 से आगे हर 16 मान अगला रंग चुनते हैं: 3200 K, 4300 K, 5600 K, Red, Orange, Amber, Yellow, Green, Cyan, Sky Blue, Blue, Deep Blue, Lavender, Magenta&nbsp;और&nbsp;Pink।</p>
 <p>चित्र और वीडियो अपने ही रंग रखते हैं। Color Temp उन्हें ज़्यादा गर्म या ज़्यादा ठंडा करता है, और Screen Dimmer उन्हें मद्धम करता है। वीडियो बिना आवाज़ चलते हैं और खत्म होने पर फिर शुरू से चलते हैं। Playback वीडियो को चलाता या रोकता है। Restart उसे एक बार शुरुआत पर भेजता है, उसी पल जब मान 171–255 में&nbsp;आता&nbsp;है।</p>
 
 <h2>COOKIE और ULTIMATE</h2>
-<p>SCREEN COOKIE स्क्रीन को अनियमित, चितकबरे हिस्सों में बाँटता है। हर हिस्से का रंग 8 सेल में से किसी एक सेल का होता है, इसलिए एक सेल का रंग स्क्रीन पर कई जगह दिखता है। रोशनी और छाया के लिए कंसोल पर कुछ सेल को काला&nbsp;कर&nbsp;दें।</p>
-<p>SCREEN COOKIE RGB 63ch की शुरुआत Screen Dimmer से होती है, फिर Shape, Soft और Drift आते हैं। इसके बाद 8 सेल आते हैं, और हर सेल में CELLS मोड की तरह Dimmer, CCT, G/M, Crossfade, Red, Green और Blue होते हैं। Function, Back Light और Vibration सबसे अंत में आते हैं। SCREEN COOKIE HUE SAT 55ch में हर सेल में Red, Green और Blue की जगह Hue और Saturation&nbsp;हैं।</p>
+<p>SCREEN COOKIE स्क्रीन को अनियमित, चितकबरे हिस्सों में बाँटता है। हर हिस्से का रंग 8 सेल में से किसी एक सेल का होता है, इसलिए एक सेल का रंग स्क्रीन पर कई जगह दिखता है। कुछ हिस्से सेल जो भी हों, हमेशा काले रहते हैं, इसलिए सभी 8 सेल जलाने पर भी रोशनी के बीच छाया रहती है। और छाया के लिए कंसोल पर कुछ सेल को काला&nbsp;कर&nbsp;दें।</p>
+<p>16: SCREEN COOKIE RGB 62ch की शुरुआत Screen Dimmer से होती है, फिर Shape, Soft और Drift आते हैं। इसके बाद 8 सेल आते हैं, और हर सेल में CELLS मोड की तरह Dimmer, CCT, G/M, Crossfade, Red, Green और Blue होते हैं। Back Light और Vibration सबसे अंत में आते हैं। 17: SCREEN COOKIE HUE SAT 54ch में हर सेल में Red, Green और Blue की जगह Hue और Saturation&nbsp;हैं।</p>
 <table>
   <thead><tr><th>#</th><th>नाम</th><th>मान</th></tr></thead>
   <tbody>
@@ -181,7 +181,7 @@
   </tbody>
 </table>
 <p>Shape पैटर्न चुनता है। मान बदलने पर पैटर्न धीरे-धीरे बदलता है, इसलिए कंसोल पर फ़ेड करने से एक पैटर्न अगले पैटर्न में बदल जाता है। Soft हिस्सों के बीच के किनारों को धुँधला करता है: 0 पर वे तीखे होते हैं। Drift तय करता है कि पैटर्न कितनी तेज़ी से बहता है: 0 पर वह रुका&nbsp;रहता&nbsp;है।</p>
-<p>ULTIMATE RGB 73ch में COOKIE, FX &amp; MEDIA और 8 सेल के चैनल इसी क्रम&nbsp;में&nbsp;हैं।</p>
+<p>18: ULTIMATE RGB 72ch में COOKIE, FX &amp; MEDIA और 8 सेल के चैनल इसी क्रम&nbsp;में&nbsp;हैं।</p>
 <table>
   <thead><tr><th>#</th><th>नाम</th><th>मान</th></tr></thead>
   <tbody>
@@ -190,11 +190,11 @@
     <tr><td>3–5</td><td>Shape, Soft, Drift</td><td>जैसे COOKIE में</td></tr>
     <tr><td>6–14</td><td>Color Macro, Content, Speed, Amount, Size, Mix, Media, Playback, Color Temp</td><td>जैसे FX &amp; MEDIA में</td></tr>
     <tr><td>15–70</td><td>Dimmer 1 … Blue 8</td><td>हर सेल के लिए 7 चैनल, जैसे CELLS मोड में</td></tr>
-    <tr><td>71–73</td><td>Function, Back Light, Vibration</td><td>जैसे बाकी मोड में</td></tr>
+    <tr><td>71–72</td><td>Back Light, Vibration</td><td>जैसे बाकी मोड में</td></tr>
   </tbody>
 </table>
-<p>ULTIMATE HUE SAT 65ch में हर सेल के लिए 6 चैनल हैं, जिनमें Hue और Saturation हैं, इसलिए सेल 15–62 हैं और Function, Back Light और Vibration 63–65&nbsp;हैं।</p>
-<p>सेल तभी दिखते हैं जब Content SOLID हो और Media 0 हो। तब Cells चुनता है कि स्क्रीन कैसे बँटे। SCREEN पूरी स्क्रीन को सेल 1 के रंग से भर देता है। जब तक कोई पैटर्न, तस्वीर या वीडियो दिख रहा हो (Content SOLID नहीं है, या Media 0 नहीं है), स्क्रीन एक होती है, जैसे FX &amp; MEDIA में, और पैटर्न सेल 1 का रंग लेता है। Media अपने मान से गिना जाता है: 0 से अलग कोई भी मान स्क्रीन को एक कर देता है, भले ही उस नंबर में कुछ न हो। Color Macro तभी काम करता है जब स्क्रीन एक हो। स्क्रीन बँटी होने पर उसका कोई असर नहीं होता। जब Cells स्क्रीन को 8 से कम हिस्सों में बाँटता है, तो बाकी सेल के चैनलों का कोई असर नहीं होता, पर वे अपने पते फिर भी&nbsp;लेते&nbsp;हैं।</p>
+<p>19: ULTIMATE HUE SAT 64ch में हर सेल के लिए 6 चैनल हैं, जिनमें Hue और Saturation हैं, इसलिए सेल 15–62 हैं और Back Light और Vibration 63–64&nbsp;हैं।</p>
+<p>सेल तभी दिखते हैं जब Content SOLID हो और Media 0 हो। तब Cells चुनता है कि स्क्रीन कैसे बँटे। SCREEN पूरी स्क्रीन को सेल 1 के रंग से भर देता है। जब तक कोई पैटर्न, तस्वीर या वीडियो दिख रहा हो (Content SOLID नहीं है, या Media 0 नहीं है), स्क्रीन एक होती है, जैसे FX &amp; MEDIA में, और पैटर्न रंग और Crossfade सेल 1 से लेता है। Media अपने मान से गिना जाता है: 0 से अलग कोई भी मान स्क्रीन को एक कर देता है, भले ही उस नंबर में कुछ न हो। Color Macro तभी काम करता है जब स्क्रीन एक हो। स्क्रीन बँटी होने पर उसका कोई असर नहीं होता। जब Cells स्क्रीन को 8 से कम हिस्सों में बाँटता है, तो बाकी सेल के चैनलों का कोई असर नहीं होता, पर वे अपने पते फिर भी&nbsp;लेते&nbsp;हैं।</p>
 
 <h2>Media</h2>
 <p>शेल्फ़ में इस उपकरण के चित्र और वीडियो 1 से 51 तक के नंबरों के नीचे रहते हैं। इसे Settings में Media से खोलें। यह हर मोड में मौजूद है, इसलिए FX &amp; MEDIA या ULTIMATE पर जाने से पहले आप इसे भर&nbsp;सकते&nbsp;हैं।</p>
@@ -205,17 +205,16 @@
 <p>कंसोल पर Media चैनल नंबर चुनता है: 1–5 यानी 1, 6–10 यानी 2, और इसी तरह 251–255 यानी 51। फ़ाइलें इसी उपकरण में रहती हैं और कहीं नहीं भेजी&nbsp;जातीं।</p>
 
 <h2>कंसोल पर पैच</h2>
-<p>Kanau पर इस उपकरण को उसी मोड के साथ Kanau Screen के रूप में पैच करें (<a href="manual-hi.html#patch">मैनुअल का अध्याय 03</a>)। Kanau 1.0 (371) में Kanau Screen के पास सभी 19&nbsp;मोड&nbsp;हैं।</p>
+<p>Kanau पर इस उपकरण को उसी मोड के साथ Kanau&nbsp;Lite के रूप में पैच करें (<a href="manual-hi.html#patch">मैनुअल का अध्याय 03</a>)। Kanau 1.0 (372) और उसके बाद Kanau&nbsp;Lite के पास सभी 19&nbsp;मोड&nbsp;हैं।</p>
 <p>दूसरे कंसोल पर ऐसा फ़िक्स्चर बनाएँ जिसके चैनल उसी क्रम में हों जिसमें Settings के Channels में हैं, और उसे उसी पते पर पैच करें। हर चैनल&nbsp;8-bit&nbsp;है।</p>
-<p><span style="white-space:nowrap">Art-Net</span> पर ऐप नोड की खोज (ArtPoll) का जवाब <code class="q">Kanau Screen · U1 · 001</code> जैसे नाम से देता है। जो कंसोल नोड की सूची दिखा सकता है, उस पर यह नाम उसके यूनिवर्स और पते के साथ&nbsp;खोजें।</p>
+<p><span style="white-space:nowrap">Art-Net</span> पर ऐप नोड की खोज (ArtPoll) का जवाब <code class="q">Kanau&nbsp;Lite · U1 · 001</code> जैसे नाम से देता है। जो कंसोल नोड की सूची दिखा सकता है, उस पर यह नाम उसके यूनिवर्स और पते के साथ&nbsp;खोजें।</p>
 
 <h2>Kanau के LITE&nbsp;MODE से यह कैसे अलग है</h2>
-<p>Kanau&nbsp;Lite उसी तरह लेता है जैसे Kanau का LITE&nbsp;MODE लेता है (<a href="manual-hi.html#output--12">मैनुअल का अध्याय 02</a>)। Kanau 1.0 (371) के अनुसार चार बातें&nbsp;अलग&nbsp;हैं।</p>
+<p>Kanau&nbsp;Lite उसी तरह लेता है जैसे Kanau का LITE&nbsp;MODE लेता है (<a href="manual-hi.html#output--12">मैनुअल का अध्याय 02</a>)। Kanau 1.0 (375) के अनुसार तीन बातें&nbsp;अलग&nbsp;हैं।</p>
 <ul>
   <li>DMX आने से पहले LITE&nbsp;MODE <code>WAITING</code> दिखाता है। Kanau&nbsp;Lite पता स्क्रीन दिखाता&nbsp;है।</li>
   <li>DMX रुकने पर LITE&nbsp;MODE आख़िरी रंग पर टिका रहता है। Kanau&nbsp;Lite 6 सेकंड बाद पता स्क्रीन पर लौट&nbsp;जाता&nbsp;है।</li>
   <li>ऊपर दाईं ओर के स्विच का × Kanau में LITE&nbsp;MODE से बाहर निकालता है। Kanau&nbsp;Lite में वह Settings&nbsp;खोलता&nbsp;है।</li>
-  <li>Media शेल्फ़ सिर्फ़ Kanau&nbsp;Lite में है। LITE&nbsp;MODE में FX &amp; MEDIA और ULTIMATE मोड सिर्फ़ पैटर्न दिखाते&nbsp;हैं।</li>
 </ul>
 
 <h2>संपर्क</h2>

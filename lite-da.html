@@ -49,7 +49,7 @@
 <header class="sitenav"><a class="sitebrand" href="index-da.html"><img src="img/icon.png" alt="" width="28" height="28">Kanau</a><div class="sitenavr"><div class="sitelinks"><a href="index-da.html#pricing">Priser</a><a href="fixtures-da.html">Armaturer</a><a href="manual-da.html">Manual</a><a href="support-da.html">Support</a></div><label class="langsel"><span class="vh">Sprog</span><select onchange="location.href=this.value"><option value="lite.html" lang="en">English</option><option value="lite-ja.html" lang="ja">日本語</option><option value="lite-de.html" lang="de">Deutsch</option><option value="lite-fr.html" lang="fr">Français</option><option value="lite-ko.html" lang="ko">한국어</option><option value="lite-zh-Hans.html" lang="zh-Hans">简体中文</option><option value="lite-zh-Hant.html" lang="zh-Hant">繁體中文</option><option value="lite-es.html" lang="es">Español</option><option value="lite-pt-BR.html" lang="pt-BR">Português (Brasil)</option><option value="lite-it.html" lang="it">Italiano</option><option value="lite-nl.html" lang="nl">Nederlands</option><option value="lite-pl.html" lang="pl">Polski</option><option value="lite-cs.html" lang="cs">Čeština</option><option value="lite-sv.html" lang="sv">Svenska</option><option value="lite-da.html" lang="da" selected>Dansk</option><option value="lite-no.html" lang="no">Norsk</option><option value="lite-fi.html" lang="fi">Suomi</option><option value="lite-tr.html" lang="tr">Türkçe</option><option value="lite-id.html" lang="id">Bahasa Indonesia</option><option value="lite-th.html" lang="th">ไทย</option><option value="lite-ar.html" lang="ar">العربية</option><option value="lite-hi.html" lang="hi">हिन्दी</option><option value="lite-vi.html" lang="vi">Tiếng Việt</option></select></label></div></header>
 <div class="hero">
   <h1>Kanau&nbsp;Lite</h1>
-  <p class="sub">Pr. Kanau&nbsp;Lite 1.0 (5)</p>
+  <p class="sub">Pr. Kanau&nbsp;Lite 1.0 (6)</p>
 </div>
 
 <p>Kanau&nbsp;Lite er en gratis app, der gør en iPhone eller iPad til et lys. Den modtager DMX, som et lysbord sender over <span style="white-space:nowrap">Art-Net</span> eller sACN, og styrer skærmens farve og lysstyrke, lyset på bagsiden og vibrationen. I FX &amp; MEDIA- og ULTIMATE-modes kan skærmen også vise bevægelige mønstre og dine egne billeder og videoer. Du skal ikke oprette en konto, og der er ingen&nbsp;reklamer.</p>
@@ -65,7 +65,7 @@
 <ol>
   <li>Åbn Kanau&nbsp;Lite. Ikonet og navnet vises et øjeblik. Tryk for at springe&nbsp;dem&nbsp;over.</li>
   <li>Settings åbner. Det kommer først, hver gang Kanau&nbsp;Lite&nbsp;åbner.</li>
-  <li>Vælg <span style="white-space:nowrap">Art-Net</span> eller sACN. Sæt derefter Mode, Universe og&nbsp;Address.</li>
+  <li>Vælg et Mode, derefter <span style="white-space:nowrap">Art-Net</span> eller sACN, og sæt Universe og&nbsp;Address.</li>
   <li>Tryk på START&nbsp;nederst.</li>
   <li>Send DMX fra lysbordet til det universe og den adresse. Når det kommer ind, bliver skærmen til&nbsp;lyset.</li>
 </ol>
@@ -75,7 +75,7 @@
 <p>Efter START viser en sort skærm, så længe der ikke kommer DMX ind, tre linjer med stor skrift. Det er adresseskærmen. Med mange enheder side om side kan man læse hvert nummer på&nbsp;afstand.</p>
 <ul>
   <li>Universet og adressen i ravgult, for eksempel <code>U1 · 001</code>.</li>
-  <li>Modet, for eksempel <code>SCREEN RGB 10ch</code>.</li>
+  <li>Modet, for eksempel <code>2: SCREEN RGB 9ch</code>.</li>
   <li>Netværket, altså denne enheds IP-adresse og den protokol, den lytter på, for eksempel <code class="q">Wi-Fi 192.168.1.24 · <span style="white-space:nowrap">Art-Net</span></code>. Uden netværk viser den <code>No network</code>.</li>
 </ul>
 <p>Tryk på adresseskærmen for at åbne Settings. Hvis der ikke kommer DMX ind i 6 sekunder, mens lyset er tændt, kommer adresseskærmen tilbage. Lyset på bagsiden og vibrationen stopper&nbsp;også.</p>
@@ -85,17 +85,19 @@
 <table>
   <thead><tr><th>Punkt</th><th>Hvad det gør</th></tr></thead>
   <tbody>
-    <tr><td>Language</td><td>System, eller et af 15 sprog. Forklaringerne skifter, så snart du vælger. Navnene på punkter og knapper forbliver engelske. Indtil du vælger, er Kanau&nbsp;Lite på engelsk.</td></tr>
-    <tr><td>Guide</td><td>Åbner en kort guide i 8 trin. Den ligger i appen, så den virker uden internet.</td></tr>
+    <tr><td>Mode</td><td>Viser det aktuelle mode, for eksempel 2: SCREEN RGB 9ch. Tryk på det for at vælge blandt modes nedenfor (se Modes og kanaler). Tallet først er modets nummer. På en enhed uden lys på bagsiden står 1: BACK LIGHT ONLY ikke på listen, men de andre modes beholder deres numre.</td></tr>
     <tr><td><span style="white-space:nowrap">Art-Net</span> / sACN</td><td>Tryk på en af de to. Den, du vælger, bliver ravgul.</td></tr>
-    <tr><td>Mode</td><td>Viser det aktuelle mode, for eksempel SCREEN RGB 10ch. Tryk på det for at vælge blandt modes nedenfor (se Modes og kanaler). På en enhed uden lys på bagsiden står BACK LIGHT ONLY ikke på listen.</td></tr>
     <tr><td>Universe</td><td>0–32767 for <span style="white-space:nowrap">Art-Net</span>, 1–63999 for sACN.</td></tr>
     <tr><td>Address</td><td>Fra 1 op til den højeste adresse, hvor modets kanaler stadig kan være inden for 512.</td></tr>
+    <tr><td>Channels</td><td>Kanalerne i det aktuelle mode (se nedenfor).</td></tr>
+    <tr><td>PROXIMITY</td><td>Når det er slået til, bliver skærmen mørk, så længe du holder enheden op til øret. Lyset på bagsiden og vibrationen fortsætter. Det er slået fra til at begynde med. En enhed uden nærhedssensor, for eksempel en iPad, viser det ikke.</td></tr>
     <tr><td>Media</td><td>Viser, hvor mange af de 51 numre der indeholder et billede eller en video, for eksempel <code>3 / 51</code>. Tryk på den for at åbne hylden (se Media).</td></tr>
+    <tr><td>Language</td><td>System, eller et af 15 sprog. Forklaringerne skifter, så snart du vælger. Navnene på punkter og knapper forbliver engelske. Indtil du vælger, er Kanau&nbsp;Lite på engelsk.</td></tr>
+    <tr><td>Guide</td><td>Åbner en kort guide i 8 trin. Den ligger i appen, så den virker uden internet.</td></tr>
   </tbody>
 </table>
-<p>Skriv et tal for Universe og Address, eller brug − og +. Den ravgule linje under dem viser de adresser, som skærmen, lyset på bagsiden og vibrationen bruger, for eksempel <code class="q">Screen 001–008 · Back Light 009 · Vibration 010</code>.</p>
-<p>Derefter kommer Channels. Hver gang du åbner Settings, er det foldet sammen og viser kun antallet af kanaler, for eksempel <code>10ch</code>. Tryk på overskriften for at åbne listen over kanalerne i det aktuelle mode med adresse, navn og hvad værdierne betyder. De to linjer om patching på Kanau og på andre lysbord vises også, mens det er foldet sammen. En række for en funktion, som denne enhed ikke har (lyset på bagsiden eller vibrationen), er dæmpet og begynder med <code>Not on this device</code>. Den række bruger stadig sin adresse, så tæl den også med på lysbordet.</p>
+<p>Skriv et tal for Universe og Address, eller brug − og +. Den ravgule linje under dem viser de adresser, som skærmen, lyset på bagsiden og vibrationen bruger, for eksempel <code class="q">Screen 001–007 · Back Light 008 · Vibration 009</code>.</p>
+<p>Så kommer Channels. Hver gang du åbner Settings, er det foldet sammen og viser kun antallet af kanaler, for eksempel <code>9ch</code>. Tryk på overskriften for at åbne listen over kanalerne i det aktuelle mode med adresse, navn og hvad værdierne betyder. De to linjer om patching på Kanau og på andre lysbord vises også, mens det er foldet sammen. En række for en funktion, som denne enhed ikke har (lyset på bagsiden eller vibrationen), er dæmpet og begynder med <code>Not on this device</code>. Den række bruger stadig sin adresse, så tæl den også med på lysbordet.</p>
 <p>Til sidst i Settings står versionen af Kanau&nbsp;Lite, Made by Kanau Labs, et link til kanaulabs.app, Privacy Policy, Contact Support, omtalen af <span style="white-space:nowrap">Art-Net</span> og copyright. Indstillingerne gemmes og er der stadig, næste gang du åbner&nbsp;appen.</p>
 
 <h2>Mens lyset er tændt</h2>
@@ -104,23 +106,23 @@
 <p>Kanau&nbsp;Lite modtager kun DMX, mens appen er åben. Hvis du går til hjemmeskærmen eller låser enheden, holder den op med at modtage, stopper lyset på bagsiden og vibrationen og sætter skærmens lysstyrke tilbage til, hvad den var. Åbn appen igen for at modtage&nbsp;igen.</p>
 
 <h2>Modes og kanaler</h2>
-<p>Der er 19 modes. Standarden er SCREEN&nbsp;RGB&nbsp;10ch.</p>
+<p>Der er 19 modes. Standarden er 2: SCREEN RGB 9ch. Tallet først i hvert navn er modets nummer, og tallet sidst er antallet af&nbsp;kanaler.</p>
 <table>
   <thead><tr><th>Mode</th><th>Skærm</th></tr></thead>
   <tbody>
-    <tr><td>BACK LIGHT ONLY 1ch</td><td>Bruger kun lyset på bagsiden. Skærmen forbliver mørk.</td></tr>
-    <tr><td>SCREEN RGB 10ch<br>SCREEN HUE SAT 9ch</td><td>Hele skærmen har én farve.</td></tr>
-    <tr><td>SCREEN 2 CELLS RGB 18ch<br>SCREEN 2 CELLS HUE SAT 16ch</td><td>Skærmen er delt i 2.</td></tr>
-    <tr><td>SCREEN 4 CELLS RGB 32ch<br>SCREEN 4 CELLS HUE SAT 28ch</td><td>Skærmen er delt i 4.</td></tr>
-    <tr><td>SCREEN 8 CELLS RGB 60ch<br>SCREEN 8 CELLS HUE SAT 52ch</td><td>Skærmen er delt i 8.</td></tr>
-    <tr><td>SCREEN 4 STRIPS RGB 32ch<br>SCREEN 4 STRIPS HUE SAT 28ch</td><td>Skærmen er delt i 4 strimler langs sin lange side.</td></tr>
-    <tr><td>SCREEN 8 STRIPS RGB 60ch<br>SCREEN 8 STRIPS HUE SAT 52ch</td><td>Skærmen er delt i 8 strimler langs sin lange side.</td></tr>
-    <tr><td>SCREEN FX &amp; MEDIA RGB 19ch<br>SCREEN FX &amp; MEDIA HUE SAT 18ch</td><td>Hele skærmen, med mønstre, billeder og videoer (se FX &amp; MEDIA).</td></tr>
-    <tr><td>SCREEN COOKIE RGB 63ch<br>SCREEN COOKIE HUE SAT 55ch</td><td>Skærmen er delt i uregelmæssige, spættede felter i 8 farver (se COOKIE og ULTIMATE).</td></tr>
-    <tr><td>ULTIMATE RGB 73ch<br>ULTIMATE HUE SAT 65ch</td><td>Vælger, hvordan skærmen deles, og viser mønstre, billeder og videoer (se COOKIE og ULTIMATE).</td></tr>
+    <tr><td>1: BACK LIGHT ONLY 1ch</td><td>Bruger kun lyset på bagsiden. Skærmen forbliver mørk.</td></tr>
+    <tr><td>2: SCREEN RGB 9ch<br>3: SCREEN HUE SAT 8ch</td><td>Hele skærmen har én farve.</td></tr>
+    <tr><td>4: SCREEN 2 CELLS RGB 17ch<br>5: SCREEN 2 CELLS HUE SAT 15ch</td><td>Skærmen er delt i 2.</td></tr>
+    <tr><td>6: SCREEN 4 CELLS RGB 31ch<br>7: SCREEN 4 CELLS HUE SAT 27ch</td><td>Skærmen er delt i 4.</td></tr>
+    <tr><td>8: SCREEN 8 CELLS RGB 59ch<br>9: SCREEN 8 CELLS HUE SAT 51ch</td><td>Skærmen er delt i 8.</td></tr>
+    <tr><td>10: SCREEN 4 STRIPS RGB 31ch<br>11: SCREEN 4 STRIPS HUE SAT 27ch</td><td>Skærmen er delt i 4 strimler langs sin lange side.</td></tr>
+    <tr><td>12: SCREEN 8 STRIPS RGB 59ch<br>13: SCREEN 8 STRIPS HUE SAT 51ch</td><td>Skærmen er delt i 8 strimler langs sin lange side.</td></tr>
+    <tr><td>14: SCREEN FX &amp; MEDIA RGB 18ch<br>15: SCREEN FX &amp; MEDIA HUE SAT 17ch</td><td>Hele skærmen, med mønstre, billeder og videoer (se FX &amp; MEDIA).</td></tr>
+    <tr><td>16: SCREEN COOKIE RGB 62ch<br>17: SCREEN COOKIE HUE SAT 54ch</td><td>Skærmen er delt i uregelmæssige, spættede felter i 8 farver (se COOKIE og ULTIMATE).</td></tr>
+    <tr><td>18: ULTIMATE RGB 72ch<br>19: ULTIMATE HUE SAT 64ch</td><td>Vælger, hvordan skærmen deles, og viser mønstre, billeder og videoer (se COOKIE og ULTIMATE).</td></tr>
   </tbody>
 </table>
-<p>Bortset fra BACK LIGHT ONLY begynder hvert mode med Screen Dimmer og slutter med Function, Back Light og Vibration. SCREEN RGB 10ch har disse kanaler i denne rækkefølge. Værdierne står, som de vises i Channels i&nbsp;Settings.</p>
+<p>Bortset fra BACK LIGHT ONLY begynder hvert mode med Screen Dimmer og slutter med Back Light og Vibration. 2: SCREEN RGB 9ch har disse kanaler i denne rækkefølge. Værdierne står, som de vises i Channels i&nbsp;Settings.</p>
 <table>
   <thead><tr><th>#</th><th>Navn</th><th>Værdier</th></tr></thead>
   <tbody>
@@ -131,16 +133,15 @@
     <tr><td>5</td><td>Red</td><td>0–100%</td></tr>
     <tr><td>6</td><td>Green</td><td>0–100%</td></tr>
     <tr><td>7</td><td>Blue</td><td>0–100%</td></tr>
-    <tr><td>8</td><td>Function</td><td>0–127 Off · 128–255 Proximity · Home 0</td></tr>
-    <tr><td>9</td><td>Back Light</td><td>0–100%</td></tr>
-    <tr><td>10</td><td>Vibration</td><td>0–100%</td></tr>
+    <tr><td>8</td><td>Back Light</td><td>0–100%</td></tr>
+    <tr><td>9</td><td>Vibration</td><td>0–100%</td></tr>
   </tbody>
 </table>
 <p>HUE SAT-modes har Hue (0–360°) og Saturation i stedet for Red, Green og Blue. I CELLS- og STRIPS-modes følger Dimmer, CCT, G/M, Crossfade og farven for hver del af skærmen efter Screen Dimmer. CELLS er nummereret fra øverst til venstre. Med 8 CELLS har en stående skærm 2 kolonner og 4 rækker, og en liggende skærm har 4 kolonner og 2 rækker. STRIPS er lige brede strimler langs skærmens lange side. En stående skærm har vandrette strimler nummereret oppefra og ned, og en liggende skærm har lodrette strimler nummereret fra venstre mod højre. En kvadratisk skærm deles oppefra&nbsp;og&nbsp;ned.</p>
-<p>Crossfade sætter blandingen af hvid og farve: 0 er hvid og 255 er farve. Det hvide kommer fra CCT og G/M. Mens Crossfade står på 0, lader en forøgelse af Red, Green eller Blue skærmen være hvid. Screen Dimmer dæmper kun skærmen og påvirker ikke lyset på bagsiden. Sættes Function til 128 eller højere, vælges Proximity, som bruger enhedens nærhedssensor.</p>
+<p>Crossfade sætter blandingen af hvid og farve: 0 er hvid og 255 er farve. Det hvide kommer fra CCT og G/M. Mens Crossfade står på 0, lader en forøgelse af Red, Green eller Blue skærmen være hvid. Screen Dimmer dæmper kun skærmen og påvirker ikke lyset på&nbsp;bagsiden.</p>
 
 <h2>FX &amp; MEDIA</h2>
-<p>SCREEN FX &amp; MEDIA RGB 19ch har disse kanaler i denne rækkefølge. SCREEN FX &amp; MEDIA HUE SAT 18ch har Hue og Saturation i stedet for Red, Green&nbsp;og&nbsp;Blue.</p>
+<p>14: SCREEN FX &amp; MEDIA RGB 18ch har disse kanaler i denne rækkefølge. 15: SCREEN FX &amp; MEDIA HUE SAT 17ch har Hue og Saturation i stedet for Red, Green&nbsp;og&nbsp;Blue.</p>
 <table>
   <thead><tr><th>#</th><th>Navn</th><th>Værdier</th></tr></thead>
   <tbody>
@@ -152,7 +153,7 @@
     <tr><td>6</td><td>Green</td><td>0–100%</td></tr>
     <tr><td>7</td><td>Blue</td><td>0–100%</td></tr>
     <tr><td>8</td><td>Color Macro</td><td>0–15 Off · 16–255 15 colors, 16 each · Home 0</td></tr>
-    <tr><td>9</td><td>Content</td><td>0 SOLID · 32 GLINT · 64 SWEEP · 96 KALEIDO · 128 WATER · 160 FIRE · 192 VIDEO GLOW · 224 CATCHLIGHT · Home 0</td></tr>
+    <tr><td>9</td><td>Content</td><td>0 SOLID · 32 GLINT · 64 SWEEP · 96 KALEIDO · 128 WATER · 160 FIRE · 192 VIDEO GLOW · 224 AURORA · Home 0</td></tr>
     <tr><td>10</td><td>Speed</td><td>0 Slow · 128 Normal · 255 Fast · Home 128</td></tr>
     <tr><td>11</td><td>Amount</td><td>0–255 · Home 128</td></tr>
     <tr><td>12</td><td>Size</td><td>0–255 · Home 128</td></tr>
@@ -160,18 +161,17 @@
     <tr><td>14</td><td>Media</td><td>0 Off · 1–5 = 1 · 6–10 = 2 … 251–255 = 51 · Home 0</td></tr>
     <tr><td>15</td><td>Playback</td><td>0–85 Play · 86–170 Pause · 171–255 Restart · Home 0</td></tr>
     <tr><td>16</td><td>Color Temp</td><td>0 Warm · 128 As is · 255 Cool · Home 128</td></tr>
-    <tr><td>17</td><td>Function</td><td>0–127 Off · 128–255 Proximity · Home 0</td></tr>
-    <tr><td>18</td><td>Back Light</td><td>0–100%</td></tr>
-    <tr><td>19</td><td>Vibration</td><td>0–100%</td></tr>
+    <tr><td>17</td><td>Back Light</td><td>0–100%</td></tr>
+    <tr><td>18</td><td>Vibration</td><td>0–100%</td></tr>
   </tbody>
 </table>
 <p>Skærmen bygges op fra sort: først billedet eller videoen, som Media vælger, og oven på det mønstret, som Content vælger. Mix sætter, hvor meget du ser af hver: 0 viser kun billedet eller videoen, og 255 viser kun mønstret. Når Media er 0, eller nummeret ikke indeholder noget, ses kun&nbsp;mønstret.</p>
-<p>SOLID, den første Content, fylder skærmen med farven. Ved Home-værdierne giver FX &amp; MEDIA det samme lys som SCREEN RGB. De andre syv er mønstre, der bevæger sig. Speed sætter, hvor hurtigt de bevæger sig, og Amount og Size ændrer, hvordan hvert mønster ser ud. Et mønster tager sin farve fra skærmens farve. Når Color Macro ikke er 0, bruges makrofarven i stedet. Fra 16 vælger hvert trin på 16 værdier den næste farve: 3200 K, 4300 K, 5600 K, Red, Orange, Amber, Yellow, Green, Cyan, Sky Blue, Blue, Deep Blue, Lavender, Magenta&nbsp;og&nbsp;Pink.</p>
+<p>SOLID, den første Content, fylder skærmen med farven. Ved Home-værdierne giver FX &amp; MEDIA det samme lys som SCREEN RGB. De andre syv er mønstre, der bevæger sig. Speed sætter, hvor hurtigt de bevæger sig, og Amount og Size ændrer, hvordan hvert mønster ser ud. Hvert mønster har sine egne farver og ser derfor færdigt ud, også selv om du ikke sætter nogen farve. Crossfade fører et mønster fra dets egne farver ved 0 til farven fra Red, Green og Blue ved 255. Når Color Macro ikke er 0, bruges makrofarven i stedet. Fra 16 vælger hvert trin på 16 værdier den næste farve: 3200 K, 4300 K, 5600 K, Red, Orange, Amber, Yellow, Green, Cyan, Sky Blue, Blue, Deep Blue, Lavender, Magenta&nbsp;og&nbsp;Pink.</p>
 <p>Billeder og videoer beholder deres egne farver. Color Temp flytter dem mod varmere eller koldere, og Screen Dimmer dæmper dem. Videoer afspilles uden lyd og starter forfra, når de er slut. Playback afspiller eller pauser videoen. Restart sender den tilbage til starten én gang, i det øjeblik værdien kommer ind i&nbsp;171–255.</p>
 
 <h2>COOKIE og ULTIMATE</h2>
-<p>SCREEN COOKIE deler skærmen i uregelmæssige, spættede felter. Hvert felt har farven fra en af de 8 celler, så farven fra én celle ses flere steder på skærmen. Til lys og skygge sæt nogle af cellerne på sort på lysbordet.</p>
-<p>SCREEN COOKIE RGB 63ch begynder med Screen Dimmer, derefter Shape, Soft og Drift. Så kommer de 8 celler, hver med Dimmer, CCT, G/M, Crossfade, Red, Green og Blue, som i CELLS-modes. Function, Back Light og Vibration kommer til sidst. SCREEN COOKIE HUE SAT 55ch har Hue og Saturation i hver celle i stedet for Red, Green&nbsp;og&nbsp;Blue.</p>
+<p>SCREEN COOKIE deler skærmen i uregelmæssige, spættede felter. Hvert felt har farven fra en af de 8 celler, så farven fra én celle ses flere steder på skærmen. Nogle felter forbliver sorte, uanset hvad cellerne viser, så der er skygge mellem lyset, selv når alle 8 celler lyser. Til mere skygge sæt nogle af cellerne på sort på lysbordet.</p>
+<p>16: SCREEN COOKIE RGB 62ch begynder med Screen Dimmer, derefter Shape, Soft og Drift. Så kommer de 8 celler, hver med Dimmer, CCT, G/M, Crossfade, Red, Green og Blue, som i CELLS-modes. Back Light og Vibration kommer til sidst. 17: SCREEN COOKIE HUE SAT 54ch har Hue og Saturation i hver celle i stedet for Red, Green&nbsp;og&nbsp;Blue.</p>
 <table>
   <thead><tr><th>#</th><th>Navn</th><th>Værdier</th></tr></thead>
   <tbody>
@@ -181,7 +181,7 @@
   </tbody>
 </table>
 <p>Shape vælger mønsteret. Mønsteret ændrer sig jævnt, når værdien flytter sig, så en fade på lysbordet gør ét mønster til det næste. Soft gør kanterne mellem felterne bløde: ved 0 er de skarpe. Drift bestemmer, hvor hurtigt mønsteret flyder: ved 0 står det&nbsp;stille.</p>
-<p>ULTIMATE RGB 73ch har kanalerne fra COOKIE, FX &amp; MEDIA og 8 celler, i denne rækkefølge.</p>
+<p>18: ULTIMATE RGB 72ch har kanalerne fra COOKIE, FX &amp; MEDIA og 8 celler, i denne rækkefølge.</p>
 <table>
   <thead><tr><th>#</th><th>Navn</th><th>Værdier</th></tr></thead>
   <tbody>
@@ -190,11 +190,11 @@
     <tr><td>3–5</td><td>Shape, Soft, Drift</td><td>Som i COOKIE</td></tr>
     <tr><td>6–14</td><td>Color Macro, Content, Speed, Amount, Size, Mix, Media, Playback, Color Temp</td><td>Som i FX &amp; MEDIA</td></tr>
     <tr><td>15–70</td><td>Dimmer 1 … Blue 8</td><td>7 kanaler til hver celle, som i CELLS-modes</td></tr>
-    <tr><td>71–73</td><td>Function, Back Light, Vibration</td><td>Som i de andre modes</td></tr>
+    <tr><td>71–72</td><td>Back Light, Vibration</td><td>Som i de andre modes</td></tr>
   </tbody>
 </table>
-<p>ULTIMATE HUE SAT 65ch har 6 kanaler til hver celle, med Hue og Saturation, så cellerne er 15–62, og Function, Back Light og Vibration er&nbsp;63–65.</p>
-<p>Cellerne ses kun, så længe Content er SOLID, og Media er 0. Cells vælger så, hvordan skærmen deles. SCREEN fylder hele skærmen med farven fra celle 1. Så længe et mønster, et billede eller en video vises (Content er ikke SOLID, eller Media er ikke 0), er skærmen én, som i FX &amp; MEDIA, og mønsteret tager farven fra celle 1. Media tæller efter sin værdi: en anden værdi end 0 gør skærmen til én, også selv om det nummer ikke indeholder noget. Color Macro virker kun, så længe skærmen er én. Mens skærmen er delt, har det ingen virkning. Når Cells deler skærmen i færre end 8 dele, har kanalerne for de andre celler ingen virkning, men de bruger stadig deres&nbsp;adresser.</p>
+<p>19: ULTIMATE HUE SAT 64ch har 6 kanaler til hver celle, med Hue og Saturation, så cellerne er 15–62, og Back Light og Vibration er&nbsp;63–64.</p>
+<p>Cellerne ses kun, så længe Content er SOLID, og Media er 0. Cells vælger så, hvordan skærmen deles. SCREEN fylder hele skærmen med farven fra celle 1. Så længe et mønster, et billede eller en video vises (Content er ikke SOLID, eller Media er ikke 0), er skærmen én, som i FX &amp; MEDIA, og mønsteret tager sin farve og Crossfade fra celle 1. Media tæller efter sin værdi: en anden værdi end 0 gør skærmen til én, også selv om det nummer ikke indeholder noget. Color Macro virker kun, så længe skærmen er én. Mens skærmen er delt, har det ingen virkning. Når Cells deler skærmen i færre end 8 dele, har kanalerne for de andre celler ingen virkning, men de bruger stadig deres&nbsp;adresser.</p>
 
 <h2>Media</h2>
 <p>Hylden rummer billeder og videoer på denne enhed under numrene 1 til 51. Åbn den fra Media i Settings. Den findes i alle modes, så du kan fylde den, før du skifter til FX &amp; MEDIA eller&nbsp;ULTIMATE.</p>
@@ -205,17 +205,16 @@
 <p>På lysbordet vælger kanalen Media nummeret: 1–5 er 1, 6–10 er 2 og så videre, op til 251–255 for 51. Filerne bliver på denne enhed og sendes ingen steder&nbsp;hen.</p>
 
 <h2>Patch på et lysbord</h2>
-<p>Patch denne enhed i Kanau som Kanau Screen med samme mode (<a href="manual-da.html#patch">kapitel 03 i manualen</a>). I Kanau 1.0 (371) har Kanau Screen alle&nbsp;19&nbsp;modes.</p>
+<p>Patch denne enhed i Kanau som Kanau&nbsp;Lite med samme mode (<a href="manual-da.html#patch">kapitel 03 i manualen</a>). Kanau 1.0 (372) og senere har alle 19 modes under Kanau&nbsp;Lite.</p>
 <p>På andre lysbord laver du et armatur med kanalerne i samme rækkefølge som Channels i Settings og patcher det på samme adresse. Hver kanal&nbsp;er&nbsp;8-bit.</p>
-<p>Over <span style="white-space:nowrap">Art-Net</span> svarer appen på nodesøgning (ArtPoll) med et navn som <code class="q">Kanau Screen · U1 · 001</code>. På et lysbord, der kan vise en liste over noder, skal du lede efter dette navn med dets universe og&nbsp;adresse.</p>
+<p>Over <span style="white-space:nowrap">Art-Net</span> svarer appen på nodesøgning (ArtPoll) med et navn som <code class="q">Kanau&nbsp;Lite · U1 · 001</code>. På et lysbord, der kan vise en liste over noder, skal du lede efter dette navn med dets universe og&nbsp;adresse.</p>
 
 <h2>Forskelle fra LITE&nbsp;MODE i Kanau</h2>
-<p>Kanau&nbsp;Lite modtager på samme måde som LITE&nbsp;MODE i Kanau (<a href="manual-da.html#output--12">kapitel 02 i manualen</a>). Fra og med Kanau 1.0 (371) er fire ting anderledes.</p>
+<p>Kanau&nbsp;Lite modtager på samme måde som LITE&nbsp;MODE i Kanau (<a href="manual-da.html#output--12">kapitel 02 i manualen</a>). Fra og med Kanau 1.0 (375) er tre ting anderledes.</p>
 <ul>
   <li>Før DMX kommer ind, viser LITE&nbsp;MODE <code>WAITING</code>. Kanau&nbsp;Lite viser adresseskærmen.</li>
   <li>Når DMX stopper, beholder LITE&nbsp;MODE den sidste farve. Kanau&nbsp;Lite går tilbage til adresseskærmen efter 6&nbsp;sekunder.</li>
   <li>× fra kontakten øverst til højre forlader LITE&nbsp;MODE i Kanau. I Kanau&nbsp;Lite åbner den&nbsp;Settings.</li>
-  <li>Media-hylden findes kun i Kanau&nbsp;Lite. I LITE&nbsp;MODE viser FX &amp; MEDIA- og ULTIMATE-modes kun&nbsp;mønstre.</li>
 </ul>
 
 <h2>Kontakt</h2>

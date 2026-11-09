@@ -49,7 +49,7 @@
 <header class="sitenav"><a class="sitebrand" href="index-de.html"><img src="img/icon.png" alt="" width="28" height="28">Kanau</a><div class="sitenavr"><div class="sitelinks"><a href="index-de.html#pricing">Preise</a><a href="fixtures-de.html">Scheinwerfer</a><a href="manual-de.html">Handbuch</a><a href="support-de.html">Support</a></div><label class="langsel"><span class="vh">Sprache</span><select onchange="location.href=this.value"><option value="lite.html" lang="en">English</option><option value="lite-ja.html" lang="ja">日本語</option><option value="lite-de.html" lang="de" selected>Deutsch</option><option value="lite-fr.html" lang="fr">Français</option><option value="lite-ko.html" lang="ko">한국어</option><option value="lite-zh-Hans.html" lang="zh-Hans">简体中文</option><option value="lite-zh-Hant.html" lang="zh-Hant">繁體中文</option><option value="lite-es.html" lang="es">Español</option><option value="lite-pt-BR.html" lang="pt-BR">Português (Brasil)</option><option value="lite-it.html" lang="it">Italiano</option><option value="lite-nl.html" lang="nl">Nederlands</option><option value="lite-pl.html" lang="pl">Polski</option><option value="lite-cs.html" lang="cs">Čeština</option><option value="lite-sv.html" lang="sv">Svenska</option><option value="lite-da.html" lang="da">Dansk</option><option value="lite-no.html" lang="no">Norsk</option><option value="lite-fi.html" lang="fi">Suomi</option><option value="lite-tr.html" lang="tr">Türkçe</option><option value="lite-id.html" lang="id">Bahasa Indonesia</option><option value="lite-th.html" lang="th">ไทย</option><option value="lite-ar.html" lang="ar">العربية</option><option value="lite-hi.html" lang="hi">हिन्दी</option><option value="lite-vi.html" lang="vi">Tiếng Việt</option></select></label></div></header>
 <div class="hero">
   <h1>Kanau&nbsp;Lite</h1>
-  <p class="sub">Stand: Kanau&nbsp;Lite 1.0 (5)</p>
+  <p class="sub">Stand: Kanau&nbsp;Lite 1.0 (6)</p>
 </div>
 
 <p>Kanau&nbsp;Lite ist eine kostenlose App, die ein iPhone oder iPad zu einem Licht macht. Sie empfängt DMX, das ein Pult über <span style="white-space:nowrap">Art-Net</span> oder sACN sendet, und steuert Farbe und Helligkeit des Bildschirms, das Licht auf der Rückseite und die Vibration. In den FX &amp; MEDIA- und ULTIMATE-Modes kann der Bildschirm auch bewegte Muster sowie eigene Bilder und Videos zeigen. Es muss kein Konto angelegt werden, und es gibt keine&nbsp;Werbung.</p>
@@ -65,7 +65,7 @@
 <ol>
   <li>Öffnen Sie Kanau&nbsp;Lite. Das Symbol und der Name erscheinen kurz. Tippen Sie, um sie zu überspringen.</li>
   <li>Settings öffnet sich. Es kommt bei jedem Öffnen von Kanau&nbsp;Lite&nbsp;zuerst.</li>
-  <li>Wählen Sie <span style="white-space:nowrap">Art-Net</span> oder sACN. Stellen Sie dann Mode, Universe und Address&nbsp;ein.</li>
+  <li>Wählen Sie einen Mode, dann <span style="white-space:nowrap">Art-Net</span> oder sACN, und stellen Sie Universe und Address&nbsp;ein.</li>
   <li>Tippen Sie unten auf&nbsp;START.</li>
   <li>Senden Sie vom Pult DMX an dieses Universe und diese Adresse. Sobald es ankommt, wird der Bildschirm zum&nbsp;Licht.</li>
 </ol>
@@ -75,7 +75,7 @@
 <p>Nach START zeigt ein schwarzer Bildschirm, solange kein DMX ankommt, drei Zeilen in großer Schrift. Das ist der Adressbildschirm. Liegen viele Geräte nebeneinander, lässt sich jede Nummer aus der Entfernung&nbsp;lesen.</p>
 <ul>
   <li>Das Universe und die Adresse in Bernstein, zum Beispiel <code>U1 · 001</code>.</li>
-  <li>Der Mode, zum Beispiel <code>SCREEN RGB 10ch</code>.</li>
+  <li>Der Mode, zum Beispiel <code>2: SCREEN RGB 9ch</code>.</li>
   <li>Das Netzwerk, die IP-Adresse dieses Geräts und das Protokoll, auf das es hört, zum Beispiel <code class="q">Wi-Fi 192.168.1.24 · <span style="white-space:nowrap">Art-Net</span></code>. Ohne Netzwerk zeigt es <code>No network</code>.</li>
 </ul>
 <p>Tippen Sie auf den Adressbildschirm, um Settings zu öffnen. Kommt bei eingeschaltetem Licht 6 Sekunden lang kein DMX an, kehrt der Adressbildschirm zurück. Das Licht auf der Rückseite und die Vibration hören ebenfalls&nbsp;auf.</p>
@@ -85,17 +85,19 @@
 <table>
   <thead><tr><th>Punkt</th><th>Was er bewirkt</th></tr></thead>
   <tbody>
-    <tr><td>Language</td><td>System oder eine von 15 Sprachen. Die Erklärungen wechseln sofort, wenn Sie wählen. Die Namen von Punkten und Tasten bleiben Englisch. Bis Sie wählen, ist Kanau&nbsp;Lite Englisch.</td></tr>
-    <tr><td>Guide</td><td>Öffnet eine kurze Anleitung in 8 Schritten. Sie steckt in der App und funktioniert auch ohne Internet.</td></tr>
+    <tr><td>Mode</td><td>Zeigt den aktuellen Mode, zum Beispiel 2: SCREEN RGB 9ch. Tippen Sie darauf, um einen der Modes unten zu wählen (siehe Modes und Kanäle). Die Zahl am Anfang ist die Mode-Nummer. Auf einem Gerät ohne Licht auf der Rückseite steht 1: BACK LIGHT ONLY nicht in der Liste, die anderen Modes behalten aber ihre Nummern.</td></tr>
     <tr><td><span style="white-space:nowrap">Art-Net</span> / sACN</td><td>Tippen Sie auf eines von beiden. Das gewählte wird bernsteinfarben.</td></tr>
-    <tr><td>Mode</td><td>Zeigt den aktuellen Mode, zum Beispiel SCREEN RGB 10ch. Tippen Sie darauf, um einen der Modes unten zu wählen (siehe Modes und Kanäle). Auf einem Gerät ohne Licht auf der Rückseite steht BACK LIGHT ONLY nicht in der Liste.</td></tr>
     <tr><td>Universe</td><td>0–32767 für <span style="white-space:nowrap">Art-Net</span>, 1–63999 für sACN.</td></tr>
     <tr><td>Address</td><td>Von 1 bis zur höchsten Adresse, bei der die Kanäle des Modes noch in 512 passen.</td></tr>
+    <tr><td>Channels</td><td>Die Kanäle des aktuellen Modes (siehe unten).</td></tr>
+    <tr><td>PROXIMITY</td><td>Wenn eingeschaltet, wird der Bildschirm dunkel, solange Sie dieses Gerät ans Ohr halten. Das Licht auf der Rückseite und die Vibration laufen weiter. Standardmäßig ist es aus. Ein Gerät ohne Näherungssensor, etwa ein iPad, zeigt es nicht.</td></tr>
     <tr><td>Media</td><td>Zeigt, bei wie vielen der 51 Nummern ein Bild oder ein Video liegt, zum Beispiel <code>3 / 51</code>. Tippen Sie darauf, um das Regal zu öffnen (siehe Media).</td></tr>
+    <tr><td>Language</td><td>System oder eine von 15 Sprachen. Die Erklärungen wechseln sofort, wenn Sie wählen. Die Namen von Punkten und Tasten bleiben Englisch. Bis Sie wählen, ist Kanau&nbsp;Lite Englisch.</td></tr>
+    <tr><td>Guide</td><td>Öffnet eine kurze Anleitung in 8 Schritten. Sie steckt in der App und funktioniert auch ohne Internet.</td></tr>
   </tbody>
 </table>
-<p>Geben Sie für Universe und Address eine Zahl ein oder nutzen Sie − und +. Die bernsteinfarbene Zeile darunter zeigt die Adressen von Bildschirm, Licht auf der Rückseite und Vibration, zum Beispiel <code class="q">Screen 001–008 · Back Light 009 · Vibration 010</code>.</p>
-<p>Als Nächstes folgt Channels. Bei jedem Öffnen von Settings ist es zugeklappt und zeigt nur die Anzahl der Kanäle, zum Beispiel <code>10ch</code>. Tippen Sie auf die Überschrift, um die Liste der Kanäle des aktuellen Modes mit Adresse, Name und der Bedeutung der Werte zu öffnen. Die zwei Zeilen zum Patchen auf Kanau und auf anderen Pulten erscheinen auch im zugeklappten Zustand. Eine Zeile für eine Funktion, die dieses Gerät nicht hat (das Licht auf der Rückseite oder die Vibration), ist abgedunkelt und beginnt mit <code>Not on this device</code>. Diese Zeile belegt trotzdem ihre Adresse, zählen Sie sie also auch am&nbsp;Pult&nbsp;mit.</p>
+<p>Geben Sie für Universe und Address eine Zahl ein oder nutzen Sie − und +. Die bernsteinfarbene Zeile darunter zeigt die Adressen von Bildschirm, Licht auf der Rückseite und Vibration, zum Beispiel <code class="q">Screen 001–007 · Back Light 008 · Vibration 009</code>.</p>
+<p>Danach folgt Channels. Bei jedem Öffnen von Settings ist es zugeklappt und zeigt nur die Anzahl der Kanäle, zum Beispiel <code>9ch</code>. Tippen Sie auf die Überschrift, um die Liste der Kanäle des aktuellen Modes mit Adresse, Name und der Bedeutung der Werte zu öffnen. Die zwei Zeilen zum Patchen auf Kanau und auf anderen Pulten erscheinen auch im zugeklappten Zustand. Eine Zeile für eine Funktion, die dieses Gerät nicht hat (das Licht auf der Rückseite oder die Vibration), ist abgedunkelt und beginnt mit <code>Not on this device</code>. Diese Zeile belegt trotzdem ihre Adresse, zählen Sie sie also auch am&nbsp;Pult&nbsp;mit.</p>
 <p>Am Ende von Settings stehen die Version von Kanau&nbsp;Lite, Made by Kanau Labs, ein Link zu kanaulabs.app, Privacy Policy, Contact Support, der <span style="white-space:nowrap">Art-Net</span>-Hinweis und das Copyright. Settings werden gespeichert und sind beim nächsten Öffnen der App&nbsp;noch&nbsp;da.</p>
 
 <h2>Solange das Licht an ist</h2>
@@ -104,23 +106,23 @@
 <p>Kanau&nbsp;Lite empfängt DMX nur, solange die App geöffnet ist. Wenn Sie zum Home-Bildschirm wechseln oder das Gerät sperren, hört es auf zu empfangen, stoppt das Licht auf der Rückseite und die Vibration und setzt die Bildschirmhelligkeit auf den früheren Wert zurück. Öffnen Sie die App erneut, um wieder zu empfangen.</p>
 
 <h2>Modes und Kanäle</h2>
-<p>Es gibt 19 Modes. Der Standard ist SCREEN&nbsp;RGB&nbsp;10ch.</p>
+<p>Es gibt 19 Modes. Der Standard ist 2: SCREEN RGB 9ch. Die Zahl am Anfang jedes Namens ist die Mode-Nummer, die Zahl am Ende die Anzahl der&nbsp;Kanäle.</p>
 <table>
   <thead><tr><th>Mode</th><th>Bildschirm</th></tr></thead>
   <tbody>
-    <tr><td>BACK LIGHT ONLY 1ch</td><td>Nutzt nur das Licht auf der Rückseite. Der Bildschirm bleibt dunkel.</td></tr>
-    <tr><td>SCREEN RGB 10ch<br>SCREEN HUE SAT 9ch</td><td>Der ganze Bildschirm hat eine Farbe.</td></tr>
-    <tr><td>SCREEN 2 CELLS RGB 18ch<br>SCREEN 2 CELLS HUE SAT 16ch</td><td>Der Bildschirm ist in 2 Teile geteilt.</td></tr>
-    <tr><td>SCREEN 4 CELLS RGB 32ch<br>SCREEN 4 CELLS HUE SAT 28ch</td><td>Der Bildschirm ist in 4 Teile geteilt.</td></tr>
-    <tr><td>SCREEN 8 CELLS RGB 60ch<br>SCREEN 8 CELLS HUE SAT 52ch</td><td>Der Bildschirm ist in 8 Teile geteilt.</td></tr>
-    <tr><td>SCREEN 4 STRIPS RGB 32ch<br>SCREEN 4 STRIPS HUE SAT 28ch</td><td>Der Bildschirm ist in 4 Streifen entlang seiner langen Seite geteilt.</td></tr>
-    <tr><td>SCREEN 8 STRIPS RGB 60ch<br>SCREEN 8 STRIPS HUE SAT 52ch</td><td>Der Bildschirm ist in 8 Streifen entlang seiner langen Seite geteilt.</td></tr>
-    <tr><td>SCREEN FX &amp; MEDIA RGB 19ch<br>SCREEN FX &amp; MEDIA HUE SAT 18ch</td><td>Der ganze Bildschirm, mit Mustern, Bildern und Videos (siehe FX &amp; MEDIA).</td></tr>
-    <tr><td>SCREEN COOKIE RGB 63ch<br>SCREEN COOKIE HUE SAT 55ch</td><td>Der Bildschirm ist in unregelmäßige, gesprenkelte Flächen in 8 Farben geteilt (siehe COOKIE und ULTIMATE).</td></tr>
-    <tr><td>ULTIMATE RGB 73ch<br>ULTIMATE HUE SAT 65ch</td><td>Wählt, wie der Bildschirm geteilt wird, und zeigt Muster, Bilder und Videos (siehe COOKIE und ULTIMATE).</td></tr>
+    <tr><td>1: BACK LIGHT ONLY 1ch</td><td>Nutzt nur das Licht auf der Rückseite. Der Bildschirm bleibt dunkel.</td></tr>
+    <tr><td>2: SCREEN RGB 9ch<br>3: SCREEN HUE SAT 8ch</td><td>Der ganze Bildschirm hat eine Farbe.</td></tr>
+    <tr><td>4: SCREEN 2 CELLS RGB 17ch<br>5: SCREEN 2 CELLS HUE SAT 15ch</td><td>Der Bildschirm ist in 2 Teile geteilt.</td></tr>
+    <tr><td>6: SCREEN 4 CELLS RGB 31ch<br>7: SCREEN 4 CELLS HUE SAT 27ch</td><td>Der Bildschirm ist in 4 Teile geteilt.</td></tr>
+    <tr><td>8: SCREEN 8 CELLS RGB 59ch<br>9: SCREEN 8 CELLS HUE SAT 51ch</td><td>Der Bildschirm ist in 8 Teile geteilt.</td></tr>
+    <tr><td>10: SCREEN 4 STRIPS RGB 31ch<br>11: SCREEN 4 STRIPS HUE SAT 27ch</td><td>Der Bildschirm ist in 4 Streifen entlang seiner langen Seite geteilt.</td></tr>
+    <tr><td>12: SCREEN 8 STRIPS RGB 59ch<br>13: SCREEN 8 STRIPS HUE SAT 51ch</td><td>Der Bildschirm ist in 8 Streifen entlang seiner langen Seite geteilt.</td></tr>
+    <tr><td>14: SCREEN FX &amp; MEDIA RGB 18ch<br>15: SCREEN FX &amp; MEDIA HUE SAT 17ch</td><td>Der ganze Bildschirm, mit Mustern, Bildern und Videos (siehe FX &amp; MEDIA).</td></tr>
+    <tr><td>16: SCREEN COOKIE RGB 62ch<br>17: SCREEN COOKIE HUE SAT 54ch</td><td>Der Bildschirm ist in unregelmäßige, gesprenkelte Flächen in 8 Farben geteilt (siehe COOKIE und ULTIMATE).</td></tr>
+    <tr><td>18: ULTIMATE RGB 72ch<br>19: ULTIMATE HUE SAT 64ch</td><td>Wählt, wie der Bildschirm geteilt wird, und zeigt Muster, Bilder und Videos (siehe COOKIE und ULTIMATE).</td></tr>
   </tbody>
 </table>
-<p>Außer bei BACK LIGHT ONLY beginnt jeder Mode mit Screen Dimmer und endet mit Function, Back Light und Vibration. SCREEN RGB 10ch hat diese Kanäle in dieser Reihenfolge. Die Werte stehen so, wie sie unter Channels in Settings erscheinen.</p>
+<p>Außer bei BACK LIGHT ONLY beginnt jeder Mode mit Screen Dimmer und endet mit Back Light und Vibration. 2: SCREEN RGB 9ch hat diese Kanäle in dieser Reihenfolge. Die Werte stehen so, wie sie unter Channels in Settings erscheinen.</p>
 <table>
   <thead><tr><th>#</th><th>Name</th><th>Werte</th></tr></thead>
   <tbody>
@@ -131,16 +133,15 @@
     <tr><td>5</td><td>Red</td><td>0–100%</td></tr>
     <tr><td>6</td><td>Green</td><td>0–100%</td></tr>
     <tr><td>7</td><td>Blue</td><td>0–100%</td></tr>
-    <tr><td>8</td><td>Function</td><td>0–127 Off · 128–255 Proximity · Home 0</td></tr>
-    <tr><td>9</td><td>Back Light</td><td>0–100%</td></tr>
-    <tr><td>10</td><td>Vibration</td><td>0–100%</td></tr>
+    <tr><td>8</td><td>Back Light</td><td>0–100%</td></tr>
+    <tr><td>9</td><td>Vibration</td><td>0–100%</td></tr>
   </tbody>
 </table>
 <p>Die HUE SAT-Modes haben Hue (0–360°) und Saturation statt Red, Green und Blue. In den CELLS- und STRIPS-Modes folgen auf Screen Dimmer für jeden Teil des Bildschirms Dimmer, CCT, G/M, Crossfade und die Farbe. Die CELLS sind von oben links nummeriert. Bei 8 CELLS hat ein Bildschirm im Hochformat 2 Spalten und 4 Zeilen, im Querformat 4 Spalten und 2 Zeilen. STRIPS sind gleich breite Streifen entlang der langen Seite des Bildschirms. Ein Bildschirm im Hochformat hat waagerechte Streifen, von oben nach unten nummeriert, und ein Bildschirm im Querformat hat senkrechte Streifen, von links nach rechts nummeriert. Ein quadratischer Bildschirm wird von oben nach unten&nbsp;geteilt.</p>
-<p>Crossfade legt das Verhältnis von Weiß und Farbe fest: 0 ist Weiß und 255 ist Farbe. Das Weiß kommt von CCT und G/M. Solange Crossfade auf 0 steht, lässt das Erhöhen von Red, Green oder Blue den Bildschirm weiß. Screen Dimmer dimmt nur den Bildschirm und wirkt nicht auf das Licht auf der Rückseite. Function auf 128 oder höher wählt Proximity, das den Näherungssensor des Geräts&nbsp;nutzt.</p>
+<p>Crossfade legt das Verhältnis von Weiß und Farbe fest: 0 ist Weiß und 255 ist Farbe. Das Weiß kommt von CCT und G/M. Solange Crossfade auf 0 steht, lässt das Erhöhen von Red, Green oder Blue den Bildschirm weiß. Screen Dimmer dimmt nur den Bildschirm und wirkt nicht auf das Licht auf der Rückseite.</p>
 
 <h2>FX &amp; MEDIA</h2>
-<p>SCREEN FX &amp; MEDIA RGB 19ch hat diese Kanäle in dieser Reihenfolge. SCREEN FX &amp; MEDIA HUE SAT 18ch hat Hue und Saturation statt Red, Green&nbsp;und&nbsp;Blue.</p>
+<p>14: SCREEN FX &amp; MEDIA RGB 18ch hat diese Kanäle in dieser Reihenfolge. 15: SCREEN FX &amp; MEDIA HUE SAT 17ch hat Hue und Saturation statt Red, Green&nbsp;und&nbsp;Blue.</p>
 <table>
   <thead><tr><th>#</th><th>Name</th><th>Werte</th></tr></thead>
   <tbody>
@@ -152,7 +153,7 @@
     <tr><td>6</td><td>Green</td><td>0–100%</td></tr>
     <tr><td>7</td><td>Blue</td><td>0–100%</td></tr>
     <tr><td>8</td><td>Color Macro</td><td>0–15 Off · 16–255 15 colors, 16 each · Home 0</td></tr>
-    <tr><td>9</td><td>Content</td><td>0 SOLID · 32 GLINT · 64 SWEEP · 96 KALEIDO · 128 WATER · 160 FIRE · 192 VIDEO GLOW · 224 CATCHLIGHT · Home 0</td></tr>
+    <tr><td>9</td><td>Content</td><td>0 SOLID · 32 GLINT · 64 SWEEP · 96 KALEIDO · 128 WATER · 160 FIRE · 192 VIDEO GLOW · 224 AURORA · Home 0</td></tr>
     <tr><td>10</td><td>Speed</td><td>0 Slow · 128 Normal · 255 Fast · Home 128</td></tr>
     <tr><td>11</td><td>Amount</td><td>0–255 · Home 128</td></tr>
     <tr><td>12</td><td>Size</td><td>0–255 · Home 128</td></tr>
@@ -160,18 +161,17 @@
     <tr><td>14</td><td>Media</td><td>0 Off · 1–5 = 1 · 6–10 = 2 … 251–255 = 51 · Home 0</td></tr>
     <tr><td>15</td><td>Playback</td><td>0–85 Play · 86–170 Pause · 171–255 Restart · Home 0</td></tr>
     <tr><td>16</td><td>Color Temp</td><td>0 Warm · 128 As is · 255 Cool · Home 128</td></tr>
-    <tr><td>17</td><td>Function</td><td>0–127 Off · 128–255 Proximity · Home 0</td></tr>
-    <tr><td>18</td><td>Back Light</td><td>0–100%</td></tr>
-    <tr><td>19</td><td>Vibration</td><td>0–100%</td></tr>
+    <tr><td>17</td><td>Back Light</td><td>0–100%</td></tr>
+    <tr><td>18</td><td>Vibration</td><td>0–100%</td></tr>
   </tbody>
 </table>
 <p>Der Bildschirm baut sich von Schwarz aus auf: zuerst das Bild oder Video, das Media wählt, darüber das Muster, das Content wählt. Mix legt fest, wie viel Sie von jedem sehen: 0 zeigt nur das Bild oder Video, 255 zeigt nur das Muster. Ist Media 0 oder liegt unter der Nummer nichts, ist nur das Muster&nbsp;zu&nbsp;sehen.</p>
-<p>SOLID, der erste Content, füllt den Bildschirm mit der Farbe. Bei den Home-Werten ergibt FX &amp; MEDIA dasselbe Licht wie SCREEN RGB. Die anderen sieben sind Muster, die sich bewegen. Speed legt fest, wie schnell sie sich bewegen, und Amount und Size ändern, wie jedes Muster aussieht. Ein Muster nimmt seine Farbe von der Farbe des Bildschirms. Ist Color Macro nicht 0, wird stattdessen die Macro-Farbe benutzt. Ab 16 wählt jeweils ein Bereich von 16 Werten die nächste Farbe: 3200 K, 4300 K, 5600 K, Red, Orange, Amber, Yellow, Green, Cyan, Sky Blue, Blue, Deep Blue, Lavender, Magenta&nbsp;und&nbsp;Pink.</p>
+<p>SOLID, der erste Content, füllt den Bildschirm mit der Farbe. Bei den Home-Werten ergibt FX &amp; MEDIA dasselbe Licht wie SCREEN RGB. Die anderen sieben sind Muster, die sich bewegen. Speed legt fest, wie schnell sie sich bewegen, und Amount und Size ändern, wie jedes Muster aussieht. Jedes Muster hat eigene Farben und sieht deshalb auch dann fertig aus, wenn Sie keine Farbe einstellen. Crossfade führt ein Muster von seinen eigenen Farben bei 0 zur Farbe von Red, Green und Blue bei 255. Ist Color Macro nicht 0, wird stattdessen die Macro-Farbe benutzt. Ab 16 wählt jeweils ein Bereich von 16 Werten die nächste Farbe: 3200 K, 4300 K, 5600 K, Red, Orange, Amber, Yellow, Green, Cyan, Sky Blue, Blue, Deep Blue, Lavender, Magenta&nbsp;und&nbsp;Pink.</p>
 <p>Bilder und Videos behalten ihre eigenen Farben. Color Temp verschiebt sie wärmer oder kühler, und Screen Dimmer dimmt sie. Videos laufen ohne Ton und beginnen am Ende von vorn. Playback spielt das Video ab oder hält es an. Restart schickt es einmal an den Anfang zurück, in dem Moment, in dem der Wert in 171–255&nbsp;eintritt.</p>
 
 <h2>COOKIE und ULTIMATE</h2>
-<p>SCREEN COOKIE teilt den Bildschirm in unregelmäßige, gesprenkelte Flächen. Jede Fläche hat die Farbe einer der 8 Zellen, sodass die Farbe einer Zelle an mehreren Stellen des Bildschirms erscheint. Für Licht und Schatten stellen Sie am Pult einige der Zellen auf&nbsp;Schwarz.</p>
-<p>SCREEN COOKIE RGB 63ch beginnt mit Screen Dimmer, danach folgen Shape, Soft und Drift. Dann kommen die 8 Zellen, jede mit Dimmer, CCT, G/M, Crossfade, Red, Green und Blue, wie in den CELLS-Modes. Function, Back Light und Vibration stehen am Ende. SCREEN COOKIE HUE SAT 55ch hat in jeder Zelle Hue und Saturation statt Red, Green&nbsp;und&nbsp;Blue.</p>
+<p>SCREEN COOKIE teilt den Bildschirm in unregelmäßige, gesprenkelte Flächen. Jede Fläche hat die Farbe einer der 8 Zellen, sodass die Farbe einer Zelle an mehreren Stellen des Bildschirms erscheint. Einige Flächen bleiben schwarz, was die Zellen auch zeigen, sodass selbst bei 8 leuchtenden Zellen Schatten zwischen dem Licht liegt. Für mehr Schatten stellen Sie am Pult einige der Zellen auf&nbsp;Schwarz.</p>
+<p>16: SCREEN COOKIE RGB 62ch beginnt mit Screen Dimmer, danach folgen Shape, Soft und Drift. Dann kommen die 8 Zellen, jede mit Dimmer, CCT, G/M, Crossfade, Red, Green und Blue, wie in den CELLS-Modes. Back Light und Vibration stehen am Ende. 17: SCREEN COOKIE HUE SAT 54ch hat in jeder Zelle Hue und Saturation statt Red, Green&nbsp;und&nbsp;Blue.</p>
 <table>
   <thead><tr><th>#</th><th>Name</th><th>Werte</th></tr></thead>
   <tbody>
@@ -181,7 +181,7 @@
   </tbody>
 </table>
 <p>Shape wählt das Muster. Das Muster ändert sich stufenlos, wenn sich der Wert bewegt, sodass eine Überblendung am Pult ein Muster in das nächste überführt. Soft verwischt die Ränder zwischen den Flächen: bei 0 sind sie scharf. Drift legt fest, wie schnell das Muster fließt: bei 0 steht&nbsp;es&nbsp;still.</p>
-<p>ULTIMATE RGB 73ch hat die Kanäle von COOKIE, FX &amp; MEDIA und 8 Zellen, in dieser Reihenfolge.</p>
+<p>18: ULTIMATE RGB 72ch hat die Kanäle von COOKIE, FX &amp; MEDIA und 8 Zellen, in dieser Reihenfolge.</p>
 <table>
   <thead><tr><th>#</th><th>Name</th><th>Werte</th></tr></thead>
   <tbody>
@@ -190,11 +190,11 @@
     <tr><td>3–5</td><td>Shape, Soft, Drift</td><td>Wie bei COOKIE</td></tr>
     <tr><td>6–14</td><td>Color Macro, Content, Speed, Amount, Size, Mix, Media, Playback, Color Temp</td><td>Wie bei FX &amp; MEDIA</td></tr>
     <tr><td>15–70</td><td>Dimmer 1 … Blue 8</td><td>7 Kanäle für jede Zelle, wie in den CELLS-Modes</td></tr>
-    <tr><td>71–73</td><td>Function, Back Light, Vibration</td><td>Wie in den anderen Modes</td></tr>
+    <tr><td>71–72</td><td>Back Light, Vibration</td><td>Wie in den anderen Modes</td></tr>
   </tbody>
 </table>
-<p>ULTIMATE HUE SAT 65ch hat 6 Kanäle für jede Zelle, mit Hue und Saturation, daher sind die Zellen 15–62 und Function, Back Light und Vibration&nbsp;63–65.</p>
-<p>Die Zellen sind nur zu sehen, solange Content SOLID ist und Media 0 ist. Cells wählt dann, wie der Bildschirm geteilt wird. SCREEN füllt den ganzen Bildschirm mit der Farbe von Zelle 1. Solange ein Muster, ein Bild oder ein Video zu sehen ist (Content ist nicht SOLID oder Media ist nicht 0), ist der Bildschirm ungeteilt, wie in FX &amp; MEDIA, und das Muster nimmt die Farbe von Zelle 1 an. Media zählt nach seinem Wert: Ein Wert ungleich 0 macht den Bildschirm ungeteilt, auch wenn unter dieser Nummer nichts liegt. Color Macro wirkt nur, solange der Bildschirm ungeteilt ist. Solange der Bildschirm geteilt ist, hat es keine Wirkung. Teilt Cells den Bildschirm in weniger als 8 Teile, haben die Kanäle der übrigen Zellen keine Wirkung, belegen aber weiterhin ihre&nbsp;Adressen.</p>
+<p>19: ULTIMATE HUE SAT 64ch hat 6 Kanäle für jede Zelle, mit Hue und Saturation, daher sind die Zellen 15–62 und Back Light und Vibration&nbsp;63–64.</p>
+<p>Die Zellen sind nur zu sehen, solange Content SOLID ist und Media 0 ist. Cells wählt dann, wie der Bildschirm geteilt wird. SCREEN füllt den ganzen Bildschirm mit der Farbe von Zelle 1. Solange ein Muster, ein Bild oder ein Video zu sehen ist (Content ist nicht SOLID oder Media ist nicht 0), ist der Bildschirm ungeteilt, wie in FX &amp; MEDIA, und das Muster nimmt seine Farbe und Crossfade von Zelle 1 an. Media zählt nach seinem Wert: Ein Wert ungleich 0 macht den Bildschirm ungeteilt, auch wenn unter dieser Nummer nichts liegt. Color Macro wirkt nur, solange der Bildschirm ungeteilt ist. Solange der Bildschirm geteilt ist, hat es keine Wirkung. Teilt Cells den Bildschirm in weniger als 8 Teile, haben die Kanäle der übrigen Zellen keine Wirkung, belegen aber weiterhin ihre&nbsp;Adressen.</p>
 
 <h2>Media</h2>
 <p>Das Regal enthält Bilder und Videos auf diesem Gerät unter den Nummern 1 bis 51. Öffnen Sie es über Media in Settings. Es ist in jedem Mode da, Sie können es also füllen, bevor Sie zu FX &amp; MEDIA oder ULTIMATE&nbsp;wechseln.</p>
@@ -205,17 +205,16 @@
 <p>Am Pult wählt der Kanal Media die Nummer: 1–5 ist 1, 6–10 ist 2 und so weiter, bis 251–255 für 51. Die Dateien bleiben auf diesem Gerät und werden nirgends hingeschickt.</p>
 
 <h2>Patchen am Pult</h2>
-<p>Patchen Sie dieses Gerät bei Kanau als Kanau Screen mit demselben Mode (<a href="manual-de.html#patch">Kapitel 03 des Handbuchs</a>). In Kanau 1.0 (371) hat Kanau Screen alle&nbsp;19&nbsp;Modes.</p>
+<p>Patchen Sie dieses Gerät bei Kanau als Kanau&nbsp;Lite mit demselben Mode (<a href="manual-de.html#patch">Kapitel 03 des Handbuchs</a>). Kanau 1.0 (372) und neuer haben unter Kanau&nbsp;Lite alle&nbsp;19&nbsp;Modes.</p>
 <p>Legen Sie an anderen Pulten einen Scheinwerfer mit den Kanälen in derselben Reihenfolge wie unter Channels in Settings an und patchen Sie ihn an derselben Adresse. Jeder Kanal ist&nbsp;8-Bit.</p>
-<p>Über <span style="white-space:nowrap">Art-Net</span> antwortet die App auf die Node-Suche (ArtPoll) mit einem Namen wie <code class="q">Kanau Screen · U1 · 001</code>. An einem Pult, das Nodes auflisten kann, suchen Sie nach diesem Namen mit seinem Universe und seiner&nbsp;Adresse.</p>
+<p>Über <span style="white-space:nowrap">Art-Net</span> antwortet die App auf die Node-Suche (ArtPoll) mit einem Namen wie <code class="q">Kanau&nbsp;Lite · U1 · 001</code>. An einem Pult, das Nodes auflisten kann, suchen Sie nach diesem Namen mit seinem Universe und seiner&nbsp;Adresse.</p>
 
 <h2>Unterschied zum LITE&nbsp;MODE in Kanau</h2>
-<p>Kanau&nbsp;Lite empfängt auf dieselbe Weise wie der LITE&nbsp;MODE in Kanau (<a href="manual-de.html#output--12">Kapitel 02 des Handbuchs</a>). Ab Kanau 1.0 (371) sind vier Dinge&nbsp;anders.</p>
+<p>Kanau&nbsp;Lite empfängt auf dieselbe Weise wie der LITE&nbsp;MODE in Kanau (<a href="manual-de.html#output--12">Kapitel 02 des Handbuchs</a>). Ab Kanau 1.0 (375) sind drei Dinge&nbsp;anders.</p>
 <ul>
   <li>Bevor DMX ankommt, zeigt der LITE&nbsp;MODE <code>WAITING</code>. Kanau&nbsp;Lite zeigt den Adressbildschirm.</li>
   <li>Hört DMX auf, behält der LITE&nbsp;MODE die letzte Farbe. Kanau&nbsp;Lite kehrt nach 6 Sekunden zum Adressbildschirm zurück.</li>
   <li>Das × vom Schalter oben rechts verlässt in Kanau den LITE&nbsp;MODE. In Kanau&nbsp;Lite öffnet es&nbsp;Settings.</li>
-  <li>Das Media-Regal gibt es nur in Kanau&nbsp;Lite. Im LITE&nbsp;MODE zeigen die FX &amp; MEDIA- und ULTIMATE-Modes nur&nbsp;Muster.</li>
 </ul>
 
 <h2>Kontakt</h2>

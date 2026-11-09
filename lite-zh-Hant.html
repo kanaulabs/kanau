@@ -49,7 +49,7 @@
 <header class="sitenav"><a class="sitebrand" href="index-zh-Hant.html"><img src="img/icon.png" alt="" width="28" height="28">Kanau</a><div class="sitenavr"><div class="sitelinks"><a href="index-zh-Hant.html#pricing">價格</a><a href="fixtures-zh-Hant.html">燈具</a><a href="manual-zh-Hant.html">說明書</a><a href="support-zh-Hant.html">支援</a></div><label class="langsel"><span class="vh">語言</span><select onchange="location.href=this.value"><option value="lite.html" lang="en">English</option><option value="lite-ja.html" lang="ja">日本語</option><option value="lite-de.html" lang="de">Deutsch</option><option value="lite-fr.html" lang="fr">Français</option><option value="lite-ko.html" lang="ko">한국어</option><option value="lite-zh-Hans.html" lang="zh-Hans">简体中文</option><option value="lite-zh-Hant.html" lang="zh-Hant" selected>繁體中文</option><option value="lite-es.html" lang="es">Español</option><option value="lite-pt-BR.html" lang="pt-BR">Português (Brasil)</option><option value="lite-it.html" lang="it">Italiano</option><option value="lite-nl.html" lang="nl">Nederlands</option><option value="lite-pl.html" lang="pl">Polski</option><option value="lite-cs.html" lang="cs">Čeština</option><option value="lite-sv.html" lang="sv">Svenska</option><option value="lite-da.html" lang="da">Dansk</option><option value="lite-no.html" lang="no">Norsk</option><option value="lite-fi.html" lang="fi">Suomi</option><option value="lite-tr.html" lang="tr">Türkçe</option><option value="lite-id.html" lang="id">Bahasa Indonesia</option><option value="lite-th.html" lang="th">ไทย</option><option value="lite-ar.html" lang="ar">العربية</option><option value="lite-hi.html" lang="hi">हिन्दी</option><option value="lite-vi.html" lang="vi">Tiếng Việt</option></select></label></div></header>
 <div class="hero">
   <h1>Kanau&nbsp;Lite</h1>
-  <p class="sub">截至 Kanau&nbsp;Lite 1.0 (5)</p>
+  <p class="sub">截至 Kanau&nbsp;Lite 1.0 (6)</p>
 </div>
 
 <p>Kanau&nbsp;Lite 是一款免費 App，把 iPhone 或 iPad 變成一盞燈。它接收控台透過 <span style="white-space:nowrap">Art-Net</span> 或 sACN 送來的 DMX，驅動螢幕、背面燈和震動的顏色與亮度。在 FX &amp; MEDIA 和 ULTIMATE 模式下，螢幕還能顯示流動的圖案，以及你自己的圖片和影片。不需要建立帳<span class="nw">號，也沒有廣告。</span></p>
@@ -65,7 +65,7 @@
 <ol>
   <li>打開 Kanau&nbsp;Lite。圖示和名稱會短暫顯示。<span class="nw">點一下可以略過。</span></li>
   <li>Settings 打開。每次打開 Kanau&nbsp;Lite<span class="nw">，它都最先出現。</span></li>
-  <li>選 <span style="white-space:nowrap">Art-Net</span> 或 sACN。然後設定 Mode、Universe 和 <span class="nw">Address。</span></li>
+  <li>先選 Mode，再選 <span style="white-space:nowrap">Art-Net</span> 或 sACN，然後設定 Universe 和 <span class="nw">Address。</span></li>
   <li>點底部的 <span class="nw">START。</span></li>
   <li>在控台上向該 universe 和位址傳送 DMX。資料一到<span class="nw">，螢幕就變成燈。</span></li>
 </ol>
@@ -75,7 +75,7 @@
 <p>點 START 之後，沒有 DMX 到達時，黑色螢幕用大字顯示三行。這就是位址畫面。即使很多台並排放著，也能從遠<span class="nw">處讀出每個編號。</span></p>
 <ul>
   <li>琥珀色的 universe 和位址，例如 <code>U1 · 001</code>。</li>
-  <li>模式，例如 <code>SCREEN RGB 10ch</code>。</li>
+  <li>模式，例如 <code>2: SCREEN RGB 9ch</code>。</li>
   <li>網路，即這台裝置的 IP 位址和它接收的協定，例如 <code class="q">Wi-Fi 192.168.1.24 · <span style="white-space:nowrap">Art-Net</span></code>。沒有網路時顯示 <code>No network</code>。</li>
 </ul>
 <p>點位址畫面即可打開 Settings。燈亮著時，如果 6 秒沒有 DMX 到達，就會回到位址畫面。背面燈<span class="nw">和震動也會停止。</span></p>
@@ -85,17 +85,19 @@
 <table>
   <thead><tr><th>項目</th><th>作用</th></tr></thead>
   <tbody>
-    <tr><td>Language</td><td>System，或 15 種語言之一。一選好，說明文字就會改變。項目和按鈕的名稱仍然是英文。選擇之前，Kanau&nbsp;Lite 顯示英文。</td></tr>
-    <tr><td>Guide</td><td>打開一份 8 步的簡短指南。它在 App 內部，所以沒有網路也能看。</td></tr>
+    <tr><td>Mode</td><td>顯示目前的模式，例如 2: SCREEN RGB 9ch。點它可以從下面的模式中選擇（見模式與通道）。開頭的數字是模式編號。裝置沒有背面燈時，清單裡不列 1: BACK LIGHT ONLY，但其他模式的編號不變。</td></tr>
     <tr><td><span style="white-space:nowrap">Art-Net</span> / sACN</td><td>點兩者之一。選中的那個會變成琥珀色。</td></tr>
-    <tr><td>Mode</td><td>顯示目前的模式，例如 SCREEN RGB 10ch。點它可以從下面的模式中選擇（見模式與通道）。裝置沒有背面燈時，清單裡不列 BACK LIGHT ONLY。</td></tr>
     <tr><td>Universe</td><td><span style="white-space:nowrap">Art-Net</span> 為 0–32767，sACN 為 1–63999。</td></tr>
     <tr><td>Address</td><td>從 1 起，到該模式的通道仍能放進 512 以內的最大位址為止。</td></tr>
+    <tr><td>Channels</td><td>目前模式的通道（見下文）。</td></tr>
+    <tr><td>PROXIMITY</td><td>開啟後，把這台裝置貼近耳朵時螢幕會變暗。背面燈和震動繼續運作。預設是關閉的。沒有近接感應器的裝置（例如 iPad）不顯示它。</td></tr>
     <tr><td>Media</td><td>顯示 51 個編號中有多少個存放了圖片或影片，例如 <code>3 / 51</code>。點它可以打開素材架（見 Media）。</td></tr>
+    <tr><td>Language</td><td>System，或 15 種語言之一。一選好，說明文字就會改變。項目和按鈕的名稱仍然是英文。選擇之前，Kanau&nbsp;Lite 顯示英文。</td></tr>
+    <tr><td>Guide</td><td>打開一份 8 步的簡短指南。它在 App 內部，所以沒有網路也能看。</td></tr>
   </tbody>
 </table>
-<p>Universe 和 Address 可以輸入數字，也可以用 − 和 +。下面的琥珀色一行顯示螢幕、背面燈和震動所用的位址，例如 <code class="q">Screen 001–008 · Back Light 009 · Vibration 010</code>。</p>
-<p>接下來是 Channels。每次打開 Settings 時它都是收起的，只顯示通道數，例如 <code>10ch</code>。點標題可以展開目前模式的通道清單，包括位址、名稱和數值的意思。關於在 Kanau 和其他控台上 patch 的兩行，收起時也會顯示。這台裝置沒有的功能（背面燈或震動）所在的列會變灰，並以 <code>Not on this device</code> 開頭。這一列仍然占用它的位址，所以在控台上<span class="nw">也要把它算進去。</span></p>
+<p>Universe 和 Address 可以輸入數字，也可以用 − 和 +。下面的琥珀色一行顯示螢幕、背面燈和震動所用的位址，例如 <code class="q">Screen 001–007 · Back Light 008 · Vibration 009</code>。</p>
+<p>接著是 Channels。每次打開 Settings 時它都是收起的，只顯示通道數，例如 <code>9ch</code>。點標題可以展開目前模式的通道清單，包括位址、名稱和數值的意思。關於在 Kanau 和其他控台上 patch 的兩行，收起時也會顯示。這台裝置沒有的功能（背面燈或震動）所在的列會變灰，並以 <code>Not on this device</code> 開頭。這一列仍然占用它的位址，所以在控台上<span class="nw">也要把它算進去。</span></p>
 <p>Settings 的末尾有 Kanau&nbsp;Lite 的版本、Made by Kanau Labs、kanaulabs.app 的連結、Privacy Policy、Contact Support、<span style="white-space:nowrap">Art-Net</span> 的署名和版權聲明。設定會被儲存，下次打開 <span class="nw">App 時仍然在。</span></p>
 
 <h2>燈亮著的時候</h2>
@@ -104,23 +106,23 @@
 <p>Kanau&nbsp;Lite 只在 App 打開時接收 DMX。回到 Home 或鎖定裝置後，它會停止接收，停止背面燈和震動，並把螢幕亮度恢復原樣。再次打<span class="nw">開才會再次接收。</span></p>
 
 <h2>模式與通道</h2>
-<p>共有 19 種模式。預設是 SCREEN <span class="nw">RGB 10ch。</span></p>
+<p>共有 19 種模式。預設是 2: SCREEN RGB 9ch。每個名稱開頭的數字是模式編號，末尾<span class="nw">的數字是通道數。</span></p>
 <table>
   <thead><tr><th>模式</th><th>螢幕</th></tr></thead>
   <tbody>
-    <tr><td>BACK LIGHT ONLY 1ch</td><td>只用背面燈。螢幕保持暗著。</td></tr>
-    <tr><td>SCREEN RGB 10ch<br>SCREEN HUE SAT 9ch</td><td>整個螢幕是一種顏色。</td></tr>
-    <tr><td>SCREEN 2 CELLS RGB 18ch<br>SCREEN 2 CELLS HUE SAT 16ch</td><td>螢幕分成 2 塊。</td></tr>
-    <tr><td>SCREEN 4 CELLS RGB 32ch<br>SCREEN 4 CELLS HUE SAT 28ch</td><td>螢幕分成 4 塊。</td></tr>
-    <tr><td>SCREEN 8 CELLS RGB 60ch<br>SCREEN 8 CELLS HUE SAT 52ch</td><td>螢幕分成 8 塊。</td></tr>
-    <tr><td>SCREEN 4 STRIPS RGB 32ch<br>SCREEN 4 STRIPS HUE SAT 28ch</td><td>螢幕沿長邊分成 4 個條。</td></tr>
-    <tr><td>SCREEN 8 STRIPS RGB 60ch<br>SCREEN 8 STRIPS HUE SAT 52ch</td><td>螢幕沿長邊分成 8 個條。</td></tr>
-    <tr><td>SCREEN FX &amp; MEDIA RGB 19ch<br>SCREEN FX &amp; MEDIA HUE SAT 18ch</td><td>整個螢幕，帶有圖案、圖片和影片（見 FX &amp; MEDIA）。</td></tr>
-    <tr><td>SCREEN COOKIE RGB 63ch<br>SCREEN COOKIE HUE SAT 55ch</td><td>螢幕分成不規則的斑駁區域，帶有 8 種顏色（見 COOKIE 和 ULTIMATE）。</td></tr>
-    <tr><td>ULTIMATE RGB 73ch<br>ULTIMATE HUE SAT 65ch</td><td>選擇螢幕的分割方式，並顯示圖案、圖片和影片（見 COOKIE 和 ULTIMATE）。</td></tr>
+    <tr><td>1: BACK LIGHT ONLY 1ch</td><td>只用背面燈。螢幕保持暗著。</td></tr>
+    <tr><td>2: SCREEN RGB 9ch<br>3: SCREEN HUE SAT 8ch</td><td>整個螢幕是一種顏色。</td></tr>
+    <tr><td>4: SCREEN 2 CELLS RGB 17ch<br>5: SCREEN 2 CELLS HUE SAT 15ch</td><td>螢幕分成 2 塊。</td></tr>
+    <tr><td>6: SCREEN 4 CELLS RGB 31ch<br>7: SCREEN 4 CELLS HUE SAT 27ch</td><td>螢幕分成 4 塊。</td></tr>
+    <tr><td>8: SCREEN 8 CELLS RGB 59ch<br>9: SCREEN 8 CELLS HUE SAT 51ch</td><td>螢幕分成 8 塊。</td></tr>
+    <tr><td>10: SCREEN 4 STRIPS RGB 31ch<br>11: SCREEN 4 STRIPS HUE SAT 27ch</td><td>螢幕沿長邊分成 4 個條。</td></tr>
+    <tr><td>12: SCREEN 8 STRIPS RGB 59ch<br>13: SCREEN 8 STRIPS HUE SAT 51ch</td><td>螢幕沿長邊分成 8 個條。</td></tr>
+    <tr><td>14: SCREEN FX &amp; MEDIA RGB 18ch<br>15: SCREEN FX &amp; MEDIA HUE SAT 17ch</td><td>整個螢幕，帶有圖案、圖片和影片（見 FX &amp; MEDIA）。</td></tr>
+    <tr><td>16: SCREEN COOKIE RGB 62ch<br>17: SCREEN COOKIE HUE SAT 54ch</td><td>螢幕分成不規則的斑駁區域，帶有 8 種顏色（見 COOKIE 和 ULTIMATE）。</td></tr>
+    <tr><td>18: ULTIMATE RGB 72ch<br>19: ULTIMATE HUE SAT 64ch</td><td>選擇螢幕的分割方式，並顯示圖案、圖片和影片（見 COOKIE 和 ULTIMATE）。</td></tr>
   </tbody>
 </table>
-<p>除了 BACK LIGHT ONLY，每種模式都以 Screen Dimmer 開頭，以 Function、Back Light 和 Vibration 結尾。SCREEN RGB 10ch 依下面的順序有這些通道。數值照它們在 Settings 的 Channels<span class="nw"> 中的樣子寫出。</span></p>
+<p>除了 BACK LIGHT ONLY，每種模式都以 Screen Dimmer 開頭，以 Back Light 和 Vibration 結尾。2: SCREEN RGB 9ch 依下面的順序有這些通道。數值照它們在 Settings 的 Channels<span class="nw"> 中的樣子寫出。</span></p>
 <table>
   <thead><tr><th>#</th><th>名稱</th><th>數值</th></tr></thead>
   <tbody>
@@ -131,16 +133,15 @@
     <tr><td>5</td><td>Red</td><td>0–100%</td></tr>
     <tr><td>6</td><td>Green</td><td>0–100%</td></tr>
     <tr><td>7</td><td>Blue</td><td>0–100%</td></tr>
-    <tr><td>8</td><td>Function</td><td>0–127 Off · 128–255 Proximity · Home 0</td></tr>
-    <tr><td>9</td><td>Back Light</td><td>0–100%</td></tr>
-    <tr><td>10</td><td>Vibration</td><td>0–100%</td></tr>
+    <tr><td>8</td><td>Back Light</td><td>0–100%</td></tr>
+    <tr><td>9</td><td>Vibration</td><td>0–100%</td></tr>
   </tbody>
 </table>
 <p>HUE SAT 模式用 Hue（0–360°）和 Saturation 代替 Red、Green 和 Blue。在 CELLS 和 STRIPS 模式中，Screen Dimmer 之後，螢幕的每一部分各有 Dimmer、CCT、G/M、Crossfade 和顏色。CELLS 從左上開始編號。8 塊在直放的螢幕上是 2 欄 4 列，在橫放的螢幕上是 4 欄 2 列。STRIPS 是沿螢幕長邊排列的等寬條。直放的螢幕是橫條，從上到下編號；橫放的螢幕是直條，從左到右編號。正方形螢<span class="nw">幕從上到下分割。</span></p>
-<p>Crossfade 設定白色和顏色的混合：0 是白色，255 是顏色。白色由 CCT 和 G/M 決定。Crossfade 在 0 時，調高 Red、Green 或 Blue，螢幕仍然是白色。Screen Dimmer 只讓螢幕變暗，不影響背面燈。把 Function 設為 128 或更高就選到 Proximity，它使用裝<span class="nw">置的近接感應器。</span></p>
+<p>Crossfade 設定白色和顏色的混合：0 是白色，255 是顏色。白色由 CCT 和 G/M 決定。Crossfade 在 0 時，調高 Red、Green 或 Blue，螢幕仍然是白色。Screen Dimmer 只讓螢幕變暗<span class="nw">，不影響背面燈。</span></p>
 
 <h2>FX &amp; MEDIA</h2>
-<p>SCREEN FX &amp; MEDIA RGB 19ch 按下面的順序有這些通道。SCREEN FX &amp; MEDIA HUE SAT 18ch 用 Hue 和 Saturation 代替 Red、Green<span class="nw"> 和 Blue。</span></p>
+<p>14: SCREEN FX &amp; MEDIA RGB 18ch 按下面的順序有這些通道。15: SCREEN FX &amp; MEDIA HUE SAT 17ch 用 Hue 和 Saturation 代替 Red、Green<span class="nw"> 和 Blue。</span></p>
 <table>
   <thead><tr><th>#</th><th>名稱</th><th>數值</th></tr></thead>
   <tbody>
@@ -152,7 +153,7 @@
     <tr><td>6</td><td>Green</td><td>0–100%</td></tr>
     <tr><td>7</td><td>Blue</td><td>0–100%</td></tr>
     <tr><td>8</td><td>Color Macro</td><td>0–15 Off · 16–255 15 colors, 16 each · Home 0</td></tr>
-    <tr><td>9</td><td>Content</td><td>0 SOLID · 32 GLINT · 64 SWEEP · 96 KALEIDO · 128 WATER · 160 FIRE · 192 VIDEO GLOW · 224 CATCHLIGHT · Home 0</td></tr>
+    <tr><td>9</td><td>Content</td><td>0 SOLID · 32 GLINT · 64 SWEEP · 96 KALEIDO · 128 WATER · 160 FIRE · 192 VIDEO GLOW · 224 AURORA · Home 0</td></tr>
     <tr><td>10</td><td>Speed</td><td>0 Slow · 128 Normal · 255 Fast · Home 128</td></tr>
     <tr><td>11</td><td>Amount</td><td>0–255 · Home 128</td></tr>
     <tr><td>12</td><td>Size</td><td>0–255 · Home 128</td></tr>
@@ -160,18 +161,17 @@
     <tr><td>14</td><td>Media</td><td>0 Off · 1–5 = 1 · 6–10 = 2 … 251–255 = 51 · Home 0</td></tr>
     <tr><td>15</td><td>Playback</td><td>0–85 Play · 86–170 Pause · 171–255 Restart · Home 0</td></tr>
     <tr><td>16</td><td>Color Temp</td><td>0 Warm · 128 As is · 255 Cool · Home 128</td></tr>
-    <tr><td>17</td><td>Function</td><td>0–127 Off · 128–255 Proximity · Home 0</td></tr>
-    <tr><td>18</td><td>Back Light</td><td>0–100%</td></tr>
-    <tr><td>19</td><td>Vibration</td><td>0–100%</td></tr>
+    <tr><td>17</td><td>Back Light</td><td>0–100%</td></tr>
+    <tr><td>18</td><td>Vibration</td><td>0–100%</td></tr>
   </tbody>
 </table>
 <p>螢幕從黑色開始疊加：先是 Media 選中的圖片或影片，再在上面疊上 Content 選中的圖案。Mix 決定兩者各顯示多少：0 只顯示圖片或影片，255 只顯示圖案。Media 為 0，或者那個編號裡什麼都沒有<span class="nw">時，只顯示圖案。</span></p>
-<p>Content 的第一項 SOLID 用顏色填滿螢幕。在 Home 值時，FX &amp; MEDIA 發出的光與 SCREEN RGB 相同。其餘七項是會動的圖案。Speed 決定它們動得多快，Amount 和 Size 改變各個圖案的樣子。圖案的顏色取自螢幕的顏色。Color Macro 不為 0 時，改用巨集顏色。從 16 開始，每 16 個值選下一種顏色：3200 K、4300 K、5600 K、Red、Orange、Amber、Yellow、Green、Cyan、Sky Blue、Blue、Deep Blue、Lavender、<span class="nw">Magenta、Pink。</span></p>
+<p>Content 的第一項 SOLID 用顏色填滿螢幕。在 Home 值時，FX &amp; MEDIA 發出的光與 SCREEN RGB 相同。其餘七項是會動的圖案。Speed 決定它們動得多快，Amount 和 Size 改變各個圖案的樣子。每個圖案都有自己的顏色，所以即使不設定顏色，看起來也是完整的。Crossfade 讓圖案從 0 時自己的顏色，過渡到 255 時 Red、Green 和 Blue 的顏色。Color Macro 不為 0 時，改用巨集顏色。從 16 開始，每 16 個值選下一種顏色：3200 K、4300 K、5600 K、Red、Orange、Amber、Yellow、Green、Cyan、Sky Blue、Blue、Deep Blue、Lavender、<span class="nw">Magenta、Pink。</span></p>
 <p>圖片和影片保持自己的顏色。Color Temp 讓它們偏暖或偏冷，Screen Dimmer 讓它們變暗。影片無聲播放，播完後從頭再來。Playback 播放或暫停影片。Restart 在數值進入 171–255 的那一刻，讓影<span class="nw">片回到開頭一次。</span></p>
 
 <h2>COOKIE 和 ULTIMATE</h2>
-<p>SCREEN COOKIE 把螢幕分成不規則的斑駁區域。每個區域取 8 個格之一的顏色，所以一個格的顏色會出現在螢幕的多處。要做出光與影，請在控台上把其中<span class="nw">幾個格設為黑色。</span></p>
-<p>SCREEN COOKIE RGB 63ch 以 Screen Dimmer 開頭，接著是 Shape、Soft 和 Drift。然後是 8 個格，每個格都有 Dimmer、CCT、G/M、Crossfade、Red、Green 和 Blue，與 CELLS 模式相同。最後是 Function、Back Light 和 Vibration。SCREEN COOKIE HUE SAT 55ch 的每個格用 Hue 和 Saturation 代替 Red、Green<span class="nw"> 和 Blue。</span></p>
+<p>SCREEN COOKIE 把螢幕分成不規則的斑駁區域。每個區域取 8 個格之一的顏色，所以一個格的顏色會出現在螢幕的多處。無論各格是什麼顏色，有些區域始終保持黑色，所以即使 8 個格全部點亮，光之間也有陰影。想要更多陰影，請在控台上把其中<span class="nw">幾個格設為黑色。</span></p>
+<p>16: SCREEN COOKIE RGB 62ch 以 Screen Dimmer 開頭，接著是 Shape、Soft 和 Drift。然後是 8 個格，每個格都有 Dimmer、CCT、G/M、Crossfade、Red、Green 和 Blue，與 CELLS 模式相同。最後是 Back Light 和 Vibration。17: SCREEN COOKIE HUE SAT 54ch 的每個格用 Hue 和 Saturation 代替 Red、Green<span class="nw"> 和 Blue。</span></p>
 <table>
   <thead><tr><th>#</th><th>名稱</th><th>數值</th></tr></thead>
   <tbody>
@@ -181,7 +181,7 @@
   </tbody>
 </table>
 <p>Shape 選擇圖案。數值移動時圖案平滑變化，所以在控台上推漸變，就會從一個圖案變成下一個。Soft 使區域之間的邊緣變模糊：為 0 時邊緣清晰。Drift 決定圖案流動的快慢：為 <span class="nw">0 時靜止不動。</span></p>
-<p>ULTIMATE RGB 73ch 按這個順序包含 COOKIE、FX &amp; MEDIA 和 <span class="nw">8 個格的通道。</span></p>
+<p>18: ULTIMATE RGB 72ch 按這個順序包含 COOKIE、FX &amp; MEDIA 和 <span class="nw">8 個格的通道。</span></p>
 <table>
   <thead><tr><th>#</th><th>名稱</th><th>數值</th></tr></thead>
   <tbody>
@@ -190,11 +190,11 @@
     <tr><td>3–5</td><td>Shape, Soft, Drift</td><td>與 COOKIE 相同</td></tr>
     <tr><td>6–14</td><td>Color Macro, Content, Speed, Amount, Size, Mix, Media, Playback, Color Temp</td><td>與 FX &amp; MEDIA 相同</td></tr>
     <tr><td>15–70</td><td>Dimmer 1 … Blue 8</td><td>每個格 7 個通道，與 CELLS 模式相同</td></tr>
-    <tr><td>71–73</td><td>Function, Back Light, Vibration</td><td>與其他模式相同</td></tr>
+    <tr><td>71–72</td><td>Back Light, Vibration</td><td>與其他模式相同</td></tr>
   </tbody>
 </table>
-<p>ULTIMATE HUE SAT 65ch 每個格有 6 個通道，帶有 Hue 和 Saturation，所以各格是 15–62，Function、Back Light 和 Vibration <span class="nw">是 63–65。</span></p>
-<p>只有在 Content 為 SOLID 且 Media 為 0 時才顯示這些格。此時 Cells 選擇螢幕的分割方式。SCREEN 用第 1 格的顏色填滿整個螢幕。在顯示圖案、圖片或影片時（Content 不是 SOLID，或 Media 不是 0），螢幕是一整塊，與 FX &amp; MEDIA 相同，圖案取第 1 格的顏色。Media 按數值計：只要不是 0，即使該編號裡什麼也沒有，螢幕也是一整塊。Color Macro 只在螢幕是一整塊時有效。螢幕被分割時，它不起作用。當 Cells 把螢幕分成少於 8 部分時，其餘格的通道不起作用，但仍<span class="nw">占用各自的位址。</span></p>
+<p>19: ULTIMATE HUE SAT 64ch 每個格有 6 個通道，帶有 Hue 和 Saturation，所以各格是 15–62，Back Light 和 Vibration <span class="nw">是 63–64。</span></p>
+<p>只有在 Content 為 SOLID 且 Media 為 0 時才顯示這些格。此時 Cells 選擇螢幕的分割方式。SCREEN 用第 1 格的顏色填滿整個螢幕。在顯示圖案、圖片或影片時（Content 不是 SOLID，或 Media 不是 0），螢幕是一整塊，與 FX &amp; MEDIA 相同，圖案的顏色和 Crossfade 都取自第 1 格。Media 按數值計：只要不是 0，即使該編號裡什麼也沒有，螢幕也是一整塊。Color Macro 只在螢幕是一整塊時有效。螢幕被分割時，它不起作用。當 Cells 把螢幕分成少於 8 部分時，其餘格的通道不起作用，但仍<span class="nw">占用各自的位址。</span></p>
 
 <h2>Media</h2>
 <p>素材架裡存放這台裝置上的圖片和影片，編號從 1 到 51。從 Settings 的 Media 打開。每種模式下它都在，所以可以在切換到 FX &amp; MEDIA 或 <span class="nw">ULTIMATE 之前先放好。</span></p>
@@ -205,17 +205,16 @@
 <p>在控台上，由 Media 通道選擇編號：1–5 是 1，6–10 是 2，依此類推，251–255 是 51。檔案留在這台裝置上，不會被<span class="nw">傳送到任何地方。</span></p>
 
 <h2>在控台上 patch</h2>
-<p>在 Kanau 上，用相同的模式把這台裝置 patch 成 Kanau Screen（<a href="manual-zh-Hant.html#patch">說明書第 03 章</a>）。在 Kanau 1.0 (371) 中，Kanau Screen 有全部<span class="nw"> 19 種模式。</span></p>
+<p>在 Kanau 上，用相同的模式把這台裝置 patch 成 Kanau&nbsp;Lite（<a href="manual-zh-Hant.html#patch">說明書第 03 章</a>）。在 Kanau 1.0 (372) 及之後的版本中，Kanau&nbsp;Lite 有全部<span class="nw"> 19 種模式。</span></p>
 <p>在其他控台上，建立一個通道順序與 Settings 的 Channels 相同的燈具，並 patch 在相同的位址。每個通道都<span class="nw">是 8-bit。</span></p>
-<p>在 <span style="white-space:nowrap">Art-Net</span> 上，App 會用 <code class="q">Kanau Screen · U1 · 001</code> 這樣的名字回應節點探索（ArtPoll）。在能列出節點的控台上，請找這個名字，以及它的 <span class="nw">universe 和位址。</span></p>
+<p>在 <span style="white-space:nowrap">Art-Net</span> 上，App 會用 <code class="q">Kanau&nbsp;Lite · U1 · 001</code> 這樣的名字回應節點探索（ArtPoll）。在能列出節點的控台上，請找這個名字，以及它的 <span class="nw">universe 和位址。</span></p>
 
 <h2>與 Kanau 中的 LITE&nbsp;MODE 有何不同</h2>
-<p>Kanau&nbsp;Lite 的接收方式與 Kanau 中的 LITE&nbsp;MODE 相同（<a href="manual-zh-Hant.html#output--12">說明書第 02 章</a>）。自 Kanau 1.0 (371) <span class="nw">起，有四點不同。</span></p>
+<p>Kanau&nbsp;Lite 的接收方式與 Kanau 中的 LITE&nbsp;MODE 相同（<a href="manual-zh-Hant.html#output--12">說明書第 02 章</a>）。自 Kanau 1.0 (375) <span class="nw">起，有三點不同。</span></p>
 <ul>
   <li>DMX 到達之前，LITE&nbsp;MODE 顯示 <code>WAITING</code>。Kanau&nbsp;Lite<span class="nw"> 顯示位址畫面。</span></li>
   <li>DMX 中斷時，LITE&nbsp;MODE 保持最後的顏色。Kanau&nbsp;Lite 在 6 秒<span class="nw">後回到位址畫面。</span></li>
   <li>右上角開關裡的 × 在 Kanau 中是離開 LITE&nbsp;MODE。在 Kanau&nbsp;Lite 中是打開 <span class="nw">Settings。</span></li>
-  <li>Media 素材架只在 Kanau&nbsp;Lite 中。在 LITE&nbsp;MODE 中，FX &amp; MEDIA 和 ULTIMATE <span class="nw">模式只顯示圖案。</span></li>
 </ul>
 
 <h2>聯絡方式</h2>

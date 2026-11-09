@@ -49,7 +49,7 @@
 <header class="sitenav"><a class="sitebrand" href="index-vi.html"><img src="img/icon.png" alt="" width="28" height="28">Kanau</a><div class="sitenavr"><div class="sitelinks"><a href="index-vi.html#pricing">Giá</a><a href="fixtures-vi.html">Đèn</a><a href="manual-vi.html">Hướng dẫn</a><a href="support-vi.html">Hỗ trợ</a></div><label class="langsel"><span class="vh">Ngôn ngữ</span><select onchange="location.href=this.value"><option value="lite.html" lang="en">English</option><option value="lite-ja.html" lang="ja">日本語</option><option value="lite-de.html" lang="de">Deutsch</option><option value="lite-fr.html" lang="fr">Français</option><option value="lite-ko.html" lang="ko">한국어</option><option value="lite-zh-Hans.html" lang="zh-Hans">简体中文</option><option value="lite-zh-Hant.html" lang="zh-Hant">繁體中文</option><option value="lite-es.html" lang="es">Español</option><option value="lite-pt-BR.html" lang="pt-BR">Português (Brasil)</option><option value="lite-it.html" lang="it">Italiano</option><option value="lite-nl.html" lang="nl">Nederlands</option><option value="lite-pl.html" lang="pl">Polski</option><option value="lite-cs.html" lang="cs">Čeština</option><option value="lite-sv.html" lang="sv">Svenska</option><option value="lite-da.html" lang="da">Dansk</option><option value="lite-no.html" lang="no">Norsk</option><option value="lite-fi.html" lang="fi">Suomi</option><option value="lite-tr.html" lang="tr">Türkçe</option><option value="lite-id.html" lang="id">Bahasa Indonesia</option><option value="lite-th.html" lang="th">ไทย</option><option value="lite-ar.html" lang="ar">العربية</option><option value="lite-hi.html" lang="hi">हिन्दी</option><option value="lite-vi.html" lang="vi" selected>Tiếng Việt</option></select></label></div></header>
 <div class="hero">
   <h1>Kanau&nbsp;Lite</h1>
-  <p class="sub">Tính đến Kanau&nbsp;Lite 1.0 (5)</p>
+  <p class="sub">Tính đến Kanau&nbsp;Lite 1.0 (6)</p>
 </div>
 
 <p>Kanau&nbsp;Lite là ứng dụng miễn phí biến iPhone hoặc iPad thành một cái đèn. Nó nhận DMX gửi từ bàn điều khiển qua <span style="white-space:nowrap">Art-Net</span> hoặc sACN, rồi điều khiển màu và độ sáng của màn hình, đèn mặt sau và độ rung. Ở các chế độ FX &amp; MEDIA và ULTIMATE, màn hình còn có thể hiện các họa tiết chuyển động cùng hình ảnh và video của riêng bạn. Không cần tạo tài khoản và không có quảng&nbsp;cáo.</p>
@@ -65,7 +65,7 @@
 <ol>
   <li>Mở Kanau&nbsp;Lite. Biểu tượng và tên hiện ra trong giây lát. Chạm để&nbsp;bỏ&nbsp;qua.</li>
   <li>Settings mở ra. Nó luôn hiện đầu tiên mỗi lần Kanau&nbsp;Lite&nbsp;mở.</li>
-  <li>Chọn <span style="white-space:nowrap">Art-Net</span> hoặc sACN. Sau đó đặt Mode, Universe và&nbsp;Address.</li>
+  <li>Chọn Mode trước, rồi chọn <span style="white-space:nowrap">Art-Net</span> hoặc sACN, sau đó đặt Universe và&nbsp;Address.</li>
   <li>Chạm START ở phía&nbsp;dưới.</li>
   <li>Từ bàn điều khiển, gửi DMX tới universe và địa chỉ đó. Khi DMX tới, màn hình trở thành&nbsp;đèn.</li>
 </ol>
@@ -75,7 +75,7 @@
 <p>Sau START, khi chưa có DMX tới, một màn hình đen hiện ba dòng bằng chữ lớn. Đây là màn hình địa chỉ. Khi nhiều thiết bị đặt cạnh nhau, bạn có thể đọc từng con số&nbsp;từ&nbsp;xa.</p>
 <ul>
   <li>Universe và địa chỉ, màu hổ phách, ví dụ <code>U1 · 001</code>.</li>
-  <li>Chế độ, ví dụ <code>SCREEN RGB 10ch</code>.</li>
+  <li>Chế độ, ví dụ <code>2: SCREEN RGB 9ch</code>.</li>
   <li>Mạng, tức là địa chỉ IP của thiết bị này và giao thức mà nó lắng nghe, ví dụ <code class="q">Wi-Fi 192.168.1.24 · <span style="white-space:nowrap">Art-Net</span></code>. Khi không có mạng, nó hiện <code>No network</code>.</li>
 </ul>
 <p>Chạm vào màn hình địa chỉ để mở Settings. Nếu 6 giây không có DMX tới trong lúc đèn đang sáng, màn hình địa chỉ sẽ quay lại. Đèn mặt sau và độ rung cũng&nbsp;dừng.</p>
@@ -85,17 +85,19 @@
 <table>
   <thead><tr><th>Mục</th><th>Làm gì</th></tr></thead>
   <tbody>
-    <tr><td>Language</td><td>System, hoặc một trong 15 ngôn ngữ. Phần giải thích đổi ngay khi bạn chọn. Tên các mục và nút vẫn bằng tiếng Anh. Cho đến khi bạn chọn, Kanau&nbsp;Lite dùng tiếng Anh.</td></tr>
-    <tr><td>Guide</td><td>Mở một bản hướng dẫn ngắn gồm 8 bước. Nó nằm ngay trong ứng dụng nên dùng được khi không có internet.</td></tr>
+    <tr><td>Mode</td><td>Hiện chế độ hiện tại, ví dụ 2: SCREEN RGB 9ch. Chạm vào đó để chọn trong các chế độ bên dưới (xem Chế độ và kênh). Số ở đầu là số thứ tự của chế độ. Trên thiết bị không có đèn mặt sau, 1: BACK LIGHT ONLY không có trong danh sách, nhưng các chế độ khác vẫn giữ số của mình.</td></tr>
     <tr><td><span style="white-space:nowrap">Art-Net</span> / sACN</td><td>Chạm vào một trong hai. Cái bạn chọn chuyển sang màu hổ phách.</td></tr>
-    <tr><td>Mode</td><td>Hiện chế độ hiện tại, ví dụ SCREEN RGB 10ch. Chạm vào đó để chọn trong các chế độ bên dưới (xem Chế độ và kênh). Trên thiết bị không có đèn mặt sau, BACK LIGHT ONLY không có trong danh sách.</td></tr>
     <tr><td>Universe</td><td>0–32767 với <span style="white-space:nowrap">Art-Net</span>, 1–63999 với sACN.</td></tr>
     <tr><td>Address</td><td>Từ 1 đến địa chỉ cao nhất mà các kênh của chế độ vẫn nằm trong 512.</td></tr>
+    <tr><td>Channels</td><td>Các kênh của chế độ hiện tại (xem bên dưới).</td></tr>
+    <tr><td>PROXIMITY</td><td>Khi bật, màn hình tối đi trong lúc bạn áp thiết bị này vào tai. Đèn mặt sau và độ rung vẫn tiếp tục. Mặc định là tắt. Thiết bị không có cảm biến tiệm cận, như iPad, không hiện mục này.</td></tr>
     <tr><td>Media</td><td>Cho biết trong 51 số có bao nhiêu số đang chứa hình ảnh hoặc video, ví dụ <code>3 / 51</code>. Chạm để mở kệ (xem Media).</td></tr>
+    <tr><td>Language</td><td>System, hoặc một trong 15 ngôn ngữ. Phần giải thích đổi ngay khi bạn chọn. Tên các mục và nút vẫn bằng tiếng Anh. Cho đến khi bạn chọn, Kanau&nbsp;Lite dùng tiếng Anh.</td></tr>
+    <tr><td>Guide</td><td>Mở một bản hướng dẫn ngắn gồm 8 bước. Nó nằm ngay trong ứng dụng nên dùng được khi không có internet.</td></tr>
   </tbody>
 </table>
-<p>Gõ một số cho Universe và Address, hoặc dùng − và +. Dòng màu hổ phách bên dưới cho biết các địa chỉ mà màn hình, đèn mặt sau và độ rung dùng, ví dụ <code class="q">Screen 001–008 · Back Light 009 · Vibration 010</code>.</p>
-<p>Tiếp theo là Channels. Mỗi lần mở Settings, mục này bắt đầu ở trạng thái thu gọn và chỉ hiện số kênh, ví dụ <code>10ch</code>. Chạm vào tiêu đề để mở danh sách các kênh của chế độ hiện tại cùng địa chỉ, tên và ý nghĩa của các giá trị. Hai dòng về cách khai báo trên Kanau và trên các bàn khác vẫn hiện ngay cả khi thu gọn. Dòng của một tính năng mà thiết bị này không có (đèn mặt sau hoặc độ rung) bị làm mờ và bắt đầu bằng <code>Not on this device</code>. Dòng đó vẫn dùng địa chỉ của nó, nên hãy tính cả nó trên bàn điều&nbsp;khiển.</p>
+<p>Gõ một số cho Universe và Address, hoặc dùng − và +. Dòng màu hổ phách bên dưới cho biết các địa chỉ mà màn hình, đèn mặt sau và độ rung dùng, ví dụ <code class="q">Screen 001–007 · Back Light 008 · Vibration 009</code>.</p>
+<p>Kế đến là Channels. Mỗi lần mở Settings, mục này bắt đầu ở trạng thái thu gọn và chỉ hiện số kênh, ví dụ <code>9ch</code>. Chạm vào tiêu đề để mở danh sách các kênh của chế độ hiện tại cùng địa chỉ, tên và ý nghĩa của các giá trị. Hai dòng về cách khai báo trên Kanau và trên các bàn khác vẫn hiện ngay cả khi thu gọn. Dòng của một tính năng mà thiết bị này không có (đèn mặt sau hoặc độ rung) bị làm mờ và bắt đầu bằng <code>Not on this device</code>. Dòng đó vẫn dùng địa chỉ của nó, nên hãy tính cả nó trên bàn điều&nbsp;khiển.</p>
 <p>Cuối Settings là phiên bản Kanau&nbsp;Lite, Made by Kanau Labs, một liên kết tới kanaulabs.app, Privacy Policy, Contact Support, ghi công <span style="white-space:nowrap">Art-Net</span> và bản quyền. Cài đặt được lưu và vẫn còn đó ở lần mở ứng&nbsp;dụng&nbsp;sau.</p>
 
 <h2>Khi đèn đang sáng</h2>
@@ -104,23 +106,23 @@
 <p>Kanau&nbsp;Lite chỉ nhận DMX khi ứng dụng đang mở. Nếu bạn về Home hoặc khóa thiết bị, nó ngừng nhận, dừng đèn mặt sau và độ rung, và trả độ sáng màn hình về như cũ. Mở lại để&nbsp;nhận&nbsp;lại.</p>
 
 <h2>Chế độ và kênh</h2>
-<p>Có 19 chế độ. Mặc định là SCREEN&nbsp;RGB&nbsp;10ch.</p>
+<p>Có 19 chế độ. Mặc định là 2: SCREEN RGB 9ch. Số ở đầu mỗi tên là số thứ tự của chế độ, còn số ở cuối là&nbsp;số&nbsp;kênh.</p>
 <table>
   <thead><tr><th>Chế độ</th><th>Màn hình</th></tr></thead>
   <tbody>
-    <tr><td>BACK LIGHT ONLY 1ch</td><td>Chỉ dùng đèn mặt sau. Màn hình vẫn tối.</td></tr>
-    <tr><td>SCREEN RGB 10ch<br>SCREEN HUE SAT 9ch</td><td>Cả màn hình là một màu.</td></tr>
-    <tr><td>SCREEN 2 CELLS RGB 18ch<br>SCREEN 2 CELLS HUE SAT 16ch</td><td>Màn hình chia làm 2.</td></tr>
-    <tr><td>SCREEN 4 CELLS RGB 32ch<br>SCREEN 4 CELLS HUE SAT 28ch</td><td>Màn hình chia làm 4.</td></tr>
-    <tr><td>SCREEN 8 CELLS RGB 60ch<br>SCREEN 8 CELLS HUE SAT 52ch</td><td>Màn hình chia làm 8.</td></tr>
-    <tr><td>SCREEN 4 STRIPS RGB 32ch<br>SCREEN 4 STRIPS HUE SAT 28ch</td><td>Màn hình chia làm 4 dải theo cạnh dài.</td></tr>
-    <tr><td>SCREEN 8 STRIPS RGB 60ch<br>SCREEN 8 STRIPS HUE SAT 52ch</td><td>Màn hình chia làm 8 dải theo cạnh dài.</td></tr>
-    <tr><td>SCREEN FX &amp; MEDIA RGB 19ch<br>SCREEN FX &amp; MEDIA HUE SAT 18ch</td><td>Cả màn hình, với họa tiết, hình ảnh và video (xem FX &amp; MEDIA).</td></tr>
-    <tr><td>SCREEN COOKIE RGB 63ch<br>SCREEN COOKIE HUE SAT 55ch</td><td>Màn hình chia thành các vùng lốm đốm, không đều, với 8 màu (xem COOKIE và ULTIMATE).</td></tr>
-    <tr><td>ULTIMATE RGB 73ch<br>ULTIMATE HUE SAT 65ch</td><td>Chọn cách chia màn hình, và hiện họa tiết, hình ảnh và video (xem COOKIE và ULTIMATE).</td></tr>
+    <tr><td>1: BACK LIGHT ONLY 1ch</td><td>Chỉ dùng đèn mặt sau. Màn hình vẫn tối.</td></tr>
+    <tr><td>2: SCREEN RGB 9ch<br>3: SCREEN HUE SAT 8ch</td><td>Cả màn hình là một màu.</td></tr>
+    <tr><td>4: SCREEN 2 CELLS RGB 17ch<br>5: SCREEN 2 CELLS HUE SAT 15ch</td><td>Màn hình chia làm 2.</td></tr>
+    <tr><td>6: SCREEN 4 CELLS RGB 31ch<br>7: SCREEN 4 CELLS HUE SAT 27ch</td><td>Màn hình chia làm 4.</td></tr>
+    <tr><td>8: SCREEN 8 CELLS RGB 59ch<br>9: SCREEN 8 CELLS HUE SAT 51ch</td><td>Màn hình chia làm 8.</td></tr>
+    <tr><td>10: SCREEN 4 STRIPS RGB 31ch<br>11: SCREEN 4 STRIPS HUE SAT 27ch</td><td>Màn hình chia làm 4 dải theo cạnh dài.</td></tr>
+    <tr><td>12: SCREEN 8 STRIPS RGB 59ch<br>13: SCREEN 8 STRIPS HUE SAT 51ch</td><td>Màn hình chia làm 8 dải theo cạnh dài.</td></tr>
+    <tr><td>14: SCREEN FX &amp; MEDIA RGB 18ch<br>15: SCREEN FX &amp; MEDIA HUE SAT 17ch</td><td>Cả màn hình, với họa tiết, hình ảnh và video (xem FX &amp; MEDIA).</td></tr>
+    <tr><td>16: SCREEN COOKIE RGB 62ch<br>17: SCREEN COOKIE HUE SAT 54ch</td><td>Màn hình chia thành các vùng lốm đốm, không đều, với 8 màu (xem COOKIE và ULTIMATE).</td></tr>
+    <tr><td>18: ULTIMATE RGB 72ch<br>19: ULTIMATE HUE SAT 64ch</td><td>Chọn cách chia màn hình, và hiện họa tiết, hình ảnh và video (xem COOKIE và ULTIMATE).</td></tr>
   </tbody>
 </table>
-<p>Trừ BACK LIGHT ONLY, mọi chế độ đều bắt đầu bằng Screen Dimmer và kết thúc bằng Function, Back Light và Vibration. SCREEN RGB 10ch có các kênh này, theo thứ tự này. Các giá trị được ghi đúng như hiện trong Channels ở&nbsp;Settings.</p>
+<p>Trừ BACK LIGHT ONLY, mọi chế độ đều bắt đầu bằng Screen Dimmer và kết thúc bằng Back Light và Vibration. 2: SCREEN RGB 9ch có các kênh này, theo thứ tự này. Các giá trị được ghi đúng như hiện trong Channels ở&nbsp;Settings.</p>
 <table>
   <thead><tr><th>#</th><th>Tên</th><th>Giá trị</th></tr></thead>
   <tbody>
@@ -131,16 +133,15 @@
     <tr><td>5</td><td>Red</td><td>0–100%</td></tr>
     <tr><td>6</td><td>Green</td><td>0–100%</td></tr>
     <tr><td>7</td><td>Blue</td><td>0–100%</td></tr>
-    <tr><td>8</td><td>Function</td><td>0–127 Off · 128–255 Proximity · Home 0</td></tr>
-    <tr><td>9</td><td>Back Light</td><td>0–100%</td></tr>
-    <tr><td>10</td><td>Vibration</td><td>0–100%</td></tr>
+    <tr><td>8</td><td>Back Light</td><td>0–100%</td></tr>
+    <tr><td>9</td><td>Vibration</td><td>0–100%</td></tr>
   </tbody>
 </table>
 <p>Các chế độ HUE SAT có Hue (0–360°) và Saturation thay cho Red, Green và Blue. Trong các chế độ CELLS và STRIPS, sau Screen Dimmer là Dimmer, CCT, G/M, Crossfade và màu cho từng phần của màn hình. CELLS được đánh số từ góc trên bên trái. Với 8 ô, màn hình dựng đứng có 2 cột 4 hàng, còn màn hình nằm ngang có 4 cột 2 hàng. STRIPS là các dải rộng bằng nhau, đặt dọc theo cạnh dài của màn hình. Màn hình dựng đứng có các dải ngang được đánh số từ trên xuống dưới, và màn hình nằm ngang có các dải dọc được đánh số từ trái sang phải. Màn hình vuông được chia từ trên xuống&nbsp;dưới.</p>
-<p>Crossfade đặt tỉ lệ pha giữa trắng và màu: 0 là trắng và 255 là màu. Màu trắng đến từ CCT và G/M. Khi Crossfade ở 0, tăng Red, Green hoặc Blue vẫn để màn hình trắng. Screen Dimmer chỉ làm mờ màn hình và không ảnh hưởng đến đèn mặt sau. Đặt Function từ 128 trở lên sẽ chọn Proximity, dùng cảm biến tiệm cận của&nbsp;thiết&nbsp;bị.</p>
+<p>Crossfade đặt tỉ lệ pha giữa trắng và màu: 0 là trắng và 255 là màu. Màu trắng đến từ CCT và G/M. Khi Crossfade ở 0, tăng Red, Green hoặc Blue vẫn để màn hình trắng. Screen Dimmer chỉ làm mờ màn hình và không ảnh hưởng đến đèn&nbsp;mặt&nbsp;sau.</p>
 
 <h2>FX &amp; MEDIA</h2>
-<p>SCREEN FX &amp; MEDIA RGB 19ch có các kênh này, theo thứ tự này. SCREEN FX &amp; MEDIA HUE SAT 18ch có Hue và Saturation thay cho Red, Green&nbsp;và&nbsp;Blue.</p>
+<p>14: SCREEN FX &amp; MEDIA RGB 18ch có các kênh này, theo thứ tự này. 15: SCREEN FX &amp; MEDIA HUE SAT 17ch có Hue và Saturation thay cho Red, Green&nbsp;và&nbsp;Blue.</p>
 <table>
   <thead><tr><th>#</th><th>Tên</th><th>Giá trị</th></tr></thead>
   <tbody>
@@ -152,7 +153,7 @@
     <tr><td>6</td><td>Green</td><td>0–100%</td></tr>
     <tr><td>7</td><td>Blue</td><td>0–100%</td></tr>
     <tr><td>8</td><td>Color Macro</td><td>0–15 Off · 16–255 15 colors, 16 each · Home 0</td></tr>
-    <tr><td>9</td><td>Content</td><td>0 SOLID · 32 GLINT · 64 SWEEP · 96 KALEIDO · 128 WATER · 160 FIRE · 192 VIDEO GLOW · 224 CATCHLIGHT · Home 0</td></tr>
+    <tr><td>9</td><td>Content</td><td>0 SOLID · 32 GLINT · 64 SWEEP · 96 KALEIDO · 128 WATER · 160 FIRE · 192 VIDEO GLOW · 224 AURORA · Home 0</td></tr>
     <tr><td>10</td><td>Speed</td><td>0 Slow · 128 Normal · 255 Fast · Home 128</td></tr>
     <tr><td>11</td><td>Amount</td><td>0–255 · Home 128</td></tr>
     <tr><td>12</td><td>Size</td><td>0–255 · Home 128</td></tr>
@@ -160,18 +161,17 @@
     <tr><td>14</td><td>Media</td><td>0 Off · 1–5 = 1 · 6–10 = 2 … 251–255 = 51 · Home 0</td></tr>
     <tr><td>15</td><td>Playback</td><td>0–85 Play · 86–170 Pause · 171–255 Restart · Home 0</td></tr>
     <tr><td>16</td><td>Color Temp</td><td>0 Warm · 128 As is · 255 Cool · Home 128</td></tr>
-    <tr><td>17</td><td>Function</td><td>0–127 Off · 128–255 Proximity · Home 0</td></tr>
-    <tr><td>18</td><td>Back Light</td><td>0–100%</td></tr>
-    <tr><td>19</td><td>Vibration</td><td>0–100%</td></tr>
+    <tr><td>17</td><td>Back Light</td><td>0–100%</td></tr>
+    <tr><td>18</td><td>Vibration</td><td>0–100%</td></tr>
   </tbody>
 </table>
 <p>Màn hình được dựng lên từ màu đen: trước hết là hình ảnh hoặc video do Media chọn, rồi họa tiết do Content chọn phủ lên trên. Mix quyết định mỗi thứ hiện bao nhiêu: 0 chỉ hiện hình ảnh hoặc video, còn 255 chỉ hiện họa tiết. Khi Media bằng 0, hoặc số đó không chứa gì, chỉ có họa tiết&nbsp;hiện&nbsp;ra.</p>
-<p>SOLID, Content đầu tiên, phủ đầy màn hình bằng màu. Ở các giá trị Home, FX &amp; MEDIA cho ánh sáng giống SCREEN RGB. Bảy cái còn lại là các họa tiết chuyển động. Speed quyết định chúng chuyển động nhanh đến đâu, còn Amount và Size thay đổi dáng vẻ của từng họa tiết. Họa tiết lấy màu từ màu của màn hình. Khi Color Macro khác 0, màu của macro được dùng thay thế. Từ 16 trở đi, cứ mỗi 16 giá trị chọn màu kế tiếp: 3200 K, 4300 K, 5600 K, Red, Orange, Amber, Yellow, Green, Cyan, Sky Blue, Blue, Deep Blue, Lavender, Magenta&nbsp;và&nbsp;Pink.</p>
+<p>SOLID, Content đầu tiên, phủ đầy màn hình bằng màu. Ở các giá trị Home, FX &amp; MEDIA cho ánh sáng giống SCREEN RGB. Bảy cái còn lại là các họa tiết chuyển động. Speed quyết định chúng chuyển động nhanh đến đâu, còn Amount và Size thay đổi dáng vẻ của từng họa tiết. Mỗi họa tiết có màu riêng, nên trông đã hoàn chỉnh dù bạn không đặt màu nào. Crossfade chuyển họa tiết từ màu riêng của nó ở 0 sang màu của Red, Green và Blue ở 255. Khi Color Macro khác 0, màu của macro được dùng thay thế. Từ 16 trở đi, cứ mỗi 16 giá trị chọn màu kế tiếp: 3200 K, 4300 K, 5600 K, Red, Orange, Amber, Yellow, Green, Cyan, Sky Blue, Blue, Deep Blue, Lavender, Magenta&nbsp;và&nbsp;Pink.</p>
 <p>Hình ảnh và video giữ màu riêng của chúng. Color Temp đẩy chúng ấm hơn hoặc lạnh hơn, và Screen Dimmer làm chúng tối đi. Video phát không có tiếng và bắt đầu lại từ đầu khi kết thúc. Playback phát hoặc tạm dừng video. Restart đưa nó về đầu đúng một lần, vào lúc giá trị bước vào khoảng&nbsp;171–255.</p>
 
 <h2>COOKIE và ULTIMATE</h2>
-<p>SCREEN COOKIE chia màn hình thành các vùng lốm đốm, không đều. Mỗi vùng có màu của một trong 8 ô, nên màu của một ô hiện ở nhiều chỗ trên màn hình. Để có ánh sáng và bóng tối, hãy đặt một số ô thành đen trên bàn điều&nbsp;khiển.</p>
-<p>SCREEN COOKIE RGB 63ch bắt đầu bằng Screen Dimmer, rồi đến Shape, Soft và Drift. Tiếp theo là 8 ô, mỗi ô có Dimmer, CCT, G/M, Crossfade, Red, Green và Blue, như trong các chế độ CELLS. Function, Back Light và Vibration đứng cuối. SCREEN COOKIE HUE SAT 55ch có Hue và Saturation ở mỗi ô thay cho Red, Green&nbsp;và&nbsp;Blue.</p>
+<p>SCREEN COOKIE chia màn hình thành các vùng lốm đốm, không đều. Mỗi vùng có màu của một trong 8 ô, nên màu của một ô hiện ở nhiều chỗ trên màn hình. Một số vùng luôn đen dù các ô có màu gì, nên giữa các vùng sáng vẫn có bóng ngay cả khi cả 8 ô đều bật. Muốn nhiều bóng hơn, hãy đặt một số ô thành đen trên bàn điều&nbsp;khiển.</p>
+<p>16: SCREEN COOKIE RGB 62ch bắt đầu bằng Screen Dimmer, rồi đến Shape, Soft và Drift. Tiếp theo là 8 ô, mỗi ô có Dimmer, CCT, G/M, Crossfade, Red, Green và Blue, như trong các chế độ CELLS. Back Light và Vibration đứng cuối. 17: SCREEN COOKIE HUE SAT 54ch có Hue và Saturation ở mỗi ô thay cho Red, Green&nbsp;và&nbsp;Blue.</p>
 <table>
   <thead><tr><th>#</th><th>Tên</th><th>Giá trị</th></tr></thead>
   <tbody>
@@ -181,7 +181,7 @@
   </tbody>
 </table>
 <p>Shape chọn họa tiết. Họa tiết đổi mượt khi giá trị di chuyển, nên một lần fade trên bàn điều khiển biến họa tiết này thành họa tiết kế tiếp. Soft làm mờ các mép giữa các vùng: ở 0 các mép sắc nét. Drift đặt tốc độ họa tiết trôi: ở 0 nó&nbsp;đứng&nbsp;yên.</p>
-<p>ULTIMATE RGB 73ch có các kênh của COOKIE, FX &amp; MEDIA và 8 ô, theo thứ&nbsp;tự&nbsp;này.</p>
+<p>18: ULTIMATE RGB 72ch có các kênh của COOKIE, FX &amp; MEDIA và 8 ô, theo thứ&nbsp;tự&nbsp;này.</p>
 <table>
   <thead><tr><th>#</th><th>Tên</th><th>Giá trị</th></tr></thead>
   <tbody>
@@ -190,11 +190,11 @@
     <tr><td>3–5</td><td>Shape, Soft, Drift</td><td>Như trong COOKIE</td></tr>
     <tr><td>6–14</td><td>Color Macro, Content, Speed, Amount, Size, Mix, Media, Playback, Color Temp</td><td>Như trong FX &amp; MEDIA</td></tr>
     <tr><td>15–70</td><td>Dimmer 1 … Blue 8</td><td>7 kênh cho mỗi ô, như trong các chế độ CELLS</td></tr>
-    <tr><td>71–73</td><td>Function, Back Light, Vibration</td><td>Như trong các chế độ khác</td></tr>
+    <tr><td>71–72</td><td>Back Light, Vibration</td><td>Như trong các chế độ khác</td></tr>
   </tbody>
 </table>
-<p>ULTIMATE HUE SAT 65ch có 6 kênh cho mỗi ô, với Hue và Saturation, nên các ô là 15–62 còn Function, Back Light và Vibration là&nbsp;63–65.</p>
-<p>Các ô chỉ hiện khi Content là SOLID và Media là 0. Khi đó Cells chọn cách chia màn hình. SCREEN lấp đầy cả màn hình bằng màu của ô 1. Khi đang hiện một họa tiết, hình ảnh hoặc video (Content không phải SOLID, hoặc Media không phải 0), màn hình là một khối, như trong FX &amp; MEDIA, và họa tiết lấy màu của ô 1. Media được tính theo giá trị của nó: một giá trị khác 0 khiến màn hình thành một khối, kể cả khi số đó không chứa gì. Color Macro chỉ hoạt động khi màn hình là một khối. Khi màn hình đang bị chia, nó không có tác dụng. Khi Cells chia màn hình thành ít hơn 8 phần, các kênh của những ô còn lại không có tác dụng, nhưng vẫn dùng địa chỉ của&nbsp;chúng.</p>
+<p>19: ULTIMATE HUE SAT 64ch có 6 kênh cho mỗi ô, với Hue và Saturation, nên các ô là 15–62 còn Back Light và Vibration là&nbsp;63–64.</p>
+<p>Các ô chỉ hiện khi Content là SOLID và Media là 0. Khi đó Cells chọn cách chia màn hình. SCREEN lấp đầy cả màn hình bằng màu của ô 1. Khi đang hiện một họa tiết, hình ảnh hoặc video (Content không phải SOLID, hoặc Media không phải 0), màn hình là một khối, như trong FX &amp; MEDIA, và họa tiết lấy màu và Crossfade từ ô 1. Media được tính theo giá trị của nó: một giá trị khác 0 khiến màn hình thành một khối, kể cả khi số đó không chứa gì. Color Macro chỉ hoạt động khi màn hình là một khối. Khi màn hình đang bị chia, nó không có tác dụng. Khi Cells chia màn hình thành ít hơn 8 phần, các kênh của những ô còn lại không có tác dụng, nhưng vẫn dùng địa chỉ của&nbsp;chúng.</p>
 
 <h2>Media</h2>
 <p>Kệ chứa các hình ảnh và video trên thiết bị này dưới các số từ 1 đến 51. Mở nó từ Media trong Settings. Kệ có ở mọi chế độ, nên bạn có thể xếp đầy trước khi chuyển sang FX &amp; MEDIA hoặc&nbsp;ULTIMATE.</p>
@@ -205,17 +205,16 @@
 <p>Trên bàn điều khiển, kênh Media chọn số: 1–5 là 1, 6–10 là 2, và cứ thế đến 251–255 là 51. Các tệp nằm lại trên thiết bị này và không được gửi đi&nbsp;đâu&nbsp;cả.</p>
 
 <h2>Khai báo trên bàn điều khiển</h2>
-<p>Trên Kanau, hãy khai báo thiết bị này là Kanau Screen với cùng chế độ (<a href="manual-vi.html#patch">chương 03 của sách hướng dẫn</a>). Trong Kanau 1.0 (371), Kanau Screen có đủ cả 19&nbsp;chế&nbsp;độ.</p>
+<p>Trên Kanau, hãy khai báo thiết bị này là Kanau&nbsp;Lite với cùng chế độ (<a href="manual-vi.html#patch">chương 03 của sách hướng dẫn</a>). Từ Kanau 1.0 (372) trở đi, Kanau&nbsp;Lite có đủ cả 19&nbsp;chế&nbsp;độ.</p>
 <p>Trên các bàn điều khiển khác, hãy tạo một đèn có các kênh theo cùng thứ tự với Channels trong Settings, và khai báo nó ở cùng địa chỉ. Mọi kênh đều&nbsp;là&nbsp;8-bit.</p>
-<p>Qua <span style="white-space:nowrap">Art-Net</span>, ứng dụng trả lời việc dò tìm node (ArtPoll) bằng một tên như <code class="q">Kanau Screen · U1 · 001</code>. Trên bàn điều khiển có thể liệt kê node, hãy tìm tên này cùng universe và địa chỉ&nbsp;của&nbsp;nó.</p>
+<p>Qua <span style="white-space:nowrap">Art-Net</span>, ứng dụng trả lời việc dò tìm node (ArtPoll) bằng một tên như <code class="q">Kanau&nbsp;Lite · U1 · 001</code>. Trên bàn điều khiển có thể liệt kê node, hãy tìm tên này cùng universe và địa chỉ&nbsp;của&nbsp;nó.</p>
 
 <h2>Khác gì so với LITE&nbsp;MODE trong Kanau</h2>
-<p>Kanau&nbsp;Lite nhận theo cùng cách như LITE&nbsp;MODE trong Kanau (<a href="manual-vi.html#output--12">chương 02 của sách hướng dẫn</a>). Tính đến Kanau 1.0 (371), có bốn điểm&nbsp;khác.</p>
+<p>Kanau&nbsp;Lite nhận theo cùng cách như LITE&nbsp;MODE trong Kanau (<a href="manual-vi.html#output--12">chương 02 của sách hướng dẫn</a>). Tính đến Kanau 1.0 (375), có ba điểm&nbsp;khác.</p>
 <ul>
   <li>Trước khi DMX tới, LITE&nbsp;MODE hiện <code>WAITING</code>. Kanau&nbsp;Lite hiện màn hình&nbsp;địa&nbsp;chỉ.</li>
   <li>Khi DMX ngừng, LITE&nbsp;MODE giữ màu cuối cùng. Kanau&nbsp;Lite quay lại màn hình địa chỉ sau&nbsp;6&nbsp;giây.</li>
   <li>Dấu × từ công tắc góc trên bên phải thoát khỏi LITE&nbsp;MODE trong Kanau. Trong Kanau&nbsp;Lite, nó mở&nbsp;Settings.</li>
-  <li>Kệ Media chỉ có trong Kanau&nbsp;Lite. Trong LITE&nbsp;MODE, các chế độ FX &amp; MEDIA và ULTIMATE chỉ hiện&nbsp;họa&nbsp;tiết.</li>
 </ul>
 
 <h2>Liên hệ</h2>

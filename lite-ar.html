@@ -49,7 +49,7 @@
 <header class="sitenav"><a class="sitebrand" href="index-ar.html"><img src="img/icon.png" alt="" width="28" height="28">Kanau</a><div class="sitenavr"><div class="sitelinks"><a href="index-ar.html#pricing">الأسعار</a><a href="fixtures-ar.html">وحدات الإضاءة</a><a href="manual-ar.html">الدليل</a><a href="support-ar.html">الدعم</a></div><label class="langsel"><span class="vh">اللغة</span><select onchange="location.href=this.value"><option value="lite.html" lang="en">English</option><option value="lite-ja.html" lang="ja">日本語</option><option value="lite-de.html" lang="de">Deutsch</option><option value="lite-fr.html" lang="fr">Français</option><option value="lite-ko.html" lang="ko">한국어</option><option value="lite-zh-Hans.html" lang="zh-Hans">简体中文</option><option value="lite-zh-Hant.html" lang="zh-Hant">繁體中文</option><option value="lite-es.html" lang="es">Español</option><option value="lite-pt-BR.html" lang="pt-BR">Português (Brasil)</option><option value="lite-it.html" lang="it">Italiano</option><option value="lite-nl.html" lang="nl">Nederlands</option><option value="lite-pl.html" lang="pl">Polski</option><option value="lite-cs.html" lang="cs">Čeština</option><option value="lite-sv.html" lang="sv">Svenska</option><option value="lite-da.html" lang="da">Dansk</option><option value="lite-no.html" lang="no">Norsk</option><option value="lite-fi.html" lang="fi">Suomi</option><option value="lite-tr.html" lang="tr">Türkçe</option><option value="lite-id.html" lang="id">Bahasa Indonesia</option><option value="lite-th.html" lang="th">ไทย</option><option value="lite-ar.html" lang="ar" selected>العربية</option><option value="lite-hi.html" lang="hi">हिन्दी</option><option value="lite-vi.html" lang="vi">Tiếng Việt</option></select></label></div></header>
 <div class="hero">
   <h1>Kanau&nbsp;Lite</h1>
-  <p class="sub">حتى Kanau&nbsp;Lite 1.0 (5)</p>
+  <p class="sub">حتى Kanau&nbsp;Lite 1.0 (6)</p>
 </div>
 
 <p>Kanau&nbsp;Lite تطبيق مجاني يحوّل iPhone أو iPad إلى وحدة إضاءة واحدة. يستقبل DMX المرسل من وحدة تحكم عبر <span style="white-space:nowrap">Art-Net</span> أو sACN، ويقود لون الشاشة وسطوعها، والإضاءة الخلفية، والاهتزاز. وفي أوضاع FX &amp; MEDIA وULTIMATE يمكن للشاشة أن تعرض أيضاً أنماطاً متحركة وصورك ومقاطع الفيديو الخاصة بك. لا حاجة إلى إنشاء حساب، ولا توجد&nbsp;إعلانات.</p>
@@ -65,7 +65,7 @@
 <ol>
   <li>افتح Kanau&nbsp;Lite. تظهر الأيقونة والاسم لحظة. المس الشاشة&nbsp;لتخطيهما.</li>
   <li>يفتح Settings. وهو أول ما يظهر في كل مرة يُفتح فيها Kanau&nbsp;Lite.</li>
-  <li>اختر <span style="white-space:nowrap">Art-Net</span> أو sACN. ثم اضبط Mode وUniverse وAddress.</li>
+  <li>اختر Mode أولاً، ثم <span style="white-space:nowrap">Art-Net</span> أو sACN، ثم اضبط Universe&nbsp;وAddress.</li>
   <li>المس START في&nbsp;الأسفل.</li>
   <li>أرسل DMX من وحدة التحكم إلى ذلك الـ universe وذلك العنوان. وعندما يصل تصبح الشاشة&nbsp;هي&nbsp;الضوء.</li>
 </ol>
@@ -75,7 +75,7 @@
 <p>بعد START، وما دام DMX لا يصل، تعرض شاشة سوداء ثلاثة أسطر بخط كبير. هذه هي شاشة العنوان. ومع أجهزة كثيرة جنباً إلى جنب، يمكنك قراءة كل رقم&nbsp;من&nbsp;بعيد.</p>
 <ul>
   <li>الـ universe والعنوان بالكهرماني، مثل <code>U1 · 001</code>.</li>
-  <li>الوضع، مثل <code>SCREEN RGB 10ch</code>.</li>
+  <li>الوضع، مثل <code>2: SCREEN RGB 9ch</code>.</li>
   <li>الشبكة، أي عنوان IP لهذا الجهاز والبروتوكول الذي يستمع إليه، مثل <code class="q">Wi-Fi 192.168.1.24 · <span style="white-space:nowrap">Art-Net</span></code>. وإن لم تكن هناك شبكة يظهر <code>No network</code>.</li>
 </ul>
 <p>المس شاشة العنوان لفتح Settings. إذا لم يصل DMX مدة 6 ثوانٍ والضوء مضاء، تعود شاشة العنوان. وتتوقف الإضاءة الخلفية والاهتزاز&nbsp;أيضاً.</p>
@@ -85,17 +85,19 @@
 <table>
   <thead><tr><th>البند</th><th>ما يفعله</th></tr></thead>
   <tbody>
-    <tr><td>Language</td><td>System، أو إحدى 15 لغة. تتغير الشروح فور اختيارك. وتبقى أسماء البنود والأزرار بالإنجليزية. وإلى أن تختار يكون Kanau&nbsp;Lite بالإنجليزية.</td></tr>
-    <tr><td>Guide</td><td>يفتح دليلاً قصيراً من 8 خطوات. وهو داخل التطبيق، فيعمل من دون إنترنت.</td></tr>
+    <tr><td>Mode</td><td>يعرض الوضع الحالي، مثل 2: SCREEN RGB 9ch. المسه لتختار من الأوضاع أدناه (انظر الأوضاع والقنوات). والرقم في البداية هو رقم الوضع. وعلى جهاز لا يملك إضاءة خلفية لا يُدرج 1: BACK LIGHT ONLY، لكن بقية الأوضاع تحتفظ بأرقامها.</td></tr>
     <tr><td><span style="white-space:nowrap">Art-Net</span> / sACN</td><td>المس أحد الاثنين. ويصبح الذي تختاره كهرمانياً.</td></tr>
-    <tr><td>Mode</td><td>يعرض الوضع الحالي، مثل SCREEN RGB 10ch. المسه لتختار من الأوضاع أدناه (انظر الأوضاع والقنوات). وعلى جهاز لا يملك إضاءة خلفية لا يُدرج BACK LIGHT ONLY.</td></tr>
     <tr><td>Universe</td><td>من 0 إلى 32767 في <span style="white-space:nowrap">Art-Net</span>، ومن 1 إلى 63999 في sACN.</td></tr>
     <tr><td>Address</td><td>من 1 إلى أعلى عنوان تظل قنوات الوضع عنده ضمن 512.</td></tr>
+    <tr><td>Channels</td><td>قنوات الوضع الحالي (انظر أدناه).</td></tr>
+    <tr><td>PROXIMITY</td><td>عند تشغيله تُظلم الشاشة ما دمت تضع هذا الجهاز على أذنك. وتستمر الإضاءة الخلفية والاهتزاز. ويبدأ مطفأً. والجهاز الذي لا يملك مستشعر قرب، مثل iPad، لا يعرضه.</td></tr>
     <tr><td>Media</td><td>يُظهر كم رقماً من الأرقام الـ 51 يحمل صورة أو مقطع فيديو، مثل <code>3 / 51</code>. المسه لفتح الرف (انظر Media).</td></tr>
+    <tr><td>Language</td><td>System، أو إحدى 15 لغة. تتغير الشروح فور اختيارك. وتبقى أسماء البنود والأزرار بالإنجليزية. وإلى أن تختار يكون Kanau&nbsp;Lite بالإنجليزية.</td></tr>
+    <tr><td>Guide</td><td>يفتح دليلاً قصيراً من 8 خطوات. وهو داخل التطبيق، فيعمل من دون إنترنت.</td></tr>
   </tbody>
 </table>
-<p>اكتب رقماً في Universe وAddress، أو استخدم − و+. ويُظهر السطر الكهرماني تحتهما العناوين التي تستخدمها الشاشة والإضاءة الخلفية والاهتزاز، مثل <code class="q">Screen 001–008 · Back Light 009 · Vibration 010</code>.</p>
-<p>ثم Channels. في كل مرة تفتح Settings تبدأ مطوية وتعرض عدد القنوات فقط، مثل <code>10ch</code>. المس العنوان لتفتح قائمة قنوات الوضع الحالي مع عنوان كل قناة واسمها ومعنى قيمها. أما السطران عن التسجيل على Kanau وعلى وحدات التحكم الأخرى فيظهران حتى وهي مطوية. والصف الخاص بميزة لا يملكها هذا الجهاز (الإضاءة الخلفية أو الاهتزاز) يظهر خافتاً ويبدأ بـ <code>Not on this device</code>. وما زال ذلك الصف يستخدم عنوانه، فاحسبه على وحدة التحكم&nbsp;أيضاً.</p>
+<p>اكتب رقماً في Universe وAddress، أو استخدم − و+. ويُظهر السطر الكهرماني تحتهما العناوين التي تستخدمها الشاشة والإضاءة الخلفية والاهتزاز، مثل <code class="q">Screen 001–007 · Back Light 008 · Vibration 009</code>.</p>
+<p>ثم تأتي Channels. في كل مرة تفتح Settings تبدأ مطوية وتعرض عدد القنوات فقط، مثل <code>9ch</code>. المس العنوان لتفتح قائمة قنوات الوضع الحالي مع عنوان كل قناة واسمها ومعنى قيمها. أما السطران عن التسجيل على Kanau وعلى وحدات التحكم الأخرى فيظهران حتى وهي مطوية. والصف الخاص بميزة لا يملكها هذا الجهاز (الإضاءة الخلفية أو الاهتزاز) يظهر خافتاً ويبدأ بـ <code>Not on this device</code>. وما زال ذلك الصف يستخدم عنوانه، فاحسبه على وحدة التحكم&nbsp;أيضاً.</p>
 <p>في نهاية Settings إصدار Kanau&nbsp;Lite وعبارة Made by Kanau Labs ورابط إلى kanaulabs.app وPrivacy Policy وContact Support وإشارة <span style="white-space:nowrap">Art-Net</span> وحقوق النشر. تُحفظ الإعدادات وتبقى كما هي عند فتح التطبيق في المرة&nbsp;التالية.</p>
 
 <h2>أثناء إضاءة الضوء</h2>
@@ -104,23 +106,23 @@
 <p>يستقبل Kanau&nbsp;Lite الـ DMX ما دام التطبيق مفتوحاً فقط. وإذا ذهبت إلى Home أو قفلت الجهاز فإنه يتوقف عن الاستقبال، ويوقف الإضاءة الخلفية والاهتزاز، ويعيد سطوع الشاشة إلى ما كان عليه. افتحه مرة أخرى ليستقبل&nbsp;من&nbsp;جديد.</p>
 
 <h2>الأوضاع والقنوات</h2>
-<p>هناك 19 وضعاً. والافتراضي هو SCREEN&nbsp;RGB&nbsp;10ch.</p>
+<p>هناك 19 وضعاً. والافتراضي هو 2: SCREEN RGB 9ch. والرقم في بداية كل اسم هو رقم الوضع، والرقم في نهايته هو عدد&nbsp;القنوات.</p>
 <table>
   <thead><tr><th>الوضع</th><th>الشاشة</th></tr></thead>
   <tbody>
-    <tr><td>BACK LIGHT ONLY 1ch</td><td>يستخدم الإضاءة الخلفية وحدها. وتبقى الشاشة معتمة.</td></tr>
-    <tr><td>SCREEN RGB 10ch<br>SCREEN HUE SAT 9ch</td><td>الشاشة كلها لون واحد.</td></tr>
-    <tr><td>SCREEN 2 CELLS RGB 18ch<br>SCREEN 2 CELLS HUE SAT 16ch</td><td>تُقسم الشاشة إلى 2.</td></tr>
-    <tr><td>SCREEN 4 CELLS RGB 32ch<br>SCREEN 4 CELLS HUE SAT 28ch</td><td>تُقسم الشاشة إلى 4.</td></tr>
-    <tr><td>SCREEN 8 CELLS RGB 60ch<br>SCREEN 8 CELLS HUE SAT 52ch</td><td>تُقسم الشاشة إلى 8.</td></tr>
-    <tr><td>SCREEN 4 STRIPS RGB 32ch<br>SCREEN 4 STRIPS HUE SAT 28ch</td><td>تُقسم الشاشة إلى 4 شرائط على امتداد ضلعها الطويل.</td></tr>
-    <tr><td>SCREEN 8 STRIPS RGB 60ch<br>SCREEN 8 STRIPS HUE SAT 52ch</td><td>تُقسم الشاشة إلى 8 شرائط على امتداد ضلعها الطويل.</td></tr>
-    <tr><td>SCREEN FX &amp; MEDIA RGB 19ch<br>SCREEN FX &amp; MEDIA HUE SAT 18ch</td><td>الشاشة كلها، مع أنماط وصور ومقاطع فيديو (انظر FX &amp; MEDIA).</td></tr>
-    <tr><td>SCREEN COOKIE RGB 63ch<br>SCREEN COOKIE HUE SAT 55ch</td><td>تُقسم الشاشة إلى مناطق غير منتظمة مبقعة بـ 8 ألوان (انظر COOKIE وULTIMATE).</td></tr>
-    <tr><td>ULTIMATE RGB 73ch<br>ULTIMATE HUE SAT 65ch</td><td>يختار طريقة تقسيم الشاشة، ويعرض أنماطاً وصوراً ومقاطع فيديو (انظر COOKIE وULTIMATE).</td></tr>
+    <tr><td><bdi dir="ltr">1: BACK LIGHT ONLY 1ch</bdi></td><td>يستخدم الإضاءة الخلفية وحدها. وتبقى الشاشة معتمة.</td></tr>
+    <tr><td>2: SCREEN RGB 9ch<br>3: SCREEN HUE SAT 8ch</td><td>الشاشة كلها لون واحد.</td></tr>
+    <tr><td>4: SCREEN 2 CELLS RGB 17ch<br>5: SCREEN 2 CELLS HUE SAT 15ch</td><td>تُقسم الشاشة إلى 2.</td></tr>
+    <tr><td>6: SCREEN 4 CELLS RGB 31ch<br>7: SCREEN 4 CELLS HUE SAT 27ch</td><td>تُقسم الشاشة إلى 4.</td></tr>
+    <tr><td>8: SCREEN 8 CELLS RGB 59ch<br>9: SCREEN 8 CELLS HUE SAT 51ch</td><td>تُقسم الشاشة إلى 8.</td></tr>
+    <tr><td>10: SCREEN 4 STRIPS RGB 31ch<br>11: SCREEN 4 STRIPS HUE SAT 27ch</td><td>تُقسم الشاشة إلى 4 شرائط على امتداد ضلعها الطويل.</td></tr>
+    <tr><td>12: SCREEN 8 STRIPS RGB 59ch<br>13: SCREEN 8 STRIPS HUE SAT 51ch</td><td>تُقسم الشاشة إلى 8 شرائط على امتداد ضلعها الطويل.</td></tr>
+    <tr><td>14: SCREEN FX &amp; MEDIA RGB 18ch<br>15: SCREEN FX &amp; MEDIA HUE SAT 17ch</td><td>الشاشة كلها، مع أنماط وصور ومقاطع فيديو (انظر FX &amp; MEDIA).</td></tr>
+    <tr><td>16: SCREEN COOKIE RGB 62ch<br>17: SCREEN COOKIE HUE SAT 54ch</td><td>تُقسم الشاشة إلى مناطق غير منتظمة مبقعة بـ 8 ألوان (انظر COOKIE وULTIMATE).</td></tr>
+    <tr><td>18: ULTIMATE RGB 72ch<br>19: ULTIMATE HUE SAT 64ch</td><td>يختار طريقة تقسيم الشاشة، ويعرض أنماطاً وصوراً ومقاطع فيديو (انظر COOKIE وULTIMATE).</td></tr>
   </tbody>
 </table>
-<p>عدا BACK LIGHT ONLY، يبدأ كل وضع بـ Screen Dimmer وينتهي بـ Function وBack Light وVibration. وفي SCREEN RGB 10ch هذه القنوات بهذا الترتيب. وتُكتب القيم كما تظهر في Channels في&nbsp;Settings.</p>
+<p>عدا BACK LIGHT ONLY، يبدأ كل وضع بـ Screen Dimmer وينتهي بـ Back Light وVibration. وفي 2: SCREEN RGB 9ch هذه القنوات بهذا الترتيب. وتُكتب القيم كما تظهر في Channels في&nbsp;Settings.</p>
 <table>
   <thead><tr><th>#</th><th>الاسم</th><th>القيم</th></tr></thead>
   <tbody>
@@ -131,16 +133,15 @@
     <tr><td><bdi dir="ltr">5</bdi></td><td>Red</td><td><bdi dir="ltr">0–100%</bdi></td></tr>
     <tr><td><bdi dir="ltr">6</bdi></td><td>Green</td><td><bdi dir="ltr">0–100%</bdi></td></tr>
     <tr><td><bdi dir="ltr">7</bdi></td><td>Blue</td><td><bdi dir="ltr">0–100%</bdi></td></tr>
-    <tr><td><bdi dir="ltr">8</bdi></td><td>Function</td><td><bdi dir="ltr">0–127 Off · 128–255 Proximity · Home 0</bdi></td></tr>
-    <tr><td><bdi dir="ltr">9</bdi></td><td>Back Light</td><td><bdi dir="ltr">0–100%</bdi></td></tr>
-    <tr><td><bdi dir="ltr">10</bdi></td><td>Vibration</td><td><bdi dir="ltr">0–100%</bdi></td></tr>
+    <tr><td><bdi dir="ltr">8</bdi></td><td>Back Light</td><td><bdi dir="ltr">0–100%</bdi></td></tr>
+    <tr><td><bdi dir="ltr">9</bdi></td><td>Vibration</td><td><bdi dir="ltr">0–100%</bdi></td></tr>
   </tbody>
 </table>
 <p>في أوضاع HUE SAT يوجد Hue (من 0 إلى 360°) وSaturation بدلاً من Red وGreen وBlue. وفي أوضاع CELLS وSTRIPS يلي Screen Dimmer كلٌّ من Dimmer وCCT وG/M وCrossfade واللون لكل جزء من الشاشة. وتُرقَّم أجزاء CELLS بدءاً من الزاوية العليا اليسرى. ومع 8 خلايا يكون للشاشة القائمة عمودان و4 صفوف، وللشاشة الأفقية 4 أعمدة وصفان. أما STRIPS فشرائط متساوية العرض موضوعة على امتداد الضلع الطويل للشاشة. في الشاشة القائمة تكون الشرائط أفقية وتُرقَّم من الأعلى إلى الأسفل، وفي الشاشة الأفقية تكون الشرائط عمودية وتُرقَّم من اليسار إلى اليمين. أما الشاشة المربعة فتُقسم من الأعلى إلى&nbsp;الأسفل.</p>
-<p>يضبط Crossfade مزيج الأبيض واللون: 0 هو الأبيض و255 هو اللون. ويأتي الأبيض من CCT وG/M. وما دام Crossfade عند 0، فإن رفع Red أو Green أو Blue يُبقي الشاشة بيضاء. ويخفض Screen Dimmer إضاءة الشاشة وحدها ولا يؤثر في الإضاءة الخلفية. وضبط Function على 128 أو أكثر يختار Proximity، وهو يستخدم مستشعر القرب في&nbsp;الجهاز.</p>
+<p>يضبط Crossfade مزيج الأبيض واللون: 0 هو الأبيض و255 هو اللون. ويأتي الأبيض من CCT وG/M. وما دام Crossfade عند 0، فإن رفع Red أو Green أو Blue يُبقي الشاشة بيضاء. ويخفض Screen Dimmer إضاءة الشاشة وحدها ولا يؤثر في الإضاءة&nbsp;الخلفية.</p>
 
 <h2>FX &amp; MEDIA</h2>
-<p>في SCREEN FX &amp; MEDIA RGB 19ch هذه القنوات بهذا الترتيب. وفي SCREEN FX &amp; MEDIA HUE SAT 18ch يوجد Hue وSaturation بدلاً من Red وGreen&nbsp;وBlue.</p>
+<p>في 14: SCREEN FX &amp; MEDIA RGB 18ch هذه القنوات بهذا الترتيب. وفي 15: SCREEN FX &amp; MEDIA HUE SAT 17ch يوجد Hue وSaturation بدلاً من Red وGreen&nbsp;وBlue.</p>
 <table>
   <thead><tr><th>#</th><th>الاسم</th><th>القيم</th></tr></thead>
   <tbody>
@@ -152,7 +153,7 @@
     <tr><td><bdi dir="ltr">6</bdi></td><td>Green</td><td><bdi dir="ltr">0–100%</bdi></td></tr>
     <tr><td><bdi dir="ltr">7</bdi></td><td>Blue</td><td><bdi dir="ltr">0–100%</bdi></td></tr>
     <tr><td><bdi dir="ltr">8</bdi></td><td>Color Macro</td><td><bdi dir="ltr">0–15 Off · 16–255 15 colors, 16 each · Home 0</bdi></td></tr>
-    <tr><td><bdi dir="ltr">9</bdi></td><td>Content</td><td><bdi dir="ltr">0 SOLID · 32 GLINT · 64 SWEEP · 96 KALEIDO · 128 WATER · 160 FIRE · 192 VIDEO GLOW · 224 CATCHLIGHT · Home 0</bdi></td></tr>
+    <tr><td><bdi dir="ltr">9</bdi></td><td>Content</td><td><bdi dir="ltr">0 SOLID · 32 GLINT · 64 SWEEP · 96 KALEIDO · 128 WATER · 160 FIRE · 192 VIDEO GLOW · 224 AURORA · Home 0</bdi></td></tr>
     <tr><td><bdi dir="ltr">10</bdi></td><td>Speed</td><td><bdi dir="ltr">0 Slow · 128 Normal · 255 Fast · Home 128</bdi></td></tr>
     <tr><td><bdi dir="ltr">11</bdi></td><td>Amount</td><td><bdi dir="ltr">0–255 · Home 128</bdi></td></tr>
     <tr><td><bdi dir="ltr">12</bdi></td><td>Size</td><td><bdi dir="ltr">0–255 · Home 128</bdi></td></tr>
@@ -160,18 +161,17 @@
     <tr><td><bdi dir="ltr">14</bdi></td><td>Media</td><td><bdi dir="ltr">0 Off · 1–5 = 1 · 6–10 = 2 … 251–255 = 51 · Home 0</bdi></td></tr>
     <tr><td><bdi dir="ltr">15</bdi></td><td>Playback</td><td><bdi dir="ltr">0–85 Play · 86–170 Pause · 171–255 Restart · Home 0</bdi></td></tr>
     <tr><td><bdi dir="ltr">16</bdi></td><td>Color Temp</td><td><bdi dir="ltr">0 Warm · 128 As is · 255 Cool · Home 128</bdi></td></tr>
-    <tr><td><bdi dir="ltr">17</bdi></td><td>Function</td><td><bdi dir="ltr">0–127 Off · 128–255 Proximity · Home 0</bdi></td></tr>
-    <tr><td><bdi dir="ltr">18</bdi></td><td>Back Light</td><td><bdi dir="ltr">0–100%</bdi></td></tr>
-    <tr><td><bdi dir="ltr">19</bdi></td><td>Vibration</td><td><bdi dir="ltr">0–100%</bdi></td></tr>
+    <tr><td><bdi dir="ltr">17</bdi></td><td>Back Light</td><td><bdi dir="ltr">0–100%</bdi></td></tr>
+    <tr><td><bdi dir="ltr">18</bdi></td><td>Vibration</td><td><bdi dir="ltr">0–100%</bdi></td></tr>
   </tbody>
 </table>
 <p>تُبنى الشاشة من الأسود: أولاً الصورة أو الفيديو الذي يختاره Media، ثم فوقه النمط الذي يختاره Content. يحدد Mix مقدار ما يُرى من كلٍّ منهما: القيمة 0 تُظهر الصورة أو الفيديو فقط، و255 تُظهر النمط فقط. وعندما يكون Media عند 0، أو يكون الرقم فارغاً، يظهر النمط&nbsp;وحده.</p>
-<p>SOLID، وهو أول Content، يملأ الشاشة باللون. وعند قيم Home يعطي FX &amp; MEDIA الضوء نفسه الذي يعطيه SCREEN RGB. والسبعة الباقية أنماط تتحرك. يحدد Speed سرعة حركتها، ويغيّر Amount وSize مظهر كل نمط. ويأخذ النمط لونه من لون الشاشة. وعندما لا يكون Color Macro عند 0 يُستخدم لون الماكرو بدلاً منه. ابتداءً من 16، كل 16 قيمة تختار اللون التالي: 3200 K و4300 K و5600 K وRed وOrange وAmber وYellow وGreen وCyan وSky Blue وBlue وDeep Blue وLavender وMagenta&nbsp;وPink.</p>
+<p>SOLID، وهو أول Content، يملأ الشاشة باللون. وعند قيم Home يعطي FX &amp; MEDIA الضوء نفسه الذي يعطيه SCREEN RGB. والسبعة الباقية أنماط تتحرك. يحدد Speed سرعة حركتها، ويغيّر Amount وSize مظهر كل نمط. ولكل نمط ألوانه الخاصة، فيبدو مكتملاً حتى لو لم تضبط أي لون. وينقل Crossfade النمط من ألوانه الخاصة عند 0 إلى لون Red وGreen وBlue عند 255. وعندما لا يكون Color Macro عند 0 يُستخدم لون الماكرو بدلاً منه. ابتداءً من 16، كل 16 قيمة تختار اللون التالي: 3200 K و4300 K و5600 K وRed وOrange وAmber وYellow وGreen وCyan وSky Blue وBlue وDeep Blue وLavender وMagenta&nbsp;وPink.</p>
 <p>تحتفظ الصور ومقاطع الفيديو بألوانها. يحرّكها Color Temp نحو الدفء أو البرودة، ويخفّتها Screen Dimmer. تُشغَّل مقاطع الفيديو بلا صوت وتبدأ من جديد عند انتهائها. يشغّل Playback الفيديو أو يوقفه مؤقتاً. ويعيده Restart إلى البداية مرة واحدة، في اللحظة التي تدخل فيها القيمة المدى&nbsp;171–255.</p>
 
 <h2>COOKIE وULTIMATE</h2>
-<p>يقسم SCREEN COOKIE الشاشة إلى مناطق غير منتظمة مبقعة. لكل منطقة لون إحدى الخلايا الثماني، فيظهر لون خلية واحدة في عدة أماكن من الشاشة. وللحصول على ضوء وظل، اجعل بعض الخلايا سوداء على وحدة&nbsp;التحكم.</p>
-<p>يبدأ SCREEN COOKIE RGB 63ch بـ Screen Dimmer، ثم Shape وSoft وDrift. بعد ذلك تأتي الخلايا الثماني، ولكل خلية Dimmer وCCT وG/M وCrossfade وRed وGreen وBlue، كما في أوضاع CELLS. وتأتي Function وBack Light وVibration في الآخر. وفي SCREEN COOKIE HUE SAT 55ch يوجد في كل خلية Hue وSaturation بدلاً من Red وGreen&nbsp;وBlue.</p>
+<p>يقسم SCREEN COOKIE الشاشة إلى مناطق غير منتظمة مبقعة. لكل منطقة لون إحدى الخلايا الثماني، فيظهر لون خلية واحدة في عدة أماكن من الشاشة. وتبقى بعض المناطق سوداء دائماً مهما كانت ألوان الخلايا، فيوجد ظل بين الأضواء حتى مع إضاءة الخلايا الثماني كلها. وللحصول على مزيد من الظل، اجعل بعض الخلايا سوداء على وحدة&nbsp;التحكم.</p>
+<p>يبدأ 16: SCREEN COOKIE RGB 62ch بـ Screen Dimmer، ثم Shape وSoft وDrift. بعد ذلك تأتي الخلايا الثماني، ولكل خلية Dimmer وCCT وG/M وCrossfade وRed وGreen وBlue، كما في أوضاع CELLS. وتأتي Back Light وVibration في الآخر. وفي 17: SCREEN COOKIE HUE SAT 54ch يوجد في كل خلية Hue وSaturation بدلاً من Red وGreen&nbsp;وBlue.</p>
 <table>
   <thead><tr><th>#</th><th>الاسم</th><th>القيم</th></tr></thead>
   <tbody>
@@ -181,7 +181,7 @@
   </tbody>
 </table>
 <p>يختار Shape النمط. يتغير النمط بسلاسة كلما تحركت القيمة، فيحوّل الانتقال التدريجي (fade) على وحدة التحكم نمطاً إلى النمط التالي. ويطمس Soft الحواف بين المناطق: عند 0 تكون الحواف حادة. ويحدد Drift سرعة جريان النمط: عند 0 يبقى&nbsp;ساكناً.</p>
-<p>يضم ULTIMATE RGB 73ch قنوات COOKIE وFX &amp; MEDIA والخلايا الثماني، بهذا&nbsp;الترتيب.</p>
+<p>يضم 18: ULTIMATE RGB 72ch قنوات COOKIE وFX &amp; MEDIA والخلايا الثماني، بهذا&nbsp;الترتيب.</p>
 <table>
   <thead><tr><th>#</th><th>الاسم</th><th>القيم</th></tr></thead>
   <tbody>
@@ -190,11 +190,11 @@
     <tr><td><bdi dir="ltr">3–5</bdi></td><td>Shape, Soft, Drift</td><td>كما في COOKIE</td></tr>
     <tr><td><bdi dir="ltr">6–14</bdi></td><td>Color Macro, Content, Speed, Amount, Size, Mix, Media, Playback, Color Temp</td><td>كما في FX &amp; MEDIA</td></tr>
     <tr><td><bdi dir="ltr">15–70</bdi></td><td>Dimmer 1 … Blue 8</td><td><bdi dir="ltr">7 قنوات لكل خلية، كما في أوضاع CELLS</bdi></td></tr>
-    <tr><td><bdi dir="ltr">71–73</bdi></td><td>Function, Back Light, Vibration</td><td>كما في الأوضاع الأخرى</td></tr>
+    <tr><td><bdi dir="ltr">71–72</bdi></td><td>Back Light, Vibration</td><td>كما في الأوضاع الأخرى</td></tr>
   </tbody>
 </table>
-<p>يضم ULTIMATE HUE SAT 65ch 6 قنوات لكل خلية، مع Hue وSaturation، فتكون الخلايا 15–62 وتكون Function وBack Light وVibration هي&nbsp;63–65.</p>
-<p>تظهر الخلايا فقط ما دام Content هو SOLID وMedia هو 0. عندئذ يختار Cells طريقة تقسيم الشاشة. يملأ SCREEN الشاشة كلها بلون الخلية 1. وما دام نمط أو صورة أو مقطع فيديو معروضاً (Content ليس SOLID، أو Media ليس 0) تكون الشاشة واحدة، كما في FX &amp; MEDIA، ويأخذ النمط لون الخلية 1. ويُحسب Media بقيمته: أي قيمة غير 0 تجعل الشاشة واحدة، حتى لو كان ذلك الرقم فارغاً. ولا يعمل Color Macro إلا ما دامت الشاشة واحدة. وما دامت الشاشة مقسّمة فلا أثر له. وعندما يقسّم Cells الشاشة إلى أقل من 8 أجزاء، لا يكون لقنوات الخلايا الأخرى أثر، لكنها تظل تستعمل&nbsp;عناوينها.</p>
+<p>يضم 19: ULTIMATE HUE SAT 64ch 6 قنوات لكل خلية، مع Hue وSaturation، فتكون الخلايا 15–62 وتكون Back Light وVibration هي&nbsp;63–64.</p>
+<p>تظهر الخلايا فقط ما دام Content هو SOLID وMedia هو 0. عندئذ يختار Cells طريقة تقسيم الشاشة. يملأ SCREEN الشاشة كلها بلون الخلية 1. وما دام نمط أو صورة أو مقطع فيديو معروضاً (Content ليس SOLID، أو Media ليس 0) تكون الشاشة واحدة، كما في FX &amp; MEDIA، ويأخذ النمط لونه وقيمة Crossfade من الخلية 1. ويُحسب Media بقيمته: أي قيمة غير 0 تجعل الشاشة واحدة، حتى لو كان ذلك الرقم فارغاً. ولا يعمل Color Macro إلا ما دامت الشاشة واحدة. وما دامت الشاشة مقسّمة فلا أثر له. وعندما يقسّم Cells الشاشة إلى أقل من 8 أجزاء، لا يكون لقنوات الخلايا الأخرى أثر، لكنها تظل تستعمل&nbsp;عناوينها.</p>
 
 <h2>Media</h2>
 <p>يضم الرف الصور ومقاطع الفيديو الموجودة على هذا الجهاز تحت الأرقام من 1 إلى 51. افتحه من Media في Settings. وهو موجود في كل وضع، فيمكنك ملؤه قبل أن تنتقل إلى FX &amp; MEDIA أو&nbsp;ULTIMATE.</p>
@@ -205,17 +205,16 @@
 <p>على وحدة التحكم تختار القناة Media الرقم: 1–5 هو 1، و6–10 هو 2، وهكذا حتى 251–255 للرقم 51. وتبقى الملفات على هذا الجهاز ولا تُرسل إلى&nbsp;أي&nbsp;مكان.</p>
 
 <h2>التسجيل على وحدة التحكم</h2>
-<p>في Kanau، سجّل هذا الجهاز باسم Kanau Screen بالوضع نفسه (<a href="manual-ar.html#patch">الفصل 03 من الدليل</a>). وفي Kanau 1.0 (371) يضم Kanau Screen الأوضاع الـ19&nbsp;كلها.</p>
+<p>في Kanau، سجّل هذا الجهاز باسم Kanau&nbsp;Lite بالوضع نفسه (<a href="manual-ar.html#patch">الفصل 03 من الدليل</a>). وفي Kanau 1.0 (372) وما بعده يضم Kanau&nbsp;Lite الأوضاع الـ19&nbsp;كلها.</p>
 <p>وفي وحدات التحكم الأخرى، أنشئ وحدة إضاءة قنواتها بالترتيب نفسه الموجود في Channels في Settings، وسجّلها عند العنوان نفسه. وكل قناة&nbsp;8-bit.</p>
-<p>وعبر <span style="white-space:nowrap">Art-Net</span> يردّ التطبيق على اكتشاف العقد (ArtPoll) باسم مثل <code class="q">Kanau Screen · U1 · 001</code>. وعلى وحدة تحكم تستطيع سرد العقد، ابحث عن هذا الاسم مع الـ universe&nbsp;والعنوان.</p>
+<p>وعبر <span style="white-space:nowrap">Art-Net</span> يردّ التطبيق على اكتشاف العقد (ArtPoll) باسم مثل <code class="q">Kanau&nbsp;Lite · U1 · 001</code>. وعلى وحدة تحكم تستطيع سرد العقد، ابحث عن هذا الاسم مع الـ universe&nbsp;والعنوان.</p>
 
 <h2>الفرق عن LITE&nbsp;MODE في Kanau</h2>
-<p>يستقبل Kanau&nbsp;Lite بالطريقة نفسها التي يستقبل بها LITE&nbsp;MODE في Kanau (<a href="manual-ar.html#output--12">الفصل 02 من الدليل</a>). واعتباراً من Kanau 1.0 (371) هناك أربعة&nbsp;فروق.</p>
+<p>يستقبل Kanau&nbsp;Lite بالطريقة نفسها التي يستقبل بها LITE&nbsp;MODE في Kanau (<a href="manual-ar.html#output--12">الفصل 02 من الدليل</a>). واعتباراً من Kanau 1.0 (375) هناك ثلاثة&nbsp;فروق.</p>
 <ul>
   <li>قبل وصول DMX يعرض LITE&nbsp;MODE الكلمة <code>WAITING</code>. أما Kanau&nbsp;Lite فيعرض شاشة&nbsp;العنوان.</li>
   <li>عند توقف DMX يحتفظ LITE&nbsp;MODE بآخر لون. أما Kanau&nbsp;Lite فيعود إلى شاشة العنوان بعد&nbsp;6&nbsp;ثوانٍ.</li>
   <li>الـ × من المفتاح في أعلى اليمين يخرج من LITE&nbsp;MODE في Kanau. أما في Kanau&nbsp;Lite فيفتح&nbsp;Settings.</li>
-  <li>رف Media موجود في Kanau&nbsp;Lite وحده. وفي LITE&nbsp;MODE لا تعرض أوضاع FX &amp; MEDIA وULTIMATE إلا&nbsp;الأنماط.</li>
 </ul>
 
 <h2>التواصل</h2>

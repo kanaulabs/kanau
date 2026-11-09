@@ -49,7 +49,7 @@
 <header class="sitenav"><a class="sitebrand" href="index-ko.html"><img src="img/icon.png" alt="" width="28" height="28">Kanau</a><div class="sitenavr"><div class="sitelinks"><a href="index-ko.html#pricing">요금</a><a href="fixtures-ko.html">조명</a><a href="manual-ko.html">설명서</a><a href="support-ko.html">지원</a></div><label class="langsel"><span class="vh">언어</span><select onchange="location.href=this.value"><option value="lite.html" lang="en">English</option><option value="lite-ja.html" lang="ja">日本語</option><option value="lite-de.html" lang="de">Deutsch</option><option value="lite-fr.html" lang="fr">Français</option><option value="lite-ko.html" lang="ko" selected>한국어</option><option value="lite-zh-Hans.html" lang="zh-Hans">简体中文</option><option value="lite-zh-Hant.html" lang="zh-Hant">繁體中文</option><option value="lite-es.html" lang="es">Español</option><option value="lite-pt-BR.html" lang="pt-BR">Português (Brasil)</option><option value="lite-it.html" lang="it">Italiano</option><option value="lite-nl.html" lang="nl">Nederlands</option><option value="lite-pl.html" lang="pl">Polski</option><option value="lite-cs.html" lang="cs">Čeština</option><option value="lite-sv.html" lang="sv">Svenska</option><option value="lite-da.html" lang="da">Dansk</option><option value="lite-no.html" lang="no">Norsk</option><option value="lite-fi.html" lang="fi">Suomi</option><option value="lite-tr.html" lang="tr">Türkçe</option><option value="lite-id.html" lang="id">Bahasa Indonesia</option><option value="lite-th.html" lang="th">ไทย</option><option value="lite-ar.html" lang="ar">العربية</option><option value="lite-hi.html" lang="hi">हिन्दी</option><option value="lite-vi.html" lang="vi">Tiếng Việt</option></select></label></div></header>
 <div class="hero">
   <h1>Kanau&nbsp;Lite</h1>
-  <p class="sub">Kanau&nbsp;Lite 1.0 (5) 기준</p>
+  <p class="sub">Kanau&nbsp;Lite 1.0 (6) 기준</p>
 </div>
 
 <p>Kanau&nbsp;Lite는 iPhone이나 iPad를 한 대의 조명으로 바꿔 주는 무료 앱입니다. 콘솔이 <span style="white-space:nowrap">Art-Net</span>이나 sACN으로 보낸 DMX를 받아서 화면, 뒷면의 빛, 진동의 색과 밝기를 구동합니다. FX &amp; MEDIA와 ULTIMATE 모드에서는 화면에 움직이는 패턴과 직접 넣은 이미지, 동영상도 띄울 수 있습니다. 계정을 만들 필요가 없고&nbsp;광고도&nbsp;없습니다.</p>
@@ -65,7 +65,7 @@
 <ol>
   <li>Kanau&nbsp;Lite를 엽니다. 아이콘과 이름이 잠깐 나타납니다. 탭하면&nbsp;건너뜁니다.</li>
   <li>Settings가 열립니다. Kanau&nbsp;Lite를 열 때마다 가장&nbsp;먼저&nbsp;나옵니다.</li>
-  <li><span style="white-space:nowrap">Art-Net</span>이나 sACN을 고릅니다. 그런 다음 Mode, Universe, Address를&nbsp;정합니다.</li>
+  <li>Mode를 고르고, 이어서 <span style="white-space:nowrap">Art-Net</span>이나 sACN을 고른 다음 Universe와 Address를&nbsp;정합니다.</li>
   <li>아래쪽의 START를&nbsp;탭합니다.</li>
   <li>콘솔에서 그 유니버스와 주소로 DMX를 보냅니다. 도착하면 화면이&nbsp;조명이&nbsp;됩니다.</li>
 </ol>
@@ -75,7 +75,7 @@
 <p>START 뒤에 DMX가 들어오지 않는 동안에는 검은 화면에 세 줄이 큰 글씨로 나옵니다. 이것이 주소 화면입니다. 여러 대를 나란히 놓아도 각 번호를 멀리서 읽을&nbsp;수&nbsp;있습니다.</p>
 <ul>
   <li>호박색으로 표시되는 유니버스와 주소. 예: <code>U1 · 001</code>.</li>
-  <li>모드. 예: <code>SCREEN RGB 10ch</code>.</li>
+  <li>모드. 예: <code>2: SCREEN RGB 9ch</code>.</li>
   <li>네트워크. 이 기기의 IP 주소와 받는 프로토콜. 예: <code class="q">Wi-Fi 192.168.1.24 · <span style="white-space:nowrap">Art-Net</span></code>. 네트워크가 없으면 <code>No network</code>가 나옵니다.</li>
 </ul>
 <p>주소 화면을 탭하면 Settings가 열립니다. 조명이 켜져 있는 동안 DMX가 6초 동안 오지 않으면 주소 화면으로 돌아옵니다. 뒷면의 빛과&nbsp;진동도&nbsp;멈춥니다.</p>
@@ -85,17 +85,19 @@
 <table>
   <thead><tr><th>항목</th><th>하는 일</th></tr></thead>
   <tbody>
-    <tr><td>Language</td><td>System 또는 15개 언어 중 하나. 고르면 바로 설명문이 바뀝니다. 항목과 버튼의 이름은 영어 그대로입니다. 고르기 전에는 Kanau&nbsp;Lite가 영어로 나옵니다.</td></tr>
-    <tr><td>Guide</td><td>8단계의 짧은 가이드를 엽니다. 앱 안에 들어 있어서 인터넷이 없어도 볼 수 있습니다.</td></tr>
+    <tr><td>Mode</td><td>현재 모드를 보여 줍니다. 예: 2: SCREEN RGB 9ch. 탭하면 아래 모드 중에서 고를 수 있습니다(모드와 채널 참조). 앞의 숫자가 모드 번호입니다. 뒷면의 빛이 없는 기기에서는 1: BACK LIGHT ONLY가 목록에 나오지 않지만, 다른 모드의 번호는 그대로입니다.</td></tr>
     <tr><td><span style="white-space:nowrap">Art-Net</span> / sACN</td><td>둘 중 하나를 탭합니다. 고른 쪽이 호박색이 됩니다.</td></tr>
-    <tr><td>Mode</td><td>현재 모드를 보여 줍니다. 예: SCREEN RGB 10ch. 탭하면 아래 모드 중에서 고를 수 있습니다(모드와 채널 참조). 뒷면의 빛이 없는 기기에서는 BACK LIGHT ONLY가 목록에 나오지 않습니다.</td></tr>
     <tr><td>Universe</td><td><span style="white-space:nowrap">Art-Net</span>은 0–32767, sACN은 1–63999.</td></tr>
     <tr><td>Address</td><td>1부터, 그 모드의 채널이 512 안에 들어가는 가장 큰 주소까지.</td></tr>
+    <tr><td>Channels</td><td>현재 모드의 채널입니다(아래 참조).</td></tr>
+    <tr><td>PROXIMITY</td><td>켜면 이 기기를 귀에 대고 있는 동안 화면이 어두워집니다. 뒷면의 빛과 진동은 계속됩니다. 처음에는 꺼져 있습니다. iPad처럼 근접 센서가 없는 기기에는 나오지 않습니다.</td></tr>
     <tr><td>Media</td><td>51개 번호 중 이미지나 동영상이 들어 있는 번호의 수를 보여 줍니다. 예: <code>3 / 51</code>. 탭하면 보관함이 열립니다(Media 참조).</td></tr>
+    <tr><td>Language</td><td>System 또는 15개 언어 중 하나. 고르면 바로 설명문이 바뀝니다. 항목과 버튼의 이름은 영어 그대로입니다. 고르기 전에는 Kanau&nbsp;Lite가 영어로 나옵니다.</td></tr>
+    <tr><td>Guide</td><td>8단계의 짧은 가이드를 엽니다. 앱 안에 들어 있어서 인터넷이 없어도 볼 수 있습니다.</td></tr>
   </tbody>
 </table>
-<p>Universe와 Address는 숫자를 입력하거나 − 와 +를 씁니다. 그 아래 호박색 줄에 화면, 뒷면의 빛, 진동이 쓰는 주소가 나옵니다. 예: <code class="q">Screen 001–008 · Back Light 009 · Vibration 010</code>.</p>
-<p>다음은 Channels입니다. Settings를 열 때마다 접힌 채로 시작하며 채널 수만 보여 줍니다. 예: <code>10ch</code>. 제목을 탭하면 지금 모드의 채널이 주소, 이름, 값의 의미와 함께 나열됩니다. Kanau와 다른 콘솔에서 패치하는 방법을 알려 주는 두 줄은 접혀 있어도 보입니다. 이 기기에 없는 기능(뒷면의 빛이나 진동)의 줄은 흐리게 표시되고 <code>Not on this device</code>로 시작합니다. 그 줄도 주소를 쓰므로 콘솔에서도&nbsp;세어&nbsp;주세요.</p>
+<p>Universe와 Address는 숫자를 입력하거나 − 와 +를 씁니다. 그 아래 호박색 줄에 화면, 뒷면의 빛, 진동이 쓰는 주소가 나옵니다. 예: <code class="q">Screen 001–007 · Back Light 008 · Vibration 009</code>.</p>
+<p>Channels가 이어집니다. Settings를 열 때마다 접힌 채로 시작하며 채널 수만 보여 줍니다. 예: <code>9ch</code>. 제목을 탭하면 지금 모드의 채널이 주소, 이름, 값의 의미와 함께 나열됩니다. Kanau와 다른 콘솔에서 패치하는 방법을 알려 주는 두 줄은 접혀 있어도 보입니다. 이 기기에 없는 기능(뒷면의 빛이나 진동)의 줄은 흐리게 표시되고 <code>Not on this device</code>로 시작합니다. 그 줄도 주소를 쓰므로 콘솔에서도&nbsp;세어&nbsp;주세요.</p>
 <p>Settings 끝에 Kanau&nbsp;Lite의 버전, Made by Kanau Labs, kanaulabs.app 링크, Privacy Policy, Contact Support, <span style="white-space:nowrap">Art-Net</span> 크레디트, 저작권 표시가 있습니다. 설정은 저장되어 다음에 앱을 열 때도&nbsp;그대로입니다.</p>
 
 <h2>조명이 켜져 있는 동안</h2>
@@ -104,23 +106,23 @@
 <p>Kanau&nbsp;Lite는 앱이 열려 있는 동안에만 DMX를 받습니다. Home으로 나가거나 기기를 잠그면 받기를 멈추고, 뒷면의 빛과 진동을 멈추며, 화면 밝기를 원래대로 돌려놓습니다. 다시 받으려면 앱을&nbsp;다시&nbsp;여세요.</p>
 
 <h2>모드와 채널</h2>
-<p>모드는 19가지입니다. 처음에는 SCREEN RGB&nbsp;10ch입니다.</p>
+<p>모드는 19가지입니다. 처음에는 2: SCREEN RGB 9ch입니다. 이름 앞의 숫자는 모드 번호이고, 뒤의 숫자는&nbsp;채널&nbsp;수입니다.</p>
 <table>
   <thead><tr><th>모드</th><th>화면</th></tr></thead>
   <tbody>
-    <tr><td>BACK LIGHT ONLY 1ch</td><td>뒷면의 빛만 씁니다. 화면은 어두운 채로 있습니다.</td></tr>
-    <tr><td>SCREEN RGB 10ch<br>SCREEN HUE SAT 9ch</td><td>화면 전체가 한 가지 색입니다.</td></tr>
-    <tr><td>SCREEN 2 CELLS RGB 18ch<br>SCREEN 2 CELLS HUE SAT 16ch</td><td>화면을 2개로 나눕니다.</td></tr>
-    <tr><td>SCREEN 4 CELLS RGB 32ch<br>SCREEN 4 CELLS HUE SAT 28ch</td><td>화면을 4개로 나눕니다.</td></tr>
-    <tr><td>SCREEN 8 CELLS RGB 60ch<br>SCREEN 8 CELLS HUE SAT 52ch</td><td>화면을 8개로 나눕니다.</td></tr>
-    <tr><td>SCREEN 4 STRIPS RGB 32ch<br>SCREEN 4 STRIPS HUE SAT 28ch</td><td>화면을 긴 변을 따라 띠 4개로 나눕니다.</td></tr>
-    <tr><td>SCREEN 8 STRIPS RGB 60ch<br>SCREEN 8 STRIPS HUE SAT 52ch</td><td>화면을 긴 변을 따라 띠 8개로 나눕니다.</td></tr>
-    <tr><td>SCREEN FX &amp; MEDIA RGB 19ch<br>SCREEN FX &amp; MEDIA HUE SAT 18ch</td><td>화면 전체에 패턴, 이미지, 동영상을 담습니다(FX &amp; MEDIA 참조).</td></tr>
-    <tr><td>SCREEN COOKIE RGB 63ch<br>SCREEN COOKIE HUE SAT 55ch</td><td>화면을 불규칙하고 얼룩덜룩한 영역으로 나누고, 8가지 색을 담습니다(COOKIE와 ULTIMATE 참조).</td></tr>
-    <tr><td>ULTIMATE RGB 73ch<br>ULTIMATE HUE SAT 65ch</td><td>화면을 나누는 방식을 고르고, 패턴, 이미지, 동영상을 담습니다(COOKIE와 ULTIMATE 참조).</td></tr>
+    <tr><td>1: BACK LIGHT ONLY 1ch</td><td>뒷면의 빛만 씁니다. 화면은 어두운 채로 있습니다.</td></tr>
+    <tr><td>2: SCREEN RGB 9ch<br>3: SCREEN HUE SAT 8ch</td><td>화면 전체가 한 가지 색입니다.</td></tr>
+    <tr><td>4: SCREEN 2 CELLS RGB 17ch<br>5: SCREEN 2 CELLS HUE SAT 15ch</td><td>화면을 2개로 나눕니다.</td></tr>
+    <tr><td>6: SCREEN 4 CELLS RGB 31ch<br>7: SCREEN 4 CELLS HUE SAT 27ch</td><td>화면을 4개로 나눕니다.</td></tr>
+    <tr><td>8: SCREEN 8 CELLS RGB 59ch<br>9: SCREEN 8 CELLS HUE SAT 51ch</td><td>화면을 8개로 나눕니다.</td></tr>
+    <tr><td>10: SCREEN 4 STRIPS RGB 31ch<br>11: SCREEN 4 STRIPS HUE SAT 27ch</td><td>화면을 긴 변을 따라 띠 4개로 나눕니다.</td></tr>
+    <tr><td>12: SCREEN 8 STRIPS RGB 59ch<br>13: SCREEN 8 STRIPS HUE SAT 51ch</td><td>화면을 긴 변을 따라 띠 8개로 나눕니다.</td></tr>
+    <tr><td>14: SCREEN FX &amp; MEDIA RGB 18ch<br>15: SCREEN FX &amp; MEDIA HUE SAT 17ch</td><td>화면 전체에 패턴, 이미지, 동영상을 담습니다(FX &amp; MEDIA 참조).</td></tr>
+    <tr><td>16: SCREEN COOKIE RGB 62ch<br>17: SCREEN COOKIE HUE SAT 54ch</td><td>화면을 불규칙하고 얼룩덜룩한 영역으로 나누고, 8가지 색을 담습니다(COOKIE와 ULTIMATE 참조).</td></tr>
+    <tr><td>18: ULTIMATE RGB 72ch<br>19: ULTIMATE HUE SAT 64ch</td><td>화면을 나누는 방식을 고르고, 패턴, 이미지, 동영상을 담습니다(COOKIE와 ULTIMATE 참조).</td></tr>
   </tbody>
 </table>
-<p>BACK LIGHT ONLY를 빼고 모든 모드는 Screen Dimmer로 시작해 Function, Back Light, Vibration으로 끝납니다. SCREEN RGB 10ch의 채널은 다음 순서입니다. 값은 Settings의 Channels에 나오는 그대로&nbsp;적었습니다.</p>
+<p>BACK LIGHT ONLY를 빼고 모든 모드는 Screen Dimmer로 시작해 Back Light, Vibration으로 끝납니다. 2: SCREEN RGB 9ch의 채널은 다음 순서입니다. 값은 Settings의 Channels에 나오는 그대로&nbsp;적었습니다.</p>
 <table>
   <thead><tr><th>#</th><th>이름</th><th>값</th></tr></thead>
   <tbody>
@@ -131,16 +133,15 @@
     <tr><td>5</td><td>Red</td><td>0–100%</td></tr>
     <tr><td>6</td><td>Green</td><td>0–100%</td></tr>
     <tr><td>7</td><td>Blue</td><td>0–100%</td></tr>
-    <tr><td>8</td><td>Function</td><td>0–127 Off · 128–255 Proximity · Home 0</td></tr>
-    <tr><td>9</td><td>Back Light</td><td>0–100%</td></tr>
-    <tr><td>10</td><td>Vibration</td><td>0–100%</td></tr>
+    <tr><td>8</td><td>Back Light</td><td>0–100%</td></tr>
+    <tr><td>9</td><td>Vibration</td><td>0–100%</td></tr>
   </tbody>
 </table>
 <p>HUE SAT 모드에는 Red, Green, Blue 대신 Hue(0–360°)와 Saturation이 있습니다. CELLS와 STRIPS 모드에서는 Screen Dimmer 뒤에 화면의 각 부분마다 Dimmer, CCT, G/M, Crossfade, 색이 이어집니다. CELLS는 왼쪽 위부터 번호가 붙습니다. 8개로 나누면 화면을 세워 둘 때는 2열 4행, 가로로 눕힐 때는 4열 2행입니다. STRIPS는 화면의 긴 변을 따라 놓인 폭이 같은 띠입니다. 화면을 세워 두면 가로 띠가 위에서 아래로, 눕히면 세로 띠가 왼쪽에서 오른쪽으로 번호가 붙습니다. 정사각형 화면은 위에서&nbsp;아래로&nbsp;나눕니다.</p>
-<p>Crossfade는 흰색과 색의 비율을 정합니다. 0이 흰색이고 255가 색입니다. 흰색은 CCT와 G/M이 정합니다. Crossfade가 0인 동안에는 Red, Green, Blue를 올려도 화면은 흰색 그대로입니다. Screen Dimmer는 화면만 어둡게 하고 뒷면의 빛에는 영향을 주지 않습니다. Function을 128 이상으로 하면 Proximity가 선택되며, 기기의 근접&nbsp;센서를&nbsp;씁니다.</p>
+<p>Crossfade는 흰색과 색의 비율을 정합니다. 0이 흰색이고 255가 색입니다. 흰색은 CCT와 G/M이 정합니다. Crossfade가 0인 동안에는 Red, Green, Blue를 올려도 화면은 흰색 그대로입니다. Screen Dimmer는 화면만 어둡게 하고 뒷면의 빛에는 영향을&nbsp;주지&nbsp;않습니다.</p>
 
 <h2>FX &amp; MEDIA</h2>
-<p>SCREEN FX &amp; MEDIA RGB 19ch의 채널은 다음 순서입니다. SCREEN FX &amp; MEDIA HUE SAT 18ch에는 Red, Green, Blue 대신 Hue와 Saturation이&nbsp;있습니다.</p>
+<p>14: SCREEN FX &amp; MEDIA RGB 18ch의 채널은 다음 순서입니다. 15: SCREEN FX &amp; MEDIA HUE SAT 17ch에는 Red, Green, Blue 대신 Hue와 Saturation이&nbsp;있습니다.</p>
 <table>
   <thead><tr><th>#</th><th>이름</th><th>값</th></tr></thead>
   <tbody>
@@ -152,7 +153,7 @@
     <tr><td>6</td><td>Green</td><td>0–100%</td></tr>
     <tr><td>7</td><td>Blue</td><td>0–100%</td></tr>
     <tr><td>8</td><td>Color Macro</td><td>0–15 Off · 16–255 15 colors, 16 each · Home 0</td></tr>
-    <tr><td>9</td><td>Content</td><td>0 SOLID · 32 GLINT · 64 SWEEP · 96 KALEIDO · 128 WATER · 160 FIRE · 192 VIDEO GLOW · 224 CATCHLIGHT · Home 0</td></tr>
+    <tr><td>9</td><td>Content</td><td>0 SOLID · 32 GLINT · 64 SWEEP · 96 KALEIDO · 128 WATER · 160 FIRE · 192 VIDEO GLOW · 224 AURORA · Home 0</td></tr>
     <tr><td>10</td><td>Speed</td><td>0 Slow · 128 Normal · 255 Fast · Home 128</td></tr>
     <tr><td>11</td><td>Amount</td><td>0–255 · Home 128</td></tr>
     <tr><td>12</td><td>Size</td><td>0–255 · Home 128</td></tr>
@@ -160,18 +161,17 @@
     <tr><td>14</td><td>Media</td><td>0 Off · 1–5 = 1 · 6–10 = 2 … 251–255 = 51 · Home 0</td></tr>
     <tr><td>15</td><td>Playback</td><td>0–85 Play · 86–170 Pause · 171–255 Restart · Home 0</td></tr>
     <tr><td>16</td><td>Color Temp</td><td>0 Warm · 128 As is · 255 Cool · Home 128</td></tr>
-    <tr><td>17</td><td>Function</td><td>0–127 Off · 128–255 Proximity · Home 0</td></tr>
-    <tr><td>18</td><td>Back Light</td><td>0–100%</td></tr>
-    <tr><td>19</td><td>Vibration</td><td>0–100%</td></tr>
+    <tr><td>17</td><td>Back Light</td><td>0–100%</td></tr>
+    <tr><td>18</td><td>Vibration</td><td>0–100%</td></tr>
   </tbody>
 </table>
 <p>화면은 검은색 위에 쌓아 올립니다. 먼저 Media가 고른 이미지나 동영상, 그 위에 Content가 고른 패턴입니다. Mix는 둘이 각각 얼마나 보일지 정합니다. 0이면 이미지나 동영상만, 255이면 패턴만 보입니다. Media가 0이거나 그 번호가 비어 있으면&nbsp;패턴만&nbsp;보입니다.</p>
-<p>Content의 첫 번째인 SOLID는 화면을 그 색으로 채웁니다. Home 값에서는 FX &amp; MEDIA가 SCREEN RGB와 같은 빛을 냅니다. 나머지 일곱 가지는 움직이는 패턴입니다. Speed는 움직이는 빠르기를 정하고, Amount와 Size는 각 패턴의 모양을 바꿉니다. 패턴은 화면의 색을 그대로 가져옵니다. Color Macro가 0이 아니면 대신 매크로 색을 씁니다. 16부터는 16씩 올라갈 때마다 다음 색을 고릅니다: 3200 K, 4300 K, 5600 K, Red, Orange, Amber, Yellow, Green, Cyan, Sky Blue, Blue, Deep Blue, Lavender, Magenta,&nbsp;Pink.</p>
+<p>Content의 첫 번째인 SOLID는 화면을 그 색으로 채웁니다. Home 값에서는 FX &amp; MEDIA가 SCREEN RGB와 같은 빛을 냅니다. 나머지 일곱 가지는 움직이는 패턴입니다. Speed는 움직이는 빠르기를 정하고, Amount와 Size는 각 패턴의 모양을 바꿉니다. 각 패턴은 자기만의 색을 가지고 있어서, 색을 정하지 않아도 완성된 모습으로 나옵니다. Crossfade는 패턴을 0일 때의 자기 색에서 255일 때의 Red, Green, Blue 색으로 옮깁니다. Color Macro가 0이 아니면 대신 매크로 색을 씁니다. 16부터는 16씩 올라갈 때마다 다음 색을 고릅니다: 3200 K, 4300 K, 5600 K, Red, Orange, Amber, Yellow, Green, Cyan, Sky Blue, Blue, Deep Blue, Lavender, Magenta,&nbsp;Pink.</p>
 <p>이미지와 동영상은 원래 색을 그대로 유지합니다. Color Temp는 이를 더 따뜻하게 또는 더 차갑게 옮기고, Screen Dimmer는 어둡게 합니다. 동영상은 소리 없이 재생되며 끝나면 처음부터 다시 시작합니다. Playback은 동영상을 재생하거나 일시정지합니다. Restart는 값이 171–255로 들어오는 순간에 한 번, 동영상을 처음으로&nbsp;되돌립니다.</p>
 
 <h2>COOKIE와 ULTIMATE</h2>
-<p>SCREEN COOKIE는 화면을 불규칙하고 얼룩덜룩한 영역으로 나눕니다. 각 영역은 8개 셀 중 하나의 색을 가지므로, 셀 하나의 색이 화면의 여러 곳에 나타납니다. 빛과 그림자를 만들려면 콘솔에서 몇 개의 셀을 검은색으로&nbsp;하세요.</p>
-<p>SCREEN COOKIE RGB 63ch는 Screen Dimmer로 시작하고, 이어서 Shape, Soft, Drift가 옵니다. 그다음에 8개 셀이 오며, 각 셀에는 CELLS 모드와 같이 Dimmer, CCT, G/M, Crossfade, Red, Green, Blue가 있습니다. Function, Back Light, Vibration이 마지막에 옵니다. SCREEN COOKIE HUE SAT 55ch에는 각 셀에 Red, Green, Blue 대신 Hue와 Saturation이&nbsp;있습니다.</p>
+<p>SCREEN COOKIE는 화면을 불규칙하고 얼룩덜룩한 영역으로 나눕니다. 각 영역은 8개 셀 중 하나의 색을 가지므로, 셀 하나의 색이 화면의 여러 곳에 나타납니다. 셀이 어떻게 되어 있든 항상 검은 채로 남는 영역이 있어서, 8개 셀을 모두 켜도 빛 사이에 그림자가 생깁니다. 그림자를 더 만들려면 콘솔에서 몇 개의 셀을 검은색으로&nbsp;하세요.</p>
+<p>16: SCREEN COOKIE RGB 62ch는 Screen Dimmer로 시작하고, 이어서 Shape, Soft, Drift가 옵니다. 그다음에 8개 셀이 오며, 각 셀에는 CELLS 모드와 같이 Dimmer, CCT, G/M, Crossfade, Red, Green, Blue가 있습니다. Back Light, Vibration이 마지막에 옵니다. 17: SCREEN COOKIE HUE SAT 54ch에는 각 셀에 Red, Green, Blue 대신 Hue와 Saturation이&nbsp;있습니다.</p>
 <table>
   <thead><tr><th>#</th><th>이름</th><th>값</th></tr></thead>
   <tbody>
@@ -181,7 +181,7 @@
   </tbody>
 </table>
 <p>Shape는 패턴을 고릅니다. 값이 움직이면 패턴이 부드럽게 바뀌므로, 콘솔에서 페이드하면 한 패턴이 다음 패턴으로 바뀝니다. Soft는 영역 사이의 가장자리를 흐리게 합니다. 0이면 또렷합니다. Drift는 패턴이 흐르는 빠르기를 정합니다. 0이면&nbsp;멈춰&nbsp;있습니다.</p>
-<p>ULTIMATE RGB 73ch에는 COOKIE, FX &amp; MEDIA, 8개 셀의 채널이 이&nbsp;순서로&nbsp;있습니다.</p>
+<p>18: ULTIMATE RGB 72ch에는 COOKIE, FX &amp; MEDIA, 8개 셀의 채널이 이&nbsp;순서로&nbsp;있습니다.</p>
 <table>
   <thead><tr><th>#</th><th>이름</th><th>값</th></tr></thead>
   <tbody>
@@ -190,11 +190,11 @@
     <tr><td>3–5</td><td>Shape, Soft, Drift</td><td>COOKIE와 같음</td></tr>
     <tr><td>6–14</td><td>Color Macro, Content, Speed, Amount, Size, Mix, Media, Playback, Color Temp</td><td>FX &amp; MEDIA와 같음</td></tr>
     <tr><td>15–70</td><td>Dimmer 1 … Blue 8</td><td>각 셀마다 7채널, CELLS 모드와 같음</td></tr>
-    <tr><td>71–73</td><td>Function, Back Light, Vibration</td><td>다른 모드와 같음</td></tr>
+    <tr><td>71–72</td><td>Back Light, Vibration</td><td>다른 모드와 같음</td></tr>
   </tbody>
 </table>
-<p>ULTIMATE HUE SAT 65ch에는 각 셀마다 Hue와 Saturation이 있는 6채널이 있으므로, 셀은 15–62이고 Function, Back Light, Vibration은 63–65입니다.</p>
-<p>셀은 Content가 SOLID이고 Media가 0인 동안에만 나타납니다. 그때 Cells가 화면을 나누는 방식을 고릅니다. SCREEN은 화면 전체를 셀 1의 색으로 채웁니다. 패턴, 이미지, 동영상이 나오는 동안(Content가 SOLID가 아니거나 Media가 0이 아닐 때)에는 FX &amp; MEDIA처럼 화면이 하나가 되고, 패턴은 셀 1의 색을 가져옵니다. Media는 값으로 셉니다. 0이 아닌 값이면 그 번호가 비어 있어도 화면이 하나가 됩니다. Color Macro는 화면이 하나인 동안에만 작동합니다. 화면이 나뉘어 있는 동안에는 아무 영향이 없습니다. Cells가 화면을 8개보다 적게 나눌 때, 나머지 셀의 채널은 영향이 없지만 주소는&nbsp;그대로&nbsp;씁니다.</p>
+<p>19: ULTIMATE HUE SAT 64ch에는 각 셀마다 Hue와 Saturation이 있는 6채널이 있으므로, 셀은 15–62이고 Back Light, Vibration은 63–64입니다.</p>
+<p>셀은 Content가 SOLID이고 Media가 0인 동안에만 나타납니다. 그때 Cells가 화면을 나누는 방식을 고릅니다. SCREEN은 화면 전체를 셀 1의 색으로 채웁니다. 패턴, 이미지, 동영상이 나오는 동안(Content가 SOLID가 아니거나 Media가 0이 아닐 때)에는 FX &amp; MEDIA처럼 화면이 하나가 되고, 패턴은 셀 1에서 색과 Crossfade를 가져옵니다. Media는 값으로 셉니다. 0이 아닌 값이면 그 번호가 비어 있어도 화면이 하나가 됩니다. Color Macro는 화면이 하나인 동안에만 작동합니다. 화면이 나뉘어 있는 동안에는 아무 영향이 없습니다. Cells가 화면을 8개보다 적게 나눌 때, 나머지 셀의 채널은 영향이 없지만 주소는&nbsp;그대로&nbsp;씁니다.</p>
 
 <h2>Media</h2>
 <p>보관함에는 이 기기의 이미지와 동영상이 1번부터 51번까지의 번호로 들어갑니다. Settings의 Media에서 엽니다. 어느 모드에서나 있으므로 FX &amp; MEDIA나 ULTIMATE로 바꾸기 전에 채워 둘&nbsp;수&nbsp;있습니다.</p>
@@ -205,17 +205,16 @@
 <p>콘솔에서는 Media 채널이 번호를 고릅니다. 1–5가 1, 6–10이 2, 이런 식으로 251–255가 51입니다. 파일은 이 기기에만 있고 어디로도 보내지지&nbsp;않습니다.</p>
 
 <h2>콘솔에서 패치하기</h2>
-<p>Kanau에서는 이 기기를 같은 모드의 Kanau Screen으로 패치합니다(<a href="manual-ko.html#patch">설명서 03장</a>). Kanau 1.0 (371)에서는 Kanau Screen에 19가지 모드가&nbsp;모두&nbsp;있습니다.</p>
+<p>Kanau에서는 이 기기를 같은 모드의 Kanau&nbsp;Lite로 패치합니다(<a href="manual-ko.html#patch">설명서 03장</a>). Kanau 1.0 (372) 이후에는 Kanau&nbsp;Lite에 19가지 모드가&nbsp;모두&nbsp;있습니다.</p>
 <p>다른 콘솔에서는 Settings의 Channels와 같은 순서로 채널을 가진 조명을 만들고, 같은 주소에 패치합니다. 모든 채널은&nbsp;8-bit입니다.</p>
-<p><span style="white-space:nowrap">Art-Net</span>에서는 앱이 노드 검색(ArtPoll)에 <code class="q">Kanau Screen · U1 · 001</code> 같은 이름으로 응답합니다. 노드를 목록으로 보여 주는 콘솔에서는 이 이름을 유니버스와 주소와&nbsp;함께&nbsp;찾으세요.</p>
+<p><span style="white-space:nowrap">Art-Net</span>에서는 앱이 노드 검색(ArtPoll)에 <code class="q">Kanau&nbsp;Lite · U1 · 001</code> 같은 이름으로 응답합니다. 노드를 목록으로 보여 주는 콘솔에서는 이 이름을 유니버스와 주소와&nbsp;함께&nbsp;찾으세요.</p>
 
 <h2>Kanau의 LITE&nbsp;MODE와 다른 점</h2>
-<p>Kanau&nbsp;Lite는 Kanau의 LITE&nbsp;MODE와 같은 방식으로 받습니다(<a href="manual-ko.html#output--12">설명서 02장</a>). Kanau 1.0 (371) 기준으로 다른 점은&nbsp;네&nbsp;가지입니다.</p>
+<p>Kanau&nbsp;Lite는 Kanau의 LITE&nbsp;MODE와 같은 방식으로 받습니다(<a href="manual-ko.html#output--12">설명서 02장</a>). Kanau 1.0 (375) 기준으로 다른 점은&nbsp;세&nbsp;가지입니다.</p>
 <ul>
   <li>DMX가 오기 전에 LITE&nbsp;MODE는 <code>WAITING</code>라고 표시합니다. Kanau&nbsp;Lite는 주소 화면을&nbsp;표시합니다.</li>
   <li>DMX가 끊기면 LITE&nbsp;MODE는 마지막 색을 유지합니다. Kanau&nbsp;Lite는 6초 뒤에 주소 화면으로&nbsp;돌아갑니다.</li>
   <li>오른쪽 위 스위치의 ×는 Kanau에서는 LITE&nbsp;MODE를 나갑니다. Kanau&nbsp;Lite에서는 Settings를&nbsp;엽니다.</li>
-  <li>Media 보관함은 Kanau&nbsp;Lite에만 있습니다. LITE&nbsp;MODE에서는 FX &amp; MEDIA와 ULTIMATE 모드에&nbsp;패턴만&nbsp;나옵니다.</li>
 </ul>
 
 <h2>문의</h2>

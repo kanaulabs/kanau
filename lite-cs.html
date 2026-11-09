@@ -49,7 +49,7 @@
 <header class="sitenav"><a class="sitebrand" href="index-cs.html"><img src="img/icon.png" alt="" width="28" height="28">Kanau</a><div class="sitenavr"><div class="sitelinks"><a href="index-cs.html#pricing">Ceník</a><a href="fixtures-cs.html">Svítidla</a><a href="manual-cs.html">Příručka</a><a href="support-cs.html">Podpora</a></div><label class="langsel"><span class="vh">Jazyk</span><select onchange="location.href=this.value"><option value="lite.html" lang="en">English</option><option value="lite-ja.html" lang="ja">日本語</option><option value="lite-de.html" lang="de">Deutsch</option><option value="lite-fr.html" lang="fr">Français</option><option value="lite-ko.html" lang="ko">한국어</option><option value="lite-zh-Hans.html" lang="zh-Hans">简体中文</option><option value="lite-zh-Hant.html" lang="zh-Hant">繁體中文</option><option value="lite-es.html" lang="es">Español</option><option value="lite-pt-BR.html" lang="pt-BR">Português (Brasil)</option><option value="lite-it.html" lang="it">Italiano</option><option value="lite-nl.html" lang="nl">Nederlands</option><option value="lite-pl.html" lang="pl">Polski</option><option value="lite-cs.html" lang="cs" selected>Čeština</option><option value="lite-sv.html" lang="sv">Svenska</option><option value="lite-da.html" lang="da">Dansk</option><option value="lite-no.html" lang="no">Norsk</option><option value="lite-fi.html" lang="fi">Suomi</option><option value="lite-tr.html" lang="tr">Türkçe</option><option value="lite-id.html" lang="id">Bahasa Indonesia</option><option value="lite-th.html" lang="th">ไทย</option><option value="lite-ar.html" lang="ar">العربية</option><option value="lite-hi.html" lang="hi">हिन्दी</option><option value="lite-vi.html" lang="vi">Tiếng Việt</option></select></label></div></header>
 <div class="hero">
   <h1>Kanau&nbsp;Lite</h1>
-  <p class="sub">K verzi Kanau&nbsp;Lite 1.0 (5)</p>
+  <p class="sub">K verzi Kanau&nbsp;Lite 1.0 (6)</p>
 </div>
 
 <p>Kanau&nbsp;Lite je bezplatná aplikace, která z iPhonu nebo iPadu udělá jedno světlo. Přijímá DMX, které posílá pult přes <span style="white-space:nowrap">Art-Net</span> nebo sACN, a ovládá barvu a jas obrazovky, světlo na zadní straně a vibrace. V režimech FX &amp; MEDIA a ULTIMATE může obrazovka také ukazovat pohyblivé vzory a vaše vlastní obrázky a videa. Není třeba zakládat účet a nejsou tu žádné&nbsp;reklamy.</p>
@@ -65,7 +65,7 @@
 <ol>
   <li>Otevřete Kanau&nbsp;Lite. Ikona a název se na chvíli zobrazí. Klepnutím je přeskočíte.</li>
   <li>Otevře se Settings. Při každém otevření Kanau&nbsp;Lite je to první, co se&nbsp;zobrazí.</li>
-  <li>Zvolte <span style="white-space:nowrap">Art-Net</span> nebo sACN. Potom nastavte Mode, Universe a&nbsp;Address.</li>
+  <li>Zvolte Mode, potom <span style="white-space:nowrap">Art-Net</span> nebo sACN a nastavte Universe a&nbsp;Address.</li>
   <li>Klepněte dole&nbsp;na&nbsp;START.</li>
   <li>Z pultu pošlete DMX na toto universe a na tuto adresu. Jakmile dorazí, obrazovka se stane&nbsp;světlem.</li>
 </ol>
@@ -75,7 +75,7 @@
 <p>Po START, dokud nepřichází žádné DMX, černá obrazovka ukazuje tři řádky velkým písmem. To je obrazovka adresy. Když je vedle sebe mnoho zařízení, každé číslo je čitelné&nbsp;zdálky.</p>
 <ul>
   <li>Universe a adresa jantarově, například <code>U1 · 001</code>.</li>
-  <li>Režim, například <code>SCREEN RGB 10ch</code>.</li>
+  <li>Režim, například <code>2: SCREEN RGB 9ch</code>.</li>
   <li>Síť, tedy IP adresa tohoto zařízení a protokol, na kterém poslouchá, například <code class="q">Wi-Fi 192.168.1.24 · <span style="white-space:nowrap">Art-Net</span></code>. Bez sítě ukazuje <code>No network</code>.</li>
 </ul>
 <p>Klepnutím na obrazovku adresy otevřete Settings. Pokud při zapnutém světle 6 sekund nedorazí žádné DMX, obrazovka adresy se vrátí. Zastaví se také světlo na zadní straně a&nbsp;vibrace.</p>
@@ -85,17 +85,19 @@
 <table>
   <thead><tr><th>Položka</th><th>Co dělá</th></tr></thead>
   <tbody>
-    <tr><td>Language</td><td>System, nebo jeden z 15 jazyků. Vysvětlení se změní hned po výběru. Názvy položek a tlačítek zůstávají anglicky. Dokud nevyberete, je Kanau&nbsp;Lite anglicky.</td></tr>
-    <tr><td>Guide</td><td>Otevře krátkého průvodce o 8 krocích. Je přímo v aplikaci, takže funguje bez internetu.</td></tr>
+    <tr><td>Mode</td><td>Ukazuje aktuální režim, například 2: SCREEN RGB 9ch. Klepnutím na něj vyberete některý z režimů níže (viz Režimy a kanály). Číslo na začátku je číslo režimu. Na zařízení bez světla na zadní straně není 1: BACK LIGHT ONLY v seznamu, ostatní režimy ale zachovávají svá čísla.</td></tr>
     <tr><td><span style="white-space:nowrap">Art-Net</span> / sACN</td><td>Klepněte na jedno z obou. Zvolené se zbarví jantarově.</td></tr>
-    <tr><td>Mode</td><td>Ukazuje aktuální režim, například SCREEN RGB 10ch. Klepnutím na něj vyberete některý z režimů níže (viz Režimy a kanály). Na zařízení bez světla na zadní straně není BACK LIGHT ONLY v seznamu.</td></tr>
     <tr><td>Universe</td><td>0–32767 pro <span style="white-space:nowrap">Art-Net</span>, 1–63999 pro sACN.</td></tr>
     <tr><td>Address</td><td>Od 1 po nejvyšší adresu, na které se kanály režimu ještě vejdou do 512.</td></tr>
+    <tr><td>Channels</td><td>Kanály aktuálního režimu (viz níže).</td></tr>
+    <tr><td>PROXIMITY</td><td>Když je zapnuto, obrazovka zhasne, dokud držíte toto zařízení u ucha. Světlo na zadní straně a vibrace pokračují. Na začátku je vypnuto. Zařízení bez senzoru přiblížení, například iPad, ho nezobrazuje.</td></tr>
     <tr><td>Media</td><td>Ukazuje, u kolika z 51 čísel je obrázek nebo video, například <code>3 / 51</code>. Klepnutím otevřete polici (viz Media).</td></tr>
+    <tr><td>Language</td><td>System, nebo jeden z 15 jazyků. Vysvětlení se změní hned po výběru. Názvy položek a tlačítek zůstávají anglicky. Dokud nevyberete, je Kanau&nbsp;Lite anglicky.</td></tr>
+    <tr><td>Guide</td><td>Otevře krátkého průvodce o 8 krocích. Je přímo v aplikaci, takže funguje bez internetu.</td></tr>
   </tbody>
 </table>
-<p>Pro Universe a Address napište číslo nebo použijte − a +. Jantarový řádek pod nimi ukazuje adresy, které zabírá obrazovka, světlo na zadní straně a vibrace, například <code class="q">Screen 001–008 · Back Light 009 · Vibration 010</code>.</p>
-<p>Dále následuje Channels. Při každém otevření Settings je sbalené a ukazuje jen počet kanálů, například <code>10ch</code>. Klepnutím na nadpis otevřete seznam kanálů aktuálního režimu s jejich adresou, názvem a významem hodnot. Dva řádky o patchování v Kanau a na jiných pultech se ukazují i při sbalení. Řádek funkce, kterou toto zařízení nemá (světlo na zadní straně nebo vibrace), je ztlumený a začíná <code>Not on this device</code>. Tento řádek přesto zabírá svou adresu, počítejte ho proto i&nbsp;na&nbsp;pultu.</p>
+<p>Pro Universe a Address napište číslo nebo použijte − a +. Jantarový řádek pod nimi ukazuje adresy, které zabírá obrazovka, světlo na zadní straně a vibrace, například <code class="q">Screen 001–007 · Back Light 008 · Vibration 009</code>.</p>
+<p>Další je Channels. Při každém otevření Settings je sbalené a ukazuje jen počet kanálů, například <code>9ch</code>. Klepnutím na nadpis otevřete seznam kanálů aktuálního režimu s jejich adresou, názvem a významem hodnot. Dva řádky o patchování v Kanau a na jiných pultech se ukazují i při sbalení. Řádek funkce, kterou toto zařízení nemá (světlo na zadní straně nebo vibrace), je ztlumený a začíná <code>Not on this device</code>. Tento řádek přesto zabírá svou adresu, počítejte ho proto i&nbsp;na&nbsp;pultu.</p>
 <p>Na konci Settings jsou verze Kanau&nbsp;Lite, Made by Kanau Labs, odkaz na kanaulabs.app, Privacy Policy, Contact Support, poděkování za <span style="white-space:nowrap">Art-Net</span> a copyright. Nastavení se ukládá a při příštím otevření aplikace tam&nbsp;stále&nbsp;je.</p>
 
 <h2>Když světlo svítí</h2>
@@ -104,23 +106,23 @@
 <p>Kanau&nbsp;Lite přijímá DMX, jen dokud je aplikace otevřená. Když přejdete na plochu nebo zařízení zamknete, přestane přijímat, zastaví světlo na zadní straně a vibrace a vrátí jas obrazovky na původní hodnotu. Znovu aplikaci otevřete a bude zase&nbsp;přijímat.</p>
 
 <h2>Režimy a kanály</h2>
-<p>Je 19 režimů. Výchozí je SCREEN&nbsp;RGB&nbsp;10ch.</p>
+<p>Je 19 režimů. Výchozí je 2: SCREEN RGB 9ch. Číslo na začátku každého názvu je číslo režimu a číslo na konci je počet&nbsp;kanálů.</p>
 <table>
   <thead><tr><th>Mode</th><th>Obrazovka</th></tr></thead>
   <tbody>
-    <tr><td>BACK LIGHT ONLY 1ch</td><td>Používá jen světlo na zadní straně. Obrazovka zůstává tmavá.</td></tr>
-    <tr><td>SCREEN RGB 10ch<br>SCREEN HUE SAT 9ch</td><td>Celá obrazovka má jednu barvu.</td></tr>
-    <tr><td>SCREEN 2 CELLS RGB 18ch<br>SCREEN 2 CELLS HUE SAT 16ch</td><td>Obrazovka je rozdělená na 2 části.</td></tr>
-    <tr><td>SCREEN 4 CELLS RGB 32ch<br>SCREEN 4 CELLS HUE SAT 28ch</td><td>Obrazovka je rozdělená na 4 části.</td></tr>
-    <tr><td>SCREEN 8 CELLS RGB 60ch<br>SCREEN 8 CELLS HUE SAT 52ch</td><td>Obrazovka je rozdělená na 8 částí.</td></tr>
-    <tr><td>SCREEN 4 STRIPS RGB 32ch<br>SCREEN 4 STRIPS HUE SAT 28ch</td><td>Obrazovka je rozdělená na 4 pruhy podél delší strany.</td></tr>
-    <tr><td>SCREEN 8 STRIPS RGB 60ch<br>SCREEN 8 STRIPS HUE SAT 52ch</td><td>Obrazovka je rozdělená na 8 pruhů podél delší strany.</td></tr>
-    <tr><td>SCREEN FX &amp; MEDIA RGB 19ch<br>SCREEN FX &amp; MEDIA HUE SAT 18ch</td><td>Celá obrazovka, se vzory, obrázky a videi (viz FX &amp; MEDIA).</td></tr>
-    <tr><td>SCREEN COOKIE RGB 63ch<br>SCREEN COOKIE HUE SAT 55ch</td><td>Obrazovka je rozdělená na nepravidelné, skvrnité plochy v 8 barvách (viz COOKIE a ULTIMATE).</td></tr>
-    <tr><td>ULTIMATE RGB 73ch<br>ULTIMATE HUE SAT 65ch</td><td>Volí, jak se obrazovka rozdělí, a ukazuje vzory, obrázky a videa (viz COOKIE a ULTIMATE).</td></tr>
+    <tr><td>1: BACK LIGHT ONLY 1ch</td><td>Používá jen světlo na zadní straně. Obrazovka zůstává tmavá.</td></tr>
+    <tr><td>2: SCREEN RGB 9ch<br>3: SCREEN HUE SAT 8ch</td><td>Celá obrazovka má jednu barvu.</td></tr>
+    <tr><td>4: SCREEN 2 CELLS RGB 17ch<br>5: SCREEN 2 CELLS HUE SAT 15ch</td><td>Obrazovka je rozdělená na 2 části.</td></tr>
+    <tr><td>6: SCREEN 4 CELLS RGB 31ch<br>7: SCREEN 4 CELLS HUE SAT 27ch</td><td>Obrazovka je rozdělená na 4 části.</td></tr>
+    <tr><td>8: SCREEN 8 CELLS RGB 59ch<br>9: SCREEN 8 CELLS HUE SAT 51ch</td><td>Obrazovka je rozdělená na 8 částí.</td></tr>
+    <tr><td>10: SCREEN 4 STRIPS RGB 31ch<br>11: SCREEN 4 STRIPS HUE SAT 27ch</td><td>Obrazovka je rozdělená na 4 pruhy podél delší strany.</td></tr>
+    <tr><td>12: SCREEN 8 STRIPS RGB 59ch<br>13: SCREEN 8 STRIPS HUE SAT 51ch</td><td>Obrazovka je rozdělená na 8 pruhů podél delší strany.</td></tr>
+    <tr><td>14: SCREEN FX &amp; MEDIA RGB 18ch<br>15: SCREEN FX &amp; MEDIA HUE SAT 17ch</td><td>Celá obrazovka, se vzory, obrázky a videi (viz FX &amp; MEDIA).</td></tr>
+    <tr><td>16: SCREEN COOKIE RGB 62ch<br>17: SCREEN COOKIE HUE SAT 54ch</td><td>Obrazovka je rozdělená na nepravidelné, skvrnité plochy v 8 barvách (viz COOKIE a ULTIMATE).</td></tr>
+    <tr><td>18: ULTIMATE RGB 72ch<br>19: ULTIMATE HUE SAT 64ch</td><td>Volí, jak se obrazovka rozdělí, a ukazuje vzory, obrázky a videa (viz COOKIE a ULTIMATE).</td></tr>
   </tbody>
 </table>
-<p>Kromě BACK LIGHT ONLY začíná každý režim Screen Dimmer a končí Function, Back Light a Vibration. SCREEN RGB 10ch má tyto kanály v tomto pořadí. Hodnoty jsou napsané tak, jak se zobrazují v Channels v&nbsp;Settings.</p>
+<p>Kromě BACK LIGHT ONLY začíná každý režim Screen Dimmer a končí Back Light a Vibration. 2: SCREEN RGB 9ch má tyto kanály v tomto pořadí. Hodnoty jsou napsané tak, jak se zobrazují v Channels v&nbsp;Settings.</p>
 <table>
   <thead><tr><th>#</th><th>Název</th><th>Hodnoty</th></tr></thead>
   <tbody>
@@ -131,16 +133,15 @@
     <tr><td>5</td><td>Red</td><td>0–100%</td></tr>
     <tr><td>6</td><td>Green</td><td>0–100%</td></tr>
     <tr><td>7</td><td>Blue</td><td>0–100%</td></tr>
-    <tr><td>8</td><td>Function</td><td>0–127 Off · 128–255 Proximity · Home 0</td></tr>
-    <tr><td>9</td><td>Back Light</td><td>0–100%</td></tr>
-    <tr><td>10</td><td>Vibration</td><td>0–100%</td></tr>
+    <tr><td>8</td><td>Back Light</td><td>0–100%</td></tr>
+    <tr><td>9</td><td>Vibration</td><td>0–100%</td></tr>
   </tbody>
 </table>
 <p>Režimy HUE SAT mají místo Red, Green a Blue kanály Hue (0–360°) a Saturation. V režimech CELLS a STRIPS následují po Screen Dimmer pro každou část obrazovky Dimmer, CCT, G/M, Crossfade a barva. CELLS jsou číslované od levého horního rohu. Při 8 CELLS má obrazovka na výšku 2 sloupce a 4 řádky a obrazovka na šířku 4 sloupce a 2 řádky. STRIPS jsou stejně široké pruhy podél delší strany obrazovky. Obrazovka na výšku má vodorovné pruhy číslované shora dolů a obrazovka na šířku má svislé pruhy číslované zleva doprava. Čtvercová obrazovka se dělí shora&nbsp;dolů.</p>
-<p>Crossfade nastavuje poměr bílé a barvy: 0 je bílá a 255 je barva. Bílá pochází z CCT a G/M. Dokud je Crossfade na 0, zvyšování Red, Green nebo Blue nechává obrazovku bílou. Screen Dimmer ztlumí jen obrazovku a neovlivní světlo na zadní straně. Nastavení Function na 128 nebo víc zvolí Proximity, které používá senzor přiblížení zařízení.</p>
+<p>Crossfade nastavuje poměr bílé a barvy: 0 je bílá a 255 je barva. Bílá pochází z CCT a G/M. Dokud je Crossfade na 0, zvyšování Red, Green nebo Blue nechává obrazovku bílou. Screen Dimmer ztlumí jen obrazovku a neovlivní světlo na zadní&nbsp;straně.</p>
 
 <h2>FX &amp; MEDIA</h2>
-<p>SCREEN FX &amp; MEDIA RGB 19ch má tyto kanály v tomto pořadí. SCREEN FX &amp; MEDIA HUE SAT 18ch má místo Red, Green a Blue kanály Hue a Saturation.</p>
+<p>14: SCREEN FX &amp; MEDIA RGB 18ch má tyto kanály v tomto pořadí. 15: SCREEN FX &amp; MEDIA HUE SAT 17ch má místo Red, Green a Blue kanály Hue a Saturation.</p>
 <table>
   <thead><tr><th>#</th><th>Název</th><th>Hodnoty</th></tr></thead>
   <tbody>
@@ -152,7 +153,7 @@
     <tr><td>6</td><td>Green</td><td>0–100%</td></tr>
     <tr><td>7</td><td>Blue</td><td>0–100%</td></tr>
     <tr><td>8</td><td>Color Macro</td><td>0–15 Off · 16–255 15 colors, 16 each · Home 0</td></tr>
-    <tr><td>9</td><td>Content</td><td>0 SOLID · 32 GLINT · 64 SWEEP · 96 KALEIDO · 128 WATER · 160 FIRE · 192 VIDEO GLOW · 224 CATCHLIGHT · Home 0</td></tr>
+    <tr><td>9</td><td>Content</td><td>0 SOLID · 32 GLINT · 64 SWEEP · 96 KALEIDO · 128 WATER · 160 FIRE · 192 VIDEO GLOW · 224 AURORA · Home 0</td></tr>
     <tr><td>10</td><td>Speed</td><td>0 Slow · 128 Normal · 255 Fast · Home 128</td></tr>
     <tr><td>11</td><td>Amount</td><td>0–255 · Home 128</td></tr>
     <tr><td>12</td><td>Size</td><td>0–255 · Home 128</td></tr>
@@ -160,18 +161,17 @@
     <tr><td>14</td><td>Media</td><td>0 Off · 1–5 = 1 · 6–10 = 2 … 251–255 = 51 · Home 0</td></tr>
     <tr><td>15</td><td>Playback</td><td>0–85 Play · 86–170 Pause · 171–255 Restart · Home 0</td></tr>
     <tr><td>16</td><td>Color Temp</td><td>0 Warm · 128 As is · 255 Cool · Home 128</td></tr>
-    <tr><td>17</td><td>Function</td><td>0–127 Off · 128–255 Proximity · Home 0</td></tr>
-    <tr><td>18</td><td>Back Light</td><td>0–100%</td></tr>
-    <tr><td>19</td><td>Vibration</td><td>0–100%</td></tr>
+    <tr><td>17</td><td>Back Light</td><td>0–100%</td></tr>
+    <tr><td>18</td><td>Vibration</td><td>0–100%</td></tr>
   </tbody>
 </table>
 <p>Obrazovka se skládá od černé: nejdřív obrázek nebo video, které vybírá Media, a přes ně vzor, který vybírá Content. Mix nastavuje, kolik z každého vidíte: 0 ukáže jen obrázek nebo video a 255 ukáže jen vzor. Když je Media na 0 nebo pod číslem nic není, vidíte&nbsp;jen&nbsp;vzor.</p>
-<p>SOLID, první Content, vyplní obrazovku barvou. Při hodnotách Home dává FX &amp; MEDIA stejné světlo jako SCREEN RGB. Dalších sedm jsou vzory, které se hýbou. Speed nastavuje, jak rychle se hýbou, a Amount a Size mění vzhled každého vzoru. Vzor bere barvu z barvy obrazovky. Když Color Macro není 0, použije se místo toho barva makra. Od 16 vybírá každých 16 hodnot další barvu: 3200 K, 4300 K, 5600 K, Red, Orange, Amber, Yellow, Green, Cyan, Sky Blue, Blue, Deep Blue, Lavender, Magenta&nbsp;a&nbsp;Pink.</p>
+<p>SOLID, první Content, vyplní obrazovku barvou. Při hodnotách Home dává FX &amp; MEDIA stejné světlo jako SCREEN RGB. Dalších sedm jsou vzory, které se hýbou. Speed nastavuje, jak rychle se hýbou, a Amount a Size mění vzhled každého vzoru. Každý vzor má vlastní barvy, takže vypadá hotově, i když žádnou barvu nenastavíte. Crossfade převádí vzor od jeho vlastních barev při 0 k barvě z Red, Green a Blue při 255. Když Color Macro není 0, použije se místo toho barva makra. Od 16 vybírá každých 16 hodnot další barvu: 3200 K, 4300 K, 5600 K, Red, Orange, Amber, Yellow, Green, Cyan, Sky Blue, Blue, Deep Blue, Lavender, Magenta&nbsp;a&nbsp;Pink.</p>
 <p>Obrázky a videa si drží vlastní barvy. Color Temp je posune k teplejším nebo chladnějším a Screen Dimmer je ztlumí. Videa se přehrávají bez zvuku a po skončení začnou znovu od začátku. Playback video přehrává nebo pozastaví. Restart ho jednou vrátí na začátek, v okamžiku, kdy hodnota vstoupí do&nbsp;171–255.</p>
 
 <h2>COOKIE a ULTIMATE</h2>
-<p>SCREEN COOKIE rozdělí obrazovku na nepravidelné, skvrnité plochy. Každá plocha má barvu jedné z 8 buněk, takže barva jedné buňky se objeví na obrazovce na několika místech. Pro světlo a stín nastavte na pultu některé buňky na&nbsp;černou.</p>
-<p>SCREEN COOKIE RGB 63ch začíná kanálem Screen Dimmer, pak následují Shape, Soft a Drift. Potom přijde 8 buněk, každá s kanály Dimmer, CCT, G/M, Crossfade, Red, Green a Blue, jako v režimech CELLS. Function, Back Light a Vibration jsou na konci. SCREEN COOKIE HUE SAT 55ch má v každé buňce Hue a Saturation místo Red, Green&nbsp;a&nbsp;Blue.</p>
+<p>SCREEN COOKIE rozdělí obrazovku na nepravidelné, skvrnité plochy. Každá plocha má barvu jedné z 8 buněk, takže barva jedné buňky se objeví na obrazovce na několika místech. Některé plochy zůstávají černé bez ohledu na buňky, takže mezi světly je stín, i když svítí všech 8 buněk. Pro větší stín nastavte na pultu některé buňky na&nbsp;černou.</p>
+<p>16: SCREEN COOKIE RGB 62ch začíná kanálem Screen Dimmer, pak následují Shape, Soft a Drift. Potom přijde 8 buněk, každá s kanály Dimmer, CCT, G/M, Crossfade, Red, Green a Blue, jako v režimech CELLS. Back Light a Vibration jsou na konci. 17: SCREEN COOKIE HUE SAT 54ch má v každé buňce Hue a Saturation místo Red, Green&nbsp;a&nbsp;Blue.</p>
 <table>
   <thead><tr><th>#</th><th>Název</th><th>Hodnoty</th></tr></thead>
   <tbody>
@@ -181,7 +181,7 @@
   </tbody>
 </table>
 <p>Shape volí vzor. Vzor se plynule mění, když se hodnota pohybuje, takže prolnutí na pultu promění jeden vzor v další. Soft rozmaže okraje mezi plochami: na 0 jsou ostré. Drift určuje, jak rychle vzor plyne: na&nbsp;0&nbsp;stojí.</p>
-<p>ULTIMATE RGB 73ch má kanály COOKIE, FX &amp; MEDIA a 8 buněk, v tomto&nbsp;pořadí.</p>
+<p>18: ULTIMATE RGB 72ch má kanály COOKIE, FX &amp; MEDIA a 8 buněk, v tomto&nbsp;pořadí.</p>
 <table>
   <thead><tr><th>#</th><th>Název</th><th>Hodnoty</th></tr></thead>
   <tbody>
@@ -190,11 +190,11 @@
     <tr><td>3–5</td><td>Shape, Soft, Drift</td><td>Jako v COOKIE</td></tr>
     <tr><td>6–14</td><td>Color Macro, Content, Speed, Amount, Size, Mix, Media, Playback, Color Temp</td><td>Jako ve FX &amp; MEDIA</td></tr>
     <tr><td>15–70</td><td>Dimmer 1 … Blue 8</td><td>7 kanálů pro každou buňku, jako v režimech CELLS</td></tr>
-    <tr><td>71–73</td><td>Function, Back Light, Vibration</td><td>Jako v ostatních režimech</td></tr>
+    <tr><td>71–72</td><td>Back Light, Vibration</td><td>Jako v ostatních režimech</td></tr>
   </tbody>
 </table>
-<p>ULTIMATE HUE SAT 65ch má 6 kanálů pro každou buňku, s Hue a Saturation, takže buňky jsou 15–62 a Function, Back Light a Vibration jsou&nbsp;63–65.</p>
-<p>Buňky se ukazují, jen dokud je Content SOLID a Media je 0. Cells pak volí, jak se obrazovka rozdělí. SCREEN vyplní celou obrazovku barvou buňky 1. Dokud se ukazuje vzor, obrázek nebo video (Content není SOLID, nebo Media není 0), je obrazovka jedna celá, jako ve FX &amp; MEDIA, a vzor převezme barvu buňky 1. Media se počítá podle své hodnoty: hodnota jiná než 0 udělá z obrazovky jednu celou, i když pod tím číslem nic není. Color Macro působí, jen dokud je obrazovka jedna celá. Dokud je obrazovka rozdělená, nemá žádný účinek. Když Cells rozdělí obrazovku na méně než 8 částí, kanály ostatních buněk nemají žádný účinek, ale stále zabírají své&nbsp;adresy.</p>
+<p>19: ULTIMATE HUE SAT 64ch má 6 kanálů pro každou buňku, s Hue a Saturation, takže buňky jsou 15–62 a Back Light a Vibration jsou&nbsp;63–64.</p>
+<p>Buňky se ukazují, jen dokud je Content SOLID a Media je 0. Cells pak volí, jak se obrazovka rozdělí. SCREEN vyplní celou obrazovku barvou buňky 1. Dokud se ukazuje vzor, obrázek nebo video (Content není SOLID, nebo Media není 0), je obrazovka jedna celá, jako ve FX &amp; MEDIA, a vzor převezme barvu a Crossfade buňky 1. Media se počítá podle své hodnoty: hodnota jiná než 0 udělá z obrazovky jednu celou, i když pod tím číslem nic není. Color Macro působí, jen dokud je obrazovka jedna celá. Dokud je obrazovka rozdělená, nemá žádný účinek. Když Cells rozdělí obrazovku na méně než 8 částí, kanály ostatních buněk nemají žádný účinek, ale stále zabírají své&nbsp;adresy.</p>
 
 <h2>Media</h2>
 <p>Police drží obrázky a videa v tomto zařízení pod čísly 1 až 51. Otevřete ji přes Media v Settings. Je v každém režimu, takže ji můžete naplnit, než přepnete na FX &amp; MEDIA nebo&nbsp;ULTIMATE.</p>
@@ -205,17 +205,16 @@
 <p>Na pultu vybírá číslo kanál Media: 1–5 je 1, 6–10 je 2 a tak dále, až po 251–255 pro 51. Soubory zůstávají v tomto zařízení a nikam se neposílají.</p>
 
 <h2>Patchování na pultu</h2>
-<p>V Kanau napatchujte toto zařízení jako Kanau Screen se stejným režimem (<a href="manual-cs.html#patch">kapitola 03 příručky</a>). V Kanau 1.0 (371) má Kanau Screen všech 19&nbsp;režimů.</p>
+<p>V Kanau napatchujte toto zařízení jako Kanau&nbsp;Lite se stejným režimem (<a href="manual-cs.html#patch">kapitola 03 příručky</a>). Kanau 1.0 (372) a novější mají pod Kanau&nbsp;Lite všech 19&nbsp;režimů.</p>
 <p>Na jiných pultech vytvořte svítidlo s kanály ve stejném pořadí jako Channels v Settings a napatchujte ho na stejnou adresu. Každý kanál je&nbsp;8bitový.</p>
-<p>Přes <span style="white-space:nowrap">Art-Net</span> aplikace odpovídá na vyhledávání nodů (ArtPoll) jménem, například <code class="q">Kanau Screen · U1 · 001</code>. Na pultu, který umí nody vypsat, hledejte toto jméno s jeho universe a&nbsp;adresou.</p>
+<p>Přes <span style="white-space:nowrap">Art-Net</span> aplikace odpovídá na vyhledávání nodů (ArtPoll) jménem, například <code class="q">Kanau&nbsp;Lite · U1 · 001</code>. Na pultu, který umí nody vypsat, hledejte toto jméno s jeho universe a&nbsp;adresou.</p>
 
 <h2>Rozdíly oproti LITE&nbsp;MODE v Kanau</h2>
-<p>Kanau&nbsp;Lite přijímá stejným způsobem jako LITE&nbsp;MODE v Kanau (<a href="manual-cs.html#output--12">kapitola 02 příručky</a>). Od Kanau 1.0 (371) jsou čtyři věci&nbsp;jiné.</p>
+<p>Kanau&nbsp;Lite přijímá stejným způsobem jako LITE&nbsp;MODE v Kanau (<a href="manual-cs.html#output--12">kapitola 02 příručky</a>). Od Kanau 1.0 (375) jsou tři věci&nbsp;jiné.</p>
 <ul>
   <li>Než dorazí DMX, LITE&nbsp;MODE ukazuje <code>WAITING</code>. Kanau&nbsp;Lite ukazuje obrazovku&nbsp;adresy.</li>
   <li>Když DMX přestane, LITE&nbsp;MODE drží poslední barvu. Kanau&nbsp;Lite se po 6 sekundách vrátí na obrazovku&nbsp;adresy.</li>
   <li>× z přepínače vpravo nahoře v Kanau opouští LITE&nbsp;MODE. V Kanau&nbsp;Lite otevře&nbsp;Settings.</li>
-  <li>Police Media je jen v Kanau&nbsp;Lite. V LITE&nbsp;MODE ukazují režimy FX &amp; MEDIA a ULTIMATE jen&nbsp;vzory.</li>
 </ul>
 
 <h2>Kontakt</h2>

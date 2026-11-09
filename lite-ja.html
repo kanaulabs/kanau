@@ -49,7 +49,7 @@
 <header class="sitenav"><a class="sitebrand" href="index-ja.html"><img src="img/icon.png" alt="" width="28" height="28">Kanau</a><div class="sitenavr"><div class="sitelinks"><a href="index-ja.html#pricing">料金</a><a href="fixtures-ja.html">灯体</a><a href="manual-ja.html">説明書</a><a href="support-ja.html">サポート</a></div><label class="langsel"><span class="vh">言語</span><select onchange="location.href=this.value"><option value="lite.html" lang="en">English</option><option value="lite-ja.html" lang="ja" selected>日本語</option><option value="lite-de.html" lang="de">Deutsch</option><option value="lite-fr.html" lang="fr">Français</option><option value="lite-ko.html" lang="ko">한국어</option><option value="lite-zh-Hans.html" lang="zh-Hans">简体中文</option><option value="lite-zh-Hant.html" lang="zh-Hant">繁體中文</option><option value="lite-es.html" lang="es">Español</option><option value="lite-pt-BR.html" lang="pt-BR">Português (Brasil)</option><option value="lite-it.html" lang="it">Italiano</option><option value="lite-nl.html" lang="nl">Nederlands</option><option value="lite-pl.html" lang="pl">Polski</option><option value="lite-cs.html" lang="cs">Čeština</option><option value="lite-sv.html" lang="sv">Svenska</option><option value="lite-da.html" lang="da">Dansk</option><option value="lite-no.html" lang="no">Norsk</option><option value="lite-fi.html" lang="fi">Suomi</option><option value="lite-tr.html" lang="tr">Türkçe</option><option value="lite-id.html" lang="id">Bahasa Indonesia</option><option value="lite-th.html" lang="th">ไทย</option><option value="lite-ar.html" lang="ar">العربية</option><option value="lite-hi.html" lang="hi">हिन्दी</option><option value="lite-vi.html" lang="vi">Tiếng Việt</option></select></label></div></header>
 <div class="hero">
   <h1>Kanau&nbsp;Lite</h1>
-  <p class="sub">Kanau&nbsp;Lite 1.0 (5) の時点</p>
+  <p class="sub">Kanau&nbsp;Lite 1.0 (6) の時点</p>
 </div>
 
 <p>Kanau&nbsp;Lite は、iPhone や iPad を 1 台の灯体にする無料のアプリです。卓から <span style="white-space:nowrap">Art-Net</span> か sACN で送った DMX を受け取り、画面の色と明るさ、背面のライト、振動を動かします。FX &amp; MEDIA と ULTIMATE のモードでは、動く絵柄や、自分で入れた画像と動画も画面に出せます。アカウントの登録も広<span class="nw">告もありません。</span></p>
@@ -65,7 +65,7 @@
 <ol>
   <li>Kanau&nbsp;Lite を開きます。アイコンの絵と名前が一瞬出ます。タップす<span class="nw">ると飛ばせます。</span></li>
   <li>Settings が開きます。Kanau&nbsp;Lite を開くたびに、まず <span class="nw">Settings が出ます。</span></li>
-  <li><span style="white-space:nowrap">Art-Net</span> か sACN を選び、Mode、Universe、Address<span class="nw"> を設定します。</span></li>
+  <li>Mode を選び、<span style="white-space:nowrap">Art-Net</span> か sACN を選んで、Universe と Address<span class="nw"> を設定します。</span></li>
   <li>下の START を押<span class="nw">します。</span></li>
   <li>卓から、その Universe と Address へ DMX を送ります。届くと、画面が<span class="nw">灯りになります。</span></li>
 </ol>
@@ -75,7 +75,7 @@
 <p>START の後、DMX が届いていない間は、黒い画面に次の 3 行が大きく出ます。これを宛先の画面と呼びます。何台も並べても、離れた所から<span class="nw">番号を読めます。</span></p>
 <ul>
   <li>Universe と Address。琥珀色で出ます(例: <code>U1 · 001</code>)。</li>
-  <li>Mode(例: <code>SCREEN RGB 10ch</code>)。</li>
+  <li>Mode(例: <code>2: SCREEN RGB 9ch</code>)。</li>
   <li>つながっているネットワーク、この端末の IP アドレス、受け取るプロトコル(例: <code class="q">Wi-Fi 192.168.1.24 · <span style="white-space:nowrap">Art-Net</span></code>)。ネットワークがないときは <code>No network</code> と出ます。</li>
 </ul>
 <p>宛先の画面をタップすると、Settings が開きます。灯りの間に DMX が 6 秒届かないと、宛先の画面に戻ります。このとき、背面のライトと振<span class="nw">動も止まります。</span></p>
@@ -85,17 +85,19 @@
 <table>
   <thead><tr><th>項目</th><th>内容</th></tr></thead>
   <tbody>
-    <tr><td>Language</td><td>System か、15 の言語から選びます。選んだその場で説明の文が替わります。項目やボタンの名前は英語のままです。選ぶまでは英語です。</td></tr>
-    <tr><td>Guide</td><td>8 段の短い使い方を開きます。アプリの中にあるので、インターネットにつながっていなくても読めます。</td></tr>
+    <tr><td>Mode</td><td>いまのモードが出ます(例: 2: SCREEN RGB 9ch)。押すと、モードの一覧から選べます(下の「モードとチャンネル」)。頭の数字はモード番号です。背面のライトがない端末には 1: BACK LIGHT ONLY は出ませんが、ほかのモードの番号は変わりません。</td></tr>
     <tr><td><span style="white-space:nowrap">Art-Net</span> / sACN</td><td>2 つのうち 1 つを押します。選んだ方が琥珀色になります。</td></tr>
-    <tr><td>Mode</td><td>いまのモードが出ます(例: SCREEN RGB 10ch)。押すと、モードの一覧から選べます(下の「モードとチャンネル」)。背面のライトがない端末には、BACK LIGHT ONLY は出ません。</td></tr>
     <tr><td>Universe</td><td><span style="white-space:nowrap">Art-Net</span> は 0〜32767、sACN は 1〜63999。</td></tr>
     <tr><td>Address</td><td>1 から、そのモードのチャンネルが 512 に収まるところまで。</td></tr>
+    <tr><td>Channels</td><td>いまのモードのチャンネル(下を参照)。</td></tr>
+    <tr><td>PROXIMITY</td><td>入れると、この端末を耳に当てている間は画面が消えます。背面のライトと振動は止まりません。初期値はオフです。近接センサーのない端末(iPad など)には出ません。</td></tr>
     <tr><td>Media</td><td>51 の番号のうち、画像か動画が入っている数が出ます(例: <code>3 / 51</code>)。押すと棚が開きます(下の「Media」)。</td></tr>
+    <tr><td>Language</td><td>System か、15 の言語から選びます。選んだその場で説明の文が替わります。項目やボタンの名前は英語のままです。選ぶまでは英語です。</td></tr>
+    <tr><td>Guide</td><td>8 段の短い使い方を開きます。アプリの中にあるので、インターネットにつながっていなくても読めます。</td></tr>
   </tbody>
 </table>
-<p>Universe と Address は、数字を入力するか − と + で設定します。その下の琥珀色の行に、画面、背面のライト、振動がそれぞれ使うアドレスが出ます(例: <code class="q">Screen 001–008 · Back Light 009 · Vibration 010</code>)。</p>
-<p>次が Channels です。Settings を開くたびに畳んだ形で始まり、チャンネルの数だけが出ます(例: <code>10ch</code>)。見出しを押すと開き、いまのモードのチャンネルが、アドレス、名前、値の意味の順に並びます。Kanau とほかの卓での打ち方の 2 行は、畳んでいても出ます。この端末にない機能(背面のライトや振動)の行は薄く出て、頭に <code>Not on this device</code> が付きます。その行もアドレスを使うので、卓では同じ数のチャン<span class="nw">ネルで数えます。</span></p>
+<p>Universe と Address は、数字を入力するか − と + で設定します。その下の琥珀色の行に、画面、背面のライト、振動がそれぞれ使うアドレスが出ます(例: <code class="q">Screen 001–007 · Back Light 008 · Vibration 009</code>)。</p>
+<p>Channels は、Settings を開くたびに畳んだ形で始まり、チャンネルの数だけが出ます(例: <code>9ch</code>)。見出しを押すと開き、いまのモードのチャンネルが、アドレス、名前、値の意味の順に並びます。Kanau とほかの卓での打ち方の 2 行は、畳んでいても出ます。この端末にない機能(背面のライトや振動)の行は薄く出て、頭に <code>Not on this device</code> が付きます。その行もアドレスを使うので、卓では同じ数のチャン<span class="nw">ネルで数えます。</span></p>
 <p>Settings の一番下には、Kanau&nbsp;Lite のバージョン、Made by Kanau Labs、kanaulabs.app へのリンク、Privacy Policy、Contact Support、<span style="white-space:nowrap">Art-Net</span> の表記、著作権の表記があります。設定は保存され、次に開いたとき<span class="nw">もそのままです。</span></p>
 
 <h2>灯りの間</h2>
@@ -104,23 +106,23 @@
 <p>Kanau&nbsp;Lite が DMX を受け取るのは、アプリを開いている間だけです。ホーム画面に戻ったり画面をロックしたりすると、受け取りを止め、背面のライトと振動を止めて、画面の明るさを元に戻します。もう一度開くと、ま<span class="nw">た受け取ります。</span></p>
 
 <h2>モードとチャンネル</h2>
-<p>モードは 19 で、初期値は SCREEN RGB <span class="nw">10ch です。</span></p>
+<p>モードは 19 で、初期値は 2: SCREEN RGB 9ch です。名前の頭の数字はモード番号、末尾の数字はチャ<span class="nw">ンネルの数です。</span></p>
 <table>
   <thead><tr><th>Mode</th><th>画面</th></tr></thead>
   <tbody>
-    <tr><td>BACK LIGHT ONLY 1ch</td><td>背面のライトだけを使います。画面は暗いままです。</td></tr>
-    <tr><td>SCREEN RGB 10ch<br>SCREEN HUE SAT 9ch</td><td>画面全体が 1 色です。</td></tr>
-    <tr><td>SCREEN 2 CELLS RGB 18ch<br>SCREEN 2 CELLS HUE SAT 16ch</td><td>画面を 2 つに分けます。</td></tr>
-    <tr><td>SCREEN 4 CELLS RGB 32ch<br>SCREEN 4 CELLS HUE SAT 28ch</td><td>画面を 4 つに分けます。</td></tr>
-    <tr><td>SCREEN 8 CELLS RGB 60ch<br>SCREEN 8 CELLS HUE SAT 52ch</td><td>画面を 8 つに分けます。</td></tr>
-    <tr><td>SCREEN 4 STRIPS RGB 32ch<br>SCREEN 4 STRIPS HUE SAT 28ch</td><td>画面を、長い辺に沿って並ぶ帯 4 本に分けます。</td></tr>
-    <tr><td>SCREEN 8 STRIPS RGB 60ch<br>SCREEN 8 STRIPS HUE SAT 52ch</td><td>画面を、長い辺に沿って並ぶ帯 8 本に分けます。</td></tr>
-    <tr><td>SCREEN FX &amp; MEDIA RGB 19ch<br>SCREEN FX &amp; MEDIA HUE SAT 18ch</td><td>画面全体に、絵柄、画像、動画を出します(下の「FX &amp; MEDIA」)。</td></tr>
-    <tr><td>SCREEN COOKIE RGB 63ch<br>SCREEN COOKIE HUE SAT 55ch</td><td>画面を、8 色の不規則なまだらの区画に分けます(下の「COOKIE と ULTIMATE」)。</td></tr>
-    <tr><td>ULTIMATE RGB 73ch<br>ULTIMATE HUE SAT 65ch</td><td>画面の分け方を選べて、絵柄、画像、動画も出せます(下の「COOKIE と ULTIMATE」)。</td></tr>
+    <tr><td>1: BACK LIGHT ONLY 1ch</td><td>背面のライトだけを使います。画面は暗いままです。</td></tr>
+    <tr><td>2: SCREEN RGB 9ch<br>3: SCREEN HUE SAT 8ch</td><td>画面全体が 1 色です。</td></tr>
+    <tr><td>4: SCREEN 2 CELLS RGB 17ch<br>5: SCREEN 2 CELLS HUE SAT 15ch</td><td>画面を 2 つに分けます。</td></tr>
+    <tr><td>6: SCREEN 4 CELLS RGB 31ch<br>7: SCREEN 4 CELLS HUE SAT 27ch</td><td>画面を 4 つに分けます。</td></tr>
+    <tr><td>8: SCREEN 8 CELLS RGB 59ch<br>9: SCREEN 8 CELLS HUE SAT 51ch</td><td>画面を 8 つに分けます。</td></tr>
+    <tr><td>10: SCREEN 4 STRIPS RGB 31ch<br>11: SCREEN 4 STRIPS HUE SAT 27ch</td><td>画面を、長い辺に沿って並ぶ帯 4 本に分けます。</td></tr>
+    <tr><td>12: SCREEN 8 STRIPS RGB 59ch<br>13: SCREEN 8 STRIPS HUE SAT 51ch</td><td>画面を、長い辺に沿って並ぶ帯 8 本に分けます。</td></tr>
+    <tr><td>14: SCREEN FX &amp; MEDIA RGB 18ch<br>15: SCREEN FX &amp; MEDIA HUE SAT 17ch</td><td>画面全体に、絵柄、画像、動画を出します(下の「FX &amp; MEDIA」)。</td></tr>
+    <tr><td>16: SCREEN COOKIE RGB 62ch<br>17: SCREEN COOKIE HUE SAT 54ch</td><td>画面を、8 色の不規則なまだらの区画に分けます(下の「COOKIE と ULTIMATE」)。</td></tr>
+    <tr><td>18: ULTIMATE RGB 72ch<br>19: ULTIMATE HUE SAT 64ch</td><td>画面の分け方を選べて、絵柄、画像、動画も出せます(下の「COOKIE と ULTIMATE」)。</td></tr>
   </tbody>
 </table>
-<p>BACK LIGHT ONLY のほかは、先頭が Screen Dimmer、末尾が Function、Back Light、Vibration です。SCREEN RGB 10ch のチャンネルは次の順です。値の欄は、Settings の Channels に出<span class="nw">る字のままです。</span></p>
+<p>BACK LIGHT ONLY のほかは、先頭が Screen Dimmer、末尾が Back Light、Vibration です。2: SCREEN RGB 9ch のチャンネルは次の順です。値の欄は、Settings の Channels に出<span class="nw">る字のままです。</span></p>
 <table>
   <thead><tr><th>順</th><th>名前</th><th>値</th></tr></thead>
   <tbody>
@@ -131,16 +133,15 @@
     <tr><td>5</td><td>Red</td><td>0–100%</td></tr>
     <tr><td>6</td><td>Green</td><td>0–100%</td></tr>
     <tr><td>7</td><td>Blue</td><td>0–100%</td></tr>
-    <tr><td>8</td><td>Function</td><td>0–127 Off · 128–255 Proximity · Home 0</td></tr>
-    <tr><td>9</td><td>Back Light</td><td>0–100%</td></tr>
-    <tr><td>10</td><td>Vibration</td><td>0–100%</td></tr>
+    <tr><td>8</td><td>Back Light</td><td>0–100%</td></tr>
+    <tr><td>9</td><td>Vibration</td><td>0–100%</td></tr>
   </tbody>
 </table>
 <p>HUE SAT のモードは、Red、Green、Blue の代わりに Hue(0–360°)と Saturation を持ちます。CELLS と STRIPS のモードは、Screen Dimmer の後に、分けた部分ごとに Dimmer、CCT、G/M、Crossfade と色が続きます。CELLS の番号は左上から数えます。8 分割は、縦の画面では 2 列 4 段、横の画面では 4 列 2 段です。STRIPS は同じ幅の帯で、画面の長い辺に沿って並びます。縦の画面では横の帯を上から下へ、横の画面では縦の帯を左から右へ数えます。正方形の画面は<span class="nw">上下に分けます。</span></p>
-<p>Crossfade は白と色の割合で、0 で白、255 で色になります。白は CCT と G/M で決まります。Crossfade が 0 の間は、Red、Green、Blue を上げても画面は白のままです。Screen Dimmer は画面だけを暗くし、背面のライトには効きません。Function を 128 以上にすると Proximity になり、端末の近接セン<span class="nw">サーを使います。</span></p>
+<p>Crossfade は白と色の割合で、0 で白、255 で色になります。白は CCT と G/M で決まります。Crossfade が 0 の間は、Red、Green、Blue を上げても画面は白のままです。Screen Dimmer は画面だけを暗くし、背面のライト<span class="nw">には効きません。</span></p>
 
 <h2>FX &amp; MEDIA</h2>
-<p>SCREEN FX &amp; MEDIA RGB 19ch のチャンネルは次の順です。SCREEN FX &amp; MEDIA HUE SAT 18ch は、Red、Green、Blue の代わりに Hue と <span class="nw">Saturation を持ちます。</span></p>
+<p>14: SCREEN FX &amp; MEDIA RGB 18ch のチャンネルは次の順です。15: SCREEN FX &amp; MEDIA HUE SAT 17ch は、Red、Green、Blue の代わりに Hue と <span class="nw">Saturation を持ちます。</span></p>
 <table>
   <thead><tr><th>順</th><th>名前</th><th>値</th></tr></thead>
   <tbody>
@@ -152,7 +153,7 @@
     <tr><td>6</td><td>Green</td><td>0–100%</td></tr>
     <tr><td>7</td><td>Blue</td><td>0–100%</td></tr>
     <tr><td>8</td><td>Color Macro</td><td>0–15 Off · 16–255 15 colors, 16 each · Home 0</td></tr>
-    <tr><td>9</td><td>Content</td><td>0 SOLID · 32 GLINT · 64 SWEEP · 96 KALEIDO · 128 WATER · 160 FIRE · 192 VIDEO GLOW · 224 CATCHLIGHT · Home 0</td></tr>
+    <tr><td>9</td><td>Content</td><td>0 SOLID · 32 GLINT · 64 SWEEP · 96 KALEIDO · 128 WATER · 160 FIRE · 192 VIDEO GLOW · 224 AURORA · Home 0</td></tr>
     <tr><td>10</td><td>Speed</td><td>0 Slow · 128 Normal · 255 Fast · Home 128</td></tr>
     <tr><td>11</td><td>Amount</td><td>0–255 · Home 128</td></tr>
     <tr><td>12</td><td>Size</td><td>0–255 · Home 128</td></tr>
@@ -160,18 +161,17 @@
     <tr><td>14</td><td>Media</td><td>0 Off · 1–5 = 1 · 6–10 = 2 … 251–255 = 51 · Home 0</td></tr>
     <tr><td>15</td><td>Playback</td><td>0–85 Play · 86–170 Pause · 171–255 Restart · Home 0</td></tr>
     <tr><td>16</td><td>Color Temp</td><td>0 Warm · 128 As is · 255 Cool · Home 128</td></tr>
-    <tr><td>17</td><td>Function</td><td>0–127 Off · 128–255 Proximity · Home 0</td></tr>
-    <tr><td>18</td><td>Back Light</td><td>0–100%</td></tr>
-    <tr><td>19</td><td>Vibration</td><td>0–100%</td></tr>
+    <tr><td>17</td><td>Back Light</td><td>0–100%</td></tr>
+    <tr><td>18</td><td>Vibration</td><td>0–100%</td></tr>
   </tbody>
 </table>
 <p>画面は黒の上に、まず Media で選んだ画像か動画、その上に Content で選んだ絵柄を重ねて作ります。Mix はその割合で、0 では画像か動画だけ、255 では絵柄だけが見えます。Media が 0 のときや、その番号に何も入っていないときは、絵<span class="nw">柄だけが出ます。</span></p>
-<p>Content の最初の SOLID は、画面を色で塗ります。初期値のままなら、FX &amp; MEDIA は SCREEN RGB と同じ光になります。残りの 7 つは動く絵柄です。Speed で動きの速さを、Amount と Size で絵柄の姿を変えます。絵柄の色は画面の色から取ります。Color Macro が 0 でないときは、その色を使います。16 から、16 ずつ次の色になります: 3200 K、4300 K、5600 K、Red、Orange、Amber、Yellow、Green、Cyan、Sky Blue、Blue、Deep Blue、Lavender、<span class="nw">Magenta、Pink。</span></p>
+<p>Content の最初の SOLID は、画面を色で塗ります。初期値のままなら、FX &amp; MEDIA は SCREEN RGB と同じ光になります。残りの 7 つは動く絵柄です。Speed で動きの速さを、Amount と Size で絵柄の姿を変えます。絵柄はそれぞれ自分の色を持つので、色を何も設定しなくても、そのまま見られる姿で流れます。Crossfade は、0 で絵柄自身の色、255 で Red、Green、Blue の色になります。Color Macro が 0 でないときは、その色を使います。16 から、16 ずつ次の色になります: 3200 K、4300 K、5600 K、Red、Orange、Amber、Yellow、Green、Cyan、Sky Blue、Blue、Deep Blue、Lavender、<span class="nw">Magenta、Pink。</span></p>
 <p>画像と動画は、自分の色のまま出ます。Color Temp で暖かい方か冷たい方へずらせて、Screen Dimmer で暗くできます。動画は音を出さずに再生し、終わると頭からまた流れます。Playback は動画を再生するか一時停止します。Restart は、値が 171–255 に入った瞬間に 1 度だけ動画<span class="nw">を頭に戻します。</span></p>
 
 <h2>COOKIE と ULTIMATE</h2>
-<p>SCREEN COOKIE は、画面を不規則なまだらの区画に分けます。区画ごとに 8 つのセルのどれかの色になるので、1 つのセルの色が画面のあちこちに出ます。光と影にしたいときは、卓でいくつかのセ<span class="nw">ルを黒にします。</span></p>
-<p>SCREEN COOKIE RGB 63ch は、先頭が Screen Dimmer で、Shape、Soft、Drift が続きます。その後に 8 つのセルが、CELLS のモードと同じく Dimmer、CCT、G/M、Crossfade、Red、Green、Blue の順で並び、末尾が Function、Back Light、Vibration です。SCREEN COOKIE HUE SAT 55ch は、セルごとに Red、Green、Blue の代わりに Hue と <span class="nw">Saturation を持ちます。</span></p>
+<p>SCREEN COOKIE は、画面を不規則なまだらの区画に分けます。区画ごとに 8 つのセルのどれかの色になるので、1 つのセルの色が画面のあちこちに出ます。いくつかの区画は、セルの色によらず黒のままなので、8 つのセルを全部光らせても光の間に影が残ります。影を増やしたいときは、卓でいくつかのセ<span class="nw">ルを黒にします。</span></p>
+<p>16: SCREEN COOKIE RGB 62ch は、先頭が Screen Dimmer で、Shape、Soft、Drift が続きます。その後に 8 つのセルが、CELLS のモードと同じく Dimmer、CCT、G/M、Crossfade、Red、Green、Blue の順で並び、末尾が Back Light、Vibration です。17: SCREEN COOKIE HUE SAT 54ch は、セルごとに Red、Green、Blue の代わりに Hue と <span class="nw">Saturation を持ちます。</span></p>
 <table>
   <thead><tr><th>順</th><th>名前</th><th>値</th></tr></thead>
   <tbody>
@@ -181,7 +181,7 @@
   </tbody>
 </table>
 <p>Shape は模様を選びます。値を動かすと模様が途切れずに形を変えるので、卓でフェードすると、模様が次の模様へ移っていきます。Soft は区画の縁をぼかします。0 では縁がくっきりします。Drift は模様が流れる速さで、0 <span class="nw">では止まります。</span></p>
-<p>ULTIMATE RGB 73ch は、COOKIE、FX &amp; MEDIA、8 つのセルのチャンネルを、次<span class="nw">の順で持ちます。</span></p>
+<p>18: ULTIMATE RGB 72ch は、COOKIE、FX &amp; MEDIA、8 つのセルのチャンネルを、次<span class="nw">の順で持ちます。</span></p>
 <table>
   <thead><tr><th>順</th><th>名前</th><th>値</th></tr></thead>
   <tbody>
@@ -190,11 +190,11 @@
     <tr><td>3–5</td><td>Shape、Soft、Drift</td><td>COOKIE と同じ</td></tr>
     <tr><td>6–14</td><td>Color Macro、Content、Speed、Amount、Size、Mix、Media、Playback、Color Temp</td><td>FX &amp; MEDIA と同じ</td></tr>
     <tr><td>15–70</td><td>Dimmer 1 … Blue 8</td><td>セルごとに 7 チャンネル。CELLS のモードと同じ</td></tr>
-    <tr><td>71–73</td><td>Function、Back Light、Vibration</td><td>ほかのモードと同じ</td></tr>
+    <tr><td>71–72</td><td>Back Light、Vibration</td><td>ほかのモードと同じ</td></tr>
   </tbody>
 </table>
-<p>ULTIMATE HUE SAT 65ch は、セルごとに Hue と Saturation を含む 6 チャンネルを持ちます。セルは 15–62、Function、Back Light、Vibration は <span class="nw">63–65 です。</span></p>
-<p>セルが出るのは、Content が SOLID で、Media が 0 のときだけです。このとき、Cells で画面の分け方を選びます。SCREEN では、画面全体がセル 1 の色になります。絵柄か画像か動画を出している間(Content が SOLID でないか、Media が 0 でないとき)は、FX &amp; MEDIA と同じく画面は 1 つで、絵柄はセル 1 の色を使います。Media は値で見ます。0 でなければ、その番号に何も入っていなくても画面は 1 つです。Color Macro が効くのは、画面が 1 つのときだけです。画面を分けている間は効きません。Cells で 8 より少なく分けたときは、残りのセルのチャンネルは効きませんが、アド<span class="nw">レスは使います。</span></p>
+<p>19: ULTIMATE HUE SAT 64ch は、セルごとに Hue と Saturation を含む 6 チャンネルを持ちます。セルは 15–62、Back Light、Vibration は <span class="nw">63–64 です。</span></p>
+<p>セルが出るのは、Content が SOLID で、Media が 0 のときだけです。このとき、Cells で画面の分け方を選びます。SCREEN では、画面全体がセル 1 の色になります。絵柄か画像か動画を出している間(Content が SOLID でないか、Media が 0 でないとき)は、FX &amp; MEDIA と同じく画面は 1 つで、絵柄はセル 1 の色と Crossfade を使います。Media は値で見ます。0 でなければ、その番号に何も入っていなくても画面は 1 つです。Color Macro が効くのは、画面が 1 つのときだけです。画面を分けている間は効きません。Cells で 8 より少なく分けたときは、残りのセルのチャンネルは効きませんが、アド<span class="nw">レスは使います。</span></p>
 
 <h2>Media</h2>
 <p>棚は、この端末に画像と動画を 1 から 51 の番号で置いておく場所です。Settings の Media から開きます。どのモードでも開けるので、FX &amp; MEDIA や ULTIMATE に切り替える前に<span class="nw">入れておけます。</span></p>
@@ -205,17 +205,16 @@
 <p>卓では、Media のチャンネルで番号を選びます。1–5 が 1、6–10 が 2 と続き、251–255 が 51 です。ファイルはこの端末に置かれ、どこに<span class="nw">も送られません。</span></p>
 
 <h2>卓でパッチする</h2>
-<p>Kanau では、この端末を Kanau Screen として、同じモードでパッチします(<a href="manual-ja.html#patch">説明書の 03 章</a>)。Kanau 1.0 (371) の Kanau Screen には、19 のモードが<span class="nw">すべてあります。</span></p>
+<p>Kanau では、この端末を Kanau&nbsp;Lite として、同じモードでパッチします(<a href="manual-ja.html#patch">説明書の 03 章</a>)。Kanau 1.0 (372) 以降の Kanau&nbsp;Lite には、19 のモードが<span class="nw">すべてあります。</span></p>
 <p>ほかの卓では、Settings の Channels と同じ順にチャンネルを並べた灯体を作り、同じアドレスにパッチします。チャンネルはすべて <span class="nw">8 ビットです。</span></p>
-<p><span style="white-space:nowrap">Art-Net</span> では、ノードを探す問い合わせ(ArtPoll)に <code class="q">Kanau Screen · U1 · 001</code> のような名前で応答します。ノードの一覧を出せる卓では、Universe と Address 付きのこの名前<span class="nw">で見つかります。</span></p>
+<p><span style="white-space:nowrap">Art-Net</span> では、ノードを探す問い合わせ(ArtPoll)に <code class="q">Kanau&nbsp;Lite · U1 · 001</code> のような名前で応答します。ノードの一覧を出せる卓では、Universe と Address 付きのこの名前<span class="nw">で見つかります。</span></p>
 
 <h2>Kanau の LITE&nbsp;MODE との違い</h2>
-<p>Kanau の LITE&nbsp;MODE(<a href="manual-ja.html#output--12">説明書の 02 章</a>)と、受け取り方は同じです。Kanau 1.0 (371) の時点で、違うのは次<span class="nw">の 4 つです。</span></p>
+<p>Kanau の LITE&nbsp;MODE(<a href="manual-ja.html#output--12">説明書の 02 章</a>)と、受け取り方は同じです。Kanau 1.0 (375) の時点で、違うのは次<span class="nw">の 3 つです。</span></p>
 <ul>
   <li>DMX が届く前は、LITE&nbsp;MODE では <code>WAITING</code> と出ます。Kanau&nbsp;Lite では宛先<span class="nw">の画面が出ます。</span></li>
   <li>DMX が止まったとき、LITE&nbsp;MODE は最後の色のままです。Kanau&nbsp;Lite は 6 秒で宛先の<span class="nw">画面に戻ります。</span></li>
   <li>右上のスイッチから出る × は、LITE&nbsp;MODE では LITE&nbsp;MODE を終わります。Kanau&nbsp;Lite では <span class="nw">Settings を開きます。</span></li>
-  <li>Media の棚は Kanau&nbsp;Lite にだけあります。LITE&nbsp;MODE の FX &amp; MEDIA と ULTIMATE では、絵<span class="nw">柄だけが出ます。</span></li>
 </ul>
 
 <h2>問い合わせ</h2>

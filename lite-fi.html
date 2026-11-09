@@ -49,7 +49,7 @@
 <header class="sitenav"><a class="sitebrand" href="index-fi.html"><img src="img/icon.png" alt="" width="28" height="28">Kanau</a><div class="sitenavr"><div class="sitelinks"><a href="index-fi.html#pricing">Hinnat</a><a href="fixtures-fi.html">Valaisimet</a><a href="manual-fi.html">Käyttöopas</a><a href="support-fi.html">Tuki</a></div><label class="langsel"><span class="vh">Kieli</span><select onchange="location.href=this.value"><option value="lite.html" lang="en">English</option><option value="lite-ja.html" lang="ja">日本語</option><option value="lite-de.html" lang="de">Deutsch</option><option value="lite-fr.html" lang="fr">Français</option><option value="lite-ko.html" lang="ko">한국어</option><option value="lite-zh-Hans.html" lang="zh-Hans">简体中文</option><option value="lite-zh-Hant.html" lang="zh-Hant">繁體中文</option><option value="lite-es.html" lang="es">Español</option><option value="lite-pt-BR.html" lang="pt-BR">Português (Brasil)</option><option value="lite-it.html" lang="it">Italiano</option><option value="lite-nl.html" lang="nl">Nederlands</option><option value="lite-pl.html" lang="pl">Polski</option><option value="lite-cs.html" lang="cs">Čeština</option><option value="lite-sv.html" lang="sv">Svenska</option><option value="lite-da.html" lang="da">Dansk</option><option value="lite-no.html" lang="no">Norsk</option><option value="lite-fi.html" lang="fi" selected>Suomi</option><option value="lite-tr.html" lang="tr">Türkçe</option><option value="lite-id.html" lang="id">Bahasa Indonesia</option><option value="lite-th.html" lang="th">ไทย</option><option value="lite-ar.html" lang="ar">العربية</option><option value="lite-hi.html" lang="hi">हिन्दी</option><option value="lite-vi.html" lang="vi">Tiếng Việt</option></select></label></div></header>
 <div class="hero">
   <h1>Kanau&nbsp;Lite</h1>
-  <p class="sub">Kanau&nbsp;Lite 1.0 (5) -version mukaan</p>
+  <p class="sub">Kanau&nbsp;Lite 1.0 (6) -version mukaan</p>
 </div>
 
 <p>Kanau&nbsp;Lite on ilmainen sovellus, joka muuttaa iPhonen tai iPadin yhdeksi valoksi. Se vastaanottaa valopöydästä <span style="white-space:nowrap">Art-Net</span>in tai sACN:n kautta lähetetyn DMX:n ja ohjaa näytön, takavalon ja värinän väriä ja kirkkautta. FX &amp; MEDIA- ja ULTIMATE-modeissa näyttö voi näyttää myös liikkuvia kuvioita sekä omia kuviasi ja videoitasi. Tiliä ei tarvitse luoda, eikä mainoksia&nbsp;ole.</p>
@@ -65,7 +65,7 @@
 <ol>
   <li>Avaa Kanau&nbsp;Lite. Kuvake ja nimi näkyvät hetken. Ohita ne napauttamalla.</li>
   <li>Settings avautuu. Se tulee esiin ensimmäisenä aina, kun Kanau&nbsp;Lite&nbsp;avataan.</li>
-  <li>Valitse <span style="white-space:nowrap">Art-Net</span> tai sACN. Aseta sitten Mode, Universe ja&nbsp;Address.</li>
+  <li>Valitse ensin Mode, sitten <span style="white-space:nowrap">Art-Net</span> tai sACN, ja aseta Universe ja&nbsp;Address.</li>
   <li>Napauta alareunan START-painiketta.</li>
   <li>Lähetä valopöydästä DMX kyseiseen universumiin ja osoitteeseen. Kun se saapuu, näytöstä tulee&nbsp;valo.</li>
 </ol>
@@ -75,7 +75,7 @@
 <p>START-painikkeen jälkeen, kun DMX ei saavu, musta näyttö näyttää kolme riviä suurella tekstillä. Tämä on osoitenäkymä. Vaikka laitteita on monta vierekkäin, jokaisen numeron voi lukea&nbsp;kauempaa.</p>
 <ul>
   <li>Universumi ja osoite meripihkanvärisinä, esimerkiksi <code>U1 · 001</code>.</li>
-  <li>Mode, esimerkiksi <code>SCREEN RGB 10ch</code>.</li>
+  <li>Mode, esimerkiksi <code>2: SCREEN RGB 9ch</code>.</li>
   <li>Verkko, eli tämän laitteen IP-osoite ja protokolla, jota se kuuntelee, esimerkiksi <code class="q">Wi-Fi 192.168.1.24 · <span style="white-space:nowrap">Art-Net</span></code>. Jos verkkoa ei ole, näytöllä lukee <code>No network</code>.</li>
 </ul>
 <p>Avaa Settings napauttamalla osoitenäkymää. Jos DMX ei saavu 6 sekuntiin valon ollessa päällä, osoitenäkymä palaa. Myös takavalo ja värinä pysähtyvät.</p>
@@ -85,17 +85,19 @@
 <table>
   <thead><tr><th>Kohta</th><th>Mitä se tekee</th></tr></thead>
   <tbody>
-    <tr><td>Language</td><td>System tai jokin 15 kielestä. Selitykset vaihtuvat heti, kun valitset. Kohtien ja painikkeiden nimet pysyvät englanniksi. Kunnes valitset, Kanau&nbsp;Lite on englanniksi.</td></tr>
-    <tr><td>Guide</td><td>Avaa lyhyen oppaan, jossa on 8 vaihetta. Se on sovelluksen sisällä, joten se toimii ilman internetiä.</td></tr>
+    <tr><td>Mode</td><td>Näyttää nykyisen moden, esimerkiksi 2: SCREEN RGB 9ch. Napauttamalla sitä voit valita jonkin alla olevista modeista (katso Modet ja kanavat). Alussa oleva numero on moden numero. Laitteella, jossa ei ole takavaloa, 1: BACK LIGHT ONLY ei ole luettelossa, mutta muiden modejen numerot pysyvät ennallaan.</td></tr>
     <tr><td><span style="white-space:nowrap">Art-Net</span> / sACN</td><td>Napauta toista kahdesta. Valitsemasi muuttuu meripihkanväriseksi.</td></tr>
-    <tr><td>Mode</td><td>Näyttää nykyisen moden, esimerkiksi SCREEN RGB 10ch. Napauttamalla sitä voit valita jonkin alla olevista modeista (katso Modet ja kanavat). Laitteella, jossa ei ole takavaloa, BACK LIGHT ONLY ei ole luettelossa.</td></tr>
     <tr><td>Universe</td><td>0–32767 <span style="white-space:nowrap">Art-Net</span>ille, 1–63999 sACN:lle.</td></tr>
     <tr><td>Address</td><td>Luvusta 1 siihen korkeimpaan osoitteeseen, jolla moden kanavat vielä mahtuvat 512:n sisään.</td></tr>
+    <tr><td>Channels</td><td>Nykyisen moden kanavat (katso alla).</td></tr>
+    <tr><td>PROXIMITY</td><td>Kun se on päällä, näyttö pimenee, kun pidät laitetta korvaasi vasten. Takavalo ja värinä jatkavat toimintaa. Aluksi se on pois päältä. Laite, jossa ei ole läheisyysanturia, kuten iPad, ei näytä sitä.</td></tr>
     <tr><td>Media</td><td>Näyttää, kuinka monessa 51 numerosta on kuva tai video, esimerkiksi <code>3 / 51</code>. Avaa hylly napauttamalla (katso Media).</td></tr>
+    <tr><td>Language</td><td>System tai jokin 15 kielestä. Selitykset vaihtuvat heti, kun valitset. Kohtien ja painikkeiden nimet pysyvät englanniksi. Kunnes valitset, Kanau&nbsp;Lite on englanniksi.</td></tr>
+    <tr><td>Guide</td><td>Avaa lyhyen oppaan, jossa on 8 vaihetta. Se on sovelluksen sisällä, joten se toimii ilman internetiä.</td></tr>
   </tbody>
 </table>
-<p>Kirjoita Universe- ja Address-kenttiin numero tai käytä painikkeita − ja +. Alla oleva meripihkanvärinen rivi näyttää näytön, takavalon ja värinän käyttämät osoitteet, esimerkiksi <code class="q">Screen 001–008 · Back Light 009 · Vibration 010</code>.</p>
-<p>Seuraavana on Channels. Aina kun avaat Settings-näkymän, se on aluksi suljettuna ja näyttää vain kanavien määrän, esimerkiksi <code>10ch</code>. Napauta otsikkoa, niin näet nykyisen moden kanavat osoitteineen, nimineen ja arvojen merkityksineen. Kaksi riviä patchauksesta Kanaussa ja muissa valopöydissä näkyvät myös suljettuna. Rivi ominaisuudelle, jota tässä laitteessa ei ole (takavalo tai värinä), on himmennetty ja alkaa tekstillä <code>Not on this device</code>. Se rivi käyttää silti osoitettaan, joten laske se mukaan myös valopöydässä.</p>
+<p>Kirjoita Universe- ja Address-kenttiin numero tai käytä painikkeita − ja +. Alla oleva meripihkanvärinen rivi näyttää näytön, takavalon ja värinän käyttämät osoitteet, esimerkiksi <code class="q">Screen 001–007 · Back Light 008 · Vibration 009</code>.</p>
+<p>Seuraavaksi tulee Channels. Aina kun avaat Settings-näkymän, se on aluksi suljettuna ja näyttää vain kanavien määrän, esimerkiksi <code>9ch</code>. Napauta otsikkoa, niin näet nykyisen moden kanavat osoitteineen, nimineen ja arvojen merkityksineen. Kaksi riviä patchauksesta Kanaussa ja muissa valopöydissä näkyvät myös suljettuna. Rivi ominaisuudelle, jota tässä laitteessa ei ole (takavalo tai värinä), on himmennetty ja alkaa tekstillä <code>Not on this device</code>. Se rivi käyttää silti osoitettaan, joten laske se mukaan myös valopöydässä.</p>
 <p>Settings-näkymän lopussa ovat Kanau&nbsp;Liten versio, Made by Kanau Labs, linkki osoitteeseen kanaulabs.app, Privacy Policy, Contact Support, <span style="white-space:nowrap">Art-Net</span>-maininta ja tekijänoikeusmerkintä. Asetukset tallentuvat ja ovat tallessa, kun avaat sovelluksen seuraavan&nbsp;kerran.</p>
 
 <h2>Kun valo on päällä</h2>
@@ -104,23 +106,23 @@
 <p>Kanau&nbsp;Lite vastaanottaa DMX:ää vain, kun sovellus on auki. Jos menet Home-näkymään tai lukitset laitteen, se lopettaa vastaanoton, pysäyttää takavalon ja värinän ja palauttaa näytön kirkkauden entiselleen. Avaa se uudelleen, niin vastaanotto jatkuu.</p>
 
 <h2>Modet ja kanavat</h2>
-<p>Modeja on 19. Oletus on SCREEN&nbsp;RGB&nbsp;10ch.</p>
+<p>Modeja on 19. Oletus on 2: SCREEN RGB 9ch. Kunkin nimen alussa oleva numero on moden numero ja lopussa oleva numero kanavien&nbsp;määrä.</p>
 <table>
   <thead><tr><th>Mode</th><th>Näyttö</th></tr></thead>
   <tbody>
-    <tr><td>BACK LIGHT ONLY 1ch</td><td>Käyttää vain takavaloa. Näyttö pysyy pimeänä.</td></tr>
-    <tr><td>SCREEN RGB 10ch<br>SCREEN HUE SAT 9ch</td><td>Koko näyttö on yhtä väriä.</td></tr>
-    <tr><td>SCREEN 2 CELLS RGB 18ch<br>SCREEN 2 CELLS HUE SAT 16ch</td><td>Näyttö on jaettu 2 osaan.</td></tr>
-    <tr><td>SCREEN 4 CELLS RGB 32ch<br>SCREEN 4 CELLS HUE SAT 28ch</td><td>Näyttö on jaettu 4 osaan.</td></tr>
-    <tr><td>SCREEN 8 CELLS RGB 60ch<br>SCREEN 8 CELLS HUE SAT 52ch</td><td>Näyttö on jaettu 8 osaan.</td></tr>
-    <tr><td>SCREEN 4 STRIPS RGB 32ch<br>SCREEN 4 STRIPS HUE SAT 28ch</td><td>Näyttö on jaettu 4 kaistaan pitkän sivunsa suunnassa.</td></tr>
-    <tr><td>SCREEN 8 STRIPS RGB 60ch<br>SCREEN 8 STRIPS HUE SAT 52ch</td><td>Näyttö on jaettu 8 kaistaan pitkän sivunsa suunnassa.</td></tr>
-    <tr><td>SCREEN FX &amp; MEDIA RGB 19ch<br>SCREEN FX &amp; MEDIA HUE SAT 18ch</td><td>Koko näyttö, jossa on kuvioita, kuvia ja videoita (katso FX &amp; MEDIA).</td></tr>
-    <tr><td>SCREEN COOKIE RGB 63ch<br>SCREEN COOKIE HUE SAT 55ch</td><td>Näyttö on jaettu epäsäännöllisiin, laikukkaisiin alueisiin 8 värillä (katso COOKIE ja ULTIMATE).</td></tr>
-    <tr><td>ULTIMATE RGB 73ch<br>ULTIMATE HUE SAT 65ch</td><td>Valitsee, miten näyttö jaetaan, ja näyttää kuvioita, kuvia ja videoita (katso COOKIE ja ULTIMATE).</td></tr>
+    <tr><td>1: BACK LIGHT ONLY 1ch</td><td>Käyttää vain takavaloa. Näyttö pysyy pimeänä.</td></tr>
+    <tr><td>2: SCREEN RGB 9ch<br>3: SCREEN HUE SAT 8ch</td><td>Koko näyttö on yhtä väriä.</td></tr>
+    <tr><td>4: SCREEN 2 CELLS RGB 17ch<br>5: SCREEN 2 CELLS HUE SAT 15ch</td><td>Näyttö on jaettu 2 osaan.</td></tr>
+    <tr><td>6: SCREEN 4 CELLS RGB 31ch<br>7: SCREEN 4 CELLS HUE SAT 27ch</td><td>Näyttö on jaettu 4 osaan.</td></tr>
+    <tr><td>8: SCREEN 8 CELLS RGB 59ch<br>9: SCREEN 8 CELLS HUE SAT 51ch</td><td>Näyttö on jaettu 8 osaan.</td></tr>
+    <tr><td>10: SCREEN 4 STRIPS RGB 31ch<br>11: SCREEN 4 STRIPS HUE SAT 27ch</td><td>Näyttö on jaettu 4 kaistaan pitkän sivunsa suunnassa.</td></tr>
+    <tr><td>12: SCREEN 8 STRIPS RGB 59ch<br>13: SCREEN 8 STRIPS HUE SAT 51ch</td><td>Näyttö on jaettu 8 kaistaan pitkän sivunsa suunnassa.</td></tr>
+    <tr><td>14: SCREEN FX &amp; MEDIA RGB 18ch<br>15: SCREEN FX &amp; MEDIA HUE SAT 17ch</td><td>Koko näyttö, jossa on kuvioita, kuvia ja videoita (katso FX &amp; MEDIA).</td></tr>
+    <tr><td>16: SCREEN COOKIE RGB 62ch<br>17: SCREEN COOKIE HUE SAT 54ch</td><td>Näyttö on jaettu epäsäännöllisiin, laikukkaisiin alueisiin 8 värillä (katso COOKIE ja ULTIMATE).</td></tr>
+    <tr><td>18: ULTIMATE RGB 72ch<br>19: ULTIMATE HUE SAT 64ch</td><td>Valitsee, miten näyttö jaetaan, ja näyttää kuvioita, kuvia ja videoita (katso COOKIE ja ULTIMATE).</td></tr>
   </tbody>
 </table>
-<p>BACK LIGHT ONLY -modea lukuun ottamatta jokainen mode alkaa Screen Dimmerillä ja päättyy Functioniin, Back Lightiin ja Vibrationiin. SCREEN RGB 10ch:ssa on nämä kanavat tässä järjestyksessä. Arvot on kirjoitettu niin kuin ne näkyvät Settings-näkymän Channels-kohdassa.</p>
+<p>BACK LIGHT ONLY -modea lukuun ottamatta jokainen mode alkaa Screen Dimmerillä ja päättyy Back Lightiin ja Vibrationiin. 2: SCREEN RGB 9ch:ssa on nämä kanavat tässä järjestyksessä. Arvot on kirjoitettu niin kuin ne näkyvät Settings-näkymän Channels-kohdassa.</p>
 <table>
   <thead><tr><th>#</th><th>Nimi</th><th>Arvot</th></tr></thead>
   <tbody>
@@ -131,16 +133,15 @@
     <tr><td>5</td><td>Red</td><td>0–100%</td></tr>
     <tr><td>6</td><td>Green</td><td>0–100%</td></tr>
     <tr><td>7</td><td>Blue</td><td>0–100%</td></tr>
-    <tr><td>8</td><td>Function</td><td>0–127 Off · 128–255 Proximity · Home 0</td></tr>
-    <tr><td>9</td><td>Back Light</td><td>0–100%</td></tr>
-    <tr><td>10</td><td>Vibration</td><td>0–100%</td></tr>
+    <tr><td>8</td><td>Back Light</td><td>0–100%</td></tr>
+    <tr><td>9</td><td>Vibration</td><td>0–100%</td></tr>
   </tbody>
 </table>
 <p>HUE SAT -modeissa on Hue (0–360°) ja Saturation Red-, Green- ja Blue-kanavien tilalla. CELLS- ja STRIPS-modeissa Screen Dimmerin jälkeen tulevat näytön jokaiselle osalle Dimmer, CCT, G/M, Crossfade ja väri. CELLS-osat numeroidaan vasemmasta yläkulmasta. Kahdeksan osaa on 2 saraketta ja 4 riviä pystyssä olevalla näytöllä ja 4 saraketta ja 2 riviä vaakasuuntaisella. STRIPS ovat yhtä leveitä kaistoja, jotka on asetettu näytön pitkän sivun suuntaan. Pystyssä olevalla näytöllä on vaakakaistat, jotka numeroidaan ylhäältä alas, ja vaakasuuntaisella näytöllä pystykaistat, jotka numeroidaan vasemmalta oikealle. Neliönmuotoinen näyttö jaetaan ylhäältä&nbsp;alas.</p>
-<p>Crossfade asettaa valkoisen ja värin sekoituksen: 0 on valkoinen ja 255 on väri. Valkoinen tulee CCT:stä ja G/M:stä. Kun Crossfade on 0:ssa, Redin, Greenin tai Bluen nostaminen jättää näytön valkoiseksi. Screen Dimmer himmentää vain näyttöä eikä vaikuta takavaloon. Kun Function asetetaan arvoon 128 tai suuremmaksi, valitaan Proximity, joka käyttää laitteen läheisyysanturia.</p>
+<p>Crossfade asettaa valkoisen ja värin sekoituksen: 0 on valkoinen ja 255 on väri. Valkoinen tulee CCT:stä ja G/M:stä. Kun Crossfade on 0:ssa, Redin, Greenin tai Bluen nostaminen jättää näytön valkoiseksi. Screen Dimmer himmentää vain näyttöä eikä vaikuta takavaloon.</p>
 
 <h2>FX &amp; MEDIA</h2>
-<p>SCREEN FX &amp; MEDIA RGB 19ch:ssa on nämä kanavat tässä järjestyksessä. SCREEN FX &amp; MEDIA HUE SAT 18ch:ssa on Hue ja Saturation Red-, Green- ja Blue-kanavien tilalla.</p>
+<p>14: SCREEN FX &amp; MEDIA RGB 18ch:ssa on nämä kanavat tässä järjestyksessä. 15: SCREEN FX &amp; MEDIA HUE SAT 17ch:ssa on Hue ja Saturation Red-, Green- ja Blue-kanavien tilalla.</p>
 <table>
   <thead><tr><th>#</th><th>Nimi</th><th>Arvot</th></tr></thead>
   <tbody>
@@ -152,7 +153,7 @@
     <tr><td>6</td><td>Green</td><td>0–100%</td></tr>
     <tr><td>7</td><td>Blue</td><td>0–100%</td></tr>
     <tr><td>8</td><td>Color Macro</td><td>0–15 Off · 16–255 15 colors, 16 each · Home 0</td></tr>
-    <tr><td>9</td><td>Content</td><td>0 SOLID · 32 GLINT · 64 SWEEP · 96 KALEIDO · 128 WATER · 160 FIRE · 192 VIDEO GLOW · 224 CATCHLIGHT · Home 0</td></tr>
+    <tr><td>9</td><td>Content</td><td>0 SOLID · 32 GLINT · 64 SWEEP · 96 KALEIDO · 128 WATER · 160 FIRE · 192 VIDEO GLOW · 224 AURORA · Home 0</td></tr>
     <tr><td>10</td><td>Speed</td><td>0 Slow · 128 Normal · 255 Fast · Home 128</td></tr>
     <tr><td>11</td><td>Amount</td><td>0–255 · Home 128</td></tr>
     <tr><td>12</td><td>Size</td><td>0–255 · Home 128</td></tr>
@@ -160,18 +161,17 @@
     <tr><td>14</td><td>Media</td><td>0 Off · 1–5 = 1 · 6–10 = 2 … 251–255 = 51 · Home 0</td></tr>
     <tr><td>15</td><td>Playback</td><td>0–85 Play · 86–170 Pause · 171–255 Restart · Home 0</td></tr>
     <tr><td>16</td><td>Color Temp</td><td>0 Warm · 128 As is · 255 Cool · Home 128</td></tr>
-    <tr><td>17</td><td>Function</td><td>0–127 Off · 128–255 Proximity · Home 0</td></tr>
-    <tr><td>18</td><td>Back Light</td><td>0–100%</td></tr>
-    <tr><td>19</td><td>Vibration</td><td>0–100%</td></tr>
+    <tr><td>17</td><td>Back Light</td><td>0–100%</td></tr>
+    <tr><td>18</td><td>Vibration</td><td>0–100%</td></tr>
   </tbody>
 </table>
 <p>Näyttö rakentuu mustasta: ensin Median valitsema kuva tai video, sen päälle Contentin valitsema kuvio. Mix määrää, kumpaa näkyy kuinka paljon: 0 näyttää vain kuvan tai videon ja 255 vain kuvion. Kun Media on 0 tai numerossa ei ole mitään, näkyy vain&nbsp;kuvio.</p>
-<p>SOLID, ensimmäinen Content, täyttää näytön värillä. Home-arvoilla FX &amp; MEDIA antaa saman valon kuin SCREEN RGB. Muut seitsemän ovat liikkuvia kuvioita. Speed määrää, kuinka nopeasti ne liikkuvat, ja Amount ja Size muuttavat kunkin kuvion ilmettä. Kuvio saa värinsä näytön väristä. Kun Color Macro ei ole 0, käytetään makron väriä. Arvosta 16 alkaen jokainen 16 arvoa valitsee seuraavan värin: 3200 K, 4300 K, 5600 K, Red, Orange, Amber, Yellow, Green, Cyan, Sky Blue, Blue, Deep Blue, Lavender, Magenta&nbsp;ja&nbsp;Pink.</p>
+<p>SOLID, ensimmäinen Content, täyttää näytön värillä. Home-arvoilla FX &amp; MEDIA antaa saman valon kuin SCREEN RGB. Muut seitsemän ovat liikkuvia kuvioita. Speed määrää, kuinka nopeasti ne liikkuvat, ja Amount ja Size muuttavat kunkin kuvion ilmettä. Jokaisella kuviolla on omat värinsä, joten se näyttää valmiilta, vaikka et asettaisi väriä. Crossfade siirtää kuvion 0:ssa omista väreistään 255:ssä Redin, Greenin ja Bluen väriin. Kun Color Macro ei ole 0, käytetään makron väriä. Arvosta 16 alkaen jokainen 16 arvoa valitsee seuraavan värin: 3200 K, 4300 K, 5600 K, Red, Orange, Amber, Yellow, Green, Cyan, Sky Blue, Blue, Deep Blue, Lavender, Magenta&nbsp;ja&nbsp;Pink.</p>
 <p>Kuvat ja videot säilyttävät omat värinsä. Color Temp siirtää niitä lämpimämmäksi tai kylmemmäksi, ja Screen Dimmer himmentää ne. Videot toistuvat ilman ääntä ja alkavat alusta, kun ne loppuvat. Playback toistaa videon tai keskeyttää sen. Restart palauttaa sen alkuun kerran sillä hetkellä, kun arvo siirtyy välille&nbsp;171–255.</p>
 
 <h2>COOKIE ja ULTIMATE</h2>
-<p>SCREEN COOKIE jakaa näytön epäsäännöllisiin, laikukkaisiin alueisiin. Jokaisella alueella on yhden 8 solun väri, joten yhden solun väri näkyy näytön useassa kohdassa. Valon ja varjon saamiseksi aseta osa soluista mustiksi valopöydässä.</p>
-<p>SCREEN COOKIE RGB 63ch alkaa Screen Dimmerillä, ja sen jälkeen tulevat Shape, Soft ja Drift. Sitten tulevat 8 solua, joista jokaisessa on Dimmer, CCT, G/M, Crossfade, Red, Green ja Blue, kuten CELLS-modeissa. Function, Back Light ja Vibration tulevat viimeisinä. SCREEN COOKIE HUE SAT 55ch:ssa jokaisessa solussa on Hue ja Saturation Red-, Green- ja Blue-kanavien tilalla.</p>
+<p>SCREEN COOKIE jakaa näytön epäsäännöllisiin, laikukkaisiin alueisiin. Jokaisella alueella on yhden 8 solun väri, joten yhden solun väri näkyy näytön useassa kohdassa. Jotkin alueet pysyvät aina mustina solujen väreistä riippumatta, joten valojen välissä on varjoa, vaikka kaikki 8 solua olisivat päällä. Lisää varjoa saat asettamalla osan soluista mustiksi valopöydässä.</p>
+<p>16: SCREEN COOKIE RGB 62ch alkaa Screen Dimmerillä, ja sen jälkeen tulevat Shape, Soft ja Drift. Sitten tulevat 8 solua, joista jokaisessa on Dimmer, CCT, G/M, Crossfade, Red, Green ja Blue, kuten CELLS-modeissa. Back Light ja Vibration tulevat viimeisinä. 17: SCREEN COOKIE HUE SAT 54ch:ssa jokaisessa solussa on Hue ja Saturation Red-, Green- ja Blue-kanavien tilalla.</p>
 <table>
   <thead><tr><th>#</th><th>Nimi</th><th>Arvot</th></tr></thead>
   <tbody>
@@ -181,7 +181,7 @@
   </tbody>
 </table>
 <p>Shape valitsee kuvion. Kuvio muuttuu pehmeästi arvon liikkuessa, joten häivytys valopöydässä muuttaa yhden kuvion seuraavaksi. Soft pehmentää alueiden välisiä reunoja: arvolla 0 ne ovat terävät. Drift määrää, kuinka nopeasti kuvio virtaa: arvolla 0 se pysyy paikallaan.</p>
-<p>ULTIMATE RGB 73ch:ssa on COOKIE-modin ja FX &amp; MEDIA -modin kanavat sekä 8 solua, tässä järjestyksessä.</p>
+<p>18: ULTIMATE RGB 72ch:ssa on COOKIE-modin ja FX &amp; MEDIA -modin kanavat sekä 8 solua, tässä järjestyksessä.</p>
 <table>
   <thead><tr><th>#</th><th>Nimi</th><th>Arvot</th></tr></thead>
   <tbody>
@@ -190,11 +190,11 @@
     <tr><td>3–5</td><td>Shape, Soft, Drift</td><td>Kuten COOKIE-modessa</td></tr>
     <tr><td>6–14</td><td>Color Macro, Content, Speed, Amount, Size, Mix, Media, Playback, Color Temp</td><td>Kuten FX &amp; MEDIA -modessa</td></tr>
     <tr><td>15–70</td><td>Dimmer 1 … Blue 8</td><td>7 kanavaa kullekin solulle, kuten CELLS-modeissa</td></tr>
-    <tr><td>71–73</td><td>Function, Back Light, Vibration</td><td>Kuten muissa modeissa</td></tr>
+    <tr><td>71–72</td><td>Back Light, Vibration</td><td>Kuten muissa modeissa</td></tr>
   </tbody>
 </table>
-<p>ULTIMATE HUE SAT 65ch:ssa on 6 kanavaa kullekin solulle, ja niissä on Hue ja Saturation, joten solut ovat 15–62 ja Function, Back Light ja Vibration ovat&nbsp;63–65.</p>
-<p>Solut näkyvät vain, kun Content on SOLID ja Media on 0. Silloin Cells valitsee, miten näyttö jaetaan. SCREEN täyttää koko näytön solun 1 värillä. Kun kuvio, kuva tai video näkyy (Content ei ole SOLID tai Media ei ole 0), näyttö on yksi, kuten FX &amp; MEDIA -modessa, ja kuvio saa värinsä solusta 1. Media lasketaan arvon mukaan: muu arvo kuin 0 tekee näytöstä yhden, vaikka kyseisessä numerossa ei olisi mitään. Color Macro toimii vain, kun näyttö on yksi. Kun näyttö on jaettu, sillä ei ole vaikutusta. Kun Cells jakaa näytön alle 8 osaan, muiden solujen kanavilla ei ole vaikutusta, mutta ne käyttävät silti osoitteitaan.</p>
+<p>19: ULTIMATE HUE SAT 64ch:ssa on 6 kanavaa kullekin solulle, ja niissä on Hue ja Saturation, joten solut ovat 15–62 ja Back Light ja Vibration ovat&nbsp;63–64.</p>
+<p>Solut näkyvät vain, kun Content on SOLID ja Media on 0. Silloin Cells valitsee, miten näyttö jaetaan. SCREEN täyttää koko näytön solun 1 värillä. Kun kuvio, kuva tai video näkyy (Content ei ole SOLID tai Media ei ole 0), näyttö on yksi, kuten FX &amp; MEDIA -modessa, ja kuvio saa värinsä ja Crossfaden solusta 1. Media lasketaan arvon mukaan: muu arvo kuin 0 tekee näytöstä yhden, vaikka kyseisessä numerossa ei olisi mitään. Color Macro toimii vain, kun näyttö on yksi. Kun näyttö on jaettu, sillä ei ole vaikutusta. Kun Cells jakaa näytön alle 8 osaan, muiden solujen kanavilla ei ole vaikutusta, mutta ne käyttävät silti osoitteitaan.</p>
 
 <h2>Media</h2>
 <p>Hyllyssä on tämän laitteen kuvia ja videoita numeroilla 1–51. Avaa se Settings-näkymän Media-kohdasta. Se on olemassa kaikissa modeissa, joten voit täyttää sen ennen kuin vaihdat FX &amp; MEDIA- tai ULTIMATE-modeen.</p>
@@ -205,17 +205,16 @@
 <p>Valopöydässä Media-kanava valitsee numeron: 1–5 on 1, 6–10 on 2 ja niin edelleen, aina 251–255 eli 51. Tiedostot pysyvät tässä laitteessa, eikä niitä lähetetä minnekään.</p>
 
 <h2>Patchaus valopöydässä</h2>
-<p>Kanaussa patchaa tämä laite nimellä Kanau Screen samalla modella (<a href="manual-fi.html#patch">oppaan luku 03</a>). Kanau 1.0:ssa (371) Kanau Screenissä on kaikki&nbsp;19&nbsp;modea.</p>
+<p>Kanaussa patchaa tämä laite nimellä Kanau&nbsp;Lite samalla modella (<a href="manual-fi.html#patch">oppaan luku 03</a>). Kanau 1.0:ssa (372) ja sitä uudemmissa Kanau&nbsp;Litessä on kaikki&nbsp;19&nbsp;modea.</p>
 <p>Muissa valopöydissä tee valaisin, jonka kanavat ovat samassa järjestyksessä kuin Settings-näkymän Channels-kohdassa, ja patchaa se samaan osoitteeseen. Jokainen kanava on 8-bittinen.</p>
-<p><span style="white-space:nowrap">Art-Net</span>illä sovellus vastaa solmujen etsintään (ArtPoll) nimellä, kuten <code class="q">Kanau Screen · U1 · 001</code>. Valopöydässä, joka voi luetella solmut, etsi tätä nimeä sekä sen universumia ja osoitetta.</p>
+<p><span style="white-space:nowrap">Art-Net</span>illä sovellus vastaa solmujen etsintään (ArtPoll) nimellä, kuten <code class="q">Kanau&nbsp;Lite · U1 · 001</code>. Valopöydässä, joka voi luetella solmut, etsi tätä nimeä sekä sen universumia ja osoitetta.</p>
 
 <h2>Miten se eroaa Kanaun LITE&nbsp;MODEsta</h2>
-<p>Kanau&nbsp;Lite vastaanottaa samalla tavalla kuin Kanaun LITE&nbsp;MODE (<a href="manual-fi.html#output--12">oppaan luku 02</a>). Kanau 1.0:sta (371) alkaen neljä asiaa on&nbsp;toisin.</p>
+<p>Kanau&nbsp;Lite vastaanottaa samalla tavalla kuin Kanaun LITE&nbsp;MODE (<a href="manual-fi.html#output--12">oppaan luku 02</a>). Kanau 1.0:n (375) aikaan kolme asiaa on&nbsp;toisin.</p>
 <ul>
   <li>Ennen kuin DMX saapuu, LITE&nbsp;MODE näyttää <code>WAITING</code>. Kanau&nbsp;Lite näyttää osoitenäkymän.</li>
   <li>Kun DMX lakkaa, LITE&nbsp;MODE pitää viimeisen värin. Kanau&nbsp;Lite palaa osoitenäkymään 6 sekunnin&nbsp;kuluttua.</li>
   <li>Oikean yläkulman kytkimestä tuleva × poistuu Kanaussa LITE&nbsp;MODEsta. Kanau&nbsp;Litessa se avaa Settings-näkymän.</li>
-  <li>Media-hylly on vain Kanau&nbsp;Litessa. LITE&nbsp;MODEssa FX &amp; MEDIA -modet ja ULTIMATE-modet näyttävät vain&nbsp;kuvioita.</li>
 </ul>
 
 <h2>Yhteystiedot</h2>
