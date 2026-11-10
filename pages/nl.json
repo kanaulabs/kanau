@@ -75,5 +75,6 @@
  "fixtures_search": "Zoek op fabrikant of lamp",
  "fixtures_none": "Geen lamp gevonden.",
  "fixtures_note": "De kanaalindelingen komen uit de DMX-charts en GDTF-bestanden van de fabrikanten. Klopt er een niet met jouw lamp, schrijf dan naar <a href=\"mailto:info@kanaulabs.app\">info@kanaulabs.app</a>.",
- "fixtures_generic": "Staat je lamp er niet bij? Patch hem hier, op zijn kanalen."
+ "fixtures_generic": "Staat je lamp er niet bij? Patch hem hier, op zijn kanalen.",
+ "trademark": "Apple en het Apple-logo zijn handelsmerken van Apple Inc., gedeponeerd in de VS en andere landen. App Store is een dienstmerk van Apple Inc., gedeponeerd in de VS en andere landen."
 }

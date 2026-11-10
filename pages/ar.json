@@ -75,5 +75,6 @@
  "fixtures_search": "ابحث بالشركة المصنّعة أو بالطراز",
  "fixtures_none": "لا توجد وحدة إضاءة مطابقة.",
  "fixtures_note": "تُؤخذ ترتيبات القنوات من جداول DMX وملفات GDTF لدى كل شركة مصنّعة. إن لم يطابق أحدها وحدتك، فراسلنا على <a href=\"mailto:info@kanaulabs.app\">info@kanaulabs.app</a>.",
- "fixtures_generic": "غير موجودة في القائمة؟ سجّلها (Patch) من هنا حسب قنواتها."
+ "fixtures_generic": "غير موجودة في القائمة؟ سجّلها (Patch) من هنا حسب قنواتها.",
+ "trademark": "Apple وشعار Apple علامتان تجاريتان لشركة Apple Inc.، مسجلتان في الولايات المتحدة وبلدان أخرى. App Store علامة خدمة لشركة Apple Inc.، مسجلة في الولايات المتحدة وبلدان أخرى."
 }

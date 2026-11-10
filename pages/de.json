@@ -75,5 +75,6 @@
  "fixtures_search": "Nach Hersteller oder Scheinwerfer suchen",
  "fixtures_none": "Kein Scheinwerfer gefunden.",
  "fixtures_note": "Die Kanalbelegungen stammen aus den DMX-Charts und GDTF-Dateien der Hersteller. Weicht eine von Ihrem Scheinwerfer ab, schreiben Sie an <a href=\"mailto:info@kanaulabs.app\">info@kanaulabs.app</a>.",
- "fixtures_generic": "Ihr Scheinwerfer fehlt? Patchen Sie ihn hier, nach seinen Kanälen."
+ "fixtures_generic": "Ihr Scheinwerfer fehlt? Patchen Sie ihn hier, nach seinen Kanälen.",
+ "trademark": "Apple und das Apple Logo sind Marken der Apple Inc., die in den USA und weiteren Ländern eingetragen sind. App Store ist eine Dienstleistungsmarke der Apple Inc., die in den USA und weiteren Ländern eingetragen ist."
 }

@@ -75,5 +75,6 @@
  "fixtures_search": "Tìm theo hãng hoặc đèn",
  "fixtures_none": "Không có đèn nào khớp.",
  "fixtures_note": "Cách sắp xếp kênh lấy từ bảng DMX và tệp GDTF của từng hãng. Nếu không khớp với đèn của bạn, hãy viết tới <a href=\"mailto:info@kanaulabs.app\">info@kanaulabs.app</a>.",
- "fixtures_generic": "Không có trong danh sách? Hãy khai báo (Patch) tại đây, theo kênh."
+ "fixtures_generic": "Không có trong danh sách? Hãy khai báo (Patch) tại đây, theo kênh.",
+ "trademark": "Apple và logo Apple là nhãn hiệu của Apple Inc., đã được đăng ký tại Hoa Kỳ và các quốc gia khác. App Store là nhãn hiệu dịch vụ của Apple Inc., đã được đăng ký tại Hoa Kỳ và các quốc gia khác."
 }

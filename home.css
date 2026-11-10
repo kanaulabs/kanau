@@ -125,6 +125,13 @@
     padding: 7px 15px 7px 13px; border-radius: 999px; }
   .status a::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--amber); flex: none; }
   .status a:hover { color: var(--ink); }
+  /* 2026-11-10: App Store に出た。冒頭の 1 行を Apple のバッジへ(黒・改変なし・高さ 44px ≥ 下限 40px・
+     周りの空きは高さの 1/4 = 11px 以上)。ヒンディー語は Apple が配っていないので英語の版 */
+  .store { margin: 0 0 26px; padding: 11px 0; line-height: 0; }
+  .store a { display: inline-block; padding: 11px; }
+  .store img { height: 44px; width: auto; display: block; }
+  /* バッジを使うときの Apple の商標の 1 行。サイトで 1 度だけ、トップの下に */
+  footer .tm { flex-basis: 100%; margin: 0; font-size: 11px; line-height: 1.6; color: var(--mute); }
   /* 自分の機材で使えるか。3 つの特徴の後に、短く */
   .conn { text-align: center; padding: 110px 0 0; }
   .conn h2 { margin: 0 0 16px; font-weight: 300; font-size: 36px; line-height: 1.2; letter-spacing: -.025em; }

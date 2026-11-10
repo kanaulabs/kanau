@@ -75,5 +75,6 @@
  "fixtures_none": "Ingen armatur matchar.",
  "fixtures_note": "Kanallayouterna är hämtade från varje tillverkares DMX-scheman och GDTF-filer. Stämmer någon inte med din armatur, skriv till <a href=\"mailto:info@kanaulabs.app\">info@kanaulabs.app</a>.",
  "fixtures_generic": "Finns den inte i listan? Patcha den här, efter kanalerna.",
- "made_p2": "Tippa telefonen för att dra upp ett ljus med TILT. Gör en iPhone eller iPad till ett ljus med LITE MODE."
+ "made_p2": "Tippa telefonen för att dra upp ett ljus med TILT. Gör en iPhone eller iPad till ett ljus med LITE MODE.",
+ "trademark": "Apple och Apple-logotypen är varumärken som tillhör Apple Inc. och är registrerade i USA och andra länder. App Store är ett servicemärke som tillhör Apple Inc. och är registrerat i USA och andra länder."
 }

@@ -75,5 +75,6 @@
  "fixtures_search": "依廠商或型號搜尋",
  "fixtures_none": "沒有符合的燈。",
  "fixtures_note": "通道排列依據各廠商的 DMX 圖表和 GDTF 檔案。如果與你的燈不一致，請來信至 <a href=\"mailto:info@kanaulabs.app\">info@kanaulabs.app</a>。",
- "fixtures_generic": "清單裡沒有？在這裡依通道排列來 Patch。"
+ "fixtures_generic": "清單裡沒有？在這裡依通道排列來 Patch。",
+ "trademark": "Apple 與 Apple 標誌是 Apple Inc. 在美國及其他國家和地區註冊的商標。App Store 是 Apple Inc. 在美國及其他國家和地區註冊的服務標章。"
 }

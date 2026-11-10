@@ -75,5 +75,6 @@
  "fixtures_none": "Eşleşen armatür yok.",
  "fixtures_note": "Kanal düzenleri, her üreticinin DMX tablolarından ve GDTF dosyalarından alınmıştır. Biri armatürünüzle uyuşmuyorsa <a href=\"mailto:info@kanaulabs.app\">info@kanaulabs.app</a> adresine yazın.",
  "fixtures_generic": "Listede yok mu? Burada kanal dizilimine göre patch yapın.",
- "made_p2": "Telefonu eğin, TILT bir ışığı yükseltsin. LITE MODE ile iPhone ya da iPad'i bir ışığa dönüştürün."
+ "made_p2": "Telefonu eğin, TILT bir ışığı yükseltsin. LITE MODE ile iPhone ya da iPad'i bir ışığa dönüştürün.",
+ "trademark": "Apple ve Apple logosu, Apple Inc.'in ABD'de ve diğer ülkelerde tescilli ticari markalarıdır. App Store, Apple Inc.'in ABD'de ve diğer ülkelerde tescilli hizmet markasıdır."
 }

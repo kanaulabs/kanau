@@ -75,5 +75,6 @@
  "fixtures_search": "Chercher un fabricant ou un projecteur",
  "fixtures_none": "Aucun projecteur ne correspond.",
  "fixtures_note": "Les assignations de canaux proviennent des tableaux DMX et des fichiers GDTF des fabricants. Si l’une ne correspond pas à votre projecteur, écrivez à <a href=\"mailto:info@kanaulabs.app\">info@kanaulabs.app</a>.",
- "fixtures_generic": "Pas dans la liste ? Patchez-le ici, selon ses canaux."
+ "fixtures_generic": "Pas dans la liste ? Patchez-le ici, selon ses canaux.",
+ "trademark": "Apple et le logo Apple sont des marques d’Apple Inc., déposées aux États-Unis et dans d’autres pays. App Store est une marque de service d’Apple Inc., déposée aux États-Unis et dans d’autres pays."
 }
