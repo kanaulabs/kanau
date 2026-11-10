@@ -207,6 +207,23 @@
      300px より広い画面(iPhone はすべて)では効かせない —— ハイフンで語を割る形が、ほかの大見出しにも出てしまう */
   @media (max-width: 300px) { h1 { hyphens: auto; overflow-wrap: break-word; } }
 
+  /* ---- スマホの一枚目(2026-11-11「iPhone で見た時、一枚目として、崩れた感じがした。写真まで綺麗に入れたい」) ----
+     実測(幅 393): 画面写真の上端が 729px に在り、一枚目に入っていなかった。上の余白を詰め、
+     App Store の札を見出しの上から「説明書を読む」の隣へ移して、写真を一枚目へ上げる。
+     並べ替えは order だけ(HTML の順は広い画面と同じ)。札と鍵が 1 行に入らない言語は 2 行に折れる */
+  @media (max-width: 500px) {
+    .hero { padding-top: 18px; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 10px 8px; }
+    .hero h1 { order: 1; width: 100%; font-size: 42px; margin-bottom: 4px; }
+    :lang(ja) .hero h1 { font-size: 36px; }
+    .hero .lead { order: 2; width: 100%; font-size: 17px; line-height: 1.55; margin-bottom: 12px; }
+    .hero .store { order: 3; margin: 0; padding: 0; }
+    .hero .store a { padding: 2px; }
+    .hero .cta { order: 3; margin: 0; }
+    .hero .btn { padding: 13px 22px; }
+    .hero .ctaprice { order: 4; width: 100%; margin-top: 2px; }
+    .stage { margin-top: 26px; }
+  }
+
 /* 日本語は jbreak.js が文節の間に <wbr> を置き、html に .jb を付ける。付いたら字の間では折らない ——
    Chrome の auto-phrase と Safari の字の間の折り返しを揃える(2026-10-31)。入らない長さの文節だけは枠の端で折る */
 html.jb.jb.jb.jb body, html.jb.jb.jb.jb body * { word-break: keep-all; overflow-wrap: break-word; }   /* :lang(ja) .chap .d の auto-phrase(0,3,0)より強く —— 混ざると Chrome だけ「割り|当て」と割れた */
