@@ -208,83 +208,73 @@
   @media (max-width: 300px) { h1 { hyphens: auto; overflow-wrap: break-word; } }
 
   /* ==== 2026-11-12 の作り直し(「超一流のデザイナーが直すなら」→ 下絵 2「これにしてください」) ====
-     ① 一枚目は暗転: アプリの画面と同じ黒。画面写真の外へ、フェーダーの色の明かりがこぼれる
+     ① 一枚目は左に文・右に画面写真。画面写真の外へ、フェーダーの色の明かりがこぼれる(黒い帯は 11/12 朝に白へ戻した)
      ② 主役は App Store の札。説明書は文字のリンク
-     ③ 見出しは明朝・セリフ(--display)、本文と画面の言葉はゴシック —— 「思い」は明朝、「かたち」(画面)はゴシック
+     ③ 見出しの字は前のゴシックの細い字(明朝・セリフは 11/12 朝に戻した —— 下の「字」の註)
      ④ 「撮影の現場から。」を一枚目のすぐ下へ。長い文は行の頭をそろえる
      この塊は上の決まりを上書きする(同じ強さなら後が勝つ)。上に残る .hero / .cta / .btn / .made の中央ぞろえは使っていない */
-  :root { --stage: #0c0c10; --stage-ink: #f3f2ee; --stage-mute: #9d9da6;
-    --display: "Newsreader", "New York", "Iowan Old Style", Georgia, serif; }
-  :lang(ja) { --display: "Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif; }
-  :lang(ko) { --display: "Noto Serif KR", "AppleMyungjo", "Batang", serif; }
-  :lang(zh-Hans) { --display: "Noto Serif SC", "Songti SC", "SimSun", serif; }
-  :lang(zh-Hant) { --display: "Noto Serif TC", "Songti TC", "PMingLiU", serif; }
-  :lang(th) { --display: "Noto Serif Thai", "Thonburi", serif; }
-  :lang(ar) { --display: "Noto Naskh Arabic", "Geeza Pro", serif; }
-  :lang(hi) { --display: "Noto Serif Devanagari", "Kohinoor Devanagari", serif; }
-
-  /* -- 字 -- */
-  .hero h1, .made h2, .tab h2, .conn h2, .pricing h2, .lines h3, .name p {
-    font-family: var(--display); font-weight: 400; letter-spacing: -.018em; }
+  /* -- 字 --
+     見出しは前のゴシックの細い字に戻した(2026-11-12 朝、依頼「フォントなどは前の漢字の方が優しくて好きだったのかもしれません」
+     「フォントだけお願いします」)。11/12 未明に明朝・セリフ(Shippori Mincho / Newsreader ほか)にして出したが、半日で戻した。
+     字は本文と同じ並び(Manrope + その言語のゴシック)。細さ 300・字間は作り直す前の値 */
+  .hero h1, .made h2, .tab h2, .conn h2, .pricing h2, .name p { font-weight: 300; letter-spacing: -.03em; }
+  .lines h3 { font-weight: 500; letter-spacing: -.015em; }
   :lang(ja) .hero h1, :lang(ja) .made h2, :lang(ja) .tab h2, :lang(ja) .conn h2, :lang(ja) .pricing h2, :lang(ja) .lines h3, :lang(ja) .name p {
-    font-weight: 500; letter-spacing: .05em; }
+    letter-spacing: .03em; }
   :lang(ko) .hero h1, :lang(ko) .made h2, :lang(ko) .tab h2, :lang(ko) .conn h2, :lang(ko) .pricing h2, :lang(ko) .lines h3, :lang(ko) .name p,
   :lang(zh-Hans) .hero h1, :lang(zh-Hans) .made h2, :lang(zh-Hans) .tab h2, :lang(zh-Hans) .conn h2, :lang(zh-Hans) .pricing h2, :lang(zh-Hans) .lines h3, :lang(zh-Hans) .name p,
-  :lang(zh-Hant) .hero h1, :lang(zh-Hant) .made h2, :lang(zh-Hant) .tab h2, :lang(zh-Hant) .conn h2, :lang(zh-Hant) .pricing h2, :lang(zh-Hant) .lines h3, :lang(zh-Hant) .name p {
-    font-weight: 500; letter-spacing: .02em; }
+  :lang(zh-Hant) .hero h1, :lang(zh-Hant) .made h2, :lang(zh-Hant) .tab h2, :lang(zh-Hant) .conn h2, :lang(zh-Hant) .pricing h2, :lang(zh-Hant) .lines h3, :lang(zh-Hant) .name p,
   :lang(th) .hero h1, :lang(th) .made h2, :lang(th) .tab h2, :lang(th) .conn h2, :lang(th) .pricing h2, :lang(th) .lines h3, :lang(th) .name p,
   :lang(ar) .hero h1, :lang(ar) .made h2, :lang(ar) .tab h2, :lang(ar) .conn h2, :lang(ar) .pricing h2, :lang(ar) .lines h3, :lang(ar) .name p,
   :lang(hi) .hero h1, :lang(hi) .made h2, :lang(hi) .tab h2, :lang(hi) .conn h2, :lang(hi) .pricing h2, :lang(hi) .lines h3, :lang(hi) .name p {
-    font-weight: 500; letter-spacing: 0; }
-  .made h2, .tab h2, .conn h2, .pricing h2 { font-size: 40px; line-height: 1.25; }
-  :lang(ja) .made h2, :lang(ja) .tab h2, :lang(ja) .conn h2, :lang(ja) .pricing h2 { font-size: 38px; line-height: 1.45; }
+    letter-spacing: 0; }
+  .made h2, .tab h2, .conn h2, .pricing h2 { font-size: 38px; line-height: 1.25; }
+  :lang(ja) .made h2, :lang(ja) .tab h2, :lang(ja) .conn h2, :lang(ja) .pricing h2 { font-size: 36px; line-height: 1.45; }
   :lang(th) .made h2, :lang(th) .tab h2, :lang(th) .conn h2, :lang(th) .pricing h2,
   :lang(hi) .made h2, :lang(hi) .tab h2, :lang(hi) .conn h2, :lang(hi) .pricing h2 { line-height: 1.5; }
-  .lines h3 { font-size: 23px; line-height: 1.35; margin-bottom: 14px; }
-  :lang(ja) .lines h3 { font-size: 21px; font-weight: 600; line-height: 1.5; }
-  .name p { font-size: 34px; line-height: 1.6; }
+  .lines h3 { font-size: 20px; line-height: 1.4; margin-bottom: 12px; }
+  :lang(ja) .lines h3 { font-size: 19px; line-height: 1.55; }
+  .name p { font-size: 32px; line-height: 1.6; }
   /* 本文は濃く(白地で 9.9:1)、日本語は行間を広く */
   .lines p, .tab p, .conn p, .pricing .sub, .made p, .made dd { color: #3f3f46; }
   :lang(ja) .lines p, :lang(ja) .tab p, :lang(ja) .conn p, :lang(ja) .pricing .sub { line-height: 1.95; }
 
-  /* -- 一枚目 -- */
-  .dark { background: var(--stage); color: var(--stage-ink); overflow: hidden; }
-  .dark .brand { color: var(--stage-ink); }
-  .dark .links, .dark .langsel select { color: var(--stage-mute); }
-  .dark .links a:hover, .dark .langsel select:hover { color: var(--stage-ink); }
-  .dark .langsel select option { color: #1b1b1f; }
-  .first { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.08fr); column-gap: 24px; align-items: center; padding: 56px 0 96px; }
-  .hero { text-align: start; padding: 0; display: flex; flex-direction: column; align-items: flex-start; }
-  .hero h1 { margin: 0 0 24px; max-width: none; font-size: 72px; line-height: 1.02; color: var(--stage-ink); }
-  .hero h1.long { font-size: 52px; line-height: 1.08; }
-  :lang(ja) .hero h1 { font-size: 54px; line-height: 1.25; letter-spacing: .04em; }
-  :lang(ko) .hero h1, :lang(zh-Hans) .hero h1, :lang(zh-Hant) .hero h1 { font-size: 58px; line-height: 1.25; }
-  :lang(th) .hero h1, :lang(hi) .hero h1 { font-size: 52px; line-height: 1.4; }
-  :lang(ar) .hero h1 { font-size: 60px; line-height: 1.4; }
-  .hero .lead { margin: 0 0 36px; max-width: 26em; font-size: 18px; line-height: 1.8; color: #cfcfd3; }
+  /* -- 一枚目 --
+     白を基調に戻した(2026-11-12 朝、依頼「やはり白を基調にして少し光を感じさせるようにしたい。アプリが黒なので…
+     あえて白を基調にしたい」)。11/12 未明は黒い帯(#0c0c10)で出したが、半日で白へ。並び(左に文・右に画面写真)と
+     主役の札はそのまま。光は、白い壁に当たった明かりの淡いにじみ(フェーダーの琥珀・赤・緑・青) */
+  /* 光は一枚目の下へもそのまま淡く消えていく(下の端で切らない —— 切ると白地に線が出た)。横だけ切って、横スクロールを出さない。
+     光は本文の後ろ(z-index: -1)なので、下の段の字にはかぶらない */
+  .top { overflow-x: clip; }
+  @supports not (overflow-x: clip) { .top { overflow: hidden; } }
+  .top .glow { z-index: -1; }
+  .first { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.08fr); column-gap: 24px; align-items: center; padding: 56px 0 72px; }
+  .hero { text-align: start; padding: 0; display: flex; flex-direction: column; align-items: flex-start; position: relative; z-index: 1; }
+  .hero h1 { margin: 0 0 24px; max-width: none; font-size: 66px; line-height: 1.06; }
+  .hero h1.long { font-size: 46px; line-height: 1.12; }
+  :lang(ja) .hero h1 { font-size: 54px; line-height: 1.25; }
+  :lang(ko) .hero h1, :lang(zh-Hans) .hero h1, :lang(zh-Hant) .hero h1 { font-size: 54px; line-height: 1.25; }
+  :lang(th) .hero h1, :lang(hi) .hero h1 { font-size: 48px; line-height: 1.4; }
+  :lang(ar) .hero h1 { font-size: 54px; line-height: 1.4; }
+  .hero .lead { margin: 0 0 36px; max-width: 26em; font-size: 18px; line-height: 1.8; color: #45454b; }
   .acts { display: flex; align-items: center; gap: 14px 22px; flex-wrap: wrap; }
-  /* 札: 黒・改変なし・高さ 54px(下限 40px)。暗い地では Apple の版の細い縁がそのまま境になる */
+  /* 札: 黒・改変なし・高さ 54px(下限 40px) */
   .hero .store { margin: 0; padding: 0; line-height: 0; }
   .hero .store a { display: block; padding: 0; }
   .hero .store img { height: 54px; }
-  .more { color: var(--stage-ink); font-size: 16px; font-weight: 500; padding: 10px 0; border-bottom: 1px solid rgba(243,242,238,.35); }
+  .more { color: var(--ink); font-size: 16px; font-weight: 500; padding: 10px 0; border-bottom: 1px solid rgba(27,27,31,.28); }
   .more:hover { border-bottom-color: var(--amber); }
-  .hero .ctaprice { margin: 26px 0 0; color: var(--stage-mute); }
-  .hero .ctaprice a:hover { color: var(--stage-ink); }
-  .hero .ctaprice .sep { color: #55555c; }
+  .hero .ctaprice { margin: 26px 0 0; }
 
-  .dark .stage { margin: 0; height: 600px; }
-  .dark .shot { width: min(262px, 24vw); border-radius: 44px; border-color: #1c1c21;
-    box-shadow: 0 0 0 1px rgba(255,255,255,.07), 0 50px 90px -30px rgba(0,0,0,.9); }
-  .dark .s2 { top: 54px; }
-  /* 明かり: 画面の陰に隠れない外側に置く。左は暖色(フェーダーの琥珀と赤)、右は緑と青(2026-11-12、撮って位置を決めた ——
-     画面の真後ろに置くと、画面に隠れてほとんど見えなかった) */
-  .dark .glow { left: 50%; top: 50%; width: 210%; height: 150%; filter: blur(64px);
+  .top .stage { margin: 0; height: 600px; }
+  .top .shot { width: min(262px, 24vw); border-radius: 44px; }
+  .top .s2 { top: 54px; }
+  /* 明かり: 琥珀色だけ、淡く(2026-11-12、依頼「あまり色は使わずに琥珀色ぐらいシンプルに、琥珀色の薄い感じで」。
+     その前は琥珀・赤・緑・青の 4 色だった)。画面の陰に隠れない外側に置く —— 左上に主の明かり、右下に弱い返し */
+  .top .glow { left: 50%; top: 50%; width: 210%; height: 150%; filter: blur(64px);
     background:
-      radial-gradient(24% 34% at 24% 38%, rgba(233,150,47,.70), rgba(233,150,47,0) 74%),
-      radial-gradient(18% 26% at 27% 80%, rgba(214,62,48,.55), rgba(214,62,48,0) 74%),
-      radial-gradient(20% 30% at 78% 30%, rgba(64,190,150,.55), rgba(64,190,150,0) 74%),
-      radial-gradient(22% 30% at 76% 82%, rgba(60,120,255,.62), rgba(60,120,255,0) 74%); }
+      radial-gradient(26% 38% at 25% 40%, rgba(240,160,50,.40), rgba(240,160,50,0) 74%),
+      radial-gradient(24% 32% at 76% 72%, rgba(240,160,50,.22), rgba(240,160,50,0) 74%); }
 
   /* -- 撮影の現場から。見出しは行頭、文と一覧は隣の柱 -- */
   .made { text-align: start; padding: 88px 0 0; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.08fr); column-gap: 24px; align-items: start; }
@@ -304,6 +294,10 @@
   .price { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 4px; row-gap: 6px; }
   .price small { margin-left: 0; }
 
+  /* 下の箱に 4 つ目(「次の版で変わる予定」)が在るとき: 広い画面は 4 列、中くらいは 2 列 × 2 段 */
+  .soft.four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .soft.four > * { padding: 6px 14px; }
+
   /* -- 料金の但し書き: 1 文 1 行、行頭ぞろえの 2 段 -- */
   .fine { text-align: start; max-width: none; columns: 2; column-gap: 40px; margin-top: 28px; }
   .fine .ln { display: block; break-inside: avoid; margin: 0 0 6px; }
@@ -319,14 +313,12 @@
     .acts { justify-content: center; gap: 10px 18px; }
     .hero .store img { height: 46px; }
     .hero .ctaprice { margin-top: 14px; }
-    .dark .stage { height: 600px; }
-    .dark .shot { width: 262px; }
-    .dark .glow { width: 150vw; height: 150%; filter: blur(44px);
+    .top .stage { height: 600px; }
+    .top .shot { width: 262px; }
+    .top .glow { width: 150vw; height: 150%; filter: blur(46px);
       background:
-        radial-gradient(34% 22% at 30% 12%, rgba(233,150,47,.62), rgba(233,150,47,0) 74%),
-        radial-gradient(30% 20% at 74% 16%, rgba(64,190,150,.50), rgba(64,190,150,0) 74%),
-        radial-gradient(30% 20% at 30% 90%, rgba(214,62,48,.50), rgba(214,62,48,0) 74%),
-        radial-gradient(34% 22% at 72% 92%, rgba(60,120,255,.60), rgba(60,120,255,0) 74%); }
+        radial-gradient(38% 24% at 30% 13%, rgba(240,160,50,.38), rgba(240,160,50,0) 74%),
+        radial-gradient(36% 22% at 72% 90%, rgba(240,160,50,.22), rgba(240,160,50,0) 74%); }
     .made { grid-template-columns: minmax(0, 1fr); padding-top: 64px; row-gap: 18px; }
     .made h2, .tab h2, .conn h2, .pricing h2,
     :lang(ja) .made h2, :lang(ja) .tab h2, :lang(ja) .conn h2, :lang(ja) .pricing h2 { font-size: 28px; }
@@ -335,15 +327,17 @@
     .name p { font-size: 25px; }
     .lines { padding-top: 56px; }
     .fine { columns: 1; }
+    .soft.four { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 26px; }
   }
   @media (max-width: 760px) {
-    .dark .stage { height: 470px; }
-    .dark .shot { width: 200px; border-radius: 34px; }
+    .top .stage { height: 470px; }
+    .top .shot { width: 200px; border-radius: 34px; }
   }
+  @media (max-width: 760px) { .soft.four { grid-template-columns: minmax(0, 1fr); } }
   @media (max-width: 460px) {
-    .dark .stage { height: calc(44vw * 2.18 + 60px); }
-    .dark .shot { width: 44vw; border-radius: 28px; }
-    .dark .s2 { top: 36px; }
+    .top .stage { height: calc(44vw * 2.18 + 60px); }
+    .top .shot { width: 44vw; border-radius: 28px; }
+    .top .s2 { top: 36px; }
     .feats > div { grid-template-columns: minmax(0, 1fr); row-gap: 4px; }
   }
 
