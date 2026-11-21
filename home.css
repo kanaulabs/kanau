@@ -156,6 +156,16 @@
   [dir="rtl"] .tablet { direction: ltr; }
   @media (max-width: 760px) { .tab { padding-top: 80px; } .tab h2 { font-size: 30px; } .tab p { margin-bottom: 36px; }
     .tablet { border-radius: 16px; border-width: 6px; } }
+  /* iPhone Duo の欄(2026-11-20)。左に閉じた外の画面、右に開いた横。狭い画面は開いた方を上に、閉じた方を下に */
+  .duos { display: flex; align-items: flex-end; justify-content: center; gap: 40px; direction: ltr; }
+  .duos > div { overflow: hidden; border: 8px solid #141417;
+    box-shadow: 0 40px 80px -20px rgba(27,27,31,.28), 0 10px 30px -10px rgba(27,27,31,.12); }
+  .duos img { display: block; width: 100%; height: auto; }
+  .duos .fold { flex: 0 0 200px; border-radius: 30px; }
+  .duos .unfold { flex: 0 1 640px; border-radius: 26px; border-width: 10px; }
+  @media (max-width: 760px) { .duos { flex-direction: column-reverse; align-items: center; gap: 28px; }
+    .duos .fold { flex: none; width: 44vw; border-radius: 24px; border-width: 6px; }
+    .duos .unfold { flex: none; width: 100%; border-radius: 16px; border-width: 6px; } }
   :lang(ja) .conn h2 { font-feature-settings: "palt"; letter-spacing: .03em; }
   /* 料金の箱は中身に押し広げられない(日本語の長い 1 句で 800px の画面からはみ出した)。箱の中の項目は字で折る */
   .plans { grid-template-columns: repeat(3, minmax(0, 1fr)); }

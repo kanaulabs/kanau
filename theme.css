@@ -213,6 +213,7 @@ figure.shot .wrap {
   box-shadow: 0 28px 56px -18px rgba(27,27,31,0.28), 0 8px 20px -8px rgba(27,27,31,0.12);
 }
 figure.shot img { display: block; width: 100%; height: auto; }
+figure.shot .wrap.wide { max-width: min(560px, 100%); border-radius: 18px; }
 
 figure.shot .pin {
   position: absolute;
