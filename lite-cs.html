@@ -49,7 +49,7 @@
 <header class="sitenav"><a class="sitebrand" href="index-cs.html"><img src="img/icon.png" alt="" width="28" height="28">Kanau</a><div class="sitenavr"><div class="sitelinks"><a href="index-cs.html#pricing">Ceník</a><a href="fixtures-cs.html">Svítidla</a><a href="manual-cs.html">Příručka</a><a href="support-cs.html">Podpora</a></div><label class="langsel"><span class="vh">Jazyk</span><select onchange="location.href=this.value"><option value="lite.html" lang="en">English</option><option value="lite-ja.html" lang="ja">日本語</option><option value="lite-de.html" lang="de">Deutsch</option><option value="lite-fr.html" lang="fr">Français</option><option value="lite-ko.html" lang="ko">한국어</option><option value="lite-zh-Hans.html" lang="zh-Hans">简体中文</option><option value="lite-zh-Hant.html" lang="zh-Hant">繁體中文</option><option value="lite-es.html" lang="es">Español</option><option value="lite-pt-BR.html" lang="pt-BR">Português (Brasil)</option><option value="lite-it.html" lang="it">Italiano</option><option value="lite-nl.html" lang="nl">Nederlands</option><option value="lite-pl.html" lang="pl">Polski</option><option value="lite-cs.html" lang="cs" selected>Čeština</option><option value="lite-sv.html" lang="sv">Svenska</option><option value="lite-da.html" lang="da">Dansk</option><option value="lite-no.html" lang="no">Norsk</option><option value="lite-fi.html" lang="fi">Suomi</option><option value="lite-tr.html" lang="tr">Türkçe</option><option value="lite-id.html" lang="id">Bahasa Indonesia</option><option value="lite-th.html" lang="th">ไทย</option><option value="lite-ar.html" lang="ar">العربية</option><option value="lite-hi.html" lang="hi">हिन्दी</option><option value="lite-vi.html" lang="vi">Tiếng Việt</option></select></label></div></header>
 <div class="hero">
   <h1>Kanau&nbsp;Lite</h1>
-  <p class="sub">K verzi Kanau&nbsp;Lite 1.1 (18)</p>
+  <p class="sub">K verzi Kanau&nbsp;Lite 1.2 (27)</p>
 </div>
 
 <p>Kanau&nbsp;Lite je bezplatná aplikace, která z iPhonu nebo iPadu udělá jedno světlo. Přijímá DMX, které posílá pult přes <span style="white-space:nowrap">Art-Net</span> nebo sACN, a ovládá barvu a jas obrazovky, světlo na zadní straně a vibrace. Není třeba zakládat účet a nejsou tu žádné&nbsp;reklamy.</p>
@@ -108,8 +108,8 @@
 <p>Když se ukazuje vzor, ORIGINAL zaujme místo WHITE. ORIGINAL je vlastní barva vzoru. Když se ukazuje vzor, obrázek nebo video, jeho název a STOP se objeví nahoře v LIGHT. STOP zastaví vzor a obrázek a nechá jen barvu nastavenou v&nbsp;LIGHT.</p>
 <p>MACRO má:</p>
 <ul>
-  <li><strong>Pattern</strong>: vyberte vzor ze seznamu. SOLID a devět pohyblivých vzorů, stejných jako Content ve FX &amp; MEDIA&nbsp;níže.</li>
-  <li><strong>Color Macro</strong>: vyberte barvu ze seznamu. Original 1 až 3 jsou sady barev, které patří ke vzoru, a u SOLID v seznamu nejsou. FROM LIGHT je barva nastavená v LIGHT, za ní následuje 15 barev. Změna barvy v LIGHT sundá barvu z Color&nbsp;Macro.</li>
+  <li><strong>Pattern</strong>: vyberte vzor ze seznamu. SOLID a 19 pohyblivých vzorů, stejných jako Content ve FX &amp; MEDIA&nbsp;níže.</li>
+  <li><strong>Color Macro</strong>: vyberte barvu ze seznamu. Original 1 až 6 jsou sady barev, které patří ke vzoru, a u SOLID v seznamu nejsou. FROM LIGHT je barva nastavená v LIGHT, za ní následuje 15 barev. Změna barvy v LIGHT sundá barvu z Color&nbsp;Macro.</li>
   <li><strong>Speed, Amount a Size</strong>: rychlost a vzhled vzoru. Jsou ztlumené, dokud je vzor&nbsp;SOLID.</li>
 </ul>
 <p>V MEDIA vybírá Media obrázek nebo video z police (viz Media). Seznam obsahuje Off a jen čísla, pod kterými něco je. Play, Pause a Restart ovládají přehrávání a každé klepnutí na Restart přehraje znovu od začátku. Když se ukazuje obrázek nebo video, jsou barva v LIGHT a celé MACRO ztlumené a fungují jen Intensity a Back&nbsp;Light.</p>
@@ -140,7 +140,7 @@
 <p>Kanau&nbsp;Lite přijímá DMX jen tehdy, když je aplikace otevřená. Když přejdete na plochu nebo zařízení zamknete, přestane přijímat, zastaví světlo na zadní straně i vibrace a vrátí jas obrazovky na dřívější hodnotu. Otevřete ji znovu a vrátí se poslední světlo a přijímá&nbsp;zase.</p>
 
 <h2>Režimy a kanály</h2>
-<p>Je 19 režimů. Výchozí je 2: SCREEN RGB 9ch. Číslo na začátku každého názvu je číslo režimu a číslo na konci je počet&nbsp;kanálů.</p>
+<p>Je 20 režimů. Výchozí je 2: SCREEN RGB 9ch. Číslo na začátku každého názvu je číslo režimu a číslo na konci je počet&nbsp;kanálů.</p>
 <table>
   <thead><tr><th>Mode</th><th>Obrazovka</th></tr></thead>
   <tbody>
@@ -154,9 +154,10 @@
     <tr><td>14: SCREEN FX &amp; MEDIA RGB 20ch<br>15: SCREEN FX &amp; MEDIA HUE SAT 19ch</td><td>Celá obrazovka se vzory, obrázky a videi (viz FX &amp; MEDIA).</td></tr>
     <tr><td>16: SCREEN COOKIE RGB 62ch<br>17: SCREEN COOKIE HUE SAT 54ch</td><td>Obrazovka je rozdělená na nepravidelné, skvrnité plochy v 8 barvách (viz COOKIE a ULTIMATE).</td></tr>
     <tr><td>18: ULTIMATE RGB 74ch<br>19: ULTIMATE HUE SAT 66ch</td><td>Vybírá, jak se obrazovka rozdělí, a ukazuje vzory, obrázky a videa (viz COOKIE a ULTIMATE).</td></tr>
+    <tr><td>20: SCREEN SIMPLE FX 5ch</td><td>Celá obrazovka se vzory, jen na 5 kanálech (viz SIMPLE FX).</td></tr>
   </tbody>
 </table>
-<p>Kromě BACK LIGHT ONLY každý režim začíná Screen Dimmer a končí Back Light a Vibration. 2: SCREEN RGB 9ch má tyto kanály v tomto pořadí. Hodnoty jsou psány tak, jak se objevují v Channels&nbsp;v&nbsp;SETUP.</p>
+<p>Kromě BACK LIGHT ONLY každý režim začíná Screen Dimmer a končí Back Light a Vibration. 2: SCREEN RGB 9ch má tyto kanály v tomto pořadí. Hodnoty jsou psány tak, jak se objevují v Channels v SETUP. Výjimkou je 20: SCREEN SIMPLE FX 5ch, který nemá Back Light ani Vibration.</p>
 <table>
   <thead><tr><th>#</th><th>Název</th><th>Hodnoty</th></tr></thead>
   <tbody>
@@ -186,8 +187,8 @@
     <tr><td>5</td><td>Red</td><td>0–100%</td></tr>
     <tr><td>6</td><td>Green</td><td>0–100%</td></tr>
     <tr><td>7</td><td>Blue</td><td>0–100%</td></tr>
-    <tr><td>8</td><td>Color Macro</td><td>0 Off · 5 Original 1 · 10 Original 2 · 15 Original 3 · 50–124 15 colors, 5 each · Home 0</td></tr>
-    <tr><td>9</td><td>Content</td><td>0 SOLID · 5 GLINT · 10 SWEEP · 15 KALEIDO · 20 WATER · 25 FIRE · 30 TV · 35 AURORA · 40 PAPARAZZI · 45 POLICE · Home 0</td></tr>
+    <tr><td>8</td><td>Color Macro</td><td>0 Off · 5 Original 1 · 10 Original 2 · 15 Original 3 · 20 Original 4 · 25 Original 5 · 30 Original 6 · 50–124 15 colors, 5 each · Home 0</td></tr>
+    <tr><td>9</td><td>Content</td><td>0 SOLID · 5 GLINT · 10 SWEEP · 15 KALEIDO · 20 WATER · 25 FIRE · 30 TV · 35 AURORA · 40 PAPARAZZI · 45 POLICE · 50 SNOW GLOBE · 55 STRING LIGHTS · 60 MUSIC · 65 CLOCK · 70 LAVA LAMP · 75 CANDLE · 80 NEON · 85 BEACON · 90 TRAFFIC LIGHT · 95 CROSSWALK · Home 0</td></tr>
     <tr><td>10</td><td>Speed</td><td>0 Slow · 128 Normal · 255 Fast · Home 128</td></tr>
     <tr><td>11</td><td>Amount</td><td>0–255 · Home 128</td></tr>
     <tr><td>12</td><td>Size</td><td>0–255 · Home 128</td></tr>
@@ -202,10 +203,24 @@
   </tbody>
 </table>
 <p>Obrazovka se staví na černé: nejdřív obrázek nebo video vybrané pomocí Media, nad ním vzor vybraný pomocí Content. Mix nastavuje poměr: při 0 vidíte jen obrázek nebo video, při 255 jen vzor. Když je Media 0 nebo pod tímto číslem nic není, ukazuje se jen vzor. Reserved 1 a Reserved 2 jsou kanály, které nic&nbsp;nedělají.</p>
-<p>První hodnota Content, SOLID, vyplní obrazovku barvou. Při výchozích hodnotách dává FX &amp; MEDIA stejné světlo jako SCREEN RGB. Ostatních devět jsou pohyblivé vzory: Speed nastavuje, jak rychle se pohybují, a Amount a Size mění jejich vzhled. Content 50–255 se nepoužívá a funguje jako&nbsp;SOLID.</p>
+<p>První hodnota Content, SOLID, vyplní obrazovku barvou. Při výchozích hodnotách dává FX &amp; MEDIA stejné světlo jako SCREEN RGB. Ostatních 19 jsou pohyblivé vzory: Speed nastavuje, jak rychle se pohybují, a Amount a Size mění jejich vzhled. Content 100–255 se nepoužívá a funguje jako&nbsp;SOLID.</p>
 <p>Každý vzor má vlastní barvy, takže běží v použitelném vzhledu, i když nenastavíte žádnou barvu. Crossfade na 0 ukazuje vlastní barvy vzoru a na 255 barvu z Red, Green&nbsp;a&nbsp;Blue.</p>
-<p>Color Macro je rozdělené na kroky po 5. Original 1 až 3, na 5–19, jsou sady barev, které patří ke vzoru. Od 50, po 5, následuje těchto 15 barev: 3200 K, 4300 K, 5600 K, Red, Orange, Amber, Yellow, Green, Cyan, Sky Blue, Blue, Deep Blue, Lavender, Magenta, Pink. 0–4, 20–49 a 125–255 fungují&nbsp;jako&nbsp;Off.</p>
+<p>Color Macro je rozdělené na kroky po 5. Original 1 až 6, na 5–34, jsou sady barev, které patří ke vzoru. Od 50, po 5, následuje těchto 15 barev: 3200 K, 4300 K, 5600 K, Red, Orange, Amber, Yellow, Green, Cyan, Sky Blue, Blue, Deep Blue, Lavender, Magenta, Pink. 0–4, 35–49 a 125–255 fungují jako Off. V CONTROL jsou sady POLICE pojmenované podle barev, TRAFFIC LIGHT a CROSSWALK podle zemí (Japan, USA, UK, Germany, France, China) a BEACON zůstává Aviation Red, ať zvolíte kteroukoli. Channels v SETUP je ukazuje&nbsp;čísly.</p>
 <p>Obrázky a videa si ponechávají vlastní barvy. Color Temp je posune k teplejším nebo chladnějším a Screen Dimmer je ztmaví. Videa se přehrávají bez zvuku a po skončení začínají znovu od začátku. Playback video přehrává nebo pozastavuje. Restart vrátí video jednou na začátek, v okamžiku, kdy hodnota vstoupí do&nbsp;171–255.</p>
+
+<h2>SIMPLE FX</h2>
+<p>20: SCREEN SIMPLE FX 5ch zobrazí vzory jen s 5 kanály, v tomto&nbsp;pořadí.</p>
+<table>
+  <thead><tr><th>#</th><th>Název</th><th>Hodnoty</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td>Screen Dimmer</td><td>0–100%</td></tr>
+    <tr><td>2</td><td>Content</td><td>Jako ve FX &amp; MEDIA</td></tr>
+    <tr><td>3</td><td>Speed</td><td>0 Slow · 128 Normal · 255 Fast · Home 128</td></tr>
+    <tr><td>4</td><td>Color Macro</td><td>Jako ve FX &amp; MEDIA</td></tr>
+    <tr><td>5</td><td>CCT</td><td>1,750–9,910 K · Home 117 = 5,494 K</td></tr>
+  </tbody>
+</table>
+<p>Amount a Size zůstávají uprostřed a obrázky ani videa se nezobrazují. Color Macro 0 dává vlastní barvy vzoru. CCT nastavuje teplotu barvy bílé, dokud je Content SOLID. Tento režim nemá Back Light ani Vibration, takže na pultu je jedním svítidlem. V Kanau je to svítidlo jen se stmívačem a teplotou barvy: barvy z barevné plochy Kanau k němu nedojdou a barvu určují Color Macro&nbsp;a&nbsp;vzor.</p>
 
 <h2>COOKIE a ULTIMATE</h2>
 <p>SCREEN COOKIE rozdělí obrazovku na nepravidelné, skvrnité plochy. Každá plocha má barvu jedné z 8 buněk, takže barva jedné buňky se ukazuje na několika místech obrazovky. Některé plochy zůstávají černé, ať jsou buňky jakékoli, takže mezi světlem je stín i při rozsvícených všech 8 buňkách. Pro více stínu nastavte na pultu některé buňky na&nbsp;černou.</p>
@@ -243,7 +258,7 @@
 <p>Na pultu vybírá číslo kanál Media: 1–5 je 1, 6–10 je 2 a tak dále, až po 251–255 pro 51. Soubory zůstávají v tomto zařízení a nikam se neposílají.</p>
 
 <h2>Patchování na pultu</h2>
-<p>V Kanau napatchujte toto zařízení jako Kanau&nbsp;Lite se stejným režimem (<a href="manual-cs.html#patch">kapitola 03 příručky</a>). Kanau&nbsp;Lite v Kanau 1.1 má stejné kanály jako Kanau&nbsp;Lite&nbsp;1.1.</p>
+<p>V Kanau napatchujte toto zařízení jako Kanau&nbsp;Lite se stejným režimem (<a href="manual-cs.html#patch">kapitola 03 příručky</a>). Kanau&nbsp;Lite v Kanau 1.2 má stejné kanály jako Kanau&nbsp;Lite 1.2, jen jeho Content zatím neuvádí TRAFFIC LIGHT a CROSSWALK (90–99). Svítidlo vytvořené pro Kanau&nbsp;Lite 1.1 funguje dál: hodnoty přidané v 1.2 byly v 1.1 nevyužité.</p>
 <p>Na jiných pultech vytvořte svítidlo s kanály ve stejném pořadí jako Channels v SETUP a napatchujte ho na stejnou adresu. Každý kanál je&nbsp;8bitový.</p>
 <p>Svítidlo napatchované podle Kanau&nbsp;Lite 1.0 má v režimech 14, 15, 18 a 19 jiný počet kanálů a jiné hodnoty u Color Macro a Content. Napatchujte ho znovu, v Kanau nebo na jakémkoli jiném&nbsp;pultu.</p>
 <p>Přes <span style="white-space:nowrap">Art-Net</span> aplikace odpovídá na vyhledávání nodů (ArtPoll) jménem, například <code class="q">Kanau&nbsp;Lite · U1 · 001</code>. Na pultu, který umí nody vypsat, hledejte toto jméno s jeho universe a&nbsp;adresou.</p>

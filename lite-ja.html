@@ -49,7 +49,7 @@
 <header class="sitenav"><a class="sitebrand" href="index-ja.html"><img src="img/icon.png" alt="" width="28" height="28">Kanau</a><div class="sitenavr"><div class="sitelinks"><a href="index-ja.html#pricing">料金</a><a href="fixtures-ja.html">灯体</a><a href="manual-ja.html">説明書</a><a href="support-ja.html">サポート</a></div><label class="langsel"><span class="vh">言語</span><select onchange="location.href=this.value"><option value="lite.html" lang="en">English</option><option value="lite-ja.html" lang="ja" selected>日本語</option><option value="lite-de.html" lang="de">Deutsch</option><option value="lite-fr.html" lang="fr">Français</option><option value="lite-ko.html" lang="ko">한국어</option><option value="lite-zh-Hans.html" lang="zh-Hans">简体中文</option><option value="lite-zh-Hant.html" lang="zh-Hant">繁體中文</option><option value="lite-es.html" lang="es">Español</option><option value="lite-pt-BR.html" lang="pt-BR">Português (Brasil)</option><option value="lite-it.html" lang="it">Italiano</option><option value="lite-nl.html" lang="nl">Nederlands</option><option value="lite-pl.html" lang="pl">Polski</option><option value="lite-cs.html" lang="cs">Čeština</option><option value="lite-sv.html" lang="sv">Svenska</option><option value="lite-da.html" lang="da">Dansk</option><option value="lite-no.html" lang="no">Norsk</option><option value="lite-fi.html" lang="fi">Suomi</option><option value="lite-tr.html" lang="tr">Türkçe</option><option value="lite-id.html" lang="id">Bahasa Indonesia</option><option value="lite-th.html" lang="th">ไทย</option><option value="lite-ar.html" lang="ar">العربية</option><option value="lite-hi.html" lang="hi">हिन्दी</option><option value="lite-vi.html" lang="vi">Tiếng Việt</option></select></label></div></header>
 <div class="hero">
   <h1>Kanau&nbsp;Lite</h1>
-  <p class="sub">Kanau&nbsp;Lite 1.1 (18) の時点</p>
+  <p class="sub">Kanau&nbsp;Lite 1.2 (27) の時点</p>
 </div>
 
 <p>Kanau&nbsp;Lite は、iPhone や iPad を 1 台の灯体にする無料のアプリです。卓から <span style="white-space:nowrap">Art-Net</span> か sACN で送った DMX を受け取り、画面の色と明るさ、背面のライト、振動を動かします。アカウントの登録も広<span class="nw">告もありません。</span></p>
@@ -108,8 +108,8 @@
 <p>絵柄を出している間は、WHITE の代わりに ORIGINAL が出ます。ORIGINAL は、その絵柄が持っている色です。絵柄か画像か動画を出している間は、LIGHT のいちばん上にその名前と STOP が出ます。STOP を押すと絵柄と画像を止め、LIGHT で決めた色<span class="nw">だけになります。</span></p>
 <p>MACRO には次の<span class="nw">ものが並びます。</span></p>
 <ul>
-  <li><strong>Pattern</strong>: 一覧から絵柄を選びます。SOLID と、動く 9 つの絵柄です(下の「FX &amp; MEDIA」の <span class="nw">Content と同じ)。</span></li>
-  <li><strong>Color Macro</strong>: 一覧から色を選びます。Original 1〜3 は絵柄が持つ色の組で、SOLID のときは出ません。FROM LIGHT は LIGHT で決めた色で、その後に 15 色が並びます。LIGHT で色を変えると、Color Macro <span class="nw">の色は外れます。</span></li>
+  <li><strong>Pattern</strong>: 一覧から絵柄を選びます。SOLID と、動く 19 の絵柄です(下の「FX &amp; MEDIA」の <span class="nw">Content と同じ)。</span></li>
+  <li><strong>Color Macro</strong>: 一覧から色を選びます。Original 1〜6 は絵柄が持つ色の組で、SOLID のときは出ません。FROM LIGHT は LIGHT で決めた色で、その後に 15 色が並びます。LIGHT で色を変えると、Color Macro <span class="nw">の色は外れます。</span></li>
   <li><strong>Speed、Amount、Size</strong>: 絵柄の速さと姿です。SOLID の間<span class="nw">は薄くなります。</span></li>
 </ul>
 <p>MEDIA の Media で、棚に入れた画像か動画を選びます(下の「Media」)。一覧には Off と、何か入っている番号だけが出ます。Play、Pause、Restart で再生を操作し、Restart は押すたびに頭から流します。画像か動画を出している間は、LIGHT の色と MACRO が薄くなり、Intensity と Back Light <span class="nw">だけが効きます。</span></p>
@@ -140,7 +140,7 @@
 <p>Kanau&nbsp;Lite が DMX を受け取るのは、アプリを開いている間だけです。ホーム画面に戻ったり画面をロックしたりすると、受け取りを止め、背面のライトと振動を止めて、画面の明るさを元に戻します。もう一度開くと、最後の灯りに戻り、ま<span class="nw">た受け取ります。</span></p>
 
 <h2>モードとチャンネル</h2>
-<p>モードは 19 で、初期値は 2: SCREEN RGB 9ch です。名前の頭の数字はモード番号、末尾の数字はチャ<span class="nw">ンネルの数です。</span></p>
+<p>モードは 20 で、初期値は 2: SCREEN RGB 9ch です。名前の頭の数字はモード番号、末尾の数字はチャ<span class="nw">ンネルの数です。</span></p>
 <table>
   <thead><tr><th>Mode</th><th>画面</th></tr></thead>
   <tbody>
@@ -154,9 +154,10 @@
     <tr><td>14: SCREEN FX &amp; MEDIA RGB 20ch<br>15: SCREEN FX &amp; MEDIA HUE SAT 19ch</td><td>画面全体に、絵柄、画像、動画を出します(下の「FX &amp; MEDIA」)。</td></tr>
     <tr><td>16: SCREEN COOKIE RGB 62ch<br>17: SCREEN COOKIE HUE SAT 54ch</td><td>画面を、8 色の不規則なまだらの区画に分けます(下の「COOKIE と ULTIMATE」)。</td></tr>
     <tr><td>18: ULTIMATE RGB 74ch<br>19: ULTIMATE HUE SAT 66ch</td><td>画面の分け方を選べて、絵柄、画像、動画も出せます(下の「COOKIE と ULTIMATE」)。</td></tr>
+    <tr><td>20: SCREEN SIMPLE FX 5ch</td><td>画面全体に絵柄を出します。チャンネルは 5 つだけです(下の「SIMPLE FX」)。</td></tr>
   </tbody>
 </table>
-<p>BACK LIGHT ONLY のほかは、先頭が Screen Dimmer、末尾が Back Light、Vibration です。2: SCREEN RGB 9ch のチャンネルは次の順です。値の欄は、SETUP の Channels に出<span class="nw">る字のままです。</span></p>
+<p>BACK LIGHT ONLY のほかは、先頭が Screen Dimmer、末尾が Back Light、Vibration です。2: SCREEN RGB 9ch のチャンネルは次の順です。値の欄は、SETUP の Channels に出る字のままです。例外は 20: SCREEN SIMPLE FX 5ch で、Back Light と Vibration<span class="nw"> を持ちません。</span></p>
 <table>
   <thead><tr><th>順</th><th>名前</th><th>値</th></tr></thead>
   <tbody>
@@ -186,8 +187,8 @@
     <tr><td>5</td><td>Red</td><td>0–100%</td></tr>
     <tr><td>6</td><td>Green</td><td>0–100%</td></tr>
     <tr><td>7</td><td>Blue</td><td>0–100%</td></tr>
-    <tr><td>8</td><td>Color Macro</td><td>0 Off · 5 Original 1 · 10 Original 2 · 15 Original 3 · 50–124 15 colors, 5 each · Home 0</td></tr>
-    <tr><td>9</td><td>Content</td><td>0 SOLID · 5 GLINT · 10 SWEEP · 15 KALEIDO · 20 WATER · 25 FIRE · 30 TV · 35 AURORA · 40 PAPARAZZI · 45 POLICE · Home 0</td></tr>
+    <tr><td>8</td><td>Color Macro</td><td>0 Off · 5 Original 1 · 10 Original 2 · 15 Original 3 · 20 Original 4 · 25 Original 5 · 30 Original 6 · 50–124 15 colors, 5 each · Home 0</td></tr>
+    <tr><td>9</td><td>Content</td><td>0 SOLID · 5 GLINT · 10 SWEEP · 15 KALEIDO · 20 WATER · 25 FIRE · 30 TV · 35 AURORA · 40 PAPARAZZI · 45 POLICE · 50 SNOW GLOBE · 55 STRING LIGHTS · 60 MUSIC · 65 CLOCK · 70 LAVA LAMP · 75 CANDLE · 80 NEON · 85 BEACON · 90 TRAFFIC LIGHT · 95 CROSSWALK · Home 0</td></tr>
     <tr><td>10</td><td>Speed</td><td>0 Slow · 128 Normal · 255 Fast · Home 128</td></tr>
     <tr><td>11</td><td>Amount</td><td>0–255 · Home 128</td></tr>
     <tr><td>12</td><td>Size</td><td>0–255 · Home 128</td></tr>
@@ -202,10 +203,24 @@
   </tbody>
 </table>
 <p>画面は黒の上に、まず Media で選んだ画像か動画、その上に Content で選んだ絵柄を重ねて作ります。Mix はその割合で、0 では画像か動画だけ、255 では絵柄だけが見えます。Media が 0 のときや、その番号に何も入っていないときは、絵柄だけが出ます。Reserved 1 と Reserved 2 は、何もしない<span class="nw">チャンネルです。</span></p>
-<p>Content の最初の SOLID は、画面を色で塗ります。初期値のままなら、FX &amp; MEDIA は SCREEN RGB と同じ光になります。残りの 9 つは動く絵柄で、Speed で動きの速さを、Amount と Size で絵柄の姿を変えます。Content の 50–255 は空きで、<span class="nw">SOLID と同じです。</span></p>
+<p>Content の最初の SOLID は、画面を色で塗ります。初期値のままなら、FX &amp; MEDIA は SCREEN RGB と同じ光になります。残りの 19 は動く絵柄で、Speed で動きの速さを、Amount と Size で絵柄の姿を変えます。Content の 100–255 は空きで、<span class="nw">SOLID と同じです。</span></p>
 <p>絵柄はそれぞれ自分の色を持つので、色を何も設定しなくても、そのまま見られる姿で流れます。Crossfade は、0 で絵柄自身の色、255 で Red、Green、Blue <span class="nw">の色になります。</span></p>
-<p>Color Macro は 5 ずつ区切られています。5–19 の Original 1〜3 は、その絵柄が持つ色の組です。50 から 5 ずつ、次の 15 色が並びます: 3200 K、4300 K、5600 K、Red、Orange、Amber、Yellow、Green、Cyan、Sky Blue、Blue、Deep Blue、Lavender、Magenta、Pink。0–4、20–49、125–255 は <span class="nw">Off と同じです。</span></p>
+<p>Color Macro は 5 ずつ区切られています。5–34 の Original 1〜6 は、その絵柄が持つ色の組です。50 から 5 ずつ、次の 15 色が並びます: 3200 K、4300 K、5600 K、Red、Orange、Amber、Yellow、Green、Cyan、Sky Blue、Blue、Deep Blue、Lavender、Magenta、Pink。0–4、35–49、125–255 は Off と同じです。CONTROL では、POLICE の組は色の名前で、TRAFFIC LIGHT と CROSSWALK の組は国の名前(Japan、USA、UK、Germany、France、China)で出ます。BEACON はどれを選んでも Aviation Red です。SETUP の Channels で<span class="nw">は番号で出ます。</span></p>
 <p>画像と動画は、自分の色のまま出ます。Color Temp で暖かい方か冷たい方へずらせて、Screen Dimmer で暗くできます。動画は音を出さずに再生し、終わると頭からまた流れます。Playback は動画を再生するか一時停止します。Restart は、値が 171–255 に入った瞬間に 1 度だけ動画<span class="nw">を頭に戻します。</span></p>
+
+<h2>SIMPLE FX</h2>
+<p>20: SCREEN SIMPLE FX 5ch は、5 つのチャンネルだけで絵柄を出すモードです。チャンネ<span class="nw">ルは次の順です。</span></p>
+<table>
+  <thead><tr><th>順</th><th>名前</th><th>値</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td>Screen Dimmer</td><td>0–100%</td></tr>
+    <tr><td>2</td><td>Content</td><td>FX &amp; MEDIA と同じ</td></tr>
+    <tr><td>3</td><td>Speed</td><td>0 Slow · 128 Normal · 255 Fast · Home 128</td></tr>
+    <tr><td>4</td><td>Color Macro</td><td>FX &amp; MEDIA と同じ</td></tr>
+    <tr><td>5</td><td>CCT</td><td>1,750–9,910 K · Home 117 = 5,494 K</td></tr>
+  </tbody>
+</table>
+<p>Amount と Size は真ん中のままで、画像と動画は出ません。Color Macro が 0 のときは、絵柄が持つ色で出ます。CCT は、Content が SOLID のときの白の色温度です。このモードは Back Light と Vibration を持たないので、卓では 1 台の灯体になります。Kanau では調光と色温度だけの灯体になり、Kanau の色のパネルの色は届きません。色は Color Macro と絵<span class="nw">柄で決まります。</span></p>
 
 <h2>COOKIE と ULTIMATE</h2>
 <p>SCREEN COOKIE は、画面を不規則なまだらの区画に分けます。区画ごとに 8 つのセルのどれかの色になるので、1 つのセルの色が画面のあちこちに出ます。いくつかの区画は、セルの色によらず黒のままなので、8 つのセルを全部光らせても光の間に影が残ります。影を増やしたいときは、卓でいくつかのセ<span class="nw">ルを黒にします。</span></p>
@@ -243,7 +258,7 @@
 <p>卓では、Media のチャンネルで番号を選びます。1–5 が 1、6–10 が 2 と続き、251–255 が 51 です。ファイルはこの端末に置かれ、どこに<span class="nw">も送られません。</span></p>
 
 <h2>卓でパッチする</h2>
-<p>Kanau では、この端末を Kanau&nbsp;Lite として、同じモードでパッチします(<a href="manual-ja.html#patch">説明書の 03 章</a>)。Kanau 1.1 の Kanau&nbsp;Lite のチャンネルは、Kanau&nbsp;Lite 1.<span class="nw">1 と同じです。</span></p>
+<p>Kanau では、この端末を Kanau&nbsp;Lite として、同じモードでパッチします(<a href="manual-ja.html#patch">説明書の 03 章</a>)。Kanau 1.2 の Kanau&nbsp;Lite のチャンネルは Kanau&nbsp;Lite 1.2 と同じですが、Content にはまだ TRAFFIC LIGHT と CROSSWALK(90–99)がありません。Kanau&nbsp;Lite 1.1 に合わせて作った灯体は、そのまま使えます。1.2 で足した値は、1.1 では空<span class="nw">きだった所です。</span></p>
 <p>ほかの卓では、SETUP の Channels と同じ順にチャンネルを並べた灯体を作り、同じアドレスにパッチします。チャンネルはすべて <span class="nw">8 ビットです。</span></p>
 <p>Kanau&nbsp;Lite 1.0 に合わせてパッチした灯体は、14、15、18、19 のモードのチャンネルの数と、Color Macro と Content の値が違います。Kanau でもほかの卓でも、パッチし<span class="nw">直してください。</span></p>
 <p><span style="white-space:nowrap">Art-Net</span> では、ノードを探す問い合わせ(ArtPoll)に <code class="q">Kanau&nbsp;Lite · U1 · 001</code> のような名前で応答します。ノードの一覧を出せる卓では、Universe と Address 付きのこの名前<span class="nw">で見つかります。</span></p>

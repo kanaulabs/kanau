@@ -49,7 +49,7 @@
 <header class="sitenav"><a class="sitebrand" href="index-fi.html"><img src="img/icon.png" alt="" width="28" height="28">Kanau</a><div class="sitenavr"><div class="sitelinks"><a href="index-fi.html#pricing">Hinnat</a><a href="fixtures-fi.html">Valaisimet</a><a href="manual-fi.html">Käyttöopas</a><a href="support-fi.html">Tuki</a></div><label class="langsel"><span class="vh">Kieli</span><select onchange="location.href=this.value"><option value="lite.html" lang="en">English</option><option value="lite-ja.html" lang="ja">日本語</option><option value="lite-de.html" lang="de">Deutsch</option><option value="lite-fr.html" lang="fr">Français</option><option value="lite-ko.html" lang="ko">한국어</option><option value="lite-zh-Hans.html" lang="zh-Hans">简体中文</option><option value="lite-zh-Hant.html" lang="zh-Hant">繁體中文</option><option value="lite-es.html" lang="es">Español</option><option value="lite-pt-BR.html" lang="pt-BR">Português (Brasil)</option><option value="lite-it.html" lang="it">Italiano</option><option value="lite-nl.html" lang="nl">Nederlands</option><option value="lite-pl.html" lang="pl">Polski</option><option value="lite-cs.html" lang="cs">Čeština</option><option value="lite-sv.html" lang="sv">Svenska</option><option value="lite-da.html" lang="da">Dansk</option><option value="lite-no.html" lang="no">Norsk</option><option value="lite-fi.html" lang="fi" selected>Suomi</option><option value="lite-tr.html" lang="tr">Türkçe</option><option value="lite-id.html" lang="id">Bahasa Indonesia</option><option value="lite-th.html" lang="th">ไทย</option><option value="lite-ar.html" lang="ar">العربية</option><option value="lite-hi.html" lang="hi">हिन्दी</option><option value="lite-vi.html" lang="vi">Tiếng Việt</option></select></label></div></header>
 <div class="hero">
   <h1>Kanau&nbsp;Lite</h1>
-  <p class="sub">Kanau&nbsp;Lite 1.1 (18) -version mukaan</p>
+  <p class="sub">Kanau&nbsp;Lite 1.2 (27) -version mukaan</p>
 </div>
 
 <p>Kanau&nbsp;Lite on ilmainen sovellus, joka muuttaa iPhonen tai iPadin yhdeksi valoksi. Se vastaanottaa valopöydästä <span style="white-space:nowrap">Art-Net</span>in tai sACN:n kautta lähetetyn DMX:n ja ohjaa näytön, takavalon ja värinän väriä ja kirkkautta. Tiliä ei tarvitse luoda, eikä mainoksia&nbsp;ole.</p>
@@ -108,8 +108,8 @@
 <p>Kun kuvio näkyy, ORIGINAL korvaa WHITE-painikkeen. ORIGINAL on kuvion oma väri. Kun kuvio, kuva tai video näkyy, sen nimi ja STOP ilmestyvät LIGHT-näkymän yläosaan. STOP pysäyttää kuvion ja kuvan jättäen jäljelle vain LIGHT-näkymässä asetetun&nbsp;värin.</p>
 <p>MACRO-näkymässä on:</p>
 <ul>
-  <li><strong>Pattern</strong>: valitse kuvio luettelosta. SOLID ja yhdeksän liikkuvaa kuviota, samat kuin Content kohdassa FX &amp; MEDIA&nbsp;alla.</li>
-  <li><strong>Color Macro</strong>: valitse väri luettelosta. Original 1–3 ovat kuvioon kuuluvia värijoukkoja, eikä niitä ole luettelossa SOLID-kuviolle. FROM LIGHT on LIGHT-näkymässä asetettu väri, ja sen jälkeen tulee 15 väriä. Värin muuttaminen LIGHT-näkymässä poistaa Color Macron&nbsp;värin.</li>
+  <li><strong>Pattern</strong>: valitse kuvio luettelosta. SOLID ja 19 liikkuvaa kuviota, samat kuin Content kohdassa FX &amp; MEDIA&nbsp;alla.</li>
+  <li><strong>Color Macro</strong>: valitse väri luettelosta. Original 1–6 ovat kuvioon kuuluvia värijoukkoja, eikä niitä ole luettelossa SOLID-kuviolle. FROM LIGHT on LIGHT-näkymässä asetettu väri, ja sen jälkeen tulee 15 väriä. Värin muuttaminen LIGHT-näkymässä poistaa Color Macron&nbsp;värin.</li>
   <li><strong>Speed, Amount ja Size</strong>: kuvion nopeus ja ulkonäkö. Ne on himmennetty, kun kuvio&nbsp;on&nbsp;SOLID.</li>
 </ul>
 <p>MEDIA-näkymässä Media valitsee kuvan tai videon hyllystä (katso Media). Luettelossa on Off ja vain ne numerot, joissa on jotain. Play, Pause ja Restart ohjaavat toistoa, ja jokainen Restartin napautus toistaa alusta uudelleen. Kun kuva tai video näkyy, LIGHT-näkymän väri ja koko MACRO on himmennetty, ja vain Intensity ja Back Light&nbsp;toimivat.</p>
@@ -140,7 +140,7 @@
 <p>Kanau&nbsp;Lite vastaanottaa DMX:ää vain, kun sovellus on auki. Jos menet Home-näkymään tai lukitset laitteen, se lopettaa vastaanoton, pysäyttää takavalon ja värinän ja palauttaa näytön kirkkauden entiselleen. Avaa se uudelleen, niin viimeisin valo palaa ja vastaanotto jatkuu.</p>
 
 <h2>Modet ja kanavat</h2>
-<p>Modeja on 19. Oletus on 2: SCREEN RGB 9ch. Kunkin nimen alussa oleva numero on moden numero ja lopussa oleva numero kanavien&nbsp;määrä.</p>
+<p>Modeja on 20. Oletus on 2: SCREEN RGB 9ch. Kunkin nimen alussa oleva numero on moden numero ja lopussa oleva numero kanavien&nbsp;määrä.</p>
 <table>
   <thead><tr><th>Mode</th><th>Näyttö</th></tr></thead>
   <tbody>
@@ -154,9 +154,10 @@
     <tr><td>14: SCREEN FX &amp; MEDIA RGB 20ch<br>15: SCREEN FX &amp; MEDIA HUE SAT 19ch</td><td>Koko näyttö, jossa on kuvioita, kuvia ja videoita (katso FX &amp; MEDIA).</td></tr>
     <tr><td>16: SCREEN COOKIE RGB 62ch<br>17: SCREEN COOKIE HUE SAT 54ch</td><td>Näyttö on jaettu epäsäännöllisiin, laikukkaisiin alueisiin 8 värillä (katso COOKIE ja ULTIMATE).</td></tr>
     <tr><td>18: ULTIMATE RGB 74ch<br>19: ULTIMATE HUE SAT 66ch</td><td>Valitsee, miten näyttö jaetaan, ja näyttää kuvioita, kuvia ja videoita (katso COOKIE ja ULTIMATE).</td></tr>
+    <tr><td>20: SCREEN SIMPLE FX 5ch</td><td>Koko näyttö kuvioineen vain 5 kanavalla (katso SIMPLE FX).</td></tr>
   </tbody>
 </table>
-<p>BACK LIGHT ONLY -modea lukuun ottamatta jokainen mode alkaa Screen Dimmerillä ja päättyy Back Lightiin ja Vibrationiin. 2: SCREEN RGB 9ch:ssa on nämä kanavat tässä järjestyksessä. Arvot on kirjoitettu niin kuin ne näkyvät SETUP-näkymän Channels-kohdassa.</p>
+<p>BACK LIGHT ONLY -modea lukuun ottamatta jokainen mode alkaa Screen Dimmerillä ja päättyy Back Lightiin ja Vibrationiin. 2: SCREEN RGB 9ch:ssa on nämä kanavat tässä järjestyksessä. Arvot on kirjoitettu niin kuin ne näkyvät SETUP-näkymän Channels-kohdassa. Poikkeus on 20: SCREEN SIMPLE FX 5ch, jossa ei ole Back Lightia eikä Vibrationia.</p>
 <table>
   <thead><tr><th>#</th><th>Nimi</th><th>Arvot</th></tr></thead>
   <tbody>
@@ -186,8 +187,8 @@
     <tr><td>5</td><td>Red</td><td>0–100%</td></tr>
     <tr><td>6</td><td>Green</td><td>0–100%</td></tr>
     <tr><td>7</td><td>Blue</td><td>0–100%</td></tr>
-    <tr><td>8</td><td>Color Macro</td><td>0 Off · 5 Original 1 · 10 Original 2 · 15 Original 3 · 50–124 15 colors, 5 each · Home 0</td></tr>
-    <tr><td>9</td><td>Content</td><td>0 SOLID · 5 GLINT · 10 SWEEP · 15 KALEIDO · 20 WATER · 25 FIRE · 30 TV · 35 AURORA · 40 PAPARAZZI · 45 POLICE · Home 0</td></tr>
+    <tr><td>8</td><td>Color Macro</td><td>0 Off · 5 Original 1 · 10 Original 2 · 15 Original 3 · 20 Original 4 · 25 Original 5 · 30 Original 6 · 50–124 15 colors, 5 each · Home 0</td></tr>
+    <tr><td>9</td><td>Content</td><td>0 SOLID · 5 GLINT · 10 SWEEP · 15 KALEIDO · 20 WATER · 25 FIRE · 30 TV · 35 AURORA · 40 PAPARAZZI · 45 POLICE · 50 SNOW GLOBE · 55 STRING LIGHTS · 60 MUSIC · 65 CLOCK · 70 LAVA LAMP · 75 CANDLE · 80 NEON · 85 BEACON · 90 TRAFFIC LIGHT · 95 CROSSWALK · Home 0</td></tr>
     <tr><td>10</td><td>Speed</td><td>0 Slow · 128 Normal · 255 Fast · Home 128</td></tr>
     <tr><td>11</td><td>Amount</td><td>0–255 · Home 128</td></tr>
     <tr><td>12</td><td>Size</td><td>0–255 · Home 128</td></tr>
@@ -202,10 +203,24 @@
   </tbody>
 </table>
 <p>Näyttö rakennetaan mustan päälle: ensin Median valitsema kuva tai video, sitten sen päälle Contentin valitsema kuvio. Mix asettaa suhteen: arvolla 0 näet vain kuvan tai videon, arvolla 255 vain kuvion. Kun Media on 0 tai kyseisessä numerossa ei ole mitään, näkyy vain kuvio. Reserved 1 ja Reserved 2 ovat kanavia, jotka eivät tee&nbsp;mitään.</p>
-<p>Contentin ensimmäinen arvo, SOLID, täyttää näytön värillä. Oletusarvoilla FX &amp; MEDIA antaa saman valon kuin SCREEN RGB. Muut yhdeksän ovat liikkuvia kuvioita: Speed asettaa niiden liikkeen nopeuden, ja Amount ja Size muuttavat niiden ulkonäköä. Content 50–255 on käyttämättömiä ja toimii kuten&nbsp;SOLID.</p>
+<p>Contentin ensimmäinen arvo, SOLID, täyttää näytön värillä. Oletusarvoilla FX &amp; MEDIA antaa saman valon kuin SCREEN RGB. Muut 19 ovat liikkuvia kuvioita: Speed asettaa niiden liikkeen nopeuden, ja Amount ja Size muuttavat niiden ulkonäköä. Content 100–255 on käyttämättömiä ja toimii kuten&nbsp;SOLID.</p>
 <p>Jokaisella kuviolla on omat värinsä, joten se toimii käyttökelpoisen näköisenä, vaikka et asettaisi väriä. Crossfade arvolla 0 näyttää kuvion omat värit ja arvolla 255 värin, joka tulee Redistä, Greenistä ja&nbsp;Bluesta.</p>
-<p>Color Macro on jaettu 5:n askeleisiin. Original 1–3 arvoilla 5–19 ovat kuvioon kuuluvia värijoukkoja. Arvosta 50 alkaen 5:n askelin tulevat nämä 15 väriä: 3200 K, 4300 K, 5600 K, Red, Orange, Amber, Yellow, Green, Cyan, Sky Blue, Blue, Deep Blue, Lavender, Magenta, Pink. Arvot 0–4, 20–49 ja 125–255 toimivat kuten&nbsp;Off.</p>
+<p>Color Macro on jaettu 5:n askeleisiin. Original 1–6 arvoilla 5–34 ovat kuvioon kuuluvia värijoukkoja. Arvosta 50 alkaen 5:n askelin tulevat nämä 15 väriä: 3200 K, 4300 K, 5600 K, Red, Orange, Amber, Yellow, Green, Cyan, Sky Blue, Blue, Deep Blue, Lavender, Magenta, Pink. Arvot 0–4, 35–49 ja 125–255 toimivat kuten Off. CONTROL-näkymässä POLICEn sarjat on nimetty värien, TRAFFIC LIGHTin ja CROSSWALKin maiden mukaan (Japan, USA, UK, Germany, France, China), ja BEACON pysyy Aviation Redinä valinnasta riippumatta. SETUPin Channels näyttää ne numeroina.</p>
 <p>Kuvat ja videot säilyttävät omat värinsä. Color Temp siirtää niitä lämpimämmiksi tai kylmemmiksi, ja Screen Dimmer tummentaa niitä. Videot toistuvat ilman ääntä ja alkavat alusta, kun ne päättyvät. Playback toistaa tai pysäyttää videon. Restart palauttaa videon alkuun kerran sillä hetkellä, kun arvo siirtyy välille&nbsp;171–255.</p>
+
+<h2>SIMPLE FX</h2>
+<p>20: SCREEN SIMPLE FX 5ch tuo kuviot esiin vain 5 kanavalla, tässä järjestyksessä.</p>
+<table>
+  <thead><tr><th>#</th><th>Nimi</th><th>Arvot</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td>Screen Dimmer</td><td>0–100%</td></tr>
+    <tr><td>2</td><td>Content</td><td>Kuten FX &amp; MEDIA -modessa</td></tr>
+    <tr><td>3</td><td>Speed</td><td>0 Slow · 128 Normal · 255 Fast · Home 128</td></tr>
+    <tr><td>4</td><td>Color Macro</td><td>Kuten FX &amp; MEDIA -modessa</td></tr>
+    <tr><td>5</td><td>CCT</td><td>1,750–9,910 K · Home 117 = 5,494 K</td></tr>
+  </tbody>
+</table>
+<p>Amount ja Size pysyvät keskellä, eikä kuvia tai videoita näytetä. Color Macro 0 antaa kuvion omat värit. CCT asettaa valkoisen värilämpötilan, kun Content on SOLID. Tässä modessa ei ole Back Lightia eikä Vibrationia, joten pöydällä se on yksi valaisin. Kanaussa se on valaisin, jossa on vain himmennin ja värilämpötila: Kanaun värinäkymän värit eivät ulotu siihen, vaan väri tulee Color Macrosta ja&nbsp;kuviosta.</p>
 
 <h2>COOKIE ja ULTIMATE</h2>
 <p>SCREEN COOKIE jakaa näytön epäsäännöllisiin, laikukkaisiin alueisiin. Jokaisella alueella on yhden 8 solun väri, joten yhden solun väri näkyy näytön useassa kohdassa. Jotkin alueet pysyvät aina mustina solujen väreistä riippumatta, joten valojen välissä on varjoa, vaikka kaikki 8 solua olisivat päällä. Lisää varjoa saat asettamalla osan soluista mustiksi valopöydässä.</p>
@@ -243,7 +258,7 @@
 <p>Valopöydässä Media-kanava valitsee numeron: 1–5 on 1, 6–10 on 2 ja niin edelleen, aina 251–255 eli 51. Tiedostot pysyvät tässä laitteessa, eikä niitä lähetetä minnekään.</p>
 
 <h2>Patchaus valopöydässä</h2>
-<p>Kanaussa patchaa tämä laite nimellä Kanau&nbsp;Lite samalla modella (<a href="manual-fi.html#patch">oppaan luku 03</a>). Kanau 1.1:n Kanau&nbsp;Litessä on samat kanavat kuin Kanau&nbsp;Lite&nbsp;1.1:ssä.</p>
+<p>Kanaussa patchaa tämä laite nimellä Kanau&nbsp;Lite samalla modella (<a href="manual-fi.html#patch">oppaan luku 03</a>). Kanau 1.2:n Kanau&nbsp;Litessä on samat kanavat kuin Kanau&nbsp;Lite 1.2:ssa, paitsi että sen Content ei vielä luettele TRAFFIC LIGHTia ja CROSSWALKia (90–99). Kanau&nbsp;Lite 1.1:lle tehty valaisin toimii edelleen: 1.2:ssa lisätyt arvot olivat 1.1:ssä käyttämättömiä.</p>
 <p>Muissa valopöydissä tee valaisin, jonka kanavat ovat samassa järjestyksessä kuin SETUP-näkymän Channels-kohdassa, ja patchaa se samaan osoitteeseen. Jokainen kanava on 8-bittinen.</p>
 <p>Kanau&nbsp;Lite 1.0:aa vastaamaan patchatulla valaisimella on moden 14, 15, 18 ja 19 kohdalla eri määrä kanavia sekä erilaiset arvot Color Macrolle ja Contentille. Patchaa se uudelleen Kanaussa tai missä tahansa muussa valopöydässä.</p>
 <p><span style="white-space:nowrap">Art-Net</span>illä sovellus vastaa solmujen etsintään (ArtPoll) nimellä, kuten <code class="q">Kanau&nbsp;Lite · U1 · 001</code>. Valopöydässä, joka voi luetella solmut, etsi tätä nimeä sekä sen universumia ja osoitetta.</p>
