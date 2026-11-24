@@ -11,6 +11,35 @@ WHITE, INK, CREAM = '#fbfaf6', '#050505', '#e8e1d3'
 FONT = '/usr/share/fonts/truetype/manrope/Manrope-SemiBold.ttf'
 MOD = 0.35
 
+GLOW = ['#d8d3ca', '#ffb53a', '#9fd3ab', '#f2b8c4', '#9dbdf0']
+
+def icon2(ox, oy, S):
+    """The icon as the app draws it: tile, quiet tracks, pills with their own soft glow."""
+    k = S / 180; w = I['bar_w'] * k; r = S * I['corner_radius_ratio']
+    s = f'<clipPath id="tile"><rect x="{P(ox):.3f}" y="{P(oy):.3f}" width="{L(S):.3f}" height="{L(S):.3f}" rx="{L(r):.3f}"/></clipPath>'
+    s += f'<rect x="{P(ox):.3f}" y="{P(oy):.3f}" width="{L(S):.3f}" height="{L(S):.3f}" rx="{L(r):.3f}" fill="{BG}"/>'
+    s += '<g clip-path="url(#tile)">'
+    for i in range(5):
+        x = ox + I['bar_x'][i] * k; t0 = oy + I['track_top'] * k; b = oy + I['track_bottom'] * k
+        s += f'<rect x="{P(x):.3f}" y="{P(t0):.3f}" width="{L(w):.3f}" height="{L(b - t0):.3f}" rx="{L(w / 2):.3f}" fill="#1c1c21"/>'
+    for i in range(5):
+        x = ox + I['bar_x'][i] * k; t = oy + I['bar_top'][i] * k; b = oy + I['track_bottom'] * k
+        op, sd = (0.75, 1.1) if i == 1 else (0.42, 0.75)
+        s += (f'<rect x="{P(x):.3f}" y="{P(t):.3f}" width="{L(w):.3f}" height="{L(b - t):.3f}" rx="{L(w / 2):.3f}" '
+              f'fill="{GLOW[i]}" opacity="{op}" filter="url(#gl{i})"/>')
+    for i in range(5):
+        x = ox + I['bar_x'][i] * k; t = oy + I['bar_top'][i] * k; b = oy + I['track_bottom'] * k
+        s += f'<rect x="{P(x):.3f}" y="{P(t):.3f}" width="{L(w):.3f}" height="{L(b - t):.3f}" rx="{L(w / 2):.3f}" fill="url(#fd{i})"/>'
+    return s + '</g>'
+
+def glow_defs():
+    d = ''
+    for i in range(5):
+        sd = 1.1 if i == 1 else 0.75
+        d += (f'<filter id="gl{i}" filterUnits="userSpaceOnUse" x="-40" y="-40" width="{CAN + 80:g}" height="{CAN + 80:g}">'
+              f'<feGaussianBlur stdDeviation="{L(sd):.3f}"/></filter>')
+    return d
+
 def icon(ox, oy, S, tile=False):
     """The app icon at (ox, oy) mm, edge S mm. tile=True draws its own rounded black square."""
     k = S / 180; s = ''
@@ -38,13 +67,14 @@ def qr(cx, cy, D, fill=0.42):
         if best is None or sc > best[0]: best = (sc, svg)
     return f'<circle cx="{P(cx):.3f}" cy="{P(cy):.3f}" r="{L(D / 2):.3f}" fill="{WHITE}"/>', best[1]
 
-def word(x, base, cap, fill, anchor='start'):
-    f = ImageFont.truetype(FONT, 1000); x0, y0, x1, y1 = f.getbbox('Kanau', anchor='ls')
+def word(x, base, cap, fill, anchor='start', font=FONT, weight=600, ls=0.0):
+    f = ImageFont.truetype(font, 1000); x0, y0, x1, y1 = f.getbbox('Kanau', anchor='ls')
     size = cap / (-y0 / 1000)
     if anchor == 'middle': x = x - (x1 + x0) / 2000 * size
     else: x = x - x0 / 1000 * size
-    return (f'<text x="{P(x):.3f}" y="{P(base):.3f}" font-family="Manrope" font-weight="600" '
-            f'font-size="{L(size):.3f}" fill="{fill}">Kanau</text>')
+    if ls and anchor == 'middle': x -= ls * 2
+    return (f'<text x="{P(x):.3f}" y="{P(base):.3f}" font-family="Manrope" font-weight="{weight}" '
+            f'font-size="{L(size):.3f}" letter-spacing="{L(ls):.3f}" fill="{fill}">Kanau</text>')
 
 def build(v):
     defs = kit.fader_defs('fd')
@@ -54,6 +84,15 @@ def build(v):
         d, q = qr(c, c, D); art += d
         k = 60 / 180; base = I['track_bottom'] * k + (60 - I['track_bottom'] * k) / 2 + 1.25
         fg = q + word(I['bar_x'][0] * k, base, 2.5, '#d9d5cd')
+    elif v == 'l3':  # l2 refined: bigger tile, glow like the app, badge cut out of the tile, quieter label
+        defs += glow_defs()
+        S = 41.0; ox = (60 - S) / 2; oy = 8.4
+        art = f'<rect width="{CAN:g}" height="{CAN:g}" fill="{CREAM}"/>' + icon2(ox, oy, S)
+        D = 15.3; cx = ox + S - 2.9; cy = oy + 2.9; RING = 0.9
+        art += f'<circle cx="{P(cx):.3f}" cy="{P(cy):.3f}" r="{L(D / 2 + RING):.3f}" fill="{CREAM}"/>'
+        d, q = qr(cx, cy, D, fill=0.42); art += d
+        fg = q + word(30, oy + S + 6.3, 2.75, INK, anchor='middle',
+                      font='/usr/share/fonts/truetype/manrope/Manrope-Medium.ttf', weight=500, ls=0.06)
     else:           # the icon as it sits on a home screen: tile, QR as its badge, name as its label
         S = 38.0; ox = (60 - S) / 2; oy = 9.0
         art = f'<rect width="{CAN:g}" height="{CAN:g}" fill="{CREAM}"/>' + icon(ox, oy, S, tile=True)
