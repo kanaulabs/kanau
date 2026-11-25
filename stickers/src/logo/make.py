@@ -1,7 +1,7 @@
 """Kanau sticker: the logo itself is the sticker. python3 make.py <l1|l2>"""
 import os, sys, re, math
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'kit'))
-import kit
+import kit, cuteqr
 from kit import P, L, CAN
 from PIL import ImageFont
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -91,6 +91,27 @@ def build(v):
         D = 15.3; cx = ox + S - 2.9; cy = oy + 2.9; RING = 0.9
         art += f'<circle cx="{P(cx):.3f}" cy="{P(cy):.3f}" r="{L(D / 2 + RING):.3f}" fill="{CREAM}"/>'
         d, q = qr(cx, cy, D, fill=0.42); art += d
+        fg = q + word(30, oy + S + 6.3, 2.75, INK, anchor='middle',
+                      font='/usr/share/fonts/truetype/manrope/Manrope-Medium.ttf', weight=500, ls=0.06)
+    elif v.startswith('q'):   # l3 with a friendlier QR badge
+        defs += glow_defs()
+        S = 41.0; ox = (60 - S) / 2; oy = 8.4
+        art = f'<rect width="{CAN:g}" height="{CAN:g}" fill="{CREAM}"/>' + icon2(ox, oy, S)
+        cfg = dict(q1=dict(ec='m', modules='liquid', eyes='round', D=15.3),
+                   q2=dict(ec='m', modules='dots', eyes='round', D=15.3),
+                   q3=dict(ec='q', modules='liquid', eyes='round', D=17.0, hole=9),
+                   q4=dict(ec='m', modules='liquid', eyes='soft', D=15.3))[v]
+        D = cfg['D']; cx = ox + S - 2.9; cy = oy + 2.9 + (D - 15.3) / 2
+        cx -= (D - 15.3) / 2
+        art += f'<circle cx="{P(cx):.3f}" cy="{P(cy):.3f}" r="{L(D / 2 + 0.9):.3f}" fill="{CREAM}"/>'
+        art += f'<circle cx="{P(cx):.3f}" cy="{P(cy):.3f}" r="{L(D / 2):.3f}" fill="{WHITE}"/>'
+        def mini(x, y, size):
+            # the app icon in miniature, in the middle of the code
+            t = size * 0.86; tx = x + (size - t) / 2; ty = y + (size - t) / 2
+            return icon(tx, ty, t, tile=True)
+        q, hart, n = cuteqr.draw(cx, cy, MOD, ec=cfg['ec'], modules=cfg['modules'], eyes=cfg['eyes'],
+                                 hole=cfg.get('hole', 0), hole_svg=mini)
+        art += hart
         fg = q + word(30, oy + S + 6.3, 2.75, INK, anchor='middle',
                       font='/usr/share/fonts/truetype/manrope/Manrope-Medium.ttf', weight=500, ls=0.06)
     else:           # the icon as it sits on a home screen: tile, QR as its badge, name as its label
